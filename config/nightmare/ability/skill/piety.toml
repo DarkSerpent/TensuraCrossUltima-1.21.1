@@ -1,0 +1,22 @@
+#Magicules spent to obtain the Commandment of Piety.
+epAcquirement = 1000000.0
+#Only a Ten Commandment can obtain the Commandment of Piety.
+tenCommandmentOnly = true
+#Domain of Piety: length and width of the square area around the user, in blocks.
+domainSize = 32.0
+#Domain of Piety: height of the area around the user, in blocks.
+domainHeight = 32.0
+#Domain of Piety: Ultimate Skill cooldowns inside the Domain are raised to at least this many seconds.
+ultimateCooldown = 10
+#Domain of Piety: ticks between Domain checks.
+checkInterval = 5
+#Proclaim: magicule cost.
+proclaimCost = 80000.0
+#Proclaim: cooldown in seconds.
+proclaimCooldown = 120
+#Proclaim: ticks the Commandment binds those who heard it.
+proclaimTicks = 200
+#Proclaim: anyone who is not an ally and runs further than this many blocks from the user while bound becomes their subordinate.
+proclaimRadius = 24.0
+#Proclaim: players within this many blocks hear the proclamation.
+announceRadius = 64.0

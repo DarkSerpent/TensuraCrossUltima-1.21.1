@@ -1,0 +1,64 @@
+#Damage multiplier for Ark against Majin targets.
+majinMultiplier = 2.0
+#Damage and size multiplier for Ark used by an Archangel.
+archangelScale = 1.5
+#Ark: magicule cost.
+markMagiculeCost = 1500.0
+#Ark: Holy Power (spiritron) cost.
+markSpiritronCost = 10
+#Ark: chant time in ticks.
+markCastTicks = 20
+#Ark: range in blocks.
+markRange = 16.0
+#Ark: ticks the mark lasts before fading if it is never detonated.
+markLifeTicks = 600
+#Ark: explosion radius in blocks.
+markRadius = 3.0
+#Ark: Holy damage of the explosion.
+markDamage = 80.0
+#Ark: Holy damage of the explosion once mastered.
+markDamageMastered = 120.0
+#Ark: ticks the marked target cannot attack after the explosion (0 to disable).
+markDisarmTicks = 0
+#Ark: cooldown in seconds after the explosion.
+markCooldown = 2
+#Saint's Coat: magicules drained each second while held.
+coatMagiculePerSecond = 5000.0
+#Saint's Coat: Holy Power (spiritrons) drained each second while held.
+coatSpiritronPerSecond = 5
+#Saint's Coat: share of incoming damage blocked.
+coatReduction = 0.5
+#Saint's Coat: share of incoming damage blocked when the attacker is Majin.
+coatMajinReduction = 0.75
+#Saint's Coat: light damage dealt back to Majin who strike the wearer in melee.
+coatScorchDamage = 20.0
+#Holy Chest: magicule cost.
+chestMagiculeCost = 60000.0
+#Holy Chest: Holy Power (spiritron) cost.
+chestSpiritronCost = 20
+#Holy Chest: chant time in ticks.
+chestCastTicks = 20
+#Holy Chest: range in blocks.
+chestRange = 24.0
+#Holy Chest: ticks the target stays sealed before the Chest shatters.
+chestSealTicks = 80
+#Holy Chest: share of the target's max magicules drained each second.
+chestDrainPerSecond = 0.1
+#Holy Chest: Holy damage when the Chest shatters.
+chestDamage = 400.0
+#Holy Chest: cooldown in seconds.
+chestCooldown = 30
+#Radiance: magicule cost.
+radianceMagiculeCost = 20000.0
+#Radiance: Holy Power (spiritron) cost.
+radianceSpiritronCost = 40
+#Radiance: charge time in ticks.
+radianceChargeTicks = 30
+#Radiance: beam length in blocks.
+radianceRange = 48.0
+#Radiance: beam radius in blocks.
+radianceRadius = 1.5
+#Radiance: Holy damage to everything the beam passes through.
+radianceDamage = 600.0
+#Radiance: cooldown in seconds.
+radianceCooldown = 20

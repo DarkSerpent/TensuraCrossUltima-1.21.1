@@ -1,0 +1,48 @@
+#Is That a Scythe?: extra damage dealt with weapons in #trnightmare:scythes (0.25 = +25%).
+scytheBonus = 0.25
+#Is That a Scythe?: extra scythe damage once Huntress is mastered.
+scytheBonusMastered = 0.5
+#Speed Semblance (in slot, mastered): extra damage per block per second the user is moving (0.001 = +0.1%).
+speedDamagePerBlock = 0.001
+#Speed Semblance: the most the damage can be multiplied by.
+speedDamageCap = 2.0
+#Speed Semblance: ticks a burst of speed is remembered for, so a hit just after a dash still counts.
+speedMemoryTicks = 10
+#Petal Burst: magicule cost per dash.
+petalCost = 500.0
+#Petal Burst: dashes available before it goes on cooldown.
+petalCharges = 2
+#Petal Burst: cooldown in seconds once every charge is spent.
+petalCooldown = 6
+#Petal Burst: seconds after a dash before an unspent charge set refills.
+petalRefillSeconds = 3
+#Petal Burst: dash speed in blocks per tick, held for the whole dash.
+petalSpeed = 2.4
+#Petal Burst: ticks a dash lasts (speed x ticks = distance, about 22 blocks by default).
+petalDashTicks = 9
+#Petal Burst (mastered): most ticks the dash can be held and steered for.
+petalHoldMaxTicks = 60
+#Petal Burst (mastered): magicules drained per second while holding the dash past its normal length.
+petalHoldCostPerSecond = 400.0
+#Whether learning Huntress hands the user Crescent Rose.
+grantsCrescentRose = true
+#Crescent Rose: base scythe-mode attack damage before EP scaling.
+crescentRoseScytheDamage = 26.0
+#Crescent Rose: base gun-mode melee bash damage before EP scaling.
+crescentRoseGunBashDamage = 10.0
+#Crescent Rose: base sniper round damage before EP scaling.
+crescentRoseShotDamage = 32.0
+#Crescent Rose: base sniper round range in blocks before EP scaling.
+crescentRoseShotRange = 80.0
+#Crescent Rose: base extra scythe reach in blocks before EP scaling.
+crescentRoseScytheReach = 1.5
+#Crescent Rose EP scaling: wielder max EP at or below which Crescent Rose deals its base values.
+crescentRoseEpScalingStart = 10000.0
+#Crescent Rose EP scaling: wielder max EP at which scaling reaches its cap (smooth log curve between start and cap).
+crescentRoseEpScalingCap = 1000000.0
+#Crescent Rose EP scaling: damage multiplier reached at the cap (1.0 disables damage scaling).
+crescentRoseEpMaxDamageMultiplier = 5.0
+#Crescent Rose EP scaling: extra scythe reach in blocks added at the cap.
+crescentRoseEpMaxReachBonus = 1.5
+#Crescent Rose EP scaling: sniper round range multiplier reached at the cap.
+crescentRoseEpMaxShotRangeMultiplier = 1.5

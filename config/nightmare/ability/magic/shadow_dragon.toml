@@ -1,0 +1,141 @@
+[ShadowDragonRoar]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost to cast.
+	magiculeCost = 12000.0
+	#Cooldown in seconds.
+	cooldown = 10
+	#The length of the breath cone in blocks.
+	length = 10.0
+	#The half-angle of the breath cone in degrees.
+	coneAngle = 20.0
+	#Ticks the breath lasts.
+	durationTicks = 40
+	#Ticks between two damage pulses.
+	pulseTicks = 10
+	#The damage of each pulse.
+	pulseDamage = 55.0
+	#The damage of each pulse when mastered.
+	masteredPulseDamage = 82.5
+	#Ticks of Blindness each pulse applies. Bosses get half.
+	blindnessTicks = 60
+
+[ShadowDragonSlash]
+	#Magicule cost to cast.
+	magiculeCost = 1200.0
+	#Cooldown in seconds.
+	cooldown = 3
+	#The range to the looked-at target in blocks.
+	range = 12.0
+	#The gap left between the target and the caster's exit point in blocks.
+	gap = 0.8
+	#The damage of the exit slash.
+	damage = 110.0
+	#The damage of the exit slash when mastered.
+	masteredDamage = 165.0
+
+[ShadowDragonWingAttack]
+	#Magicule cost to cast.
+	magiculeCost = 1000.0
+	#Cooldown in seconds.
+	cooldown = 2
+	#The reach of each wing in blocks.
+	reach = 4.0
+	#The width of each wing's arc in degrees.
+	arcDegrees = 150.0
+	#How far above and below the caster the wings reach in blocks.
+	height = 2.5
+	#The damage of a wing hit.
+	damage = 75.0
+	#The damage of a wing hit when mastered.
+	masteredDamage = 112.5
+	#The push of a wing hit.
+	knockback = 0.6
+
+[ShadowDrive]
+	#Magicules spent to turn the drive on.
+	activationCost = 5000.0
+	#Magicules drained per second while the drive is on.
+	magiculePerSecond = 100.0
+	#Chance to dodge a hit that is not magic, from 0 to 1.
+	physicalDodgeChance = 0.4
+	#Chance to dodge a magic hit, from 0 to 1.
+	magicDodgeChance = 0.2
+	#Movement speed bonus, 0.25 is +25%.
+	speedBonus = 0.25
+	#Cost multiplier for both the activation and the drain while Dragon Force is on.
+	dragonForceCostMultiplier = 0.5
+	#Seconds of use between two mastery points.
+	masteryIntervalSeconds = 30
+
+[ShadowDragonCrash]
+	#Chant time in ticks.
+	castTicks = 10
+	#Magicule cost to cast.
+	magiculeCost = 15000.0
+	#Cooldown in seconds.
+	cooldown = 12
+	#The range to the looked-at target in blocks.
+	range = 20.0
+	#Ticks the leap takes to come down on the target.
+	leapTicks = 14
+	#Peak height of the leap in blocks.
+	leapHeight = 4.0
+	#The damage of the fist on the target.
+	damage = 230.0
+	#The damage of the fist on the target when mastered.
+	masteredDamage = 345.0
+	#The radius of the shockwave around the landing in blocks.
+	splashRadius = 3.0
+	#The damage of the shockwave to every other enemy in it.
+	splashDamage = 80.0
+	#The damage of the shockwave when mastered.
+	masteredSplashDamage = 120.0
+	#The push of the shockwave.
+	knockback = 1.0
+
+[ShadowDragonForce]
+	#Magicules spent to turn Dragon Force on.
+	activationCost = 30000.0
+	#Magicules drained per second while Dragon Force is on.
+	magiculePerSecond = 250.0
+	#Damage multiplier on Shadow Dragon Slayer spells while Dragon Force is on.
+	damageMultiplier = 1.4
+	#Seconds of use between two mastery points.
+	masteryIntervalSeconds = 30
+
+[SacredGrief]
+	#Chant time in ticks.
+	castTicks = 40
+	#Magicule cost to cast.
+	magiculeCost = 75000.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#The range to the looked-at target in blocks.
+	range = 24.0
+	#Shadow clones that rise around the target.
+	clones = 4
+	#The distance the clones rise from the target in blocks.
+	ringRadius = 2.6
+	#Ticks before the first clone strikes.
+	firstStrikeTicks = 12
+	#Ticks between two clone strikes.
+	strikeIntervalTicks = 8
+	#The damage of each clone strike.
+	cloneDamage = 100.0
+	#The damage of each clone strike when mastered.
+	masteredCloneDamage = 150.0
+	#The damage of the final strike once the clones merge back.
+	finalDamage = 320.0
+	#The damage of the final strike when mastered.
+	masteredFinalDamage = 480.0
+	#The push of the final strike. Bosses are never moved.
+	finalKnockback = 1.5
+
+[Appetite]
+	#Whether a caster who knows Shadow Dragon's Appetite regenerates magicules in darkness.
+	enabled = true
+	#The highest combined light level that still counts as darkness.
+	maxLight = 4
+	#Magicules regenerated per second in darkness.
+	magiculePerSecond = 300.0

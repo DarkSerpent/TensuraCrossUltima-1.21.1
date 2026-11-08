@@ -1,0 +1,86 @@
+[samael]
+	#Current magicules (MP) consumed after successfully acquiring Samael with mastered Poison and Merciless; both skills are retained.
+	#The acquisitionEpCost key is retained for compatibility only; it no longer spends EP, aura or permanent MP/AP capacity.
+	# Default: 700000.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	acquisitionEpCost = 700000.0
+	#Multiplier applied to the base Poison skill damage.
+	# Default: 2.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	poisonDamageMultiplier = 2.0
+	#Minimum ordinary poison damage per 20 ticks at one stack, before target mitigation. Set both minimum damage values to 0 to use only the base Poison formula.
+	# Default: 20.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	poisonMinimumDamage = 20.0
+	#Minimum ordinary poison damage per 20 ticks at five stacks. Intermediate stacks follow a quadratic curve; at least one-stack damage times the stack count is retained. Analysis multiplies the resulting damage.
+	# Default: 250.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	poisonFiveStackMinimumDamage = 250.0
+	#Maximum Samael poison stacks on one target.
+	# Default: 5
+	# Range: > 1
+	maxPoisonStacks = 5
+	#Chance for a successful poison hit to add another stack.
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	stackChance = 0.05
+	#Base poison duration in ticks.
+	# Default: 600
+	# Range: > 1
+	poisonDurationTicks = 600
+	#Additional poison duration in ticks when a stack is added.
+	# Default: 600
+	# Range: > 1
+	poisonStackDurationTicks = 600
+	#Maximum distance in blocks for Weakness Identification.
+	# Default: 32.0
+	# Range: 1.0 ~ 1.7976931348623157E308
+	analysisRange = 32.0
+	#Ticks the target must remain visible while being analyzed.
+	# Default: 60
+	# Range: > 1
+	analysisHoldTicks = 60
+	#Duration in ticks of a successful target analysis.
+	# Default: 600
+	# Range: > 1
+	analysisDurationTicks = 600
+	#MP consumed when Weakness Identification completes.
+	# Default: 2000.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	analysisMpCost = 2000.0
+	#Poison damage multiplier against the analyzed target.
+	# Default: 2.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	analyzedPoisonMultiplier = 2.0
+	#Ticks spent charging Death World before release.
+	# Default: 100
+	# Range: > 1
+	deathWorldChargeTicks = 100
+	#Ticks Death World remains active after release.
+	# Default: 200
+	# Range: > 1
+	deathWorldDurationTicks = 200
+	#Additional client-side fade-out ticks for Death World visuals.
+	# Default: 30
+	# Range: > 0
+	deathWorldFadeTicks = 30
+	#Radius in blocks affected by Death World.
+	# Default: 100.0
+	# Range: 1.0 ~ 1.7976931348623157E308
+	deathWorldRadius = 100.0
+	#MP consumed when Death World successfully releases after charging.
+	# Default: 10000.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	deathWorldMpCost = 10000.0
+	#Cooldown in ticks after Death World is activated.
+	# Default: 1200
+	# Range: > 0
+	deathWorldCooldownTicks = 1200
+	#Damage per target every 20 ticks while actually touching the liquid, before ordinary damage mitigation. No instant execution.
+	# Default: 1000.0
+	# Range: 0.0 ~ 3.4028234663852886E38
+	deathWorldDamage = 1000.0
+	#Internal one-time migration marker for the old 400-tick cooldown. Do not edit.
+	# Default: 0
+	# Range: > 0
+	deathWorldBalanceRevision = 1

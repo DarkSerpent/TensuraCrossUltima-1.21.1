@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "caught_fish": {
+      "conditions": {
+        "item": {
+          "items": "tide:arapaima"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    }
+  },
+  "requirements": [
+    [
+      "caught_fish"
+    ]
+  ]
+}

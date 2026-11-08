@@ -1,0 +1,3 @@
+#A list of gamerule defaults to apply, formatted as "gameRuleName=value".
+#Examples: "keepInventory=true", "randomTickSpeed=5", "doDaylightCycle=false"
+defaults = ["spawnRadius=5000", "reducedDebugInfo=true", "doImmediateRespawn=true", "playersSleepingPercentage=50"]

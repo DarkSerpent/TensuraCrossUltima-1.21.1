@@ -1,0 +1,12 @@
+{
+	id: "7F96DA3E1C12A969"
+	loot_size: 1
+	order_index: 19
+	rewards: [
+		{ id: "56E6737EF1113E2D", item: { count: 1, id: "tensura:great_sword_schematic" } }
+		{ id: "3F9439A90F00E009", item: { count: 1, id: "tensura:long_sword_schematic" } }
+		{ id: "6018CAAE48A74FAE", item: { count: 1, id: "tensura:short_sword_schematic" } }
+		{ id: "29F88C1F06E442F5", item: { count: 1, id: "tensura:shield_schematic" } }
+		{ id: "686C0A8D77F7ADC6", item: { count: 1, id: "tensura:basic_bows_schematic" } }
+	]
+}

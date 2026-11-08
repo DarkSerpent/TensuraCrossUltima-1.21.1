@@ -1,0 +1,54 @@
+#Gloxinia, Servant: magicule cost to raise the Plant Golem.
+servantCost = 5000.0
+#Gloxinia, Servant: cooldown in ticks after raising the Plant Golem.
+servantCooldown = 200
+#Gloxinia, Servant: the Plant Golem's health.
+servantHealth = 100.0
+#Gloxinia, Servant: the Plant Golem's melee damage.
+servantDamage = 20.0
+#Gloxinia, Servant: the Plant Golem's movement speed.
+servantSpeed = 0.32
+#Gloxinia, Servant: magicule the user spends each time the Plant Golem revives itself.
+servantReviveCost = 20000.0
+#Gloxinia, Servant: ticks the Plant Golem spends regrowing, rooted and untouchable, after it sprouts or revives.
+servantRegrowTicks = 40
+#Gloxinia, Servant: how far the Plant Golem may fall behind before it reroots beside the user.
+servantLeash = 24.0
+#King, Status Promotion: magicule cost.
+promotionCost = 2000.0
+#King, Status Promotion: cooldown in ticks.
+promotionCooldown = 100
+#King, Status Promotion: levels added to each negative effect on the target.
+promotionLevels = 2
+#King, Status Promotion: range at which a target can be chosen.
+promotionRange = 24.0
+#King, Power Condense: magicule cost to condense the bead.
+condenseCost = 3000.0
+#King, Power Condense: magicule spent each second the bead is held.
+condenseUpkeep = 150.0
+#King, Power Condense: cooldown in ticks after the bead disperses.
+condenseCooldown = 60
+#King, Power Condense: water damage the bead deals.
+condenseDamage = 80.0
+#King, Power Condense: ticks before the bead can strike the same target again.
+condenseHitInterval = 10
+#King, Power Condense: farthest the bead can be sent from the user.
+condenseRange = 24.0
+#King, Power Condense: bead speed in blocks per tick.
+condenseSpeed = 1.4
+#King, Power Condense: radius around the bead that it strikes.
+condenseRadius = 0.7
+#Fairy Prince and its evolutions: height relative to a normal player for the King variant (0.6 = 60%). Replaces the race's own size bonus.
+kingSize = 0.6
+#True Fairy King: height relative to a normal player for the King variant (overrides kingSize once fully a Fairy King).
+trueKingSize = 1.0
+#Fairy Prince and its evolutions: attack damage relative to normal for the King variant.
+kingAttack = 0.6
+#Fairy Prince and its evolutions: height relative to a normal player for the Gloxinia variant.
+gloxiniaSize = 0.6
+#Fairy Prince and its evolutions: attack damage relative to normal for the Gloxinia variant.
+gloxiniaAttack = 0.6
+#Fairy Prince and its evolutions: height relative to a normal player for the Dahlia variant.
+dahliaSize = 1.2
+#Fairy Prince and its evolutions: attack damage relative to normal for the Dahlia variant.
+dahliaAttack = 1.2

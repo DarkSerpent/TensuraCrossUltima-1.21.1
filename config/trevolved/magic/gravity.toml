@@ -1,0 +1,530 @@
+
+[balance]
+    #Almighty Push total split damage.
+    # Default: 240.0
+    # Range: 0.0 ~ 1.0E12
+    almightyPushDamage = 240.0
+    #Pin total split damage.
+    # Default: 60.0
+    # Range: 0.0 ~ 1.0E12
+    pinDamage = 60.0
+    #Core split damage per second.
+    # Default: 100.0
+    # Range: 0.0 ~ 1.0E12
+    planetaryDevastationDamagePerSecond = 100.0
+    #Planetary Slam center damage.
+    # Default: 3000.0
+    # Range: 0.0 ~ 1.0E12
+    planetaryDevastationSlamDamage = 3000.0
+    #Mastered Slam center damage.
+    # Default: 5000.0
+    # Range: 0.0 ~ 1.0E12
+    planetaryDevastationSlamDamageMastered = 5000.0
+    #Pull total split damage.
+    # Default: 75.0
+    # Range: 0.0 ~ 1.0E12
+    pullDamage = 75.0
+    #Push total split damage.
+    # Default: 90.0
+    # Range: 0.0 ~ 1.0E12
+    pushDamage = 90.0
+    #Native cooldown after release.
+    # Default: 45
+    # Range: 0 ~ 3600
+    almightyPushCooldownSeconds = 45
+    #Mastered cooldown after release.
+    # Default: 35
+    # Range: 0 ~ 3600
+    almightyPushCooldownSecondsMastered = 35
+    #Almighty Push cost.
+    # Default: 30000.0
+    # Range: 0.0 ~ 1.0E12
+    almightyPushCost = 30000.0
+    #Sustained Flight drain.
+    # Default: 800.0
+    # Range: 0.0 ~ 1.0E12
+    flightCostPerSecond = 800.0
+    #Single-target pin cost.
+    # Default: 10000.0
+    # Range: 0.0 ~ 1.0E12
+    gravityAmplificationCost = 10000.0
+    #AoE pin cost.
+    # Default: 8000.0
+    # Range: 0.0 ~ 1.0E12
+    gravityCircleAmplificationCost = 8000.0
+    #Cooldown after Slam/Unfolding.
+    # Default: 90
+    # Range: 0 ~ 3600
+    planetaryDevastationCooldownSeconds = 90
+    #Mastered cooldown after resolution.
+    # Default: 70
+    # Range: 0 ~ 3600
+    planetaryDevastationCooldownSecondsMastered = 70
+    #Planetary Devastation cost.
+    # Default: 50000.0
+    # Range: 0.0 ~ 1.0E12
+    planetaryDevastationCost = 50000.0
+    #Additional Magicule cost for every terrain block captured by Planetary Devastation.
+    # Default: 12.0
+    # Range: 0.0 ~ 1.0E9
+    planetaryDevastationCostPerBlock = 12.0
+    #Pull cost.
+    # Default: 4000.0
+    # Range: 0.0 ~ 1.0E12
+    pullMagiculeCost = 4000.0
+    #Push cost.
+    # Default: 4000.0
+    # Range: 0.0 ~ 1.0E12
+    pushMagiculeCost = 4000.0
+    #EP required for automatic Almighty Push advancement.
+    # Default: 500000
+    # Range: 0 ~ 9223372036854775807
+    almightyPushEp = 500000
+    #EP required for automatic Flight advancement.
+    # Default: 300000
+    # Range: 0 ~ 9223372036854775807
+    flightEp = 300000
+    #EP required for Gravity Amplification.
+    # Default: 200000
+    # Range: 0 ~ 9223372036854775807
+    gravityAmplificationEp = 200000
+    #EP required for Gravity Circle Amplification.
+    # Default: 150000
+    # Range: 0 ~ 9223372036854775807
+    gravityCircleAmplificationEp = 150000
+    #EP required for automatic Planetary Devastation advancement.
+    # Default: 750000
+    # Range: 0 ~ 9223372036854775807
+    planetaryDevastationEp = 750000
+    #EP required to learn Pull.
+    # Default: 100000
+    # Range: 0 ~ 9223372036854775807
+    pullEp = 100000
+    #EP required to learn Push.
+    # Default: 100000
+    # Range: 0 ~ 9223372036854775807
+    pushEp = 100000
+    #Almighty Push maximum travel range.
+    # Default: 1024
+    # Range: 16 ~ 2048
+    almightyPushRadius = 1024
+    #Mastered maximum travel range.
+    # Default: 1536
+    # Range: 16 ~ 4096
+    almightyPushRadiusMastered = 1536
+    #Unmastered Gravity Circle Amplification radius.
+    # Default: 1.5
+    # Range: 0.5 ~ 32.0
+    circleRadius = 1.5
+    #Mastered Gravity Circle Amplification radius.
+    # Default: 2.0
+    # Range: 0.5 ~ 32.0
+    circleRadiusMastered = 2.0
+    #Mastered pin duration.
+    # Default: 120
+    # Range: 1 ~ 72000
+    pinDurationMasteredTicks = 120
+    #Unmastered pin duration.
+    # Default: 80
+    # Range: 1 ~ 72000
+    pinDurationTicks = 80
+    #Slam crater radius.
+    # Default: 18
+    # Range: 0 ~ 96
+    planetaryDevastationCraterRadius = 18
+    #Mastered Slam crater radius.
+    # Default: 26
+    # Range: 0 ~ 128
+    planetaryDevastationCraterRadiusMastered = 26
+    #Sphere formation duration.
+    # Default: 720
+    # Range: 1 ~ 72000
+    planetaryDevastationDurationTicks = 720
+    #Mastered sphere formation duration.
+    # Default: 1080
+    # Range: 1 ~ 72000
+    planetaryDevastationMasteredDurationTicks = 1080
+    #Planetary Devastation horizontal influence radius.
+    # Default: 96
+    # Range: 1 ~ 512
+    planetaryDevastationRadius = 96
+    #Mastered horizontal influence radius.
+    # Default: 144
+    # Range: 1 ~ 512
+    planetaryDevastationRadiusMastered = 144
+    #Rendered debris sphere radius.
+    # Default: 18
+    # Range: 2 ~ 64
+    planetaryDevastationSphereRadius = 18
+    #Mastered rendered sphere radius.
+    # Default: 26
+    # Range: 2 ~ 96
+    planetaryDevastationSphereRadiusMastered = 26
+    #Targeting range.
+    # Default: 80
+    # Range: 1 ~ 256
+    planetaryDevastationTargetRange = 80
+    #Planetary Devastation vertical influence radius.
+    # Default: 40
+    # Range: 1 ~ 256
+    planetaryDevastationVerticalRadius = 40
+    #Mastered vertical influence radius.
+    # Default: 56
+    # Range: 1 ~ 256
+    planetaryDevastationVerticalRadiusMastered = 56
+    #Allow tagged, unprotected blocks to join the debris cluster.
+    allowPlanetaryDevastationBlockLifting = true
+    #Allow Almighty Push to clear tagged weak vegetation.
+    allowWeakVegetationGriefing = true
+    #Mastered Chant Annulment chant floor.
+    # Default: 40
+    # Range: 1 ~ 72000
+    almightyPushAnnulledCastTicks = 40
+    #Almighty Push base chant.
+    # Default: 120
+    # Range: 1 ~ 72000
+    almightyPushCastTicks = 120
+    #Maximum post-chant channel duration.
+    # Default: 100
+    # Range: 1 ~ 1200
+    almightyPushChannelTicks = 100
+    #Mastered post-chant channel duration.
+    # Default: 140
+    # Range: 1 ~ 1200
+    almightyPushChannelTicksMastered = 140
+    #Pressure-front radius immediately after release.
+    # Default: 16
+    # Range: 2 ~ 256
+    almightyPushInitialWidth = 16
+    #Mastered pressure-front radius immediately after release.
+    # Default: 24
+    # Range: 2 ~ 384
+    almightyPushInitialWidthMastered = 24
+    #Base directional velocity applied before channel scaling.
+    # Default: 7.5
+    # Range: 0.0 ~ 128.0
+    almightyPushKnockback = 7.5
+    #Mastered chant.
+    # Default: 80
+    # Range: 1 ~ 72000
+    almightyPushMasteredCastTicks = 80
+    #Base velocity applied to targets with Gravity Resistance.
+    # Default: 1.35
+    # Range: 0.0 ~ 128.0
+    almightyPushResistedKnockback = 1.35
+    #Pressure-front radius at maximum range.
+    # Default: 112
+    # Range: 4 ~ 512
+    almightyPushTerminalWidth = 112
+    #Mastered pressure-front radius at maximum range.
+    # Default: 160
+    # Range: 4 ~ 768
+    almightyPushTerminalWidthMastered = 160
+    #Maximum surface blocks transformed or broken by Almighty Push per server tick.
+    # Default: 2048
+    # Range: 0 ~ 32768
+    almightyPushTerrainBudgetPerTick = 2048
+    #How many blocks the ordinary pressure front advances per server tick.
+    # Default: 5.0
+    # Range: 0.25 ~ 64.0
+    almightyPushTravelBlocksPerTick = 5.0
+    #How many blocks the mastered pressure front advances per server tick.
+    # Default: 6.0
+    # Range: 0.25 ~ 64.0
+    almightyPushTravelBlocksPerTickMastered = 6.0
+    #Base gravity chant length.
+    # Default: 30
+    # Range: 1 ~ 72000
+    baseCastTicks = 30
+    #Mastered Chant Annulment chant floor.
+    # Default: 80
+    # Range: 1 ~ 72000
+    planetaryDevastationAnnulledCastTicks = 80
+    #Planetary Devastation base chant.
+    # Default: 240
+    # Range: 1 ~ 72000
+    planetaryDevastationCastTicks = 240
+    #Core height above impact point.
+    # Default: 32
+    # Range: 4 ~ 128
+    planetaryDevastationCoreHeight = 32
+    #Mastered core height.
+    # Default: 48
+    # Range: 4 ~ 192
+    planetaryDevastationCoreHeightMastered = 48
+    #Mastered chant.
+    # Default: 160
+    # Range: 1 ~ 72000
+    planetaryDevastationMasteredCastTicks = 160
+    #Maximum destroy speed Planetary Devastation may capture. Negative/unbreakable blocks and blocks in trevolved:planetary_devastation_excluded_blocks are always rejected.
+    # Default: 50.0
+    # Range: 0.0 ~ 1000000.0
+    planetaryDevastationMaximumHardness = 50.0
+    #Unmastered captured-mass safety cap. Raise cautiously on dedicated servers.
+    # Default: 32768
+    # Range: 0 ~ 262144
+    planetaryDevastationMaximumMovedBlocks = 32768
+    #Mastered captured-block safety cap. Visual shell complexity is independent of captured mass.
+    # Default: 65536
+    # Range: 0 ~ 262144
+    planetaryDevastationMaximumMovedBlocksMastered = 65536
+    #Maximum ellipsoid frontier voxels examined per tick. The runtime derives the required formation rate and clamps it to this safety budget.
+    # Default: 8192
+    # Range: 128 ~ 65536
+    planetaryDevastationScanBudgetPerTick = 8192
+
+[abilities]
+
+    [abilities.almighty_push]
+        #Controls for trevolved:almighty_push. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.almighty_push.subskills]
+
+            #Native mode 0: default. IDs/indices are not renumbered when disabled.
+            [abilities.almighty_push.subskills.default]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+    [abilities.flight]
+        #Controls for trevolved:flight. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.flight.subskills]
+
+            #Native mode 0: default. IDs/indices are not renumbered when disabled.
+            [abilities.flight.subskills.default]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+    [abilities.gravity_amplification]
+        #Controls for trevolved:gravity_amplification. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.gravity_amplification.subskills]
+
+            #Native mode 0: default. IDs/indices are not renumbered when disabled.
+            [abilities.gravity_amplification.subskills.default]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+    [abilities.gravity_circle_amplification]
+        #Controls for trevolved:gravity_circle_amplification. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.gravity_circle_amplification.subskills]
+
+            #Native mode 0: default. IDs/indices are not renumbered when disabled.
+            [abilities.gravity_circle_amplification.subskills.default]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+    [abilities.planetary_devastation]
+        #Controls for trevolved:planetary_devastation. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.planetary_devastation.subskills]
+
+            #Native mode 0: default. IDs/indices are not renumbered when disabled.
+            [abilities.planetary_devastation.subskills.default]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+    [abilities.pull]
+        #Controls for trevolved:pull. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.pull.subskills]
+
+            #Native mode 0: default. IDs/indices are not renumbered when disabled.
+            [abilities.pull.subskills.default]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+    [abilities.push]
+        #Controls for trevolved:push. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.push.subskills]
+
+            #Native mode 0: default. IDs/indices are not renumbered when disabled.
+            [abilities.push.subskills.default]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

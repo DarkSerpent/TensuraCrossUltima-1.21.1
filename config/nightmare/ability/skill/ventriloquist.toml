@@ -1,0 +1,38 @@
+#Take the Strings: reach in blocks when picking the doll or golem to control.
+stringsPickRange = 32.0
+#Take the Strings: control breaks when the doll or golem gets farther than this many blocks from your body.
+stringsMaxDistance = 64.0
+#Take the Strings: Magicules spent per second while in control.
+stringsMagiculePerSecond = 10.0
+#Take the Strings: a single hit on your body of at least this share of your max health snaps you back (0.2 = 20%).
+stringsSnapBackShare = 0.2
+#Take the Strings: ticks between attacks of the controlled doll or golem.
+stringsAttackTicks = 10
+#Marionette Strings: reach in blocks; the strings break past this distance or without line of sight.
+marionetteRange = 24.0
+#Marionette Strings: the target's EP must be below this share of yours (0.5 = 50%).
+marionetteEpShare = 0.5
+#Marionette Strings: Magicules spent per second, as a share of the target's EP (0.02 = 2%).
+marionetteCostShare = 0.02
+#Marionette Strings: top speed in blocks per tick the target is dragged at.
+marionetteSpeed = 0.35
+#Marionette Strings: ticks between the target's forced attacks.
+marionetteAttackTicks = 15
+#Doll Theater: your dolls within this many blocks join in.
+theaterRadius = 24.0
+#Doll Theater: how many dolls perform at most.
+theaterDolls = 3
+#Doll Theater: cooldown in seconds.
+theaterCooldownSeconds = 30
+#Doll Theater: damage multiplier of each doll's strike.
+theaterDamageMultiplier = 1.5
+#Doll Theater: ticks between one doll's strike and the next doll's entrance.
+theaterStepTicks = 10
+#Strings Attached: your dolls and golems within this many blocks are empowered and can take hits for you.
+attachedRadius = 24.0
+#Strings Attached: damage bonus of your dolls and golems (0.2 = +20%).
+attachedDamageBonus = 0.2
+#Strings Attached: share of each hit on you that your nearest doll takes instead (0.3 = 30%).
+attachedRedirectShare = 0.3
+#Recall: your dolls and golems within this many blocks are pulled back to you.
+recallRadius = 128.0

@@ -1,0 +1,162 @@
+#Balance revision this file was last brought up to. Lower values are upgraded to the current balance once on load.
+balanceRevision = 1
+#Magicules spent to obtain Chastiefol once Disaster is mastered.
+epAcquirement = 100000.0
+#Only Fairies can acquire Chastiefol and awaken its forms. When false, anyone wields every form.
+fairiesOnly = true
+#Extra power per Fairy rank above Lesser Fairy (damage and healing scale by 1 + this per rank).
+rankPower = 0.25
+#Power multiplier once Chastiefol is mastered.
+masteredPower = 1.25
+#Pillow: magicule cost.
+pillowCost = 100.0
+#Pillow: cooldown in ticks.
+pillowCooldown = 20
+#Pillow: ticks it stays out. 0 keeps it until recalled.
+pillowDuration = 0
+#Pillow: flying speed while ridden, in blocks per tick.
+pillowSpeed = 0.55
+#Pillow: share of damage from the front it soaks up while shielding you (0..1).
+pillowGuardReduction = 0.6
+#Pillow: knockback you still take while it shields you (0..1).
+pillowGuardKnockback = 0.2
+#Form One, Chastiefol: magicule cost.
+spearCost = 1500.0
+#Form One, Chastiefol: cooldown in ticks.
+spearCooldown = 40
+#Form One, Chastiefol: damage per pierce.
+spearDamage = 180.0
+#Form One, Chastiefol: flight speed in blocks per tick.
+spearSpeed = 1.8
+#Form One, Chastiefol: how hard it turns toward its target each tick (0..1).
+spearHoming = 0.22
+#Form One, Chastiefol: ticks it may fly before it turns home.
+spearFlight = 50
+#Bumblebee: magicule cost.
+beeCost = 1200.0
+#Bumblebee: cooldown in ticks.
+beeCooldown = 200
+#Bumblebee: times Chastiefol strikes through its target before it returns.
+beeStrikes = 8
+#Bumblebee: damage per strike.
+beeDamage = 120.0
+#Bumblebee: flight speed in blocks per tick.
+beeSpeed = 2.6
+#Bumblebee: how far past its target it swings out before turning for the next strike.
+beeRadius = 5.0
+#Form Two, Guardian: magicule cost.
+guardianCost = 4000.0
+#Form Two, Guardian: cooldown in ticks.
+guardianCooldown = 600
+#Form Two, Guardian: ticks it stands guard.
+guardianDuration = 600
+#Form Two, Guardian: health. Blows it parries for you and hits it takes itself both wear it down.
+guardianHealth = 100.0
+#Form Two, Guardian: health once Chastiefol is mastered.
+guardianHealthMastered = 500.0
+#Form Two, Guardian: ticks it holds whatever you sneak-punch.
+guardianHoldTicks = 100
+#Form Two, Guardian: squeeze damage per second while holding.
+guardianHoldDamage = 8.0
+#Form Two, Guardian: how far from the Guardian a sneak-punched target can be grabbed.
+guardianGrabRange = 12.0
+#Form Two, Guardian: widest target it can grab, in blocks.
+guardianGrabMaxSize = 3.0
+#Form Two, Guardian: damage per punch.
+guardianDamage = 80.0
+#Form Two, Guardian: reach of its punches in blocks.
+guardianReach = 5.0
+#Form Two, Guardian: ticks between punches.
+guardianPunchInterval = 14
+#Form Two, Guardian: height in blocks.
+guardianHeight = 4.5
+#Form Two, Guardian: blocks in front of its owner it stands.
+guardianDistance = 1.8
+#Form Two, Guardian: blocks to its owner's right it stands, so it doesn't block your view. Negative stands it to the left.
+guardianSide = 2.8
+#Form Two, Guardian: cold damage wears it down this many times faster, and it cannot parry cold.
+guardianColdMultiplier = 2.0
+#Form Two, Guardian: blunt blows wear it down at this fraction of their damage.
+guardianBluntMultiplier = 0.4
+#Form Three, Fossilization: magicule cost.
+fossilCost = 3000.0
+#Form Three, Fossilization: cooldown in ticks.
+fossilCooldown = 300
+#Form Three, Fossilization: damage when it pierces.
+fossilDamage = 190.0
+#Form Three, Fossilization: seconds of petrification.
+fossilSeconds = 10
+#Form Three, Fossilization: ticks it stays lodged in its victim.
+fossilLodgeTicks = 30
+#Form Four, Sunflower: magicule cost.
+sunflowerCost = 8000.0
+#Form Four, Sunflower: cooldown in ticks.
+sunflowerCooldown = 900
+#Form Four, Sunflower: ticks it fires once in bloom.
+sunflowerDuration = 200
+#Form Four, Sunflower: ticks between shots.
+sunflowerInterval = 10
+#Form Four, Sunflower: damage per shot.
+sunflowerDamage = 250.0
+#Form Four, Sunflower: blast radius of each shot.
+sunflowerRadius = 2.5
+#Form Four, Sunflower: height of the shoot in blocks.
+sunflowerHeight = 12.0
+#Form Four, Sunflower: range it fires at.
+sunflowerRange = 40.0
+#Form Four, Sunflower: whether its shots break blocks (also needs mobGriefing).
+sunflowerBreaksBlocks = false
+#Form Five, Increase: magicule cost.
+increaseCost = 5000.0
+#Form Five, Increase: cooldown in ticks.
+increaseCooldown = 400
+#Form Five, Increase: ticks the blades stay under your command.
+increaseDuration = 300
+#Form Five, Increase: blades in the army.
+increaseCount = 36
+#Form Five, Increase: damage per pass of the swarm.
+increaseDamage = 100.0
+#Form Five, Increase: radius of the swarm.
+increaseRadius = 2.6
+#Form Five, Increase: swarm speed in blocks per tick.
+increaseSpeed = 1.5
+#Form Five, Increase: farthest you can send the swarm. Hold the skill key and scroll to set how far out it fights.
+increaseRange = 32.0
+#Form Five, Increase: nearest you can scroll the swarm in.
+increaseMinRange = 3.0
+#Form Five, Increase: fighting distance the swarm starts at before you scroll it.
+increaseDefaultRange = 12.0
+#Fight Fire with Fire: magicule cost. Requires Chastiefol to be mastered.
+fightFireCost = 12000.0
+#Fight Fire with Fire: cooldown in ticks.
+fightFireCooldown = 600
+#Fight Fire with Fire: damage each spearhead deals to whatever it slams into. Around 60% of the barrage is aimed at the target.
+fightFireSpearDamage = 120.0
+#Fight Fire with Fire: radius the rest of the barrage rains across around the target.
+fightFireRadius = 5.0
+#Fight Fire with Fire: whether the spearheads break the blocks they land on (also needs mobGriefing).
+fightFireBreaksBlocks = false
+#Form Seven, Luminosity: magicule cost.
+luminosityCost = 300.0
+#Form Seven, Luminosity: cooldown in ticks.
+luminosityCooldown = 40
+#Form Seven, Luminosity: ticks it shines. 0 keeps it until recalled.
+luminosityDuration = 0
+#Form Seven, Luminosity: radius in which it reveals hostile and invisible creatures.
+luminosityRadius = 16.0
+#Form Eight, Pollen Garden: magicule cost.
+pollenCost = 10000.0
+#Form Eight, Pollen Garden: cooldown in ticks.
+pollenCooldown = 1200
+#Form Eight, Pollen Garden: ticks the barrier stands.
+pollenDuration = 400
+#Form Eight, Pollen Garden: radius of the barrier.
+pollenRadius = 7.0
+#Form Eight, Pollen Garden: damage the barrier absorbs before it breaks.
+pollenDurability = 5000.0
+#Form Eight, Pollen Garden: share of damage from outside it takes for those within (0..1).
+pollenReduction = 0.75
+#Form Eight, Pollen Garden: Regeneration level granted inside (1 = Regeneration I).
+pollenRegenLevel = 5
+#Form Eight, Pollen Garden: barrier durability spent stopping a projectile.
+pollenProjectileCost = 8.0

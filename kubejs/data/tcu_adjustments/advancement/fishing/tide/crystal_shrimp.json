@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "caught_fish": {
+      "conditions": {
+        "item": {
+          "items": "tide:crystal_shrimp"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    }
+  },
+  "requirements": [
+    [
+      "caught_fish"
+    ]
+  ]
+}

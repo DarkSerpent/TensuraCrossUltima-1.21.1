@@ -1,0 +1,690 @@
+#Controls for trevolved:adventurer. Detailed balance is in this same file.
+#Allow learning this ability. Existing ownership is kept.
+allowAcquisition = true
+#Allow active subskills. Inherent passives are not removed.
+allowActiveUse = true
+#Allow enabling its native passive toggle. Switching it off remains allowed.
+allowPassiveToggle = true
+#Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+allowTerrainDamage = true
+#Adventurer/Kazuma against MOBS: true steals/removes their skill; false copies and leaves it intact. Independent of the skillSteal gamerule.
+mobSkillSteal = true
+#Adventurer/Kazuma against PLAYERS: true steals/removes their skill; false copies and leaves it intact. Independent of the skillSteal gamerule.
+playerSkillSteal = true
+#Block Adventurer/Kazuma skill stealing AND copying from tamed/owned creatures or any custom-named mob. Players are unaffected.
+protectTamedOrNamedPetsFromSkillTheft = false
+
+#Shared skill steal/copy blacklist for Adventurer and Fortune God, Kazuma. Item Pickpocket is unchanged.
+#Empty lists preserve existing behavior. These restrictions never enable otherwise ineligible skills.
+[skillBlacklist]
+    #Categories to forbid: COMMON, EXTRA, INTRINSIC, UNIQUE, ULTIMATE, RESISTANCE (case-insensitive).
+    blockedCategories = []
+    #Exact skill registry IDs to forbid, e.g. trevolved:water_saint. Works with other mods too.
+    #Use namespace:id, not display names. Unknown valid IDs are harmless.
+    blockedSkillIds = []
+
+[evolution]
+
+    [evolution.adventurer]
+        #Required effective maximum EP.
+        # Default: 2000000
+        # Range: 0 ~ 9223372036854775807
+        maximumEp = 2000000
+        #Primary progression requirement.
+        # Default: 30
+        # Range: > 0
+        requirementA = 30
+        #Secondary progression requirement.
+        # Default: 300
+        # Range: > 0
+        requirementB = 300
+        #Tertiary progression requirement.
+        # Default: 250
+        # Range: > 0
+        requirementC = 250
+        #Optional fourth progression requirement.
+        # Default: 10
+        # Range: > 0
+        requirementD = 10
+        #Require the Unique skill to be mastered.
+        requireMastery = true
+
+[adventurer]
+    #Maximum health per Vitality point.
+    # Default: 1.0
+    # Range: 0.0 ~ 1.0E9
+    vitalityHealthPerPoint = 1.0
+    #Vitality points required for each spiritual-health increase.
+    # Default: 5
+    # Range: 1 ~ 1000000
+    vitalityPointsPerSoulHealth = 5
+    #Maximum spiritual health granted at each Vitality milestone.
+    # Default: 1.0
+    # Range: 0.0 ~ 1.0E9
+    vitalitySoulHealthPerMilestone = 1.0
+    #Deadly Backstab minimum damage.
+    # Default: 300.0
+    # Range: 0.0 ~ 1.0E9
+    deadlyBackstabMinimumDamage = 300.0
+    #Mastered minimum damage.
+    # Default: 450.0
+    # Range: 0.0 ~ 1.0E9
+    deadlyBackstabMinimumDamageMastered = 450.0
+    #Maximum Status damage reduction.
+    # Default: 0.9
+    # Range: 0.0 ~ 1.0
+    durabilityDamageReductionCap = 0.9
+    #Damage reduction per Durability point.
+    # Default: 0.0025
+    # Range: 0.0 ~ 1.0
+    durabilityDamageReductionPerPoint = 0.0025
+    #Fortune God Deadly Backstab minimum damage.
+    # Default: 800.0
+    # Range: 0.0 ~ 1.0E9
+    fortuneDeadlyBackstabMinimumDamage = 800.0
+    #Mastered minimum damage.
+    # Default: 1200.0
+    # Range: 0.0 ~ 1.0E9
+    fortuneDeadlyBackstabMinimumDamageMastered = 1200.0
+    #Magic damage multiplier per Intelligence point.
+    # Default: 0.0075
+    # Range: 0.0 ~ 100.0
+    intelligenceMagicDamagePerPoint = 0.0075
+    #Additive attack damage per Strength point.
+    # Default: 1.0
+    # Range: 0.0 ~ 1000000.0
+    strengthAttackDamagePerPoint = 1.0
+    #Battlewill/Aura damage multiplier per Strength point.
+    # Default: 0.0075
+    # Range: 0.0 ~ 100.0
+    strengthAuraDamagePerPoint = 0.0075
+    #Skill theft cooldown when its menu is interrupted.
+    # Default: 240
+    # Range: 0 ~ 86400
+    theftCancelledByDamageCooldownSeconds = 240
+    #Mastered Deadly Backstab cooldown.
+    # Default: 7
+    # Range: 0 ~ 86400
+    deadlyBackstabCooldownMasteredSeconds = 7
+    #Deadly Backstab cooldown.
+    # Default: 9
+    # Range: 0 ~ 86400
+    deadlyBackstabCooldownSeconds = 9
+    #Mastered Fortune God Deadly Backstab cooldown.
+    # Default: 7
+    # Range: 0 ~ 86400
+    fortuneDeadlyBackstabCooldownMasteredSeconds = 7
+    #Fortune God Deadly Backstab cooldown.
+    # Default: 9
+    # Range: 0 ~ 86400
+    fortuneDeadlyBackstabCooldownSeconds = 9
+    #Mastered Fortune God Lurk cooldown.
+    # Default: 20
+    # Range: 0 ~ 86400
+    fortuneLurkCooldownMasteredSeconds = 20
+    #Fortune God Lurk cooldown after concealment ends.
+    # Default: 30
+    # Range: 0 ~ 86400
+    fortuneLurkCooldownSeconds = 30
+    #Cooldown when Fortune God's Pickpocket menu is interrupted.
+    # Default: 120
+    # Range: 0 ~ 86400
+    fortunePickpocketInterruptedCooldownSeconds = 120
+    #Mastered ordinary theft cooldown.
+    # Default: 60
+    # Range: 0 ~ 86400
+    fortuneStealCooldownMasteredSeconds = 60
+    #Fortune God ordinary theft cooldown.
+    # Default: 75
+    # Range: 0 ~ 86400
+    fortuneStealCooldownSeconds = 75
+    #Ultimate theft cooldown.
+    # Default: 600
+    # Range: 0 ~ 86400
+    fortuneUltimateTheftCooldownSeconds = 600
+    #Unique theft cooldown.
+    # Default: 300
+    # Range: 0 ~ 86400
+    fortuneUniqueTheftCooldownSeconds = 300
+    #Maximum native acquisition cost unlocked per Intelligence reward choice.
+    # Default: 50000.0
+    # Range: 1.0 ~ 1.0E12
+    intelligenceMagicAcquireCostPerRewardTier = 50000.0
+    #Mastered Lurk cooldown.
+    # Default: 30
+    # Range: 0 ~ 86400
+    lurkCooldownMasteredSeconds = 30
+    #Lurk cooldown after concealment ends.
+    # Default: 45
+    # Range: 0 ~ 86400
+    lurkCooldownSeconds = 45
+    #Mastered Adventurer Steal cooldown.
+    # Default: 90
+    # Range: 0 ~ 86400
+    stealCooldownMasteredSeconds = 90
+    #Adventurer Steal cooldown.
+    # Default: 120
+    # Range: 0 ~ 86400
+    stealCooldownSeconds = 120
+    #Maximum spell EP requirement unlocked per Intelligence reward choice. The player must also personally meet that requirement.
+    # Default: 250000
+    # Range: 1 ~ 9223372036854775807
+    intelligenceMagicRequiredEpPerRewardTier = 250000
+    #Required Ultimate theft EP ratio.
+    # Default: 3.0
+    # Range: 0.0 ~ 100.0
+    ultimateTheftRequiredEpRatio = 3.0
+    #Required wielder-to-target maximum EP ratio.
+    # Default: 2.0
+    # Range: 0.0 ~ 100.0
+    uniqueTheftRequiredEpRatio = 2.0
+    #Adventurer dash range.
+    # Default: 12
+    # Range: 1 ~ 128
+    deadlyBackstabRange = 12
+    #Mastered Adventurer dash range.
+    # Default: 16
+    # Range: 1 ~ 128
+    deadlyBackstabRangeMastered = 16
+    #Fortune God Deadly Backstab target range.
+    # Default: 20
+    # Range: 1 ~ 256
+    fortuneDeadlyBackstabRange = 20
+    #Mastered Fortune God Deadly Backstab range.
+    # Default: 24
+    # Range: 1 ~ 256
+    fortuneDeadlyBackstabRangeMastered = 24
+    #Mastered Fortune God Lurk duration.
+    # Default: 30
+    # Range: 1 ~ 3600
+    fortuneLurkDurationMasteredSeconds = 30
+    #Fortune God Lurk duration.
+    # Default: 20
+    # Range: 1 ~ 3600
+    fortuneLurkDurationSeconds = 20
+    #Mastered Lurk duration.
+    # Default: 18
+    # Range: 1 ~ 3600
+    lurkDurationMasteredSeconds = 18
+    #Lurk duration.
+    # Default: 12
+    # Range: 1 ~ 3600
+    lurkDurationSeconds = 12
+    #Target range for both Steal modes.
+    # Default: 8
+    # Range: 1 ~ 64
+    stealRange = 8
+    #Adventurer melee and projectile dodge percentage.
+    # Default: 20.0
+    # Range: 0.0 ~ 100.0
+    adventurerDodgeChance = 20.0
+    #Mastered Adventurer dodge percentage.
+    # Default: 25.0
+    # Range: 0.0 ~ 100.0
+    adventurerDodgeChanceMastered = 25.0
+    #Luck effect amplifier granted by Adventurer.
+    # Default: 2
+    # Range: 0 ~ 254
+    adventurerLuckEffectAmplifier = 2
+    #Mastered Luck effect amplifier.
+    # Default: 4
+    # Range: 0 ~ 254
+    adventurerLuckEffectAmplifierMastered = 4
+    #Duration used when refreshing Adventurer's owned Luck effect.
+    # Default: 220
+    # Range: 20 ~ 12000
+    adventurerLuckEffectRefreshTicks = 220
+    #Permanent maximum Aura purchased by one Status point. Its generated EP cannot create more Status points.
+    # Default: 25000.0
+    # Range: 0.0 ~ 1.0E12
+    auraPerStatusPoint = 25000.0
+    #Deadly Backstab melee multiplier.
+    # Default: 5.0
+    # Range: 0.0 ~ 1000.0
+    deadlyBackstabAttackMultiplier = 5.0
+    #Mastered melee multiplier.
+    # Default: 7.0
+    # Range: 0.0 ~ 1000.0
+    deadlyBackstabAttackMultiplierMastered = 7.0
+    #Mastered strike delay.
+    # Default: 1
+    # Range: 0 ~ 200
+    deadlyBackstabDelayMasteredTicks = 1
+    #Delay between appearing behind the target and striking.
+    # Default: 2
+    # Range: 0 ~ 200
+    deadlyBackstabDelayTicks = 2
+    #Deadly Backstab horizontal knockback.
+    # Default: 1.0
+    # Range: 0.0 ~ 100.0
+    deadlyBackstabKnockback = 1.0
+    #Mastered horizontal knockback.
+    # Default: 1.4
+    # Range: 0.0 ~ 100.0
+    deadlyBackstabKnockbackMastered = 1.4
+    #Mastered stun duration in ticks.
+    # Default: 25
+    # Range: 0 ~ 12000
+    deadlyBackstabStunMasteredTicks = 25
+    #Deadly Backstab stun duration in ticks.
+    # Default: 15
+    # Range: 0 ~ 12000
+    deadlyBackstabStunTicks = 15
+    #Deadly Backstab vertical knockback.
+    # Default: 0.15
+    # Range: 0.0 ~ 10.0
+    deadlyBackstabVerticalKnockback = 0.15
+    #Current energy stolen per hit.
+    # Default: 0.02
+    # Range: 0.0 ~ 1.0
+    drainTouchCurrentFraction = 0.02
+    #Mastered current energy stolen per hit.
+    # Default: 0.03
+    # Range: 0.0 ~ 1.0
+    drainTouchCurrentFractionMastered = 0.03
+    #Durability points per armor milestone.
+    # Default: 20
+    # Range: 1 ~ 1000000
+    durabilityArmorMilestoneInterval = 20
+    #Armor granted at each Durability milestone.
+    # Default: 25.0
+    # Range: 0.0 ~ 1.0E9
+    durabilityArmorPerMilestone = 25.0
+    #Enable Fortune God's uncapped Status system.
+    enableStatusMenu = true
+    #Fortune God Deadly Backstab attack-damage multiplier.
+    # Default: 8.0
+    # Range: 0.0 ~ 1000.0
+    fortuneDeadlyBackstabAttackMultiplier = 8.0
+    #Mastered attack-damage multiplier.
+    # Default: 10.0
+    # Range: 0.0 ~ 1000.0
+    fortuneDeadlyBackstabAttackMultiplierMastered = 10.0
+    #Mastered Fortune God strike delay.
+    # Default: 1
+    # Range: 0 ~ 200
+    fortuneDeadlyBackstabDelayMasteredTicks = 1
+    #Delay before Fortune God's strike lands.
+    # Default: 2
+    # Range: 0 ~ 200
+    fortuneDeadlyBackstabDelayTicks = 2
+    #Maximum-EP advantage required for unconditional execution.
+    # Default: 3.0
+    # Range: 0.0 ~ 1000.0
+    fortuneDeadlyBackstabExecuteEpRatio = 3.0
+    #Fortune God Deadly Backstab horizontal knockback.
+    # Default: 1.5
+    # Range: 0.0 ~ 100.0
+    fortuneDeadlyBackstabKnockback = 1.5
+    #Mastered horizontal knockback.
+    # Default: 2.0
+    # Range: 0.0 ~ 100.0
+    fortuneDeadlyBackstabKnockbackMastered = 2.0
+    #Mastered stun duration in ticks.
+    # Default: 30
+    # Range: 0 ~ 12000
+    fortuneDeadlyBackstabStunMasteredTicks = 30
+    #Fortune God Deadly Backstab stun duration in ticks.
+    # Default: 20
+    # Range: 0 ~ 12000
+    fortuneDeadlyBackstabStunTicks = 20
+    #Fortune God Deadly Backstab vertical knockback.
+    # Default: 0.2
+    # Range: 0.0 ~ 10.0
+    fortuneDeadlyBackstabVerticalKnockback = 0.2
+    #Hunger points transferred by Drain Touch between players.
+    # Default: 1
+    # Range: 0 ~ 20
+    fortuneDrainTouchFoodTransfer = 1
+    #Native Presence Concealment granted by Fortune God Lurk.
+    # Default: 1000.0
+    # Range: 0.0 ~ 1.0E9
+    fortuneLurkPresenceConcealment = 1000.0
+    #Fortune God melee and projectile dodge percentage.
+    # Default: 30.0
+    # Range: 0.0 ~ 100.0
+    fortunePassiveDodgeChance = 30.0
+    #Mastered dodge percentage.
+    # Default: 35.0
+    # Range: 0.0 ~ 100.0
+    fortunePassiveDodgeChanceMastered = 35.0
+    #Additive vanilla Luck granted by Fortune God.
+    # Default: 7.0
+    # Range: 0.0 ~ 1000000.0
+    fortunePassiveLuck = 7.0
+    #Mastered additive Luck.
+    # Default: 10.0
+    # Range: 0.0 ~ 1000000.0
+    fortunePassiveLuckMastered = 10.0
+    #Fortune God's rear-hit damage multiplier.
+    # Default: 3.0
+    # Range: 1.0 ~ 1000.0
+    fortunePassiveRearMultiplier = 3.0
+    #Mastered Fortune God rear-hit multiplier.
+    # Default: 4.0
+    # Range: 1.0 ~ 1000.0
+    fortunePassiveRearMultiplierMastered = 4.0
+    #Magicule regeneration multiplier per Intelligence point.
+    # Default: 0.01
+    # Range: 0.0 ~ 100.0
+    intelligenceMagiculeRegenPerPoint = 0.01
+    #Intelligence points required for each +1 native Tensura learning speed.
+    # Default: 5
+    # Range: 1 ~ 1000000
+    intelligencePointsPerLearningSpeed = 5
+    #Vanilla Luck attribute per Luck point.
+    # Default: 1.0
+    # Range: 0.0 ~ 1000000.0
+    luckAttributePerPoint = 1.0
+    #Maximum dodge percentage supplied by Status Luck.
+    # Default: 75.0
+    # Range: 0.0 ~ 100.0
+    luckDodgeCap = 75.0
+    #Melee and projectile dodge percentage per Luck point.
+    # Default: 0.25
+    # Range: 0.0 ~ 100.0
+    luckDodgePerPoint = 0.25
+    #Native Presence Concealment granted by Adventurer Lurk.
+    # Default: 100.0
+    # Range: 0.0 ~ 1.0E9
+    lurkPresenceConcealment = 100.0
+    #Permanent maximum Magicules purchased by one Status point. Its generated EP cannot create more Status points.
+    # Default: 25000.0
+    # Range: 0.0 ~ 1.0E12
+    magiculesPerStatusPoint = 25000.0
+    #Maximum baseline resources one Fortune God may steal from one victim.
+    # Default: 0.15
+    # Range: 0.0 ~ 0.95
+    maximumVictimLossFraction = 0.15
+    #Mastered victim loss limit.
+    # Default: 0.2
+    # Range: 0.0 ~ 0.95
+    maximumVictimLossFractionMastered = 0.2
+    #Minimum recorded baseline retained by a victim.
+    # Default: 0.5
+    # Range: 0.01 ~ 1.0
+    minimumVictimBaselineRetention = 0.5
+    #Rear-hit damage multiplier.
+    # Default: 2.0
+    # Range: 1.0 ~ 100.0
+    passiveRearMultiplier = 2.0
+    #Mastered rear-hit multiplier.
+    # Default: 2.5
+    # Range: 1.0 ~ 100.0
+    passiveRearMultiplierMastered = 2.5
+    #Permanent maximum Magicule/Aura stolen per hit.
+    # Default: 5.0E-4
+    # Range: 0.0 ~ 0.1
+    permanentMaximumEnergyDrainFraction = 5.0E-4
+    #Mastered permanent drain.
+    # Default: 7.5E-4
+    # Range: 0.0 ~ 0.1
+    permanentMaximumEnergyDrainFractionMastered = 7.5E-4
+    #Attack-speed multiplier per Speed point.
+    # Default: 0.005
+    # Range: 0.0 ~ 100.0
+    speedAttackSpeedPerPoint = 0.005
+    #Maximum native dodge-negation percentage from Status.
+    # Default: 100.0
+    # Range: 0.0 ~ 100.0
+    speedDodgeNegateCap = 100.0
+    #Speed points per dodge-negation milestone.
+    # Default: 20
+    # Range: 1 ~ 1000000
+    speedDodgeNegateMilestoneInterval = 20
+    #Native dodge-negation percentage gained per milestone.
+    # Default: 5.0
+    # Range: 0.0 ~ 100.0
+    speedDodgeNegatePerMilestone = 5.0
+    #Additive movement speed per Speed point.
+    # Default: 0.001
+    # Range: 0.0 ~ 100.0
+    speedMovementPerPoint = 0.001
+    #Maximum EP represented by one uncapped Status point.
+    # Default: 25000.0
+    # Range: 1.0 ~ 1.0E12
+    statusMaximumEpPerPoint = 25000.0
+    #Duration used when refreshing Fortune God's owned Strengthen effect.
+    # Default: 220
+    # Range: 20 ~ 12000
+    statusStrengthEffectRefreshTicks = 220
+    #Strength Status points required for each Strengthen effect level.
+    # Default: 10
+    # Range: 1 ~ 1000000
+    statusStrengthPointsPerStrengthenLevel = 10
+    #Aura regeneration multiplier per Strength point.
+    # Default: 0.01
+    # Range: 0.0 ~ 100.0
+    strengthAuraRegenPerPoint = 0.01
+    #Maximum continuous regeneration upkeep reduction supplied by Vitality.
+    # Default: 0.5
+    # Range: 0.0 ~ 1.0
+    vitalityRegenerationEfficiencyCap = 0.5
+    #Fraction of continuous regeneration upkeep refunded per Vitality point.
+    # Default: 0.005
+    # Range: 0.0 ~ 1.0
+    vitalityRegenerationEfficiencyPerPoint = 0.005
+
+[abilities]
+
+    [abilities.fortune_god_kazuma]
+        #Controls for trevolved:fortune_god_kazuma. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.fortune_god_kazuma.subskills]
+
+            #Native mode 3: adventurer.deadly_backstab. IDs/indices are not renumbered when disabled.
+            [abilities.fortune_god_kazuma.subskills.adventurer_deadly_backstab]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 2: adventurer.lurk. IDs/indices are not renumbered when disabled.
+            [abilities.fortune_god_kazuma.subskills.adventurer_lurk]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 1: adventurer.pickpocket. IDs/indices are not renumbered when disabled.
+            [abilities.fortune_god_kazuma.subskills.adventurer_pickpocket]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 0: adventurer.steal_skill. IDs/indices are not renumbered when disabled.
+            [abilities.fortune_god_kazuma.subskills.adventurer_steal_skill]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 4: fortune_god.status_menu. IDs/indices are not renumbered when disabled.
+            [abilities.fortune_god_kazuma.subskills.fortune_god_status_menu]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+[subskills]
+
+    #Native mode 3: adventurer.deadly_backstab. IDs/indices are not renumbered when disabled.
+    [subskills.adventurer_deadly_backstab]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+    #Native mode 2: adventurer.lurk. IDs/indices are not renumbered when disabled.
+    [subskills.adventurer_lurk]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+    #Native mode 1: adventurer.pickpocket. IDs/indices are not renumbered when disabled.
+    [subskills.adventurer_pickpocket]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+    #Native mode 0: adventurer.steal_skill. IDs/indices are not renumbered when disabled.
+    [subskills.adventurer_steal_skill]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

@@ -1,0 +1,48 @@
+#Death Knight max health.
+knightHealth = 600.0
+#Death Knight armor.
+knightArmor = 24.0
+#Death Knight greatsword cleave damage.
+knightCleaveDamage = 60.0
+#Ticks between Death Knight cleaves.
+knightCleaveCooldown = 30
+#Fraction (0..1) of damage the Death Knight ignores while its shield is raised.
+knightGuardReduction = 0.7
+#Death Knight shield bash damage at the end of a guard.
+knightBashDamage = 35.0
+#Ticks between Death Knight guards.
+knightGuardCooldown = 160
+#Imitation Lich max health.
+lichHealth = 420.0
+#Imitation Lich skull bolt damage.
+lichBoltDamage = 55.0
+#Imitation Lich skull bolt blast radius.
+lichBoltRadius = 2.0
+#Ticks between Imitation Lich skull bolts.
+lichBoltCooldown = 40
+#Imitation Lich curse damage.
+lichCurseDamage = 30.0
+#Ticks between Imitation Lich curses.
+lichCurseCooldown = 180
+#Skeletons an Imitation Lich raises per cast.
+lichRaiseCount = 2
+#Most raised skeletons an Imitation Lich keeps at once.
+lichRaiseMax = 4
+#Seconds a raised skeleton lasts.
+lichRaiseLife = 60
+#Ticks between Imitation Lich raises.
+lichRaiseCooldown = 400
+#Death Reaper max health.
+reaperHealth = 1200.0
+#Death Reaper armor.
+reaperArmor = 18.0
+#Death Reaper reaping sweep damage.
+reaperReapDamage = 110.0
+#Fraction (0..1) of reap damage the Death Reaper heals.
+reaperLifesteal = 0.2
+#Ticks between Death Reaper reaps.
+reaperReapCooldown = 34
+#Ticks between Death Reaper phase steps behind its prey.
+reaperPhaseCooldown = 120
+#Soul Points the Death Reaper's owner gains for every kill it lands.
+reaperHarvestSouls = 5

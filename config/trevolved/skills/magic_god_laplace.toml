@@ -1,0 +1,240 @@
+#Controls for trevolved:magic_god_laplace. Detailed balance is in this same file.
+#Allow learning this ability. Existing ownership is kept.
+allowAcquisition = true
+#Allow active subskills. Inherent passives are not removed.
+allowActiveUse = true
+#Allow enabling its native passive toggle. Switching it off remains allowed.
+allowPassiveToggle = true
+#Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+allowTerrainDamage = true
+
+[evolutionRequirements]
+
+    [evolutionRequirements.magicGodLaplace]
+        #Required Existence Points.
+        # Default: 2000000
+        # Range: 0 ~ 9223372036854775807
+        ep = 2000000
+        #Primary tracked requirement; see publication CONFIGURATION.md for its meaning.
+        # Default: 125
+        # Range: > 0
+        requirementA = 125
+        #Secondary tracked requirement; zero disables this numeric gate where unused.
+        # Default: 100
+        # Range: > 0
+        requirementB = 100
+        #Tertiary tracked requirement; zero disables this numeric gate where unused.
+        # Default: 20
+        # Range: > 0
+        requirementC = 20
+        #Require every prerequisite skill in this route to be mastered.
+        requireMastery = true
+
+    [evolutionRequirements.magicGodLaplaceCreation]
+        #Permanently created non-Magic techniques required for Magic God, Laplace.
+        # Default: 20
+        # Range: > 0
+        createdTechniques = 20
+        #Successfully disassembled magical formulas required for Magic God, Laplace.
+        # Default: 500
+        # Range: > 0
+        disassembledFormulas = 500
+
+[general]
+    #Fraction of ordinary Aura regeneration retained by Magic God, Laplace.
+    # Default: 0.25
+    # Range: 0.0 ~ 1000.0
+    magicGodAuraRegenMultiplier = 0.25
+    #Exact maximum Aura reserve enforced by Magic God, Laplace after all competing modifiers.
+    # Default: 10000.0
+    # Range: 0.0 ~ 1.0E12
+    magicGodAuraReserve = 10000.0
+
+[familyMultipliers]
+
+    [familyMultipliers.magicGodLaplace]
+        #Family outgoing-damage multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        damageMultiplier = 1.0
+        #Family native-cooldown multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Family Aura-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        auraCostMultiplier = 1.0
+        #Family Magicule-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        magiculeCostMultiplier = 1.0
+        #Family targeting/radius multiplier.
+        # Default: 1.0
+        # Range: 0.1 ~ 20.0
+        rangeMultiplier = 1.0
+
+[subskills]
+
+    #Native mode 2: laplace.demon_transform. IDs/indices are not renumbered when disabled.
+    [subskills.laplace_demon_transform]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+    #Native mode 4: laplace.dual_soul_technique. IDs/indices are not renumbered when disabled.
+    [subskills.laplace_dual_soul_technique]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+    #Native mode 0: laplace.formula_disassembly. IDs/indices are not renumbered when disabled.
+    [subskills.laplace_formula_disassembly]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+    #Native mode 5: laplace.magic_dominion. IDs/indices are not renumbered when disabled.
+    [subskills.laplace_magic_dominion]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+    #Native mode 6: laplace.refinery. IDs/indices are not renumbered when disabled.
+    [subskills.laplace_refinery]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+    #Native mode 1: laplace.technique_copy. IDs/indices are not renumbered when disabled.
+    [subskills.laplace_technique_copy]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+    #Native mode 3: laplace.technique_creation. IDs/indices are not renumbered when disabled.
+    [subskills.laplace_technique_creation]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

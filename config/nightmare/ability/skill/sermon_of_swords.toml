@@ -1,0 +1,48 @@
+#Magicules spent to acquire Sermon of Swords.
+epAcquirement = 65000.0
+#Mastery points needed to master Sermon of Swords.
+maxMastery = 1000
+#Mastery points per tier of the bound sword: Low Magisteel, High Magisteel, Mithril, Orichalcum, Pure Magisteel, Adamantite.
+masteryPerTier = 200
+#Ticks between mastery points earned by striking with the bound sword.
+strikeMasteryTicks = 10
+#Sword Summoning: mastery points earned each time the bound sword is summoned (scaled by mastery gain).
+summonMasteryPoints = 5.0
+#Sword Summoning: cooldown in seconds after summoning the bound sword. Dismissing it is free.
+summonCooldown = 10
+#Sword Summoning: seconds the bound sword stays before returning to the Sermon (0 = until dismissed).
+summonDuration = 0
+#Strengthening slots before mastery.
+strengtheningSlots = 1
+#Strengthening slots once mastered.
+strengtheningSlotsMastered = 3
+#Arsenal slots before mastery.
+arsenalSlots = 4
+#Arsenal slots once mastered (the weapons Sermon of Swords sends flying).
+arsenalSlotsMastered = 8
+#Sermon: ticks of holding before the swords take flight.
+sermonWindupTicks = 20
+#Sermon: magicules drained every second while it is up.
+sermonDrainPerSecond = 1500.0
+#Sermon: cooldown in seconds once it ends.
+sermonCooldown = 12
+#Sermon (Attack): orbit radius in blocks.
+attackRadius = 2.2
+#Sermon (Attack): ticks before the same sword can strike the same target again.
+attackHitTicks = 10
+#Sermon (Attack): reach in blocks of each orbiting sword's hitbox around its blade.
+attackHitRadius = 0.85
+#Sermon (Attack): on release, the orbiting swords fire at the crosshair. Damage multiplier on each weapon's attack damage.
+volleyDamageMultiplier = 1.5
+#Sermon (Attack): speed of the fired swords in blocks per tick.
+volleySpeed = 2.2
+#Sermon (Attack): ticks a fired sword flies before vanishing.
+volleyLifeTicks = 60
+#Sermon (Attack): aiming range in blocks for the fired swords.
+volleyRange = 48.0
+#Sermon (Attack): extra damage taken while it is up (0.25 = +25%).
+attackDamageTaken = 0.25
+#Sermon (Defend): damage taken is reduced by this share (0.4 = -40%).
+defendDamageReduction = 0.4
+#Sermon (Defend): damage dealt is reduced by this share (0.3 = -30%).
+defendDamagePenalty = 0.3

@@ -1,0 +1,129 @@
+{
+  "content": {
+    "tensura_low_quality_magic_crystal": {
+      "type": "item",
+      "content": "tensura:low_quality_magic_crystal",
+      "amount": {
+        "min": 8,
+        "max": 32
+      },
+      "unitWorth": 80,
+      "weightMult": 0.35
+    },
+    "tensura_medium_quality_magic_crystal": {
+      "type": "item",
+      "rarity": "UNCOMMON",
+      "content": "tensura:medium_quality_magic_crystal",
+      "amount": {
+        "min": 4,
+        "max": 16
+      },
+      "unitWorth": 300,
+      "weightMult": 0.25
+    },
+    "tensura_high_quality_magic_crystal": {
+      "type": "item",
+      "rarity": "RARE",
+      "content": "tensura:high_quality_magic_crystal",
+      "amount": {
+        "min": 1,
+        "max": 8
+      },
+      "unitWorth": 1200,
+      "weightMult": 0.12
+    },
+    "tensura_slime": {
+      "type": "entity",
+      "timeMult": 6.0,
+      "content": "tensura:slime",
+      "amount": {
+        "min": 2,
+        "max": 8
+      },
+      "unitWorth": 175,
+      "weightMult": 0.35
+    },
+    "tensura_goblin": {
+      "type": "entity",
+      "timeMult": 6.0,
+      "content": "tensura:goblin",
+      "amount": {
+        "min": 2,
+        "max": 6
+      },
+      "unitWorth": 225,
+      "weightMult": 0.3
+    },
+    "tensura_direwolf": {
+      "type": "entity",
+      "timeMult": 6.0,
+      "content": "tensura:direwolf",
+      "amount": {
+        "min": 2,
+        "max": 5
+      },
+      "unitWorth": 300,
+      "weightMult": 0.25
+    },
+    "tensura_black_spider": {
+      "type": "entity",
+      "rarity": "UNCOMMON",
+      "timeMult": 6.0,
+      "content": "tensura:black_spider",
+      "amount": {
+        "min": 1,
+        "max": 4
+      },
+      "unitWorth": 450,
+      "weightMult": 0.2
+    },
+    "tensura_lizardman": {
+      "type": "entity",
+      "rarity": "UNCOMMON",
+      "timeMult": 6.0,
+      "content": "tensura:lizardman",
+      "amount": {
+        "min": 1,
+        "max": 3
+      },
+      "unitWorth": 550,
+      "weightMult": 0.18
+    },
+    "tensura_orc": {
+      "type": "entity",
+      "rarity": "UNCOMMON",
+      "timeMult": 6.0,
+      "content": "tensura:orc",
+      "amount": {
+        "min": 1,
+        "max": 3
+      },
+      "unitWorth": 600,
+      "weightMult": 0.18
+    },
+    "tensura_orc_lord": {
+      "type": "entity",
+      "rarity": "RARE",
+      "timeMult": 6.0,
+      "content": "tensura:orc_lord",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 2400,
+      "weightMult": 0.08
+    },
+    "tensura_orc_disaster": {
+      "type": "entity",
+      "rarity": "EPIC",
+      "timeMult": 6.0,
+      "content": "tensura:orc_disaster",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 6000,
+      "weightMult": 0.025
+    }
+  }
+}

@@ -1,0 +1,86 @@
+#Max health.
+maxHealth = 24000.0
+#Max spiritual health.
+spiritualHealth = 60000.0
+#Health fraction (0..1) at which it grows its wings and enters the second phase.
+phaseTwoHealth = 0.66
+#Health fraction (0..1) at which it starts stopping time in the third phase.
+phaseThreeHealth = 0.33
+#Dragon Essence that must be laid around a Sculk Shrieker to summon it.
+dragonEssenceRequired = 8
+#Elder Essence that must be laid around a Sculk Shrieker to summon it.
+elderEssenceRequired = 2
+#How far from the Sculk Shrieker (in blocks) the essences may be laid.
+ritualRadius = 4.5
+#Claw swipe damage.
+clawDamage = 450.0
+#Ticks between claw swipes.
+clawCooldown = 24
+#Ground slam damage.
+slamDamage = 600.0
+#Ground slam radius in blocks.
+slamRadius = 6.0
+#Ticks between ground slams.
+slamCooldown = 90
+#Sonic Roar damage. It bypasses armor like the Warden's sonic boom.
+sonicDamage = 900.0
+#Sonic Roar range in blocks.
+sonicRange = 40.0
+#Ticks between Sonic Roars.
+sonicCooldown = 140
+#Abyssal Darkness damage.
+darknessDamage = 250.0
+#Abyssal Darkness radius in blocks.
+darknessRadius = 18.0
+#How long Abyssal Darkness blinds and weakens its victims, in ticks.
+darknessDuration = 200
+#Ticks between Abyssal Darkness pulses.
+darknessCooldown = 280
+#Light Plunge damage.
+plungeDamage = 650.0
+#Light Plunge range in blocks.
+plungeRange = 48.0
+#Ticks between Light Plunges.
+plungeCooldown = 110
+#Hegemony damage.
+hegemonyDamage = 300.0
+#Hegemony radius in blocks.
+hegemonyRadius = 14.0
+#Highest Fear level Hegemony can stack to.
+hegemonyMaxFear = 3
+#Ticks between Hegemony bursts.
+hegemonyCooldown = 220
+#Giga Flare damage per hit (second phase on).
+gigaDamage = 500.0
+#Giga Flare range in blocks.
+gigaRange = 48.0
+#Ticks between Giga Flare hits while it roars.
+gigaInterval = 8
+#Ticks between Giga Flares.
+gigaCooldown = 320
+#Damage of each Eternal Flare star (second phase on).
+eternalDamage = 400.0
+#Stars per Eternal Flare.
+eternalStars = 10
+#Blast radius of each star in blocks.
+eternalRadius = 3.0
+#Ticks between Eternal Flares.
+eternalCooldown = 280
+#Percent of the target's max magicule Magic Devouring eats per bite (second phase on).
+devourDrainPercent = 8.0
+#Percent of its own max health each bite of Magic Devouring heals.
+devourHealPercent = 1.0
+#Ticks between Magic Devourings.
+devourCooldown = 240
+#Wing dash damage (second phase on).
+dashDamage = 400.0
+#Ticks between wing dashes.
+dashCooldown = 90
+#How long its time stop lasts in ticks (third phase).
+timeStopDuration = 100
+#Time stop radius in blocks.
+timeStopRadius = 28.0
+#Ticks between time stops.
+timeStopCooldown = 600
+#Ticks between its taunts while it fights.
+tauntInterval = 700

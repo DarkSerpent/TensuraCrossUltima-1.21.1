@@ -1,0 +1,136 @@
+#Magicules spent to obtain Darrenheart once Disaster (Dahlia) is mastered.
+epAcquirement = 100000.0
+#Only Fairies can acquire Darrenheart and awaken its forms. When false, anyone wields every form.
+fairiesOnly = true
+#Extra power per Fairy rank above Lesser Fairy (damage scales by 1 + this per rank).
+rankPower = 0.25
+#Power multiplier once Darrenheart is mastered.
+masteredPower = 1.25
+#Form One, Spirit Spear: magicule cost.
+spearCost = 1500.0
+#Form One, Spirit Spear: cooldown in ticks after it returns to your hand.
+spearCooldown = 40
+#Form One, Spirit Spear: damage per pierce at full wind-up.
+spearDamage = 220.0
+#Form One, Spirit Spear: ticks of holding the key for a full wind-up.
+spearChargeTicks = 20
+#Form One, Spirit Spear: flight speed of an untrained flick, in blocks per tick.
+spearMinSpeed = 1.4
+#Form One, Spirit Spear: flight speed at full wind-up, in blocks per tick.
+spearMaxSpeed = 3.2
+#Form One, Spirit Spear: farthest it flies before turning home.
+spearRange = 48.0
+#Form One, Spirit Spear: creatures it drills through before turning home.
+spearPierce = 5
+#Form One, Spirit Spear: ticks it stays buried in a wall before it tears free and flies home.
+spearLodgeTicks = 12
+#Form One, Spirit Spear: knockback dealt along its flight at full wind-up.
+spearKnockback = 1.4
+#Darrenheart as a weapon (sneak and use Form One to take it in hand): melee attack damage.
+itemDamage = 120.0
+#Darrenheart as a weapon: attacks per second.
+itemSpeed = 1.1
+#Darrenheart as a weapon: extra melee reach in blocks.
+itemReach = 1.5
+#Form Two, Guardian: magicule cost.
+guardianCost = 3000.0
+#Form Two, Guardian: cooldown in ticks.
+guardianCooldown = 600
+#Form Two, Guardian: ticks it rides on your shoulder.
+guardianDuration = 1200
+#Form Two, Guardian: health. Hits it takes and projectiles it swats both wear it down.
+guardianHealth = 80.0
+#Form Two, Guardian: health once Darrenheart is mastered.
+guardianHealthMastered = 400.0
+#Form Two, Guardian: damage per blow while it clings to a foe.
+guardianDamage = 30.0
+#Form Two, Guardian: ticks between blows while clinging.
+guardianStrikeInterval = 6
+#Form Two, Guardian: ticks it clings to a foe before hopping back to you.
+guardianClingTicks = 50
+#Form Two, Guardian: farthest it leaps at a foe.
+guardianLeapRange = 16.0
+#Form Two, Guardian: ticks of Blindness its first scratch inflicts.
+guardianBlindTicks = 40
+#Form Two, Guardian: ticks it rests on your shoulder between pounces.
+guardianPounceInterval = 20
+#Form Two, Guardian: health spent swatting away a projectile aimed at you.
+guardianSwatCost = 10.0
+#Form Four, Sunflower: magicule cost.
+sunflowerCost = 8000.0
+#Form Four, Sunflower: cooldown in ticks.
+sunflowerCooldown = 900
+#Form Four, Sunflower: ticks it fires once in bloom.
+sunflowerDuration = 200
+#Form Four, Sunflower: ticks between volleys.
+sunflowerInterval = 16
+#Form Four, Sunflower: light seeds per volley.
+sunflowerSeeds = 3
+#Form Four, Sunflower: damage per seed.
+sunflowerDamage = 160.0
+#Form Four, Sunflower: blast radius of each seed.
+sunflowerRadius = 2.5
+#Form Four, Sunflower: how far apart the seeds of a volley land.
+sunflowerSpread = 3.0
+#Form Four, Sunflower: height of the bud in blocks.
+sunflowerHeight = 10.0
+#Form Four, Sunflower: range it fires at.
+sunflowerRange = 40.0
+#Form Four, Sunflower: whether its seeds break blocks (also needs mobGriefing).
+sunflowerBreaksBlocks = false
+#Form Five, Increase: magicule cost.
+increaseCost = 5000.0
+#Form Five, Increase: cooldown in ticks.
+increaseCooldown = 400
+#Form Five, Increase: ticks the drills stay under your command.
+increaseDuration = 300
+#Form Five, Increase: drill-spears in the army.
+increaseCount = 24
+#Form Five, Increase: damage per drilling pass.
+increaseDamage = 45.0
+#Form Five, Increase: ticks between drilling passes on the same creature.
+increaseHitInterval = 4
+#Form Five, Increase: radius of the swarm.
+increaseRadius = 2.4
+#Form Five, Increase: swarm speed in blocks per tick.
+increaseSpeed = 1.6
+#Form Five, Increase: farthest you can send the swarm. Hold the skill key and scroll to set how far out it fights.
+increaseRange = 32.0
+#Form Five, Increase: nearest you can scroll the swarm in.
+increaseMinRange = 3.0
+#Form Five, Increase: fighting distance the swarm starts at before you scroll it.
+increaseDefaultRange = 12.0
+#Form Seven, Yggdra Plate: magicule cost.
+plateCost = 6000.0
+#Form Seven, Yggdra Plate: cooldown in ticks after it comes off.
+plateCooldown = 1200
+#Form Seven, Yggdra Plate: ticks it stays on. 0 keeps it on until recalled.
+plateDuration = 1200
+#Form Seven, Yggdra Plate: armor points it adds.
+plateArmor = 20.0
+#Form Seven, Yggdra Plate: armor toughness it adds.
+plateToughness = 12.0
+#Form Seven, Yggdra Plate: attack damage bonus as a fraction of your total (0.5 = +50%).
+plateStrength = 0.5
+#Form Seven, Yggdra Plate: knockback resistance it adds (0..1).
+plateKnockbackResistance = 0.8
+#Form Seven, Yggdra Plate: share of incoming damage it absorbs (0..1).
+plateDamageReduction = 0.3
+#Killer Fairy: magicule cost. Only usable while Yggdra Plate is on.
+killerFairyCost = 10000.0
+#Killer Fairy: cooldown in ticks.
+killerFairyCooldown = 400
+#Killer Fairy: damage of the dropkick to the creature it lands on.
+killerFairyDamage = 600.0
+#Killer Fairy: fire damage to everything else caught in the blast.
+killerFairySplashDamage = 250.0
+#Killer Fairy: radius of the blast.
+killerFairyRadius = 4.5
+#Killer Fairy: farthest target it lunges at.
+killerFairyRange = 24.0
+#Killer Fairy: lunge speed in blocks per tick.
+killerFairySpeed = 2.2
+#Killer Fairy: seconds the blast sets its victims on fire.
+killerFairyBurnSeconds = 6
+#Killer Fairy: whether the blast breaks blocks (also needs mobGriefing).
+killerFairyBreaksBlocks = false

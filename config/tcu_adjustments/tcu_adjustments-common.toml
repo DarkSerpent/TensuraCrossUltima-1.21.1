@@ -1,0 +1,770 @@
+[modules]
+	#Disable baked-potato furnace and smoker recipes and allow taking finished Wok food by shift-right-clicking empty-handed.
+	bakedPotatoFix = true
+	#Allow players to use limited Markdown and legacy ampersand formatting codes in chat.
+	limitedChatFormatting = true
+	#Log button labels, classes, bounds, and source JARs when screens open.
+	debugLogScreenButtons = false
+	#Remove ManasCore's inventory tab switcher and tab background from the Survival inventory.
+	disableManasCoreInventoryTabSwitcher = true
+	#Replace the Mojang logo on the loading screen with the Tensura Cross Ultima logo.
+	replaceMojangLoadingLogo = true
+	#Set the doImmediateRespawn gamerule to true whenever a server world loads.
+	doImmediateRespawn = true
+	#Disable Tensura Guild's Free Guild prefix in player names and tab-list names.
+	disableTensuraGuildPrefix = true
+	#Apply spawn-radius behavior for Tensura race home dimensions and use race home spawns for Recall Potions when no valid saved spawn point remains.
+	spawnRadiusTensura = true
+	#Set players to Survival in the Overworld, Nether, End, Elemental Realm, and Demon World, and to Adventure in the Labyrinth Tree and Exoframe boss dimensions.
+	gamemodeValidation = true
+	#Allow Tensura abilities to be activated and their modes cycled while in spectator mode.
+	spectatorModeFix = true
+	#Experimental routing for Tensura and TRNightmare custom visual-effect layers through shader-compatible built-in render types. Disabled by default.
+	shaderPackVisualFix = false
+	#Prevent Angel Knights from crashing while removing blocked effects during their entity tick.
+	angelKnightEffectsFix = true
+	#Suppress Music Triggers INFO messages for trigger-state transitions and trigger selection.
+	suppressMusicTriggerLogs = true
+	#Bind Unique and Ultimate Skill Study Books to their owner, prevent dropping or transfer, and preserve them through death.
+	uniqueSkillBookProtection = true
+	#Enable welcome_message.txt delivery on join and after the player's first pending Unique Skill choice. Players can opt out with /tcu welcome off.
+	welcomeMessage = true
+	#Make tagged bosses detect invisible players, and let non-boss mobs target player attackers after three hits and maintain that target within 10 blocks; includes player-attributed skill and projectile damage.
+	nerfInvis = true
+	#Stop Music Triggers for a player during a tagged boss fight when another mod starts a music or record sound; allow the boss victory track to play.
+	suppressMusicTriggersDuringBossMusic = true
+	#Show Lootr's dangerous-break warning once per player every 10 minutes across all Lootr blocks and entities.
+	lootrWarningCooldown = true
+
+	[modules.ChunkyAutomation]
+		#Automatically continue saved Chunky generation on dedicated servers, pause it while players are online, and start a square task when no saved task exists.
+		chunkyAutoGeneration = true
+		#Chunky radius, in blocks, for the square pre-generation task started when no saved task exists.
+		# Default: 5000
+		# Range: 1 ~ 100000
+		generationRadius = 15000
+
+	[modules.randomGateways]
+		#Enable randomly spawned Gateways in the Overworld.
+		enabled = true
+		#Number of in-game days between scheduled Gateway spawns, before the random time-of-day offset.
+		# Default: 5
+		# Range: 1 ~ 3650
+		daysBetweenGateways = 5
+		#Give one 30% chance per in-game day for an extra Gateway during each cooldown period.
+		chaosFactor = true
+
+	[modules.tcuPrestigeChanges]
+		#Limit learned Ultimate Skills by the configured number of slots for each Soul Grade; blocked skill-book uses are not consumed and blocked FTB Quest command rewards remain unclaimed.
+		ultimatesRequirePrestige = true
+		#Let players defer eligible Ultimate Skill grants while they have a free Soul Grade slot; pending evolutions require enough maximum Magicules for their acquisition cost before they can be manifested.
+		deferUltimateSkillChoices = true
+		#Require Medium Grade before obtaining these Ultimate Skills:
+		#trevolved:dragon_god_orsted
+		#tensuramoreskills:witch_of_envy_satella
+		#trnightmare:akashic_records
+		#trnightmare:astral_light
+		#trnightmare:mammon
+		#trnightmare:pride_manas
+		#trnightmare:raziel
+		#trnightmare:synthetic_mammon
+		#trnightmare:yog_sothoth
+		#trnightmare:yog-sotohort
+		#foxablazeultimate:raphael
+		#foxablazeultimate:ciel
+		#foxablazeultimate:shub_niggurath
+		restrictUniqueCopyingUltimates = true
+		#Ultimate Skill slots at No Grade. Set to -1 for unlimited slots at this and all higher grades.
+		# Default: 0
+		# Range: -1 ~ 1000
+		noGradeUltimateSlots = 0
+		#Ultimate Skill slots at Low Grade. Set to -1 for unlimited slots at this and all higher grades.
+		# Default: 1
+		# Range: -1 ~ 1000
+		lowGradeUltimateSlots = 1
+		#Ultimate Skill slots at Medium Grade. Set to -1 for unlimited slots at this and all higher grades.
+		# Default: 2
+		# Range: -1 ~ 1000
+		mediumGradeUltimateSlots = 2
+		#Ultimate Skill slots at High Grade. Set to -1 for unlimited slots at this and all higher grades.
+		# Default: 3
+		# Range: -1 ~ 1000
+		highGradeUltimateSlots = 3
+		#Ultimate Skill slots at Greater Grade. Set to -1 for unlimited slots at this and all higher grades.
+		# Default: 4
+		# Range: -1 ~ 1000
+		greaterGradeUltimateSlots = 4
+		#Ultimate Skill slots at Grand Grade. Set to -1 for unlimited slots at this and all higher grades.
+		# Default: 5
+		# Range: -1 ~ 1000
+		grandGradeUltimateSlots = 5
+		#Ultimate Skill slots at Supreme Grade. Set to -1 for unlimited slots at this and all higher grades.
+		# Default: -1
+		# Range: -1 ~ 1000
+		supremeGradeUltimateSlots = -1
+		#Use the configured number of skill lock slots for each Soul Grade.
+		progressiveSoulLocks = true
+		#Skill lock slots for No Grade.
+		# Default: 2
+		# Range: 0 ~ 1000
+		noGradeSkillLocks = 2
+		#Skill lock slots for Low Grade.
+		# Default: 3
+		# Range: 0 ~ 1000
+		lowGradeSkillLocks = 3
+		#Skill lock slots for Medium Grade.
+		# Default: 5
+		# Range: 0 ~ 1000
+		mediumGradeSkillLocks = 5
+		#Skill lock slots for High Grade.
+		# Default: 6
+		# Range: 0 ~ 1000
+		highGradeSkillLocks = 7
+		#Skill lock slots for Greater Grade.
+		# Default: 7
+		# Range: 0 ~ 1000
+		greaterGradeSkillLocks = 9
+		#Skill lock slots for Grand Grade.
+		# Default: 9
+		# Range: 0 ~ 1000
+		grandGradeSkillLocks = 11
+		#Skill lock slots for Supreme Grade.
+		# Default: 10
+		# Range: 0 ~ 1000
+		supremeGradeSkillLocks = 15
+		#Grant a random unique skill study book bonus for every 3 unblacklisted Unique Skills that are lost when a player prestiges due to not locking them.
+		unlockedUniqueBonus = true
+		#Grant one Tensura Battlewill Manual for every 2 Battlewills lost when a player prestiges due to not locking them.
+		unlockedBattlewillBonus = true
+
+	[modules.tensuraMysticism]
+		#Allow players with Mysticism's Restricted skill to learn Unique Skills through TCU's Great Sage choice and Unique or Ultimate Skill Study Books.
+		restrictedUniqueChoiceStudyBooksFix = true
+		#Allow players with Mysticism's Restricted skill to receive Heavenly Eye from Martial Master, including repairing a missing grant on login; Creator-created Martial Master does not grant Heavenly Eye.
+		restrictedMartialMasterEnhancements = true
+
+	[modules.reawakeningUniqueSkillBook]
+		#Offer a selectable Unique Skill Study Book after reincarnations at prestige counts 2, 4, 6, 8, and 10; closing the selection grants a random unblacklisted Unique Skill Study Book.
+		enabled = true
+
+	[modules.spiritContractPity]
+		#Base duplicate prevention and failure-tier progression on the player's currently contracted spirit levels; replace duplicates with an unowned spirit unless the configured failure chance occurs.
+		enabled = true
+		#Chance for a spirit prayer to fail before all Lesser Spirits have been collected.
+		# Default: 10
+		# Range: 0 ~ 100
+		baseFailureChancePercent = 10
+		#Chance for a spirit prayer to fail after all Lesser Spirits have been collected, until all Medium Spirits are collected.
+		# Default: 20
+		# Range: 0 ~ 100
+		allLesserFailureChancePercent = 20
+		#Chance for a spirit prayer to fail after all Medium Spirits have been collected, until all Greater Spirits are collected.
+		# Default: 40
+		# Range: 0 ~ 100
+		allMediumFailureChancePercent = 40
+		#Chance for a spirit prayer to fail after all Greater Spirits have been collected.
+		# Default: 60
+		# Range: 0 ~ 100
+		allGreaterFailureChancePercent = 60
+
+	[modules.raceBalanceChanges]
+		#Let players whose Tensura race home is the Elemental Realm pass through Labyrinth Barriers without defeating the Colossus.
+		elementalHouseKeys = true
+		#Give Elemental Realm race players the Ring of the Elves in their Ender Chest the first time they travel directly from the Elemental Realm to the Labyrinth.
+		elementalRealmRingGift = true
+		#Set a player's alignment to Holy when they evolve into the base Elemental Lord race.
+		evolutionElementalLordHoly = true
+		#Let races whose home dimension is mysticism:elemental_realm obtain a Hero Egg by praying at the Labyrinth altar with Holy alignment, at least 600,000 maximum EP, and a recorded naming of Ifrit, Undine, Akash, War Gnome, and Sylphide.
+		spiritualRaceHeroEggPath = true
+		#Replace two Curios ring slots with two additional feet slots for Direwolf-line and Baby Spirit Fox-line races.
+		doggoFeetSlots = true
+		#Scale the foundational size of the TNO Slime player model independently of the Size Control skill.
+		# Default: 3.0
+		# Range: 0.1 ~ 10.0
+		slimeModelBaseScale = 2.9
+
+	[modules.tcuAdditionalSkills]
+		#Add the Contract Intrinsic Skill for the Lesser Elemental evolution line.
+		mysticismContractSkill = true
+		#Add BTRUltima's Size Control Extra Skill, granted to Metal Slimes or after mastering Spatial Manipulation and Magic Space Transform.
+		btrultimaSizeControlSkill = true
+		#Enable Physical Manifestation, granted on evolution into Mysticism's Elemental Lord or Majin Lord and TR Nightmare's Manas. If acquired earlier, it can be used throughout TR Nightmare's Body Double/Parallel Existence/Einherjar/Manas line.
+		physicalManifestationSkill = true
+
+	[modules.skillBalanceChanges]
+		#Limit Fungus Infection Amp per effect, select Analyze effects in a GUI, spend current Magicules with a 300-second Analyze cooldown (150 seconds when mastered), and charge 1,500 Magicules for the first stack with each next stack costing 25% more.
+		fungusInfectionNerf = true
+		#Show Enchantment Descriptions mod text in the Godly Craftsman enchantment tab, with the magnifier tooltip icon.
+		godlyCraftsmanEnhancements = true
+		#Fix Domain of Negation's caster Anti-Skill effect and improve its mastered effects, passive damage, and Divine Cancellation cooldown.
+		domainNegationBuffs = true
+		#Grant Thought Acceleration when Boogie Woogie is learned, grant Sage when mastered, and set its active Resistance and Strength buffs to II and III.
+		boogieWoogieFixes = true
+		#Let Great Sage scanners see entities they lock and scan through any invisibility effect; visibility changes only for the scanner.
+		greatSageScanRevealsInvisibleTargets = true
+		#Add Hero's Circumstance to Chosen One, allowing the user to change their current alignment to Holy after confirmation.
+		chosenOneHeroCircumstance = true
+		#Fix provider-based skill and item interactions in TRNightmare.
+		providerFixes = true
+		#Require mastery of Steel Strength and at least 200,000 EP to learn Demonic Power; prevent its alignment change, double its Magicule cost, make it a recastable timed ability (5 minutes unmastered, 10 minutes mastered), and announce activation and deactivation.
+		demonicPowerAdjustments = true
+		#Set Pressure Training's learning cost to 100,000 Aura per use and its active cost to 10,000 Aura per second (5,000 when mastered), increase the training needed for mastery tenfold, and apply its configured self-damage directly to health while granting a learn point to the selected Resistance skill.
+		pressureTrainingFix = true
+		#Fix Divine Wisdom Core and Conceptual Existence Unity return-body tracking, replace Conceptual Existence with Divine Wisdom Core on Manas evolution and repair existing Manas players on login, keep Ego Boost mode available, sever connected Divine Wisdom Core sessions without retaining the prior host, and show remaining Unity hijack time.
+		divineWisdomCoreFixes = true
+		#Require Unity players to be subordinate to one another, prevent lending Ultimate Skills, and limit Divine Wisdom Core loans to one skill plus one additional skill per target Prestige; new loans replace the oldest when the target is at the limit.
+		divineWisdomCoreNerf = true
+		#Make the skill-mastery minigame harder, keep separate positive/red orb caps with occasional shifts, spawn red orbs about 15% slower than positive orbs with natural overlap, and give new red orbs a short growth and click-grace period.
+		trnightmaresMasteryMinigameDifficulty = true
+		#Apply a 1,200-second cooldown after Food Chain successfully transfers a skill.
+		foodChainNerf = true
+		#Remove duplicate Ritual Scythes from player inventories while preserving one copy.
+		spiritualistFixes = true
+		#Validate Deal Maker/Pazuzu contracts before acceptance, restrict attribute deals to the fixed player-stat dropdown, apply attribute effects only to accepted contracts, keep each attribute share stable across player lifecycle changes, preserve unrelated and one-time modifiers, transfer maximum Magicules/Aura exactly within current limits, prevent duplicate acceptance, and make transferred Unique Skills free of Mysticism Soul Energy costs.
+		dealMakerFixes = true
+
+	[modules.realisticEPRegen]
+		#Regenerate Aura over time and while sleeping, replacing Tensura's passive Aura regeneration.
+		aura = true
+		#Regenerate Magicules over time and while sleeping, replacing Tensura's and EPFix's passive Magicule regeneration.
+		magicules = true
+
+	[modules.slimeThroneRepeatableSkillQuests]
+		#Remove the TR Beyond (Beyond Adventures) repeatable skill quests for Shogo, Shinji, Shin, Mark, Mai, Kyoya, Kirara, Folgen, Rimuru, Orc Disaster, Luminous, Hinata, and Carrion, including their rewards.
+		enabled = true
+
+	[modules.questRerolling]
+		#Cooldown in hours between player-initiated rerolls of a single Daily quest.
+		# Default: 24
+		# Range: 0 ~ 87600
+		dailyCooldownHours = 24
+		#Cooldown in hours between player-initiated rerolls of their Weekly quests.
+		# Default: 168
+		# Range: 0 ~ 87600
+		weeklyCooldownHours = 168
+		#Cooldown in hours between player-initiated rerolls of their Required (Prestige) quests.
+		# Default: 72
+		# Range: 0 ~ 87600
+		prestigeCooldownHours = 72
+
+	[modules.characterResetScrollPrestigeRequirement]
+		#Require TR Beyond prestige eligibility before a Character Reset Scroll can be completed, and report unmet requirements in chat.
+		enabled = true
+
+	[modules.tensuraTamedReturn]
+		#Return the player's owned tamed and Tensura-named mobs to them when they join, unless those mobs are stored in a skill.
+		enabled = false
+
+	[modules.createFixes]
+		#Skip Create's unbound crushed osmium holder in creative tabs and Chromatic Compound color registration.
+		createCrashFixes = true
+		#Whitelist Create Aeronautics and Offroad simulated contraption blocks in Chloride to prevent their wheels, propellers, bearings, and other rendered parts from being distance-culled.
+		aeronauticsSimulatedContraptionCullingFix = true
+
+	[modules.tcuCustomIcons]
+		#Replace the Aura Shield icon from Tensura (tensura:aura_shield).
+		enableAuraShieldIcon = true
+		#Replace the Dark Cloaked Dimension Slash icon from Tensura Nightmares (trnightmare:dark_cloaked_dimension_slash).
+		enableDarkCloakedDimensionSlashIcon = true
+		#Replace the Bubble Prison icon from Tensura Nightmares (trnightmare:bubble_prison).
+		enableBubblePrisonIcon = true
+		#Replace the Flash icon from Tensura Nightmares (trnightmare:blinding_flash).
+		enableFlashIcon = true
+		#Replace the Air Palm icon from Tensura Nightmares (trnightmare:air_palm).
+		enableAirPalmIcon = true
+		#Replace the Cleaving Slash icon from Tensura Nightmares (trnightmare:cleaving_slash).
+		enableCleavingSlashIcon = true
+		#Replace the Rising Dragon icon from Tensura Nightmares (trnightmare:rising_dragon).
+		enableRisingDragonIcon = true
+		#Replace the Aura Armor icon from Tensura Nightmares (trnightmare:aura_armor).
+		enableAuraArmorIcon = true
+		#Replace the Thousand Cuts icon from Tensura Nightmares (trnightmare:thousand_cuts).
+		enableThousandCutsIcon = true
+		#Replace the Battle Mode icon from Tensura Nightmares (trnightmare:battle_mode).
+		enableBattleModeIcon = true
+		#Replace the Overwhelming Presence icon from Tensura Nightmares (trnightmare:overwhelming_presence).
+		enableOverwhelmingPresenceIcon = true
+		#Replace the Requip icon from Tensura Nightmares (trnightmare:requip).
+		enableRequipIcon = true
+		#Replace the Heaven's Wheel icon from Tensura Nightmares (trnightmare:heavens_wheel).
+		enableHeavensWheelIcon = true
+		#Replace the Venom Dart icon from Tensura Nightmares (trnightmare:venom_dart).
+		enableVenomDartIcon = true
+		#Replace the Orbital Debris icon from Tensura Nightmares (trnightmare:orbital_debris).
+		enableOrbitalDebrisIcon = true
+		#Replace the Prism Beam icon from Tensura Nightmares (trnightmare:prism_beam).
+		enablePrismBeamIcon = true
+		#Replace the Barrage Strike icon from Tensura Nightmares (trnightmare:barrage_strike).
+		enableBarrageStrikeIcon = true
+		#Replace the Bubble Shield icon from Tensura Nightmares (trnightmare:bubble_shield).
+		enableBubbleShieldIcon = true
+		#Replace the Bubble Shot icon from Tensura Nightmares (trnightmare:bubble_shot).
+		enableBubbleShotIcon = true
+		#Replace the Burning Bullet icon from Tensura Nightmares (trnightmare:burning_bullet).
+		enableBurningBulletIcon = true
+		#Replace the Creative Expanse icon from Tensura Nightmares (trnightmare:creative_expanse).
+		enableCreativeExpanseIcon = true
+		#Replace the Crystal Pillar icon from Tensura Nightmares (trnightmare:crystal_pillar).
+		enableCrystalPillarIcon = true
+		#Replace the Crystal Shard Storm icon from Tensura Nightmares (trnightmare:crystal_shard_storm).
+		enableCrystalShardStormIcon = true
+		#Replace the Draconic Burst icon from Tensura Nightmares (trnightmare:draconic_burst).
+		enableDraconicBurstIcon = true
+		#Replace the Ego Management icon from Tensura Nightmares (trnightmare:ego_management).
+		enableEgoManagementIcon = true
+		#Replace the Excavation icon from Tensura Nightmares (trnightmare:excavation).
+		enableExcavationIcon = true
+		#Replace the Farming Field icon from Tensura Nightmares (trnightmare:farming_field).
+		enableFarmingFieldIcon = true
+		#Replace the Fire God Slayer Magic icon from Tensura Nightmares (trnightmare:fire_god_slayer).
+		enableFireGodSlayerMagicIcon = true
+		#Replace the Fire God's Appetite icon from Tensura Nightmares (trnightmare:fire_god_appetite).
+		enableFireGodsAppetiteIcon = true
+		#Replace the Fire God's Bellow icon from Tensura Nightmares (trnightmare:fire_god_bellow).
+		enableFireGodsBellowIcon = true
+		#Replace the Fusion icon from Tensura Nightmares (trnightmare:fusion).
+		enableFusionIcon = true
+		#Replace the Friendship icon from Tensura Nightmares (trnightmare:friendship).
+		enableFriendshipIcon = true
+		#Replace the Frozen Armory icon from Tensura Nightmares (trnightmare:frozen_armory).
+		enableFrozenArmoryIcon = true
+		#Replace the Gravity Press icon from Tensura Nightmares (trnightmare:gravity_press).
+		enableGravityPressIcon = true
+		#Replace the Hateful Shiver icon from Tensura Nightmares (trnightmare:hateful_shiver).
+		enableHatefulShiverIcon = true
+		#Replace the Healing Waters icon from Tensura Nightmares (trnightmare:healing_waters).
+		enableHealingWatersIcon = true
+		#Replace the Holy Cannon icon from Tensura Nightmares (trnightmare:holy_cannon).
+		enableHolyCannonIcon = true
+		#Replace the Holy Lightning icon from Tensura Nightmares (trnightmare:holy_lightning).
+		enableHolyLightningIcon = true
+		#Replace the Inner World icon from Tensura Nightmares (trnightmare:inner_world).
+		enableInnerWorldIcon = true
+		#Replace the Lightning God's Appetite icon from Tensura Nightmares (trnightmare:lightning_god_appetite).
+		enableLightningGodsAppetiteIcon = true
+		#Replace the Lightning God's Bellow icon from Tensura Nightmares (trnightmare:lightning_god_bellow).
+		enableLightningGodsBellowIcon = true
+		#Replace the Lightning God Slayer Magic icon from Tensura Nightmares (trnightmare:lightning_god_slayer).
+		enableLightningGodSlayerMagicIcon = true
+		#Replace the Killing Arts Style icon from Tensura Nightmares (trnightmare:killing_arts_style).
+		enableKillingArtsStyleIcon = true
+		#Replace the Paper Butterflies icon from Tensura Nightmares (trnightmare:paper_butterflies).
+		enablePaperButterfliesIcon = true
+		#Replace the Paper Shuriken icon from Tensura Nightmares (trnightmare:paper_shuriken).
+		enablePaperShurikenIcon = true
+		#Replace the Pop Barrage icon from Tensura Nightmares (trnightmare:pop_barrage).
+		enablePopBarrageIcon = true
+		#Replace the Prayer icon from Tensura Nightmares (trnightmare:prayer).
+		enablePrayerIcon = true
+		#Replace the Replenish icon from TR Arcane (trarcane:replenish).
+		enableReplenishIcon = true
+		#Replace the Rest icon from TR Arcane (trarcane:rest).
+		enableRestIcon = true
+		#Replace the Sand Make: Lance icon from Tensura Nightmares (trnightmare:sand_lance).
+		enableSandMakeLanceIcon = true
+		#Replace the Sea of Foam icon from Tensura Nightmares (trnightmare:sea_of_foam).
+		enableSeaOfFoamIcon = true
+		#Replace the Sky God Slayer Magic icon from Tensura Nightmares (trnightmare:sky_god_slayer).
+		enableSkyGodSlayerMagicIcon = true
+		#Replace the Sky God's Appetite icon from Tensura Nightmares (trnightmare:sky_god_appetite).
+		enableSkyGodsAppetiteIcon = true
+		#Replace the Sky God's Bellow icon from Tensura Nightmares (trnightmare:sky_god_bellow).
+		enableSkyGodsBellowIcon = true
+		#Replace the Smelter icon from Tensura Nightmares (trnightmare:smelter).
+		enableSmelterIcon = true
+		#Replace the Spin icon from Tensura Nightmares (trnightmare:spin).
+		enableSpinIcon = true
+		#Replace the Spiral Penetrator icon from Tensura Nightmares (trnightmare:spiral_penetrator).
+		enableSpiralPenetratorIcon = true
+		#Replace the Swallow Return icon from Tensura Nightmares (trnightmare:swallow_return).
+		enableSwallowReturnIcon = true
+		#Replace the Sky Walk icon from Tensura Nightmares (trnightmare:sky_walk).
+		enableSkyWalkIcon = true
+		#Replace the Take Over: Animal Soul icon from Tensura Nightmares (trnightmare:animal_soul).
+		enableTakeOverAnimalSoulIcon = true
+		#Replace the Temperature Drop icon from Tensura Nightmares (trnightmare:temperature_drop).
+		enableTemperatureDropIcon = true
+		#Replace the Wedding Bell icon from Tensura Nightmares (trnightmare:wedding_bell).
+		enableWeddingBellIcon = true
+		#Replace the Wind Reaping Edge icon from Tensura Nightmares (trnightmare:wind_reaping_edge).
+		enableWindReapingEdgeIcon = true
+		#Replace the World Map icon from Tensura Nightmares (trnightmare:world_map).
+		enableWorldMapIcon = true
+		#Replace the World Tree icon from Tensura Nightmares (trnightmare:world_tree).
+		enableWorldTreeIcon = true
+		#Replace the Vortex Punch icon from Tensura Nightmares (trnightmare:vortex_punch).
+		enableVortexPunchIcon = true
+		#Replace the Crystal Prison icon from Tensura Nightmares (trnightmare:crystal_prison).
+		enableCrystalPrisonIcon = true
+		#Replace the Blood Puppet icon from Tensura Nightmares (trnightmare:blood_puppet).
+		enableBloodPuppetIcon = true
+		#Replace the Piercing Blood icon from Tensura Nightmares (trnightmare:piercing_blood).
+		enablePiercingBloodIcon = true
+		#Replace the Bloody Lava icon from Tensura Nightmares (trnightmare:bloody_lava).
+		enableBloodyLavaIcon = true
+		#Replace the Blood Tithe icon from Tensura Nightmares (trnightmare:blood_tithe).
+		enableBloodTitheIcon = true
+		#Replace the Blood Meteorite icon from Tensura Nightmares (trnightmare:blood_meteorite).
+		enableBloodMeteoriteIcon = true
+		#Replace the Moonless Draw icon from Tensura Nightmares (trnightmare:moonless_draw).
+		enableMoonlessDrawIcon = true
+		#Replace the Physical Manifestation icon (tcu_adjustments:physical_manifestation).
+		enablePhysicalManifestationIcon = true
+		#Replace the Pressure Training icon from Tensura Nightmares (trnightmare:pressure_training).
+		enablePressureTrainingIcon = true
+		#Replace the Annihilation Bloom icon from Tensura Nightmares (trnightmare:annihilation_bloom).
+		enableAnnihilationBloomIcon = true
+		#Replace the Ice Make: Hammer icon from Tensura Nightmares (trnightmare:ice_make_hammer).
+		enableIceMakeHammerIcon = true
+		#Replace the Sand Make: Cannon icon from Tensura Nightmares (trnightmare:sand_make_cannon).
+		enableSandMakeCannonIcon = true
+		#Replace the Seven Star Judgement icon from Tensura Nightmares (trnightmare:seven_star_judgement).
+		enableSevenStarJudgementIcon = true
+		#Replace the Nuclear Flame icon from Tensura Nightmares (trnightmare:nuclear_flame).
+		enableNuclearFlameIcon = true
+		#Replace the Paper Sea icon from Tensura Nightmares (trnightmare:paper_sea).
+		enablePaperSeaIcon = true
+		#Replace the Blood Mark icon from Tensura Nightmares (trnightmare:blood_mark).
+		enableBloodMarkIcon = true
+		#Replace the Shadow Step icon from Tensura Nightmares (trnightmare:shadow_step).
+		enableShadowStepIcon = true
+		#Replace the Stopped World icon from Tensura Nightmares (trnightmare:stopped_world).
+		enableStoppedWorldIcon = true
+		#Replace the Night Strike icon from Tensura Nightmares (trnightmare:night_strike).
+		enableNightStrikeIcon = true
+		#Replace the Tenacity icon from Mysticism (mysticism:tenacity).
+		enableTenacityIcon = true
+		#Replace the Sand Make: Floor icon from Tensura Nightmares (trnightmare:sand_make_floor).
+		enableSandMakeFloorIcon = true
+		#Replace the Gravity Hammer icon from Tensura Nightmares (trnightmare:gravity_hammer).
+		enableGravityHammerIcon = true
+		#Replace the Zombie Breath icon from Tensura Nightmares (trnightmare:zombie_breath).
+		enableZombieBreathIcon = true
+		#Replace the Divine Wisdom Core icon from Tensura Nightmares (trnightmare:divine_wisdom_core).
+		enableDivineWisdomCoreIcon = true
+		#Replace the Assault Mode icon from Tensura Nightmares (trnightmare:assault_mode).
+		enableAssaultModeIcon = true
+		#Replace the Conceptual Existence icon from Tensura Nightmares (trnightmare:conceptual_existence).
+		enableConceptualExistenceIcon = true
+		#Replace the Chronoanastasis icon from Tensura Nightmares (trnightmare:chronoanastasis).
+		enableChronoanastasisIcon = true
+		#Replace the Beast Domination icon from Tensura Nightmares (trnightmare:beast_domination).
+		enableBeastDominateIcon = true
+		#Replace the Beast Unification icon from Tensura Nightmares (trnightmare:beast_unification).
+		enableBeastUnificationIcon = true
+		#Replace the Paper Wings icon from Tensura Nightmares (trnightmare:paper_wings).
+		enablePaperWingsIcon = true
+		#Replace the Manas Host icon from Tensura Nightmares (trnightmare:manas_host).
+		enableManasHostIcon = true
+		#Replace the Food Chain icon from Tensura Nightmares (trnightmare:food_chain).
+		enableFoodChainIcon = true
+		#Replace the Universal Shapeshift icon from Tensura Nightmares (trnightmare:universal_shapeshift).
+		enableUniversalShapeshiftIcon = true
+		#Replace the Mimicry icon from Tensura Nightmares (trnightmare:mimicry).
+		enableMimicryIcon = true
+		#Replace the Secret of Grace icon from Tensura Nightmares (trnightmare:secret_of_grace).
+		enableSecretOfGraceIcon = true
+		#Replace the Secret of Faith icon from Tensura Nightmares (trnightmare:secret_of_faith).
+		enableSecretOfFaithIcon = true
+		#Replace the Projection Sorcery icon from Tensura Nightmares (trnightmare:projection_sorcery).
+		enableProjectionSorceryIcon = true
+		#Replace the Crimson Lotus icon from Tensura Nightmares (trnightmare:crimson_lotus).
+		enableCrimsonLotusIcon = true
+		#Replace the Summon Subordinate icon from Tensura Nightmares (trnightmare:summon_subordinate).
+		enableSummonSubordinateIcon = true
+		#Replace the Gravity Flux icon from Mysticism (mysticism:gravity_flux).
+		enableGravityFluxIcon = true
+		#Replace the Graviton Bullet icon from Tensura Nightmares (trnightmare:graviton_bullet).
+		enableGravitonBulletIcon = true
+		#Replace the Graviton Crush icon from Tensura Nightmares (trnightmare:graviton_crush).
+		enableGravitonCrushIcon = true
+		#Replace the Gravity Break icon from Tensura Nightmares (trnightmare:gravity_break).
+		enableGravityBreakIcon = true
+		#Replace the Gravity Well icon from Tensura Nightmares (trnightmare:gravity_well).
+		enableGravityWellIcon = true
+		#Replace the Zero Gravity icon from Tensura Nightmares (trnightmare:zero_gravity).
+		enableZeroGravityIcon = true
+		#Replace the Fire Dragon's Appetite icon from Tensura Nightmares (trnightmare:fire_dragon_appetite).
+		enableFireDragonAppetiteIcon = true
+		#Replace the Fire Dragon Slayer icon from Tensura Nightmares (trnightmare:fire_dragon_slayer).
+		enableFireDragonSlayerIcon = true
+		#Replace the Fire Dragon Roar icon from Tensura Nightmares (trnightmare:fire_dragon_roar).
+		enableFireDragonRoarIcon = true
+		#Replace the Iron Dragon's Appetite icon from Tensura Nightmares (trnightmare:iron_dragon_appetite).
+		enableIronDragonAppetiteIcon = true
+		#Replace the Iron Dragon Slayer icon from Tensura Nightmares (trnightmare:iron_dragon_slayer).
+		enableIronDragonSlayerIcon = true
+		#Replace the Iron Dragon Roar icon from Tensura Nightmares (trnightmare:iron_dragon_roar).
+		enableIronDragonRoarIcon = true
+		#Replace the Starless Ray icon from Tensura Nightmares (trnightmare:starless_ray).
+		enableStarlessRayIcon = true
+		#Replace the Void Rift icon from Tensura Nightmares (trnightmare:void_rift).
+		enableVoidRiftIcon = true
+		#Replace the Freezing Breath icon from Tensura Nightmares (trnightmare:true_dragon_freezing_breath).
+		enableFreezingBreathIcon = true
+		#Replace the Sand Make: Hammer icon from Tensura Nightmares (trnightmare:sand_make_hammer).
+		enableSandMakeHammerIcon = true
+		#Replace the Sand Make: Shield icon from Tensura Nightmares (trnightmare:sand_make_shield).
+		enableSandMakeShieldIcon = true
+		#Replace the Over Time icon from Tensura Nightmares (trnightmare:over_time).
+		enableTimeMagicOverTimeIcon = true
+		#Replace the Wooden Titan icon from Tensura Nightmares (trnightmare:wooden_titan).
+		enableWoodenTitanIcon = true
+		#Replace the Steel Make: Lance icon from Tensura Nightmares (trnightmare:steel_make_lance).
+		enableSteelMakeLanceIcon = true
+		#Replace the Steel Make: Shield icon from Tensura Nightmares (trnightmare:steel_make_shield).
+		enableSteelMakeShieldIcon = true
+		#Replace the Steel Make: Hammer icon from Tensura Nightmares (trnightmare:steel_make_hammer).
+		enableSteelMakeHammerIcon = true
+		#Replace the Steel Make: Floor icon from Tensura Nightmares (trnightmare:steel_make_floor).
+		enableSteelMakeFloorIcon = true
+		#Replace the Steel Make: Cannon icon from Tensura Nightmares (trnightmare:steel_make_cannon).
+		enableSteelMakeCannonIcon = true
+		#Replace the Black Star icon from Tensura Nightmares (trnightmare:black_star).
+		enableBlackStarIcon = true
+		#Replace the Chrono Lock icon from Tensura Nightmares (trnightmare:chrono_lock).
+		enableChronoLockIcon = true
+		#Replace the Temporal Echo icon from Tensura Nightmares (trnightmare:temporal_echo).
+		enableTemporalEchoIcon = true
+		#Replace the Dark Melt Slash icon from Tensura Nightmares (trnightmare:dark_melt_slash).
+		enableDarkMeltSlashIcon = true
+		#Replace the Sentient icon from NightmareUtils (nightmareutils:sentient).
+		enableSentientIcon = true
+		#Replace the Command Golem icon from Tensura Nightmares (trnightmare:command_golem).
+		enableCommandGolemIcon = true
+
+	[modules.individualQuestProgress]
+		#Keep FTB Quests progress individual instead of sharing it with FTB Teams members.
+		enabled = true
+
+	[modules.resistanceTraining]
+		#Award resistance training points using incoming damage before armor and other damage reduction.
+		enabled = true
+
+	[modules.epEvolution]
+		#Enable TCU's EP tracking and gear evolution data.
+		enabled = true
+
+	[modules.greatSageIntro]
+		#Offer three weighted subtype choices for Lesser Elemental and Insect during Great Sage's intro.
+		rollThreePickOne = true
+		#Choose a random race if the Great Sage race selector is dismissed without submitting.
+		randomRaceOnSelectionClose = true
+
+	[modules.tensuraLuckyBlocks]
+		#Enable TCU's Lucky Blocks, called the Awakening Flame Block.
+		enabled = true
+
+	[modules.playerAnimations]
+		#Enable TCU's player movement, pose, cape, and elytra animations (requires Player Animation Library).
+		enabled = false
+
+	[modules.guardVillagersTensura]
+		#Enable Tensura Guard Villager upgrades, a fixed 5% movement-speed increase, village return and replenishment, and anti-regeneration wounds.
+		enabled = true
+		#Fraction of normal healing received by hostile mobs recently wounded by a Guard Villager.
+		# Default: 0.3
+		# Range: 0.0 ~ 1.0
+		woundHealingMultiplier = 0.3
+		#Duration in ticks of the anti-regeneration wound applied by Guard Villager attacks.
+		# Default: 100
+		# Range: 1 ~ 1200
+		woundDurationTicks = 100
+
+	[modules.pillagersTensura]
+		#Enable Tensura skills, EP targets 10% below Guard Villagers, Elite variants, and movement speed fixed to 5% above vanilla for Pillager-type enemies.
+		enabled = true
+
+	[modules.additionalMobSkills]
+		#Add suggested Tensura skills to selected vanilla mobs and provide additional compatibility for Friends & Foes, Mowzie's Mobs, and Bosses' Rise.
+		enabled = true
+
+	[modules.ironGolemPhysicalAttackResistance]
+		#Give Iron Golems the Tensura Physical Attack Resistance skill and keep movement speed 5% above vanilla.
+		enabled = true
+
+	[modules.apotheosisTensura]
+		#Enable TCU's Apotheosis compatibility, remove the Eterna cap penalty, increase shelf Eterna and Max Eterna by 30%, and scale enchanting Eterna to 0.6 levels per point.
+		enabled = true
+		#Double Apotheosis boss and miniboss health and reduce damage they take from all sources, including Tensura skills, by 50%.
+		tankyApothicMobs = true
+		#Prevent Tensura's Possession skill from possessing Apotheosis bosses and minibosses.
+		apothicAura = true
+
+	[modules.iceAndFireTensura]
+		#Make Ice and Fire elemental dragons neutral to players below the configured EP threshold.
+		enabled = true
+		#Players at or above this EP remain hostile targets for Ice and Fire elemental dragons.
+		# Default: 60000
+		# Range: > 0
+		epThreshold = 60000
+
+	[modules.emeraldToSilverCoinTrades]
+		#Replace emeralds used or given in vanilla Villager, Tensura Dwarf, and Lizardman trades with Silver Coins.
+		enabled = true
+
+	[modules.essentialSyncDiagnostics]
+		#Log EssentialPatcher cosmetics-sync status and compare session fingerprints reported by connected clients. Fingerprints are hashes, not session keys.
+		enabled = true
+
+	[modules.magiculePoisonWarning]
+		#Warn players only after they are exposed to magicule poisoning and take magicule poison damage.
+		enabled = true
+
+	[modules.deathCatchUpProtection]
+		#Grant temporary keep-inventory protection after repeated deaths to players who have never prestiged.
+		enabled = true
+
+	[modules.epFoodRewards]
+		#Enable one-time EP rewards for eating foods from An Appetite Which Surpasses Ultima.
+		enabled = true
+		#Reset food EP reward tracking after prestige so previously rewarded foods can grant EP again.
+		resetOnPrestige = true
+
+	[modules.isekaiEvolved]
+		#Enable TCU's compatibility adjustments for Tensura: Isekai Evolved Addon.
+		enabled = true
+		#Blacklist the four Konosuba Unique Skills and four Konosuba Ultimate Skills.
+		disableKonosubaSkills = true
+		#Prevent Lesser Demon-Dragon and every race in its evolution chain from being selected or evolved into.
+		disableDemonDragonHybrid = true
+		#Remove character aliases from Isekai Evolved Ultimate God skill names.
+		simplifyUltimateGodNames = true
+		#Add Isekai Evolved's enabled Unique Skills to TCU's Great Sage rollThreePickOne pool.
+		addUniqueSkillsToGreatSage = true
+		#Isekai Evolved Unique Skills to include in Great Sage's three-choice pool.
+		greatSageUniqueSkills = ["trevolved:quagmire", "trevolved:dragon_king", "trevolved:manipulator", "trevolved:originator", "trevolved:demonic_soul", "trevolved:trickster", "trevolved:fencer", "trevolved:undead", "trevolved:golden_shell", "trevolved:water_saint"]
+		#Rename Isekai Evolved's Flight Magic to Parabolic Flight.
+		renameFlightSkill = true
+
+	[modules.tensuraNightmares]
+		#Enable TCU's compatibility adjustments for Tensura Reincarnated Nightmares.
+		enabled = true
+		#Make Tensura Possession work for Body Double, Parallel Existence, Einherjar, and Manas by preserving a return body and preventing Divine Wisdom Core from forcing spiritual form during an active possession.
+		manasPossessionFix = true
+		#Prevent Tensura Nightmares' trnightmare:sentient_boss_milim_wrath world boss from spawning.
+		disableMilimWorldBoss = true
+		#Prevent Tensura Nightmares' trnightmare:sentient_boss_yuuki_desire world boss from spawning.
+		disableYuukiWorldBoss = true
+		#Race IDs to prevent from being assigned or evolved into. Remove an ID to enable that race; Body Double/Manas races are not included.
+		disableSevenDeadlySinsRaces = ["trnightmare:scholar", "trnightmare:axolotl", "trnightmare:lesser_dragon", "trnightmare:lesser_fairy", "trnightmare:higher_fairy", "trnightmare:dark_fairy", "trnightmare:slayer_fairy", "trnightmare:lost_fairy", "trnightmare:fairy_prince", "trnightmare:sacred_tree_child", "trnightmare:true_fairy_king", "trnightmare:fairy_druid", "trnightmare:fairy_princess", "trnightmare:guardian_of_tree", "trnightmare:lesser_giant", "trnightmare:giant_warrior", "trnightmare:giant_dancer", "trnightmare:mutant_giant", "trnightmare:one_eyed_god", "trnightmare:god_of_earth", "trnightmare:big_cutie", "trnightmare:earthshaker_dancer", "trnightmare:giant_queen", "trnightmare:giant_elder", "trnightmare:giant_king", "trnightmare:fang_of_earth", "trnightmare:lesser_goddess", "trnightmare:lower_goddess", "trnightmare:medium_goddess", "trnightmare:high_goddess", "trnightmare:wingless_goddess", "trnightmare:nameless_goddess", "trnightmare:brother_of_chaos", "trnightmare:princess_of_goddess", "trnightmare:daughter_of_light", "trnightmare:accursed_goddess", "trnightmare:lance_corporal", "trnightmare:divine_soldier", "trnightmare:archangel"]
+		#Disable these duplicate Tensura Nightmares skills: Raphael Knowledge (trnightmare:raphael_knowledge), Raphael Wisdom (trnightmare:raphael_wisdom), Beelzebuth (trnightmare:beelzebuth), Veldora Lord of Storms (trnightmare:veldora_lord_of_storms), Samael (trnightmare:samael), and Witch's Envy (trnightmare:witches_envy). Applies to learning, grants, and prerequisite-based unlocks.
+		disableDuplicateUltimateSkills = true
+		#Enable rare natural spawning for Truth (Galand), Pacifism (Grayroad), Purity (Derieri), Patience (Drole), and Selflessness (Fraudrin), without changing their biome rules.
+		rareTenCommandmentBossSpawns = true
+		#Spawn chance denominator for the listed Ten Commandment bosses in every dimension where they naturally spawn, including minecraft:nether and mysticism:hell: 400 means a 1-in-400 chance per natural spawn attempt. Smaller values make them more common.
+		# Default: 400
+		# Range: 1 ~ 1000000
+		tenCommandmentBossSpawnRarity = 300
+		#Remove the Great Sage ego from Tensura Nightmares' Ego Management menu and existing player ego data on join, without removing the normal Great Sage skill.
+		disableGreatSageEgo = true
+		#Disable Tensura Nightmares' trnightmare:day_night_inversion skill and remove it from players when they join.
+		disableDayNightInversion = true
+		#Disable Tensura Nightmares' Spellcraft skill, its unlock messages, custom spell access, and existing learned skills.
+		disableSpellcraft = true
+		#Disable Tensura Nightmares Soul Types and Soul Traits, clear existing soul data and soul bonuses on join while preserving Spiritual Magic supported by a matching spirit contract, the player's matching Transform skill, or current-race intrinsic skills.
+		disableSoulTypesAndTraits = true
+		#Allow players with Mysticism's Restricted skill to learn Tensura Nightmares battlewills, regardless of race.
+		allowRestrictedBattlewills = true
+		#Allow players with Mysticism's Restricted skill to learn and receive Tensura Nightmares' trnightmare:friendship Extra Skill, paying its acquisition cost with Aura instead of Magicules.
+		allowRestrictedFriendship = true
+		#Scale the relative weight of Tensura Nightmares Magic Tome chest drops; 0 disables them, 5 preserves current rates, and 10 doubles their weight.
+		# Default: 5
+		# Range: 0 ~ 10
+		magicTomeLootScale = 1
+		#Scale the relative weight of Tensura Nightmares Unbound Tome chest drops; 0 disables them, 5 preserves current rates, and 10 doubles their weight.
+		# Default: 5
+		# Range: 0 ~ 10
+		unboundTomeLootScale = 1
+		#Disable Tensura Nightmares' Ultimate Skill slot limit.
+		disableUltimateSlots = true
+		#Prevent Tensura Nightmares from giving its guide book to players when they join.
+		disableJoinGuideBook = true
+		#Disable the Title Manager Extra Skill and Tensura Nightmares' title tracking, acquisition, and active title benefits.
+		disableTitleManagerAndTracking = true
+		#Disable Tensura Nightmares' nation commands, interactions, and menus.
+		disableNationSystem = true
+		#Disable the Tensura Nightmares cosmetics menu and its keybind, while leaving cosmetic actions available.
+		disableCosmeticsMenu = true
+		#Disable the Tensura Nightmares racial progression menu, its keybind, and progression purchases.
+		disableRacialProgressionMenu = true
+		#Scale Tensura Nightmares Slayer Magic tome chest drops; 0 disables them, 1 gives each tome entry a 20% roll chance with at most 1 tome per chest, 2-9 progressively increase the chance and cap, 10 preserves the default behavior, and 11-20 increase relative weight up to double.
+		# Default: 1
+		# Range: 0 ~ 20
+		slayerTomeLootScale = 1
+		#Disable the Tensura Nightmares Ultimate Evolution Menu and its keybind; automatically grant eligible Ultimate evolutions when their prerequisites are met.
+		disableUltimateEvolutionMenu = true
+
+	[modules.tcuEnchantmentsEncore]
+		#Disable all Enchantments Encore advancements and their triggers.
+		disableAdvancements = true
+		#Disable generation of the Enchantments Encore Rise structure.
+		disableStructure = true
+		#Enchantments Encore IDs to disable, including their Enchantment Book variants in EMI Enchanting; remove them from existing items and Godly Craftsman enchantment data when loaded.
+		disabledEnchantments = ["enchantencore:growth", "enchantencore:shrinkage", "enchantencore:pickpocket", "enchantencore:invisibility_cloak", "enchantencore:magma_walker", "enchantencore:path_speed", "enchantencore:poison_aspect", "enchantencore:swift_slash", "enchantencore:wither_aspect", "enchantencore:scholar_of_blocks", "enchantencore:yoink"]
+
+	[modules.tensuraEntityFeatures]
+		#Skip OBE's unscoped EMF rest-pose integration to prevent loading-screen compatibility issues.
+		oebLoadingFix = true
+		#Restrict ETF and EMF to CEM models and supported texture assets found in the selected OpenLoader resource packs. Non-whitelisted EMF model layers return their vanilla model before EMF processes them.
+		enableWhitelist = false
+		#OpenLoader pack filenames in config/openloader/packs whose CEM models and ETF texture assets may be used.
+		openLoaderResourcePacks = []
+
+	[modules.tcuImmersiveScreens]
+		#Disable Immersive Screens' themed title-screen background while keeping its themed buttons and other screens.
+		disableImmersiveScreensTitleBackground = true
+		#Disable Immersive Screens' client command and remove its button from the Options screen.
+		disableImmersiveScreensCommandAndOptionsButton = true
+		#Prevent Immersive Screens from changing Tensura and addon screens, including buttons, text, backgrounds, and the Status Menu.
+		excludeTensuraAndAddonScreens = false
+
+	[modules.tensuraEnhancedBossBars]
+		#Show readable Gateway names and Gateway wave status with Enhanced Boss Bars.
+		enabled = true
+
+	[modules.afkTracking]
+		#Broadcast when players become or stop being AFK and mark AFK players in the player list.
+		enabled = true
+		#Minutes without movement or activity before a player is marked AFK.
+		# Default: 3
+		# Range: 1 ~ 1440
+		idleMinutes = 3
+
+	[modules.fancyPlayerlist]
+		#Allow the player list to be opened in singleplayer.
+		alwaysAvailable = true
+		#Use the TCU-styled player list with player titles, TPS, and ping.
+		customizationsEnabled = true
+
+	[modules.ftbUltimine]
+		#Charge 1000 Aura or Magicules per block when using FTB Ultimine.
+		enabled = true
+
+	[modules.armorKeep]
+		#Disable broken armor instead of destroying it, then let players restore it by channeling 300,000 Magicules or Aura while holding it.
+		enabled = true
+
+	[modules.tensuraCompass]
+		#Charge Magicules to start biome/structure searches and drain them while holding an actively tracking compass. Aura is used only when useAuraIfHigher is enabled.
+		enabled = true
+		#When useAuraIfHigher is disabled, use Aura instead of Magicules for compass costs when the player has the Restricted Unique Skill.
+		restrictedFix = true
+		#Change the default compass cost resource from Magicules to whichever is higher between the player's maximum Aura and maximum Magicules. This takes priority over restrictedFix and does not fall back to the other resource when empty.
+		useAuraIfHigher = true
+
+	[modules.emojiPicker]
+		#Show the Allure-style emoji picker in chat and convert supported :shortcodes: when sending messages.
+		enabled = true
+
+	[modules.tensuraMoreSkills]
+		#Ultimate Skill IDs from Tensura More Skills that cannot be learned. The default list disables every registered Ultimate except the nine pack-approved skills.
+		disabledUltimateSkills = ["tensuramoreskills:michael_angel_of_locks", "tensuramoreskills:arthur_once_and_future_king", "tensuramoreskills:avalon_god_of_eternal_kingdom", "tensuramoreskills:caedros_god_of_conquest", "tensuramoreskills:abhoth_lord_of_pestilence", "tensuramoreskills:pain_lord_of_six_paths", "tensuramoreskills:schwi_ex_machina", "tensuramoreskills:kronairos_lord_of_the_endless", "tensuramoreskills:axiom_lord_of_reflected_judgment", "tensuramoreskills:mammon_casino", "tensuramoreskills:phainon"]
+
+	[modules.unifiedXaerosFTB]
+		#Restrict Unified Xaero World Map sharing to members of the same FTB Teams party. Allies do not count as team members.
+		enabled = true
+
+[jade]
+	#Force connected clients to hide Tensura mob skill names in Jade, regardless of their client setting.
+	forceMobSkillPrivacy = true

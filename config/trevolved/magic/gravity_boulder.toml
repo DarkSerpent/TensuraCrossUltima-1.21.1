@@ -1,0 +1,108 @@
+#Controls for trevolved:gravity_boulder. Detailed balance is in this same file.
+#Allow learning this ability. Existing ownership is kept.
+allowAcquisition = true
+#Allow active subskills. Inherent passives are not removed.
+allowActiveUse = true
+#Allow enabling its native passive toggle. Switching it off remains allowed.
+allowPassiveToggle = true
+#Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+allowTerrainDamage = true
+
+[balance]
+    #Damage contribution from captured mass.
+    # Default: 2.5
+    # Range: 0.0 ~ 1000000.0
+    collisionDamagePerBlock = 2.5
+    #Damage contribution from average hardness.
+    # Default: 8.0
+    # Range: 0.0 ~ 1000000.0
+    collisionHardnessDamage = 8.0
+    #Mastered native cooldown.
+    # Default: 8
+    # Range: 0 ~ 3600
+    cooldownMasteredSeconds = 8
+    #Native cooldown.
+    # Default: 12
+    # Range: 0 ~ 3600
+    cooldownSeconds = 12
+    #Magicule cost paid when the boulder is launched.
+    # Default: 15000.0
+    # Range: 0.0 ~ 1.0E12
+    magiculeCost = 15000.0
+    #Maximum EP required for automatic learning.
+    # Default: 600000
+    # Range: 0 ~ 9223372036854775807
+    unlockMaximumEp = 600000
+    #Captured terrain radius, producing a 4-block diameter.
+    # Default: 2.0
+    # Range: 0.5 ~ 8.0
+    captureRadius = 2.0
+    #Mastered terrain radius, producing a 4.7-block diameter.
+    # Default: 2.35
+    # Range: 0.5 ~ 8.0
+    captureRadiusMastered = 2.35
+    #Maximum distance from the caster to the terrain capture anchor.
+    # Default: 10.0
+    # Range: 2.0 ~ 32.0
+    captureRange = 10.0
+    #Base chant before terrain begins compacting.
+    # Default: 30
+    # Range: 1 ~ 72000
+    castTicks = 30
+    #Launched boulder velocity.
+    # Default: 2.4
+    # Range: 0.1 ~ 16.0
+    launchVelocity = 2.4
+    #Mastered launch velocity.
+    # Default: 3.2
+    # Range: 0.1 ~ 16.0
+    launchVelocityMastered = 3.2
+    #Mastered chant before capture.
+    # Default: 20
+    # Range: 1 ~ 72000
+    masteredCastTicks = 20
+    #Unmastered transaction cap.
+    # Default: 80
+    # Range: 1 ~ 4096
+    maximumCapturedBlocks = 80
+    #Mastered transaction cap.
+    # Default: 128
+    # Range: 1 ~ 4096
+    maximumCapturedBlocksMastered = 128
+    #Bounded capture work per tick.
+    # Default: 256
+    # Range: 1 ~ 8192
+    terrainChecksPerTick = 256
+
+[subskills]
+
+    #Native mode 0: default. IDs/indices are not renumbered when disabled.
+    [subskills.default]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

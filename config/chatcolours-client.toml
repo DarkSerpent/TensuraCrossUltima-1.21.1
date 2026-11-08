@@ -1,0 +1,6 @@
+#Enable/disable using extended syntax, such as §[blue][u]hello
+extended_syntax = true
+#Enable/disable using hex codes. If disabled, all custom hex codes will be hidden and ignored.
+hex_codes = true
+#Enable/disable markdown formatting, such as *italic* or **bold**.
+markdown = true

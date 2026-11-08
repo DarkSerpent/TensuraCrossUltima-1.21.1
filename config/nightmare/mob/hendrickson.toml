@@ -1,0 +1,50 @@
+#Max health.
+health = 5000.0
+#Max spiritual health.
+spiritualHealth = 8000.0
+#Health he regenerates every second (doubled when he has not been hurt for 5 seconds).
+regenPerSecond = 25.0
+#Health fraction (0..1) at which the strange Grey Demon reveals himself as Hendrickson.
+revealHealth = 0.5
+#Chance (0..1) a villager given Red Demon's Blood turns into Hendrickson. He never spawns naturally.
+redBloodChance = 0.01
+#Chance (0..1) a villager given Grey Demon's Blood turns into Hendrickson.
+greyBloodChance = 0.1
+#Claw strike damage.
+clawDamage = 160.0
+#Claw strike cooldown in ticks.
+clawCooldown = 22
+#Ticks between Dark Snows. Dark Snow itself uses the Grey Demon config.
+darkSnowCooldown = 360
+#Ticks between Dark Nebulas. Dark Nebula itself uses the Grey Demon config.
+darkNebulaCooldown = 520
+#Dark beam damage (fired from his fingers).
+beamDamage = 180.0
+#Dark beam range in blocks.
+beamRange = 48.0
+#Ticks between dark beams.
+beamCooldown = 140
+#Hellblaze: black flame damage per hit.
+hellblazeDamage = 70.0
+#Hellblaze: reach of the black flames in blocks.
+hellblazeRange = 10.0
+#Hellblaze: level of Black Burn it inflicts.
+hellblazeBurnLevel = 1
+#Hellblaze: ticks between uses.
+hellblazeCooldown = 160
+#Dead End: damage of the blast where the sphere lands.
+deadEndDamage = 450.0
+#Dead End: blast radius in blocks.
+deadEndRadius = 4.0
+#Dead End: darkness damage every half second while the sphere engulfs its target.
+deadEndHoldDamage = 120.0
+#Dead End: ticks the sphere engulfs its target.
+deadEndHoldTicks = 40
+#Dead End: a target left at or below this fraction (0..1) of its max health when the sphere closes is killed outright. 0 turns it off.
+deadEndExecute = 0.25
+#Dead End: whether the blast breaks blocks (also needs the mobGriefing gamerule).
+deadEndBreaksBlocks = true
+#Dead End: whether gathering the sphere withers the plants around him (also needs the mobGriefing gamerule).
+deadEndWithersPlants = true
+#Dead End: ticks between uses.
+deadEndCooldown = 420

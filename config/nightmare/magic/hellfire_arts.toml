@@ -1,0 +1,36 @@
+#Gokuencho: damage of the blast when the Hellfire Bird strikes.
+gokuenchoDamage = 650.0
+#Gokuencho: damage to anything the bird passes through on its way.
+gokuenchoPathDamage = 180.0
+#Gokuencho: blast radius in blocks.
+gokuenchoRadius = 6.0
+#Gokuencho: top flight speed in blocks per tick.
+gokuenchoSpeed = 2.6
+#Gokuencho: how far away a target can be locked on, in blocks.
+gokuenchoRange = 64.0
+#Gokuencho: ticks the bird can fly before it bursts on its own.
+gokuenchoLife = 120
+#Gokuencho: explosion power for terrain (needs the skill grief rule). 0 disables block damage.
+gokuenchoBlast = 3.0
+#Gokuencho: leave a trail of fire on the ground under its path (needs the skill grief rule).
+gokuenchoTrailFire = true
+#Kaijinryu: damage of the blast before the magicule bonus.
+kaijinryuDamage = 1800.0
+#Kaijinryu: extra blast damage per magicule poured into it.
+kaijinryuDamagePerMagicule = 0.02
+#Kaijinryu: cap on the blast damage.
+kaijinryuMaxDamage = 25000.0
+#Kaijinryu: share (0..1) of the caster's remaining magicule it consumes on top of its cost.
+kaijinryuDrain = 1.0
+#Kaijinryu: blast radius in blocks.
+kaijinryuRadius = 12.0
+#Kaijinryu: burn damage per second to anything the dragon's head passes through.
+kaijinryuPathDamage = 300.0
+#Kaijinryu: length of the dragon's head in blocks.
+kaijinryuSize = 9.0
+#Kaijinryu: how far away a target can be locked on, in blocks.
+kaijinryuRange = 64.0
+#Kaijinryu: dive speed in blocks per tick.
+kaijinryuSpeed = 1.5
+#Kaijinryu: explosion power for terrain (needs the skill grief rule). 0 disables block damage.
+kaijinryuBlast = 6.0

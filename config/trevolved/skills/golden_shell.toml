@@ -1,0 +1,475 @@
+#Controls for trevolved:golden_shell. Detailed balance is in this same file.
+#Allow learning this ability. Existing ownership is kept.
+allowAcquisition = true
+#Allow active subskills. Inherent passives are not removed.
+allowActiveUse = true
+#Allow enabling its native passive toggle. Switching it off remains allowed.
+allowPassiveToggle = true
+#Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+allowTerrainDamage = true
+
+[evolutionRequirements]
+
+    [evolutionRequirements.goldenShell]
+        #Required Existence Points.
+        # Default: 1250000
+        # Range: 0 ~ 9223372036854775807
+        ep = 1250000
+        #Primary tracked requirement; see publication CONFIGURATION.md for its meaning.
+        # Default: 250000
+        # Range: > 0
+        requirementA = 250000
+        #Secondary tracked requirement; zero disables this numeric gate where unused.
+        # Default: 10
+        # Range: > 0
+        requirementB = 10
+        #Tertiary tracked requirement; zero disables this numeric gate where unused.
+        # Default: 0
+        # Range: > 0
+        requirementC = 0
+        #Require every prerequisite skill in this route to be mastered.
+        requireMastery = true
+
+[general]
+    #Flat ordinary melee damage used when goldenShellMultiplicativeDamage is false.
+    # Default: 75.0
+    # Range: 0.0 ~ 1.0E9
+    goldenShellAdditiveDamage = 75.0
+    #True multiplies Golden Body melee damage. False adds the configured flat damage instead.
+    goldenShellMultiplicativeDamage = true
+
+[advancedMechanics]
+    #Maximum-health fraction restored by Immortal Demon King reformation.
+    # Default: 0.5
+    # Range: 0.0 ~ 1.0
+    fightingGodReformationHealthFraction = 0.5
+    #Unmastered minimum Shockwave Slam damage.
+    # Default: 500.0
+    # Range: 0.0 ~ 1.0E9
+    fightingGodShockwaveDamage = 500.0
+    #Mastered minimum Shockwave Slam damage.
+    # Default: 750.0
+    # Range: 0.0 ~ 1.0E9
+    fightingGodShockwaveDamageMastered = 750.0
+    #Unmastered Heavy Impact damage.
+    # Default: 200.0
+    # Range: 0.0 ~ 1.0E9
+    goldenShellHeavyImpactDamage = 200.0
+    #Mastered Heavy Impact damage.
+    # Default: 350.0
+    # Range: 0.0 ~ 1.0E9
+    goldenShellHeavyImpactDamageMastered = 350.0
+    #Mastered Immortal Armour cooldown when disabled.
+    # Default: 24
+    # Range: 0 ~ 86400
+    fightingGodArmorCooldownMasteredSeconds = 24
+    #Immortal Armour cooldown when disabled.
+    # Default: 30
+    # Range: 0 ~ 86400
+    fightingGodArmorCooldownSeconds = 30
+    #Mastered Shockwave Slam cooldown.
+    # Default: 28
+    # Range: 0 ~ 86400
+    fightingGodShockwaveCooldownMasteredSeconds = 28
+    #Shockwave Slam cooldown.
+    # Default: 35
+    # Range: 0 ~ 86400
+    fightingGodShockwaveCooldownSeconds = 35
+    #Mastered Heavy Impact cooldown.
+    # Default: 16
+    # Range: 0 ~ 86400
+    goldenShellHeavyImpactCooldownMasteredSeconds = 16
+    #Unmastered Heavy Impact cooldown.
+    # Default: 20
+    # Range: 0 ~ 86400
+    goldenShellHeavyImpactCooldownSeconds = 20
+    #Mastered Kinetic Nullification cooldown.
+    # Default: 20
+    # Range: 0 ~ 86400
+    goldenShellKineticCooldownMasteredSeconds = 20
+    #Unmastered Kinetic Nullification cooldown.
+    # Default: 25
+    # Range: 0 ~ 86400
+    goldenShellKineticCooldownSeconds = 25
+    #Fragility duration from Fighting God melee, Heavy Impact and Shockwave Slam.
+    # Default: 6
+    # Range: 0 ~ 86400
+    fightingGodFragilitySeconds = 6
+    #Fighting God Heavy Impact radius.
+    # Default: 5.0
+    # Range: 0.0 ~ 256.0
+    fightingGodHeavyImpactRadius = 5.0
+    #Fighting God Kinetic Nullification window.
+    # Default: 10
+    # Range: 1 ~ 86400
+    fightingGodKineticDurationSeconds = 10
+    #Damage and merge lock after a body splits.
+    # Default: 3
+    # Range: 0 ~ 86400
+    fightingGodReformationInvulnerabilitySeconds = 3
+    #Shockwave Slam horizontal radius.
+    # Default: 15.0
+    # Range: 0.0 ~ 256.0
+    fightingGodShockwaveRadius = 15.0
+    #Slowness V duration from Shockwave Slam.
+    # Default: 6
+    # Range: 0 ~ 86400
+    fightingGodShockwaveSlownessSeconds = 6
+    #Time after dealing or taking damage before Metallic Regeneration considers the user out of combat.
+    # Default: 10
+    # Range: 0 ~ 86400
+    goldenShellCombatGraceSeconds = 10
+    #Golden Shell Heavy Impact radius.
+    # Default: 3.5
+    # Range: 0.0 ~ 256.0
+    goldenShellHeavyImpactRadius = 3.5
+    #Heavy Impact hard-stagger duration.
+    # Default: 3
+    # Range: 0 ~ 86400
+    goldenShellHeavyImpactStaggerSeconds = 3
+    #Golden Shell Kinetic Nullification window.
+    # Default: 6
+    # Range: 1 ~ 86400
+    goldenShellKineticDurationSeconds = 6
+    #Seconds between Metallic Regeneration pulses.
+    # Default: 4
+    # Range: 1 ~ 86400
+    goldenShellRegenerationIntervalSeconds = 4
+    #Immortal Armour knockback resistance.
+    # Default: 1.0
+    # Range: 0.0 ~ 1.0
+    fightingGodArmorKnockbackResistance = 1.0
+    #Fraction of maximum Magicules held exactly while Immortal Armour is active.
+    # Default: 0.1
+    # Range: 0.01 ~ 1.0
+    fightingGodArmorMagiculeLockFraction = 0.1
+    #Immortal Armour movement-speed bonus fraction.
+    # Default: 0.5
+    # Range: -1.0 ~ 1000.0
+    fightingGodArmorMovementBonus = 0.5
+    #Immortal Armour toughness bonus.
+    # Default: 40.0
+    # Range: 0.0 ~ 1.0E9
+    fightingGodArmorToughness = 40.0
+    #Armor attribute supplied as a fraction of maximum EP.
+    # Default: 0.5
+    # Range: 0.0 ~ 1000.0
+    fightingGodEpArmorFraction = 0.5
+    #General Fighting God attack-speed multiplier.
+    # Default: 1.15
+    # Range: 0.0 ~ 1000.0
+    fightingGodGeneralAttackSpeedMultiplier = 1.15
+    #Unmastered Fighting God Heavy Impact attack-damage multiplier.
+    # Default: 4.0
+    # Range: 0.0 ~ 1000.0
+    fightingGodHeavyImpactWeaponMultiplier = 4.0
+    #Mastered Fighting God Heavy Impact attack-damage multiplier.
+    # Default: 5.0
+    # Range: 0.0 ~ 1000.0
+    fightingGodHeavyImpactWeaponMultiplierMastered = 5.0
+    #Maximum Fighting God body-mass units. Changing this requires a world restart.
+    # Default: 8
+    # Range: 1 ~ 64
+    fightingGodMaximumMassUnits = 8
+    #Ordinary direct-melee multiplier while Immortal Armour is active.
+    # Default: 5.0
+    # Range: 0.0 ~ 1000.0
+    fightingGodMeleeMultiplier = 5.0
+    #Physical damage fraction prevented by Immortal Armour.
+    # Default: 0.8
+    # Range: 0.0 ~ 1.0
+    fightingGodPhysicalMitigation = 0.8
+    #Initial upward velocity of Shockwave Slam.
+    # Default: 1.35
+    # Range: 0.0 ~ 16.0
+    fightingGodShockwaveLaunchVelocity = 1.35
+    #Failsafe ticks before Shockwave Slam resolves even if landing is not detected.
+    # Default: 50
+    # Range: 1 ~ 72000
+    fightingGodShockwaveMaximumAirTicks = 50
+    #Unmastered Shockwave Slam attack-damage multiplier.
+    # Default: 4.0
+    # Range: 0.0 ~ 1000.0
+    fightingGodShockwaveWeaponMultiplier = 4.0
+    #Mastered Shockwave Slam attack-damage multiplier.
+    # Default: 5.0
+    # Range: 0.0 ~ 1000.0
+    fightingGodShockwaveWeaponMultiplierMastered = 5.0
+    #Minimum Fighting God slow-weapon attack speed.
+    # Default: 2.0
+    # Range: 0.0 ~ 1024.0
+    fightingGodSlowWeaponAttackSpeed = 2.0
+    #Fighting God sword attack speed.
+    # Default: 2.2
+    # Range: 0.0 ~ 1024.0
+    fightingGodSwordAttackSpeed = 2.2
+    #Golden Shell armor bonus.
+    # Default: 100.0
+    # Range: 0.0 ~ 1.0E9
+    goldenShellArmor = 100.0
+    #Full-mass Golden Shell body scale; 5/3 makes the normal player almost three blocks tall.
+    # Default: 1.6666666666666667
+    # Range: 0.1 ~ 16.0
+    goldenShellBodyScale = 1.6666666666666667
+    #General Golden Shell attack-speed multiplier.
+    # Default: 0.9
+    # Range: 0.0 ~ 1000.0
+    goldenShellGeneralAttackSpeedMultiplier = 0.9
+    #Out-of-combat healing multiplier while Metallic Regeneration is active.
+    # Default: 3.0
+    # Range: 0.0 ~ 1000.0
+    goldenShellHealingMultiplier = 3.0
+    #Heavy Impact wind-up in ticks.
+    # Default: 10
+    # Range: 0 ~ 1200
+    goldenShellHeavyImpactWindupTicks = 10
+    #Minimum hunger maintained by the Golden Shell family.
+    # Default: 18
+    # Range: 0 ~ 20
+    goldenShellMinimumFood = 18
+    #Base health restored by each out-of-combat Metallic Regeneration pulse before its healing multiplier.
+    # Default: 2.0
+    # Range: 0.0 ~ 1.0E9
+    goldenShellRegenerationPulse = 2.0
+    #Unmastered ordinary-melee multiplier from body size.
+    # Default: 1.5
+    # Range: 0.0 ~ 1000.0
+    goldenShellSizeMeleeMultiplier = 1.5
+    #Mastered ordinary-melee multiplier from body size.
+    # Default: 1.75
+    # Range: 0.0 ~ 1000.0
+    goldenShellSizeMeleeMultiplierMastered = 1.75
+    #Minimum attack speed for equipped slow weapons.
+    # Default: 1.6
+    # Range: 0.0 ~ 1024.0
+    goldenShellSlowWeaponAttackSpeed = 1.6
+    #Golden Shell sword attack speed.
+    # Default: 1.8
+    # Range: 0.0 ~ 1024.0
+    goldenShellSwordAttackSpeed = 1.8
+
+[familyMultipliers]
+
+    [familyMultipliers.fightingGod]
+        #Family outgoing-damage multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        damageMultiplier = 1.0
+        #Family native-cooldown multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Family Aura-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        auraCostMultiplier = 1.0
+        #Family Magicule-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        magiculeCostMultiplier = 1.0
+        #Family targeting/radius multiplier.
+        # Default: 1.0
+        # Range: 0.1 ~ 20.0
+        rangeMultiplier = 1.0
+
+    [familyMultipliers.goldenShell]
+        #Family outgoing-damage multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        damageMultiplier = 1.0
+        #Family native-cooldown multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Family Aura-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        auraCostMultiplier = 1.0
+        #Family Magicule-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        magiculeCostMultiplier = 1.0
+        #Family targeting/radius multiplier.
+        # Default: 1.0
+        # Range: 0.1 ~ 20.0
+        rangeMultiplier = 1.0
+
+[abilities]
+
+    [abilities.fighting_god_badigadi]
+        #Controls for trevolved:fighting_god_badigadi. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.fighting_god_badigadi.subskills]
+
+            #Native mode 3: fighting_god.body_command. IDs/indices are not renumbered when disabled.
+            [abilities.fighting_god_badigadi.subskills.fighting_god_body_command]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 0: fighting_god.golden_armor. IDs/indices are not renumbered when disabled.
+            [abilities.fighting_god_badigadi.subskills.fighting_god_golden_armor]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 1: fighting_god.heavy_impact. IDs/indices are not renumbered when disabled.
+            [abilities.fighting_god_badigadi.subskills.fighting_god_heavy_impact]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 2: fighting_god.kinetic_absorb. IDs/indices are not renumbered when disabled.
+            [abilities.fighting_god_badigadi.subskills.fighting_god_kinetic_absorb]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 4: fighting_god.shockwave_slam. IDs/indices are not renumbered when disabled.
+            [abilities.fighting_god_badigadi.subskills.fighting_god_shockwave_slam]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+[subskills]
+
+    #Native mode 0: golden_shell.heavy_impact. IDs/indices are not renumbered when disabled.
+    [subskills.golden_shell_heavy_impact]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+    #Native mode 1: golden_shell.kinetic_absorb. IDs/indices are not renumbered when disabled.
+    [subskills.golden_shell_kinetic_absorb]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

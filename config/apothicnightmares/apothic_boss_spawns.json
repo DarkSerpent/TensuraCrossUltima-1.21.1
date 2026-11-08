@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "note": "Controls automatic apothic boss conversion for selected Tensura entities.",
+  "enabled": true,
+  "otherworlderBossChance": 0.35,
+  "charybdisBossChance": 0.05,
+  "playerSearchRangeBlocks": 96.0,
+  "enableTieredBossGrades": true,
+  "godGradeChanceDivisor": 20.0,
+  "genesisGradeChanceDivisor": 80.0,
+  "godGradeHealthMultiplier": 1.2,
+  "godGradeAttackMultiplier": 0.8,
+  "genesisGradeHealthMultiplier": 2.2,
+  "genesisGradeAttackMultiplier": 1.5,
+  "godGradeMainhandItem": "tensura:pure_magisteel_odachi",
+  "genesisGradeMainhandItem": "tensura:hihiirokane_odachi"
+}

@@ -1,0 +1,549 @@
+#Turn the whole Subordinate Life system on or off.
+enabled = true
+#Ticks between life updates for each subordinate (mood drift, condition decay, fatigue).
+updateTicks = 100
+#Blocks from which the Talk key reaches a subordinate.
+talkRange = 8.0
+#Ticks a player must wait between two talk actions.
+talkCooldownTicks = 10
+
+[moods]
+	#Mood points a subordinate drifts toward its baseline over one Minecraft day.
+	dailyDrift = 60.0
+	#Largest random swing of the daily baseline, scaled by the personality's temper.
+	dailyVariance = 12.0
+	#Baseline mood while the nation is fed, and while it is starving.
+	fedMood = 8.0
+	starvingMood = -18.0
+	#Baseline mood while housed in a nation bed, and while a nation member has no bed.
+	housedMood = 8.0
+	homelessMood = -8.0
+	#Baseline mood while the owner is within ownerNearbyRange blocks.
+	ownerNearbyMood = 6.0
+	ownerNearbyRange = 24.0
+	#Baseline mood lost right after taking damage, and how many ticks that lasts.
+	damageMood = -14.0
+	damageMemoryTicks = 600
+	#Immediate mood lost per point of damage taken, capped by damageShockCap.
+	damageShock = 0.6
+	damageShockCap = 12.0
+	#Baseline mood per friendly subordinate nearby for Social subordinates, and for Loners when nobody is near.
+	socialMood = 2.0
+	lonerMood = 6.0
+
+[bonds]
+	#Affection and respect a subordinate starts with toward its owner.
+	ownerAffection = 15.0
+	ownerRespect = 25.0
+	#Affection needed for each stage: Wary, Acquaintance, Friend, Close Friend, Devoted. Below the Wary line is Hostile.
+	waryAffection = -50.0
+	acquaintanceAffection = -10.0
+	friendAffection = 20.0
+	closeAffection = 50.0
+	devotedAffection = 80.0
+	#Respect needed on top of affection to reach Devoted.
+	devotedRespect = 20.0
+	#Talk interactions remembered per player, for diminishing returns.
+	memorySize = 8
+	#Ticks an interaction stays in memory for the repeat penalty.
+	repeatWindowTicks = 6000
+	#Success chance lost and reward share lost for each recent repeat of the same action.
+	repeatPenalty = 0.15
+	#Success chance lost per point of talk fatigue, and ticks for one point of fatigue to fade.
+	fatiguePenalty = 0.025
+	fatigueDecayTicks = 1200
+	#Smallest share of a reward that diminishing returns can leave.
+	minimumReturn = 0.2
+	#How much mood moves success chances (at mood 100 this is added, at -100 it is subtracted).
+	moodChanceWeight = 0.2
+	#Chance bonus per stage step above Acquaintance (negative below it).
+	stageChanceStep = 0.05
+	#Lowest and highest success chance after every modifier.
+	minimumChance = 0.05
+	maximumChance = 0.95
+	#Romance points a successful flirt adds, and points that turn into a Crush.
+	flirtRomance = 10.0
+	crushRomance = 30.0
+
+[actions]
+	#Chat: success chance, then affection/respect/mood on success, then affection/mood on failure.
+	chatChance = 0.8
+	chatAffection = 3.0
+	chatRespect = 0.0
+	chatMood = 3.0
+	chatFailAffection = -1.0
+	chatFailMood = -2.0
+	#Joke.
+	jokeChance = 0.65
+	jokeAffection = 4.0
+	jokeRespect = 0.0
+	jokeMood = 6.0
+	jokeFailAffection = -2.0
+	jokeFailMood = -3.0
+	#Praise.
+	praiseChance = 0.8
+	praiseAffection = 3.0
+	praiseRespect = 1.0
+	praiseMood = 6.0
+	praiseFailAffection = 0.0
+	praiseFailMood = -1.0
+	#Scold: success means the lesson lands (respect up, a little affection lost).
+	scoldChance = 0.55
+	scoldAffection = -1.0
+	scoldRespect = 6.0
+	scoldMood = -2.0
+	scoldFailAffection = -5.0
+	scoldFailMood = -6.0
+	#Train Together.
+	trainChance = 0.7
+	trainAffection = 2.0
+	trainRespect = 4.0
+	trainMood = 3.0
+	trainFailAffection = -1.0
+	trainFailMood = -3.0
+	#Hug.
+	hugChance = 0.6
+	hugAffection = 5.0
+	hugRespect = 0.0
+	hugMood = 5.0
+	hugFailAffection = -3.0
+	hugFailMood = -3.0
+	#Flirt (only from Friend on).
+	flirtChance = 0.45
+	flirtAffection = 4.0
+	flirtRespect = 0.0
+	flirtMood = 4.0
+	flirtFailAffection = -3.0
+	flirtFailMood = -2.0
+	#Affection and mood lost when flirting before the Friend stage.
+	flirtLockedAffection = -1.0
+	flirtLockedMood = -1.0
+	#Ask How They Feel: affection gained.
+	askAffection = 1.0
+
+[gifts]
+	#Affection and mood from a loved, liked, plain and disliked gift.
+	lovedAffection = 8.0
+	lovedMood = 10.0
+	likedAffection = 4.0
+	likedMood = 5.0
+	neutralAffection = 1.0
+	neutralMood = 1.0
+	dislikedAffection = -4.0
+	dislikedMood = -6.0
+	#Recent gifts remembered per player; each recent copy of the same item halves the reward.
+	saturationSize = 6
+
+[conditions]
+	#Default ticks each condition lasts at full severity.
+	contentTicks = 24000
+	stressedTicks = 24000
+	grievingTicks = 72000
+	traumatizedTicks = 48000
+	inspiredTicks = 12000
+	obsessedTicks = 36000
+	lovesickTicks = 24000
+	brokenTicks = 96000
+	jealousTicks = 12000
+	homesickTicks = 24000
+	#Mood at or below this for stressDelayTicks makes a subordinate Stressed.
+	stressMood = -50.0
+	stressDelayTicks = 6000
+	#Mood at or above this for contentDelayTicks makes a subordinate Content.
+	contentMood = 60.0
+	contentDelayTicks = 6000
+	#How strongly conditions pull the mood baseline (1 = as listed per condition).
+	moodPullScale = 1.0
+
+[rolling]
+	#Weights for rolling one, two or three traits.
+	oneTraitWeight = 40
+	twoTraitWeight = 45
+	threeTraitWeight = 15
+	#Extra weight a species or bloodline bias adds to a personality or trait.
+	biasWeight = 20
+
+[triggers]
+	#Grief: blocks within which a fallen fellow subordinate is mourned, and the severity for a comrade, for family or a loved one, and for a Devoted subordinate whose owner died.
+	griefRange = 32.0
+	griefComradeSeverity = 0.45
+	griefFamilySeverity = 0.85
+	griefOwnerSeverity = 0.7
+	#Affection a subordinate must hold toward the fallen for grief to reach it from anywhere.
+	griefBondAffection = 50.0
+	#Mood a beast loses when a fellow subordinate falls near it (beasts never grieve as a condition).
+	beastGriefMood = -15.0
+	#Trauma: health share left after a hit that counts as near-death, and the chance it leaves trauma.
+	traumaHealthShare = 0.15
+	traumaNearDeathChance = 0.35
+	#Trauma: share of max health one explosion or boss hit must deal to count as huge, and the chance it leaves trauma.
+	traumaHugeHitShare = 0.35
+	traumaHugeHitChance = 0.5
+	#Trauma severity, and ticks before the same subordinate can be traumatized again.
+	traumaSeverity = 0.5
+	traumaCooldownTicks = 2400
+	#Trauma chance multipliers for Cowardly, Coward, Brave, Stoic and Battle-hungry.
+	traumaCowardlyScale = 1.6
+	traumaCowardScale = 1.5
+	traumaBraveScale = 0.4
+	traumaStoicScale = 0.7
+	traumaBattleHungryScale = 0.6
+	#Inspiration: severity after defeating a foe with more EP, after a festival, after an Academy class, and after praise at high mood.
+	inspireVictorySeverity = 0.5
+	inspireFestivalSeverity = 0.6
+	inspireAcademySeverity = 0.35
+	inspirePraiseSeverity = 0.35
+	#Mood needed for praise to inspire, and the chance it does.
+	inspirePraiseMood = 50.0
+	inspirePraiseChance = 0.5
+	#Mood gained by every subordinate in the territory during a festival.
+	festivalMood = 15.0
+	#Obsession: kills a Battle-hungry subordinate needs within killWindowTicks.
+	obsessionKills = 5
+	killWindowTicks = 6000
+	obsessionKillSeverity = 0.5
+	#Obsession: chance a Bookworm becomes obsessed after a lesson, and its severity.
+	obsessionStudyChance = 0.5
+	obsessionStudySeverity = 0.4
+	#Lovesick: ticks without a talk from the crush before it turns into jealousy, and the severities it fades into.
+	lovesickIgnoredTicks = 12000
+	lovesickContentSeverity = 0.5
+	lovesickJealousSeverity = 0.4
+	#Jealousy: attention half-life in ticks, attention another subordinate must have before anyone notices, the ratio over this one that triggers it, the chance, the severity and the blocks within which it is witnessed.
+	attentionHalfLifeTicks = 12000
+	jealousMinAttention = 4.0
+	jealousRatio = 3.0
+	jealousChance = 0.3
+	jealousSeverity = 0.4
+	jealousWitnessRange = 16.0
+	#Homesickness: severity after losing a nation bed, and after being away from the nation for homesickAwayTicks.
+	homesickBedSeverity = 0.4
+	homesickAwaySeverity = 0.5
+	homesickAwayTicks = 72000
+	#Broken: combined trauma and grief severity that shatters a subordinate, and the severity it gets.
+	brokenStackSeverity = 1.2
+	brokenSeverity = 0.6
+	#Broken: mood at or below this for brokenDelayTicks also breaks a subordinate.
+	brokenMood = -85.0
+	brokenDelayTicks = 36000
+	#Overwork: ticks of unbroken job work before Stress (Hardworking doubles it, Lazy halves it), and the severity.
+	overworkTicks = 36000
+	overworkSeverity = 0.45
+
+[effects]
+	#Work speed: share added at mood 100 (and taken at -100).
+	workMoodWeight = 0.15
+	#Work speed for Hardworking and Lazy.
+	workHardworking = 0.1
+	workLazy = -0.1
+	#Work speed at full severity for Inspired, Content, Stressed, Broken, Grieving and Homesick.
+	workInspired = 0.2
+	workContent = 0.05
+	workStressed = -0.15
+	workBroken = -0.35
+	workGrieving = -0.2
+	workHomesick = -0.05
+	#Lowest and highest work multiplier from life.
+	workMinimum = 0.4
+	workMaximum = 1.6
+	#Learning: share added at mood 100, and for Genius, Bookworm, an obsessed Bookworm, Inspired, Stressed and Broken.
+	learnMoodWeight = 0.1
+	learnGenius = 0.3
+	learnBookworm = 0.2
+	learnObsessed = 0.15
+	learnInspired = 0.25
+	learnStressed = -0.2
+	learnBroken = -0.4
+	learnMinimum = 0.3
+	learnMaximum = 2.0
+	#Nation morale: share the average subordinate mood of the nation adds at 100 (and takes at -100).
+	nationMoodWeight = 0.1
+	#Combat: attack damage share for Inspired, Battle-hungry at mood 50+, an obsessed Battle-hungry, Broken and a happy or miserable beast.
+	combatInspiredDamage = 0.1
+	combatBattleHungryDamage = 0.1
+	combatObsessedDamage = 0.05
+	combatBrokenDamage = -0.1
+	combatBeastMoodDamage = 0.05
+	#Combat: movement speed share for Traumatized, Inspired and Broken.
+	combatTraumatizedSpeed = -0.1
+	combatInspiredSpeed = 0.05
+	combatBrokenSpeed = -0.05
+	#Combat: chance a Traumatized subordinate flees when hit, at full severity.
+	combatFleeChance = 0.3
+
+[consequences]
+	#Refusing orders: turn on or off, the highest chance, and how much low mood, negative respect, Hostile and Wary add.
+	refusalEnabled = true
+	refusalMaximum = 0.75
+	refusalMoodWeight = 0.35
+	refusalRespectWeight = 0.25
+	refusalHostile = 0.25
+	refusalWary = 0.1
+	#Refusing orders: added at full Stressed and Broken severity, multiplier for Proud, Hot-headed and Lazy, and for Loyal or Devoted.
+	refusalStressed = 0.1
+	refusalBroken = 0.25
+	refusalDefiantScale = 1.3
+	refusalLoyalScale = 0.1
+	#Sulking: turn on or off, daily chance at full Stressed and Broken severity, length in ticks and ticks before another sulk.
+	sulkEnabled = true
+	sulkStressedDaily = 0.5
+	sulkBrokenDaily = 1.0
+	sulkTicks = 3000
+	sulkCooldownTicks = 6000
+	#Desertion: turn on or off, mood at or below which a Hostile subordinate stews, ticks of stewing (owner online) before the first warning, the final warning and leaving.
+	desertionEnabled = true
+	desertMood = -60.0
+	desertWarnTicks = 12000
+	desertFinalTicks = 24000
+	desertLeaveTicks = 36000
+	#Winning a deserter back: base chance per good talk or gift from the former owner, extra for a loved gift, and the mood it returns with.
+	rejoinChance = 0.25
+	rejoinLovedGift = 0.25
+	rejoinMood = 10.0
+	#Betrayal: turn on or off, and the chance a qualifying deserter (Scheming or Proud, Broken or Jealous, owner within betrayalRange) turns on its owner instead of leaving.
+	betrayalEnabled = true
+	betrayalChance = 0.35
+	betrayalRange = 24.0
+	#Berserk: turn on or off, chance per hit at full Stressed or Broken severity, length and cooldown in ticks, attack damage share, and whether it may strike fellow subordinates.
+	berserkEnabled = true
+	berserkChance = 0.15
+	berserkTicks = 300
+	berserkCooldownTicks = 6000
+	berserkDamage = 0.35
+	berserkHitsAllies = false
+	#Breakthrough: turn on or off, daily chance while Inspired, Close Friend or better and at breakthroughMood or higher.
+	breakthroughEnabled = true
+	breakthroughChance = 0.2
+	breakthroughMood = 50.0
+	#Breakthrough rewards: max EP share gained (at least breakthroughEpFlat, at most breakthroughEpCap) and mastery share of a random skill.
+	breakthroughEpShare = 0.05
+	breakthroughEpFlat = 2000.0
+	breakthroughEpCap = 50000.0
+	breakthroughMastery = 0.15
+	#Breakthrough: chance a named ogre close to its next evolution reaches the EP it needs, and how close (share of the threshold) it must already be.
+	breakthroughOgreChance = 0.35
+	breakthroughOgreShare = 0.75
+	#Ticks between two spoken lines from the same subordinate.
+	lineCooldownTicks = 60
+
+[romance]
+	#Turn player and subordinate romance (Ask Out, Kiss, Dates, Proposals, Weddings, Break Ups) on or off.
+	enabled = true
+	#How many subordinates one player may be engaged or married to at once.
+	maxSpouses = 1
+	#Ask Out (Crush and Close Friend or better): success chance, chance added per 100 affection above the Close Friend line, then affection/mood on success and on failure.
+	askOutChance = 0.5
+	askOutAffectionWeight = 0.4
+	askOutAffection = 6.0
+	askOutMood = 12.0
+	askOutFailAffection = -3.0
+	askOutFailMood = -8.0
+	#Kiss (Dating or more): success chance, affection/mood and romance points on success, affection/mood on failure.
+	kissChance = 0.75
+	kissAffection = 4.0
+	kissMood = 8.0
+	kissRomance = 6.0
+	kissFailAffection = -2.0
+	kissFailMood = -4.0
+	#Spend Time Together (Dating or more): success chance, affection/mood and romance points on success, mood on failure.
+	dateChance = 0.85
+	dateAffection = 4.0
+	dateMood = 12.0
+	dateRomance = 4.0
+	dateFailMood = -3.0
+	#Propose (Dating and Devoted, Engagement Ring in hand): success chance, affection/mood on success and on failure.
+	proposeChance = 0.6
+	proposeAffection = 10.0
+	proposeMood = 20.0
+	proposeFailAffection = -4.0
+	proposeFailMood = -10.0
+	#Proud subordinates refuse a proposal until their respect reaches this; Shy ones get this chance added (negative is harder) and this extra affection when they say yes.
+	proudProposeRespect = 45.0
+	shyProposeChance = -0.1
+	shyProposeAffection = 8.0
+	#Ticks an engagement must last before the wedding can be held, and the affection/mood the wedding gives.
+	weddingDelayTicks = 12000
+	weddingAffection = 10.0
+	weddingMood = 30.0
+	#Mood every fellow subordinate within weddingGuestRange blocks gains from attending a wedding.
+	weddingGuestMood = 10.0
+	weddingGuestRange = 24.0
+	#Whether the wedding is announced to every online member of the owner's nation.
+	weddingBroadcast = true
+	#Whether getting married grants the Spouse title.
+	spouseTitle = true
+	#Break Up while dating or engaged: affection, mood and grief severity.
+	breakUpAffection = -30.0
+	breakUpMood = -30.0
+	breakUpGriefSeverity = 0.45
+	#Divorce (Break Up while married): affection, mood and grief severity.
+	divorceAffection = -50.0
+	divorceMood = -45.0
+	divorceGriefSeverity = 0.75
+	#Cheating: flirting, kissing or dating someone else while a partner is within cheatWitnessRange gives them Jealous at this severity and costs this affection.
+	cheatJealousSeverity = 0.75
+	cheatAffection = -8.0
+	cheatWitnessRange = 24.0
+	#Cheating: chance an absent partner still hears about it, and the Jealous severity it gives.
+	cheatGossipChance = 0.35
+	cheatGossipSeverity = 0.45
+	#Baseline mood while the owner is within spouseNearRange blocks, for a spouse and for a partner who is dating or engaged.
+	spouseNearRange = 24.0
+	spouseNearMood = 18.0
+	datingNearMood = 8.0
+	#Learning speed share a spouse gains while the owner is within spouseNearRange.
+	spouseNearLearning = 0.3
+	#Teleport to your spouse with the Engagement Ring (or /sublife spouse): turn on or off, and ticks between two uses.
+	spouseWarpEnabled = true
+	spouseWarpCooldownTicks = 24000
+	#Spouses walk back to the owner when further than spouseFollowRange (and closer than spouseFollowMaxRange) and not working a job.
+	spouseFollows = true
+	spouseFollowRange = 12.0
+	spouseFollowMaxRange = 48.0
+	#Spouses within spouseGuardRange blocks attack whoever hurts the owner.
+	spouseGuards = true
+	spouseGuardRange = 32.0
+
+[social]
+	#Turn subordinate to subordinate friendships and rivalries on or off.
+	enabled = true
+	#Ticks between two social passes for each humanoid subordinate, blocks within which fellow subordinates count, and how many of the nearest are considered per pass.
+	intervalTicks = 600
+	range = 8.0
+	maxPeers = 4
+	#Most fellow subordinates one subordinate keeps a bond with; the weakest non-family bonds are forgotten past this.
+	maxBonds = 12
+	#Affection gained per pass by a compatible pair (scaled by compatibility), and lost per pass by an incompatible one.
+	affectionRate = 1.5
+	rivalryRate = 1.2
+	#Compatibility: random swing per pass, bonus for the same species, per shared trait, per clashing trait, when both are Social, and when either is a Loner.
+	compatibilityJitter = 0.15
+	sameSpecies = 0.15
+	sharedTrait = 0.1
+	clashingTrait = -0.25
+	bothSocial = 0.15
+	loner = -0.15
+	#Affection at or below which two subordinates count as rivals.
+	rivalAffection = -30.0
+	#Turn subordinate to subordinate romance (crushes, partners and marriages) on or off.
+	romanceEnabled = true
+	#Affection both must feel and compatibility needed before romance points build, and the points added per pass (Romantic and Flirtatious build faster).
+	crushAffection = 45.0
+	romanceCompatibility = 0.05
+	romanceRate = 4.0
+	#Affection and romance points a mutual crush needs before the pair asks to become partners.
+	partnerAffection = 70.0
+	partnerRomance = 60.0
+	#Affection partners need, and ticks they must have been partners, before they ask to marry.
+	marryAffection = 85.0
+	marryDelayTicks = 72000
+	#Whether pairs need the owner's approval to become partners and to marry; without it they simply do.
+	needsPermission = true
+	#Ticks a request waits for an answer, ticks between two reminders, ticks before a denied pair asks again, and the mood a denial costs them.
+	pendingTicks = 24000
+	promptCooldownTicks = 6000
+	denyCooldownTicks = 48000
+	denyMood = -10.0
+	#Baseline mood while a subordinate's partner is within partnerNearRange blocks.
+	partnerNearMood = 6.0
+	partnerNearRange = 16.0
+
+[family]
+	#Turn children (births, the player's family and adoption) on or off.
+	childrenEnabled = true
+	#Married ogre couples fall in love on their own (no ogre food needed) once every ogreBirthIntervalTicks while near each other. Ogre food still works as before.
+	ogreMarriedBreeding = true
+	ogreBirthIntervalTicks = 72000
+	#Ticks between two children for a player and an ogre spouse, and ticks a newborn ogre takes to grow up.
+	playerChildCooldownTicks = 72000
+	childGrowthTicks = 24000
+	#Whether a married player may adopt a subordinate as their and their spouse's child, and how many ticks after it first joined a subordinate can still be adopted (0 = any time).
+	adoptEnabled = true
+	adoptWindowTicks = 72000
+	#Chance an adopted child picks up one trait from its new parent.
+	adoptTraitChance = 0.5
+	#Extra roll weight a born child gets toward each parent's personality and toward each parent's traits.
+	inheritPersonalityWeight = 30
+	inheritTraitWeight = 25
+
+[gossip]
+	#Turn gossip between subordinates on or off.
+	enabled = true
+	#Chance a subordinate passes one rumour on each time it socializes (Social, Cheerful, Flirtatious and Scheming spread more; Loners, Shy and Stoic less; rivals half as much).
+	shareChance = 0.35
+	#Blocks within which fellow subordinates witness something worth gossiping about.
+	witnessRange = 16.0
+	#Rumours one subordinate keeps, ticks a rumour stays fresh, and how many times it can be passed on.
+	maxRumours = 6
+	lifetimeTicks = 48000
+	maxHops = 3
+	#Share of a rumour's effect left after each retelling.
+	hopFalloff = 0.8
+	#Chance a Scheming subordinate twists a rumour when passing it on, and the chance anyone else does.
+	twistScheming = 0.5
+	twistChance = 0.05
+	#Affection toward the owner lost on hearing the owner cheated, and on hearing the owner was harsh to someone (more if it was a friend).
+	cheatAffection = -2.0
+	harshAffection = -1.0
+	harshFriendAffection = -3.0
+	#Affection toward the owner gained on hearing of a generous gift, and mood lost by the envious.
+	giftAffection = 0.5
+	envyMood = -2.0
+	#Chance and Jealous severity when a jealous-prone subordinate hears about someone else being spoiled or favoured.
+	jealousChance = 0.25
+	jealousSeverity = 0.25
+	#Grieving severity on hearing a friend died, and mood lost on hearing anyone died.
+	griefSeverity = 0.3
+	deathMood = -4.0
+	#Content severity and mood gained on hearing of a wedding, and on hearing of a birth.
+	weddingContent = 0.3
+	weddingMood = 4.0
+	birthContent = 0.2
+	birthMood = 4.0
+	#Mood lost on hearing someone deserted, and affection a disgruntled or scheming listener loses toward the owner.
+	desertMood = -3.0
+	desertAffection = -2.0
+
+[memories]
+	#Turn memories on or off.
+	enabled = true
+	#Memories one subordinate keeps; past this the least important (after fading) is forgotten.
+	maxMemories = 8
+	#Ticks for a memory's importance to halve.
+	halfLifeTicks = 168000
+	#Chance a talk reply also mentions a fitting memory.
+	lineChance = 0.3
+	#Health share at or below which a subordinate counts the owner's kill of its attacker as saving its life.
+	savedHealthShare = 0.4
+	#Blocks within which subordinates remember fighting a boss that died.
+	bossRange = 32.0
+
+[requests]
+	#Turn subordinate requests on or off.
+	enabled = true
+	#Ticks between two request rolls for each subordinate, and the chance per roll.
+	checkTicks = 1200
+	chance = 0.04
+	#Blocks the owner must be within for a request to be made, and the lowest mood that still asks.
+	offerRange = 32.0
+	minMood = -40.0
+	#Ticks the owner has to answer, ticks to fulfil an accepted request, and ticks a subordinate rests for a rest request.
+	answerTicks = 2400
+	durationTicks = 24000
+	restTicks = 24000
+	#Ticks before the same subordinate asks again, and ticks between two requests to the same owner.
+	cooldownTicks = 48000
+	ownerCooldownTicks = 12000
+	#Blocks the owner must be within when a subordinate reaches the place it asked to visit.
+	visitRange = 24.0
+	#Affection, respect and mood gained when a request is fulfilled, and the Content severity it gives.
+	completeAffection = 10.0
+	completeRespect = 3.0
+	completeMood = 20.0
+	completeContent = 0.4
+	#Affection and mood lost when a request is declined or left unanswered.
+	declineAffection = -2.0
+	declineMood = -5.0
+	#Affection and mood lost when an accepted request runs out of time.
+	expireAffection = -4.0
+	expireMood = -8.0

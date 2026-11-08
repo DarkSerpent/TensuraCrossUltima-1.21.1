@@ -1,0 +1,78 @@
+#Magicules needed to acquire Reprisal.
+magiculeAcquirement = 100000.0
+#Mastery points needed to master Reprisal.
+maxMastery = 1000
+#Reprise Mark: share of your max health the killer must have dealt inside the damage window (0.4 = 40%).
+markDamageShare = 0.4
+#Reprise Mark: length of the damage window in seconds.
+markDamageWindowSeconds = 30
+#Reprise Mark: the killer's max EP must be at least this share of yours (0.5 = 50%).
+markEpShare = 0.5
+#Reprise Mark: real-time seconds before the same rival can be marked again (86400 = 24 hours).
+markCooldownSeconds = 86400
+#Reprise Mark: base max Magicules permanently lost on every qualifying defeat.
+markMagiculeLoss = 10000.0
+#Tenacity: Total Marks needed before death revives you.
+tenacityMarks = 10
+#Tenacity: share of max health restored on revival (0.3 = 30%).
+tenacityHealthShare = 0.3
+#Tenacity: ticks of invulnerability after reviving.
+tenacityInvulnerableTicks = 60
+#Tenacity: cooldown in seconds between revivals.
+tenacityCooldownSeconds = 650
+#Loss Is the Greatest Teacher: damage multiplier against the recorded skill (0.5 = halved).
+teacherDamageMultiplier = 0.5
+#Loss Is the Greatest Teacher: cooldown in seconds forced onto the attacker's recorded skill.
+teacherSkillCooldownSeconds = 15
+#Loss Is the Greatest Teacher: cooldown in seconds between triggers.
+teacherCooldownSeconds = 160
+#That Trick Is Getting Old: Total Marks needed before dodged melee attacks are returned.
+trickMarks = 15
+#Memory of an Adversary: Marks a rival needs before their skills can be analyzed.
+memoryMarks = 10
+#Memory of an Adversary: chance per qualifying defeat to analyze the rival (0.15 = 15%).
+memoryChance = 0.15
+#Against All Odds: Marks the looked-at entity needs.
+oddsMarks = 3
+#Against All Odds: reach in blocks for the looked-at entity.
+oddsRange = 30.0
+#Against All Odds: attack damage bonus per Mark (0.05 = +5%).
+oddsDamagePerMark = 0.05
+#Against All Odds: highest attack damage bonus (1.0 = +100%).
+oddsDamageCap = 1.0
+#Against All Odds: melee and projectile dodge chance per Mark, in percent.
+oddsDodgePerMark = 2.5
+#Against All Odds: highest dodge chance bonus, in percent.
+oddsDodgeCap = 50.0
+#Against All Odds: buff duration in seconds.
+oddsDurationSeconds = 60
+#Against All Odds: cooldown in seconds.
+oddsCooldownSeconds = 120
+#Analyze Loss: Magicule cost as a multiple of the copied skill's acquisition cost.
+analyzeCostMultiplier = 2.5
+#Analyze Loss: success chance for Extra skills and Magic (0.5 = 50%).
+analyzeChance = 0.5
+#Analyze Loss: cooldown in seconds. Failure uses half of it.
+analyzeCooldownSeconds = 1200
+#Analyze Loss: allow Unique skills to be archived and copied.
+allowUniques = false
+#Analyze Loss: success chance for Unique skills when allowed (0.25 = 25%).
+uniqueChance = 0.25
+#Analyze Loss: most Unique skills that can ever be copied when allowed.
+maxUniques = 2
+#Analyze Loss and Memory of an Adversary: skill ids that can never be archived or copied. Ultimates, Intrinsics, racial-tree skills and truly-unique skills are always refused.
+blacklist = ["trnightmare:reprisal", "trnightmare:vanity", "trnightmare:vainglory", "trnightmare:stealer", "trnightmare:ventriloquist"]
+#Magnum Opus: longest counter window in ticks while held.
+opusWindowTicks = 40
+#Magnum Opus: true damage dealt to the countered attacker.
+opusDamage = 150.0
+#Magnum Opus: share of the countered damage added to the counter (0.5 = 50%).
+opusReflectShare = 0.5
+#Magnum Opus: cooldown in seconds.
+opusCooldownSeconds = 25
+#Magnum Opus: cooldown in seconds when the countered attacker is a marked rival.
+opusRivalCooldownSeconds = 12
+#Magnum Opus: resistance bypass level of the counter (1 = resistances, 2 = nullifications too).
+opusResistanceBypass = 1.0
+#Magnum Opus: barrier bypass level of the counter.
+opusBarrierBypass = 3.0

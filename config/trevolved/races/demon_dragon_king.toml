@@ -1,0 +1,82 @@
+
+[balance]
+    #Flat ordinary maximum health added on top of existing sources.
+    # Default: 6500.0
+    # Range: 0.0 ~ 1.0E12
+    flatMaximumHealthBonus = 6500.0
+    #Flat maximum spiritual health added on top of existing sources.
+    # Default: 100000.0
+    # Range: 0.0 ~ 1.0E12
+    flatMaximumSoulHealthBonus = 100000.0
+    #Total Magicule regeneration multiplier, where 2 is twice normal regeneration.
+    # Default: 5.5
+    # Range: 1.0 ~ 1000000.0
+    magiculeRegenerationMultiplier = 5.5
+    #Flat Armor bonus; Armor Toughness is half this value.
+    # Default: 100.0
+    # Range: 0.0 ~ 1.0E9
+    armorBonus = 100.0
+    #Multiplicative ordinary attack-damage bonus.
+    # Default: 12.0
+    # Range: 0.0 ~ 1000.0
+    attackDamageBonus = 12.0
+    #Multiplicative bonus applied to every native elemental Magic boost.
+    # Default: 12.0
+    # Range: 0.0 ~ 1000.0
+    allMagicDamageBonus = 12.0
+    #Multiplicative attack-speed bonus.
+    # Default: 3.0
+    # Range: 0.0 ~ 1000.0
+    attackSpeedBonus = 3.0
+    #Multiplicative movement and flight-speed bonus.
+    # Default: 1.5
+    # Range: 0.0 ~ 1000.0
+    movementSpeedBonus = 1.5
+    #EP evolution gate.
+    # Default: 2000000
+    # Range: 0 ~ 9223372036854775807
+    ep = 2000000
+    #Total Daemon/Dragon Essence eaten required.
+    # Default: 100
+    # Range: > 0
+    totalEssenceEaten = 100
+    #Fraction removed from self-inflicted Time, Demon Transform and Reincarnation aftereffects.
+    # Default: 0.6
+    # Range: 0.0 ~ 0.95
+    enhancedBodyAftereffectReduction = 0.6
+    #Fraction of magic cost/backlash prevented.
+    # Default: 0.6
+    # Range: 0.0 ~ 1.0
+    magicBacklashReduction = 0.6
+
+[evolution]
+    #Criteria required from Named, True Demon Lord, EP and total Essence eaten.
+    # Default: 2
+    # Range: 1 ~ 4
+    requiredCriteria = 2
+
+[controls]
+    #Demon-Dragon stage controls. Detailed stats and EP/Essence requirements are in this file's balance section.
+    #Expose this stage as a next evolution. Existing members are retained; no registry entry is removed.
+    allowEvolutionInto = true
+    #Flying speed ADD_MULTIPLIED_BASE bonus.
+    # Default: 0.9
+    # Range: 0.0 ~ 100.0
+    flightSpeedBonus = 0.9
+    #Flat knockback resistance bonus.
+    # Default: 0.8500000000000001
+    # Range: 0.0 ~ 1.0
+    knockbackResistance = 0.8500000000000001
+    #Flat armour toughness per configured point of racial armour.
+    # Default: 0.5
+    # Range: 0.0 ~ 100.0
+    toughnessPerArmor = 0.5
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

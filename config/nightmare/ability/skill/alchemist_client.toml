@@ -1,0 +1,8 @@
+#Show the Equivalent Exchange ledger while Alchemist is in your active preset or its radial is open.
+ledgerHud = true
+#Ledger left edge in GUI pixels.
+ledgerHudX = 6
+#Ledger top edge in GUI pixels.
+ledgerHudY = 48
+#Show the ghost outline of a Build transmutation while one is armed and you look at a spot.
+buildPreview = true

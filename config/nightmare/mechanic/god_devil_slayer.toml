@@ -1,0 +1,49 @@
+[Origin]
+	#Whether a player may hold only one Slayer category: Dragon, God or Devil. Learning a second category fails and the tome or lacrima is kept.
+	exclusiveCategories = true
+	#Whether a God Slayer may learn more than one God Slayer element (canon: one element only).
+	allowSeveralElements = false
+	#Whether learning a God or Devil Slayer root skill also teaches its Bellow (or Rage).
+	grantBellow = true
+	#Whether learning a God or Devil Slayer root skill also teaches its Appetite.
+	grantAppetite = true
+
+[Trees]
+	#Multiplier on every God and Devil Slayer tree cost.
+	globalCostMultiplier = 1.0
+
+[Divine]
+	#Whether God Slayers deal extra damage to holy, angelic and divine targets.
+	enabled = true
+	#Extra damage against divine targets (0.3 = +30%).
+	damageBonus = 0.3
+	#Whether heroes (Hero Egg or True Hero) count as divine.
+	heroesAreDivine = true
+	#Entities always treated as divine: modid:entity
+	extraDivine = ["trnightmare:seraph", "trnightmare:angel_knight", "trnightmare:sentient_boss_michael_manas", "trnightmare:sentient_boss_veldanava"]
+	#Skills whose holder counts as divine (god-class ultimates).
+	godClassSkills = ["trnightmare:michael", "trnightmare:gabriel", "trnightmare:metatron", "trnightmare:raphael_knowledge", "trnightmare:raphael_wisdom", "trnightmare:uriel_lord_of_oath", "trnightmare:uriel_lord_of_vow", "trnightmare:raguel", "trnightmare:sariel", "trnightmare:haniel", "trnightmare:hamiel", "trnightmare:raziel", "trnightmare:sandalphon_judgment", "trnightmare:sandalphon_punishment", "trnightmare:astraea", "trnightmare:astarte", "trnightmare:amaterasu", "trnightmare:tsukiyomi", "trnightmare:susanoo", "trnightmare:agni", "trnightmare:surya", "trnightmare:death_god", "trnightmare:gilgamesh_god_of_myth", "trnightmare:true_hero"]
+
+[Demonic]
+	#Whether Devil Slayers deal extra damage to demons, daemons and majin.
+	enabled = true
+	#Extra damage against demonic targets (0.3 = +30%).
+	damageBonus = 0.3
+	#Whether Demon Lord Seeds and True Demon Lords count as demonic.
+	demonLordsAreDemonic = true
+	#Whether anything with Tensura's Majin alignment counts as demonic. Tensura gives most monsters that alignment, so this is off by default.
+	majinCountsAsDemonic = false
+	#Entities always treated as demonic: modid:entity
+	extraDemonic = ["trnightmare:sentient_boss_gii_crimson", "trnightmare:sentient_boss_agera", "trnightmare:sentient_boss_ancient_daemon", "trnightmare:sentient_boss_primordial_daemon", "trnightmare:sentient_boss_rimuru_demon_lord", "trnightmare:galand", "trnightmare:grayroad", "trnightmare:drole", "trnightmare:derieri", "trnightmare:fraudrin", "trnightmare:hendrickson"]
+	#Whether a target frozen by Devil Slayer magic cannot heal while it stays frozen.
+	freezeBlocksHealing = true
+
+[Drops]
+	#Chance (0..1) that a listed god-tier boss drops a random God Slayer Tome when slain by a player.
+	godTomeChance = 0.05
+	#Bosses that can drop a God Slayer Tome: modid:entity
+	godTomeDroppers = ["trnightmare:sentient_boss_michael_manas", "trnightmare:sentient_boss_veldanava", "trnightmare:seraph"]
+	#Chance (0..1) that a listed demon-type boss drops the Devil Slayer Tome when slain by a player.
+	devilTomeChance = 0.05
+	#Bosses that can drop the Devil Slayer Tome: modid:entity
+	devilTomeDroppers = ["trnightmare:sentient_boss_gii_crimson", "trnightmare:sentient_boss_agera", "trnightmare:sentient_boss_primordial_daemon", "trnightmare:sentient_boss_ancient_daemon", "trnightmare:sentient_boss_rimuru_demon_lord", "trnightmare:sentient_boss_noir", "trnightmare:sentient_boss_blanc", "trnightmare:sentient_boss_violet", "trnightmare:sentient_boss_jaune", "trnightmare:sentient_boss_bleu", "trnightmare:sentient_boss_vert"]

@@ -1,0 +1,1291 @@
+{
+	autofocus_id: "19A802860BE1693E"
+	default_hide_dependency_lines: false
+	default_min_width: 250
+	default_quest_shape: ""
+	filename: "29056B535C4654A3"
+	group: "13F20E01BC3FA737"
+	icon: {
+		id: "astralsorcery:tome"
+	}
+	id: "29056B535C4654A3"
+	images: [
+		{
+			alpha: 190
+			height: 4.5d
+			image: "astralsorcery:textures/screen/tome/cluster_shimmer.png"
+			rotation: 0.0d
+			width: 4.5d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			alpha: 190
+			height: 4.5d
+			image: "astralsorcery:textures/screen/tome/cluster_illumination.png"
+			rotation: 0.0d
+			width: 4.5d
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			alpha: 190
+			height: 4.5d
+			image: "astralsorcery:textures/screen/tome/cluster_resonance.png"
+			rotation: 0.0d
+			width: 4.5d
+			x: 19.5d
+			y: 0.0d
+		}
+		{
+			alpha: 190
+			height: 4.5d
+			image: "astralsorcery:textures/screen/tome/cluster_luminance.png"
+			rotation: 0.0d
+			width: 4.5d
+			x: 30.0d
+			y: 0.0d
+		}
+		{
+			alpha: 190
+			height: 4.5d
+			image: "astralsorcery:textures/screen/tome/cluster_radiance.png"
+			rotation: 0.0d
+			width: 4.5d
+			x: 40.0d
+			y: 0.0d
+		}
+	]
+	order_index: 15
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "astralsorcery:aquamarine"
+			}
+			id: "19A802860BE1693E"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "550B914FAF8E1DF9"
+				item: { count: 1, id: "astralsorcery:aquamarine" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19A802860BE1693E"]
+			icon: {
+				id: "astralsorcery:tome"
+			}
+			id: "0D45D9EEFC4B10AB"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "741DA95B65C34A39"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "7C0382032974BA21"
+				item: { count: 1, id: "astralsorcery:tome" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["19A802860BE1693E"]
+			icon: {
+				id: "astralsorcery:constellation_paper"
+			}
+			id: "177AA072321C8090"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "234B6A208B96E5B7"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "0AFA73C8E2CC08E6"
+				item: { count: 1, id: "astralsorcery:constellation_paper" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["177AA072321C8090"]
+			icon: {
+				id: "astralsorcery:astrolabe"
+			}
+			id: "659CDF6941749519"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "52A1EEE552D942F1"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "31C276878BC1306F"
+				item: { count: 1, id: "astralsorcery:astrolabe" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["659CDF6941749519"]
+			icon: {
+				id: "minecraft:spyglass"
+			}
+			id: "31893B7163684E99"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7B8D4AE5779B37BB"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "1DEDBC410F232A69"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["31893B7163684E99"]
+			icon: {
+				id: "astralsorcery:wand"
+			}
+			id: "0B4B5C864F6D5BBB"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "629DB5647B9B5199"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "0147F6B228F64F8A"
+				item: { count: 1, id: "astralsorcery:wand" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0B4B5C864F6D5BBB"]
+			icon: {
+				id: "astralsorcery:rock_crystal"
+			}
+			id: "1EC1DB83108201AE"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "37AAD185AD87DC13"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "0D9A0FADCF9FB599"
+				item: { count: 1, id: "astralsorcery:rock_crystal" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["31893B7163684E99"]
+			icon: {
+				id: "astralsorcery:altar_illumination"
+			}
+			id: "1E6A8B0B25062315"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "68BA581E1FFB434D"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "7483F8BBBBA7A7E5"
+				item: { count: 1, id: "astralsorcery:altar_illumination" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E6A8B0B25062315"]
+			icon: {
+				id: "astralsorcery:artifact"
+			}
+			id: "551CEC018EF4B76D"
+			min_width: 350
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5923E1FFA479C9F1"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2339513B53A02AEB"
+				item: { count: 1, id: "astralsorcery:artifact" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1E6A8B0B25062315"
+				"1EC1DB83108201AE"
+			]
+			icon: {
+				id: "astralsorcery:crystal_pickaxe"
+			}
+			id: "4E51B59207212BF5"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3BBECDD69F1006C5"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "265D2EB35D540573"
+				item: { components: { "ftbfiltersystem:filter": "or(item(astralsorcery:crystal_pickaxe)item(astralsorcery:crystal_axe)item(astralsorcery:crystal_shovel)item(astralsorcery:crystal_sword))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1E6A8B0B25062315"]
+			icon: {
+				id: "astralsorcery:lightwell"
+			}
+			id: "1BB3578F45B78F38"
+			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7A5525595ADC5337"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "54D39B7F4B3D0A7F"
+				item: { count: 1, id: "astralsorcery:lightwell" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1BB3578F45B78F38"]
+			icon: {
+				id: "astralsorcery:infused_wood"
+			}
+			id: "33AF04527684D9B5"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "481A1640E6514601"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "3B8E1BD8D93A4FA7"
+				item: { count: 1, id: "astralsorcery:infused_wood" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33AF04527684D9B5"]
+			icon: {
+				id: "astralsorcery:focus_relay"
+			}
+			id: "35AEBB19E643C7F7"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "048B6D1A399E43B5"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "607940C63A8B3E2E"
+				item: { count: 1, id: "astralsorcery:focus_relay" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E6A8B0B25062315"]
+			icon: {
+				id: "astralsorcery:sooty_marble_raw"
+			}
+			id: "7BC23E4A4F041C68"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "77BA564FE8EF05B6"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "7AC4B8AED39FBF60"
+				item: { count: 1, id: "astralsorcery:sooty_marble_raw" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1BB3578F45B78F38"]
+			icon: {
+				id: "astralsorcery:illumination_powder"
+			}
+			id: "413E7A87ADA5503C"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "617E247DB3B0413F"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2AD4E2D9F3C909E8"
+				item: { count: 1, id: "astralsorcery:illumination_powder" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["413E7A87ADA5503C"]
+			icon: {
+				id: "astralsorcery:cave_illuminator"
+			}
+			id: "590F7EFC6F5D70A4"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "37003062593FB6E0"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "09D6C45559A9A8D7"
+				item: { count: 1, id: "astralsorcery:cave_illuminator" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1E6A8B0B25062315"]
+			icon: {
+				id: "astralsorcery:starmetal_ingot"
+			}
+			id: "5EE2A20A5C233813"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "222465FAD44FFE18"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "3493DEB3EE2C7CE2"
+				item: { count: 1, id: "astralsorcery:starmetal_ingot" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5EE2A20A5C233813"
+				"33AF04527684D9B5"
+			]
+			icon: {
+				id: "astralsorcery:stardust"
+			}
+			id: "13E519C96A1997A0"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7F4529CD0B4F41A2"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [
+				{
+					id: "0E1AF634CF905AC3"
+					item: { count: 1, id: "astralsorcery:chisel" }
+					type: "item"
+				}
+				{
+					id: "18D18F3C8F4110FE"
+					item: { count: 1, id: "astralsorcery:stardust" }
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["13E519C96A1997A0"]
+			icon: {
+				id: "astralsorcery:celestial_crystal"
+			}
+			id: "3560772906E36142"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "6CE0FD619F94DE8F"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "0A8526ECFBBDB3CB"
+				item: { count: 1, id: "astralsorcery:celestial_crystal" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["13E519C96A1997A0"]
+			icon: {
+				id: "astralsorcery:knowledge_share"
+			}
+			id: "442EB58BFF66C799"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1C04D56151EB4807"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "57B3952066FAFED1"
+				item: { count: 1, id: "astralsorcery:knowledge_share" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["13E519C96A1997A0"]
+			icon: {
+				id: "astralsorcery:architect_wand"
+			}
+			id: "60E48C0FFB71F8A7"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3A8EB15ED20B4E3A"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4E4162BD98F7392F"
+				item: { components: { "ftbfiltersystem:filter": "or(item(astralsorcery:architect_wand)item(astralsorcery:exchange_wand))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["35AEBB19E643C7F7"]
+			icon: {
+				id: "astralsorcery:altar_resonance"
+			}
+			id: "3CE393B3589BFC58"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "76FD36548A7746E3"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				icon: {
+					id: "astralsorcery:altar_resonance"
+				}
+				id: "10962AF53B23FDF0"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "astralsorcery:altar_resonance"
+				type: "observation"
+			}]
+			x: 19.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3CE393B3589BFC58"]
+			icon: {
+				id: "astralsorcery:celestial_gateway"
+			}
+			id: "410667AB401D8E75"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "42D3D71F633869C4"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "78AC64A0C1DA1B05"
+				item: { count: 1, id: "astralsorcery:celestial_gateway" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3CE393B3589BFC58"]
+			icon: {
+				id: "astralsorcery:blink_wand"
+			}
+			id: "230501AEC4ACF1A5"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "491E3506F4084CD4"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "15F89FB62AEFC870"
+				item: { components: { "ftbfiltersystem:filter": "or(item(astralsorcery:blink_wand)item(astralsorcery:grappling_wand))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3CE393B3589BFC58"]
+			icon: {
+				id: "astralsorcery:infuser"
+			}
+			id: "00F6AB7FE28D6835"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "37A991C79843859A"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "1279B2CA38149024"
+				item: { count: 1, id: "astralsorcery:infuser" }
+				type: "item"
+			}]
+			x: 23.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00F6AB7FE28D6835"]
+			icon: {
+				id: "astralsorcery:resonating_gem"
+			}
+			id: "79F797E27C723B0E"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "4D344DB3EA0A406D"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "19D0F5895E27716F"
+				item: { count: 1, id: "astralsorcery:resonating_gem" }
+				type: "item"
+			}]
+			x: 25.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["79F797E27C723B0E"]
+			icon: {
+				id: "astralsorcery:chalice"
+			}
+			id: "7B21752E363AC030"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "53050080BAD87B3F"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "1F5E09F192DB9347"
+				item: { count: 1, id: "astralsorcery:chalice" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3CE393B3589BFC58"]
+			icon: {
+				id: "astralsorcery:hyacinth"
+			}
+			id: "006F6E0EF5D249AF"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "5D0BC09B686036B7"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [
+				{
+					id: "50D1B9D5C02104EB"
+					item: { count: 1, id: "astralsorcery:hyacinth" }
+					type: "item"
+				}
+				{
+					id: "1AA13BD543210F4B"
+					item: { count: 1, id: "astralsorcery:orchid" }
+					type: "item"
+				}
+				{
+					id: "743D3070FFC09B6D"
+					item: { count: 1, id: "astralsorcery:thistle" }
+					type: "item"
+				}
+				{
+					id: "022F9654ADC0FC8D"
+					item: { count: 1, id: "astralsorcery:protea" }
+					type: "item"
+				}
+				{
+					id: "2BFD945BFC40EF2B"
+					item: { count: 1, id: "astralsorcery:iris" }
+					type: "item"
+				}
+			]
+			x: 22.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["006F6E0EF5D249AF"]
+			icon: {
+				id: "astralsorcery:lumen_array"
+			}
+			id: "7775C103AE390F9C"
+			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "35D09B570EC843D0"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "1968AB5B1CA56D54"
+				item: { count: 1, id: "astralsorcery:lumen_array" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7775C103AE390F9C"]
+			icon: {
+				id: "astralsorcery:lumen_filament"
+			}
+			id: "5DA8371E532D6F90"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "58C8ABAAD89C786A"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "629BD544F3ECC0EB"
+				item: { count: 1, id: "astralsorcery:lumen_filament" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7775C103AE390F9C"]
+			icon: {
+				id: "astralsorcery:lumen_crystallizer"
+			}
+			id: "40B3198B50FE426F"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "5DB6DCD09DC53A09"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [
+				{
+					id: "65903CBC612E39F3"
+					item: { count: 1, id: "astralsorcery:lumen_crystallizer" }
+					type: "item"
+				}
+				{
+					id: "64CFF09815746569"
+					item: { count: 1, id: "astralsorcery:lumen_crystal" }
+					type: "item"
+				}
+			]
+			x: 26.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["40B3198B50FE426F"]
+			icon: {
+				id: "astralsorcery:stardew"
+			}
+			id: "44F3DD36CE3B6D30"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "611C77CA449046DC"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1A35E3DF007AFDDC"
+				item: { count: 1, id: "astralsorcery:stardew" }
+				type: "item"
+			}]
+			x: 26.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3CE393B3589BFC58"]
+			icon: {
+				id: "astralsorcery:attunement_altar"
+			}
+			id: "52413A193881CDB6"
+			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "35C5D2120BCCBA4F"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [
+				{
+					id: "25AD4CB74A9BB877"
+					item: { count: 1, id: "astralsorcery:attunement_altar" }
+					type: "item"
+				}
+				{
+					id: "03010930C4B521E2"
+					type: "checkmark"
+				}
+			]
+			x: 22.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["52413A193881CDB6"]
+			icon: {
+				id: "astralsorcery:attuned_rock_crystal"
+			}
+			id: "49234BFAD4D8AD7A"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7B41C408D18C4A86"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "1808E455697B5545"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(astralsorcery:attuned_crystal)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 22.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["52413A193881CDB6"]
+			icon: {
+				id: "astralsorcery:dynamism_gem_sky"
+			}
+			id: "7570C01FBD44131E"
+			min_width: 300
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1111E0640A91E169"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0FECA79D0177892E"
+				item: { components: { "ftbfiltersystem:filter": "or(item(astralsorcery:dynamism_gem_day)item(astralsorcery:dynamism_gem_sky)item(astralsorcery:dynamism_gem_night))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 23.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["52413A193881CDB6"]
+			icon: {
+				id: "astralsorcery:perk_seal"
+			}
+			id: "0196001BFB76C64E"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4D335C2DC4FCD3AF"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "448C3463352D9D25"
+				item: { components: { "ftbfiltersystem:filter": "or(item(astralsorcery:perk_seal)item(astralsorcery:perk_nullifier))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 20.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"79F797E27C723B0E"
+				"52413A193881CDB6"
+			]
+			dependency_requirement: "one_completed"
+			icon: {
+				id: "astralsorcery:shifting_star"
+			}
+			id: "2EF3DBACABA0FC7B"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52E1B6B1EC9D47BE"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "5B86262969FF6841"
+				item: { count: 1, id: "astralsorcery:shifting_star" }
+				type: "item"
+			}]
+			x: 25.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7B21752E363AC030"]
+			icon: {
+				id: "astralsorcery:altar_luminance"
+			}
+			id: "132C28EB0CB4D7BF"
+			min_width: 350
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "5D5916A9C9E87021"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				icon: {
+					id: "astralsorcery:altar_luminance"
+				}
+				id: "4631F6DB15A4041F"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "astralsorcery:altar_luminance"
+				type: "observation"
+			}]
+			x: 30.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["132C28EB0CB4D7BF"]
+			icon: {
+				id: "astralsorcery:shifting_star_aevitas"
+			}
+			id: "14FBB5D65C324838"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "270B36FA02DE4943"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "7FEFF1AA88208EBF"
+				item: { components: { "ftbfiltersystem:filter": "or(item(astralsorcery:shifting_star_aevitas)item(astralsorcery:shifting_star_armara)item(astralsorcery:shifting_star_discidia)item(astralsorcery:shifting_star_evorsio)item(astralsorcery:shifting_star_vicio))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["132C28EB0CB4D7BF"]
+			icon: {
+				id: "astralsorcery:starlight_focus_rock_crystal"
+			}
+			id: "380C4417E7F958A6"
+			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "65DD9948839947C8"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "7F9973AE88E29E14"
+				item: { components: { "ftbfiltersystem:filter": "or(item(astralsorcery:starlight_focus_rock_crystal)item(astralsorcery:starlight_focus_celestial_crystal))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 32.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["380C4417E7F958A6"]
+			icon: {
+				id: "astralsorcery:linking_tool"
+			}
+			id: "5AAFD41FB606DA18"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "3F1F446798D1447D"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "2B5EC0D797A13473"
+				item: { count: 1, id: "astralsorcery:linking_tool" }
+				type: "item"
+			}]
+			x: 34.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5AAFD41FB606DA18"]
+			icon: {
+				id: "astralsorcery:lens"
+			}
+			id: "045C81345A1B6BEB"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "5C44D1A9BA0A42D9"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "6E6C8135E407E2AA"
+				item: { components: { "ftbfiltersystem:filter": "or(item(astralsorcery:lens)item(astralsorcery:prism))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 34.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["132C28EB0CB4D7BF"]
+			icon: {
+				id: "astralsorcery:lumen_alchemy_array"
+			}
+			id: "570DECF250E2DABD"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "5249B95F3CD36321"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "0FB5FD82F17B8EF9"
+				item: { count: 1, id: "astralsorcery:lumen_alchemy_array" }
+				type: "item"
+			}]
+			x: 32.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["570DECF250E2DABD"]
+			icon: {
+				id: "astralsorcery:lumen_crystal"
+			}
+			id: "742DA30B430B17C0"
+			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "12585147A09B448B"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "60A51E3809A48A62"
+				type: "checkmark"
+			}]
+			x: 34.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["132C28EB0CB4D7BF"]
+			icon: {
+				id: "astralsorcery:iridescent_crystal_pickaxe"
+			}
+			id: "3CFDCA2717FC524D"
+			min_width: 350
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0A7769895E7A240C"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "43F4B0C9A8D4CD9D"
+				item: { components: { "ftbfiltersystem:filter": "or(item(astralsorcery:iridescent_crystal_pickaxe)item(astralsorcery:iridescent_crystal_axe)item(astralsorcery:iridescent_crystal_shovel)item(astralsorcery:iridescent_crystal_sword))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 32.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5AAFD41FB606DA18"]
+			icon: {
+				id: "astralsorcery:altar_radiance"
+			}
+			id: "7C35B39DA62BA26F"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "27CBB6483A4842E1"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				icon: {
+					id: "astralsorcery:altar_radiance"
+				}
+				id: "7E0C250271E8FECD"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "astralsorcery:altar_radiance"
+				type: "observation"
+			}]
+			x: 40.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C35B39DA62BA26F"]
+			icon: {
+				id: "astralsorcery:stellar_filament"
+			}
+			id: "52FB130CD9550AB3"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7B5DDB8F9F8B1F98"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "0CC04CBD30305129"
+				item: { count: 1, id: "astralsorcery:stellar_filament" }
+				type: "item"
+			}]
+			x: 42.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7C35B39DA62BA26F"]
+			icon: {
+				id: "astralsorcery:artifact"
+			}
+			id: "5174B3FF6EFDC49F"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "5B54084E7268E026"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "26A61C0594DCAFBA"
+				type: "checkmark"
+			}]
+			x: 42.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["551CEC018EF4B76D"]
+			hide_until_deps_complete: true
+			icon: {
+				components: {
+					"astralsorcery:artifact": {
+						conditionCount: 5
+						conditions: [ ]
+						failureEffects: [ ]
+						lastPulseGameTick: -1L
+						seed: 4058868311443142109L
+						stability: 0
+						stats: {
+							emptyTriggers: 0
+							partialTriggers: 0
+							pulses: 0
+						}
+						type: "astralsorcery:sidereal"
+					}
+				}
+				id: "astralsorcery:artifact"
+			}
+			id: "7878EDB447B7DFDA"
+			min_width: 300
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "25B262D5503BCE96"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "4ACB536D94142EEC"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["132C28EB0CB4D7BF"]
+			icon: {
+				id: "astralsorcery:enchantment_amulet"
+			}
+			id: "6672D8CE0007FBFB"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "73D69445DE654DA9"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "63C2A3A76A25D830"
+				item: { count: 1, id: "astralsorcery:enchantment_amulet" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["19A802860BE1693E"]
+			icon: {
+				components: {
+					"astralsorcery:attuned_constellation": {
+						constellation: "astralsorcery:aevitas"
+					}
+					"astralsorcery:crystal_attributes": {
+						attributes: [
+							{
+								property: "astralsorcery:size"
+								tier: 8
+							}
+							{
+								property: "astralsorcery:cut"
+								tier: 4
+							}
+						]
+						properties: {
+							generate_count: 0
+							max_tier_count: 0
+						}
+					}
+				}
+				id: "astralsorcery:starlight_focus_rock_crystal"
+			}
+			id: "202D65775F9E31B8"
+			rewards: [{
+				id: "6CE85E16027E0CD0"
+				item: {
+					components: {
+						"astralsorcery:attuned_constellation": {
+							constellation: "astralsorcery:aevitas"
+						}
+						"astralsorcery:crystal_attributes": {
+							attributes: [
+								{
+									property: "astralsorcery:size"
+									tier: 8
+								}
+								{
+									property: "astralsorcery:cut"
+									tier: 4
+								}
+							]
+							properties: {
+								generate_count: 0
+								max_tier_count: 0
+							}
+						}
+					}
+					count: 1
+					id: "astralsorcery:starlight_focus_rock_crystal"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "42112909F53A9156"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+	]
+}

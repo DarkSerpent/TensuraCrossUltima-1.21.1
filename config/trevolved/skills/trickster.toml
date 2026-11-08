@@ -1,0 +1,483 @@
+#Controls for trevolved:trickster. Detailed balance is in this same file.
+#Allow learning this ability. Existing ownership is kept.
+allowAcquisition = true
+#Allow active subskills. Inherent passives are not removed.
+allowActiveUse = true
+#Allow enabling its native passive toggle. Switching it off remains allowed.
+allowPassiveToggle = true
+#Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+allowTerrainDamage = true
+
+[evolutionRequirements]
+
+    [evolutionRequirements.trickster]
+        #Required Existence Points.
+        # Default: 800000
+        # Range: 0 ~ 9223372036854775807
+        ep = 800000
+        #Primary tracked requirement; see publication CONFIGURATION.md for its meaning.
+        # Default: 750
+        # Range: > 0
+        requirementA = 750
+        #Secondary tracked requirement; zero disables this numeric gate where unused.
+        # Default: 5
+        # Range: > 0
+        requirementB = 5
+        #Tertiary tracked requirement; zero disables this numeric gate where unused.
+        # Default: 0
+        # Range: > 0
+        requirementC = 0
+        #Require every prerequisite skill in this route to be mastered.
+        requireMastery = true
+
+[northGodPath]
+    #Maximum-health fraction below which Boundless Horizon is active.
+    # Default: 0.5
+    # Range: 0.0 ~ 1.0
+    boundlessHorizonHealthThreshold = 0.5
+    #Melee and sweep damage multiplier while active.
+    # Default: 2.0
+    # Range: 0.0 ~ 1000.0
+    boundlessHorizonDamageMultiplier = 2.0
+    #Minimum damage to enemies crossed by the dash.
+    # Default: 75.0
+    # Range: 0.0 ~ 1.0E9
+    feintCrossingMinimumDamage = 75.0
+    #Mastered crossing minimum damage.
+    # Default: 125.0
+    # Range: 0.0 ~ 1.0E9
+    feintCrossingMinimumDamageMastered = 125.0
+    #Opening-strike damage multiplier.
+    # Default: 3.0
+    # Range: 0.0 ~ 1000.0
+    feintOpeningDamageMultiplier = 3.0
+    #Minimum empowered opening-strike damage.
+    # Default: 250.0
+    # Range: 0.0 ~ 1.0E9
+    feintOpeningMinimumDamage = 250.0
+    #Mastered minimum opening-strike damage.
+    # Default: 500.0
+    # Range: 0.0 ~ 1.0E9
+    feintOpeningMinimumDamageMastered = 500.0
+    #Constant term in the gravity damage formula.
+    # Default: 40.0
+    # Range: 0.0 ~ 1.0E9
+    gravityDominionBaseDamage = 40.0
+    #Unmastered damage cap.
+    # Default: 350.0
+    # Range: 0.0 ~ 1.0E9
+    gravityDominionDamageCap = 350.0
+    #Mastered damage cap.
+    # Default: 500.0
+    # Range: 0.0 ~ 1.0E9
+    gravityDominionDamageCapMastered = 500.0
+    #Seconds between gravity damage pulses.
+    # Default: 2
+    # Range: 1 ~ 86400
+    gravityDominionDamageIntervalSeconds = 2
+    #Unmastered damage per pulse at the core.
+    # Default: 80.0
+    # Range: 0.0 ~ 1.0E9
+    gravitySingularityCoreDamage = 80.0
+    #Mastered core damage.
+    # Default: 140.0
+    # Range: 0.0 ~ 1.0E9
+    gravitySingularityCoreDamageMastered = 140.0
+    #Seconds between core damage pulses.
+    # Default: 1
+    # Range: 1 ~ 86400
+    gravitySingularityDamageIntervalSeconds = 1
+    #Counter damage before global/family multipliers.
+    # Default: 150.0
+    # Range: 0.0 ~ 1.0E9
+    kineticCounterDamage = 150.0
+    #Mastered Feint Slash cooldown.
+    # Default: 16
+    # Range: 0 ~ 86400
+    feintCooldownMasteredSeconds = 16
+    #Feint Slash cooldown.
+    # Default: 20
+    # Range: 0 ~ 86400
+    feintCooldownSeconds = 20
+    #Feint Slash Aura cost.
+    # Default: 500.0
+    # Range: 0.0 ~ 1.0E12
+    feintSlashAuraCost = 500.0
+    #Gravity Dominion activation cost.
+    # Default: 1000.0
+    # Range: 0.0 ~ 1.0E12
+    gravityDominionAuraCost = 1000.0
+    #Mastered cooldown after forced release.
+    # Default: 45
+    # Range: 0 ~ 86400
+    gravityDominionCooldownMasteredSeconds = 45
+    #Cooldown after forced release.
+    # Default: 60
+    # Range: 0 ~ 86400
+    gravityDominionCooldownSeconds = 60
+    #Mastered early-release cooldown.
+    # Default: 30
+    # Range: 0 ~ 86400
+    gravityDominionEarlyReleaseCooldownMasteredSeconds = 30
+    #Reduced cooldown after voluntary release.
+    # Default: 45
+    # Range: 0 ~ 86400
+    gravityDominionEarlyReleaseCooldownSeconds = 45
+    #Gravity Singularity Aura cost.
+    # Default: 4000.0
+    # Range: 0.0 ~ 1.0E12
+    gravitySingularityAuraCost = 4000.0
+    #Mastered cooldown.
+    # Default: 60
+    # Range: 0 ~ 86400
+    gravitySingularityCooldownMasteredSeconds = 60
+    #Gravity Singularity cooldown.
+    # Default: 75
+    # Range: 0 ~ 86400
+    gravitySingularityCooldownSeconds = 75
+    #Kinetic Counter-Throw Aura cost.
+    # Default: 300.0
+    # Range: 0.0 ~ 1.0E12
+    kineticCounterAuraCost = 300.0
+    #Mastered cooldown.
+    # Default: 8
+    # Range: 0 ~ 86400
+    kineticCounterCooldownMasteredSeconds = 8
+    #Kinetic Counter-Throw cooldown.
+    # Default: 12
+    # Range: 0 ~ 86400
+    kineticCounterCooldownSeconds = 12
+    #Mastered cooldown.
+    # Default: 35
+    # Range: 0 ~ 86400
+    worldLineCooldownMasteredSeconds = 35
+    #World-Line Distortion cooldown.
+    # Default: 45
+    # Range: 0 ~ 86400
+    worldLineCooldownSeconds = 45
+    #World-Line Distortion Aura cost.
+    # Default: 2000.0
+    # Range: 0.0 ~ 1.0E12
+    worldLineDistortionAuraCost = 2000.0
+    #Maximum block-breaking radius of the sweep.
+    # Default: 4.0
+    # Range: 0.0 ~ 64.0
+    boundlessHorizonBlockBreakRadius = 4.0
+    #Decoy and concealment duration.
+    # Default: 4
+    # Range: 1 ~ 86400
+    feintConcealmentSeconds = 4
+    #Mastered maximum duration.
+    # Default: 45
+    # Range: 1 ~ 86400
+    gravityDominionMaximumDurationMasteredSeconds = 45
+    #Maximum active duration before forced release.
+    # Default: 30
+    # Range: 1 ~ 86400
+    gravityDominionMaximumDurationSeconds = 30
+    #Gravity Dominion radius.
+    # Default: 15.0
+    # Range: 0.0 ~ 256.0
+    gravityDominionRadius = 15.0
+    #Core radius that takes damage.
+    # Default: 2.5
+    # Range: 0.0 ~ 256.0
+    gravitySingularityCoreRadius = 2.5
+    #Black-hole duration after impact.
+    # Default: 5
+    # Range: 1 ~ 86400
+    gravitySingularityDurationSeconds = 5
+    #Unmastered singularity radius.
+    # Default: 25.0
+    # Range: 0.0 ~ 256.0
+    gravitySingularityRadius = 25.0
+    #Mastered radius.
+    # Default: 35.0
+    # Range: 0.0 ~ 256.0
+    gravitySingularityRadiusMastered = 35.0
+    #World-Line Distortion duration.
+    # Default: 10
+    # Range: 1 ~ 86400
+    worldLineDurationSeconds = 10
+    #Hostile retarget search range.
+    # Default: 32.0
+    # Range: 0.0 ~ 256.0
+    worldLineReturnTargetRange = 32.0
+    #Physical interaction-reach multiplier while active.
+    # Default: 2.0
+    # Range: 0.0 ~ 1000.0
+    boundlessHorizonReachMultiplier = 2.0
+    #Crossing damage attack-value multiplier.
+    # Default: 1.0
+    # Range: 0.0 ~ 1000.0
+    feintCrossingWeaponMultiplier = 1.0
+    #Mastered crossing attack multiplier.
+    # Default: 1.25
+    # Range: 0.0 ~ 1000.0
+    feintCrossingWeaponMultiplierMastered = 1.25
+    #Maximum forward dash distance.
+    # Default: 8.0
+    # Range: 0.0 ~ 256.0
+    feintDashDistance = 8.0
+    #Knockback resistance added by Gravity Adaptation.
+    # Default: 0.65
+    # Range: 0.0 ~ 1.0
+    gravityAdaptationKnockbackReduction = 0.65
+    #Divisor applied to sqrt(max EP).
+    # Default: 8.0
+    # Range: 0.001 ~ 1.0E9
+    gravityDominionEpSquareRootDivisor = 8.0
+    #Base counter timing window in ticks; North God doubles it.
+    # Default: 16
+    # Range: 1 ~ 1200
+    kineticCounterWindowTicks = 16
+    #North God Battlewill multiplier.
+    # Default: 2.5
+    # Range: 0.0 ~ 1000.0
+    northGodBattlewillMultiplier = 2.5
+    #Mastered North God Battlewill multiplier.
+    # Default: 3.0
+    # Range: 0.0 ~ 1000.0
+    northGodBattlewillMultiplierMastered = 3.0
+    #Trickster Battlewill damage multiplier.
+    # Default: 1.5
+    # Range: 0.0 ~ 1000.0
+    tricksterBattlewillMultiplier = 1.5
+    #Mastered Trickster Battlewill multiplier.
+    # Default: 2.0
+    # Range: 0.0 ~ 1000.0
+    tricksterBattlewillMultiplierMastered = 2.0
+    #Ticks a caught projectile remains frozen.
+    # Default: 6
+    # Range: 0 ~ 1200
+    worldLineProjectileFreezeTicks = 6
+    #Returned projectile velocity multiplier.
+    # Default: 2.0
+    # Range: 0.0 ~ 1000.0
+    worldLineReturnVelocityMultiplier = 2.0
+
+[familyMultipliers]
+
+    [familyMultipliers.northGod]
+        #Family outgoing-damage multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        damageMultiplier = 1.0
+        #Family native-cooldown multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Family Aura-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        auraCostMultiplier = 1.0
+        #Family Magicule-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        magiculeCostMultiplier = 1.0
+        #Family targeting/radius multiplier.
+        # Default: 1.0
+        # Range: 0.1 ~ 20.0
+        rangeMultiplier = 1.0
+
+    [familyMultipliers.trickster]
+        #Family outgoing-damage multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        damageMultiplier = 1.0
+        #Family native-cooldown multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Family Aura-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        auraCostMultiplier = 1.0
+        #Family Magicule-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        magiculeCostMultiplier = 1.0
+        #Family targeting/radius multiplier.
+        # Default: 1.0
+        # Range: 0.1 ~ 20.0
+        rangeMultiplier = 1.0
+
+[abilities]
+
+    [abilities.north_god_kalman]
+        #Controls for trevolved:north_god_kalman. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.north_god_kalman.subskills]
+
+            #Native mode 2: north_god_kalman.gravity_dominion. IDs/indices are not renumbered when disabled.
+            [abilities.north_god_kalman.subskills.north_god_kalman_gravity_dominion]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 4: north_god_kalman.gravity_singularity. IDs/indices are not renumbered when disabled.
+            [abilities.north_god_kalman.subskills.north_god_kalman_gravity_singularity]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 3: north_god_kalman.world_line_distortion. IDs/indices are not renumbered when disabled.
+            [abilities.north_god_kalman.subskills.north_god_kalman_world_line_distortion]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 0: trickster.feint_slash. IDs/indices are not renumbered when disabled.
+            [abilities.north_god_kalman.subskills.trickster_feint_slash]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 1: trickster.kinetic_counter_throw. IDs/indices are not renumbered when disabled.
+            [abilities.north_god_kalman.subskills.trickster_kinetic_counter_throw]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+[subskills]
+
+    #Native mode 0: trickster.feint_slash. IDs/indices are not renumbered when disabled.
+    [subskills.trickster_feint_slash]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+    #Native mode 1: trickster.kinetic_counter_throw. IDs/indices are not renumbered when disabled.
+    [subskills.trickster_kinetic_counter_throw]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

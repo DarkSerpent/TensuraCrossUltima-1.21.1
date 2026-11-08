@@ -1,0 +1,71 @@
+[NapalmBurst]
+	#Chant time in seconds.
+	castTime = 6
+	#Chant time in seconds for daemon lords.
+	castTimeDevilLord = 3
+	#Magicule Cost to cast.
+	magiculeCost = 800000.0
+	#The fire damage of the dragon.
+	fireDamage = 650.0
+	#The heat damage of the dragon.
+	heatDamage = 250.0
+	#The magic damage of the dragon.
+	magicDamage = 100.0
+	#The radius of the dragon's impact.
+	impactRadius = 3.0
+	#Duration of the smoke area in seconds.
+	smokeDuration = 8
+	#The width of the smoke in blocks.
+	smokeSize = 12.0
+	#Oxygen drained per second by the flames and smoke.
+	oxygenPerSecond = 2.0
+	#Seconds of crouching to put the flames out.
+	crouchSeconds = 2
+	#The max duration of the flames in seconds.
+	stickyFlameMaxSeconds = 60
+	#The duration of Unconscious in seconds.
+	unconsciousDuration = 20
+
+[BrilliantFlame]
+	#Chant time in seconds.
+	castTime = 3
+	#Magicule cost to cast.
+	magiculeCost = 1350000.0
+	#Percentage of the caster's health burned and added to the damage.
+	healthShare = 0.5
+	#The fire damage of the flame.
+	bonusDamage = 200.0
+	#Spell Radius
+	spellRadius = 48.0
+	#The explosion radius of the burst in blocks.
+	burstRadius = 7.0
+	#The explosion radius of the fireball in blocks.
+	fireballRadius = 3.0
+	#The knockback of the fireball.
+	fireballKnockback = 3.0
+	#Cooldown in seconds.
+	cooldown = 20
+
+[CrimsonLotus]
+	#Chant time in seconds.
+	castTime = 4
+	#Magicule cost to cast.
+	magiculeCost = 300000.0
+	#Spell Radius
+	spellRadius = 24.0
+	#The fire damage of each punch.
+	damage = 350.0
+	#The Attack Damage multiplier of each punch.
+	attackDamageMultiplier = 3.0
+	#Attack Damage needed for each extra punch.
+	attackDamagePerHit = 10.0
+	#The amount of punches.
+	baseHits = 4
+	#The amount of punches when mastered.
+	masteredHits = 8
+	#Ticks between punches.
+	punchInterval = 2
+	#The max time of the rush in ticks.
+	rushTicks = 12
+	#Cooldown in seconds.
+	cooldown = 12

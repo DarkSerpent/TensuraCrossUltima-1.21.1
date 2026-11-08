@@ -1,0 +1,38 @@
+#Whether Demon Clan races carry spare hearts that shatter in place of dying.
+heartsEnabled = true
+#Spare hearts of a Lower Class Demon.
+lowerClassHearts = 0
+#Spare hearts of a Mid Class Demon.
+midClassHearts = 1
+#Spare hearts of a High Class Demon.
+highClassHearts = 2
+#Spare hearts of a Demon Knight.
+demonKnightHearts = 3
+#Spare hearts of a Knight Black.
+knightBlackHearts = 4
+#Spare hearts of a Ten Commandment.
+tenCommandmentHearts = 5
+#Spare hearts of a Hell Rizer.
+hellRizerHearts = 4
+#Spare hearts of a Royal Demon.
+royalDemonHearts = 4
+#Spare hearts of a Demon Prince.
+demonPrinceHearts = 7
+#Ticks for one shattered heart to regrow (20 ticks = 1 second).
+heartRegrowTicks = 6000
+#Fraction of max health a demon is left with when a heart shatters in their place.
+heartReviveHealth = 0.5
+#Seconds of near-invulnerability (Resistance V) after a heart shatters.
+heartGraceSeconds = 3
+#Whether Demon Clan races grow stronger in darkness: at or below darkLightLevel, at night under the open sky, or anywhere in the Nether or Hell.
+darknessEmpowerment = true
+#Light level at or below which a demon counts as standing in darkness.
+darkLightLevel = 7
+#Attack damage bonus in darkness for a Lower Class Demon (0.1 = +10%).
+darkAttackBase = 0.1
+#Extra attack damage bonus in darkness per tier above Lower Class (Mid 1, High 2, Knight/Commandment/Hell Rizer/Royal 3, Knight Black/Prince 4).
+darkAttackPerTier = 0.05
+#Movement speed bonus in darkness (0.1 = +10%).
+darkSpeed = 0.1
+#Health a demon regenerates each second in darkness.
+darkRegen = 0.5

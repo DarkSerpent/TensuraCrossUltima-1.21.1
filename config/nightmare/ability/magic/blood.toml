@@ -1,0 +1,51 @@
+[BloodArmory]
+	#Chant time in seconds.
+	castTime = 3
+	#Magicule cost to forge a weapon.
+	magiculeCost = 900000.0
+	#Percent of max health spilled to forge a weapon. The spell fails if this would kill you.
+	healthCostPercent = 15.0
+	#Cooldown in seconds.
+	cooldown = 5
+	#Fraction (0..1) of the damage every Blood Armory weapon heals its wielder.
+	lifesteal = 0.1
+	#Fraction (0..1) of the damage the Blood Scythe heals its wielder (instead of the base lifesteal).
+	scytheLifesteal = 0.2
+	#Seconds of Bleeding every Blood Armory hit inflicts.
+	bleedSeconds = 4
+	#Highest Bleeding level (0 = I) the Blood Daggers can stack a target up to.
+	daggerMaxBleed = 4
+	#Damage Bleeding deals every second per level.
+	bleedDamage = 4.0
+	#Fraction (0..1) of a Blood Spear hit dealt to the enemy behind its target.
+	spearPierceShare = 0.5
+	#How far behind its target (in blocks) the Blood Spear pierces.
+	spearPierceRange = 3.0
+	#Fraction (0..1) of a critical Blood Greatsword hit dealt to every enemy round its target in a blood burst.
+	greatswordBurstShare = 0.4
+	#Blood Greatsword burst radius in blocks.
+	greatswordBurstRadius = 3.0
+
+[PiercingBlood]
+	#Chant time in seconds before the beam fires.
+	castTime = 3
+	#Chant time in seconds once Piercing Blood is mastered.
+	castTimeMastered = 1
+	#Damage the beam deals every second to everything it passes through.
+	damagePerSecond = 350.0
+	#Magicules drained every second while the beam fires.
+	magiculePerSecond = 45000.0
+	#Damage the caster takes every second while the beam fires.
+	selfDamagePerSecond = 50.0
+	#If false, the beam stops instead of letting its own blood cost kill the caster.
+	selfDamageCanKill = false
+	#Ticks between each beam hit; damage and costs are split evenly across the hits in a second.
+	hitInterval = 4
+	#Beam range in blocks.
+	range = 48.0
+	#Beam radius in blocks for hitting entities.
+	radius = 0.8
+	#Seconds of Bleeding every beam hit inflicts.
+	bleedSeconds = 4
+	#Cooldown in seconds after the beam ends.
+	cooldown = 8

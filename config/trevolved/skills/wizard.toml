@@ -1,0 +1,399 @@
+#Controls for trevolved:wizard. Detailed balance is in this same file.
+#Allow learning this ability. Existing ownership is kept.
+allowAcquisition = true
+#Allow active subskills. Inherent passives are not removed.
+allowActiveUse = true
+#Allow enabling its native passive toggle. Switching it off remains allowed.
+allowPassiveToggle = true
+#Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+allowTerrainDamage = true
+
+[evolution]
+
+    [evolution.wizard]
+        #Required effective maximum EP.
+        # Default: 600000
+        # Range: 0 ~ 9223372036854775807
+        maximumEp = 600000
+        #Primary progression requirement.
+        # Default: 200
+        # Range: > 0
+        requirementA = 200
+        #Secondary progression requirement.
+        # Default: 3
+        # Range: > 0
+        requirementB = 3
+        #Tertiary progression requirement.
+        # Default: 1000000
+        # Range: > 0
+        requirementC = 1000000
+        #Optional fourth progression requirement.
+        # Default: 0
+        # Range: > 0
+        requirementD = 0
+        #Require the Unique skill to be mastered.
+        requireMastery = true
+
+[wizard]
+    #Focused Explosion damage multiplier.
+    # Default: 2.0
+    # Range: 0.0 ~ 1000.0
+    concentratedExplosionDamageMultiplier = 2.0
+    #Mastered Focused Explosion damage multiplier.
+    # Default: 2.5
+    # Range: 0.0 ~ 1000.0
+    concentratedExplosionDamageMultiplierMastered = 2.5
+    #Minimum edge damage fraction for Concentrated Explosion.
+    # Default: 0.6
+    # Range: 0.0 ~ 1.0
+    concentratedExplosionMinimumDamageFalloff = 0.6
+    #Maximum Crimson Overdrive damage multiplier.
+    # Default: 5.0
+    # Range: 1.0 ~ 1000.0
+    crimsonOverdriveMaximumDamageMultiplier = 5.0
+    #Minimum edge damage fraction for ordinary Explosion.
+    # Default: 0.25
+    # Range: 0.0 ~ 1.0
+    explosionMinimumDamageFalloff = 0.25
+    #Explosion Goddess base damage.
+    # Default: 6500.0
+    # Range: 0.0 ~ 1.0E9
+    ultimateBaseDamage = 6500.0
+    #Explosion Goddess damage cap.
+    # Default: 100000.0
+    # Range: 0.0 ~ 1.0E9
+    ultimateDamageCap = 100000.0
+    #Mastered Explosion Goddess damage cap.
+    # Default: 140000.0
+    # Range: 0.0 ~ 1.0E9
+    ultimateDamageCapMastered = 140000.0
+    #Unique Explosion base damage.
+    # Default: 1200.0
+    # Range: 0.0 ~ 1.0E9
+    uniqueBaseDamage = 1200.0
+    #Unique damage cap.
+    # Default: 15000.0
+    # Range: 0.0 ~ 1.0E9
+    uniqueDamageCap = 15000.0
+    #Mastered Unique damage cap.
+    # Default: 20000.0
+    # Range: 0.0 ~ 1.0E9
+    uniqueDamageCapMastered = 20000.0
+    #Mastered Crimson Overdrive cooldown.
+    # Default: 240
+    # Range: 0 ~ 86400
+    crimsonOverdriveCooldownMasteredSeconds = 240
+    #Crimson Overdrive cooldown.
+    # Default: 300
+    # Range: 0 ~ 86400
+    crimsonOverdriveCooldownSeconds = 300
+    #Current Magicules spent at maximum Crimson Overdrive charge.
+    # Default: 1.0
+    # Range: 0.0 ~ 1.0
+    crimsonOverdriveMaximumMagiculeCostFraction = 1.0
+    #Current Magicules spent at minimum Crimson Overdrive charge.
+    # Default: 0.5
+    # Range: 0.0 ~ 1.0
+    crimsonOverdriveMinimumMagiculeCostFraction = 0.5
+    #Mastered Explosion cooldown.
+    # Default: 150
+    # Range: 0 ~ 86400
+    explosionCooldownMasteredSeconds = 150
+    #Explosion cooldown.
+    # Default: 180
+    # Range: 0 ~ 86400
+    explosionCooldownSeconds = 180
+    #Current Magicules spent by Explosion.
+    # Default: 0.5
+    # Range: 0.0 ~ 1.0
+    explosionMagiculeCostFraction = 0.5
+    #Mastered Focused Explosion cooldown.
+    # Default: 90
+    # Range: 0 ~ 86400
+    focusedExplosionCooldownMasteredSeconds = 90
+    #Focused Explosion cooldown.
+    # Default: 120
+    # Range: 0 ~ 86400
+    focusedExplosionCooldownSeconds = 120
+    #Current Magicules spent by Focused Explosion.
+    # Default: 0.25
+    # Range: 0.0 ~ 1.0
+    focusedExplosionMagiculeCostFraction = 0.25
+    #Mastered Explosion Goddess cooldown.
+    # Default: 90
+    # Range: 0 ~ 86400
+    ultimateExplosionCooldownMasteredSeconds = 90
+    #Explosion Goddess cooldown.
+    # Default: 120
+    # Range: 0 ~ 86400
+    ultimateExplosionCooldownSeconds = 120
+    #Concentrated Explosion radius.
+    # Default: 10.0
+    # Range: 1.0 ~ 512.0
+    concentratedExplosionRadius = 10.0
+    #Mastered concentrated radius.
+    # Default: 14.0
+    # Range: 1.0 ~ 512.0
+    concentratedExplosionRadiusMastered = 14.0
+    #Fully charged Crimson Overdrive radius relative to regular Explosion.
+    # Default: 5.0
+    # Range: 1.0 ~ 100.0
+    crimsonOverdriveMaximumRadiusMultiplier = 5.0
+    #Mastered Unique aftermath.
+    # Default: 25
+    # Range: 0 ~ 3600
+    explosionAftermathMasteredSeconds = 25
+    #Unique aftermath duration.
+    # Default: 30
+    # Range: 0 ~ 3600
+    explosionAftermathSeconds = 30
+    #Divisor applied to square-root Magicule radius scaling.
+    # Default: 35.0
+    # Range: 0.001 ~ 1.0E9
+    explosionRadiusMagiculeSqrtDivisor = 35.0
+    #Maximum raycast range used to place Explosion.
+    # Default: 128
+    # Range: 1 ~ 1024
+    explosionTargetingRange = 128
+    #Mastered Explosion Goddess aftermath duration.
+    # Default: 10
+    # Range: 0 ~ 3600
+    ultimateExplosionAftermathMasteredSeconds = 10
+    #Explosion Goddess aftermath duration.
+    # Default: 15
+    # Range: 0 ~ 3600
+    ultimateExplosionAftermathSeconds = 15
+    #Ultimate Explosion radius before Magicule scaling.
+    # Default: 20.0
+    # Range: 1.0 ~ 512.0
+    ultimateExplosionBaseRadius = 20.0
+    #Ultimate radius cap.
+    # Default: 64.0
+    # Range: 1.0 ~ 512.0
+    ultimateRadiusCap = 64.0
+    #Mastered Ultimate radius cap.
+    # Default: 80.0
+    # Range: 1.0 ~ 512.0
+    ultimateRadiusCapMastered = 80.0
+    #Unique Explosion radius before Magicule scaling.
+    # Default: 14.0
+    # Range: 1.0 ~ 512.0
+    uniqueExplosionBaseRadius = 14.0
+    #Unique terrain/damage radius cap.
+    # Default: 36.0
+    # Range: 1.0 ~ 256.0
+    uniqueRadiusCap = 36.0
+    #Mastered Unique radius cap.
+    # Default: 42.0
+    # Range: 1.0 ~ 256.0
+    uniqueRadiusCapMastered = 42.0
+    #Post-chant compression time in ticks.
+    # Default: 120
+    # Range: 1 ~ 1200
+    crimsonOverdriveMaximumCompressionTicks = 120
+    #Minimum current Magicules required to begin and release Crimson Overdrive.
+    # Default: 250000.0
+    # Range: 0.0 ~ 1.0E12
+    crimsonOverdriveMinimumCurrentMagicules = 250000.0
+    #Paralysis and Fragility amplifier after Unique Explosion.
+    # Default: 1
+    # Range: 0 ~ 254
+    explosionAftermathEffectAmplifier = 1
+    #Explosion minimum chant in ticks.
+    # Default: 60
+    # Range: 1 ~ 72000
+    explosionCastTicks = 60
+    #Mastered Explosion minimum chant in ticks.
+    # Default: 50
+    # Range: 1 ~ 72000
+    explosionCastTicksMastered = 50
+    #Additive Magicule regeneration multiplier granted by Explosion Goddess.
+    # Default: 5.0
+    # Range: 0.0 ~ 1000.0
+    explosionGoddessMagiculeRegenerationBonus = 5.0
+    #Mastered Explosion Goddess Magicule regeneration bonus.
+    # Default: 7.5
+    # Range: 0.0 ~ 1000.0
+    explosionGoddessMagiculeRegenerationBonusMastered = 7.5
+    #Minimum current Magicules required to begin and release Explosion.
+    # Default: 50000.0
+    # Range: 0.0 ~ 1.0E12
+    explosionMinimumCurrentMagicules = 50000.0
+    #Maximum blocks changed by Unique Explosion.
+    # Default: 8192
+    # Range: 0 ~ 262144
+    explosionTerrainBlockBudget = 8192
+    #Maximum successful Explosion terrain changes processed in one server tick.
+    # Default: 512
+    # Range: 1 ~ 65536
+    explosionTerrainChangesPerTick = 512
+    #Maximum candidate terrain positions checked by one Explosion in one server tick.
+    # Default: 4096
+    # Range: 1 ~ 262144
+    explosionTerrainChecksPerTick = 4096
+    #Explosion visual density percentage.
+    # Default: 100
+    # Range: 10 ~ 200
+    explosionVfxDensityPercent = 100
+    #Minimum current Magicules required to begin and release Focused Explosion.
+    # Default: 25000.0
+    # Range: 0.0 ~ 1.0E12
+    focusedExplosionMinimumCurrentMagicules = 25000.0
+    #Paralysis and Fragility amplifier after Ultimate Explosion.
+    # Default: 0
+    # Range: 0 ~ 254
+    ultimateExplosionAftermathEffectAmplifier = 0
+    #Ultimate Explosion native barrier and resistance bypass.
+    # Default: 1.0
+    # Range: 0.0 ~ 1.0
+    ultimateExplosionBarrierAndResistanceBypass = 1.0
+    #Explosion Goddess chant in ticks.
+    # Default: 50
+    # Range: 1 ~ 72000
+    ultimateExplosionCastTicks = 50
+    #Mastered Explosion Goddess chant in ticks.
+    # Default: 40
+    # Range: 1 ~ 72000
+    ultimateExplosionCastTicksMastered = 40
+    #Targets below this fraction of the caster's maximum EP are executed by the Ultimate.
+    # Default: 0.25
+    # Range: 0.0 ~ 1000.0
+    ultimateExplosionExecutionTargetEpFraction = 0.25
+    #Maximum blocks changed by Ultimate Explosion.
+    # Default: 32768
+    # Range: 0 ~ 1048576
+    ultimateExplosionTerrainBlockBudget = 32768
+    #Explosion Goddess square-root resource scaling.
+    # Default: 22.0
+    # Range: 0.0 ~ 1000000.0
+    ultimateSqrtMagiculeScale = 22.0
+    #Unique Explosion native barrier and resistance bypass.
+    # Default: 0.4
+    # Range: 0.0 ~ 1.0
+    uniqueExplosionBarrierAndResistanceBypass = 0.4
+    #Unique square-root resource scaling.
+    # Default: 6.0
+    # Range: 0.0 ~ 1000000.0
+    uniqueSqrtMagiculeScale = 6.0
+    #Additive Magicule regeneration multiplier granted by Wizard.
+    # Default: 1.5
+    # Range: 0.0 ~ 1000.0
+    wizardMagiculeRegenerationBonus = 1.5
+    #Mastered Wizard Magicule regeneration bonus.
+    # Default: 2.0
+    # Range: 0.0 ~ 1000.0
+    wizardMagiculeRegenerationBonusMastered = 2.0
+
+[abilities]
+
+    [abilities.explosion_god_megumin]
+        #Controls for trevolved:explosion_god_megumin. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.explosion_god_megumin.subskills]
+
+            #Native mode 2: wizard.crimson_overdrive. IDs/indices are not renumbered when disabled.
+            [abilities.explosion_god_megumin.subskills.wizard_crimson_overdrive]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 0: wizard.explosion. IDs/indices are not renumbered when disabled.
+            [abilities.explosion_god_megumin.subskills.wizard_explosion]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 1: wizard.focused_explosion. IDs/indices are not renumbered when disabled.
+            [abilities.explosion_god_megumin.subskills.wizard_focused_explosion]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+[subskills]
+
+    #Native mode 0: wizard.explosion. IDs/indices are not renumbered when disabled.
+    [subskills.wizard_explosion]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

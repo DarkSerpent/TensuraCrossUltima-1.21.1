@@ -1,0 +1,46 @@
+{
+  "content": {
+    "tensura_bronze_coin": {
+      "type": "item",
+      "content": "tensura:bronze_coin",
+      "amount": {
+        "min": 4,
+        "max": 24
+      },
+      "unitWorth": 80,
+      "weightMult": 0.6
+    },
+    "tensura_silver_coin": {
+      "type": "item",
+      "content": "tensura:silver_coin",
+      "amount": {
+        "min": 2,
+        "max": 8
+      },
+      "unitWorth": 300,
+      "weightMult": 0.35
+    },
+    "tensura_gold_coin": {
+      "type": "item",
+      "rarity": "UNCOMMON",
+      "content": "tensura:gold_coin",
+      "amount": {
+        "min": 1,
+        "max": 4
+      },
+      "unitWorth": 1200,
+      "weightMult": 0.2
+    },
+    "tensura_stellar_gold_coin": {
+      "type": "item",
+      "rarity": "RARE",
+      "content": "tensura:stellar_gold_coin",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 5000,
+      "weightMult": 0.06
+    }
+  }
+}

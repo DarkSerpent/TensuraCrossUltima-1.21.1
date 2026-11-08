@@ -1,0 +1,76 @@
+#Controls for trevolved:disturb_magic. Detailed balance is in this same file.
+#Allow learning this ability. Existing ownership is kept.
+allowAcquisition = true
+#Allow active subskills. Inherent passives are not removed.
+allowActiveUse = true
+#Allow enabling its native passive toggle. Switching it off remains allowed.
+allowPassiveToggle = true
+#Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+allowTerrainDamage = true
+
+[balance]
+    #EP required for Disturb Magic.
+    # Default: 400000
+    # Range: 0 ~ 9223372036854775807
+    ep = 400000
+    #Normal cost.
+    # Default: 10000.0
+    # Range: 0.0 ~ 1.0E12
+    cost = 10000.0
+    #Time-school cost.
+    # Default: 400000.0
+    # Range: 0.0 ~ 1.0E12
+    timeCost = 400000.0
+    #Circle targeting range.
+    # Default: 30
+    # Range: 1 ~ 256
+    range = 30
+    #Anti-Magic duration applied to the disrupted caster.
+    # Default: 80
+    # Range: 1 ~ 72000
+    antiMagicTicks = 80
+    #Normal circle disruption chant.
+    # Default: 1
+    # Range: 1 ~ 72000
+    castTicks = 1
+    #Mastered non-time magic required.
+    # Default: 30
+    # Range: 0 ~ 100000
+    masteredNonTimeMagic = 30
+    #Time-school disruption chant.
+    # Default: 40
+    # Range: 1 ~ 72000
+    timeCastTicks = 40
+
+[subskills]
+
+    #Native mode 0: default. IDs/indices are not renumbered when disabled.
+    [subskills.default]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

@@ -1,0 +1,19 @@
+
+[balance]
+    #Render circle anchor points and approximate collision radii for diagnostics.
+    debugCircleAnchors = false
+    #Multiplier for nonessential synchronized spell particles.
+    # Default: 1.0
+    # Range: 0.0 ~ 2.0
+    particleDensity = 1.0
+    #Use restrained spell effects for lower-end clients and busy multiplayer servers.
+    reducedVfx = false
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

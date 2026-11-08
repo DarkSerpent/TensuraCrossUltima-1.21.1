@@ -1,0 +1,104 @@
+# Unique skill IDs that must not appear in random skill rewards or Great Sage choices.
+# Edit this list, save the file, then run /tcu reload blacklist.
+blacklisted_skills = [
+    "mysticism:restricted",
+    "mysticism:fourth_wall",
+    "nightmareutils:sentient",
+    "nightmareutils:sentientdisintegrate",
+    "nightmareutils:charm_test",
+    "nightmareutils:possession_test",
+    "nightmareutils:possession_copy_test",
+    "nightmareutils:block_place_test",
+    "nightmareutils:block_break_test",
+    "nightmareutils:particle_shape_test",
+    "nightmareutils:mimicry_test",
+    "nightmareutils:programmable_menu_test",
+    "nightmareutils:spectator_test",
+    "tensuramoreskills:parasite",
+    "tensuramoreskills:symbiote",
+    "tensuramoreskills:anti_symbiote",
+    "tensuramoreskills:void_archive",
+    "tennogamenolife:magic_beads",
+    "tensura:starved",
+    "tensura:divine_berserker",
+    "tensura:anti_sk",
+    "tensuramoreskills:exploiter",
+    "tensuramoreskills:nirvana",
+    "tno_tensura_extras:all_rounder",
+    "tno_tensura_extras:time_traveler",
+    "tno_tensura_extras:optimist",
+    "trnightmare:raphael_knowledge",
+    "trnightmare:raphael_wisdom",
+    "trnightmare:beelzebuth",
+    "trnightmare:veldora_lord_of_storms",
+    "trnightmare:envy_manas",
+    "trnightmare:snatch",
+    "trnightmare:time_traveler",
+    "tensura_kumodesu:weapon_creation",
+    "tensura_kumodesu:wondrous_weapon_creation",
+    "tensura_kumodesu:resolve",
+    "tensura_kumodesu:determination",
+    "tensura_kumodesu:perseverance",
+    "tensura_kumodesu:height_of_occultism",
+    "tensuramoreskills:godly_smithery",
+    "tensuramoreskills:godly_scientist",
+    "trarcane:milim_eye",
+    "greatsage:venuzdonoa",
+    "trnightmare:stealer",
+    "trnightmare:domicile",
+    "trnightmare:sermon_of_swords",
+    "trnightmare:nemesis",
+    "trnightmare:vanity",
+    "trnightmare:sun_wheel",
+    "trnightmare:draco",
+    "trnightmare:ruler",
+    "trnightmare:darrenheart",
+    "trnightmare:lord_of_magewolves",
+    "trnightmare:deadly_poison",
+    "trnightmare:tempter",
+    "trnightmare:divine_lightning",
+    "trnightmare:witches_gluttony",
+    "trnightmare:breaker",
+    "trnightmare:arelkos",
+    "trnightmare:pacifism",
+    "trnightmare:electromaster",
+    "trnightmare:manufacturer",
+    "trnightmare:summoner",
+    "trnightmare:witches_greed",
+    "trnightmare:basquias",
+    "trnightmare:alchemist",
+    "trnightmare:ventriloquist",
+    "trnightmare:endorse",
+    "trnightmare:tusk",
+    "trnightmare:patience",
+    "trnightmare:flame_alchemist",
+    "trnightmare:vainglory",
+    "trnightmare:forest_guardian",
+    "trnightmare:the_warden",
+    "trnightmare:changing_star",
+    "trnightmare:gift",
+    "trnightmare:infinity",
+    "trnightmare:ending",
+    "beyond_gacha_c:magewolves",
+    "mortal_cultivation:great_sage",
+]
+
+# These skills are excluded only while the player has the matching race.
+# Use the full race registry ID as the table key and Unique Skill IDs as its array values.
+[race_blacklisted_skills]
+"tennogamenolife:machine" = ["tensura:commander", "tensura:creator", "tensura:seer", "tensura:berserker", "tensura:mathematician"]
+"tennogamenolife:befehler" = ["tensura:commander", "tensura:creator", "tensura:seer", "tensura:berserker", "tensura:mathematician"]
+"tennogamenolife:kampf" = ["tensura:commander", "tensura:creator", "tensura:seer", "tensura:berserker", "tensura:mathematician"]
+"tennogamenolife:zeichen" = ["tensura:commander", "tensura:creator", "tensura:seer", "tensura:berserker", "tensura:mathematician"]
+"tennogamenolife:pruefer" = ["tensura:commander", "tensura:creator", "tensura:seer", "tensura:berserker", "tensura:mathematician"]
+"tennogamenolife:seher" = ["tensura:commander", "tensura:creator", "tensura:seer", "tensura:berserker", "tensura:mathematician"]
+"tennogamenolife:hubie_dora" = ["tensura:commander", "tensura:creator", "tensura:seer", "tensura:berserker", "tensura:mathematician"]
+"tennogamenolife:einzeig" = ["tensura:commander", "tensura:creator", "tensura:seer", "tensura:berserker", "tensura:mathematician"]
+"tennogamenolife:emir_eins" = ["tensura:commander", "tensura:creator", "tensura:seer", "tensura:berserker", "tensura:mathematician"]
+"tennogamenolife:horou" = ["tensura:commander", "tensura:creator", "tensura:seer", "tensura:berserker", "tensura:mathematician"]
+"tennogamenolife:puraiya" = ["tensura:commander", "tensura:creator", "tensura:seer", "tensura:berserker", "tensura:mathematician"]
+"tensura:ogre" = ["tensura_kumodesu:weapon_creation"]
+"traddon:shardling" = ["traddon:resonant_core"]
+"traddon:geode_golem" = ["traddon:resonant_core"]
+"traddon:prism_knight" = ["traddon:resonant_core"]
+"traddon:diamond_sovereign" = ["traddon:resonant_core"]

@@ -1,0 +1,181 @@
+[General]
+	#Damage multiplier for every Sky Dragon Slayer spell once that spell is mastered.
+	masteredDamageMultiplier = 1.5
+	#The range at which Troia and the enchantments pick an ally, in blocks.
+	supportRange = 16.0
+
+[Roar]
+	#Chant time in ticks.
+	castTicks = 10
+	#Magicule cost to cast.
+	magiculeCost = 12000.0
+	#Cooldown in seconds.
+	cooldown = 10
+	#Ticks the tornado breath lasts.
+	durationTicks = 20
+	#Ticks between two damage pulses.
+	pulseTicks = 5
+	#The length of the breath cone in blocks.
+	length = 12.0
+	#The full opening angle of the breath cone in degrees.
+	coneDegrees = 35.0
+	#Total damage of each pulse.
+	pulseDamage = 55.0
+	#The push of each pulse.
+	knockback = 0.6
+	#Whether enemy spell projectiles inside the cone are blown away.
+	deleteSpells = true
+	#Whether enemy physical projectiles inside the cone are turned back.
+	deflectProjectiles = true
+
+[Claw]
+	#Magicule cost to cast.
+	magiculeCost = 1200.0
+	#Cooldown in seconds.
+	cooldown = 3
+	#The reach of the kick in blocks.
+	reach = 4.5
+	#Total damage of the kick.
+	damage = 100.0
+	#The push of the kick on the target.
+	knockback = 0.6
+	#The radius of the gust around the caster in blocks.
+	gustRadius = 4.0
+	#The push of the gust on every other enemy.
+	gustKnockback = 0.8
+
+[WingAttack]
+	#Magicule cost to cast.
+	magiculeCost = 1400.0
+	#Cooldown in seconds.
+	cooldown = 4
+	#The reach of the wind blades in blocks.
+	reach = 6.0
+	#The width of the sweep in degrees.
+	arcDegrees = 160.0
+	#Ticks each blade takes to sweep the arc.
+	sweepTicks = 6
+	#Total damage of each blade.
+	bladeDamage = 75.0
+	#The pull toward the centre of the arc.
+	pull = 0.4
+
+[CrushingFang]
+	#Magicule cost to cast.
+	magiculeCost = 15000.0
+	#Cooldown in seconds.
+	cooldown = 8
+	#The reach at which the slash picks its target, in blocks.
+	reach = 4.5
+	#The radius of the frontal arc in blocks.
+	arcRadius = 4.0
+	#The width of the frontal arc in degrees.
+	arcDegrees = 120.0
+	#Total damage of the slash.
+	damage = 230.0
+	#Barrier bypass level of the slash.
+	barrierBypass = 3.0
+	#The push of the slash.
+	knockback = 0.5
+
+[Troia]
+	#Chant time in ticks.
+	castTicks = 10
+	#Magicule cost to cast.
+	magiculeCost = 10000.0
+	#Cooldown in seconds.
+	cooldown = 12
+	#Share of the target's maximum health restored. 0.3 is 30%.
+	healFraction = 0.3
+	#Seconds a cast keeps counting toward the target's diminishing returns.
+	toleranceSeconds = 60
+	#Effectiveness lost by every earlier cast on the same target. 0.25 is 25%.
+	tolerancePerCast = 0.25
+	#The lowest effectiveness the diminishing returns can reach. 0.25 is 25%.
+	minimumEffectiveness = 0.25
+	#Whether Troia clears Slowness, Poison, Weakness and Paralysis.
+	cleanse = true
+
+[Enchant]
+	#Chant time in ticks.
+	castTicks = 10
+	#Magicule cost to cast.
+	magiculeCost = 9000.0
+	#Cooldown of each mode in seconds.
+	cooldown = 10
+	#Seconds each enchantment lasts.
+	durationSeconds = 30
+	#Movement speed bonus of Vernier. 0.3 is +30%.
+	vernierSpeed = 0.3
+	#Damage dealt bonus of Arms. 0.3 is +30%.
+	armsDamage = 0.3
+	#Damage taken reduction of Armor. 0.3 is -30%.
+	armorReduction = 0.3
+	#The highest damage taken reduction Armor can reach after every bonus. 0.9 is -90%.
+	armorCap = 0.75
+
+[DragonForce]
+	#Magicules spent to awaken Dragon Force.
+	activationCost = 30000.0
+	#Magicules drained per second while Dragon Force is awake.
+	magiculePerSecond = 250.0
+	#Damage multiplier for Sky Dragon Slayer spells while Dragon Force is awake.
+	damageMultiplier = 1.4
+	#Strength multiplier for Troia and the enchantments while Dragon Force is awake.
+	supportMultiplier = 1.5
+	#Whether the caster falls slowly while Dragon Force is awake.
+	slowFalling = true
+	#Seconds awake between two mastery points.
+	masteryIntervalSeconds = 30
+
+[SkyDrill]
+	#Chant time in ticks.
+	castTicks = 40
+	#Magicule cost to cast.
+	magiculeCost = 78000.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#The range at which the drill can be aimed, in blocks.
+	range = 32.0
+	#The radius of the cyclone in blocks.
+	radius = 10.0
+	#Ticks the cyclone lasts.
+	durationTicks = 40
+	#Ticks between two damage pulses.
+	pulseTicks = 5
+	#Total damage to each enemy across the whole cyclone.
+	totalDamage = 750.0
+	#How high lifted enemies are carried, in blocks.
+	liftHeight = 7.0
+	#Ticks after the drop during which lifted enemies take no fall damage.
+	noFallTicks = 60
+
+[MilkyWay]
+	#Charge time in ticks. Releasing early cancels the spell.
+	castTicks = 60
+	#Magicule cost, spent when the charge begins.
+	magiculeCost = 80000.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#The length of the beam in blocks. It stops at walls.
+	range = 40.0
+	#Extra reach around the beam that counts as a hit, in blocks.
+	hitRadius = 1.5
+	#Total damage to every enemy on the beam.
+	damage = 900.0
+	#Damage multiplier against dragons.
+	dragonMultiplier = 2.0
+	#Ticks the beam stays visible.
+	beamTicks = 20
+
+[Appetite]
+	#Whether a caster who knows Sky Dragon's Appetite feeds on the air.
+	enabled = true
+	#Magicules restored per second high in the sky or under rain with an open sky.
+	magiculePerSecond = 250.0
+	#The height above which the air feeds the caster.
+	minimumY = 150.0
+	#Extra share restored while airborne. 0.5 is +50%.
+	airborneBonus = 0.5
+	#Whether a caster who knows Sky Dragon's Appetite takes no wind damage, including the wind share of split magic.
+	windImmunity = true

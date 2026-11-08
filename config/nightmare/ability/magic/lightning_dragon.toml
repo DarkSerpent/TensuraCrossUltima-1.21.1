@@ -1,0 +1,135 @@
+[General]
+	#Damage multiplier for every Lightning Dragon Slayer spell once that spell is mastered.
+	masteredDamageMultiplier = 1.5
+
+[Roar]
+	#Chant time in ticks.
+	castTicks = 10
+	#Magicule cost to cast.
+	magiculeCost = 14000.0
+	#Cooldown in seconds.
+	cooldown = 10
+	#The length of the beam in blocks. It stops at walls.
+	range = 25.0
+	#Extra reach around the beam that counts as a hit, in blocks.
+	hitRadius = 1.0
+	#Total damage to every enemy on the beam.
+	damage = 250.0
+	#How far the lightning jumps from one enemy to the next, in blocks.
+	chainRange = 6.0
+	#Enemies the lightning jumps to after the last enemy on the beam.
+	chainTargets = 2
+	#Total damage of each jump.
+	chainDamage = 125.0
+	#Ticks the beam stays visible.
+	beamTicks = 12
+
+[Jaw]
+	#Magicule cost to cast.
+	magiculeCost = 1300.0
+	#Cooldown in seconds.
+	cooldown = 3
+	#The reach of the hammer blow in blocks.
+	reach = 4.5
+	#Total damage of the hammer blow.
+	damage = 110.0
+	#Ticks the struck enemy is paralysed.
+	stunTicks = 20
+	#Ticks a struck boss is paralysed.
+	bossStunTicks = 6
+
+[LightningBody]
+	#Magicule cost to cast.
+	magiculeCost = 9000.0
+	#Cooldown in seconds.
+	cooldown = 8
+	#The longest dash in blocks. The dash stops before walls.
+	distance = 20.0
+	#Ticks the dash takes.
+	travelTicks = 4
+	#Extra reach around the caster that counts as a hit, in blocks.
+	hitRadius = 1.2
+	#Total damage to every enemy on the path.
+	damage = 90.0
+	#Ticks after the dash during which the caster takes no fall damage.
+	noFallTicks = 40
+
+[HeavenlyHalberd]
+	#Chant time in ticks.
+	castTicks = 10
+	#Magicule cost to cast.
+	magiculeCost = 16000.0
+	#Cooldown in seconds.
+	cooldown = 10
+	#Travel speed of the halberd in blocks per tick.
+	speed = 2.5
+	#Maximum travel distance in blocks.
+	range = 40.0
+	#Extra reach around the halberd that counts as a hit, in blocks.
+	hitRadius = 0.9
+	#Total damage to every enemy the halberd pierces.
+	damage = 260.0
+
+[RagingBolt]
+	#Magicule cost to cast.
+	magiculeCost = 18000.0
+	#Cooldown in seconds.
+	cooldown = 12
+	#The range at which a target can be marked, in blocks.
+	range = 32.0
+	#Ticks between the mark and the strike.
+	delayTicks = 30
+	#Total damage to the marked target.
+	damage = 300.0
+	#The radius of the splash around the strike in blocks.
+	splashRadius = 3.0
+	#Total damage of the splash to every other enemy inside it.
+	splashDamage = 80.0
+
+[DragonForce]
+	#Magicules spent to awaken Dragon Force.
+	activationCost = 30000.0
+	#Magicules drained per second while Dragon Force is awake.
+	magiculePerSecond = 250.0
+	#Damage multiplier for Lightning Dragon Slayer spells while Dragon Force is awake.
+	damageMultiplier = 1.4
+	#Movement speed bonus while Dragon Force is awake. 0.2 is +20%.
+	speedBonus = 0.2
+	#Extra blocks every lightning jump reaches while Dragon Force is awake.
+	chainRangeBonus = 4.0
+	#Extra enemies the lightning jumps to while Dragon Force is awake.
+	chainTargetBonus = 1
+	#Seconds awake between two mastery points.
+	masteryIntervalSeconds = 30
+
+[RoaringThunder]
+	#Chant time in ticks.
+	castTicks = 40
+	#Magicule cost to cast.
+	magiculeCost = 78000.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#The reach at which the fist picks its target, in blocks. Without a target the dome lands in front of the caster.
+	reach = 6.0
+	#The radius of the lightning dome in blocks.
+	radius = 8.0
+	#Ticks between the fist slam and the dome crashing down.
+	delayTicks = 10
+	#Total damage to the target at the centre.
+	centerDamage = 750.0
+	#Total damage to every other enemy inside the dome.
+	damage = 300.0
+	#The knockback of the dome.
+	knockback = 0.8
+
+[Appetite]
+	#Whether a caster who knows Lightning Dragon's Appetite feeds on lightning.
+	enabled = true
+	#Magicules restored when struck by lightning.
+	magiculePerStrike = 5000.0
+	#Magicules restored by draining a lightning rod with a sneaking right click.
+	magiculePerRod = 1500.0
+	#Seconds before the same lightning rod can be drained again.
+	rodCooldownSeconds = 30
+	#Whether a caster who knows Lightning Dragon's Appetite takes no lightning damage, including the lightning share of split magic.
+	lightningImmunity = true

@@ -1,0 +1,80 @@
+#Max health.
+health = 14000.0
+#Max spiritual health.
+spiritualHealth = 16000.0
+#Health he regenerates every second (doubled when he has not been hurt for 5 seconds).
+regenPerSecond = 30.0
+#Whether he spawns naturally in the Nether (every Nether biome).
+naturalSpawn = true
+#Chance (0..1) a natural spawn attempt in the Nether that picked him goes through. Lower is rarer.
+spawnChance = 0.02
+#Whether he also spawns naturally in Tensura's Hell.
+hellSpawn = true
+#Chance (0..1) a natural spawn attempt in Hell that picked him goes through.
+hellSpawnChance = 0.04
+#Whether he also spawns naturally in the Overworld's plains, savannas and forests at night.
+wildSpawn = true
+#Chance (0..1) a natural spawn attempt in the Overworld that picked him goes through.
+wildSpawnChance = 0.015
+#Natural spawns fail if another Fraudrin is within this many blocks. 0 turns the check off.
+spawnSpacing = 256
+#Damage of a claw rake.
+clawDamage = 360.0
+#Reach (blocks) of a claw rake at normal size.
+clawReach = 4.5
+#Ticks between claw rakes.
+clawCooldown = 24
+#Damage of the Spear Hands thrust, to everything along it.
+spearDamage = 520.0
+#Length (blocks) of the Spear Hands thrust at normal size.
+spearLength = 9.0
+#Ticks between Spear Hands.
+spearCooldown = 140
+#Damage of each bite of the maw on his chest.
+biteDamage = 240.0
+#Share of the bite damage he heals himself for.
+biteHeal = 0.5
+#Ticks between devours.
+devourCooldown = 300
+#Damage of each spike he launches from his back.
+spikeDamage = 300.0
+#Range (blocks) of his spike volley.
+spikeRange = 22.0
+#Ticks between spike volleys.
+spikeCooldown = 180
+#Damage of a stomp of his hand-shaped feet.
+stompDamage = 450.0
+#Radius (blocks) of a stomp at normal size.
+stompRadius = 5.0
+#Ticks between stomps.
+stompCooldown = 220
+#Fraction of max health (0..1) at which he grows to Full Size.
+fullSizeHealth = 0.5
+#How much bigger he grows at Full Size (2.0 = twice as tall).
+fullSizeScale = 2.0
+#Damage dealt multiplier at Full Size.
+fullDamageMultiplier = 1.4
+#Damage taken multiplier at Full Size.
+fullDamageTaken = 0.75
+#Fraction of max health (0..1) below which, at Full Size, he may charge his dark explosion.
+blastHealth = 0.3
+#Damage of the dark explosion at its centre (it falls off to half at its edge).
+blastDamage = 1400.0
+#Radius (blocks) of the dark explosion.
+blastRadius = 16.0
+#Damage that must be dealt to him while he charges to break the explosion and stagger him.
+blastBreak = 2000.0
+#Ticks he is staggered after his explosion is broken.
+staggerTicks = 60
+#Damage taken multiplier while staggered.
+staggerDamageTaken = 1.3
+#Ticks between explosions.
+blastCooldown = 900
+#Radius (blocks) of the Commandment of Selflessness: anyone who acts selfishly within it (eating, drinking or using potions, or picking up items) loses their memories.
+selflessRadius = 20.0
+#Ticks someone's memories stay lost: they cannot use or toggle skills for this long.
+amnesiaTicks = 160
+#Ticks of Nausea that come with the lost memories.
+amnesiaNauseaTicks = 100
+#Whether creative-mode players are spared by Selflessness.
+selflessSparesCreative = true

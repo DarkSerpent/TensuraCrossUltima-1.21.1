@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "note": "Blocks enchant-removal methods from stripping curse engravements.",
+  "blockGrindstoneRemoval": true,
+  "blockGrindstoneTake": true,
+  "blockAnvilTransfer": true,
+  "blockApotheosisStackedTransfer": true,
+  "manualProtectedIds": []
+}

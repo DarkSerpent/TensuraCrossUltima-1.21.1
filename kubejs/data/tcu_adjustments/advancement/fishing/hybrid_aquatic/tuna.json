@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "caught_fish": {
+      "conditions": {
+        "item": {
+          "items": "hybrid_aquatic:tuna"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    }
+  },
+  "requirements": [
+    [
+      "caught_fish"
+    ]
+  ]
+}

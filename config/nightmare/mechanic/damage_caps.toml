@@ -1,0 +1,24 @@
+#Universal per-hit cap = the larger of UniversalDamageCap (trnightmare mechanic config, 0 disables) and this fraction of the target's max health.
+universalMaxHealthFraction = 0.6
+#Flat floor of the boss per-hit cap. Boss per-hit cap = the larger of this and bossMaxHealthFraction of max health. Both 0 removes it.
+bossFlatCap = 750.0
+#Fraction of a boss's max health used for its per-hit cap.
+bossMaxHealthFraction = 0.04
+#Damage a boss takes over any rolling 20-tick window before overflow is reduced, as a fraction of its max health. 0 disables the boss budget.
+bossBudgetPerSecond = 0.12
+#Multiplier applied to boss damage beyond the rolling budget.
+bossOverflowMultiplier = 0.25
+#Whether players get a rolling damage budget too.
+playerBudgetEnabled = false
+#Damage a player takes over any rolling 20-tick window before overflow is reduced, as a fraction of their max health.
+playerBudgetPerSecond = 0.5
+#Multiplier applied to player damage beyond the rolling budget.
+playerOverflowMultiplier = 0.5
+#Whether Bleeding ticks count toward the rolling boss and player budgets and are reduced by overflow like other damage. They never hit the per-hit cap. False = Bleeding ignores caps and budgets entirely.
+bleedingCountsTowardBudget = true
+#Whether capped or budget-reduced hits play a dull clank and a grey spark on the target.
+feedbackEnabled = true
+#Fewest ticks between two cap feedback effects on the same target.
+feedbackCooldownTicks = 10
+#Per-entity limits replacing the boss defaults: <modid:entity>=perHitFlat,maxHealthFraction,budgetPerSecond[,overflowMultiplier]. Zeros disable that part; listing an entity applies the limits even if it is not a boss.
+entityOverrides = []

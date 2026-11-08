@@ -1,0 +1,6 @@
+[notifications.general]
+update_notifications = false
+
+[general.online_status]
+show_essential_indicator_on_tab = false
+show_essential_indicator_on_nametags = false

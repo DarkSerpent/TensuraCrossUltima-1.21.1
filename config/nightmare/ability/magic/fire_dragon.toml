@@ -1,0 +1,151 @@
+[General]
+	#Damage multiplier for every Fire Dragon Slayer spell once that spell is mastered.
+	masteredDamageMultiplier = 1.5
+
+[Roar]
+	#Chant time in ticks.
+	castTicks = 10
+	#Magicule cost to cast.
+	magiculeCost = 12000.0
+	#Cooldown in seconds.
+	cooldown = 10
+	#The length of the breath cone in blocks.
+	length = 10.0
+	#The full width of the breath cone in degrees.
+	coneDegrees = 40.0
+	#Ticks the breath lasts.
+	durationTicks = 40
+	#Ticks between two damage pulses.
+	pulseTicks = 10
+	#Total damage of each pulse.
+	pulseDamage = 55.0
+	#Seconds every enemy caught in the breath burns.
+	burnSeconds = 5.0
+	#The push of each pulse. Entities tagged no_forced_move are never moved.
+	knockback = 0.25
+
+[IronFist]
+	#Magicule cost to cast.
+	magiculeCost = 1200.0
+	#Cooldown in seconds.
+	cooldown = 3
+	#The reach of the punch in blocks.
+	reach = 4.5
+	#Total damage of the punch.
+	damage = 100.0
+	#The radius of the fire burst around the struck enemy in blocks.
+	burstRadius = 2.5
+	#Total damage of the burst to every other enemy inside it.
+	burstDamage = 30.0
+	#Seconds the struck enemies burn.
+	burnSeconds = 3.0
+	#The knockback of the punch.
+	knockback = 0.9
+
+[WingAttack]
+	#Magicule cost to cast.
+	magiculeCost = 1400.0
+	#Cooldown in seconds.
+	cooldown = 4
+	#The reach of the flame whips in blocks.
+	reach = 5.0
+	#The width of the swept arc in degrees.
+	arcDegrees = 160.0
+	#Ticks the whips take to sweep the arc.
+	sweepTicks = 6
+	#Total damage of each whip.
+	damage = 70.0
+	#The knockback of each whip.
+	knockback = 1.4
+	#Seconds the struck enemies burn.
+	burnSeconds = 3.0
+
+[BrilliantFlame]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost to cast.
+	magiculeCost = 15000.0
+	#Cooldown in seconds.
+	cooldown = 12
+	#Travel speed of the fireball in blocks per tick.
+	speed = 1.4
+	#Maximum travel distance in blocks.
+	range = 40.0
+	#Extra reach around the fireball that counts as a direct hit, in blocks.
+	hitRadius = 1.0
+	#Total damage to the enemy struck directly.
+	damage = 220.0
+	#The radius of the explosion in blocks. It never breaks blocks.
+	explosionRadius = 5.0
+	#Total damage of the explosion to every other enemy inside it.
+	explosionDamage = 80.0
+	#Seconds the struck enemies burn.
+	burnSeconds = 5.0
+	#The knockback of the explosion.
+	knockback = 1.2
+
+[SwordHorn]
+	#Magicule cost to cast.
+	magiculeCost = 10000.0
+	#Cooldown in seconds.
+	cooldown = 8
+	#The longest dash in blocks. The dash stops before walls.
+	distance = 8.0
+	#Ticks the dash takes.
+	dashTicks = 6
+	#Extra reach around the caster that counts as a hit, in blocks.
+	hitRadius = 0.9
+	#Total damage to the first enemy struck.
+	damage = 180.0
+	#Seconds the struck enemy burns.
+	burnSeconds = 4.0
+	#The push given to the carried enemy at the end of the dash.
+	releaseKnockback = 1.2
+
+[DragonForce]
+	#Magicules spent to awaken Dragon Force.
+	activationCost = 30000.0
+	#Magicules drained per second while Dragon Force is awake.
+	magiculePerSecond = 250.0
+	#Damage multiplier for Fire Dragon Slayer spells while Dragon Force is awake.
+	damageMultiplier = 1.4
+	#Magicule cost multiplier for Fire Dragon Slayer spells while Dragon Force is awake.
+	costMultiplier = 0.75
+	#Knockback resistance granted while Dragon Force is awake. 1 is full immunity.
+	knockbackResistance = 1.0
+	#Seconds awake between two mastery points.
+	masteryIntervalSeconds = 30
+
+[CrimsonLotus]
+	#Chant time in ticks.
+	castTicks = 40
+	#Magicule cost to cast.
+	magiculeCost = 75000.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#The length of the flame cone in blocks.
+	length = 16.0
+	#The full width of the flame cone in degrees.
+	coneDegrees = 50.0
+	#Ticks the flame blade lasts.
+	durationTicks = 20
+	#Ticks between two damage pulses.
+	pulseTicks = 4
+	#Total damage one enemy can take from the whole cast. It is split evenly across the pulses.
+	totalDamage = 700.0
+	#Seconds every enemy caught in the flames burns.
+	burnSeconds = 8.0
+	#The push of each pulse.
+	knockback = 0.3
+
+[Appetite]
+	#Whether a caster who knows Fire Dragon's Appetite can eat fire to restore magicules.
+	enabled = true
+	#Magicules restored by eating one fire charge, blaze powder or magma cream.
+	magiculePerItem = 2000.0
+	#Ticks between two bites.
+	cooldownTicks = 20
+	#Magicules restored per second while standing in fire or lava.
+	magiculePerSecondInFire = 200.0
+	#Whether a caster who knows Fire Dragon's Appetite takes no fire damage, including the fire share of split magic.
+	fireImmunity = true

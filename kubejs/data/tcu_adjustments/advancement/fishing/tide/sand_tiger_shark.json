@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "caught_fish": {
+      "conditions": {
+        "item": {
+          "items": "tide:sand_tiger_shark"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    }
+  },
+  "requirements": [
+    [
+      "caught_fish"
+    ]
+  ]
+}

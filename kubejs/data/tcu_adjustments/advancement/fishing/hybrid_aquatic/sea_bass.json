@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "caught_fish": {
+      "conditions": {
+        "item": {
+          "items": "hybrid_aquatic:sea_bass"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    }
+  },
+  "requirements": [
+    [
+      "caught_fish"
+    ]
+  ]
+}

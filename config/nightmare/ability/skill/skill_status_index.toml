@@ -1,0 +1,6 @@
+#Read each skill's code for the harmful effects it creates, so a skill counts as inflicting them as soon as it exists.
+scanSkillCode = true
+#Remember every harmful effect a skill is seen applying in the world, shared across all players and saved with the world.
+learnFromObservation = true
+#Extra skill -> status links, as "skill_id=effect_id". Use these for effects a skill applies through code the scan cannot follow, or for counters.
+extraLinks = ["tensura:freezing_flame=trnightmare:freezing_burn", "trnightmare:freezing_flame=trnightmare:freezing_burn", "tensura:deadly_poison=trnightmare:cursed_poison", "trnightmare:deadly_poison=trnightmare:cursed_poison", "trnightmare:samael=trnightmare:cursed_poison", "tensura:absolute_severance=tensura:severance_blade", "tensura:severer=tensura:severance_blade", "tensura:creator=tensura:anti_skill", "tensura:bewilder=tensura:mind_control", "tensura:commander=tensura:mind_control", "tensura:greed=tensura:mind_control", "tensura:tempter=tensura:mind_control", "trnightmare:tempter=tensura:mind_control", "tensura:healer=tensura:infection", "tensura:infinity_prison=tensura:infinite_imprisonment"]

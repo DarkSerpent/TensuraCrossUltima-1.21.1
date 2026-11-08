@@ -1,0 +1,99 @@
+[VoidRift]
+	#Cast time in seconds.
+	castTime = 2
+	#Cooldown in seconds.
+	cooldown = 8
+	#Magicule Cost to cast.
+	magiculeCost = 3000.0
+	#How far away (in blocks) the rift can be opened.
+	range = 24.0
+	#Damage the rift deals to whatever it swallows.
+	damage = 30.0
+	#Damage the rift deals to whatever it swallows (Mastered).
+	damageMastered = 60.0
+	#How far (in blocks) the rift flings whatever it swallows.
+	scatter = 10.0
+	#How long the rift stays open, in seconds.
+	duration = 8
+	#Rifts opened per cast once mastered.
+	riftsMastered = 3
+
+[VoidGate]
+	#Cast time in seconds.
+	castTime = 0
+	#Cooldown in seconds.
+	cooldown = 3
+	#Magicule Cost to cast.
+	magiculeCost = 1500.0
+	#How far (in blocks) you can step through the gate.
+	range = 24.0
+	#How far (in blocks) you can step through the gate (Mastered).
+	rangeMastered = 40.0
+
+[VoidRay]
+	#Cast time in seconds.
+	castTime = 3
+	#Cooldown in seconds.
+	cooldown = 6
+	#Magicule Cost to cast.
+	magiculeCost = 8000.0
+	#Range of the ray in blocks.
+	range = 40.0
+	#Damage of the ray.
+	damage = 70.0
+	#Damage of the ray (Mastered).
+	damageMastered = 140.0
+
+[GravityWell]
+	#Cast time in seconds.
+	castTime = 3
+	#Cooldown in seconds.
+	cooldown = 15
+	#Magicule Cost to cast.
+	magiculeCost = 12000.0
+	#How far away (in blocks) the well can be opened.
+	range = 30.0
+	#How far the well pulls, in blocks.
+	radius = 9.0
+	#How long the well pulls before it implodes, in seconds.
+	duration = 4
+	#Damage every half second to whatever it is pulling.
+	pulseDamage = 8.0
+	#Damage when the well implodes.
+	implodeDamage = 60.0
+	#Damage when the well implodes (Mastered).
+	implodeDamageMastered = 120.0
+
+[GravitonCrush]
+	#Cast time in seconds.
+	castTime = 2
+	#Cooldown in seconds.
+	cooldown = 10
+	#Magicule Cost to cast.
+	magiculeCost = 6000.0
+	#How far away (in blocks) the crush can be centred.
+	range = 28.0
+	#Radius of the crushing field in blocks.
+	radius = 7.0
+	#Damage of the crush.
+	damage = 40.0
+	#Damage of the crush (Mastered).
+	damageMastered = 80.0
+	#How long its victims stay under Heavy Gravity, in seconds.
+	pinDuration = 4
+	#Heavy Gravity level (0 = I).
+	pinLevel = 1
+
+[ZeroGravity]
+	#Cast time in seconds.
+	castTime = 2
+	#Cooldown in seconds.
+	cooldown = 12
+	#Magicule Cost to cast.
+	magiculeCost = 5000.0
+	#Radius around the caster in blocks.
+	radius = 10.0
+	#How long its victims float, in seconds.
+	duration = 3
+	#Damage when its victims are slammed back down once mastered.
+	slamDamageMastered = 50.0

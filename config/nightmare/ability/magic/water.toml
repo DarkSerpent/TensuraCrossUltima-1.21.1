@@ -1,0 +1,45 @@
+[HealingWaters]
+	#Spell Radius
+	spellRadius = 12.0
+	#Health restored per magicule.
+	healthPerMagicule = 5.0
+	#The max health restored per second.
+	maxHealthPerSecond = 100.0
+
+[HatefulShiver]
+	#Chant time in seconds.
+	castTime = 4
+	#Magicule cost to cast.
+	magiculeCost = 750000.0
+	#Spell Radius
+	spellRadius = 48.0
+	#The water damage of the funnel.
+	damage = 900.0
+	#The encase duration in seconds.
+	encaseSeconds = 2
+	#Cooldown in seconds.
+	cooldown = 15
+
+[FrozenArmory]
+	#Chant time in seconds.
+	castTime = 3
+	#Magicule cost to forge a weapon.
+	magiculeCost = 1450000.0
+	#The freeze duration of the Frozen Longsword in seconds.
+	sweepFreezeSeconds = 2
+	#Cooldown in seconds.
+	cooldown = 5
+
+[TemperatureDrop]
+	#Chant time in seconds.
+	castTime = 10
+	#Magicule cost to cast.
+	magiculeCost = 2250000.0
+	#Spell Radius
+	spellRadius = 64.0
+	#The ice damage of the iceberg.
+	damage = 1000.0
+	#The impact radius of the iceberg in blocks.
+	impactRadius = 8.0
+	#Cooldown in seconds.
+	cooldown = 30

@@ -1,0 +1,149 @@
+[General]
+	#Damage multiplier for every Light Magic spell once that spell is mastered.
+	masteredDamageMultiplier = 1.5
+
+[Flash]
+	#Cast time in ticks. 0 casts instantly.
+	castTicks = 0
+	#Magicule cost.
+	magiculeCost = 600.0
+	#Cooldown in seconds.
+	cooldown = 10
+	#Radius of the flash in blocks.
+	radius = 8.0
+	#Blindness duration on enemies, in ticks.
+	blindTicks = 80
+	#How long flashed mobs cannot target the caster, in ticks.
+	targetLockTicks = 60
+	#How long the white screen flash lasts for flashed players, in ticks.
+	screenFlashTicks = 14
+
+[PhotonBarrage]
+	#Magicule cost of each bolt.
+	magiculePerBolt = 150.0
+	#Cooldown in seconds, applied when the key is released.
+	cooldown = 3
+	#Ticks between bolts while the key is held.
+	fireInterval = 5
+	#Light damage of each bolt.
+	damage = 16.88
+	#Bolt speed in blocks per tick.
+	speed = 3.0
+	#Bolt range in blocks.
+	range = 32.0
+	#Random spread of each bolt, in degrees.
+	spread = 3.0
+
+[LightspeedStep]
+	#Cast time in ticks. 0 casts instantly.
+	castTicks = 0
+	#Magicule cost.
+	magiculeCost = 8000.0
+	#Cooldown in seconds.
+	cooldown = 6
+	#Maximum teleport distance in blocks.
+	distance = 24.0
+	#Light damage to every enemy along the path.
+	damage = 54.38
+	#How close to the path an enemy must be to be struck, in blocks.
+	pathRadius = 1.5
+	#How long the caster takes no fall damage after the step, in ticks.
+	noFallTicks = 40
+
+[RefractionVeil]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost.
+	magiculeCost = 12000.0
+	#Cooldown in seconds.
+	cooldown = 40
+	#How long the veil lasts, in ticks.
+	durationTicks = 300
+	#Damage multiplier of the first melee or spell hit out of the veil. The hit ends the veil.
+	ambushMultiplier = 1.6
+	#Radius in which mobs targeting the caster drop their target, in blocks.
+	dropTargetRadius = 48.0
+	#Whether the caster's armour and held items are hidden from other players too, not just their body.
+	hideEquipment = true
+
+[RadiantSpear]
+	#Chant time in ticks.
+	castTicks = 10
+	#Magicule cost.
+	magiculeCost = 10000.0
+	#Cooldown in seconds.
+	cooldown = 8
+	#Spear speed in blocks per tick.
+	speed = 2.2
+	#Spear range in blocks.
+	range = 40.0
+	#Light damage to the first enemy the spear impales.
+	pierceDamage = 90.63
+	#Light damage of the burst to every other enemy in range.
+	burstDamage = 72.5
+	#Radius of the burst in blocks. The burst never breaks blocks.
+	burstRadius = 3.5
+	#Knockback of the burst. Entities tagged no_forced_move are never moved.
+	burstKnockback = 0.6
+
+[LightSword]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost.
+	magiculeCost = 12000.0
+	#Cooldown in seconds, starting when the blade fades.
+	cooldown = 20
+	#How long the blade lasts, in ticks.
+	durationTicks = 400
+	#Extra melee reach in blocks while the blade is up.
+	extraReach = 1.5
+	#Extra light damage on each melee hit, as a fraction of the hit.
+	lightFraction = 0.25
+	#Length of the light sweep sent ahead by each hit, in blocks.
+	sweepLength = 4.0
+	#Half-width of the light sweep, in blocks.
+	sweepWidth = 1.6
+	#Light damage of the sweep to each enemy in it, as a fraction of the hit.
+	sweepFraction = 0.5
+
+[JewelRain]
+	#Chant time in ticks.
+	castTicks = 50
+	#Magicule cost.
+	magiculeCost = 52500.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#How far away the rain can be aimed, in blocks.
+	aimRange = 40.0
+	#Radius of the rain in blocks.
+	radius = 12.0
+	#How long the rain lasts, in ticks.
+	durationTicks = 100
+	#Ticks between damage waves. Every enemy inside is struck once per wave.
+	hitInterval = 5
+	#Light damage of each wave.
+	damage = 24.0
+	#The most hits a single enemy can take from one rain.
+	maxHitsPerTarget = 20
+
+[Daybreak]
+	#Chant time in ticks.
+	castTicks = 60
+	#Magicule cost.
+	magiculeCost = 70000.0
+	#Cooldown in seconds.
+	cooldown = 120
+	#How far away the noon can be aimed, in blocks.
+	aimRange = 40.0
+	#Radius of the noon in blocks.
+	radius = 16.0
+	#How long the noon lasts, in ticks.
+	durationTicks = 300
+	#Light damage per second to enemies inside.
+	damagePerSecond = 16.0
+	#Damage multiplier against undead, daemons and majin.
+	darkMultiplier = 2.5
+	#Seconds undead, daemons and majin are set burning each pulse.
+	burnSeconds = 3
+	#Regeneration amplifier for allies inside. 1 is Regeneration II.
+	regenerationAmplifier = 1

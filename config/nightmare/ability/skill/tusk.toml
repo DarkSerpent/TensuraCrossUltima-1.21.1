@@ -1,0 +1,40 @@
+#Magicule value of Tusk, used by copy and plunder costs. Tusk itself can only be obtained by reincarnation.
+magiculeValue = 60000.0
+#Mastery points needed to master Tusk.
+maxMastery = 1000
+#Mastery gained per nail that hits.
+nailMastery = 1.0
+#Mastery gained per spin shot that hits.
+spinShotMastery = 3.0
+#Nail Spin: armour durability damage multiplier for bare-handed hits.
+nailSpinArmorWear = 3.0
+#Nail Spin: damage multiplier for bare-handed hits on targets wearing no armour.
+nailSpinNakedMultiplier = 1.5
+#Nail Shot: nails per clip.
+clip = 10
+#Nail Shot: nails per clip once Tusk is mastered.
+masteredClip = 20
+#Nail Shot: damage of each nail.
+nailDamage = 10.0
+#Nail Shot: minimum ticks between nails.
+nailGapTicks = 4
+#Nail Shot: clip cooldown in seconds once the clip is empty.
+clipCooldownSeconds = 20
+#Nail Shot: clip cooldown in seconds once the clip is empty, when Tusk is mastered.
+masteredClipCooldownSeconds = 30
+#Nail Shot: nail speed in blocks per tick.
+nailSpeed = 2.4
+#Nail Shot: how far ahead the nails aim, in blocks.
+aimRange = 64.0
+#Nail Shot: ticks a nail flies before vanishing.
+nailLifeTicks = 40
+#Spin Shot: damage (needs Spin mastered, Shift-use Nail Shot).
+spinShotDamage = 25.0
+#Spin Shot: damage once Tusk is mastered.
+spinShotMasteredDamage = 30.0
+#Spin Shot: cooldown in seconds, separate from the clip.
+spinShotCooldownSeconds = 5
+#Spin Shot: speed in blocks per tick.
+spinShotSpeed = 2.8
+#Wormhole: extra width in blocks added to the nail hit check (aim assist).
+wormholeAimAssist = 0.3

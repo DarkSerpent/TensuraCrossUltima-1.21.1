@@ -1,0 +1,98 @@
+#Max health.
+health = 12000.0
+#Max spiritual health.
+spiritualHealth = 16000.0
+#Health he regenerates every second (doubled when he has not been hurt for 5 seconds).
+regenPerSecond = 30.0
+#Whether he spawns naturally in the Nether (every Nether biome).
+naturalSpawn = true
+#Chance (0..1) a natural spawn attempt in the Nether that picked him goes through. Lower is rarer.
+spawnChance = 0.02
+#Whether he also spawns naturally in Tensura's Hell.
+hellSpawn = true
+#Chance (0..1) a natural spawn attempt in Hell that picked him goes through.
+hellSpawnChance = 0.04
+#Whether he also spawns naturally in the Overworld's mountain biomes (peaks, slopes, meadows, groves and windswept hills), day or night.
+mountainSpawn = true
+#Chance (0..1) a natural spawn attempt in the mountains that picked him goes through.
+mountainSpawnChance = 0.02
+#Natural spawns fail if another Galand is within this many blocks. 0 turns the check off.
+spawnSpacing = 256
+#Halberd sweep damage.
+cleaveDamage = 320.0
+#Halberd sweep reach in blocks from the edge of his body.
+cleaveReach = 4.6
+#Halberd sweep cooldown in ticks.
+cleaveCooldown = 26
+#Harpoon thrust damage.
+thrustDamage = 380.0
+#Harpoon thrust lunge speed in blocks per tick.
+thrustSpeed = 1.6
+#Ticks between harpoon thrusts.
+thrustCooldown = 120
+#Bassari: damage of the ground-splitting slash.
+bassariDamage = 700.0
+#Bassari: how far the split runs in blocks.
+bassariRange = 24.0
+#Bassari: how fast the split runs in blocks per tick.
+bassariSpeed = 2.5
+#Bassari: whether the split carves a trench into the ground (also needs the mobGriefing gamerule).
+bassariCarvesGround = true
+#Bassari: ticks between uses.
+bassariCooldown = 260
+#Bunzaradan: damage of every hit of the whirling slashes.
+bunzaradanDamage = 120.0
+#Bunzaradan: radius of the whirl in blocks.
+bunzaradanRadius = 5.5
+#Bunzaradan: ticks between uses.
+bunzaradanCooldown = 340
+#Zanbarazan: damage where he lands.
+zanbarazanImpactDamage = 300.0
+#Zanbarazan: damage of each spear strike into the ground.
+zanbarazanStabDamage = 260.0
+#Zanbarazan: damage when the ground shatters at the end.
+zanbarazanShatterDamage = 600.0
+#Zanbarazan: radius of the final shatter in blocks.
+zanbarazanRadius = 9.0
+#Zanbarazan: whether his strikes punch craters into the ground (also needs the mobGriefing gamerule).
+zanbarazanCraters = true
+#Zanbarazan: ticks between uses.
+zanbarazanCooldown = 400
+#Commandment of Truth: radius in blocks in which concealment and invisibility are judged as lies.
+truthRadius = 16.0
+#Commandment of Truth: after he asks whether you will run, players who were near him and flee past this many blocks are petrified.
+truthFleeRadius = 30.0
+#Commandment of Truth: ticks his question binds those who heard it.
+truthWindowTicks = 300
+#Commandment of Truth: ticks of Petrification it inflicts.
+truthPetrifyTicks = 120
+#Commandment of Truth: level of Petrification it inflicts.
+truthPetrifyLevel = 2
+#Commandment of Truth: ticks between his questions.
+truthCooldown = 900
+#Critical Over: health fraction (0..1) at which he unleashes it. It is used once per fight.
+overHealth = 0.4
+#Critical Over: multiplier on all his damage.
+overDamageMultiplier = 1.8
+#Critical Over: multiplier on damage he takes.
+overDamageTaken = 0.65
+#Critical Over: multiplier on his movement speed.
+overSpeedMultiplier = 1.35
+#Critical Over: multiplier on his technique cooldowns.
+overCooldownMultiplier = 0.6
+#Critical Over: multiplier on the reach of his techniques.
+overRangeMultiplier = 1.5
+#Critical Over: ticks it takes to burn through all of his magicules, which ends it.
+overDurationTicks = 800
+#Critical Over: damage of his full-strength swing.
+fullSwingDamage = 1200.0
+#Critical Over: radius of his full-strength swing in blocks.
+fullSwingRadius = 14.0
+#Critical Over: whether his full-strength swing tears up soft ground around him (also needs the mobGriefing gamerule).
+fullSwingFlattens = true
+#Critical Over: ticks between full-strength swings.
+fullSwingCooldown = 300
+#Ticks he stays petrified after fleeing once Critical Over has spent his magic, breaking his own Commandment.
+petrifyTicks = 200
+#Multiplier on damage he takes while petrified.
+petrifiedDamageTaken = 1.5

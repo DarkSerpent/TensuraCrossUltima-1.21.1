@@ -1,0 +1,175 @@
+[General]
+	#Damage multiplier for every Gravity Magic spell once that spell is mastered.
+	masteredDamageMultiplier = 1.5
+
+[GravityPress]
+	#Cast time in ticks.
+	castTicks = 10
+	#Magicule cost.
+	magiculeCost = 1000.0
+	#Cooldown in seconds.
+	cooldown = 6
+	#How far away the target can be, in blocks.
+	range = 24.0
+	#Gravity damage dealt to the target.
+	damage = 59.06
+	#Slowness duration in ticks.
+	slownessTicks = 60
+	#Slowness duration in ticks on bosses.
+	bossSlownessTicks = 20
+	#Slowness amplifier. 2 means Slowness III.
+	slownessAmplifier = 2
+	#Downward speed an airborne target is slammed with, in blocks per tick. Entities tagged no_forced_move are never moved.
+	slamSpeed = 2.5
+
+[Repulse]
+	#Cast time in ticks. 0 casts instantly.
+	castTicks = 0
+	#Magicule cost.
+	magiculeCost = 800.0
+	#Cooldown in seconds.
+	cooldown = 8
+	#Radius of the burst in blocks.
+	radius = 6.0
+	#Gravity damage dealt to every enemy in the burst.
+	damage = 25.31
+	#Outward throw strength. Entities tagged no_forced_move are never moved.
+	knockback = 1.8
+	#Upward lift added to the throw.
+	lift = 0.45
+	#Whether enemy projectiles inside the burst are affected at all.
+	affectProjectiles = true
+	#Whether non-spell projectiles are turned back outward instead of deleted. Tensura spell projectiles are always deleted.
+	deflectProjectiles = true
+	#Speed multiplier for deflected projectiles.
+	deflectSpeedMultiplier = 1.0
+
+[GravitonBullet]
+	#Cast time in ticks.
+	castTicks = 10
+	#Magicule cost.
+	magiculeCost = 1200.0
+	#Cooldown in seconds.
+	cooldown = 4
+	#Travel speed of the orb in blocks per tick.
+	speed = 0.6
+	#Maximum travel distance in blocks before the orb pops on its own.
+	range = 28.0
+	#Enemies within this many blocks of the orb are dragged along toward its centre.
+	dragRadius = 3.0
+	#Strength of the drag toward the orb centre, in blocks per tick. Entities tagged no_forced_move are never moved.
+	dragStrength = 0.18
+	#Extra reach around the orb that counts as a direct hit, in blocks.
+	hitRadius = 0.45
+	#Gravity damage of the pop.
+	damage = 75.94
+	#Radius of the pop in blocks.
+	blastRadius = 3.5
+	#Knockback of the pop.
+	blastKnockback = 0.4
+
+[WeightlessZone]
+	#Chant time in ticks.
+	castTicks = 30
+	#Magicule cost.
+	magiculeCost = 16000.0
+	#Cooldown in seconds.
+	cooldown = 25
+	#How far away the zone can be centred, in blocks.
+	aimRange = 24.0
+	#Radius of the zone in blocks.
+	radius = 8.0
+	#How long the zone lasts, in ticks.
+	durationTicks = 160
+	#How high enemies float above the ground, in blocks.
+	hoverHeight = 2.0
+	#Fraction of horizontal speed enemies keep each tick while floating. Lower means more helpless.
+	horizontalDamping = 0.15
+	#Weakness amplifier for enemies inside. 0 means Weakness I.
+	weaknessAmplifier = 0
+	#Jump Boost amplifier for allies inside. 2 means Jump Boost III.
+	allyJumpAmplifier = 2
+	#Ticks allies stay immune to fall damage after leaving the zone.
+	allyFallImmunityTicks = 60
+	#How many ticks a single boss can be floated by one zone.
+	bossAffectTicks = 60
+
+[OrbitalDebris]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost.
+	magiculeCost = 12000.0
+	#Cooldown in seconds. It starts once every chunk is used up or the orbit expires.
+	cooldown = 30
+	#How long the chunks orbit, in ticks.
+	durationTicks = 400
+	#Number of rock chunks.
+	chunkCount = 6
+	#Orbit radius around the caster, in blocks.
+	orbitRadius = 2.2
+	#Whether chunks stop enemy arrows and other non-spell projectiles.
+	blockProjectiles = true
+	#Whether chunks stop enemy Tensura spell projectiles.
+	blockSpells = true
+	#Gravity damage of a launched chunk.
+	launchDamage = 72.5
+	#Knockback of a launched chunk. Entities tagged no_forced_move are never moved.
+	launchKnockback = 1.2
+	#Speed of a launched chunk in blocks per tick.
+	launchSpeed = 1.6
+	#Maximum flight distance of a launched chunk in blocks.
+	launchRange = 32.0
+
+[HeavenDrop]
+	#Chant time in ticks.
+	castTicks = 50
+	#Magicule cost.
+	magiculeCost = 49000.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#How far away the drop can be centred, in blocks.
+	aimRange = 32.0
+	#Radius of the area in blocks.
+	radius = 10.0
+	#How high enemies are lifted, in blocks.
+	liftHeight = 15.0
+	#How high bosses are lifted, in blocks.
+	bossLiftHeight = 5.0
+	#Ticks the lift takes.
+	liftTicks = 20
+	#Ticks enemies are held at the top.
+	holdTicks = 10
+	#Downward slam speed in blocks per tick.
+	slamSpeed = 3.0
+	#Gravity damage per block fallen. This replaces vanilla fall damage for the dropped enemy.
+	damagePerBlock = 16.0
+	#Highest impact damage a single enemy can take.
+	maxDamage = 400.0
+	#Gravity damage dealt to entities tagged no_forced_move inside the area, since they cannot be lifted.
+	immovableDamage = 80.0
+	#Radius of the shockwave each impact sends out, in blocks.
+	shockwaveRadius = 3.0
+	#Gravity damage of each impact shockwave to other enemies.
+	shockwaveDamage = 30.0
+	#Knockback of each impact shockwave.
+	shockwaveKnockback = 0.6
+
+[CrushingDomain]
+	#Chant time in ticks.
+	castTicks = 60
+	#Magicule cost.
+	magiculeCost = 70000.0
+	#Cooldown in seconds.
+	cooldown = 90
+	#Radius of the domain around the caster, in blocks.
+	radius = 12.0
+	#How long the domain lasts, in ticks.
+	durationTicks = 200
+	#Gravity damage per second to every enemy inside.
+	damagePerSecond = 40.0
+	#Slowness amplifier for enemies inside. 3 means Slowness IV.
+	slownessAmplifier = 3
+	#Constant downward speed forced on enemies inside, in blocks per tick. Entities tagged no_forced_move are never moved.
+	downwardSpeed = 0.8
+	#How many ticks a single boss stays pinned by one domain. Damage and slowness continue after that.
+	bossPinTicks = 60

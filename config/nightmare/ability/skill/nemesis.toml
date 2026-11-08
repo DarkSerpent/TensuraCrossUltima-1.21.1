@@ -1,0 +1,60 @@
+#Magicules needed to acquire Nemesis.
+magiculeAcquirement = 100000.0
+#Mastery points needed to master Nemesis.
+maxMastery = 1000
+#Demonification: grant creative-style flight while you have Nemesis. Labyrinth and War Gnome rules still ground you.
+flight = true
+#Eternal Bond: most members your Covenant can hold.
+covenantCap = 10
+#Eternal Bond: Inspiration amplifier given to members (1 = Inspiration II).
+inspirationAmplifier = 1
+#Eternal Bond: ticks between member scans (buff refresh and position tracking).
+memberScanTicks = 40
+#Eternal Bond: seconds a player has to answer a Covenant invitation.
+inviteSeconds = 60
+#Demon Covenant: reach in blocks to pick the target you look at.
+covenantRange = 10.0
+#Demon Covenant: ticks the key must be held before the pact completes.
+covenantHoldTicks = 40
+#Demon Covenant: seconds a blessed target keeps its naming discount.
+blessingSeconds = 120
+#Demon Covenant: multiplier on the Evolve naming cost for a blessed target (0.0 = free).
+evolveCostMultiplier = 0.0
+#Demon Covenant: multiplier on the Endow naming cost for a blessed target (0.5 = half).
+endowCostMultiplier = 0.5
+#Demon Covenant: forced subordination only works on targets whose EP is below this share of yours (0.5 = 50%).
+forceEpShare = 0.5
+#Demon Covenant: share of your max Magicules lost while the forced-subordination toll lasts (0.5 = 50%).
+forceMaxMagiculePenalty = 0.5
+#Demon Covenant: seconds the forced-subordination toll lasts.
+forcePenaltySeconds = 600
+#Bestow: most skills you can copy onto a single member.
+bestowMaxPerMember = 3
+#Bestow: Magicule cost as a multiple of the skill's acquisition cost.
+bestowCostShare = 1.0
+#Bestow: lowest Magicule cost of a single bestowal.
+bestowMinCost = 1000.0
+#Summon: share of your max Magicules spent to summon one member (0.05 = 5%).
+summonMagiculeShare = 0.05
+#Summon: cooldown in seconds after summoning one member.
+summonCooldownSeconds = 10
+#Summon All: share of your max Magicules spent to summon every member at once.
+summonAllMagiculeShare = 0.05
+#Summon All: cooldown in seconds.
+summonAllCooldownSeconds = 30
+#Summon: ticks to wait for a member in an unloaded chunk to load before giving up.
+summonLoadTimeoutTicks = 200
+#Possession: seconds you can possess a member.
+possessionSeconds = 180
+#Possession: reach in blocks to pick a member to possess.
+possessionRange = 32.0
+#Possession: the link breaks if the member gets this many blocks away from your body.
+possessionMaxDistance = 64.0
+#Possession: movement speed multiplier of the possessed body.
+possessionSpeed = 1.2
+#Possession: ticks between attacks of the possessed body.
+possessionAttackTicks = 12
+#Possession: a single hit on your body dealing this share of your max health breaks the link.
+possessionSnapBackShare = 0.25
+#Possession: cooldown in seconds after the link ends.
+possessionCooldownSeconds = 30

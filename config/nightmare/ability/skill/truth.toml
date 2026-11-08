@@ -1,0 +1,28 @@
+#Magicules spent to obtain the Commandment of Truth.
+epAcquirement = 1000000.0
+#Only a Ten Commandment can obtain the Commandment of Truth naturally.
+tenCommandmentOnly = true
+#Level of the Petrification the Commandment inflicts.
+petrifyLevel = 2
+#Domain of Truth: length and width of the square area around the user, in blocks.
+domainSize = 32.0
+#Domain of Truth: height of the area around the user, in blocks.
+domainHeight = 32.0
+#Domain of Truth: ticks of Petrification for changing preset inside the Domain.
+presetPetrifyTicks = 60
+#Question of Truth: magicule cost.
+questionCost = 0.0
+#Question of Truth: cooldown in seconds.
+questionCooldown = 60
+#Question of Truth: how far away the target can be, in blocks.
+questionRange = 16.0
+#Question of Truth: ticks a player has to answer. Silence counts as No.
+answerTicks = 200
+#Question of Truth: ticks a duel lasts after answering Yes.
+duelTicks = 1200
+#Question of Truth: a duelist who moves further than this many blocks from the user is petrified.
+duelLeash = 32.0
+#Question of Truth: ticks the answer No stays binding; striking the user in that time petrifies.
+refusalTicks = 1200
+#Question of Truth: ticks of Petrification for breaking the answer.
+punishTicks = 200

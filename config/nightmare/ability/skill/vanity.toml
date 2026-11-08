@@ -1,0 +1,375 @@
+#Magicules spent to obtain Vanity.
+epAcquirement = 250000.0
+#Bind the Ego of Vanity to the skill the moment it is learned.
+grantEgo = true
+#Grant Law Manipulation while Vanity or Vainglory is held (kept if the user already had it).
+grantLawManipulation = true
+#Grant Law Domination while Vainglory is held (kept if the user already had it).
+grantLawDomination = true
+#Each recent hit from the same source submode multiplies the Data gained by this factor (anti-farming).
+diminishFactor = 0.6
+#Seconds before a source submode's recent-hit counter resets.
+diminishWindowSeconds = 60
+#Random spread applied to each component's Data gain (0.4 = 60% to 140%).
+componentSpread = 0.4
+#Hits that deal less than this much damage give no Data.
+minimumDamage = 0.5
+#Most source submodes remembered at once; the least analyzed are forgotten first.
+maxSources = 120
+#Data past 100% on a component spills into Surplus Data, up to this cap.
+surplusCap = 2000.0
+#Surplus Data the Ego takes to save a Vanity template.
+templateSaveCost = 100.0
+#Maximum effect multiplier bonus at 100 instability (0.75 = up to x1.75).
+instabilityPowerBonus = 0.75
+#Chance to misfire (fizzle, cost spent) at 100 instability.
+misfireMax = 0.4
+#Chance to backfire at 100 instability.
+backfireMax = 0.2
+#Backfire self damage as a share of max health.
+backfireHealthRatio = 0.08
+#Backfire Weakness and Slowness duration in seconds.
+backfireDebuffSeconds = 5
+#Multiplier on the Spellcraft magicule cost of creations.
+castCostMultiplier = 1.0
+#Multiplier on the Spellcraft cooldown of creations.
+castCooldownMultiplier = 1.0
+#Aura spent per magicule of cost by creations on the Aura cost profile.
+auraCostRatio = 1.0
+#Share of max health a Blood cost creation spends per cast.
+bloodHealthCost = 0.08
+#Power multiplier on Blood cost creations.
+bloodPowerBonus = 1.3
+#Health a Blood cost cast must leave behind; casts that would drop below this are refused.
+bloodReserveHealth = 4.0
+#Instability added by the Chaos element.
+chaosInstability = 20
+#Chaos rolls from the elements the user has unlocked; when off, or when none are unlocked, it rolls from the seven base elements.
+chaosFromUnlocked = true
+#Distinct components fully unlocked (100% Data) needed before Data Mining works.
+miningComponentThreshold = 10
+#Magicules spent to inject the Ego.
+miningMagiculeCost = 2000.0
+#Seconds an Ego injection lasts.
+miningDurationSeconds = 20
+#Data Mining cooldown in seconds after an injection ends normally.
+miningCooldownSeconds = 60
+#Data Mining cooldown in seconds after the Ego is pushed back.
+pushbackCooldownSeconds = 600
+#Spiritual damage the user takes when the Ego is pushed back.
+pushbackSpiritualDamage = 20.0
+#Skills that push the Ego back on contact (Anti-Skill and the like).
+pushbackSkills = ["tensura:anti_skill"]
+#Effects that push the Ego back on contact.
+pushbackEffects = ["tensura:anti_skill"]
+#Damage type id = element id. Used when a hit carries no Tensura element.
+damageTypeElements = ["minecraft:in_fire=flame", "minecraft:on_fire=flame", "minecraft:lava=heat", "minecraft:hot_floor=heat", "minecraft:lightning_bolt=lightning", "minecraft:freeze=ice", "minecraft:drown=water", "minecraft:wither=curse", "minecraft:magic=space", "minecraft:sonic_boom=sound"]
+#Explicit components for a skill submode: skill_id#mode=form:x,element:y,effect:z,power:n,cost:c (any part may be left out).
+skillComponentOverrides = ["tensura:great_sage#0=form:aura,element:light,effect:haste,power:3,cost:light", "tensura:predator#0=form:strike,element:darkness,effect:siphon,power:3,cost:standard"]
+#Element given to physical hits.
+physicalElement = "aura"
+#Element used when nothing else can be inferred.
+fallbackElement = "space"
+#Damage a hit needs for power tiers 2, 3, 4 and 5.
+powerTier2 = 10.0
+powerTier3 = 30.0
+powerTier4 = 80.0
+powerTier5 = 200.0
+#Source magicule cost below this is a Light profile.
+lightCostBelow = 150.0
+#Source magicule cost above this is a Heavy profile.
+heavyCostAbove = 5000.0
+#Source cooldown (seconds) at or below this, on a non-heavy cost, is a Swift profile.
+swiftCooldownBelow = 2
+#Skills whose submodes teach the Aura cost profile (sources that pay mostly Aura also teach it).
+auraCostSkills = ["tensura:martial_master", "tensura:murderer"]
+#Skills whose submodes teach the Blood cost profile.
+bloodCostSkills = ["trnightmare:cultist", "trnightmare:witches_envy", "trnightmare:shedding_blood_blessing"]
+#Source submodes with every component at 100% needed for Vanity to evolve into Vainglory.
+evolutionSources = 15
+#Allow Vanity to evolve into Vainglory on its own once the requirements are met.
+enableEvolution = true
+#Allow Vainglory to evolve into Helel, Lord of Vainglory once that skill exists and its requirements are met.
+enableHelelEvolution = false
+#Skill id of Helel, Lord of Vainglory.
+helelSkillId = "trnightmare:helel"
+
+[vanity]
+	#Learner mastery and learning point bonus (normal / mastered).
+	learnerBonus = 3.0
+	learnerBonusMastered = 5.0
+	#Analytical Appraisal level (normal / mastered).
+	appraisalLevel = 1
+	appraisalLevelMastered = 2
+	#Analytical Appraisal range in blocks (normal / mastered).
+	appraisalRange = 5
+	appraisalRangeMastered = 10
+	#Targets with more than this multiple of the user's EP only show base stats (normal / mastered).
+	appraisalEpRatio = 2.0
+	appraisalEpRatioMastered = 4.0
+	#Equipped creation slots (normal / mastered).
+	equipSlots = 2
+	equipSlotsMastered = 3
+	#Saved Ego templates.
+	templates = 2
+	#Highest power tier a creation may use (normal / mastered).
+	powerCap = 3
+	powerCapMastered = 4
+	#Data (percent) gained per component from one hit (normal / mastered).
+	hitData = 8.0
+	hitDataMastered = 12.0
+	#Learner also gains Data from spells (magic).
+	learnsFromMagic = false
+	#Data (percent) copied per component each second of Data Mining (normal / mastered).
+	miningRate = 6.0
+	miningRateMastered = 8.0
+	#Data Mining range in blocks (normal / mastered).
+	miningRange = 6.0
+	miningRangeMastered = 6.0
+	#Data Mining needs the skill mastered.
+	miningRequiresMastery = true
+	#The Ego is pushed back when the target's EP exceeds this multiple of the user's.
+	pushbackEpRatio = 3.0
+	#Multiplier on the power of creations.
+	powerScale = 1.0
+	#Multiplier on misfire and backfire chances.
+	misfireScale = 1.0
+
+[vainglory]
+	#Learner mastery and learning point bonus (normal / mastered).
+	learnerBonus = 5.0
+	learnerBonusMastered = 6.0
+	#Analytical Appraisal level (normal / mastered).
+	appraisalLevel = 4
+	appraisalLevelMastered = 6
+	#Analytical Appraisal range in blocks (normal / mastered).
+	appraisalRange = 10
+	appraisalRangeMastered = 20
+	#Targets with more than this multiple of the user's EP only show base stats (normal / mastered).
+	appraisalEpRatio = 4.0
+	appraisalEpRatioMastered = 6.0
+	#Equipped creation slots (normal / mastered).
+	equipSlots = 3
+	equipSlotsMastered = 4
+	#Saved Ego templates.
+	templates = 4
+	#Highest power tier a creation may use (normal / mastered).
+	powerCap = 5
+	powerCapMastered = 5
+	#Data (percent) gained per component from one hit (normal / mastered).
+	hitData = 14.0
+	hitDataMastered = 18.0
+	#Learner also gains Data from spells (magic).
+	learnsFromMagic = true
+	#Data (percent) copied per component each second of Data Mining (normal / mastered).
+	miningRate = 10.0
+	miningRateMastered = 14.0
+	#Data Mining range in blocks (normal / mastered).
+	miningRange = 15.0
+	miningRangeMastered = 30.0
+	#Data Mining needs the skill mastered.
+	miningRequiresMastery = false
+	#The Ego is pushed back when the target's EP exceeds this multiple of the user's.
+	pushbackEpRatio = 6.0
+	#Multiplier on the power of creations.
+	powerScale = 1.35
+	#Multiplier on misfire and backfire chances.
+	misfireScale = 0.6
+	#Ticks a submode modification takes before Mastery Speed (24000 = one Minecraft day).
+	modifySubmodeTicks = 24000
+	#Ticks a mastered Vainglory takes off every modification (12000 = ten real minutes).
+	masteredReductionTicks = 12000
+	#Each point of Mastery Speed cuts modification time by this percent.
+	masterySpeedPercent = 1.0
+	#Largest share of modification time Mastery Speed can remove.
+	maxMasterySpeedReduction = 0.9
+	#Shortest a modification can take, in ticks.
+	minimumModifyTicks = 1200
+	#Jobs that can wait in the modification queue.
+	queueSize = 4
+	#Most modes the custom skill may bundle.
+	customSkillMaxModes = 6
+	#Custom spells Vainglory may author.
+	customSpells = 2
+	#Power multiplier on custom spells.
+	spellPowerScale = 1.3
+	#Chant multiplier on custom spells.
+	spellChantScale = 1.0
+	#Power multiplier on modified submodes.
+	modificationPowerScale = 1.2
+	#Output dial: percent each designer step or scroll notch moves the output (the dial runs from 50% to 200%).
+	outputStepPercent = 10
+	#Output dial: power multiplier at or above 120% and at or above 175% output (below 120% power follows the output percent).
+	outputPowerTier2 = 2.0
+	outputPowerTier3 = 3.0
+	#Output dial: above 100%, cost is multiplied by (output / 100) raised to this exponent; below 100% it falls in step with the output.
+	outputCostExponent = 2.5
+	#Output dial: instability added per 10% of output above 100%.
+	outputInstabilityPerStep = 6
+	#Output dial: backfire chance multiplier at or above 120%, 175% and 200% output.
+	outputRiskTier2 = 2.0
+	outputRiskTier3 = 3.0
+	outputRiskTier4 = 5.0
+
+[designer]
+	#Free tuning steps a creation's form design gets: base + this many per power tier.
+	budgetBase = 2
+	budgetPerPower = 1
+	#Extra free tuning steps while holding Vainglory.
+	vaingloryBudget = 2
+	#Instability added for every tuning step spent past the free budget.
+	overBudgetInstability = 6
+	#Designs spending more than this multiple of the free budget are rejected.
+	hardCapMultiplier = 2.5
+	#Designer parameters: id=min,max,costPerStep,instabilityPerStep,safeSteps[,required form components separated by |]. Steps past safeSteps add instability; positive cost steps spend budget.
+	parameters = ["size=-2,3,0.10,4,2", "speed=-3,4,0.05,5,2", "gravity=0,4,-0.03,3,3", "homing=0,4,0.10,6,2,strike", "range=-2,3,0.06,4,2", "duration=-2,3,0.08,4,2", "pierce=0,5,0.08,5,2,beam", "bounce=0,4,0.06,4,2,projectile", "volley=0,6,0.15,6,2,projectile", "spread=0,6,0.00,0,6", "split=0,5,0.10,6,2,burst", "blast=0,4,0.12,5,2,burst", "linger=0,3,0.15,6,1,field", "glow=-3,4,0.00,0,4", "count=-2,5,0.08,4,3", "charges=0,5,0.10,5,2", "output=-5,10,0.00,0,15"]
+
+[forms]
+	#Dash: share of the beam range the caster sweeps, and seconds of fall immunity after landing.
+	dashRangeScale = 0.5
+	dashFallSeconds = 3.0
+	#Dash: half-width of the hit lane in blocks, added to the creation's width.
+	dashLaneWidth = 0.8
+	#Starfall: base bolts per cast (the Count tuning adds or removes), warning ticks before the first bolt and ticks between bolts.
+	rainBaseBolts = 4
+	rainWarnTicks = 20
+	rainStaggerTicks = 3
+	#Starfall: total power shared between the bolts, cap on one bolt's share, and each bolt's blast radius as a share of the area radius.
+	rainTotalPower = 2.0
+	rainMaxBoltPower = 0.8
+	rainBoltRadius = 0.4
+	#Breath: reach in blocks, cone half-angle in degrees, ticks between damage pulses and longest hold in ticks.
+	coneRange = 9.0
+	coneHalfAngle = 30.0
+	conePulseTicks = 5
+	coneMaxTicks = 80
+	#Breath: power of each pulse and share of the cast cost drained per pulse while held.
+	conePulsePower = 0.35
+	coneDrainRatio = 0.12
+	#Eruption: warning ticks before the strike, most enemies struck, and the pillar radius in blocks.
+	eruptionDelayTicks = 10
+	eruptionMaxTargets = 8
+	eruptionPillarRadius = 1.2
+	#Domain: radius cap for Vanity and for Vainglory.
+	domainRadiusCap = 6.0
+	domainRadiusCapVainglory = 12.0
+	#Imbue: base charges (the Charges tuning adds more), seconds the charge lasts and power of each discharge.
+	imbueBaseCharges = 3
+	imbueSeconds = 30
+	imbueHitPower = 0.6
+	#Vortex: pull strength per pulse for Vanity and Vainglory, and the power of Vainglory's closing implosion.
+	vortexPull = 0.25
+	vortexPullVainglory = 0.45
+	vortexImplodePower = 1.5
+	#Gate Barrage: base portals (the Count tuning adds or removes), ticks before the first shot and ticks between portals.
+	gateBasePortals = 3
+	gateOpenTicks = 8
+	gateStaggerTicks = 3
+	#Gate Barrage: radius of the ring of portals around the target in Vainglory's surround mode.
+	gateSurroundRadius = 4.0
+	#Orbit: base blades (the Count tuning adds or removes), seconds they circle (the Duration tuning scales) and orbit radius in blocks.
+	orbitBaseBlades = 3
+	orbitSeconds = 6.0
+	orbitRadius = 2.2
+	#Orbit: degrees each blade travels per tick, reach of one blade in blocks, power of each cut and ticks before the same blade can cut the same enemy again.
+	orbitDegreesPerTick = 14.0
+	orbitBladeReach = 0.8
+	orbitHitPower = 0.35
+	orbitHitCooldownTicks = 10
+	#Wall: seconds it stands (the Duration tuning scales), half its width and its height in blocks, before the Size tuning.
+	wallSeconds = 8.0
+	wallHalfWidth = 3.0
+	wallHeight = 3.5
+	#Wall: power of a contact hit with an offensive creation and ticks between contact hits on the same enemy.
+	wallContactPower = 0.4
+	wallContactCooldownTicks = 10
+	#Counter: longest window in ticks (the Duration tuning scales), ticks between upkeep drains and share of the cast cost each drain takes.
+	counterMaxTicks = 40
+	counterDrainTicks = 10
+	counterDrainRatio = 0.1
+	#Counter: share of a melee hit taken off for Vanity and Vainglory.
+	counterReduction = 0.5
+	counterReductionVainglory = 0.8
+	#Counter: power of the spell fired back at a melee attacker, ticks before the same attacker is answered again, and the multiplier on reflected spells and projectiles.
+	counterPower = 1.0
+	counterRetaliateTicks = 10
+	counterReflectMultiplier = 1.0
+	#Counter: radius in blocks around the caster in which incoming projectiles are turned back.
+	counterDeflectRadius = 2.5
+	#Decoy: seconds it lasts (the Duration tuning scales), share of the user's EP it carries, and radius in blocks in which hostile mobs are drawn to it.
+	decoySeconds = 8.0
+	decoyEpShare = 0.05
+	decoyAggroRadius = 14.0
+	#Decoy: power of the burst it releases and that burst's radius as a multiple of the creation's radius.
+	decoyBurstPower = 1.2
+	decoyBurstScale = 1.25
+	#Blitz (Vainglory only): base strikes (the Count tuning adds or removes), search radius in blocks, ticks between strikes and power of each strike.
+	blitzBaseStrikes = 4
+	blitzRadius = 10.0
+	blitzGapTicks = 3
+	blitzHitPower = 0.6
+	#Blitz: return to where the chain started when it ends; when off, the user stays beside the last target.
+	blitzReturn = false
+
+[signatures]
+	#Multiplier on the magicule cost of signature creations, on top of everything else.
+	costMultiplier = 2.5
+	#Instability added to every signature creation.
+	instabilityBonus = 15
+	#Multiplier on the power of signature creations.
+	powerScale = 1.5
+	#Ticks held per charge level gained.
+	chargeTicksPerLevel = 20
+	#Extra charge levels Vainglory may hold (the base cap is the creation's power tier).
+	vaingloryChargeBonus = 2
+	#Highest charge level any signature reaches.
+	maxChargeLevels = 8
+	#Share of the full power dealt at charge level 1; it rises evenly to the full power at the cap.
+	chargePowerFloor = 0.35
+	#Share of the cast cost drained for every charge level gained while held.
+	chargeDrainRatio = 0.15
+	#Ticks a fully charged signature may be held before it fires on its own.
+	overholdTicks = 100
+	#Signatures are learned from their source magic even when the tier does not learn from magic.
+	ignoreMagicGate = true
+	#Gravity Collapse: share of the source magic's radius per charge level, and its range and speed.
+	gravityRadiusScale = 0.5
+	gravityRangeScale = 0.75
+	gravitySpeedScale = 1.0
+	#Death Streak: share of the source magic's ray reach and ray width.
+	streakRangeScale = 0.6
+	streakWidthScale = 1.0
+
+[passives]
+	#Absolute Guard: magicules spent per point of damage blocked.
+	absoluteGuardCost = 25.0
+	#Absolute Guard: attackers with at least this share of the user's EP pass straight through.
+	absoluteGuardEpRatio = 0.75
+	#Skills whose user teaches Absolute Guard when observed, struck by or mined.
+	absoluteGuardSources = ["tensura:infinity_prison", "trnightmare:uriel_lord_of_oath", "trnightmare:uriel_lord_of_vow"]
+
+[ego]
+	#Can the Ego of Vanity be bound
+	enablePersonality = true
+	#Can this Ego possess the user
+	enablePossession = false
+	#Can this Ego act on its own
+	enableIndependence = false
+	#Final Threshold of Social points for this Personality
+	finalThreshold = 500
+	#The Third Threshold of Social points for this Personality
+	thirdThreshold = 225
+	#The Second Threshold of Social points for this Personality
+	secondThreshold = 125
+	#The First Threshold of Social points for this Personality
+	firstThreshold = 50
+	#The Maximum animosity that can be derived from the Personality
+	maxAnimosity = 500
+	#The Maximum admiration that can be derived from the Personality
+	maxAdmiration = 500
+	#The rate animosity is gained compared to normal
+	animosityGain = 2
+	#The rate admiration is gained compared to normal
+	admirationGain = 1
+	#Unused: the Ego of Vanity is always bound on learning
+	egoChance = 1.0

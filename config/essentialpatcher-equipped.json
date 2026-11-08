@@ -1,0 +1,22 @@
+{
+  "equipped": {
+    "EFFECT": "FIREFLIES",
+    "ICON": "BASE_ICON",
+    "WINGS": "MOTH_WINGS",
+    "FULL_BODY": "MOTH_OUTFIT",
+    "EARS": "MOTH_ANTENNAE"
+  },
+  "settings": {
+    "BASE_ICON": [],
+    "MOTH_ANTENNAE": [
+      "{\"type\":\"VARIANT\",\"id\":\"EARS\",\"enabled\":true,\"data\":{\"variant\":\"white\"}}"
+    ],
+    "FIREFLIES": [],
+    "MOTH_OUTFIT": [
+      "{\"type\":\"VARIANT\",\"id\":\"FULL_BODY\",\"enabled\":true,\"data\":{\"variant\":\"white\"}}"
+    ],
+    "MOTH_WINGS": [
+      "{\"type\":\"VARIANT\",\"id\":\"WINGS\",\"enabled\":true,\"data\":{\"variant\":\"white\"}}"
+    ]
+  }
+}

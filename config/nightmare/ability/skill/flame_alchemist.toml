@@ -1,0 +1,178 @@
+#Magicules needed to acquire Flame Alchemist.
+magiculeAcquirement = 60000.0
+#Ticks the skill key must be held before the radial menu opens. A shorter press snaps the armed method.
+radialHoldTicks = 5
+#Wind-up ticks between raising the hand and the snap, before the Gate of Truth opens.
+windupTicks = 10
+#Cooldown multiplier once the Gate of Truth is open (0.75 = 25% shorter).
+gateCooldownMultiplier = 0.75
+#Magicule cost multiplier once Flame Alchemist is mastered.
+masteredCostMultiplier = 0.8
+#Extra damage at full mastery (0.5 = +50%), scaled linearly with mastery.
+masteryDamageBonus = 0.5
+#Share of fire damage dealt as Tensura fire element; the rest is generic magic.
+fireElementShare = 0.3
+#Wet glove behaviour: FIZZLE (casts fail while wet), PENALTY (casts deal reduced damage while wet) or OFF.
+wetMode = "FIZZLE"
+#Damage multiplier while wet when wetMode is PENALTY.
+wetPenaltyMultiplier = 0.5
+#Seconds for wet gloves to dry once out of water and rain.
+drySeconds = 10.0
+#Drying time multiplier once Flame Alchemist is mastered.
+masteredDryMultiplier = 0.6
+#Cooldown in seconds after a fizzled snap.
+fizzleCooldownSeconds = 1.0
+#Radius around a water splash potion impact that soaks the gloves.
+splashRadius = 4.0
+#Place real temporary fire blocks on terrain. When false, flames are visual only (damage still applies).
+terrainFire = true
+#Require the mobGriefing game rule for temporary fire blocks.
+respectMobGriefing = false
+#Fuel tiers: item=multiplier[,tier name[,#RRGGBB flame tint]]. Use #namespace:tag for item tags. Missing items are skipped.
+fuelTiers = ["minecraft:stick=1.05,Kindling", "#minecraft:planks=1.05,Kindling", "minecraft:coal=1.15,Coal", "minecraft:charcoal=1.15,Charcoal", "minecraft:coal_block=1.35,Coal Block", "minecraft:blaze_powder=1.30,Blaze Powder,#FFE14A", "minecraft:fire_charge=1.40,Fire Charge,#FFB347", "minecraft:magma_cream=1.35,Magma Cream,#FF6A2A", "minecraft:blaze_rod=1.50,Blaze Rod,#FFE14A", "minecraft:lava_bucket=1.75,Lava,#FF3A1A", "tensura:element_core_fire=2.0,Fire Element Core,#CFE8FF", "tensura:fire_elemental_shard=1.8,Fire Elemental Shard,#CFE8FF", "tensura:black_fire_charge=1.5,Black Fire Charge,#FFB347", "tensura:magic_ore=1.6,Magic Ore,#CFE8FF", "tensura:high_quality_magic_crystal=1.6,Magic Crystal,#CFE8FF"]
+#Let any other item with a furnace burn time act as fuel, with a multiplier derived from its burn time.
+fuelBurnTimeFallback = true
+#Let the Auto fuel modes pick burn-time fallback items too (otherwise only listed tiers, to protect chests, tools and so on).
+fuelBurnTimeInAuto = false
+#Burn-time fallback multiplier = 1 + burnTime / divisor.
+fuelBurnTimeDivisor = 16000.0
+#Cap on the burn-time fallback multiplier.
+fuelBurnTimeCap = 1.3
+#Share of the fuel bonus also applied to radius and duration (0.25 = a x1.4 fuel gives +10% radius and duration).
+fuelAreaShare = 0.25
+#Mass-ring fuel items consumed per square block of area (radius squared).
+massFuelPerSquareBlock = 0.03
+#Minimum fuel items a Mass-ring method consumes.
+massFuelMin = 2
+#Snap Flame range.
+snapRange = 32.0
+#Snap Flame burst radius.
+snapRadius = 2.5
+#Snap Flame damage.
+snapDamage = 80.0
+#Snap Flame Magicule cost.
+snapMagicules = 1500.0
+#Snap Flame cooldown in seconds.
+snapCooldownSeconds = 1.0
+#Seconds the scorched ground under a Snap Flame keeps burning.
+snapFireSeconds = 3.0
+#Flame Lance length.
+lanceLength = 20.0
+#Flame Lance hit width.
+lanceWidth = 1.2
+#Flame Lance damage per target.
+lanceDamage = 90.0
+#Flame Lance Magicule cost.
+lanceMagicules = 4000.0
+#Flame Lance cooldown in seconds.
+lanceCooldownSeconds = 4.0
+#Seconds the fire left along a Flame Lance keeps burning.
+lanceFireSeconds = 3.0
+#Burning Point lock range.
+burningRange = 40.0
+#Ticks between the lock and the ignition.
+burningDelayTicks = 10
+#Burning Point damage (cannot be dodged).
+burningDamage = 140.0
+#Burning Point Magicule cost.
+burningMagicules = 6000.0
+#Burning Point cooldown in seconds.
+burningCooldownSeconds = 6.0
+#Fire Wall placement range.
+wallRange = 24.0
+#Fire Wall width in blocks.
+wallWidth = 7
+#Fire Wall hit height.
+wallHeight = 3.0
+#Fire Wall duration in seconds.
+wallSeconds = 8.0
+#Fire Wall damage per second.
+wallDps = 25.0
+#Fire Wall Magicule cost.
+wallMagicules = 5000.0
+#Fire Wall cooldown in seconds.
+wallCooldownSeconds = 10.0
+#Flame Ring radius.
+ringRadius = 5.0
+#Flame Ring duration in seconds.
+ringSeconds = 6.0
+#Flame Ring damage per second to enemies in the flames.
+ringDps = 20.0
+#Flame Ring push strength on enemies inside or crossing it.
+ringPush = 0.7
+#Flame Ring Magicule cost.
+ringMagicules = 6000.0
+#Flame Ring cooldown in seconds.
+ringCooldownSeconds = 12.0
+#Detonation mark range.
+detonationRange = 32.0
+#Seconds before a mark detonates on its own.
+detonationFuseSeconds = 3.0
+#Detonation damage.
+detonationDamage = 200.0
+#Detonation radius.
+detonationRadius = 4.0
+#Detonation Magicule cost.
+detonationMagicules = 10000.0
+#Detonation cooldown in seconds.
+detonationCooldownSeconds = 8.0
+#Oxygen Deprivation range.
+oxygenRange = 24.0
+#Oxygen Deprivation duration in seconds.
+oxygenSeconds = 5.0
+#Oxygen Deprivation damage per second.
+oxygenDps = 30.0
+#Oxygen Deprivation Magicule cost.
+oxygenMagicules = 12000.0
+#Oxygen Deprivation cooldown in seconds.
+oxygenCooldownSeconds = 15.0
+#When true the target is Silenced (no casting); when false it gets Magic Interference (slowed casting).
+oxygenSilence = false
+#Slowness amplifier applied while the air is stripped (-1 to disable).
+oxygenSlowness = 1
+#Combustion Shield duration in seconds.
+shieldSeconds = 4.0
+#Combustion Shield reach.
+shieldRange = 7.0
+#Combustion Shield frontal arc in degrees.
+shieldArcDegrees = 140.0
+#Combustion Shield Magicule cost.
+shieldMagicules = 8000.0
+#Combustion Shield cooldown in seconds.
+shieldCooldownSeconds = 12.0
+#Flame Pillar range.
+pillarRange = 48.0
+#Flame Pillar radius.
+pillarRadius = 3.0
+#Flame Pillar height.
+pillarHeight = 20.0
+#Ticks between the pillar's ground ring and the eruption.
+pillarDelayTicks = 10
+#Flame Pillar damage.
+pillarDamage = 500.0
+#Flame Pillar Magicule cost.
+pillarMagicules = 50000.0
+#Flame Pillar cooldown in seconds.
+pillarCooldownSeconds = 30.0
+#Seconds the ring of fire left by a Flame Pillar keeps burning.
+pillarFireSeconds = 4.0
+#Mass Incineration range.
+stormRange = 48.0
+#Mass Incineration radius.
+stormRadius = 14.0
+#Mass Incineration duration in seconds.
+stormSeconds = 5.0
+#Mass Incineration damage per second.
+stormDps = 60.0
+#Mass Incineration Magicule cost.
+stormMagicules = 60000.0
+#Mass Incineration cooldown in seconds.
+stormCooldownSeconds = 60.0
+#Share of ground columns inside the firestorm that catch real temporary fire.
+stormFireDensity = 0.3
+#Most temporary fire blocks a single Mass Incineration may place.
+stormFireMax = 400
+#Blind Snap search cone (degrees) for sensed targets behind cover.
+blindSnapConeDegrees = 20.0
+#Blind Snap cannot find targets whose presence concealment beats the caster's presence sense.
+blindSnapRespectConcealment = true

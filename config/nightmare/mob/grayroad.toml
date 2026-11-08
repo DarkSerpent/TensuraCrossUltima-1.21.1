@@ -1,0 +1,98 @@
+#Max health.
+health = 12000.0
+#Max spiritual health.
+spiritualHealth = 18000.0
+#Health she regenerates every second (doubled when she has not been hurt for 5 seconds).
+regenPerSecond = 25.0
+#Whether she spawns naturally in the Nether (every Nether biome).
+naturalSpawn = true
+#Chance (0..1) a natural spawn attempt in the Nether that picked her goes through. Lower is rarer.
+spawnChance = 0.02
+#Whether she also spawns naturally in Tensura's Hell.
+hellSpawn = true
+#Chance (0..1) a natural spawn attempt in Hell that picked her goes through.
+hellSpawnChance = 0.04
+#Whether she also spawns naturally in the Overworld's dark forests, swamps and Deep Dark, at night or out of sight of the sky.
+darkSpawn = true
+#Chance (0..1) a natural spawn attempt in the Overworld that picked her goes through.
+darkSpawnChance = 0.02
+#Natural spawns fail if another Grayroad is within this many blocks. 0 turns the check off.
+spawnSpacing = 256
+#How far (blocks) she likes to float from her target.
+hoverDistance = 7.0
+#How fast she drifts through the air (blocks per tick).
+flySpeed = 0.32
+#Damage of each tendril lash.
+lashDamage = 240.0
+#How far (blocks) her tendrils reach.
+lashReach = 6.5
+#Most targets one lash can strike.
+lashTargets = 3
+#Ticks between lashes.
+lashCooldown = 34
+#Her lashes and mimic strikes never land a killing blow (they stop at 1 HP), so her own Commandment of Pacifism cannot touch her. Curses can still kill.
+lashSpares = true
+#Damage when a Curse lands.
+curseDamage = 120.0
+#How far (blocks) she can lay a Curse.
+curseRange = 24.0
+#Most targets one Curse can mark.
+curseTargets = 4
+#How many ailments each Curse inflicts.
+curseAilments = 2
+#Duration (ticks) of the ailments a Curse inflicts. Crippling ones (Paralysis, Fear, Silence) last 60% of this.
+curseTicks = 160
+#Ticks between Curses.
+curseCooldown = 140
+#How many of her little demons she sheds per Brood.
+broodCount = 3
+#Most of her little demons (hatched or still in the egg) she keeps alive at once.
+broodMax = 8
+#Ticks between Broods.
+broodCooldown = 420
+#Fraction of max health (0..1) at which she first spreads into her nest form.
+nestHealth = 0.5
+#Incubating eggs she hangs from her branches each time she nests.
+nestEggs = 6
+#How far (blocks) her branches spread out when she nests.
+nestReach = 7.5
+#Longest she stays spread out (ticks) before pulling herself back together.
+nestTicks = 600
+#Ticks between nests once the first one has happened.
+nestCooldown = 1200
+#Damage taken multiplier while spread out in her nest.
+nestDamageTaken = 0.75
+#How far (blocks) her branches can lash while she nests.
+nestLashReach = 12.0
+#Ticks an egg incubates before it hatches.
+hatchTicks = 300
+#Max health of an incubating egg.
+eggHealth = 300.0
+#Max health of one of her little demons.
+spawnHealth = 600.0
+#Damage one of her little demons deals.
+spawnDamage = 60.0
+#Ticks one of her little demons lives before melting back into darkness. 0 makes them last until killed.
+spawnLifeTicks = 1200
+#Whether she can take the shape and voice of one of the players fighting her.
+mimicEnabled = true
+#How long (ticks) a disguise lasts.
+mimicTicks = 240
+#Hits it takes to break her disguise early.
+mimicBreakHits = 3
+#Damage of her strikes while disguised.
+mimicDamage = 160.0
+#Ticks between disguises.
+mimicCooldown = 900
+#Damage of the burst of darkness when her disguise breaks.
+revealDamage = 220.0
+#Radius (blocks) of that burst.
+revealRadius = 6.0
+#Radius (blocks) of the Commandment of Pacifism: anyone who kills within it has their time stolen.
+pacifismRadius = 24.0
+#Stacks of Stolen Time that age a killer to death.
+pacifismMaxStacks = 6
+#Ticks each stack of Stolen Time lasts.
+pacifismStackTicks = 1200
+#Whether creative-mode players are spared by Pacifism.
+pacifismSparesCreative = true

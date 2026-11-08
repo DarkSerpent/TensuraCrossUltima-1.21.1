@@ -1,0 +1,74 @@
+#Max health.
+health = 10000.0
+#Max spiritual health.
+spiritualHealth = 14000.0
+#Health she regenerates every second (doubled when she has not been hurt for 5 seconds).
+regenPerSecond = 25.0
+#Whether she spawns naturally in the Nether (every Nether biome).
+naturalSpawn = true
+#Chance (0..1) a natural spawn attempt in the Nether that picked her goes through. Lower is rarer.
+spawnChance = 0.02
+#Whether she also spawns naturally in Tensura's Hell.
+hellSpawn = true
+#Chance (0..1) a natural spawn attempt in Hell that picked her goes through.
+hellSpawnChance = 0.04
+#Whether she also spawns naturally in the Overworld's taigas, jungles and windswept biomes at night.
+wildSpawn = true
+#Chance (0..1) a natural spawn attempt in the Overworld that picked her goes through.
+wildSpawnChance = 0.015
+#Natural spawns fail if another Derieri is within this many blocks. 0 turns the check off.
+spawnSpacing = 256
+#Combo Star: extra damage each consecutive blow carries over the one before it (the 200,000 pounds of force). Blow N deals its base damage plus N-1 times this.
+comboDamagePerHit = 20.0
+#Combo Star: most blows a chain can count. 0 removes the limit.
+comboMax = 100
+#Combo Star: ticks without landing a blow before the chain is interrupted and resets.
+comboWindow = 60
+#Combo Star: a single blow on her at least this strong interrupts her chain and resets it.
+comboBreakDamage = 800.0
+#Damage of a jab.
+jabDamage = 160.0
+#Ticks between jabs.
+jabCooldown = 10
+#Damage of each punch in her rush.
+rushDamage = 90.0
+#Ticks between rushes.
+rushCooldown = 120
+#Damage of her darkness arm's sweeping claw.
+swipeDamage = 300.0
+#Reach (blocks) of the darkness arm's sweep.
+swipeReach = 5.5
+#Ticks between sweeps.
+swipeCooldown = 160
+#Damage of her dashing punch.
+dashDamage = 220.0
+#Ticks between dashes.
+dashCooldown = 100
+#Star Smash: blows she needs in her chain before she will throw her two-fisted smash. It carries the chain's force like any other blow and keeps the chain going.
+finaleMinCombo = 25
+#Star Smash: base damage of the blow, before Combo Star's added force.
+finaleDamage = 300.0
+#Star Smash: radius (blocks) of the shockwave.
+finaleRadius = 6.0
+#Fraction of max health (0..1) at which her darkness breaks loose: faster, longer reach and a combo that lingers.
+unboundHealth = 0.4
+#Movement speed multiplier once unbound.
+unboundSpeed = 1.25
+#Combo window (ticks) once unbound.
+unboundComboWindow = 100
+#Darkness arm reach multiplier once unbound.
+unboundReach = 1.4
+#Cooldown multiplier once unbound.
+unboundCooldowns = 0.7
+#Radius (blocks) of the Commandment of Purity: anyone who commits an impure deed within it is inflicted with illness.
+purityRadius = 20.0
+#Impure deed: tainting someone else with a harmful effect (poisons, curses, withering and the like).
+impureTainting = true
+#Impure deed: striking someone from behind.
+impureBackstab = true
+#Ticks the illness lasts: Infection, Hunger and Weakness.
+illnessTicks = 200
+#Ticks of Nausea that come with the illness.
+illnessNauseaTicks = 100
+#Whether creative-mode players are spared by Purity.
+puritySparesCreative = true

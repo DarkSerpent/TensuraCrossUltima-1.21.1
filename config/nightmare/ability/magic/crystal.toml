@@ -1,0 +1,101 @@
+[General]
+	#Damage multiplier for every Crystal Magic spell once that spell is mastered.
+	masteredDamageMultiplier = 1.5
+
+[CrystalPillar]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost.
+	magiculeCost = 12000.0
+	#Cooldown in seconds.
+	cooldown = 20
+	#How long the wall stands, in ticks.
+	durationTicks = 160
+	#How far in front of the caster the wall rises, in blocks.
+	distance = 3.0
+	#Width of the wall in blocks.
+	width = 5.0
+	#Height of the wall in blocks.
+	height = 4.0
+	#Thickness of the wall in blocks.
+	thickness = 0.8
+	#Whether the wall stops enemy arrows and other non-spell projectiles.
+	blockProjectiles = true
+	#Whether the wall stops enemy Tensura spell projectiles.
+	blockSpells = true
+	#Whether light and holy projectiles are reflected back at their shooter instead of being stopped.
+	reflectLightAndHoly = true
+	#Speed multiplier for reflected projectiles.
+	reflectSpeedMultiplier = 1.2
+	#How hard enemies pressing into the wall are shoved back, in blocks per tick. Entities tagged no_forced_move are only stopped.
+	pushBack = 0.35
+
+[PrismBeam]
+	#Cast time in ticks.
+	castTicks = 10
+	#Magicule cost.
+	magiculeCost = 1200.0
+	#Cooldown in seconds.
+	cooldown = 5
+	#Reach of the main beam in blocks.
+	range = 24.0
+	#Reach of each split beam in blocks.
+	splitRange = 16.0
+	#How many beams the main beam splits into.
+	splitCount = 3
+	#Angle between neighbouring split beams, in degrees.
+	splitAngle = 30.0
+	#Earth damage of the main beam to the first enemy it strikes.
+	damage = 67.5
+	#Earth damage of each split beam. Split beams pierce, hitting each enemy at most once per beam, and skip the enemy the main beam struck.
+	splitDamage = 42.19
+	#Extra reach around the beam line that still counts as a hit, in blocks.
+	beamRadius = 0.35
+
+[CrystalPrison]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost.
+	magiculeCost = 16000.0
+	#Cooldown in seconds.
+	cooldown = 18
+	#How far away an enemy can be imprisoned, in blocks.
+	range = 24.0
+	#How long the prison holds, in ticks.
+	durationTicks = 60
+	#How long the prison holds a boss, in ticks.
+	bossDurationTicks = 20
+	#Shell health as a fraction of the prisoner's max health. Any damage to the prisoner hits the shell instead.
+	shellHealthFraction = 0.15
+	#Minimum shell health.
+	minShellHealth = 20.0
+	#Earth damage dealt to the prisoner when the shell shatters or expires.
+	shatterDamage = 54.38
+	#Movement slow applied instead of pinning to entities tagged no_forced_move. 0.6 means -60% speed.
+	immovableSlow = 0.6
+
+[CrystalShardStorm]
+	#Chant time in ticks.
+	castTicks = 50
+	#Magicule cost.
+	magiculeCost = 56000.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#How far away the storm can be centred, in blocks.
+	aimRange = 32.0
+	#Radius of the storm in blocks.
+	radius = 10.0
+	#How long the storm lasts, in ticks.
+	durationTicks = 100
+	#Ticks between waves of shards. Every enemy inside is struck once per wave.
+	hitInterval = 10
+	#Earth damage of each shard wave.
+	damage = 36.0
+	#The most shard hits a single enemy can take from one storm.
+	maxHitsPerTarget = 10
+	#Radius of the final burst at the centre, in blocks.
+	burstRadius = 4.0
+	#Earth damage of the final burst.
+	burstDamage = 160.0
+	#Knockback of the final burst. Entities tagged no_forced_move are never moved.
+	burstKnockback = 0.8

@@ -1,0 +1,76 @@
+
+[balance]
+    #Flat ordinary maximum health added on top of existing sources.
+    # Default: 1000.0
+    # Range: 0.0 ~ 1.0E12
+    flatMaximumHealthBonus = 1000.0
+    #Flat maximum spiritual health added on top of existing sources.
+    # Default: 5000.0
+    # Range: 0.0 ~ 1.0E12
+    flatMaximumSoulHealthBonus = 5000.0
+    #Total Magicule regeneration multiplier, where 2 is twice normal regeneration.
+    # Default: 2.0
+    # Range: 1.0 ~ 1000000.0
+    magiculeRegenerationMultiplier = 2.0
+    #Flat Armor bonus; Armor Toughness is half this value.
+    # Default: 8.0
+    # Range: 0.0 ~ 1.0E9
+    armorBonus = 8.0
+    #Multiplicative ordinary attack-damage bonus.
+    # Default: 0.75
+    # Range: 0.0 ~ 1000.0
+    attackDamageBonus = 0.75
+    #Multiplicative bonus applied to every native elemental Magic boost.
+    # Default: 0.75
+    # Range: 0.0 ~ 1000.0
+    allMagicDamageBonus = 0.75
+    #Multiplicative attack-speed bonus.
+    # Default: 0.35
+    # Range: 0.0 ~ 1000.0
+    attackSpeedBonus = 0.35
+    #Multiplicative movement and flight-speed bonus.
+    # Default: 0.25
+    # Range: 0.0 ~ 1000.0
+    movementSpeedBonus = 0.25
+    #EP evolution gate.
+    # Default: 500000
+    # Range: 0 ~ 9223372036854775807
+    ep = 500000
+    #Total Daemon/Dragon Essence eaten required.
+    # Default: 10
+    # Range: > 0
+    totalEssenceEaten = 10
+    #Fraction removed from self-inflicted Time, Demon Transform and Reincarnation aftereffects.
+    # Default: 0.15
+    # Range: 0.0 ~ 0.95
+    enhancedBodyAftereffectReduction = 0.15
+    #Fraction of magic cost/backlash prevented.
+    # Default: 0.15
+    # Range: 0.0 ~ 1.0
+    magicBacklashReduction = 0.15
+
+[controls]
+    #Demon-Dragon stage controls. Detailed stats and EP/Essence requirements are in this file's balance section.
+    #Expose this stage as a next evolution. Existing members are retained; no registry entry is removed.
+    allowEvolutionInto = true
+    #Flying speed ADD_MULTIPLIED_BASE bonus.
+    # Default: 0.5
+    # Range: 0.0 ~ 100.0
+    flightSpeedBonus = 0.5
+    #Flat knockback resistance bonus.
+    # Default: 0.45
+    # Range: 0.0 ~ 1.0
+    knockbackResistance = 0.45
+    #Flat armour toughness per configured point of racial armour.
+    # Default: 0.5
+    # Range: 0.0 ~ 100.0
+    toughnessPerArmor = 0.5
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

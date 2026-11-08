@@ -1,0 +1,539 @@
+#Controls for trevolved:undead. Detailed balance is in this same file.
+#Allow learning this ability. Existing ownership is kept.
+allowAcquisition = true
+#Allow active subskills. Inherent passives are not removed.
+allowActiveUse = true
+#Allow enabling its native passive toggle. Switching it off remains allowed.
+allowPassiveToggle = true
+#Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+allowTerrainDamage = true
+
+[evolutionRequirements]
+
+    [evolutionRequirements.undead]
+        #Required Existence Points.
+        # Default: 900000
+        # Range: 0 ~ 9223372036854775807
+        ep = 900000
+        #Primary tracked requirement; see publication CONFIGURATION.md for its meaning.
+        # Default: 750
+        # Range: > 0
+        requirementA = 750
+        #Secondary tracked requirement; zero disables this numeric gate where unused.
+        # Default: 5
+        # Range: > 0
+        requirementB = 5
+        #Tertiary tracked requirement; zero disables this numeric gate where unused.
+        # Default: 0
+        # Range: > 0
+        requirementC = 0
+        #Require every prerequisite skill in this route to be mastered.
+        requireMastery = true
+
+[advancedMechanics]
+    #Maximum stolen pool as a multiple of death-reset baseline stats.
+    # Default: 2.0
+    # Range: 0.0 ~ 1000.0
+    deathFeastBaselineCap = 2.0
+    #Fraction of each victim's max health and Magicules stolen.
+    # Default: 0.01
+    # Range: 0.0 ~ 1000.0
+    deathFeastStealFraction = 0.01
+
+[deathGodPath]
+    #Minimum permanent maximum-health gain per kill.
+    # Default: 1.0
+    # Range: 0.0 ~ 1.0E9
+    deathsFeastMinimumHealthGain = 1.0
+    #Bonus damage while concealed.
+    # Default: 25.0
+    # Range: 0.0 ~ 1.0E9
+    concealedMirageBonusDamage = 25.0
+    #Death God bleed damage per second.
+    # Default: 14.0
+    # Range: 0.0 ~ 1.0E9
+    ultimateMirageBleedDamage = 14.0
+    #Mastered Death God bleed damage.
+    # Default: 20.0
+    # Range: 0.0 ~ 1.0E9
+    ultimateMirageBleedDamageMastered = 20.0
+    #Death God base Mirage Thrust damage.
+    # Default: 80.0
+    # Range: 0.0 ~ 1.0E9
+    ultimateMirageDamage = 80.0
+    #Mastered Death God Mirage damage.
+    # Default: 100.0
+    # Range: 0.0 ~ 1.0E9
+    ultimateMirageDamageMastered = 100.0
+    #Undead bleed damage per second.
+    # Default: 8.0
+    # Range: 0.0 ~ 1.0E9
+    uniqueMirageBleedDamage = 8.0
+    #Mastered Undead bleed damage.
+    # Default: 12.0
+    # Range: 0.0 ~ 1.0E9
+    uniqueMirageBleedDamageMastered = 12.0
+    #Undead base Mirage Thrust damage.
+    # Default: 50.0
+    # Range: 0.0 ~ 1.0E9
+    uniqueMirageDamage = 50.0
+    #Unmastered direct damage.
+    # Default: 10.0
+    # Range: 0.0 ~ 1.0E9
+    voiceDamage = 10.0
+    #Mastered direct damage.
+    # Default: 20.0
+    # Range: 0.0 ~ 1.0E9
+    voiceDamageMastered = 20.0
+    #Phantom Dance Aura cost.
+    # Default: 5000.0
+    # Range: 0.0 ~ 1.0E12
+    phantomDanceAuraCost = 5000.0
+    #Mastered cost.
+    # Default: 3500.0
+    # Range: 0.0 ~ 1.0E12
+    phantomDanceAuraCostMastered = 3500.0
+    #Mastered cooldown.
+    # Default: 35
+    # Range: 0 ~ 86400
+    phantomDanceCooldownMasteredSeconds = 35
+    #Phantom Dance cooldown.
+    # Default: 45
+    # Range: 0 ~ 86400
+    phantomDanceCooldownSeconds = 45
+    #Death God Aura Concealment cost.
+    # Default: 1600.0
+    # Range: 0.0 ~ 1.0E12
+    ultimateConcealmentAuraCost = 1600.0
+    #Mastered cost.
+    # Default: 1200.0
+    # Range: 0.0 ~ 1.0E12
+    ultimateConcealmentAuraCostMastered = 1200.0
+    #Mastered cooldown.
+    # Default: 18
+    # Range: 0 ~ 86400
+    ultimateConcealmentCooldownMasteredSeconds = 18
+    #Death God concealment cooldown.
+    # Default: 22
+    # Range: 0 ~ 86400
+    ultimateConcealmentCooldownSeconds = 22
+    #Death God Mirage Thrust cost.
+    # Default: 750.0
+    # Range: 0.0 ~ 1.0E12
+    ultimateMirageAuraCost = 750.0
+    #Mastered cost.
+    # Default: 500.0
+    # Range: 0.0 ~ 1.0E12
+    ultimateMirageAuraCostMastered = 500.0
+    #Mastered cooldown.
+    # Default: 4
+    # Range: 0 ~ 86400
+    ultimateMirageCooldownMasteredSeconds = 4
+    #Death God Mirage cooldown.
+    # Default: 6
+    # Range: 0 ~ 86400
+    ultimateMirageCooldownSeconds = 6
+    #Unmastered Aura Concealment cost.
+    # Default: 2400.0
+    # Range: 0.0 ~ 1.0E12
+    uniqueConcealmentAuraCost = 2400.0
+    #Mastered cost.
+    # Default: 1800.0
+    # Range: 0.0 ~ 1.0E12
+    uniqueConcealmentAuraCostMastered = 1800.0
+    #Mastered cooldown.
+    # Default: 24
+    # Range: 0 ~ 86400
+    uniqueConcealmentCooldownMasteredSeconds = 24
+    #Undead concealment cooldown on ending.
+    # Default: 30
+    # Range: 0 ~ 86400
+    uniqueConcealmentCooldownSeconds = 30
+    #Unmastered Mirage Thrust Aura cost.
+    # Default: 1000.0
+    # Range: 0.0 ~ 1.0E12
+    uniqueMirageAuraCost = 1000.0
+    #Mastered cost.
+    # Default: 750.0
+    # Range: 0.0 ~ 1.0E12
+    uniqueMirageAuraCostMastered = 750.0
+    #Mastered cooldown.
+    # Default: 6
+    # Range: 0 ~ 86400
+    uniqueMirageCooldownMasteredSeconds = 6
+    #Undead Mirage Thrust cooldown.
+    # Default: 8
+    # Range: 0 ~ 86400
+    uniqueMirageCooldownSeconds = 8
+    #Mastered cooldown.
+    # Default: 35
+    # Range: 0 ~ 86400
+    voiceCooldownMasteredSeconds = 35
+    #Voice of the Abyss cooldown.
+    # Default: 45
+    # Range: 0 ~ 86400
+    voiceCooldownSeconds = 45
+    #Voice of the Abyss Aura cost.
+    # Default: 6000.0
+    # Range: 0.0 ~ 1.0E12
+    voiceOfTheAbyssAuraCost = 6000.0
+    #Mastered cost.
+    # Default: 4500.0
+    # Range: 0.0 ~ 1.0E12
+    voiceOfTheAbyssAuraCostMastered = 4500.0
+    #Concealed Mirage bleed duration.
+    # Default: 4
+    # Range: 0 ~ 86400
+    concealedMirageBleedSeconds = 4
+    #Extra Confusion while concealed.
+    # Default: 4
+    # Range: 0 ~ 86400
+    concealedMirageExtraConfusionSeconds = 4
+    #Base Confusion duration.
+    # Default: 8
+    # Range: 0 ~ 86400
+    mirageConfusionSeconds = 8
+    #Mirage Thrust target range.
+    # Default: 6.0
+    # Range: 0.0 ~ 256.0
+    mirageThrustRange = 6.0
+    #Confusion applied after swapping.
+    # Default: 3
+    # Range: 0 ~ 86400
+    phantomDanceConfusionSeconds = 3
+    #Phantom Dance duration.
+    # Default: 8
+    # Range: 1 ~ 86400
+    phantomDanceDurationSeconds = 8
+    #Requiem Aura radius.
+    # Default: 10.0
+    # Range: 0.0 ~ 256.0
+    requiemAuraRadius = 10.0
+    #Mastered duration.
+    # Default: 25
+    # Range: 1 ~ 86400
+    ultimateConcealmentDurationMasteredSeconds = 25
+    #Death God concealment duration.
+    # Default: 20
+    # Range: 1 ~ 86400
+    ultimateConcealmentDurationSeconds = 20
+    #Undead concealment duration.
+    # Default: 15
+    # Range: 1 ~ 86400
+    uniqueConcealmentDurationSeconds = 15
+    #Anti-Regeneration duration.
+    # Default: 10
+    # Range: 0 ~ 86400
+    voiceAntiRegenerationSeconds = 10
+    #Confusion duration.
+    # Default: 8
+    # Range: 0 ~ 86400
+    voiceConfusionSeconds = 8
+    #Fear duration.
+    # Default: 8
+    # Range: 0 ~ 86400
+    voiceFearSeconds = 8
+    #Voice of the Abyss radius.
+    # Default: 20.0
+    # Range: 0.0 ~ 256.0
+    voiceOfTheAbyssRadius = 20.0
+    #Paralysis duration.
+    # Default: 3
+    # Range: 0 ~ 86400
+    voiceStunSeconds = 3
+    #Death God movement-speed bonus fraction.
+    # Default: 0.4
+    # Range: -1.0 ~ 1000.0
+    deathGodSpeedBonus = 0.4
+    #Mastered ultimate speed bonus.
+    # Default: 0.5
+    # Range: -1.0 ~ 1000.0
+    deathGodSpeedBonusMastered = 0.5
+    #Victim maximum-EP fraction permanently added to maximum Magicules.
+    # Default: 0.03
+    # Range: 0.0 ~ 1000.0
+    deathsFeastMagiculeFraction = 0.03
+    #Mastered Magicule fraction.
+    # Default: 0.05
+    # Range: 0.0 ~ 1000.0
+    deathsFeastMagiculeFractionMastered = 0.05
+    #Mastered swap recovery ticks.
+    # Default: 10
+    # Range: 0 ~ 1200
+    phantomDanceSwapRecoveryMasteredTicks = 10
+    #Invulnerability ticks after an unmastered swap.
+    # Default: 6
+    # Range: 0 ~ 1200
+    phantomDanceSwapRecoveryTicks = 6
+    #Chance to dodge projectiles and non-projectile magic.
+    # Default: 0.5
+    # Range: 0.0 ~ 1.0
+    phantomRhythmDodgeChance = 0.5
+    #Undead movement-speed bonus fraction.
+    # Default: 0.2
+    # Range: -1.0 ~ 1000.0
+    phantomRhythmSpeedBonus = 0.2
+    #Mastered unique speed bonus.
+    # Default: 0.3
+    # Range: -1.0 ~ 1000.0
+    phantomRhythmSpeedBonusMastered = 0.3
+    #Mastered growth interval.
+    # Default: 25
+    # Range: 1 ~ 72000
+    requiemGrowthIntervalMasteredTicks = 25
+    #Exposure ticks per Wither growth step.
+    # Default: 40
+    # Range: 1 ~ 72000
+    requiemGrowthIntervalTicks = 40
+    #Ticks between aura applications.
+    # Default: 10
+    # Range: 1 ~ 1200
+    requiemTickIntervalTicks = 10
+    #Death God Mirage attack-damage multiplier.
+    # Default: 3.0
+    # Range: 0.0 ~ 1000.0
+    ultimateMirageWeaponMultiplier = 3.0
+    #Mastered Death God Mirage attack-damage multiplier.
+    # Default: 4.0
+    # Range: 0.0 ~ 1000.0
+    ultimateMirageWeaponMultiplierMastered = 4.0
+    #Mirage Thrust uses the greater of its fixed damage or this multiple of attack damage.
+    # Default: 2.0
+    # Range: 0.0 ~ 1000.0
+    uniqueMirageWeaponMultiplier = 2.0
+    #Displayed Fear level.
+    # Default: 7
+    # Range: 1 ~ 256
+    voiceFearLevel = 7
+
+[familyMultipliers]
+
+    [familyMultipliers.deathGod]
+        #Family outgoing-damage multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        damageMultiplier = 1.0
+        #Family native-cooldown multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Family Aura-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        auraCostMultiplier = 1.0
+        #Family Magicule-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        magiculeCostMultiplier = 1.0
+        #Family targeting/radius multiplier.
+        # Default: 1.0
+        # Range: 0.1 ~ 20.0
+        rangeMultiplier = 1.0
+
+    [familyMultipliers.undead]
+        #Family outgoing-damage multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        damageMultiplier = 1.0
+        #Family native-cooldown multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Family Aura-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        auraCostMultiplier = 1.0
+        #Family Magicule-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        magiculeCostMultiplier = 1.0
+        #Family targeting/radius multiplier.
+        # Default: 1.0
+        # Range: 0.1 ~ 20.0
+        rangeMultiplier = 1.0
+
+[abilities]
+
+    [abilities.death_god_randolph]
+        #Controls for trevolved:death_god_randolph. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.death_god_randolph.voiceOfTheAbyss]
+            #Allow the same disarm against non-player entities.
+            dropMobItems = true
+            #Allow Voice of the Abyss to drop PLAYERS' held items. False disables ONLY the item dropping; damage and other effects remain.
+            dropPlayerItems = true
+
+        [abilities.death_god_randolph.subskills]
+
+            #Native mode 1: death_god.aura_concealment. IDs/indices are not renumbered when disabled.
+            [abilities.death_god_randolph.subskills.death_god_aura_concealment]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 0: death_god.mirage_thrust. IDs/indices are not renumbered when disabled.
+            [abilities.death_god_randolph.subskills.death_god_mirage_thrust]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 4: death_god.phantom_dance. IDs/indices are not renumbered when disabled.
+            [abilities.death_god_randolph.subskills.death_god_phantom_dance]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 3: death_god.requiem_aura. IDs/indices are not renumbered when disabled.
+            [abilities.death_god_randolph.subskills.death_god_requiem_aura]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 2: death_god.voice_of_the_abyss. IDs/indices are not renumbered when disabled.
+            [abilities.death_god_randolph.subskills.death_god_voice_of_the_abyss]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+[subskills]
+
+    #Native mode 1: undead.aura_concealment. IDs/indices are not renumbered when disabled.
+    [subskills.undead_aura_concealment]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+    #Native mode 0: undead.mirage_thrust. IDs/indices are not renumbered when disabled.
+    [subskills.undead_mirage_thrust]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

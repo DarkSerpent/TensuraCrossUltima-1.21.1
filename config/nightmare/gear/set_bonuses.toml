@@ -1,0 +1,68 @@
+#Master switch. False turns off every full-set bonus from Armory and Regalia gear.
+enabled = true
+#Whether full sets grant their potion effects (Crusader, Hellforged, Valkyrie, Archmage, Onmyoji, Shogun, Samurai, Montsuki).
+potionEffects = true
+#Archmage: chant speed added.
+archmageChantSpeed = 0.2
+#Witch's: illusion boost added. Tensura uses it to lengthen illusion magic (Flame Wall, Mirage, Confusion...), not to raise damage.
+witchIllusionBoost = 0.25
+#Witch's: damage taken multiplier against Tensura magic damage.
+witchMagicTaken = 0.75
+#Thornrose: max health multiplier bonus (0.2 = +20%).
+thornroseMaxHealth = 0.2
+#Thornrose: ticks the random curse lasts on whoever hits you.
+thornroseCurseTicks = 100
+#Priest's: damage taken multiplier against holy damage.
+priestHolyTaken = 0.85
+#Priest's: damage taken multiplier against spiritual damage.
+priestSpiritualTaken = 0.85
+#Kannushi / Miko: damage taken multiplier against spiritual damage.
+kannushiSpiritualTaken = 0.75
+#Kannushi / Miko: damage taken multiplier against darkness damage.
+kannushiDarknessTaken = 0.75
+#Runeforged: knockback resistance added.
+runeforgedKnockbackResistance = 0.2
+#Runeforged: damage taken multiplier against physical and projectile damage.
+runeforgedPhysicalTaken = 0.5
+#Moonsilver: auto melee dodge chance added.
+moonsilverMeleeDodge = 15.0
+#Moonsilver: auto projectile dodge chance added.
+moonsilverProjectileDodge = 15.0
+#Moonsilver: dodge negation chance added.
+moonsilverDodgeNegation = 25.0
+#Moonsilver: damage taken multiplier from attackers weak to holy exposure.
+moonsilverHolyWeakTaken = 0.68
+#Moonsilver: damage dealt multiplier against targets weak to holy exposure.
+moonsilverHolyWeakDealt = 1.5
+#Seraphic: damage taken multiplier against everything.
+seraphicTaken = 0.9
+#Seraphic: share of melee damage dealt again as holy damage.
+seraphicHolyEcho = 0.05
+#Voidsteel: damage taken multiplier against void damage.
+voidsteelVoidTaken = 0.8
+#Voidsteel: share of melee damage dealt again as void damage.
+voidsteelVoidEcho = 0.1
+#Gintoki: dodge negation chance added.
+gintokiDodgeNegation = 100.0
+#Shinmon Benimaru: damage dealt multiplier for fire damage.
+benimaruFireFireDealt = 1.5
+#Shinmon Benimaru: damage taken multiplier against fire damage.
+benimaruFireFireTaken = 0.2
+#Benimaru: dodge negation chance added.
+benimaruDodgeNegation = 50.0
+#Benimaru: chance (0-1) for a melee hit to be empowered.
+benimaruEmpoweredChance = 0.3
+#Benimaru: damage multiplier of an empowered melee hit.
+benimaruEmpoweredDamage = 1.5
+#Tsunade: magicule cost multiplier for Self, Ultraspeed and Infinite Regeneration.
+tsunadeRegenerationCost = 0.75
+#Utahime: chant speed added.
+utahimeChantSpeed = 1.0
+#Nezuko: share of damage dealt healed back.
+nezukoLifesteal = 0.1
+#Inuyasha: damage taken multiplier against spiritual damage.
+inuyashaSpiritualTaken = 0.5
+#Inuyasha: minimum resistance bypass level of your attacks (2 bypasses nullifications).
+inuyashaBypassLevel = 2.0
+#Sesshomaru: dodge negation chance added.
+sesshomaruDodgeNegation = 50.0

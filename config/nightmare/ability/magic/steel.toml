@@ -1,0 +1,213 @@
+[IronDragonRoar]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost to cast.
+	magiculeCost = 12000.0
+	#Cooldown in seconds.
+	cooldown = 10
+	#The length of the breath cone in blocks.
+	length = 14.0
+	#The half-angle of the breath cone in degrees.
+	coneAngle = 22.0
+	#Ticks the breath lasts.
+	durationTicks = 40
+	#Ticks between two damage pulses.
+	pulseTicks = 10
+	#The damage of each pulse.
+	pulseDamage = 54.38
+	#The damage of each pulse when mastered.
+	masteredPulseDamage = 72.5
+	#Extra durability damage dealt to every worn armour piece of each target per pulse.
+	armorShred = 12
+	#The push of each pulse.
+	knockback = 0.35
+
+[IronDragonClub]
+	#Magicule cost to cast.
+	magiculeCost = 800.0
+	#Cooldown in seconds.
+	cooldown = 2
+	#The reach of the thrust in blocks.
+	reach = 6.0
+	#The radius of the pillar's hit area in blocks.
+	radius = 0.9
+	#The damage of the thrust.
+	damage = 101.25
+	#The damage of the thrust when mastered.
+	masteredDamage = 135.0
+	#The knockback of the thrust.
+	knockback = 2.2
+
+[IronDragonSword]
+	#Chant time in ticks.
+	castTicks = 0
+	#Magicule cost to cast.
+	magiculeCost = 10000.0
+	#Cooldown in seconds once the blade fades.
+	cooldown = 20
+	#Seconds the blade lasts.
+	durationSeconds = 15
+	#Extra empty-hand melee reach in blocks.
+	extraReach = 2.0
+	#Empty-hand melee damage multiplier.
+	damageMultiplier = 1.4
+	#Empty-hand melee damage multiplier when mastered.
+	masteredDamageMultiplier = 1.6
+	#Share of each blade hit that passes straight through Multilayer Barriers. 1 lets the whole hit through.
+	barrierBypass = 1.0
+
+[IronDragonScales]
+	#Magicule drained per second while the scales are on.
+	magiculePerSecond = 120.0
+	#Armour granted.
+	armor = 10.0
+	#Armour toughness granted.
+	toughness = 6.0
+	#Seconds the scales stay red-hot after the wearer takes fire damage.
+	hotSeconds = 5
+	#Fire damage dealt to a melee attacker while the scales are red-hot.
+	burnDamage = 18.13
+	#Seconds a melee attacker is set on fire while the scales are red-hot.
+	igniteSeconds = 3.0
+	#Seconds of wear between two mastery points.
+	masteryIntervalSeconds = 30
+
+[IronGodSword]
+	#Chant time in ticks.
+	castTicks = 60
+	#Magicule cost to cast.
+	magiculeCost = 70000.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#The reach of the swing in blocks.
+	reach = 10.0
+	#The width of the swing arc in degrees.
+	arcDegrees = 180.0
+	#The damage of the swing.
+	damage = 600.0
+	#Ticks the swing takes to sweep the whole arc.
+	swingTicks = 8
+	#The knockback of the swing.
+	knockback = 2.0
+	#How far above and below the caster the swing reaches in blocks.
+	height = 4.0
+
+[SteelSpikeVolley]
+	#Chant time in ticks.
+	castTicks = 10
+	#Magicule cost to cast.
+	magiculeCost = 700.0
+	#Cooldown in seconds.
+	cooldown = 2
+	#Spikes per volley.
+	spikes = 5
+	#The spread of the volley in degrees.
+	spreadDegrees = 6.0
+	#The damage of each spike.
+	damage = 25.31
+	#The damage of each spike when mastered.
+	masteredDamage = 37.13
+	#The range of the spikes in blocks.
+	range = 32.0
+	#The flight speed of the spikes in blocks per tick.
+	speed = 2.2
+	#Ticks of Bleeding added by each lodged spike.
+	bleedTicks = 60
+	#Seconds a lodged spike stays visible.
+	lodgeSeconds = 3
+
+[SteelThornField]
+	#Chant time in ticks.
+	castTicks = 30
+	#Magicule cost to cast.
+	magiculeCost = 14000.0
+	#Cooldown in seconds.
+	cooldown = 16
+	#The range to the aimed point in blocks.
+	aimRange = 32.0
+	#The radius of the field in blocks.
+	radius = 6.0
+	#Seconds the field lasts.
+	durationSeconds = 8
+	#Damage per second to enemies inside the field.
+	damagePerSecond = 21.75
+	#Slowness level applied to enemies inside the field, starting at 0.
+	slownessAmplifier = 2
+
+[BladeRain]
+	#Chant time in ticks.
+	castTicks = 40
+	#Magicule cost to cast.
+	magiculeCost = 20000.0
+	#Cooldown in seconds.
+	cooldown = 20
+	#The range to the aimed point in blocks.
+	aimRange = 40.0
+	#The radius of the area the swords fall on in blocks.
+	radius = 8.0
+	#Swords that fall.
+	swords = 20
+	#Ticks over which the swords fall.
+	durationTicks = 60
+	#Ticks a sword takes to fall.
+	fallTicks = 8
+	#The damage of each sword.
+	damage = 45.31
+	#The radius each sword strikes on landing in blocks.
+	impactRadius = 1.6
+	#The most sword hits one enemy can take per cast.
+	maxHitsPerTarget = 6
+
+[Appetite]
+	#Whether a caster who learned Iron Dragon's Appetite can eat iron to restore magicules and health.
+	enabled = true
+	#Whether a player with no Dragon Slayer origin who knows any Steel Magic spell can still eat iron without learning Iron Dragon's Appetite.
+	legacySteelFallback = true
+	#Magicules restored by eating one iron ingot or raw iron. Nuggets restore a ninth, blocks nine times as much.
+	magiculePerIngot = 2000.0
+	#Health restored by eating one iron ingot or raw iron. Nuggets restore a ninth, blocks nine times as much.
+	healthPerIngot = 2.0
+	#Ticks between two bites.
+	cooldownTicks = 20
+
+[IronDragonForce]
+	#Magicules spent to awaken Dragon Force.
+	activationCost = 30000.0
+	#Magicules drained per second while Dragon Force is awake.
+	magiculePerSecond = 250.0
+	#Damage multiplier for Iron Dragon Slayer spells while Dragon Force is awake.
+	damageMultiplier = 1.4
+	#Knockback resistance granted while Dragon Force is awake. 1 is full immunity.
+	knockbackResistance = 0.3
+	#Extra melee reach in blocks while Dragon Force is awake.
+	extraReach = 1.5
+	#Seconds awake between two mastery points.
+	masteryIntervalSeconds = 30
+
+[DemonLogs]
+	#Chant time in ticks.
+	castTicks = 40
+	#Magicule cost to cast.
+	magiculeCost = 75000.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#The length of the eruption in blocks.
+	length = 10.0
+	#The full width of the eruption cone in degrees.
+	coneDegrees = 40.0
+	#Ticks the shards take to erupt along the whole length.
+	eruptTicks = 20
+	#Ticks between two damage pulses.
+	pulseTicks = 4
+	#Total damage one enemy can take from the whole cast.
+	totalDamage = 700.0
+	#Damage multiplier when the spell is mastered.
+	masteredDamageMultiplier = 1.5
+	#Upward push of each eruption pulse. Bosses take a third.
+	knockUp = 0.25
+	#Seconds the spike field stays after the eruption.
+	fieldSeconds = 3
+	#Ticks of Bleeding added to enemies struck by the shards or standing in the spike field.
+	bleedTicks = 80
+	#Bleeding level applied, starting at 0.
+	bleedAmplifier = 0

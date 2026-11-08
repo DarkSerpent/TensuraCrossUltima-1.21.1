@@ -1,0 +1,141 @@
+[General]
+	#Damage multiplier for every Lava Magic spell once that spell is mastered.
+	masteredDamageMultiplier = 1.5
+	#Share of every Lava Magic hit dealt as fire element damage. The rest is plain magic damage. 0.3 means 30% fire, 70% magic.
+	elementShare = 0.3
+
+[MagmaFist]
+	#Cast time in ticks.
+	castTicks = 10
+	#Magicule cost.
+	magiculeCost = 1000.0
+	#Cooldown in seconds.
+	cooldown = 4
+	#Travel speed of the fist in blocks per tick.
+	speed = 1.6
+	#Maximum travel distance in blocks.
+	range = 32.0
+	#Extra reach around the fist that counts as a direct hit, in blocks.
+	hitRadius = 0.8
+	#Total damage to the enemy struck directly.
+	damage = 81.0
+	#Seconds the struck enemy burns.
+	burnSeconds = 4.0
+	#Radius of the molten splash on impact, in blocks.
+	splashRadius = 2.5
+	#Total damage of the splash to every other enemy inside it.
+	splashDamage = 33.75
+	#Knockback of the direct hit. Entities tagged no_forced_move are never moved.
+	knockback = 0.8
+
+[LavaFlow]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost.
+	magiculeCost = 14000.0
+	#Cooldown in seconds.
+	cooldown = 15
+	#Width of the wave in blocks.
+	width = 5.0
+	#How far the wave rolls, in blocks.
+	length = 16.0
+	#How long the wave takes to roll its full length, in ticks.
+	durationTicks = 30
+	#Total damage to each enemy the wave passes. Each enemy is hit once.
+	damage = 72.5
+	#Seconds every enemy hit burns.
+	burnSeconds = 5.0
+	#How hard the wave carries enemies along, in blocks per tick. Entities tagged no_forced_move are never moved.
+	pushStrength = 0.55
+
+[LavaPool]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost.
+	magiculeCost = 12000.0
+	#Cooldown in seconds.
+	cooldown = 20
+	#How far away the pool can be centred, in blocks.
+	aimRange = 24.0
+	#Radius of the pool in blocks.
+	radius = 6.0
+	#How long the pool lasts, in ticks.
+	durationTicks = 200
+	#Total damage per second to every enemy standing in the pool. Also used by the pool Great Eruption leaves behind.
+	damagePerSecond = 29.0
+	#Seconds an enemy in the pool burns, refreshed every second.
+	burnSeconds = 3.0
+	#Slowness amplifier inside the pool. 1 means Slowness II.
+	slownessAmplifier = 1
+
+[MagmaArmor]
+	#Magicules drained every second while the armor is on. The armor drops when the caster runs dry.
+	magiculePerSecond = 60.0
+	#Total damage dealt back to anyone who strikes the caster in melee.
+	retaliationDamage = 21.75
+	#Seconds a melee attacker burns.
+	retaliationBurnSeconds = 3.0
+	#Extra lava hit added to the caster's melee hits, as a share of the hit. 0.3 means +30%.
+	meleeBonus = 0.3
+	#Seconds a target struck by the caster in melee burns.
+	meleeBurnSeconds = 4.0
+	#Whether the caster takes no fire or lava damage while the armor is on.
+	fireImmunity = true
+	#Seconds of wearing the armor per mastery point. 0 disables mastery from wearing it.
+	masteryIntervalSeconds = 30
+
+[MeteorVolcano]
+	#Chant time in ticks.
+	castTicks = 50
+	#Magicule cost.
+	magiculeCost = 52500.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#How far away the barrage can be centred, in blocks.
+	aimRange = 32.0
+	#Radius of the area the fists rain onto, in blocks.
+	radius = 12.0
+	#Number of magma fists in the barrage.
+	fistCount = 24
+	#Ticks the fists spend erupting skyward before the first one falls.
+	riseTicks = 20
+	#Ticks over which all fists land.
+	rainTicks = 60
+	#Ticks each fist takes to fall from the sky.
+	fallTicks = 12
+	#Total damage of each fist impact.
+	damage = 64.0
+	#Radius of each fist impact, in blocks.
+	impactRadius = 2.5
+	#Most fist impacts that can damage the same enemy in one cast.
+	maxHitsPerTarget = 6
+	#Seconds an enemy hit by a fist burns.
+	burnSeconds = 3.0
+	#Share of fists aimed at enemies in the area instead of random spots. 0 to 1.
+	seekShare = 0.4
+
+[GreatEruption]
+	#Chant time in ticks.
+	castTicks = 60
+	#Magicule cost.
+	magiculeCost = 77000.0
+	#Cooldown in seconds.
+	cooldown = 90
+	#How far away the eruption can be centred, in blocks.
+	aimRange = 32.0
+	#Ticks the ground rumbles and glows before it erupts.
+	warningTicks = 12
+	#Radius of the magma pillar, in blocks.
+	radius = 6.0
+	#Height of the magma pillar, in blocks. Enemies up to this high are hit.
+	pillarHeight = 14.0
+	#Total damage of the eruption.
+	damage = 400.0
+	#Upward launch of the eruption. Entities tagged no_forced_move are never moved.
+	knockUp = 1.2
+	#Seconds every enemy hit burns.
+	burnSeconds = 6.0
+	#Radius of the lava pool left behind, in blocks. 0 leaves no pool.
+	poolRadius = 8.0
+	#How long the lava pool left behind lasts, in ticks.
+	poolDurationTicks = 160

@@ -1,0 +1,4 @@
+#Whether Dragon Slayer scales draw their glowing line pass. Turn this off if the glow renders badly with your shader pack.
+scaleGlowPass = true
+#While an Iris/Oculus shader pack is active, draw the scale glow as translucent emissive instead of the additive eyes pass, which some packs render wrongly.
+shaderSafeGlow = true

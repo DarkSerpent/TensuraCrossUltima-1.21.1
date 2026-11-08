@@ -1,0 +1,296 @@
+
+[balance]
+    #Optional synchronized magic damage per second.
+    # Default: 0.0
+    # Range: 0.0 ~ 1.0E12
+    timeStopDamagePerSecond = 0.0
+    #Native cooldown after Divination activates. The runtime always keeps it longer than the active duration.
+    # Default: 30
+    # Range: 1 ~ 604800
+    divinationCooldownSeconds = 30
+    #Mastered Divination cooldown. The runtime always keeps it longer than the active duration.
+    # Default: 25
+    # Range: 1 ~ 604800
+    divinationMasteredCooldownSeconds = 25
+    #Mastered shared Time-school cooldown.
+    # Default: 200
+    # Range: 0 ~ 604800
+    sharedTimeCooldownMasteredSeconds = 200
+    #Cooldown applied to every Time spell after any Time spell resolves.
+    # Default: 300
+    # Range: 0 ~ 604800
+    sharedTimeCooldownSeconds = 300
+    #Time Reverse cooldown after a successful rewind.
+    # Default: 120
+    # Range: 0 ~ 604800
+    timeReverseCooldownSeconds = 120
+    #Unmastered reserved cost per rewound second.
+    # Default: 160000.0
+    # Range: 0.0 ~ 1.0E12
+    timeReverseCostPerSecond = 160000.0
+    #Mastered Time Reverse cooldown.
+    # Default: 90
+    # Range: 0 ~ 604800
+    timeReverseMasteredCooldownSeconds = 90
+    #Mastered reserved cost per rewound second.
+    # Default: 120000.0
+    # Range: 0.0 ~ 1.0E12
+    timeReverseMasteredCostPerSecond = 120000.0
+    #Cooldown applied when Time Stop ends.
+    # Default: 60
+    # Range: 0 ~ 604800
+    timeStopCooldownSeconds = 60
+    #Unmastered active drain.
+    # Default: 100000.0
+    # Range: 0.0 ~ 1.0E12
+    timeStopCostPerSecond = 100000.0
+    #Mastered cooldown applied when Time Stop ends.
+    # Default: 45
+    # Range: 0 ~ 604800
+    timeStopMasteredCooldownSeconds = 45
+    #Mastered active drain.
+    # Default: 80000.0
+    # Range: 0.0 ~ 1.0E12
+    timeStopMasteredCostPerSecond = 80000.0
+    #EP required for Divination.
+    # Default: 1000000
+    # Range: 0 ~ 9223372036854775807
+    divinationEp = 1000000
+    #Blocks changed per native ability-scroll step while casting Time magic.
+    # Default: 2
+    # Range: 1 ~ 64
+    radiusSelectionStep = 2
+    #EP required for Time Reverse.
+    # Default: 8000000
+    # Range: 0 ~ 9223372036854775807
+    timeReverseEp = 8000000
+    #EP required for Time Stop.
+    # Default: 5000000
+    # Range: 0 ~ 9223372036854775807
+    timeStopEp = 5000000
+    #Divination duration.
+    # Default: 200
+    # Range: 1 ~ 72000
+    divinationDurationTicks = 200
+    #Minimum scroll-selected Time radius.
+    # Default: 4
+    # Range: 1 ~ 256
+    minimumSelectableRadius = 4
+    #Maximum scroll-selected Time Reverse radius.
+    # Default: 32
+    # Range: 1 ~ 256
+    timeReverseMaximumRadius = 32
+    #Maximum rewind length.
+    # Default: 60
+    # Range: 1 ~ 600
+    timeReverseMaximumSeconds = 60
+    #Default recorded radius.
+    # Default: 8
+    # Range: 1 ~ 256
+    timeReverseRadius = 8
+    #Fragility and regeneration-penalty duration after Time Stop.
+    # Default: 20
+    # Range: 0 ~ 86400
+    timeStopAftermathSeconds = 20
+    #Maximum scroll-selected Time Stop radius.
+    # Default: 24
+    # Range: 1 ~ 256
+    timeStopMaximumRadius = 24
+    #Hard active duration.
+    # Default: 25
+    # Range: 1 ~ 600
+    timeStopMaximumSeconds = 25
+    #Default freeze radius.
+    # Default: 6
+    # Range: 1 ~ 256
+    timeStopRadius = 6
+    #Attacker EP below this fraction of the caster grants guaranteed dodge.
+    # Default: 0.8
+    # Range: 0.0 ~ 1000.0
+    divinationGuaranteedEpRatio = 0.8
+    #Mastered magic required for Divination.
+    # Default: 100
+    # Range: 0 ~ 100000
+    divinationMasteredMagic = 100
+    #Dodge chance against overwhelmingly stronger attackers.
+    # Default: 0.3
+    # Range: 0.0 ~ 1.0
+    divinationOverwhelmedDodgeChance = 0.3
+    #Middle relative-EP dodge chance.
+    # Default: 0.7
+    # Range: 0.0 ~ 1.0
+    divinationReducedDodgeChance = 0.7
+    #Attacker EP below this fraction uses the middle dodge chance.
+    # Default: 2.0
+    # Range: 0.0 ~ 1000.0
+    divinationReducedEpRatio = 2.0
+    #Enable bounded Time Reverse recording and casting.
+    enableTimeReverse = true
+    #Block journal cap before a rewind safely aborts.
+    # Default: 4096
+    # Range: 0 ~ 1000000
+    rewindMaximumBlockEventsPerCaster = 4096
+    #Concurrent per-caster histories retained.
+    # Default: 8
+    # Range: 1 ~ 128
+    rewindMaximumCasters = 8
+    #Entity snapshot cap per second.
+    # Default: 256
+    # Range: 1 ~ 4096
+    rewindMaximumEntitiesPerFrame = 256
+    #Estimated memory cap per caster.
+    # Default: 8388608
+    # Range: 65536 ~ 268435456
+    rewindMaximumEstimatedBytesPerCaster = 8388608
+    #Five-Hz ring-buffer frames.
+    # Default: 301
+    # Range: 2 ~ 3001
+    rewindMaximumFramesPerCaster = 301
+    #Mastered Chant Annulment Time Reverse chant.
+    # Default: 160
+    # Range: 1 ~ 72000
+    timeReverseAnnulledCastTicks = 160
+    #Unmastered Time Reverse chant.
+    # Default: 900
+    # Range: 1 ~ 72000
+    timeReverseCastTicks = 900
+    #Mastered Time Reverse chant.
+    # Default: 500
+    # Range: 1 ~ 72000
+    timeReverseMasteredCastTicks = 500
+    #Displayed Fragility level after Time Stop.
+    # Default: 3
+    # Range: 1 ~ 256
+    timeStopAftermathFragilityLevel = 3
+    #Additive Magicule-regeneration modifier after Time Stop.
+    # Default: -0.5
+    # Range: -1000.0 ~ 1000.0
+    timeStopAftermathRegenerationPenalty = -0.5
+    #Mastered Chant Annulment Time Stop chant.
+    # Default: 200
+    # Range: 1 ~ 72000
+    timeStopAnnulledCastTicks = 200
+    #Unmastered Time Stop chant.
+    # Default: 800
+    # Range: 1 ~ 72000
+    timeStopCastTicks = 800
+    #Mastered Time Stop chant.
+    # Default: 500
+    # Range: 1 ~ 72000
+    timeStopMasteredCastTicks = 500
+
+[abilities]
+
+    [abilities.divination]
+        #Controls for trevolved:divination. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.divination.subskills]
+
+            #Native mode 0: default. IDs/indices are not renumbered when disabled.
+            [abilities.divination.subskills.default]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+    [abilities.time_reverse]
+        #Controls for trevolved:time_reverse. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.time_reverse.subskills]
+
+            #Native mode 0: default. IDs/indices are not renumbered when disabled.
+            [abilities.time_reverse.subskills.default]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+    [abilities.time_stop]
+        #Controls for trevolved:time_stop. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.time_stop.subskills]
+
+            #Native mode 0: default. IDs/indices are not renumbered when disabled.
+            [abilities.time_stop.subskills.default]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

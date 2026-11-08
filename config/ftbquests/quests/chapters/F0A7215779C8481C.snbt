@@ -1,0 +1,111 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "F0A7215779C8481C"
+	group: "13F20E01BC3FA737"
+	icon: {
+		id: "apotheosis:sigil_of_malice"
+	}
+	id: "12C20BBD612B9A6F"
+	order_index: 14
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "apotheosis:gem"
+			}
+			id: "7071E6CEA90C4164"
+			tasks: [{
+				id: "1E50702BA00A479A"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7071E6CEA90C4164"]
+			icon: {
+				id: "apotheosis:sigil_of_enhancement"
+			}
+			id: "4BB284BDFF7F4F68"
+			tasks: [{
+				id: "6F7905B8FA814AC5"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4BB284BDFF7F4F68"]
+			icon: {
+				id: "apotheosis:gem"
+			}
+			id: "153144F8AB0A4349"
+			rewards: [{
+				existence: "MAX_EP"
+				id: "5D6D24930B8A8B29"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [
+				{
+					id: "0A72C519ED4CF2CC"
+					type: "checkmark"
+				}
+				{
+					id: "5681FC9C7AAAB554"
+					item: { count: 1, id: "apotheosis:gem" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["153144F8AB0A4349"]
+			icon: {
+				id: "apotheosis:augmenting_table"
+			}
+			id: "5C06C41DE2914409"
+			tasks: [{
+				id: "15455A0F051BD8A4"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["5C06C41DE2914409"]
+			icon: {
+				id: "apotheosis:boss_summoner"
+			}
+			id: "227344A740254FF5"
+			tasks: [{
+				id: "71E219DF488D471C"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["227344A740254FF5"]
+			icon: {
+				id: "apotheosis:sigil_of_malice"
+			}
+			id: "64E1D9F1C68C4893"
+			rewards: [{
+				command: "/rtitle grant {p} \"&7[Searching for Malice]\" desc Discovered the Sigil of Malice and learned its power over Affixes."
+				exclude_from_claim_all: true
+				id: "6D36D94425514CF1"
+				permission_level: 4
+				type: "command"
+			}]
+			tasks: [{
+				id: "217F5F00009D4A55"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 15.0d
+		}
+	]
+}

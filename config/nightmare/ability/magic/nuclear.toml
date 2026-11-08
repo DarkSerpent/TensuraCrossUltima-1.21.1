@@ -1,0 +1,177 @@
+[MeltSlash]
+	#Cast time in seconds.
+	castTime = 6
+	#Magicule Cost to cast.
+	magiculeCost = 10000.0
+	#The nuclear damage of the strike.
+	nuclearDamage = 150.0
+	#Percentage of damage the cooks SHP.
+	cookPerc = 70.0
+
+[NuclearFlame]
+	#Cast time in seconds for non-daemons.
+	castTime = 14
+	#Cast time in seconds for non-daemons with mastery.
+	castTimeMastered = 7
+	#Cast time in seconds for non-daemons with chant annulment.
+	castTimeAnnuled = 7
+	#Cast time in seconds for non-daemons with both mastery and annulment.
+	castTimeBoth = 4
+	#Cast time in seconds for daemon lords.
+	daemonCastTime = 10
+	#Cast time in seconds for daemon lords with mastery.
+	daemonCastTimeMastered = 5
+	#Cast time in seconds for daemon lords with chant annulment.
+	daemonCastTimeAnnuled = 5
+	#Cast time in seconds for daemon lords with both mastery and annulment.
+	daemonCastTimeBoth = 2
+	#Magicule Cost to cast per level.
+	magiculeCost = 15000.0
+	#The explosion radius in blocks of the fireball.
+	explosionRadius = 5.0
+	#The nuclear damage of the strike per level.
+	nuclearDamage = 125.0
+	#Charge level increases per 2 seconds of holding after cast time.
+	chargeTicksPerLevel = 40
+	#Maximum charge levels.
+	maxChargeLevels = 8
+	#The EP required to cast Grand Flame Array.
+	arrayEpRequirement = 2000000.0
+	#The amount of Nuclear Flames from Grand Flame Array (10 at most).
+	arrayFlames = 10
+	#The Cost of Grand Flame Array.
+	arrayMagiculeCost = 300000.0
+	#The Nuclear Damage of each Nuclear Flame from Grand Flame Array.
+	arrayDamage = 500.0
+	#The explosion radius of each Nuclear Flame from Grand Flame Array (in blocks).
+	arrayRadius = 12.0
+	#The range of Grand Flame Array (in blocks).
+	arrayRange = 64.0
+	#The shortest Cast Time of Grand Flame Array (in seconds).
+	arrayMinCastTime = 3
+	#The Cooldown of Grand Flame Array (in seconds).
+	arrayCooldown = 90
+
+[DeathStreak]
+	#Cast time in seconds for non-daemons.
+	castTime = 14
+	#Cast time in seconds for non-daemons with mastery.
+	castTimeMastered = 7
+	#Cast time in seconds for non-daemons with chant annulment.
+	castTimeAnnuled = 7
+	#Cast time in seconds for non-daemons with both mastery and annulment.
+	castTimeBoth = 4
+	#Cast time in seconds for daemon lords.
+	daemonCastTime = 10
+	#Cast time in seconds for daemon lords with mastery.
+	daemonCastTimeMastered = 5
+	#Cast time in seconds for daemon lords with chant annulment.
+	daemonCastTimeAnnuled = 5
+	#Cast time in seconds for daemon lords with both mastery and annulment.
+	daemonCastTimeBoth = 2
+	#Magicule cost to cast per charge level.
+	magiculeCost = 20000.0
+	#The nuclear damage of the death ray.
+	nuclearDamage = 1500.0
+	#The range of the death ray in blocks.
+	rayRange = 96.0
+	#The width of the death ray in blocks.
+	rayBaseWidth = 1.0
+	#The extra width of the death ray per charge level.
+	rayWidthPerLevel = 0.35
+	#Ticks the Abyss Core takes to compress.
+	compressTicks = 8
+	#The duration of the death ray in ticks.
+	rayTicks = 30
+	#Ticks held per charge level.
+	chargeTicksPerLevel = 40
+	#Maximum charge levels.
+	maxChargeLevels = 8
+	#The barrier bypass level of the death ray.
+	barrierBypass = 6.0
+	#Whether the death ray hits allies.
+	hitsAllies = true
+	#Cooldown in seconds.
+	cooldown = 30
+	#Whether the death ray ignores death prevention.
+	bypassDeathPrevention = true
+	#The chance a killed creature is reborn as a Majin. 0.01 = 1%
+	survivalChance = 0.01
+
+[GravityCollapse]
+	#Cast time in seconds for non-daemons.
+	castTime = 14
+	#Cast time in seconds for non-daemons with mastery.
+	castTimeMastered = 7
+	#Cast time in seconds for non-daemons with chant annulment.
+	castTimeAnnuled = 7
+	#Cast time in seconds for non-daemons with both mastery and annulment.
+	castTimeBoth = 4
+	#Cast time in seconds for daemon lords.
+	daemonCastTime = 10
+	#Cast time in seconds for daemon lords with mastery.
+	daemonCastTimeMastered = 5
+	#Cast time in seconds for daemon lords with chant annulment.
+	daemonCastTimeAnnuled = 5
+	#Cast time in seconds for daemon lords with both mastery and annulment.
+	daemonCastTimeBoth = 2
+	#Magicule cost to cast per charge level.
+	magiculeCost = 25000.0
+	#The nuclear damage of the supernova per charge level.
+	nuclearDamage = 187.5
+	#The radius of the supernova per charge level.
+	radiusPerLevel = 12.0
+	#Ticks held per charge level.
+	chargeTicksPerLevel = 40
+	#Maximum charge levels.
+	maxChargeLevels = 8
+	#The speed of the core (blocks per tick).
+	projectileSpeed = 1.2
+	#The range of the core in blocks.
+	projectileRange = 64.0
+	#The duration of the supergravity field in ticks.
+	fieldTicks = 40
+	#The duration of the inverted tempest in ticks.
+	collapseTicks = 20
+	#The downward force of the supergravity field.
+	crushForce = 1.5
+	#The inward pull of the inverted tempest.
+	collapsePull = 0.45
+	#The barrier bypass level of the supernova.
+	barrierBypass = 6.0
+	#Whether the supernova hits allies.
+	hitsAllies = true
+	#Cooldown in seconds.
+	cooldown = 40
+
+[Forbidden]
+	#Cast time in seconds.
+	castTime = 4
+	#Magicule Cost to cast.
+	magiculeCost = 5000.0
+	#The magic damage of the blast.
+	magicDamage = 50.0
+	#The magic damage of the blast (Mastered).
+	magicDamageMastered = 100.0
+	#The soul damage of the blast.
+	shpDamage = 150.0
+	#The soul damage of the blast (Mastered).
+	shpDamageMastered = 250.0
+	#The duraction of Core Damage Effect in seconds.
+	coreDuration = 4
+
+[NihilisticBanish]
+	#Cast time in seconds.
+	castTime = 5
+	#Cast time in seconds (Mastered).
+	castTimeMastered = 2
+	#Cooldown in seconds.
+	cooldown = 200
+	#Magicule Cost to cast.
+	magiculeCost = 850000.0
+	#Magicule Cost to cast (Mastered).
+	magiculeCostMastered = 575000.0
+	#Burst magic damage dealt at the end of banishment.
+	magicDamage = 2800.0
+	#Spiritual damage dealt every second during banishment.
+	shpDamage = 800.0

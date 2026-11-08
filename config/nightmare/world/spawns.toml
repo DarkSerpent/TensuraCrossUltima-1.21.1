@@ -1,0 +1,18 @@
+#Whether Ogres spawn naturally in mountain, forest and swamp biomes. Needs a server restart.
+ogreSpawns = true
+#Ogre spawn weight among hostile mobs (zombies are 100). Needs a server restart.
+ogreWeight = 6
+#Smallest Ogre group. Needs a server restart.
+ogreMinGroup = 1
+#Largest Ogre group. Needs a server restart.
+ogreMaxGroup = 3
+#Whether wild dragons spawn naturally. Dragon nests are not affected. Needs a server restart.
+wildDragonSpawns = true
+#Wild dragon spawn weight among creatures. Needs a server restart.
+wildDragonWeight = 1
+#Smallest wild dragon group. Needs a server restart.
+wildDragonMinGroup = 1
+#Largest wild dragon group. Needs a server restart.
+wildDragonMaxGroup = 1
+#Only 1 in this many natural wild dragon spawn attempts goes through.
+wildDragonRarity = 8

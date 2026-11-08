@@ -1,0 +1,429 @@
+[General]
+	#Damage multiplier for every God and Devil Slayer spell once that spell is mastered.
+	masteredDamageMultiplier = 1.5
+	#Share (0..1) of every God and Devil Slayer spell's damage dealt as its element; the rest is magic damage.
+	elementShare = 0.3
+	#Whether the element share of God Slayer spells ignores the same element's resistance and nullification (black flame, black lightning, black wind).
+	blackElementBypass = true
+
+[DivineAura]
+	#Magicule cost to awaken Divine Aura.
+	activationCost = 30000.0
+	#Magicules drained every second while Divine Aura stays awake.
+	magiculePerSecond = 250.0
+	#Extra damage on that element's God Slayer spells while Divine Aura is awake (0.4 = +40%).
+	damageBonus = 0.4
+	#Seconds of Divine Aura per mastery point.
+	masteryIntervalSeconds = 60
+
+[DevilMode]
+	#Magicule cost to enter Devil Slayer Mode.
+	activationCost = 30000.0
+	#Magicules drained every second while Devil Slayer Mode lasts.
+	magiculePerSecond = 250.0
+	#Extra damage on Ice Devil Slayer spells while Devil Slayer Mode lasts (0.4 = +40%).
+	damageBonus = 0.4
+	#Seconds of Devil Slayer Mode per mastery point.
+	masteryIntervalSeconds = 60
+
+[BlackBurn]
+	#Total damage every second while a target burns with black flame. Water and rain cannot put it out.
+	damagePerSecond = 12.0
+
+[FireBellow]
+	#Chant time in ticks.
+	castTicks = 12
+	#Magicule cost to cast.
+	magiculeCost = 14000.0
+	#Cooldown in seconds.
+	cooldown = 10
+	#The length of the cone in blocks.
+	length = 12.0
+	#The full width of the cone in degrees.
+	coneDegrees = 40.0
+	#Number of damage pulses.
+	pulses = 4
+	#Ticks between two pulses.
+	pulseTicks = 5
+	#Total damage of each pulse.
+	pulseDamage = 60.0
+	#Seconds of black burn on every enemy caught.
+	burnSeconds = 5.0
+	#The push of each pulse.
+	knockback = 0.2
+
+[FireScythe]
+	#Magicule cost to cast.
+	magiculeCost = 1200.0
+	#Cooldown in seconds.
+	cooldown = 4
+	#The reach of the scythe in blocks.
+	reach = 6.0
+	#The width of the sweep in degrees.
+	arcDegrees = 220.0
+	#Ticks the sweep takes.
+	sweepTicks = 6
+	#Total damage of the sweep.
+	damage = 110.0
+	#Seconds of black burn.
+	burnSeconds = 3.0
+	#The knockback of the sweep.
+	knockback = 0.6
+
+[Kagutsuchi]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost to cast.
+	magiculeCost = 18000.0
+	#Cooldown in seconds.
+	cooldown = 14
+	#Blocks the fireball travels each tick.
+	speed = 1.2
+	#The farthest the fireball flies in blocks.
+	range = 40.0
+	#How close the fireball must pass to an enemy to strike it.
+	hitRadius = 1.2
+	#Total damage to the enemy struck.
+	damage = 260.0
+	#The radius of the blast in blocks.
+	blastRadius = 6.0
+	#Total damage of the blast to every enemy inside it.
+	blastDamage = 100.0
+	#Seconds of black burn.
+	burnSeconds = 6.0
+	#The knockback of the blast.
+	knockback = 0.8
+
+[BlackFlameArms]
+	#Magicule cost to wreathe the arms.
+	activationCost = 10000.0
+	#Magicules drained every second while the arms burn.
+	magiculePerSecond = 60.0
+	#Share of every melee hit added as black flame (0.35 = +35%).
+	bonusShare = 0.35
+	#Seconds of black burn from each melee hit.
+	burnSeconds = 4.0
+
+[ExplodingBrilliance]
+	#Chant time in ticks.
+	castTicks = 30
+	#Magicule cost to cast.
+	magiculeCost = 78000.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#The farthest point the pillar can rise at in blocks.
+	range = 32.0
+	#The radius of the pillar in blocks.
+	radius = 4.0
+	#The height of the pillar in blocks.
+	height = 18.0
+	#Ticks between the ground igniting and the pillar erupting.
+	delayTicks = 20
+	#Ticks the pillar burns.
+	durationTicks = 30
+	#Total damage to every enemy caught, spread over the pillar's pulses.
+	damage = 750.0
+	#Number of damage pulses while the pillar burns.
+	pulses = 3
+	#Seconds of black burn.
+	burnSeconds = 8.0
+
+[LightningBellow]
+	#Chant time in ticks.
+	castTicks = 12
+	#Magicule cost to cast.
+	magiculeCost = 14000.0
+	#Cooldown in seconds.
+	cooldown = 10
+	#The length of the beam in blocks.
+	length = 25.0
+	#The radius of the beam in blocks.
+	radius = 1.3
+	#Ticks the beam lasts.
+	durationTicks = 10
+	#Total damage to every enemy in the beam.
+	damage = 260.0
+
+[LightningCannon]
+	#Charge time in ticks.
+	castTicks = 20
+	#Magicule cost to cast.
+	magiculeCost = 20000.0
+	#Cooldown in seconds.
+	cooldown = 14
+	#Blocks the ball travels each tick.
+	speed = 1.8
+	#The farthest the ball flies in blocks.
+	range = 40.0
+	#How close the ball must pass to an enemy to strike it.
+	hitRadius = 1.2
+	#Total damage to the enemy struck.
+	damage = 300.0
+	#The radius of the blast in blocks.
+	blastRadius = 4.5
+	#Total damage of the blast to every enemy inside it.
+	blastDamage = 120.0
+
+[ThunderChain]
+	#Magicule cost to cast.
+	magiculeCost = 1500.0
+	#Cooldown in seconds.
+	cooldown = 4
+	#The reach of the first bolt in blocks.
+	range = 20.0
+	#The farthest the bolt jumps between enemies in blocks.
+	jumpRange = 8.0
+	#The most enemies the bolt passes through.
+	maxTargets = 4
+	#Total damage to each enemy struck.
+	damage = 90.0
+
+[LightningWrath]
+	#Chant time in ticks.
+	castTicks = 10
+	#Magicule cost to cast.
+	magiculeCost = 15000.0
+	#Cooldown in seconds.
+	cooldown = 12
+	#The reach of the mark in blocks.
+	range = 32.0
+	#Ticks between the mark and the strike.
+	delayTicks = 20
+	#Total damage of the strike.
+	damage = 280.0
+	#The radius around the marked target that the strike also hits.
+	radius = 1.5
+
+[LightningCalamity]
+	#Chant time in ticks.
+	castTicks = 30
+	#Magicule cost to cast.
+	magiculeCost = 80000.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#The farthest point the storm can be called to in blocks.
+	range = 32.0
+	#The radius of the storm in blocks.
+	radius = 8.0
+	#Ticks the storm lasts.
+	durationTicks = 60
+	#Ticks between two bolts.
+	strikeTicks = 3
+	#The radius of each bolt's impact in blocks.
+	strikeRadius = 2.5
+	#Total damage of each bolt.
+	strikeDamage = 90.0
+	#The most total damage the storm deals to one enemy.
+	damageCap = 750.0
+
+[SkyBellow]
+	#Chant time in ticks.
+	castTicks = 12
+	#Magicule cost to cast.
+	magiculeCost = 12000.0
+	#Cooldown in seconds.
+	cooldown = 10
+	#The length of the cone in blocks.
+	length = 13.0
+	#The full width of the cone in degrees.
+	coneDegrees = 45.0
+	#Number of damage pulses.
+	pulses = 4
+	#Ticks between two pulses.
+	pulseTicks = 5
+	#Total damage of each pulse.
+	pulseDamage = 55.0
+	#The push of each pulse.
+	knockback = 0.6
+
+[SkyBoreas]
+	#Chant time in ticks.
+	castTicks = 15
+	#Magicule cost to cast.
+	magiculeCost = 16000.0
+	#Cooldown in seconds.
+	cooldown = 12
+	#The length of the spiral in blocks.
+	length = 24.0
+	#The radius of the spiral in blocks.
+	radius = 1.8
+	#Ticks the spiral takes to reach its full length.
+	travelTicks = 10
+	#Total damage to every enemy in the spiral.
+	damage = 230.0
+	#The push of the spiral.
+	knockback = 1.0
+
+[SkyDance]
+	#Magicule cost to cast.
+	magiculeCost = 1200.0
+	#Cooldown in seconds.
+	cooldown = 5
+	#The radius of the ring in blocks.
+	radius = 6.0
+	#Total damage to every enemy in the ring.
+	damage = 100.0
+	#The knockback of the ring.
+	knockback = 1.4
+
+[SkyRestoration]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost to cast.
+	magiculeCost = 15000.0
+	#Cooldown in seconds.
+	cooldown = 30
+	#The reach for healing an ally in blocks; with no ally in sight the caster is healed.
+	range = 12.0
+	#Share of max health restored (0.6 = 60%).
+	healShare = 0.6
+	#Seconds of Regeneration granted.
+	regenerationSeconds = 10
+	#Amplifier of the Regeneration (0 = level I).
+	regenerationAmplifier = 1
+
+[FeatherSpiral]
+	#Chant time in ticks.
+	castTicks = 30
+	#Magicule cost to cast.
+	magiculeCost = 76000.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#The farthest point the tornado can be called to in blocks.
+	range = 32.0
+	#The radius of the tornado in blocks.
+	radius = 10.0
+	#Ticks the tornado lasts.
+	durationTicks = 60
+	#Number of damage pulses while the tornado lasts.
+	pulses = 6
+	#Total damage to every enemy caught, spread over the pulses.
+	damage = 750.0
+	#How hard the tornado drags enemies inward each pulse.
+	pull = 0.35
+
+[IceRage]
+	#Chant time in ticks.
+	castTicks = 12
+	#Magicule cost to cast.
+	magiculeCost = 13000.0
+	#Cooldown in seconds.
+	cooldown = 10
+	#The length of the cone in blocks.
+	length = 12.0
+	#The full width of the cone in degrees.
+	coneDegrees = 40.0
+	#Number of damage pulses.
+	pulses = 4
+	#Ticks between two pulses.
+	pulseTicks = 5
+	#Total damage of each pulse.
+	pulseDamage = 60.0
+	#Pulses that must land on one enemy before it freezes solid.
+	freezePulses = 3
+	#Ticks an enemy stays frozen once the frost builds up.
+	freezeTicks = 40
+
+[LongSword]
+	#Magicule cost to forge the blade.
+	magiculeCost = 1500.0
+	#Cooldown in seconds, counted from the cast.
+	cooldown = 20
+	#Seconds the blade lasts.
+	durationSeconds = 15
+	#Extra melee reach in blocks while the blade lasts.
+	reachBonus = 2.0
+	#Share of every melee hit added as ice (0.4 = +40%).
+	iceShare = 0.4
+
+[DestructionBow]
+	#Draw time in ticks.
+	castTicks = 20
+	#Magicule cost to cast.
+	magiculeCost = 18000.0
+	#Cooldown in seconds.
+	cooldown = 14
+	#Blocks the arrow travels each tick.
+	speed = 3.0
+	#The farthest the arrow flies in blocks.
+	range = 48.0
+	#How close the arrow must pass to an enemy to pierce it.
+	hitRadius = 0.8
+	#Total damage to every enemy pierced.
+	damage = 280.0
+	#Ticks every pierced enemy stays frozen.
+	freezeTicks = 40
+
+[IceWall]
+	#Magicule cost to cast.
+	magiculeCost = 10000.0
+	#Cooldown in seconds.
+	cooldown = 16
+	#Ticks the wall stands.
+	durationTicks = 120
+	#Blocks in front of the caster the wall rises.
+	distance = 2.5
+	#The width of the wall in blocks.
+	width = 6.0
+	#The height of the wall in blocks.
+	height = 4.0
+
+[ZerothDestruction]
+	#Chant time in ticks.
+	castTicks = 30
+	#Magicule cost to cast.
+	magiculeCost = 80000.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#The farthest point the explosion can be aimed at in blocks.
+	range = 32.0
+	#The radius of the explosion in blocks.
+	radius = 9.0
+	#Ticks the ice gathers before it bursts.
+	delayTicks = 15
+	#Total damage to every enemy inside the explosion.
+	damage = 800.0
+	#Ticks every enemy caught stays frozen.
+	freezeTicks = 60
+
+[FireAppetite]
+	#Whether Fire God's Appetite works.
+	enabled = true
+	#Magicules restored every second while standing in fire or lava.
+	magiculePerSecondInFire = 450.0
+	#Whether a Fire God Slayer with the Appetite is immune to fire damage (God Slayer flame still burns).
+	fireImmunity = true
+
+[LightningAppetite]
+	#Whether Lightning God's Appetite works.
+	enabled = true
+	#Magicules restored by eating a lightning strike.
+	magiculePerStrike = 4500.0
+	#Whether a Lightning God Slayer with the Appetite is immune to lightning damage (God Slayer lightning still strikes).
+	lightningImmunity = true
+
+[SkyAppetite]
+	#Whether Sky God's Appetite works.
+	enabled = true
+	#Magicules restored every second while airborne.
+	magiculePerSecondAirborne = 60.0
+	#Y level at and above which the air is thin and rich: the Appetite feeds there even on the ground, at double rate.
+	highAltitude = 150
+	#Whether a Sky God Slayer with the Appetite is immune to wind damage (God Slayer wind still cuts).
+	windImmunity = true
+
+[IceAppetite]
+	#Whether Ice Devil's Appetite works.
+	enabled = true
+	#Magicules restored by eating ice.
+	magiculePerIce = 600.0
+	#Magicules restored by eating packed ice.
+	magiculePerPackedIce = 1200.0
+	#Magicules restored by eating blue ice.
+	magiculePerBlueIce = 2400.0
+	#Magicules restored by eating a snowball.
+	magiculePerSnowball = 150.0
+	#Ticks before the next bite.
+	cooldownTicks = 20
+	#Whether an Ice Devil Slayer with the Appetite is immune to cold and freezing.
+	coldImmunity = true

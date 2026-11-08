@@ -1,0 +1,72 @@
+#Max health.
+maxHealth = 18000.0
+#Max spiritual health.
+spiritualHealth = 45000.0
+#Health fraction (0..1) at which Cath swells into the Chaos Beast and enters the second phase.
+phaseTwoHealth = 0.66
+#Health fraction (0..1) at which it crowns itself King of Chaos and enters the last phase.
+phaseThreeHealth = 0.33
+#Whether the summoning ritual (a Nether Star fed to a tamed cat at night) works at all.
+ritualEnabled = true
+#Whether the ritual only works at night.
+ritualNightOnly = true
+#Whether the first player to slay Cath Palug is chosen by Chaos and learns the Chaos unique skill.
+grantsChaos = true
+#Claw Swipe damage.
+swipeDamage = 380.0
+#Ticks between Claw Swipes.
+swipeCooldown = 22
+#Pounce landing damage.
+pounceDamage = 460.0
+#Pounce landing radius in blocks.
+pounceRadius = 4.0
+#Ticks between Pounces.
+pounceCooldown = 120
+#Tail Sweep damage.
+tailDamage = 320.0
+#Tail Sweep radius in blocks (scaled by its size).
+tailRadius = 5.5
+#Ticks between Tail Sweeps.
+tailCooldown = 140
+#Damage of each Chaos Orb.
+orbDamage = 340.0
+#Blast radius of each Chaos Orb.
+orbRadius = 2.5
+#Ticks between Chaos Orb volleys.
+orbCooldown = 90
+#Devour damage per pulse while its maw pulls (second phase on).
+devourDamage = 140.0
+#Devour damage of the closing bite.
+devourBiteDamage = 900.0
+#How far Devour pulls, in blocks.
+devourRange = 18.0
+#Max health percent it heals per Devour pulse that lands.
+devourHealPercent = 0.6
+#Ticks between Devours.
+devourCooldown = 300
+#Chaos Rift damage (second phase on).
+riftDamage = 560.0
+#Chaos Rift radius in blocks.
+riftRadius = 2.6
+#Ticks between Chaos Rifts.
+riftCooldown = 200
+#Damage of each Chaos Star in Starfall (last phase).
+starDamage = 420.0
+#Chaos Stars per Starfall.
+starCount = 10
+#Ticks between Starfalls.
+starfallCooldown = 260
+#Chaos Nova damage at its centre (last phase); it weakens toward the edge.
+novaDamage = 1050.0
+#Chaos Nova radius in blocks.
+novaRadius = 24.0
+#Ticks between Chaos Novas.
+novaCooldown = 380
+#Ticks between its taunts while it has a target.
+tauntInterval = 600
+#Familiar (summoned by the Chaos skill): max health.
+familiarHealth = 600.0
+#Familiar: damage of its swipes and pounces.
+familiarDamage = 60.0
+#Familiar: damage of each of its Chaos Orbs.
+familiarOrbDamage = 45.0

@@ -1,0 +1,99 @@
+#Max health.
+health = 18000.0
+#Max spiritual health.
+spiritualHealth = 24000.0
+#Health he regenerates every second (doubled when he has not been hurt for 5 seconds).
+regenPerSecond = 40.0
+#Whether he spawns naturally in the Nether (every Nether biome).
+naturalSpawn = true
+#Chance (0..1) a natural spawn attempt in the Nether that picked him goes through. Lower is rarer.
+spawnChance = 0.015
+#Whether he also spawns naturally in Tensura's Hell.
+hellSpawn = true
+#Chance (0..1) a natural spawn attempt in Hell that picked him goes through.
+hellSpawnChance = 0.03
+#Whether he also spawns naturally in the Overworld's badlands, deserts and stony peaks, day or night.
+wildSpawn = true
+#Chance (0..1) a natural spawn attempt in the Overworld that picked him goes through.
+wildSpawnChance = 0.015
+#Natural spawns fail if another Drole is within this many blocks. 0 turns the check off.
+spawnSpacing = 256
+#Damage of his two-fisted overhead slam.
+slamDamage = 580.0
+#Reach (blocks) of the slam in front of him.
+slamReach = 5.0
+#Ticks between slams.
+slamCooldown = 30
+#Damage of each punch in his four-armed flurry.
+flurryDamage = 240.0
+#Ticks between flurries.
+flurryCooldown = 140
+#Damage when Ground's two giant hands clap shut.
+handsDamage = 900.0
+#Radius (blocks) the giant hands sweep up around their target.
+handsRadius = 6.0
+#Ticks the giant hands hold whoever they catch.
+handsHoldTicks = 40
+#Ticks between giant hands.
+handsCooldown = 320
+#Damage of each earth spike that erupts under a target.
+spikeDamage = 420.0
+#How far (blocks) the line of earth spikes runs.
+spikeRange = 22.0
+#Ticks between earth spike lines.
+spikeCooldown = 220
+#Earth golems he raises each time.
+golemCount = 2
+#Most earth golems he keeps at once.
+golemMax = 4
+#Max health of an earth golem.
+golemHealth = 1500.0
+#Damage of an earth golem's punch.
+golemDamage = 150.0
+#Ticks an earth golem lasts before crumbling. 0 makes them last until destroyed.
+golemLifeTicks = 1200
+#Ticks between raising golems.
+golemCooldown = 600
+#Most stacks of Earth Connection his dance can build.
+danceMaxStacks = 3
+#Ticks Earth Connection lasts after his last dance.
+danceTicks = 600
+#Damage dealt bonus per stack of Earth Connection (0.15 = +15%).
+danceDamagePerStack = 0.15
+#Damage taken reduction per stack of Earth Connection (0.08 = -8%).
+danceGuardPerStack = 0.08
+#Damage of the shockwave that ends each dance.
+danceWaveDamage = 200.0
+#Radius (blocks) of that shockwave, which also strips beneficial effects from anyone it hits.
+danceWaveRadius = 12.0
+#Ticks between dances.
+danceCooldown = 500
+#Fraction of max health (0..1) at which he becomes Earthbound: a full dance, a labyrinth and golems.
+earthboundHealth = 0.5
+#Whether Earthbound raises a real labyrinth of earth walls around him (needs mobGriefing). The walls only fill empty space and vanish afterwards.
+labyrinth = true
+#Radii (blocks) of the labyrinth's rings of walls.
+labyrinthInner = 9.0
+labyrinthOuter = 15.0
+#Height (blocks) of the labyrinth walls.
+labyrinthHeight = 4
+#Ticks the labyrinth stands. Broken walls regrow while it does.
+labyrinthTicks = 600
+#Ticks between labyrinths once Earthbound.
+labyrinthCooldown = 1200
+#Chance (0..1) his Magical Eye reads an incoming melee blow and he sidesteps it.
+eyeDodgeChance = 0.18
+#Radius (blocks) in which his Magical Eye strips invisibility and concealment and makes his foes glow.
+eyeRadius = 24.0
+#Radius (blocks) of the Commandment of Patience: anyone who heals in his presence shows intolerance of pain, and is given more.
+patienceRadius = 20.0
+#Heals smaller than this fraction of the healer's max health are tolerated.
+patienceThreshold = 0.02
+#The heal is cancelled and this much of it (1.0 = all of it) is dealt as damage instead.
+patiencePainMultiplier = 1.0
+#Most levels of Fragility the Commandment stacks on someone.
+patienceMaxFragility = 5
+#Ticks each level of Fragility lasts.
+patienceFragilityTicks = 400
+#Whether creative-mode players are spared by Patience.
+patienceSparesCreative = true

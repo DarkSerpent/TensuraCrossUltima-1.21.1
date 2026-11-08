@@ -1,0 +1,21 @@
+
+[evolution]
+    #Register and expose the Demon-Dragon evolution branch.
+    enabled = true
+    #Maximum EP for a tagged addon dragon-race entry.
+    # Default: 900000.0
+    # Range: 0.0 ~ 1.0E15
+    optionalAddonEntryMaxEp = 900000.0
+    #Minimum EP for a tagged addon dragon-race entry.
+    # Default: 350000.0
+    # Range: 0.0 ~ 1.0E15
+    optionalAddonEntryMinEp = 350000.0
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

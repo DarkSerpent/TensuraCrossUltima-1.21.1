@@ -1,0 +1,74 @@
+#Max health.
+maxHealth = 16000.0
+#Max spiritual health.
+spiritualHealth = 40000.0
+#Health fraction (0..1) at which its crown ignites and it enters the second phase.
+phaseTwoHealth = 0.66
+#Health fraction (0..1) at which it splits its soul into the Phylactery and enters the last phase.
+phaseThreeHealth = 0.33
+#Whether the summoning ritual (a Nether Star offered to a lit Soul Campfire ringed by Wither Skeleton Skulls) works at all.
+ritualEnabled = true
+#Whether the ritual only works in the Nether.
+ritualNetherOnly = true
+#Wither Skeleton Skulls that must be placed around the Soul Campfire.
+skullsRequired = 4
+#How far from the Soul Campfire (in blocks) the skulls may be placed.
+ritualRadius = 4
+#Soul Scythe sweep damage.
+scytheDamage = 420.0
+#Ticks between Soul Scythe sweeps.
+scytheCooldown = 26
+#Damage of each skull in a Skull Volley.
+skullDamage = 360.0
+#Blast radius of each skull in a Skull Volley.
+skullRadius = 2.5
+#Ticks between Skull Volleys.
+volleyCooldown = 90
+#Curse Bind damage.
+curseDamage = 220.0
+#Curse Bind radius in blocks.
+curseRadius = 20.0
+#How long Curse Bind curses and binds its victims, in ticks.
+curseDuration = 160
+#Ticks between Curse Binds.
+curseCooldown = 260
+#Gehenna Knights raised by each Create Undead.
+knightsPerRaise = 3
+#Most Gehenna Knights it keeps alive at once.
+maxKnights = 6
+#Gehenna Knight max health.
+knightHealth = 320.0
+#Gehenna Knight attack damage.
+knightDamage = 45.0
+#Ticks between Create Undead casts.
+raiseCooldown = 400
+#Soul Drain damage per pulse (second phase on).
+drainDamage = 160.0
+#Max health percent it heals per Soul Drain pulse that lands.
+drainHealPercent = 0.8
+#Ticks between Soul Drains.
+drainCooldown = 220
+#Gehenna Pillar damage (second phase on).
+pillarDamage = 520.0
+#Gehenna Pillar radius in blocks.
+pillarRadius = 2.5
+#Ticks between Gehenna Pillar casts.
+pillarCooldown = 200
+#Death Knell damage at its centre (last phase); it weakens toward the edge.
+knellDamage = 950.0
+#Death Knell radius in blocks.
+knellRadius = 22.0
+#Ticks between Death Knells.
+knellCooldown = 360
+#Phylactery health.
+phylacteryHealth = 3000.0
+#Fraction (0..1) of all damage the Lich ignores while its Phylactery stands.
+phylacteryWard = 0.9
+#Max health percent the Lich regains every second while its Phylactery stands.
+phylacteryRegenPercent = 0.25
+#Max health percent the Lich loses when its Phylactery shatters.
+phylacteryBreakPercent = 6.0
+#Ticks between the Gehenna Knights the Phylactery raises to guard itself.
+phylacteryRaiseInterval = 240
+#Ticks between its taunts while it has a target.
+tauntInterval = 600

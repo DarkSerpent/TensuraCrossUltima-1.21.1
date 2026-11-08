@@ -1,0 +1,247 @@
+[General]
+	#Damage multiplier for every damaging Time Magic spell once that spell is mastered.
+	masteredDamageMultiplier = 1.5
+
+[Accelerate]
+	#Cast time in ticks. 0 casts instantly.
+	castTicks = 0
+	#Magicule cost.
+	magiculeCost = 1000.0
+	#Cooldown in seconds.
+	cooldown = 25
+	#How long the acceleration lasts, in ticks.
+	durationTicks = 200
+	#Movement speed bonus as a fraction of base speed. 0.4 means +40%.
+	movementSpeedBonus = 0.4
+	#Attack speed bonus as a fraction of base attack speed. 0.4 means +40%.
+	attackSpeedBonus = 0.4
+	#Extra cooldown seconds removed from the caster's spells per real second while active. 0.5 means spell cooldowns tick 50% faster.
+	spellCooldownRateBonus = 0.5
+
+[TempoField]
+	#Chant time in ticks.
+	castTicks = 30
+	#Magicule cost.
+	magiculeCost = 16000.0
+	#Cooldown in seconds.
+	cooldown = 30
+	#How far away the field can be centred, in blocks.
+	aimRange = 24.0
+	#Radius of the field in blocks.
+	radius = 10.0
+	#How long the field lasts, in ticks.
+	durationTicks = 200
+	#Slowness amplifier on enemies inside. 2 means Slowness III.
+	enemySlownessAmplifier = 2
+	#Mining Fatigue amplifier on enemies inside. 1 means Mining Fatigue II.
+	enemyMiningFatigueAmplifier = 1
+	#Attack speed penalty on enemies inside, as a fraction. 0.4 means -40%.
+	enemyAttackSpeedPenalty = 0.4
+	#Speed multiplier for enemy projectiles while inside the field. 0.3 means they fly at 30% speed.
+	projectileSpeedMultiplier = 0.3
+	#Speed amplifier on allies inside. 1 means Speed II.
+	allySpeedAmplifier = 1
+	#Haste amplifier on allies inside. 1 means Haste II.
+	allyHasteAmplifier = 1
+
+[ChronoLock]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost.
+	magiculeCost = 14000.0
+	#Cooldown in seconds.
+	cooldown = 20
+	#How far away the target can be, in blocks.
+	range = 24.0
+	#How long the target is locked in time, in ticks.
+	lockTicks = 50
+	#How long a boss is locked in time, in ticks.
+	bossLockTicks = 20
+	#Damage taken while locked is stored and dealt all at once when the lock ends, multiplied by this.
+	storedDamageMultiplier = 1.25
+
+[Rewind]
+	#Cast time in ticks. 0 casts instantly.
+	castTicks = 0
+	#Magicule cost.
+	magiculeCost = 20000.0
+	#Cooldown in seconds.
+	cooldown = 45
+	#How far back in time the caster snaps, in ticks.
+	rewindTicks = 100
+	#Ticks between recorded snapshots. Lower is more precise but costs more memory.
+	sampleIntervalTicks = 2
+	#Whether health is restored to what it was back then. Health is only ever raised, never lowered.
+	restoreHealth = true
+	#Whether harmful effects gained since then are removed.
+	clearNewHarmfulEffects = true
+
+[TemporalEcho]
+	#Cast time in ticks. 0 casts instantly.
+	castTicks = 0
+	#Magicule cost.
+	magiculeCost = 12000.0
+	#Cooldown in seconds.
+	cooldown = 25
+	#How long hits echo, in ticks.
+	durationTicks = 200
+	#Delay before a hit echoes, in ticks.
+	echoDelayTicks = 20
+	#Echo damage as a fraction of the original hit.
+	echoDamageFraction = 0.5
+	#The echo only lands if the target is still within this many blocks of the caster.
+	echoRange = 32.0
+
+[Entropy]
+	#Chant time in ticks.
+	castTicks = 40
+	#Magicule cost.
+	magiculeCost = 42000.0
+	#Cooldown in seconds.
+	cooldown = 50
+	#How far away the target can be, in blocks.
+	range = 24.0
+	#How long the target ages, in ticks.
+	durationTicks = 160
+	#Damage per second as a fraction of the target's max health. 0.04 means 4%.
+	maxHealthFractionPerSecond = 0.04
+	#Highest damage per second against non-bosses.
+	maxDamagePerSecond = 80.0
+	#Flat damage per second against bosses.
+	bossDamagePerSecond = 40.0
+	#Durability each worn armour piece loses per second.
+	armorDurabilityPerSecond = 6
+	#Whether beneficial effects are stripped from the target every second.
+	stripBeneficialEffects = true
+	#Weakness amplifier applied while aging. 1 means Weakness II.
+	weaknessAmplifier = 1
+
+[StoppedWorld]
+	#Chant time in ticks.
+	castTicks = 60
+	#Magicule cost.
+	magiculeCost = 80000.0
+	#Cooldown in seconds.
+	cooldown = 180
+	#Radius of stopped time around the caster, in blocks.
+	radius = 24.0
+	#How long time stays stopped, in ticks.
+	durationTicks = 60
+	#How long a boss stays stopped, in ticks.
+	bossFreezeTicks = 20
+	#Whether the caster's allies keep moving. False freezes everyone but the caster.
+	alliesExempt = false
+	#Damage dealt to stopped entities is stored and dealt all at once when time resumes, multiplied by this.
+	storedDamageMultiplier = 1.25
+	#Whether stopped time ends early when the caster dies or leaves.
+	endOnCasterLoss = true
+
+[TimeSteal]
+	#Cast time in ticks. 0 casts instantly.
+	castTicks = 0
+	#Magicule cost.
+	magiculeCost = 800.0
+	#Cooldown in seconds.
+	cooldown = 3
+	#How far away the target can be, in blocks.
+	range = 16.0
+	#Damage dealt by the touch.
+	damage = 25.31
+	#Slowness amplifier on the target. 1 means Slowness II.
+	slownessAmplifier = 1
+	#How long the slowness lasts, in ticks.
+	slownessTicks = 60
+	#Seconds added to the caster's Time Reserve by the touch.
+	reserveSeconds = 5.0
+	#Seconds added to the Time Reserve by each melee hit the caster lands while Time Steal is learned. 0 disables.
+	meleeReserveSeconds = 1.0
+	#Least ticks between two melee Reserve gains.
+	meleeIntervalTicks = 10
+	#Reserve gains from bosses are multiplied by this.
+	bossMultiplier = 2.0
+
+[TimeReserve]
+	#Most seconds the Reserve can hold while Time Reserve is learned.
+	maxSeconds = 60.0
+	#Most seconds the Reserve can hold without Time Reserve learned.
+	maxSecondsUnlearned = 20.0
+	#Seconds lost per decay step while out of combat. 0 disables decay.
+	decaySeconds = 1.0
+	#Seconds between decay steps.
+	decayIntervalSeconds = 10
+	#Seconds without dealing or taking damage before the caster counts as out of combat.
+	outOfCombatSeconds = 10
+	#Whether the caster sees a Reserve clock on the HUD while they hold Reserve and a Julius spell is in their ability bar.
+	showHud = true
+
+[Grigora]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost.
+	magiculeCost = 14000.0
+	#Cooldown in seconds, started when the stasis ends.
+	cooldown = 25
+	#Radius of the stasis sphere around the caster, in blocks.
+	radius = 8.0
+	#How long the stasis lasts, in ticks.
+	durationTicks = 120
+	#Most projectiles held at once.
+	maxHeld = 64
+	#Lowest speed a redirected projectile leaves at, in blocks per tick.
+	minRedirectSpeed = 1.0
+	#Highest speed a redirected projectile leaves at, in blocks per tick.
+	maxRedirectSpeed = 4.0
+
+[Chronoanastasis]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost.
+	magiculeCost = 10000.0
+	#Cooldown in seconds.
+	cooldown = 30
+	#How far away the ally can be, in blocks.
+	range = 16.0
+	#How far back injuries can be reverted, in ticks.
+	windowTicks = 200
+	#Seconds of reverted time paid for by one Reserve second.
+	secondsPerReserve = 2.0
+	#How long a non-player ally near a Chronoanastasis caster keeps its injury history recorded, in ticks.
+	watchTicks = 600
+
+[FutureGlimpse]
+	#Cast time in ticks. 0 casts instantly.
+	castTicks = 0
+	#Magicule cost.
+	magiculeCost = 12000.0
+	#Cooldown in seconds.
+	cooldown = 40
+	#How long the glimpse lasts, in ticks.
+	durationTicks = 200
+	#Enemies within this many blocks show a telegraph when winding up to attack the caster.
+	radius = 20.0
+	#Extra reach beyond melee range at which an aggressive mob counts as winding up, in blocks.
+	windupRange = 4.0
+	#A hit at least this fraction of the caster's max health, or a lethal hit, is negated once.
+	negateHealthFraction = 0.25
+	#How far the caster blinks aside when a hit is negated, in blocks.
+	blinkDistance = 3.0
+
+[OverTime]
+	#Chant time in ticks.
+	castTicks = 40
+	#Magicule cost.
+	magiculeCost = 70000.0
+	#Cooldown in seconds.
+	cooldown = 240
+	#Least Reserve seconds needed. The spell fails without cost below this.
+	minReserveSeconds = 10.0
+	#Reserve seconds spent per second of stopped time.
+	reservePerSecond = 5.0
+	#Longest the stop can last, in seconds.
+	maxSeconds = 12.0
+	#Radius of stopped time around the caster, in blocks.
+	radius = 20.0
+	#Damage dealt to stopped entities is stored and dealt all at once when time resumes, multiplied by this.
+	storedDamageMultiplier = 1.25
+	#Whether stopped time ends early when the caster dies or leaves.
+	endOnCasterLoss = true

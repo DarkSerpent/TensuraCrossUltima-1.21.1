@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "strength": 1.0,
+  "gusts": 1.0,
+  "grass": true,
+  "crops": true,
+  "leaves": true,
+  "vines": true,
+  "waterPlants": true,
+  "weather": true,
+  "rustle": true,
+  "rustleVolume": 1.0
+}

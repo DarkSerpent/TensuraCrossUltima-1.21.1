@@ -1,0 +1,57 @@
+
+[general]
+    #Multiplier applied to damage sourced by every TR Evolved ability.
+    # Default: 1.0
+    # Range: 0.0 ~ 1000.0
+    globalDamageMultiplier = 1.0
+    #Multiplier for Aura costs declared by TR Evolved skills.
+    # Default: 1.0
+    # Range: 0.0 ~ 1000.0
+    globalAuraCostMultiplier = 1.0
+    #Multiplier applied when a TR Evolved mode starts a native cooldown. Zero disables cooldowns.
+    # Default: 1.0
+    # Range: 0.0 ~ 100.0
+    globalCooldownMultiplier = 1.0
+    #Multiplier for Magicule costs declared by TR Evolved skills.
+    # Default: 1.0
+    # Range: 0.0 ~ 1000.0
+    globalMagiculeCostMultiplier = 1.0
+    #Multiplier used by configurable targeting and area ranges.
+    # Default: 1.0
+    # Range: 0.1 ~ 20.0
+    globalRangeMultiplier = 1.0
+    #Allow non-operators to use confirmEvolution after meeting every requirement.
+    allowPlayerEvolution = true
+    #Enable permission-level-4 /trevolved developer diagnostics. Keep disabled on public servers unless these tools are needed.
+    enableDeveloperCommands = false
+    #Legacy 1.00-compatible switch for Demon-Dragon branch entry. Addon Unique Skills are always public and are not gated by this option.
+    enableNaturalAcquisition = true
+    #Send the clickable evolution-ready notification.
+    evolutionNotifications = true
+    #Permission level required for /trevolved forceEvolution.
+    # Default: 2
+    # Range: 2 ~ 4
+    forceEvolutionPermissionLevel = 2
+    #Minimum step height while above the configured high-speed threshold.
+    # Default: 1.0
+    # Range: 0.0 ~ 16.0
+    highSpeedMinimumStepHeight = 1.0
+    #Effective movement-speed attribute at which entities gain the high-speed step-height floor.
+    # Default: 0.5
+    # Range: 0.0 ~ 1024.0
+    highSpeedStepThreshold = 0.5
+    #Maximum UUIDs stored in each player's /trevolved ally list.
+    # Default: 64
+    # Range: 0 ~ 1024
+    maxPersonalAllies = 64
+    #Prevent protected allies from awarding kill passives or evolution progress.
+    protectAlliesFromProgress = true
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

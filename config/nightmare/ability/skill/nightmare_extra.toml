@@ -1,0 +1,911 @@
+[Concentrator]
+	#Magicule Acquirement Cost.
+	mpAcquirement = 10000.0
+	#Percentage of Magicules regenerated every 5 seconds.
+	magiculeRegenPercent = 0.5
+	#Number of Existence Points the player must have to meet the natural requirements.
+	epRequirement = 1000000.0
+
+[Smelter]
+	#Magicule Acquirement Cost.
+	mpAcquirement = 10000.0
+	#Number of magicules for the player to be capable of learning it.
+	epRequirement = 100000.0
+	#Chance for it to double gained items out of 100.
+	doubleChance = 80.0
+
+[MysticAura]
+	#Magicule Acquirement Cost.
+	mpAcquirement = 1000.0
+	#Percentage of Magicules regenerated every 5 seconds.
+	mpCost = 500.0
+	#Number of Mastered Spells required to obtain.
+	requiredMagics = 20
+	#Number of Mastered Battlewills required to obtain.
+	requiredBattlewills = 10
+	#Duration in Seconds the effect will last when unmastered.
+	durationUnmastered = 30
+
+[SpacetimeDomination]
+	#Ultimate (or skill) resource ids that enable learning Spacetime Domination when possessed. Empty = unobtainable. Designer fill-in, e.g. trnightmare:example_spacetime_ultimate
+	compatibleUltimateSkillIds = ["nightmareutils:sentient", "trnightmare:azathoth", "trnightmare:azazel", "trnightmare:nodens", "trnightmare:samael", "trnightmare:yog-sotohort"]
+	#Time Stop radius in blocks (centered on caster).
+	timeStopRadiusBlocks = 32.0
+	#Time Stop duration in ticks when unmastered (9s = 180).
+	timeStopDurationTicks = 180
+	#Time Stop duration in ticks when mastered (11s = 220).
+	timeStopDurationTicksMastered = 840
+	#Magicule cost per Time Stop use.
+	timeStopMagiculeCost = 250000.0
+	#Learn points required for Time Stop mode.
+	timeStopLearnPoints = 100.0
+	#Time Stop cooldown in seconds.
+	timeStopCooldownSeconds = 120
+	#Snowflake particles per tick while Time Stop is active.
+	timeStopSnowflakesPerTick = 16
+
+[LawDomination]
+	#Effects this skill grants immunity to while toggled. Use <namespace:path> IDs.
+	immuneEffectIds = ["tensura:infinite_inprisonment", "tensura:spatial_blockade"]
+	#Effects Defense Domination ignores while toggled: the Anti Magic Area and Magic Jamming effects.
+	antiMagicEffectIds = ["tensura:anti_magic", "tensura:magic_interference"]
+	#Magicule cost, per effect level, to strip a status effect in Law Control.
+	effectRemoveMagicule = 500.0
+	#Magicule cost to strip one harmful attribute modifier in Law Control.
+	modifierRemoveMagicule = 1500.0
+	#Magicule cost to start researching one of your skills in Law Control.
+	researchMagicule = 25000.0
+	#Ticks a research takes for Common, Intrinsic, Resistance and Extra skills.
+	researchTicks = 600
+	#Ticks a research takes for Unique skills.
+	researchTicksUnique = 1200
+	#Ticks a research takes for Ultimate skills.
+	researchTicksUltimate = 2400
+	#Ticks after a skill hit during which an effect from the same attacker is counted as that skill's effect.
+	effectAttributionTicks = 3
+	#Seconds a Law Emulation lasts.
+	emulationSeconds = 60
+	#Seconds a Law Emulation lasts once Law Domination is mastered.
+	emulationSecondsMastered = 180
+	#Cooldown in seconds on Law Emulation after starting one.
+	emulationCooldown = 60
+	#Magicule cost to start emulating a Common, Intrinsic, Resistance or Extra skill.
+	emulationMagicule = 5000.0
+	#Magicule cost to start emulating a Unique skill.
+	emulationMagiculeUnique = 25000.0
+	#Magicule cost to start emulating an Ultimate skill.
+	emulationMagiculeUltimate = 150000.0
+	#Magicules drained each second while emulating a Common, Intrinsic, Resistance or Extra skill.
+	emulationDrain = 100.0
+	#Magicules drained each second while emulating a Unique skill.
+	emulationDrainUnique = 500.0
+	#Magicules drained each second while emulating an Ultimate skill.
+	emulationDrainUltimate = 2500.0
+
+[PseudoDragonBody]
+	#Magicule acquirement cost.
+	mpAcquirement = 50000.0
+	#Magicule drained each skill tick (~1 per second) while toggled on.
+	mpDrainPerTick = 500.0
+
+[SpacetimeManipulation]
+	#Space damage multiplier while Spacetime Infliction is toggled (Spatial Domination uses 3.0).
+	spacetimeInflictionBoost = 4.0
+	#Magicule per severance point for Space-Time Cleanse.
+	magiculeCostCleansePerSeverance = 100.0
+	#Cooldown in seconds for Space-Time Cleanse.
+	cleanseCooldown = 3
+	#Maximum blocks for short Spatial Transfer blink.
+	shortTeleportRange = 60.0
+	#Magicule per block for coordinate warp (Spatial Transfer shift).
+	warpMpPerBlock = 5.0
+	#Ultimate skill ids that satisfy the learn gate (§3 may mirror into SpacetimeManipulationCompat).
+	requiredUltimateSkillIds = ["trnightmare:azathoth", "trnightmare:yog-sotohort"]
+
+[Prayer]
+	#Magicule Acquirement Cost.
+	mpAcquirement = 10000.0
+	#Magicule Cost per second.
+	mpCost = 1000.0
+	#Number of Spiritrons generated per subordinate.
+	spPerSub = 1
+	#Maximum number of Spiritrons that can be generated per 5 seconds.
+	spMax = 8
+
+[ForbiddenKnowledge]
+	#Magicule Acquirement Cost.
+	mpAcquirement = 10000.0
+	#Number of Existence Points the player must have to meet the natural requirements.
+	epRequirement = 1000000.0
+	#Number of Learning Points gained from Forbidden Knowledge.
+	learningPoint = 8.0
+	#Number of Mastery Points gained from Forbidden Knowledge.
+	masteryPoint = 8.0
+
+[Mimicry]
+	#Maximum EP difference allowed between you and the target to analyze/mimic (fraction).
+	mimicryEpMaxDifference = 0.3
+	#Allow Mimicry to copy Unique and Ultimate skills when enabled.
+	mimicryAllowUniqueAndUltimate = false
+	#Number of learn points required to fully analyze a target (matches other imitator/artist configs).
+	learnRequired = 100
+	#Skill ids that are allowed to mimic.
+	allowedSkillIds = ["tensura:predator", "tensura:gluttony", "tensura:beelzebuth"]
+
+[UniversalShapeshift]
+	#Learn-progress required per discover pulse.
+	learnRequired = 5
+	#Whether unique/ultimate skills can be copied.
+	allowUniqueAndUltimate = false
+	#Chimera Transformation duration in ticks (non-mastered).
+	chimeraDuration = 6000
+	#Chimera Transformation duration in ticks (mastered).
+	chimeraDurationMastered = 7200
+	#Chimera Transformation cooldown in ticks.
+	chimeraCooldown = 24000
+
+[FoodChain]
+	#Skill ids that can use Food Chain.
+	allowedSkillIds = ["tensura:starved", "tensura:gourmet", "tensura:gluttony", "trnightmare:beelzebub", "trnightmare:beelzebuth"]
+	#Skill ids that can transfer resistance skills through Food Chain.
+	resistanceAllowedIds = ["tensura:starved", "tensura:gourmet", "tensura:gluttony", "trnightmare:beelzebub", "trnightmare:beelzebuth"]
+	#Skill ids that can transfer extra skills through Food Chain.
+	extraAllowedIds = ["tensura:gourmet", "tensura:gluttony", "trnightmare:beelzebub", "trnightmare:beelzebuth"]
+	#Skill ids that can transfer common skills through Food Chain.
+	commonAllowdIds = ["tensura:starved", "tensura:gourmet", "tensura:gluttony", "trnightmare:beelzebub", "trnightmare:beelzebuth"]
+	#Skill ids that can transfer intrinsic skills through Food Chain.
+	intrinsicAllowedIds = ["tensura:starved", "tensura:gourmet", "tensura:gluttony", "trnightmare:beelzebub", "trnightmare:beelzebuth"]
+	#Skill ids that can transfer unique skills through Food Chain.
+	uniqueAllowedIds = []
+	#Skill ids that can transfer ultimate skills through Food Chain.
+	ultimateAllowedIds = []
+	#Skill ids that are banned from being transferred through Food Chain.
+	blacklistedIds = ["tensura:starved", "tensura:gourmet", "tensura:gluttony", "trnightmare:beelzebub", "trnightmare:beelzebuth", "trnightmare:witches_envy", "trnightmare:time_traveler", "trnightmare:yog_sothoth", "trnightmare:yog-sotohort", "trnightmare:conceptual_existence", "trnightmare:manas_host", "trnightmare:rebirth", "trnightmare:mimicry", "trnightmare:food_chain", "trnightmare:ultimate_arroganz", "trnightmare:skill_storage", "nightmareutils:sentient", "trnightmare:alteration", "nightmareutils:sentientdisintegrate", "nightmareutils:charm_test", "nightmareutils:possession_test", "nightmareutils:possession_copy_test", "nightmareutils:block_place_test", "nightmareutils:block_break_test", "nightmareutils:particle_shape_test", "nightmareutils:mimicry_test", "nightmareutils:programmable_menu_test", "nightmareutils:spectator_test"]
+
+[SkillStorage]
+	#Skill ids that Skill Storage will NOT store when obtained (blacklist).
+	excludedSkillIds = ["trnightmare:shub-niggurath", "trnightmare:nodens", "trnightmare:ultimate_arroganz"]
+	#Skill ids that are allowed to be stored (empty = allow all not in exclusion list).
+	allowedSkillIds = []
+
+[UltimateArroganz]
+	#Skill ids or options related to Ultimate Arroganz. Empty = default behavior.
+	allowedSkillIds = []
+
+[Alteration]
+	#Skill ids that can use Raphael-style alteration by default.
+	allowedUserIds = ["trnightmare:raphael_knowledge", "trnightmare:raphael_wisdom", "trnightmare:azathoth"]
+	#Skill ids that can be affected by Raphael-style alteration by default.
+	allowedSkillIds = ["trnightmare:beelzebub", "trnightmare:beelzebuth", "trnightmare:raphael_wisdom", "trnightmare:susanoo", "trnightmare:uriel_lord_of_oath", "trnightmare:tsukiyomi", "trnightmare:samael", "trnightmare:belial", "trnightmare:azazel", "trnightmare:amaterasu", "trnightmare:law_domination", "trnightmare:mood_maker", "trnightmare:cthugha", "trnightmare:nodens"]
+
+[FaithBlessing]
+	#Number of Holy Magics that must be mastered to learn this skill.
+	magicNumber = 5
+
+[HandOfCreation]
+	#Magicule Acquirement Cost.
+	mpAcquirement = 50000.0
+	#Percentage of max Magicules restored per second by Energy Engine (unmastered).
+	furnaceRestorePercent = 0.05
+	#Percentage of max Magicules restored per second by Energy Engine (mastered).
+	furnaceRestorePercentMastered = 0.07
+	#Maximum Magicules Energy Engine can generate, as a multiplier of max Magicules.
+	furnaceMaxMpPercent = 2.5
+	#Spiritrons generated per second by Energy Engine (unmastered).
+	spiritronRegen = 50
+	#Spiritrons generated per second by Energy Engine (mastered).
+	spiritronRegenMastered = 100
+
+[HandOfDestruction]
+	#Magicule Acquirement Cost.
+	mpAcquirement = 50000.0
+	#Divine Darkness damage per hit (unmastered).
+	divineDarknessDamage = 100.0
+	#Divine Darkness damage per hit (mastered).
+	divineDarknessDamageMastered = 250.0
+	#Fraction of max MP drained per Divine Darkness use.
+	divineDarknessMpCostPercent = 0.035
+
+[Leader]
+	#Magicule Acquirement Cost.
+	mpAcquirement = 50000.0
+	#Number of subordinates required to learn this skill.
+	subordinateRequirement = 10
+	#Range in blocks to detect nearby subordinates.
+	subordinateDetectRange = 24.0
+	#Maximum number of subordinates to show in menus.
+	maxSubordinatesInMenu = 12
+	#Maximum number of subordinate groups.
+	maxGroups = 10
+	#Work speed bonus from one skill in a trnightmare:leader_boost/<job> skill tag (unmastered).
+	skillBoostBonus = 0.15
+	#Work speed bonus from one skill in a trnightmare:leader_boost/<job> skill tag (mastered).
+	skillBoostMasteredBonus = 0.25
+	#Work speed bonus from one skill in a trnightmare:leader_boost_strong/<job> skill tag (unmastered).
+	strongSkillBoostBonus = 0.3
+	#Work speed bonus from one skill in a trnightmare:leader_boost_strong/<job> skill tag (mastered).
+	strongSkillBoostMasteredBonus = 0.45
+	#Cap on the total job skill work speed bonus a working group can receive.
+	maxSkillBoostBonus = 0.6
+	#Working conditions: skill buff slots every working group (or ungrouped subordinate) has.
+	groupBuffSlotsBase = 2
+	#Working conditions: extra skill buff slots per job rank step of the group's highest ranked member (Skilled = 1, Expert = 2).
+	groupBuffSlotsPerRank = 1
+	#Working conditions: ticks between re-evaluations of a working group's active buffs.
+	groupBuffRefreshTicks = 40
+	#Work search radius bonus from a skill in trnightmare:leader_condition/sense (Magic Sense, Farsight, ...).
+	senseRangeBonus = 0.25
+	#Work search radius bonus from a skill in trnightmare:leader_condition/sense_strong (Universal Perception, ...).
+	strongSenseRangeBonus = 0.5
+	#Job XP gain bonus from a skill in trnightmare:leader_condition/insight (Sage).
+	insightXpBonus = 0.25
+	#Job XP gain bonus from a skill in trnightmare:leader_condition/insight_strong (Great Sage).
+	strongInsightXpBonus = 0.5
+	#Work speed bonus a Majesty holder (trnightmare:leader_condition/majesty) gives its working group.
+	majestyWorkBonus = 0.1
+	#Job XP gain bonus a Majesty holder gives its working group.
+	majestyXpBonus = 0.1
+	#Work speed bonus a Thought Acceleration holder (trnightmare:leader_condition/thought_acceleration) gives its working group.
+	thoughtAccelerationWorkBonus = 0.05
+	#Whether a working group with Thought Acceleration keeps working through the nation curfew.
+	thoughtAccelerationIgnoresCurfew = true
+	#Slot priority of the tool-free working buff (trnightmare:leader_condition/toolless, Molecular Manipulation) for jobs that need a tool.
+	toollessPriority = 0.3
+	#Item a tool-free worker mines with.
+	toollessPickaxe = "minecraft:iron_pickaxe"
+	#Item a tool-free worker chops with.
+	toollessAxe = "minecraft:iron_axe"
+	#Item a tool-free worker fishes with.
+	toollessFishingRod = "minecraft:fishing_rod"
+	#Work speed bonus for a working group whose owner has a faith while a member is near that faith's god or one of its priests.
+	faithWorkBonus = 0.1
+	#Range in blocks to the faith's god or a priest for the faith work bonus.
+	faithPresenceRange = 24.0
+	#Days ahead a nation is warned of a raid when a member's subordinate has Danger Sense (trnightmare:leader_condition/danger_sense). 0 disables.
+	dangerSenseWarningDays = 2
+	#Ticks a Danger Sense subordinate keeps guarding its owner's nation after it last worked.
+	dangerSenseMemoryTicks = 24000
+	#Subordinate roles: whether operators (entity tag trnightmare:subordinate/operator) can also act as handlers for handled subordinates.
+	subordinateOperatorsCanHandle = false
+	#Subordinate roles: whether a pack alpha Direwolf counts as an operator (Star Wolves always do).
+	direwolfAlphaIsOperator = true
+	#Slimes (trnightmare:subordinate/species/slime): job XP bonus the first slime gives its working group.
+	slimeXpBonus = 0.1
+	#Slimes: each further slime adds the previous slime's bonus times this factor.
+	slimeXpDecay = 0.7
+	#Slimes: cap on the group's total slime job XP bonus.
+	slimeXpCap = 0.3
+	#Giant Ants / Army Wasps (trnightmare:subordinate/species/swarm): work speed bonus the first one gives its working group.
+	swarmWorkBonus = 0.08
+	#Swarm: each further ant or wasp adds the previous one's bonus times this factor.
+	swarmWorkDecay = 0.75
+	#Swarm: cap on the group's total swarm work speed bonus.
+	swarmWorkCap = 0.3
+	#Feathered Serpent: work speed bonus for its working group.
+	featheredSerpentWorkBonus = 0.1
+	#Feathered Serpent: Speed effect amplifier given to working group members while they work (-1 disables).
+	featheredSerpentSpeedAmplifier = 0
+	#Salamander: work speed bonus for crafting and smelting jobs in its working group.
+	salamanderCraftBonus = 0.2
+	#Sissie / Spear Toro (trnightmare:subordinate/species/aquatic): work speed bonus for group members working in water.
+	aquaticWaterWorkBonus = 0.3
+	#Aqua Frog: work speed bonus for group members working in water (members also get Water Breathing while working).
+	aquaFrogWaterWorkBonus = 0.1
+	#Orc trait: work speed bonus at breaking jobs (Mine, Lumberjack).
+	orcBreakingBonus = 0.2
+	#Lizardman trait: work speed bonus while water is nearby.
+	lizardmanWaterBonus = 0.2
+	#Lizardman trait: radius in blocks searched for nearby water.
+	lizardmanWaterRadius = 4
+	#Ogre trait (ogre/kijin/oni line): work speed bonus at every job.
+	ogreAllRounderBonus = 0.08
+	#Goblin trait: work speed penalty when it has no other subordinate in its working group.
+	goblinAlonePenalty = 0.1
+	#Goblin trait: work speed bonus from the first other subordinate in its working group.
+	goblinAllyBonus = 0.05
+	#Goblin trait: each further group ally adds the previous ally's bonus times this factor.
+	goblinAllyDecay = 0.8
+	#Goblin trait: cap on the goblin's total ally work speed bonus.
+	goblinAllyCap = 0.25
+	#Daemon trait (lesser/greater daemons): work speed bonus when it is the only daemon in its working group.
+	daemonSoloBonus = 0.3
+	#Daemon trait: work speed bonus when the group has more than one but at most daemonFewLimit daemons.
+	daemonFewBonus = 0.15
+	#Daemon trait: most daemons a working group can hold before they start to clash.
+	daemonFewLimit = 2
+	#Daemon trait: work speed penalty per daemon above daemonFewLimit in the group.
+	daemonCrowdPenalty = 0.1
+	#Daemon trait: cap on the crowding work speed penalty.
+	daemonMaxPenalty = 0.5
+	#Raid deterrence: fraction of a nation's nightly raid chance removed per handled subordinate of its members.
+	raidHandledReduction = 0.02
+	#Raid deterrence: fraction removed per unlisted beast-like subordinate (handled, with no species benefit).
+	raidBeastReduction = 0.03
+	#Raid deterrence: fraction removed per lesser/greater daemon subordinate.
+	raidDaemonReduction = 0.04
+	#Raid deterrence: fraction removed per operator subordinate.
+	raidOperatorReduction = 0.08
+	#Raid deterrence: cap on the total fraction of the raid chance removed.
+	raidMaxReduction = 0.6
+	#Raid deterrence: ticks between recounts of each nation's subordinates.
+	raidDeterrenceRefreshTicks = 2400
+	#Operators: ticks between nation-wide recounts of operator subordinates (also caps the raid deterrence recount interval).
+	operatorRefreshTicks = 1200
+	#Operators: in-game days between two skills an operator teaches the same subordinate.
+	operatorTeachIntervalDays = 2
+	#Operators: highest spirit magic level taught from a 'spirit:<element>' entry (lesser, medium, greater, lord).
+	operatorSpiritMaxLevel = "medium"
+	#Operators: skills Ifrit teaches. 'spirit:<element>' expands to that element's spirit magics up to operatorSpiritMaxLevel.
+	ifritTeaches = ["spirit:fire", "tensura:body_double", "tensura:ranged_barrier", "tensura:heat_wave", "tensura:sense_heat_source"]
+	#Operators: skills Undine teaches.
+	undineTeaches = ["spirit:water", "tensura:poison", "tensura:water_current_control"]
+	#Operators: skills Sylphide teaches.
+	sylphideTeaches = ["spirit:wind", "tensura:paralysis", "tensura:danger_sense", "tensura:ultra_instinct"]
+	#Operators: skills Akash teaches.
+	akashTeaches = ["spirit:space", "tensura:sage", "tensura:magic_sense"]
+	#Operators: skills a War Gnome teaches.
+	warGnomeTeaches = ["spirit:earth", "tensura:sense_soundwave", "tensura:gravity_flight"]
+	#Operators: skills a Star Direwolf (operator direwolf) teaches.
+	starWolfTeaches = ["tensura:telepathy", "tensura:black_lightning", "tensura:ultra_instinct", "tensura:shadow_motion"]
+	#Operators: skills an Orc Lord or Orc Disaster teaches.
+	orcLordTeaches = ["tensura:corrosion", "tensura:majesty", "tensura:telepathy"]
+	#Operators: skills an Arch Daemon teaches.
+	archDaemonTeaches = ["trnightmare:demonic_power", "tensura:demon_dominate", "tensura:demon_marionette", "tensura:mental_crush", "tensura:explosion"]
+	#Operators: skills a Supermassive Slime teaches.
+	supermassiveSlimeTeaches = ["tensura:self_regeneration"]
+	#Star Direwolf: work speed bonus for every direwolf subordinate in the nation.
+	starWolfDirewolfWorkBonus = 0.25
+	#Star Direwolf: attack damage bonus (fraction) for every direwolf subordinate in the nation.
+	starWolfDirewolfAttackBonus = 0.2
+	#Star Direwolf: max health bonus (fraction) for every direwolf subordinate in the nation.
+	starWolfDirewolfHealthBonus = 0.2
+	#Star Direwolf: extra fraction of the nightly raid chance removed, applied after the deterrence cap.
+	starWolfRaidReduction = 0.25
+	#Orc Lord / Orc Disaster: work speed bonus for every orc subordinate in the nation.
+	orcLordOrcWorkBonus = 0.2
+	#Orc Lord / Orc Disaster: ticks between two skills spread through Food Chain.
+	orcLordFoodChainTicks = 6000
+	#Arch Daemon: extra fraction of the nightly raid chance removed, applied after the deterrence cap.
+	archDaemonRaidReduction = 0.25
+	#Supermassive Slime: job XP bonus for every subordinate in the nation.
+	supermassiveSlimeXpBonus = 1.0
+	#Supermassive Slime: healing bonus (fraction) for every subordinate in the nation.
+	supermassiveSlimeRegenBonus = 1.0
+	#Storehouse provisions: ticks between a working subordinate's checks for a potion to drink.
+	provisionCheckTicks = 200
+	#Storehouse provisions: ticks a drunk healing potion lets a worker ignore negative working conditions.
+	healingPotionTicks = 6000
+	#Storehouse provisions: ticks a drunk magic potion keeps a worker at max efficiency.
+	magicPotionTicks = 6000
+	#Storehouse provisions: lowest work speed multiplier of a worker under a magic potion.
+	magicPotionMinWorkSpeed = 2.5
+	#Storehouse provisions: ticks between two storehouse skill books learned by a nation's working subordinates.
+	storehouseBookTicks = 1200
+	#Storehouse provisions: ticks between checks for spirits or daemons next to a storehouse holding a Bone Golem.
+	boneGolemCheckTicks = 400
+	#Storehouse provisions: radius in blocks around a storehouse a spirit or daemon merges into a stored Bone Golem.
+	boneGolemRadius = 8.0
+	#Storehouse provisions: max health bonus (fraction) of a spirit or daemon merged into a Bone Golem.
+	boneGolemHealthBonus = 0.5
+	#Storehouse provisions: mod id whose presence grants merged golem bodies the magisteel bonus.
+	mysticismModId = "mysticism"
+	#Storehouse provisions: armor bonus of a magisteel golem body.
+	magisteelBodyArmorBonus = 6.0
+	#Storehouse provisions: extra max health bonus (fraction) of a magisteel golem body.
+	magisteelBodyHealthBonus = 0.25
+	#Mass Break (armorsaurus, megalodon): block radius around each mined block also broken (1 = 3x3).
+	massBreakRadius = 1
+	#Mass Break: build actions per work tick multiplier for its working group (9 = a 3x3 per action).
+	massBuildMultiplier = 9
+	#Mob Capture (black spider): range in blocks the spider searches for passive mobs to web.
+	mobCaptureRange = 16.0
+	#Mob Capture: ticks between capture attempts.
+	mobCaptureCooldownTicks = 100
+	#Mob Capture: radius in blocks around the Pen that counts as inside it.
+	penRadius = 3.0
+	#Mob Capture: most animals already inside a Pen before the spider stops capturing.
+	penCapacity = 16
+	#Transport (tempest serpent, megalodon, direwolf): distance in blocks to a job site the group is carried across instantly.
+	transportMinDistance = 32.0
+	#Mount (leech/hover lizard, pegacorn, pegasus, megalodon): distance in blocks to a job site the group rides there.
+	mountMinDistance = 24.0
+	#Mount: range in blocks a worker looks for a free group mount.
+	mountSearchRange = 24.0
+	#Teleport (winged cat): closest job site distance in blocks the group teleports to.
+	teleportMinDistance = 12.0
+	#Teleport: farthest job site distance in blocks the group teleports to.
+	teleportMaxDistance = 64.0
+	#Teleport: delay in ticks before the group teleports.
+	teleportDelayTicks = 100
+	#Telepathy (direwolf): jobs a working group can queue up.
+	telepathyQueueSize = 3
+	#Telepathy: ticks a group job has to sit idle before the group moves on to its next queued job.
+	telepathyAdvanceIdleTicks = 1200
+	#Telepathy: work speed bonus of the group's specialized (most common) job.
+	telepathySpecialistBonus = 0.25
+	#Work speed penalty for mining and building while underwater (removed by an Aqua Frog or aquatic member in the group).
+	underwaterWorkPenalty = 0.5
+
+[Nation]
+	#Operator wards: chunks of margin around a nation's claims its operators also protect.
+	wardMarginChunks = 1
+	#Operator wards: ticks between checks of outsider players inside warded land.
+	wardSweepTicks = 5
+	#Ifrit ward: outsiders can't break or place blocks in the margin, and outsider explosions don't break blocks in claims or margin.
+	ifritWard = true
+	#Undine ward: downward pull per check on outsiders in warded water.
+	undineSinkSpeed = 0.15
+	#Sylphide ward: Slowness amplifier for outsiders.
+	sylphideSlowAmplifier = 1
+	#Sylphide ward: Slowness amplifier for outsiders while they sprint.
+	sylphideSprintSlowAmplifier = 4
+	#Akash ward: blocks an outsider can move between two checks before it counts as a teleport and is undone.
+	akashJumpDistance = 24.0
+	#Orc Disaster ward: healing multiplier for outsiders.
+	orcDisasterHealFactor = 0.5
+	#Shrine: radius in blocks of its work speed blessing.
+	shrineRadius = 12.0
+	#Shrine: work speed bonus for workers near it (doubled for a nation with a state faith).
+	shrineWorkBonus = 0.08
+	#Shrine: Spiritrons (Holy Power) a nation member near one of their nation's shrines regains each pulse (doubled for a nation with a state faith).
+	shrineSpiritrons = 5
+	#Shrine: ticks between Spiritron pulses.
+	shrineSpiritronIntervalTicks = 100
+	#Training Dummy: radius in blocks of its job XP bonus.
+	trainingDummyRadius = 12.0
+	#Training Dummy: job XP bonus for workers near it.
+	trainingDummyXpBonus = 0.25
+	#Training Dummy: flat EP each subordinate gains at the end of a day it trained near a dummy.
+	trainingDummyDailyEp = 150.0
+	#Training Dummy: extra EP at the end of the day, as a fraction of the subordinate's current EP.
+	trainingDummyDailyEpFraction = 0.002
+	#Training Dummy: most EP a subordinate can gain from one day of training.
+	trainingDummyDailyEpCap = 1500.0
+	#Watchtower Brazier: fraction of the nightly raid chance removed per brazier.
+	brazierRaidReduction = 0.05
+	#Watchtower Brazier: cap on the raid chance removed by braziers.
+	brazierMaxReduction = 0.2
+	#Watchtower Brazier: whether a nation with a lit brazier is warned of raids ahead of time like Danger Sense.
+	brazierRaidWarning = true
+	#Kiln/Forge: radius in blocks of its crafting and smelting bonus.
+	kilnRadius = 8.0
+	#Kiln/Forge: crafting and smelting work speed bonus near it (doubled when a Salamander is near it).
+	kilnCraftBonus = 0.25
+	#Well: radius in blocks of its morale boost.
+	wellRadius = 12.0
+	#Well: morale (work speed) bonus for workers near it.
+	wellMoraleBonus = 0.1
+	#Condition blocks: ticks a worker's nearby condition blocks are cached.
+	conditionBlockCacheTicks = 100
+	#Academy: radius in blocks around the Academy Lectern students and teacher must stay within.
+	academyRadius = 10.0
+	#Academy: seconds of attendance a student needs to finish a class (before speed bonuses).
+	academyClassSeconds = 90
+	#Academy: the class closes after this many times its length; students who have not finished by then fail.
+	academyGraceFactor = 1.5
+	#Academy: magicules the teacher spends to open a class.
+	academyTeacherMagicules = 300.0
+	#Academy: seconds before the same teacher can open another class.
+	academyTeacherCooldownSeconds = 300
+	#Academy: learning points a student gains toward the taught skill when they finish a class (Tensura's learning cost is still paid).
+	academyLearningPoints = 50.0
+	#Academy: mastery a student who already knows the taught skill gains for finishing a class.
+	academyReviewMastery = 2.0
+	#Academy: mastery the teacher gains on the taught skill per student who finished.
+	academyTeacherMasteryPerStudent = 2.0
+	#Academy: most mastery the teacher can gain from one class.
+	academyTeacherMasteryMax = 10.0
+	#Academy: Library Shelves needed near the lectern before a class can open (0 = none).
+	academyRequiredShelves = 0
+	#Academy: whether the nation's subordinates near the lectern attend and learn when a class ends.
+	academySubordinates = true
+	#Academy: most subordinates that can attend one class.
+	academyMaxSubordinates = 8
+	#Academy: skill ids that can never be taught at an Academy.
+	academyBlacklistedSkills = []
+	#Library Shelf: radius in blocks around the lectern a shelf must be within to help a class.
+	shelfRadius = 6.0
+	#Library Shelf: class speed bonus of the first matching shelf.
+	shelfSpeedBonus = 0.1
+	#Library Shelf: each further matching shelf gives this fraction of the previous one's bonus.
+	shelfFalloff = 0.75
+	#Library Shelf: cap on the class speed bonus from shelves.
+	shelfMaxBonus = 0.5
+	#Library Shelf: a shelf holding the very skill being taught counts this many times.
+	shelfExactSkillMultiplier = 2.0
+	#Education: points a nation gains per class held.
+	educationPerClass = 1.0
+	#Education: extra points per student who finished the class.
+	educationPerStudent = 0.25
+	#Education: learning point and mastery gain bonus per Education point for members inside their borders.
+	educationBonusPerPoint = 0.002
+	#Education: cap on the learning point and mastery gain bonus.
+	educationMaxBonus = 0.15
+	#Mentor title: class speed bonus while the teacher's active title is Mentor.
+	mentorClassSpeed = 0.15
+	#Grand Mentor title: class speed bonus while the teacher's active title is Grand Mentor.
+	grandMentorClassSpeed = 0.3
+	#Dojo: radius in blocks around a Dojo Mat that counts as the sparring ground.
+	dojoRadius = 8.0
+	#Dojo: whether members of allied nations may spar in the dojo too.
+	dojoAllowAllies = true
+	#Dojo: seconds both fighters are shielded from each other after a spar ends.
+	dojoRestSeconds = 5
+	#Dojo: mastery multiplier for hitting a sparring partner with a battlewill or magic, compared with normal use.
+	sparPartnerMasteryMultiplier = 2.0
+	#Dojo: most bonus mastery awards a player can earn from sparring per hour of play (72000 ticks).
+	sparMasteryAwardsPerHour = 120
+	#Embassy: seconds a traveller must stand still at the embassy before fast travel.
+	embassyChannelSeconds = 5
+	#Embassy: seconds between fast travels for one player.
+	embassyCooldownSeconds = 300
+	#Embassy: whether the travel cooldown is waived while either nation is being raided.
+	embassyRaidIgnoresCooldown = true
+	#Embassy: whether a raid on one nation alerts the online members of every nation it shares an embassy with.
+	embassyRaidAlerts = true
+	#Guild Hall: minutes a member must wait before changing profession again.
+	guildChangeCooldownMinutes = 60
+	#Guild Hall: share of the full bonus the second online member of a profession adds.
+	guildExtraMemberFactor = 0.5
+	#Guild Hall: each further member adds this fraction of the previous member's share.
+	guildExtraFalloff = 0.5
+	#Guild Hall: cap on a profession's bonus as a multiple of the single-member bonus.
+	guildMaxFactor = 2.0
+	#Guild Hall: ticks the online profession roster of a nation is cached.
+	guildCacheTicks = 200
+	#Smith: crafting work speed bonus for the nation's Craft workers.
+	smithCraftBonus = 0.1
+	#Smith: fraction of an anvil's level cost refunded to members working inside their borders.
+	smithAnvilRefund = 0.25
+	#Smith: fraction of the anvil break chance removed for members inside their borders.
+	smithAnvilBreakReduction = 0.5
+	#Alchemist: extra duration for potions members drink inside their borders.
+	alchemistPotionDuration = 0.25
+	#Scholar: Academy class speed bonus.
+	scholarClassSpeed = 0.2
+	#Scholar: extra Education gained per class.
+	scholarEducationBonus = 0.5
+	#Warden: fraction of the nightly raid chance removed.
+	wardenRaidReduction = 0.08
+	#Warden: work speed bonus for the nation's Patrol workers.
+	wardenPatrolBonus = 0.1
+	#Warden: whether raiders attacking the nation glow so defenders can find them.
+	wardenRevealRaiders = true
+	#Merchant: discount on market purchases by the nation's members (the seller is still paid in full).
+	merchantDiscount = 0.05
+	#Merchant: emeralds added to the nation coffer per hour (72000 ticks) a Merchant is online.
+	merchantCofferPerHour = 6.0
+	#Siege: force a claimed block can take before breaking, before hardness is added.
+	siegeBlockBaseHp = 4.0
+	#Siege: extra force a claimed block can take per point of block hardness.
+	siegeHardnessHp = 4.0
+	#Siege: seconds without a siege hit before a block's accumulated siege damage fades.
+	siegeDamageDecaySeconds = 60
+	#Siege: whether blocks broken by siege force drop as items.
+	siegeDropsBlocks = true
+	#Siege: whether siege weapons also damage unclaimed blocks.
+	siegeDamagesWilderness = false
+	#FTB Chunks: refuse FTB Chunks claims inside nation territory.
+	ftbBlockClaimsInNations = true
+	#FTB Chunks: when claims inside nations are refused, still let members of that nation claim its chunks in FTB Chunks.
+	ftbAllowMembersToClaim = false
+	#FTB Chunks: also claim nation chunks in FTB Chunks under the claiming player's FTB team, and release them when the nation loses the chunk.
+	ftbMirrorNationClaims = true
+	#War: whether enemies may open doors and gates in your chunks that border their land.
+	warEnemiesOpenDoors = false
+	#War: whether enemies may open containers in your chunks that border their land.
+	warEnemiesOpenContainers = true
+	#War: in-game days the defender must survive to win the war.
+	warDurationDays = 3.0
+	#War: fraction of the loser's coffer paid to the attacker when the attacker completes the objective.
+	warTributePercent = 0.25
+	#War: fraction of the attacker's coffer paid to the defender when the defender survives.
+	warDefenseTributePercent = 0.1
+	#War: in-game days two nations can't declare war on each other after a war is decided.
+	warTruceDays = 5.0
+	#War: blocks around the War Banner an attacker must hold.
+	warBannerRadius = 8.0
+	#War: minutes an attacker must hold the War Banner with no defender in range.
+	warBannerHoldMinutes = 5.0
+	#War: minutes an attacker must hold the chosen border chunk with no defender inside.
+	warBorderHoldMinutes = 5.0
+	#War: seconds between objective alerts sent to the defending nation.
+	warAlertSeconds = 60
+	#Ward Pylon: radius in blocks of the barrier dome.
+	pylonDomeRadius = 16.0
+	#Ward Pylon: hit points of a full dome.
+	pylonDomeMaxHp = 400.0
+	#Ward Pylon: dome hit points regained per second.
+	pylonRegenPerSecond = 2.0
+	#Ward Pylon: crystal charge spent per dome hit point regained.
+	pylonChargePerHp = 0.01
+	#Ward Pylon: fraction of full hit points a shattered dome comes back with.
+	pylonRestoreFraction = 0.5
+	#Ward Pylon: crystal charge spent to raise a shattered dome again.
+	pylonRestoreCharge = 2.0
+	#Ward Pylon: seconds a shattered dome stays down before it can recharge.
+	pylonRechargeSeconds = 120
+	#Ward Pylon: fraction of hit points below which the dome shows cracks.
+	pylonCrackFraction = 0.35
+	#Ward Pylon: minutes one point of crystal charge keeps the dome powered (0 = no upkeep).
+	pylonUpkeepMinutesPerCharge = 20.0
+	#Ward Pylon: crystal charge a pylon keeps in reserve, pulled from the nation's storehouses.
+	pylonChargeBuffer = 4.0
+	#Ward Pylon: extra regeneration and faster recharge per other active pylon whose dome overlaps.
+	pylonOverlapBonus = 0.5
+	#Ward Pylon: charge given by a Low Quality Magic Crystal.
+	pylonLowCrystalCharge = 1.0
+	#Ward Pylon: charge given by a Medium Quality Magic Crystal.
+	pylonMediumCrystalCharge = 4.0
+	#Ward Pylon: charge given by a High Quality Magic Crystal.
+	pylonHighCrystalCharge = 16.0
+	#Ward Pylon: charge given by a Magic Ore shard.
+	pylonMagicOreCharge = 0.25
+	#Ward Pylon: dome damage taken per outsider projectile stopped.
+	pylonProjectileDamage = 4.0
+	#Ward Pylon: fraction of an outsider's attack from outside the dome that hits the dome instead.
+	pylonSpellDamageFactor = 1.0
+	#Ward Pylon: dome damage per block of explosion radius absorbed.
+	pylonExplosionDamagePerRadius = 12.0
+	#Ward Pylon: multiplier on siege force that strikes the dome.
+	pylonSiegeMultiplier = 5.0
+	#Ward Pylon: fraction of the nightly raid chance removed per pylon.
+	pylonRaidReduction = 0.05
+	#Ward Pylon: most raid chance pylons can remove together.
+	pylonMaxRaidReduction = 0.15
+	#Battering Ram: hit points.
+	ramMaxHealth = 120.0
+	#Battering Ram: blocks per tick it rolls when driven.
+	ramSpeed = 0.06
+	#Battering Ram: degrees per tick it turns when driven.
+	ramTurnDegrees = 2.5
+	#Battering Ram: ticks of charging into a block per hit.
+	ramHitIntervalTicks = 60
+	#Battering Ram: siege force of one hit.
+	ramForce = 6.0
+	#Battering Ram: how far a push from a player on foot moves it (1 = like a boat).
+	ramPushFactor = 0.25
+	#Battering Ram: whether a destroyed ram drops its item.
+	ramDropsItem = false
+	#Trebuchet: hit points.
+	trebuchetMaxHealth = 200.0
+	#Trebuchet: closest target distance in blocks.
+	trebuchetMinRange = 16.0
+	#Trebuchet: farthest target distance in blocks.
+	trebuchetMaxRange = 64.0
+	#Trebuchet: most shots it can hold loaded.
+	trebuchetMaxAmmo = 8
+	#Trebuchet: ticks of wind-up before the arm swings.
+	trebuchetWindupTicks = 30
+	#Trebuchet: seconds to reload after a shot.
+	trebuchetReloadSeconds = 12
+	#Trebuchet: siege force of a boulder at the point of impact.
+	trebuchetBoulderForce = 10.0
+	#Trebuchet: block radius of a boulder impact.
+	trebuchetBoulderRadius = 2.5
+	#Trebuchet: damage a boulder deals to creatures at the point of impact.
+	trebuchetBoulderDamage = 18.0
+	#Trebuchet: siege force of a fire pot at the point of impact.
+	trebuchetFirePotForce = 3.0
+	#Trebuchet: block radius of a fire pot impact.
+	trebuchetFirePotRadius = 3.5
+	#Trebuchet: damage a fire pot deals to creatures at the point of impact.
+	trebuchetFirePotDamage = 8.0
+	#Trebuchet: seconds creatures caught by a fire pot burn.
+	trebuchetFirePotBurnSeconds = 6
+	#Trebuchet: whether a destroyed trebuchet drops its item.
+	trebuchetDropsItem = false
+	#Siege Tower: hit points.
+	siegeTowerMaxHealth = 260.0
+	#Siege Tower: blocks per tick it rolls when driven.
+	siegeTowerSpeed = 0.035
+	#Siege Tower: degrees per tick it turns when driven.
+	siegeTowerTurnDegrees = 1.2
+	#Siege Tower: how far a push from a player on foot moves it (1 = like a boat).
+	siegeTowerPushFactor = 0.12
+	#Siege Tower: blocks per tick players climb inside it.
+	siegeTowerClimbSpeed = 0.2
+	#Siege Tower: whether a destroyed tower drops its item.
+	siegeTowerDropsItem = false
+	#Sapper Charge: seconds of fuse before it detonates.
+	sapperFuseSeconds = 8
+	#Sapper Charge: siege force at the centre of the blast.
+	sapperForce = 30.0
+	#Sapper Charge: block radius of the siege blast.
+	sapperRadius = 2.5
+	#Sapper Charge: damage dealt to creatures at the centre of the blast.
+	sapperEntityDamage = 12.0
+	#Sapper Charge: radius of the blast that hurts creatures.
+	sapperEntityRadius = 3.0
+	#Sapper Charge: ticks a defender must hold use on a charge to defuse it.
+	sapperDefuseTicks = 40
+	#Sapper Charge: hit points; a charge destroyed before it blows fizzles out.
+	sapperMaxHealth = 12.0
+	#Magic Siege Circle: hit points.
+	siegeCircleMaxHealth = 80.0
+	#Magic Siege Circle: total magicules that must be channelled for one beam.
+	siegeCircleMagicules = 6000.0
+	#Magic Siege Circle: magicules each channelling caster pours in per second.
+	siegeCircleDrainPerSecond = 300.0
+	#Magic Siege Circle: how far from the circle a caster may stand while channelling.
+	siegeCircleCasterRange = 6.0
+	#Magic Siege Circle: how far the beam reaches.
+	siegeCircleRange = 64.0
+	#Magic Siege Circle: damage the beam deals to a Ward Pylon dome.
+	siegeCircleDomeDamage = 300.0
+	#Magic Siege Circle: siege force of the beam when no dome is in range.
+	siegeCircleForce = 40.0
+	#Magic Siege Circle: block radius of the beam impact when no dome is in range.
+	siegeCircleRadius = 3.0
+	#Magic Siege Circle: damage the beam deals to creatures at the point of impact.
+	siegeCircleEntityDamage = 20.0
+	#Magic Siege Circle: seconds before a circle that fired can be channelled again.
+	siegeCircleCooldownSeconds = 30
+	#Defenses: whether turrets also fire on foreign players and their subordinates who are neither at war with you nor raiding.
+	defenseShootNeutralOutsiders = false
+	#Ballista Turret: blocks it can see and shoot.
+	ballistaRange = 32.0
+	#Ballista Turret: damage of one bolt.
+	ballistaDamage = 9.0
+	#Ballista Turret: damage a bolt deals to an enemy siege engine at war.
+	ballistaEngineDamage = 18.0
+	#Ballista Turret: blocks per tick a bolt flies.
+	ballistaBoltSpeed = 2.6
+	#Ballista Turret: ticks between shots of a novice gunner.
+	ballistaCooldownTicks = 40
+	#Ballista Turret: ticks between shots when a player fires it by hand.
+	ballistaManualCooldownTicks = 20
+	#Ballista Turret: fraction of the reload time removed per Patrol rank of the gunner.
+	ballistaRankFireRate = 0.25
+	#Ballista Turret: aim spread in degrees of a novice gunner.
+	ballistaSpreadDegrees = 6.0
+	#Ballista Turret: fraction of the aim spread removed per Patrol rank of the gunner.
+	ballistaRankAccuracy = 0.4
+	#Ballista Turret: arrows taken from the storehouses at once when it runs dry.
+	ballistaArrowsPerPull = 16
+	#Ballista Turret: how far away a subordinate can be called to man it.
+	ballistaAssignRange = 16.0
+	#Ballista Turret: fraction of the nightly raid chance removed per turret.
+	ballistaRaidReduction = 0.03
+	#Ballista Turret: most raid chance turrets can remove together.
+	ballistaMaxRaidReduction = 0.12
+	#Arcane Cannon Tower: blocks it can see and shoot.
+	cannonRange = 28.0
+	#Arcane Cannon Tower: damage at the centre of its blast.
+	cannonDamage = 12.0
+	#Arcane Cannon Tower: block radius of its blast.
+	cannonBlastRadius = 2.5
+	#Arcane Cannon Tower: seconds between shots.
+	cannonCooldownSeconds = 4.0
+	#Arcane Cannon Tower: blocks per tick its shot flies.
+	cannonShotSpeed = 1.4
+	#Arcane Cannon Tower: crystal charge spent per shot (crystals give the same charge as for a Ward Pylon).
+	cannonChargePerShot = 0.25
+	#Arcane Cannon Tower: crystal charge it keeps in reserve, pulled from the nation's storehouses.
+	cannonChargeBuffer = 2.0
+	#Arcane Cannon Tower: whether it may read a magic tome kept in a storehouse when its own slot is empty.
+	cannonReadsStorehouses = true
+	#Arcane Cannon Tower: extra damage per crew member standing next to it who knows the loaded magic.
+	cannonCrewBonus = 0.25
+	#Arcane Cannon Tower: most crew members that count.
+	cannonMaxCrew = 2
+	#Arcane Cannon Tower: how close a crew member must stand.
+	cannonCrewRadius = 3.0
+	#Arcane Cannon Tower: fraction of the nightly raid chance removed per tower.
+	cannonRaidReduction = 0.03
+	#Arcane Cannon Tower: most raid chance towers can remove together.
+	cannonMaxRaidReduction = 0.12
+	#Spirit Lantern: radius in which hidden outsiders are revealed.
+	lanternRadius = 16.0
+	#Spirit Lantern: radius multiplier while the nation has a Sylphide or Akash operator.
+	lanternOperatorMultiplier = 1.5
+	#Spirit Lantern: seconds of Glowing given to a revealed outsider.
+	lanternGlowSeconds = 3
+	#Spirit Lantern: whether it strips Presence Concealment from outsiders it reveals.
+	lanternStripConcealment = true
+	#Spirit Lantern: whether it strips vanilla Invisibility from outsiders it reveals.
+	lanternStripInvisibility = false
+	#Spirit Lantern: fraction of the nightly raid chance removed per lantern.
+	lanternRaidReduction = 0.02
+	#Spirit Lantern: most raid chance lanterns can remove together.
+	lanternMaxRaidReduction = 0.06
+	#Warhorn: seconds before the same horn can be rung again.
+	warhornCooldownSeconds = 300
+	#Warhorn: seconds the called subordinates hold the horn's area.
+	warhornSummonSeconds = 120
+	#Warhorn: blocks from the horn within which subordinates hear the call.
+	warhornRange = 160.0
+	#Warhorn: subordinates farther than this teleport next to the horn instead of walking (0 = always walk).
+	warhornTeleportDistance = 0.0
+	#Warhorn: whether conscripted workers take a weapon from the storehouses when the horn calls them.
+	warhornArmConscripts = true
+	#Warhorn: fraction of the nightly raid chance removed per horn.
+	warhornRaidReduction = 0.02
+	#Warhorn: most raid chance horns can remove together.
+	warhornMaxRaidReduction = 0.04
+	#Spike Palisade: damage dealt to an outsider pressing against it.
+	palisadeDamage = 2.0
+	#Spike Palisade: seconds of Slowness given to an outsider pressing against it.
+	palisadeSlowSeconds = 2
+	#Spike Palisade: fraction of the nightly raid chance removed per palisade post.
+	palisadeRaidReduction = 0.002
+	#Spike Palisade: most raid chance palisades can remove together.
+	palisadeMaxRaidReduction = 0.06
+	#Caltrops: damage dealt to an outsider walking over them.
+	caltropsDamage = 1.0
+	#Caltrops: movement speed an outsider keeps while walking over them.
+	caltropsSlowFactor = 0.4
+	#Caltrops: fraction of the nightly raid chance removed per caltrops block.
+	caltropsRaidReduction = 0.001
+	#Caltrops: most raid chance caltrops can remove together.
+	caltropsMaxRaidReduction = 0.03
+	#Gatehouse Portcullis: multiplier on the siege force a portcullis block can take.
+	portcullisSiegeMultiplier = 4.0
+	#Gatehouse Portcullis: most connected portcullis blocks one pull moves.
+	portcullisMaxBlocks = 48
+	#Gatehouse Portcullis: an open gate slams shut when an enemy at war comes this close.
+	portcullisLockRadius = 12.0
+	#Gatehouse Portcullis: fraction of the nightly raid chance removed per portcullis block.
+	portcullisRaidReduction = 0.01
+	#Gatehouse Portcullis: most raid chance portcullises can remove together.
+	portcullisMaxRaidReduction = 0.06
+	#Counter-Battery Mortar: blocks within which it finds enemy siege engines at war.
+	mortarRange = 72.0
+	#Counter-Battery Mortar: closest distance it can lob a shell.
+	mortarMinRange = 8.0
+	#Counter-Battery Mortar: damage a shell deals to an enemy siege engine at the centre of its blast.
+	mortarEngineDamage = 45.0
+	#Counter-Battery Mortar: damage a shell deals to hostile creatures at the centre of its blast.
+	mortarDamage = 4.0
+	#Counter-Battery Mortar: block radius of a shell's blast.
+	mortarBlastRadius = 2.5
+	#Counter-Battery Mortar: seconds between shells.
+	mortarCooldownSeconds = 8.0
+	#Counter-Battery Mortar: shells (one gunpowder and one cobblestone each) taken from the storehouses at once when it runs dry.
+	mortarShellsPerPull = 8
+	#Counter-Battery Mortar: fraction of the nightly raid chance removed per mortar.
+	mortarRaidReduction = 0.02
+	#Counter-Battery Mortar: most raid chance mortars can remove together.
+	mortarMaxRaidReduction = 0.06
+	#Mana Disruptor: radius in which hostile casters suffer Magic Interference.
+	disruptorRadius = 20.0
+	#Mana Disruptor: monsters need at least this many max magicules to count as casters (players and subordinates always count).
+	disruptorCasterMagicules = 1000.0
+	#Mana Disruptor: amplifier of the Magic Interference it applies (0 = level I).
+	disruptorAmplifier = 0
+	#Mana Disruptor: crystal charge spent per hostile caster jammed, each second.
+	disruptorChargePerTarget = 0.05
+	#Mana Disruptor: magicules drained each second from an enemy Magic Siege Circle inside its radius.
+	disruptorCircleDrainPerSecond = 150.0
+	#Mana Disruptor: crystal charge spent per enemy Magic Siege Circle drained, each second.
+	disruptorChargePerCircle = 0.1
+	#Mana Disruptor: crystal charge it keeps in reserve, pulled from the nation's storehouses.
+	disruptorChargeBuffer = 4.0
+	#Mana Disruptor: fraction of the nightly raid chance removed per disruptor.
+	disruptorRaidReduction = 0.02
+	#Mana Disruptor: most raid chance disruptors can remove together.
+	disruptorMaxRaidReduction = 0.04
+	#Wall Snapshot: most blocks (width x height x depth) one snapshot may cover.
+	snapshotMaxVolume = 32768
+	#Wall Snapshot: most snapshots a nation can keep.
+	snapshotMaxPerNation = 8
+	#Repair Masons: blocks a mason may restore per work step before its rank and working conditions speed it up.
+	masonBlocksPerStep = 2
+
+[MultidimensionalBarrier]
+	#Magicule Acquirement Cost.
+	mpAcquirement = 2500.0
+	#Magicule cost per activation.
+	mpCost = 250.0
+	#Barrier points multiplier based on the user's max health.
+	pointMultiplier = 1.5
+	#Barrier points multiplier for ally targets based on their max health.
+	allyPointMultiplier = 0.75
+	#Cooldown in seconds before the barrier can be reactivated.
+	cooldown = 10
+	#Legacy barrier strength threshold used for the multilayer barrier base value.
+	barrierEPThreshold = 0.5
+	#Legacy barrier strength multiplier while the skill is not mastered.
+	barrierNormal = 1.0
+	#Legacy barrier strength multiplier while the skill is mastered.
+	barrierMastered = 1.5

@@ -1,0 +1,52 @@
+#Max health of a Grey Demon.
+health = 1500.0
+#Damage of a Grey Demon's claw strike.
+meleeDamage = 80.0
+#Claw strike: cooldown in ticks.
+meleeCooldown = 24
+#Whether Grey Demons spawn naturally in the Nether.
+naturalSpawn = true
+#Chance (0..1) a natural spawn attempt that picked a Grey Demon goes through. Lower is rarer.
+spawnChance = 0.2
+#Natural spawns fail if another Grey Demon is within this many blocks. 0 turns the check off.
+spawnSpacing = 96
+#Whether Grey Demons also spawn naturally in Tensura's Hell.
+hellSpawn = true
+#Chance (0..1) a natural spawn attempt in Hell that picked a Grey Demon goes through.
+hellSpawnChance = 0.3
+#Natural spawns in Hell fail if another Grey Demon is within this many blocks. 0 turns the check off.
+hellSpawnSpacing = 80
+#Dark Snow: radius in blocks the black snow scatters across.
+darkSnowRadius = 14.0
+#Dark Snow: how many flakes fall.
+darkSnowFlakes = 160
+#Dark Snow: ticks the snow keeps falling.
+darkSnowDuration = 140
+#Dark Snow: whether touching a flake kills outright. When false it deals darkSnowDamage instead.
+darkSnowLethal = true
+#Dark Snow: darkness damage per flake when darkSnowLethal is false.
+darkSnowDamage = 300.0
+#Dark Snow: cooldown in ticks.
+darkSnowCooldown = 400
+#Dark Nebula: radius in blocks of the void.
+darkNebulaRadius = 12.0
+#Dark Nebula: darkness damage to everything caught in it.
+darkNebulaDamage = 220.0
+#Dark Nebula: seconds anyone caught is paralysed.
+darkNebulaParalysisSeconds = 6
+#Dark Nebula: whether the void erases the terrain it covers (also needs the mobGriefing gamerule).
+darkNebulaBreaksBlocks = true
+#Dark Nebula: cooldown in ticks.
+darkNebulaCooldown = 600
+#Dark beam: darkness damage to everything along the beam.
+beamDamage = 100.0
+#Dark beam: reach in blocks.
+beamRange = 48.0
+#Dark beam: power of the explosion where it lands (TNT is 4).
+beamExplosion = 3.0
+#Dark beam: cooldown in ticks.
+beamCooldown = 160
+#Demon Heart: chance (0..1) a Grey Demon drops one on death.
+heartDropChance = 0.15
+#Demon Heart: a Grey Demon only drops one if its max EP is above this.
+heartDropMinEp = 80000.0

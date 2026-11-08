@@ -1,0 +1,17 @@
+&e&l[!]&r &aAll commands prefixed with &b/tcu &acan also be aliased with &b/tensuracrossultima&a.
+&f• &b/tcu soulenergy &6- &7Shows the player's current Soul Energy.
+&f• &b/tcu awakeningstatus &6- &7Shows the current progress you've made towards Awakening.
+&f• &b/tcu slots &6- &7Shows how many Skill Locks, Ultimate Slots, and other unlocks the player currently has.
+&f• &b/tcu ultimate progress &6- &7Shows what Ultimate Skills you are on the path to evolving.
+&f• &b/tcu reroll [daily/weekly/prestige] (if daily: 1-3) &6- &7Rerolls one of your Daily Quests or all of your Weekly or Prestige Quests on a cooldown (24h/128h/72h).
+&f• &b/tcu showitem &7or &e@ITEM &6- &7Shows off the item you are currently holding.
+&f• &b/tcu history [&aself/all&b] &6- &7Shows the player their own recorded Unique Skill selection history, or broadcasts it.
+&f• &b/tcu named [&alist/summon&b] &e{#} &6- &7Shows a list of all Named mobs linked to you in range, and optionally summons them to your location.
+&f• &b/whisper [&ausername&b] [&acontents&b] &6- &7Sends a private message to a player
+&f• &b/afk &6- &7Manually go AFK. Visible to other players.
+&f• &b/block &6& &b/unblock &6- &7Hides player-authored text/voice chat and bundled sticker messages from that player locally.
+&f• &b/tcu titles reobtain &6- &7Returns any titles that you may be missing which you should have.
+&f• &b/tcu welcome [&ashow/on/off&b] &6- &7Shows this message again, or sets whether you'll be shown this message again each log-in or not.
+&f• &etitles &6- &7Can be accessed when the chat is open by clicking on the scroll button at the top right.
+&f• &eemoji &6- &7Can be accessed when the chat is open at the bottom right by clicking on the smiling face symbol.
+&f• &estickers &6- &7Can be accessed when the chat is open at the bottom right by clicking on the speech bubble symbol.

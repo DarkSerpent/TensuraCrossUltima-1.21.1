@@ -1,0 +1,151 @@
+[General]
+	#Damage multiplier for every Bubble Magic spell once that spell is mastered.
+	masteredDamageMultiplier = 1.5
+	#Share of every Bubble Magic hit dealt as Water elemental damage. The rest is plain magic damage.
+	elementShare = 0.3
+
+[BubbleShot]
+	#Cast time in ticks.
+	castTicks = 10
+	#Magicule cost.
+	magiculeCost = 800.0
+	#Cooldown in seconds.
+	cooldown = 3
+	#Number of bubbles in one volley.
+	bubbleCount = 6
+	#Total width of the fan in degrees.
+	fanDegrees = 24.0
+	#Travel speed of each bubble in blocks per tick.
+	speed = 0.8
+	#Maximum travel distance in blocks before a bubble pops on its own.
+	range = 28.0
+	#Extra reach around a bubble that counts as a hit, in blocks.
+	hitRadius = 0.35
+	#Total damage of each bubble.
+	damage = 33.75
+	#Knockback of each bubble. Entities tagged no_forced_move are never moved.
+	knockback = 0.3
+
+[PopBarrage]
+	#Cast time in ticks.
+	castTicks = 10
+	#Magicule cost.
+	magiculeCost = 1200.0
+	#Cooldown in seconds. It starts once the clinging bubbles pop.
+	cooldown = 8
+	#Length of the spray cone in blocks.
+	range = 10.0
+	#Full opening angle of the spray cone in degrees.
+	coneDegrees = 30.0
+	#How long the spray keeps flowing from the caster, in ticks.
+	sprayTicks = 16
+	#Ticks between bubbles sticking to each enemy inside the spray.
+	attachInterval = 2
+	#Most bubbles that can cling to a single enemy.
+	maxPerTarget = 8
+	#How long clinging bubbles last before popping on their own, in ticks.
+	lifeTicks = 200
+	#Total damage of each clinging bubble when it pops.
+	damagePerBubble = 13.5
+
+[BubblePrison]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost.
+	magiculeCost = 16000.0
+	#Cooldown in seconds.
+	cooldown = 20
+	#How far away the target can be, in blocks.
+	range = 20.0
+	#How long the prison holds, in ticks.
+	durationTicks = 80
+	#How long the prison holds a boss, in ticks.
+	bossDurationTicks = 20
+	#How high the prisoner is lifted, in blocks. Entities tagged no_forced_move are never lifted.
+	liftHeight = 2.0
+	#Movement speed taken from entities tagged no_forced_move while imprisoned. 1.0 roots them.
+	immovableSlow = 0.6
+	#Total drowning-pressure damage per second to the prisoner.
+	damagePerSecond = 8.7
+	#Bubble health as a fraction of the prisoner's max health.
+	shellHealthFraction = 0.15
+	#Lowest bubble health.
+	minShellHealth = 20.0
+	#Total damage of the pop when the bubble bursts.
+	popDamage = 58.0
+	#Whether the bubble also pops for full damage when it simply runs out instead of being broken.
+	popOnExpire = true
+
+[BubbleShield]
+	#Cast time in ticks. 0 casts instantly.
+	castTicks = 0
+	#Magicule cost.
+	magiculeCost = 12000.0
+	#Cooldown in seconds.
+	cooldown = 25
+	#How long the shield lasts, in ticks.
+	durationTicks = 200
+	#Radius of the bubble around the caster, in blocks.
+	radius = 1.8
+	#Whether enemy arrows and other non-spell projectiles bounce off.
+	deflectProjectiles = true
+	#Whether enemy Tensura spell projectiles bounce off.
+	deflectSpells = true
+	#Speed multiplier for bounced projectiles.
+	deflectSpeedMultiplier = 0.8
+	#Fraction of incoming melee damage removed while the shield holds.
+	meleeReduction = 0.4
+	#Radius of the burst when the shield pops, in blocks.
+	popRadius = 4.0
+	#Total damage of the burst when the shield pops.
+	popDamage = 43.5
+	#Knockback of the burst. Entities tagged no_forced_move are never moved.
+	popKnockback = 0.9
+
+[SeaOfFoam]
+	#Chant time in ticks.
+	castTicks = 50
+	#Magicule cost.
+	magiculeCost = 49000.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#How far away the field can be centred, in blocks.
+	aimRange = 28.0
+	#Radius of the field in blocks.
+	radius = 12.0
+	#How long the field lasts, in ticks.
+	durationTicks = 240
+	#Total damage per second to every enemy inside.
+	damagePerSecond = 24.0
+	#Slowness amplifier for enemies inside. 2 means Slowness III.
+	slownessAmplifier = 2
+	#Strength of the slippery shove enemies get on the foam. Entities tagged no_forced_move are never moved.
+	slideStrength = 0.32
+	#Ticks between slippery shoves.
+	slideInterval = 5
+	#Speed amplifier for allies inside. 0 means Speed I.
+	allySpeedAmplifier = 0
+	#Whether allies inside get Dolphin's Grace.
+	allyDolphinsGrace = true
+
+[AbyssalBubble]
+	#Chant time in ticks.
+	castTicks = 60
+	#Magicule cost.
+	magiculeCost = 70000.0
+	#Cooldown in seconds.
+	cooldown = 90
+	#How far away the bubble can be centred, in blocks.
+	aimRange = 32.0
+	#Radius of the bubble in blocks.
+	radius = 7.0
+	#How long the bubble holds before it implodes, in ticks.
+	durationTicks = 120
+	#Total damage per second to every enemy inside.
+	damagePerSecond = 48.0
+	#Total damage of the implosion.
+	implosionDamage = 400.0
+	#Fraction of horizontal speed floating enemies keep each tick. Lower means more helpless.
+	horizontalDamping = 0.35
+	#Inward pull of the implosion. Entities tagged no_forced_move and bosses are never moved.
+	implosionPull = 0.9

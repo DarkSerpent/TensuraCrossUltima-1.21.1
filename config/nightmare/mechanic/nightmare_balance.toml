@@ -1,0 +1,43 @@
+[Resistances]
+	#Damage reduction from a Resistance skill (0.5 = 50%).
+	resistanceReduction = 0.5
+	#Damage reduction from a Nullification skill (0.9 = 90%).
+	nullificationReduction = 0.9
+	#When the nullification gamerule is off, Nullification skills act as Resistances instead of doing nothing.
+	disabledNullificationActsAsResistance = true
+	#Maximum total damage reduction from resistance attributes (magic, elemental and Nightmare resistances).
+	attributeReductionCap = 0.9
+	#Maximum damage increase from negative resistance attributes (1.0 = double damage).
+	attributeAmplificationCap = 1.0
+
+[HealFatigue]
+	#Ticks over which regeneration healing is summed when checking for a fatigue proc. Also the minimum gap between procs.
+	procWindowTicks = 40
+	#Ticks after the last fatigue stack before all fatigue wears off at once.
+	durationTicks = 12000
+	#Maximum Heal Fatigue stacks.
+	maxStacks = 5
+	#At maximum fatigue, regeneration can no longer prevent death.
+	maxFatigueDisablesDeathSave = true
+
+	#Ultraspeed tier: Ultraspeed Regeneration, Glorious regeneration, and Costless regeneration riding on Ultraspeed.
+	[HealFatigue.Ultraspeed]
+		#Fraction of max HP healed within the proc window that adds a fatigue stack.
+		procThreshold = 0.1
+		#Per-pulse heal cap at one fatigue stack, as a fraction of max HP.
+		firstStackCap = 0.1
+		#How much the per-pulse heal cap drops for each stack after the first.
+		capStepPerStack = 0.02
+
+	#Infinite tier: Infinite Regeneration, Godspeed Regeneration, Haniel / Hamiel regeneration, and Costless regeneration riding on Infinite Regeneration.
+	[HealFatigue.Infinite]
+		#Fraction of max HP healed within the proc window that adds a fatigue stack.
+		procThreshold = 0.25
+		#Per-pulse heal cap at one fatigue stack, as a fraction of max HP.
+		firstStackCap = 0.25
+		#How much the per-pulse heal cap drops for each stack after the first.
+		capStepPerStack = 0.05
+
+[AttackSpeed]
+	#Highest attack speed a player can reach while the nightmareCombatRebalance gamerule is on. 0 or less disables the cap.
+	cap = 2.8

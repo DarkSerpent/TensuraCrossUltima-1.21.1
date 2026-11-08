@@ -1,0 +1,152 @@
+#Magicules spent to obtain Basquias once Disaster (Gloxinia) is mastered.
+epAcquirement = 120000.0
+#Only Fairies can acquire Basquias and awaken its forms. When false, anyone wields every form.
+fairiesOnly = true
+#Extra power per Fairy rank above Lesser Fairy (damage and healing scale by 1 + this per rank).
+rankPower = 0.25
+#Power multiplier once Basquias is mastered.
+masteredPower = 1.25
+#Form One, Basquias: magicule cost.
+spearCost = 1500.0
+#Form One, Basquias: cooldown in ticks after a strike.
+spearCooldown = 40
+#Form One, Basquias: ticks of holding the key that still count as a tap. Tap to send the spear flying, hold longer to fire the beam.
+spearTapTicks = 6
+#Form One, Basquias: damage per pierce of a strike.
+spearDamage = 200.0
+#Form One, Basquias: strike flight speed in blocks per tick.
+spearSpeed = 2.0
+#Form One, Basquias: how hard a strike turns toward its target each tick (0..1).
+spearHoming = 0.25
+#Form One, Basquias: ticks a strike may fly before it turns home.
+spearFlight = 50
+#Form One, Basquias: cooldown in ticks after the beam.
+beamCooldown = 300
+#Form One, Basquias: ticks of holding for a fully charged beam.
+beamChargeTicks = 30
+#Form One, Basquias: ticks the beam fires.
+beamDuration = 40
+#Form One, Basquias: ticks between beam damage pulses.
+beamInterval = 4
+#Form One, Basquias: damage per beam pulse at full charge.
+beamDamage = 70.0
+#Form One, Basquias: beam reach in blocks.
+beamRange = 48.0
+#Form One, Basquias: beam radius in blocks at full charge.
+beamWidth = 1.2
+#Form One, Basquias: whether the beam breaks blocks where it lands (also needs mobGriefing).
+beamBreaksBlocks = false
+#Form Two, Guardian: magicule cost.
+guardianCost = 4000.0
+#Form Two, Guardian: cooldown in ticks.
+guardianCooldown = 600
+#Form Two, Guardian: ticks the hornet stays.
+guardianDuration = 900
+#Form Two, Guardian: health. Hits it takes wear it down.
+guardianHealth = 150.0
+#Form Two, Guardian: health once Basquias is mastered.
+guardianHealthMastered = 600.0
+#Form Two, Guardian: height in blocks.
+guardianHeight = 4.5
+#Form Two, Guardian: damage of each ramming dash.
+guardianDashDamage = 90.0
+#Form Two, Guardian: dash speed in blocks per tick.
+guardianDashSpeed = 2.8
+#Form Two, Guardian: ticks it rests between dashes.
+guardianDashInterval = 30
+#Form Two, Guardian: how far from you it hunts.
+guardianRange = 20.0
+#Necrosis: magicule cost. Only usable while the Guardian is out.
+necrosisCost = 2500.0
+#Necrosis: cooldown in ticks.
+necrosisCooldown = 300
+#Necrosis: damage of the sting.
+necrosisDamage = 260.0
+#Necrosis: seconds of paralysis the sting inflicts.
+necrosisParalysisSeconds = 6
+#Necrosis: farthest target the Guardian flies to sting.
+necrosisRange = 24.0
+#Form Five, Yggdra Armor: magicule cost.
+armorCost = 6000.0
+#Form Five, Yggdra Armor: cooldown in ticks after it comes off.
+armorCooldown = 1200
+#Form Five, Yggdra Armor: ticks it stays on. 0 keeps it on until recalled.
+armorDuration = 1200
+#Form Five, Yggdra Armor: armor points it adds.
+armorArmor = 16.0
+#Form Five, Yggdra Armor: armor toughness it adds.
+armorToughness = 10.0
+#Form Five, Yggdra Armor: attack damage bonus as a fraction of your total (0.4 = +40%).
+armorStrength = 0.4
+#Form Five, Yggdra Armor: extra melee reach the claws give, in blocks.
+armorReach = 1.5
+#Form Five, Yggdra Armor: claw damage added to empty-handed hits.
+armorClawDamage = 60.0
+#Form Five, Yggdra Armor: radius of the claw rake that also catches creatures in front of you.
+armorClawRadius = 3.5
+#Form Five, Yggdra Armor: ticks between claw rakes.
+armorClawCooldown = 10
+#Form Seven, Moon Rose: magicule cost.
+roseCost = 4000.0
+#Form Seven, Moon Rose: cooldown in ticks after it wilts.
+roseCooldown = 900
+#Form Seven, Moon Rose: ticks it blooms.
+roseDuration = 1200
+#Form Seven, Moon Rose: height in blocks.
+roseHeight = 7.0
+#Form Seven, Moon Rose: radius in which it grants Regeneration to you and your allies.
+roseRadius = 8.0
+#Form Seven, Moon Rose: Regeneration level it grants (1 = Regeneration I, 0 disables).
+roseRegenLevel = 1
+#Inochi no Shizuku: magicule cost per drop. Only usable while the Moon Rose blooms.
+dropCost = 2000.0
+#Inochi no Shizuku: drops that can be shed in a row before the rose must rest.
+dropCharges = 3
+#Inochi no Shizuku: ticks the rose rests after the last drop of a row.
+dropCooldown = 1200
+#Inochi no Shizuku: ticks between drops within a row.
+dropInterval = 20
+#Inochi no Shizuku: ticks without a drop after which the row starts over.
+dropReset = 600
+#Inochi no Shizuku: flat healing per drop.
+dropHeal = 40.0
+#Inochi no Shizuku: extra healing per drop as a fraction of the target's max health.
+dropHealFraction = 0.6
+#Inochi no Shizuku: farthest creature from the rose a drop can reach.
+dropRange = 24.0
+#Inochi no Shizuku: whether a drop also cures harmful effects.
+dropCleanses = true
+#Form Nine, Death Thorn: magicule cost.
+thornCost = 12000.0
+#Form Nine, Death Thorn: cooldown in ticks.
+thornCooldown = 900
+#Form Nine, Death Thorn: vines that burst out of you. About 60% plunge into the creatures in the area, the rest stake the ground around them.
+thornVines = 32
+#Form Nine, Death Thorn: radius around the aimed point the vines hunt in.
+thornRadius = 6.0
+#Form Nine, Death Thorn: farthest point you can make them erupt at.
+thornRange = 32.0
+#Form Nine, Death Thorn: damage of each piercing vine.
+thornDamage = 150.0
+#Form Nine, Death Thorn: creatures left at or below this fraction of their max health by a vine die outright (0 disables).
+thornExecuteThreshold = 0.25
+#Form Nine, Death Thorn: seconds of fatal poison a cut inflicts.
+thornPoisonSeconds = 10
+#Form Ten, Emerald Octo: magicule cost.
+octoCost = 2000.0
+#Form Ten, Emerald Octo: cooldown in ticks after it is recalled.
+octoCooldown = 200
+#Form Ten, Emerald Octo: ticks it stays. 0 keeps it until recalled.
+octoDuration = 0
+#Form Ten, Emerald Octo: tentacles.
+octoTentacles = 6
+#Form Ten, Emerald Octo: damage of each lash.
+octoDamage = 40.0
+#Form Ten, Emerald Octo: ticks between lashes.
+octoInterval = 14
+#Form Ten, Emerald Octo: reach of the tentacles. They pass through walls.
+octoRange = 7.0
+#Form Ten, Emerald Octo: ticks between the nourishment it feeds you (food, saturation and Regeneration).
+octoFeedInterval = 40
+#Form Ten, Emerald Octo: share of damage it absorbs while you sneak inside its cocoon (0..1).
+octoCocoonReduction = 0.4

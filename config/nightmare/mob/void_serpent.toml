@@ -1,0 +1,90 @@
+#Max health.
+maxHealth = 22000.0
+#Max spiritual health.
+spiritualHealth = 50000.0
+#Health fraction (0..1) at which it tears the sky open and enters the second phase.
+phaseTwoHealth = 0.66
+#Health fraction (0..1) at which it starts collapsing the dimension in the last phase.
+phaseThreeHealth = 0.33
+#Whether the summoning ritual (Space Elemental Shards laid on the End's exit portal after the Ender Dragon has died) works at all.
+ritualEnabled = true
+#Space Elemental Shards that must be laid on the exit portal.
+shardsRequired = 4
+#Spatial Anchors raised on the obsidian pillars when it arrives.
+anchorCount = 6
+#Spatial Anchors it raises again when it enters the second phase.
+phaseTwoAnchors = 3
+#Spatial Anchor health.
+anchorHealth = 400.0
+#Fraction (0..1) of all damage it ignores while any Spatial Anchor stands.
+anchorWard = 0.85
+#Max health percent it regains every second for each Spatial Anchor standing.
+anchorRegenPercent = 0.1
+#Void Breath damage per pulse.
+breathDamage = 260.0
+#Void Breath range in blocks.
+breathRange = 48.0
+#Rifts each Void Breath leaves behind.
+breathRifts = 3
+#Ticks between Void Breaths.
+breathCooldown = 160
+#Rift damage to whatever it swallows.
+riftDamage = 120.0
+#How far (in blocks) a rift flings whatever it swallows.
+riftScatter = 12.0
+#How long a rift stays open, in ticks.
+riftLife = 240
+#Swooping bite damage.
+biteDamage = 620.0
+#Ticks between swooping bites.
+biteCooldown = 90
+#Gate Storm lunge damage (second phase on).
+lungeDamage = 780.0
+#Ticks between Gate Storm lunges.
+lungeCooldown = 180
+#Dimension Collapse damage per pulse while it pulls (last phase).
+collapseDamage = 140.0
+#Dimension Collapse damage when the void implodes.
+collapseFinalDamage = 1300.0
+#Dimension Collapse pull radius in blocks.
+collapseRadius = 42.0
+#Ticks between Dimension Collapses.
+collapseCooldown = 520
+#Whether surviving its Dimension Collapses can make it unravel and die on its own (last phase).
+collapseUnravelEnabled = true
+#Dimension Collapses that must be survived (at least one player inside its pull still alive when it implodes) before it unravels.
+collapsesToUnravel = 3
+#Gravity Wells it opens per cast (more from the second phase).
+wellCount = 2
+#Gravity Well pull radius in blocks.
+wellRadius = 9.0
+#How long a Gravity Well pulls before it implodes, in ticks.
+wellDuration = 80
+#Gravity Well damage every half second while it pulls.
+wellPulseDamage = 45.0
+#Gravity Well implosion damage.
+wellImplodeDamage = 420.0
+#Ticks between Gravity Well casts.
+wellCooldown = 200
+#Graviton Crush radius in blocks.
+crushRadius = 10.0
+#Graviton Crush damage per press (it presses five times).
+crushDamage = 160.0
+#Ticks between Graviton Crushes.
+crushCooldown = 240
+#Void Starfall damage per comet (second phase on).
+starfallDamage = 380.0
+#Void Starfall blast radius in blocks.
+starfallRadius = 3.5
+#Chance (0..1) that a Void Starfall comet leaves a rift where it lands.
+starfallRiftChance = 0.3
+#Ticks between Void Starfalls.
+starfallCooldown = 260
+#Reverse Gravity radius in blocks (second phase on).
+reverseRadius = 16.0
+#Damage when Reverse Gravity slams its victims back down.
+reverseSlamDamage = 300.0
+#Ticks between Reverse Gravity casts.
+reverseCooldown = 320
+#Ticks between its taunts while it has a target.
+tauntInterval = 600

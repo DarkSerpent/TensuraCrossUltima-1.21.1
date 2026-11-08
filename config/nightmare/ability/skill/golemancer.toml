@@ -1,0 +1,26 @@
+#Golemancer is gained after making this many golems or dolls with Golem Creation or Doll Creation. 0 turns this path off.
+acquireCreations = 5
+#Golemancer is gained when Golem Creation is mastered.
+acquireOnGolemCreationMastery = true
+#Golem Slots: extra golem slots while you have Golemancer.
+bonusSlots = 2
+#Golem Slots: extra golem slots once Golemancer is mastered.
+masteredBonusSlots = 4
+#Efficient Assembly: Golem and Doll Creation Magicule cost multiplier (0.75 = 25% cheaper).
+creationCostMultiplier = 0.75
+#Efficient Assembly: Core Charge drain multiplier of your golems and dolls (0.7 = 30% slower).
+drainMultiplier = 0.7
+#Workshop Hand: in a nation, your golems in a work group need no handler.
+waiveHandler = true
+#Workshop Hand: work speed bonus of your golems and dolls in a nation (0.15 = +15%).
+workSpeedBonus = 0.15
+#Resonance Pulse: golems and dolls within this many blocks are recharged.
+pulseRadius = 16.0
+#Resonance Pulse: Magicules spent per second while held.
+pulseMagiculePerSecond = 200.0
+#Resonance Pulse: Core Charge given per Magicule spent.
+pulseChargePerMagicule = 1.0
+#Golem Sight: your golems and dolls within this many blocks are outlined through walls.
+sightRange = 64.0
+#Mastery: multiplier on the Core Overcharge stall of your golems (0.5 = half as long).
+masteredStallMultiplier = 0.5

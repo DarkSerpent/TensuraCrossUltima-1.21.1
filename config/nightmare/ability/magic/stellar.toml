@@ -1,0 +1,131 @@
+[General]
+	#Damage multiplier for every Star Magic spell once that spell is mastered.
+	masteredDamageMultiplier = 1.5
+
+[StarfallRush]
+	#Cast time in ticks.
+	castTicks = 10
+	#Magicule cost.
+	magiculeCost = 12000.0
+	#Cooldown in seconds.
+	cooldown = 12
+	#How long the rush lasts in ticks.
+	durationTicks = 100
+	#Movement speed bonus while rushing, multiplied onto total speed. 2.5 means +250%.
+	speedBonus = 2.5
+	#Extra step height while rushing, so the caster runs up blocks without slowing.
+	stepHeight = 0.6
+	#Space damage dealt to each enemy the caster passes through. Each enemy is hit at most once per rush.
+	damage = 54.38
+	#Extra reach around the caster's body that still counts as passing through, in blocks.
+	hitRadius = 0.6
+	#Knockback given to enemies the caster passes through. Entities tagged no_forced_move are never moved.
+	knockback = 0.6
+	#Ticks of fall damage immunity kept after the rush ends.
+	fallImmunityTicks = 40
+
+[BlackStar]
+	#Chant time in ticks.
+	castTicks = 30
+	#Magicule cost.
+	magiculeCost = 16000.0
+	#Cooldown in seconds.
+	cooldown = 15
+	#How far away the sphere can be placed, in blocks.
+	aimRange = 32.0
+	#How high above the aimed ground the sphere hangs, in blocks.
+	hoverHeight = 1.5
+	#Ticks the sphere pulls before it implodes.
+	pullTicks = 60
+	#Enemies within this many blocks are pulled inward.
+	pullRadius = 8.0
+	#Pull strength in blocks per tick. Entities tagged no_forced_move are never moved.
+	pullStrength = 0.32
+	#Radius of the implosion in blocks.
+	implosionRadius = 5.0
+	#Gravity damage of the implosion.
+	damage = 217.5
+
+[SevenStarJudgement]
+	#Chant time in ticks.
+	castTicks = 60
+	#Magicule cost.
+	magiculeCost = 63000.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#How far away the pattern can be centred, in blocks.
+	aimRange = 40.0
+	#Half the width of the Big Dipper pattern, in blocks.
+	spread = 7.0
+	#How high above the aimed ground the magic circles appear, in blocks.
+	height = 14.0
+	#Radius of each pillar of starlight, in blocks. Overlapping pillars stack their damage.
+	pillarRadius = 2.5
+	#Space damage of each pillar.
+	damage = 160.0
+	#Ticks after the cast before the first pillar falls.
+	firstPillarDelay = 24
+	#Ticks between pillars.
+	pillarInterval = 4
+
+[ConstellationMark]
+	#Cast time in ticks to plant a mark.
+	castTicks = 10
+	#Magicule cost of each mark.
+	magiculeCost = 800.0
+	#Cooldown in seconds after planting a mark.
+	cooldown = 1
+	#How far away an enemy can be marked, in blocks.
+	range = 24.0
+	#The most marks a caster can hold on a single enemy.
+	maxMarks = 5
+	#Seconds each mark lasts.
+	markSeconds = 30
+	#Space damage dealt per mark when the marks are detonated.
+	damagePerMark = 67.5
+
+[FallingHeaven]
+	#Chant time in ticks.
+	castTicks = 100
+	#Magicule cost.
+	magiculeCost = 80000.0
+	#Cooldown in seconds.
+	cooldown = 120
+	#How far away the meteor can be aimed, in blocks.
+	aimRange = 48.0
+	#Ticks the meteor takes to fall.
+	fallTicks = 40
+	#How high above the target the meteor appears, in blocks.
+	spawnHeight = 48.0
+	#The size of the meteor, in blocks. Visual only.
+	size = 3.5
+	#Space damage dealt within the impact radius.
+	damage = 800.0
+	#Impact radius in blocks.
+	radius = 10.0
+	#Radius of the shockwave in blocks. Enemies beyond the impact radius but inside this take shockwave damage.
+	shockwaveRadius = 18.0
+	#Damage of the shockwave beyond the impact radius.
+	shockwaveDamage = 120.0
+	#Knockback of the impact and shockwave. Entities tagged no_forced_move are never moved.
+	knockback = 1.6
+
+[StarlightBlessing]
+	#Cast time in ticks.
+	castTicks = 0
+	#Magicule cost.
+	magiculeCost = 1500.0
+	#Cooldown in seconds.
+	cooldown = 40
+	#How long the blessing lasts in seconds.
+	durationSeconds = 30
+	#Movement speed bonus while blessed. 0.25 means +25%.
+	speedBonus = 0.25
+	#Space damage of each piercing sparkle.
+	sparkleDamage = 16.88
+	#How many enemies behind the target a sparkle can pierce.
+	sparkleTargets = 2
+	#How far behind the target sparkles reach, in blocks.
+	sparkleRange = 6.0
+	#Half-width of the sparkle line behind the target, in blocks.
+	sparkleWidth = 1.25

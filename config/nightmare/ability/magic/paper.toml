@@ -1,0 +1,73 @@
+[General]
+	#Damage multiplier for every Paper Magic spell once that spell is mastered.
+	masteredDamageMultiplier = 1.5
+
+[PaperButterflies]
+	#Cast time in ticks.
+	castTicks = 10
+	#Magicule cost.
+	magiculeCost = 1000.0
+	#Cooldown in seconds.
+	cooldown = 6
+	#Number of butterflies released.
+	count = 8
+	#Damage of each butterfly.
+	damage = 20.25
+	#Ticks of Blindness applied on hit. 0 disables it.
+	blindnessTicks = 40
+	#Range in blocks within which butterflies look for enemies.
+	range = 20.0
+	#Flight speed in blocks per tick.
+	speed = 0.55
+	#Ticks a butterfly lives before it unfolds and falls apart.
+	lifetimeTicks = 100
+
+[PaperWings]
+	#Magicules drained every second while the wings are out.
+	magiculePerSecond = 40.0
+	#Ticks of fall damage immunity after the wings fold away.
+	fallImmunityTicks = 60
+	#Every this many seconds of flight grants one mastery point. 0 disables it.
+	masteryIntervalSeconds = 30
+
+[PaperShuriken]
+	#Cast time in ticks.
+	castTicks = 0
+	#Magicule cost.
+	magiculeCost = 600.0
+	#Cooldown in seconds.
+	cooldown = 2
+	#Number of shuriken in the fan.
+	count = 5
+	#Damage of each shuriken.
+	damage = 25.31
+	#Total width of the fan in degrees.
+	spreadDegrees = 40.0
+	#Flight speed in blocks per tick.
+	speed = 1.8
+	#Maximum flight distance in blocks.
+	range = 32.0
+
+[PaperSea]
+	#Chant time in ticks.
+	castTicks = 60
+	#Magicule cost.
+	magiculeCost = 70000.0
+	#Cooldown in seconds.
+	cooldown = 90
+	#How far away the sea can be aimed, in blocks.
+	aimRange = 40.0
+	#Radius of the field of explosive tags in blocks.
+	radius = 12.0
+	#Ticks after the cast before the first wave detonates.
+	armTicks = 40
+	#Number of detonation waves.
+	waves = 3
+	#Ticks between waves.
+	waveInterval = 12
+	#Damage of each wave to every enemy inside the field. No blocks are ever damaged.
+	damage = 300.0
+	#How far above and below the aimed ground the field reaches, in blocks.
+	height = 6.0
+	#Knockback of each wave. Entities tagged no_forced_move are never moved.
+	knockback = 0.5

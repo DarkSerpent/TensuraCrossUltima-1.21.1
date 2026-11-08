@@ -1,0 +1,121 @@
+[General]
+	#Chance (0-1) of absorbing the soul of a boss that matches a known Take Over tier. Replaces the tier's normal chance.
+	bossChance = 0.03
+	#When true, kill credit (the last player who hurt the mob) also counts, not only the killing blow.
+	killCreditCounts = true
+	#EP a soul needs for its strength multiplier to reach 1 + strengthScale. Costs grow with log10(1 + EP / this).
+	strengthReferenceEP = 1000.0
+	#How strongly a soul's EP raises its activation and upkeep costs.
+	strengthScale = 0.6
+	#Highest cost multiplier a strong soul can reach.
+	maxStrengthMultiplier = 4.0
+	#Cost multiplier once the tier spell is mastered.
+	masteredCostMultiplier = 0.75
+	#Ticks before a form can be taken again after it ends or swaps.
+	formCooldownTicks = 20
+	#Seconds between uses of a form's special.
+	specialCooldownSeconds = 6
+	#Extra magicules drained every second while flying in a form.
+	flightDrainPerSecond = 20.0
+	#Ticks of fall damage immunity after a flying form ends.
+	fallImmunityTicks = 60
+	#Every this many seconds spent transformed grants one mastery point to the tier spell. 0 disables it.
+	masteryIntervalSeconds = 30
+
+[Stats]
+	#Highest max health a form may add.
+	maxHealthBonus = 120.0
+	#Highest attack damage a form may add.
+	attackBonus = 30.0
+	#Highest armor a form may add.
+	armorBonus = 16.0
+	#Highest armor toughness a form may add.
+	toughnessBonus = 8.0
+	#Lowest movement speed change, as a fraction of base speed.
+	speedBonusMin = -0.15
+	#Highest movement speed change, as a fraction of base speed.
+	speedBonusMax = 0.45
+	#Mob movement speed treated as equal to a player's own speed.
+	referenceMobSpeed = 0.25
+	#Highest knockback resistance a form may add.
+	knockbackBonus = 0.8
+
+[Traits]
+	#Entities that always give an Animal Soul: modid:entity
+	animalEntities = []
+	#Entities that always give a Beast Soul: modid:entity
+	beastEntities = []
+	#Entities that never give a soul: modid:entity
+	excludedEntities = ["minecraft:iron_golem", "minecraft:snow_golem", "minecraft:villager", "minecraft:wandering_trader"]
+	#Whether non-vanilla creatures (Tensura's magic beasts and other mods' monsters) count as beasts unless listed as animals. Vanilla animals stay Animal Souls.
+	moddedCreaturesAreBeasts = true
+	#Traits per entity, as entity=trait,trait. Traits: flight, swim, fire_immune, night_vision, jump, wall_climb, venom, explosive, breath, blink. family:<name> sets the look family (feline, canine, fox, rabbit, bovine, ram, equine, porcine, avian, bat, insect, spider, aquatic, reptile, nether, ender, undead, slime, dragon, beast, demon).
+	entityTraits = ["minecraft:bat=flight,night_vision,family:bat", "minecraft:phantom=flight,family:bat", "minecraft:parrot=flight,family:avian", "minecraft:chicken=family:avian", "minecraft:bee=flight,venom,family:insect", "minecraft:ghast=flight,fire_immune,breath,family:nether", "minecraft:vex=flight,family:demon", "minecraft:allay=flight,family:avian", "minecraft:ender_dragon=flight,breath,fire_immune,family:dragon", "minecraft:blaze=flight,fire_immune,breath,family:nether", "minecraft:dolphin=swim,family:aquatic", "minecraft:guardian=swim,family:aquatic", "minecraft:elder_guardian=swim,family:aquatic", "minecraft:axolotl=swim,family:reptile", "minecraft:drowned=swim,family:undead", "minecraft:turtle=swim,family:reptile", "minecraft:strider=fire_immune,family:nether", "minecraft:magma_cube=fire_immune,jump,family:nether", "minecraft:cat=night_vision,family:feline", "minecraft:ocelot=night_vision,family:feline", "minecraft:fox=night_vision,family:fox", "minecraft:wolf=family:canine", "minecraft:enderman=night_vision,blink,family:ender", "minecraft:endermite=blink,family:insect", "minecraft:shulker=blink,family:ender", "minecraft:rabbit=jump,family:rabbit", "minecraft:goat=jump,family:bovine", "minecraft:frog=jump,swim,family:reptile", "minecraft:horse=jump,family:equine", "minecraft:donkey=jump,family:equine", "minecraft:mule=jump,family:equine", "minecraft:camel=family:equine", "minecraft:llama=family:equine", "minecraft:sheep=family:ram", "minecraft:cow=family:bovine", "minecraft:mooshroom=family:bovine", "minecraft:pig=family:porcine", "minecraft:hoglin=family:porcine", "minecraft:zoglin=family:porcine", "minecraft:piglin=fire_immune,family:porcine", "minecraft:spider=wall_climb,venom,night_vision,family:spider", "minecraft:cave_spider=wall_climb,venom,night_vision,family:spider", "minecraft:silverfish=family:insect", "minecraft:creeper=explosive,family:beast", "minecraft:slime=jump,family:slime", "minecraft:polar_bear=swim,family:canine", "minecraft:panda=family:canine", "minecraft:wither=flight,fire_immune,breath,family:undead", "minecraft:wither_skeleton=fire_immune,family:undead"]
+	#Auto-detection rules for entities missing from entityTraits, as selector=trait,trait. Selectors: tag:<entity type tag>, class:<simple class or interface name>, path:<text in the entity id>, fire_immune (the type's own fire immunity).
+	autoRules = ["fire_immune=fire_immune", "tag:minecraft:aquatic=swim,family:aquatic", "class:WaterAnimal=swim,family:aquatic", "class:AbstractFish=swim,family:aquatic", "class:FlyingMob=flight", "class:FlyingAnimal=flight,family:avian", "class:Spider=wall_climb,venom,family:spider", "class:AbstractHorse=jump,family:equine", "class:EnderMan=blink,night_vision,family:ender", "class:AbstractSkeleton=family:undead", "class:Zombie=family:undead", "class:Slime=jump,family:slime", "tag:tensura:daemons=flight,family:demon", "path:dragon=flight,breath,family:dragon", "path:wyvern=flight,breath,family:dragon", "path:demon=family:demon", "path:daemon=family:demon", "path:devil=family:demon", "path:wolf=family:canine", "path:fox=family:fox", "path:cat=family:feline", "path:tiger=family:feline", "path:lion=family:feline", "path:spider=wall_climb,venom,family:spider", "path:serpent=swim,family:reptile", "path:snake=venom,family:reptile", "path:lizard=family:reptile", "path:salamander=fire_immune,family:reptile", "path:bat=flight,family:bat", "path:bird=flight,family:avian", "path:eagle=flight,family:avian", "path:hawk=flight,family:avian", "path:bee=flight,venom,family:insect", "path:ant=family:insect", "path:boar=family:porcine", "path:bear=family:canine", "path:horse=jump,family:equine", "path:fish=swim,family:aquatic", "path:shark=swim,family:aquatic"]
+	#Soul colors per entity, as entity=#RRGGBB,#RRGGBB,#RRGGBB (main, second, accent). Entities not listed sample their colors from their texture on the client.
+	palettes = ["minecraft:cat=#C8A070,#5E4632,#F2E2C4", "minecraft:ocelot=#E2B860,#6A4A20,#F6E8B0", "minecraft:wolf=#D8D2CA,#8A8076,#F4F0EA", "minecraft:fox=#E2782A,#2E2622,#F4ECE2", "minecraft:rabbit=#A88262,#6E5240,#F0E4D8", "minecraft:spider=#3A322C,#1E1814,#C8201E", "minecraft:cave_spider=#1E3E46,#0E1E24,#C8201E", "minecraft:bat=#4A3A2C,#2A1E16,#8A6A4A", "minecraft:blaze=#F2B020,#C86A10,#FFF08A", "minecraft:enderman=#161618,#0A0A0C,#E07AF0", "minecraft:creeper=#4AA83A,#2A6A22,#101010", "minecraft:bee=#F2C030,#2A2018,#F4F0E8", "minecraft:sheep=#ECE8E0,#B8A890,#4A3A30", "minecraft:cow=#4A3426,#E8E2DA,#B8A090", "minecraft:goat=#E4DCCC,#A8987E,#5A4E40", "minecraft:ghast=#F0F0F0,#C8C8C8,#A02020", "minecraft:phantom=#3A4A7A,#1E2440,#7AF07A", "minecraft:ender_dragon=#1A1A1E,#3A2A44,#C060F0"]
+
+[AnimalSoul]
+	#Chance (0-1) of absorbing the soul of a matching mob you kill.
+	absorbChance = 0.25
+	#Souls this tier can hold. A new soul replaces the oldest unlocked one.
+	capacity = 6
+	#Share (0-1) of the soul's base attributes added on top of your own while transformed.
+	statShare = 0.4
+	#Magicules to take a form, before the soul's strength multiplier.
+	activationCost = 500.0
+	#Magicules drained every second while transformed, before the soul's strength multiplier.
+	drainPerSecond = 25.0
+
+[BeastSoul]
+	#Chance (0-1) of absorbing the soul of a matching mob you kill.
+	absorbChance = 0.15
+	#Souls this tier can hold. A new soul replaces the oldest unlocked one.
+	capacity = 6
+	#Share (0-1) of the soul's base attributes added on top of your own while transformed.
+	statShare = 0.6
+	#Magicules to take a form, before the soul's strength multiplier.
+	activationCost = 1500.0
+	#Magicules drained every second while transformed, before the soul's strength multiplier.
+	drainPerSecond = 60.0
+
+[SatanSoul]
+	#Chance (0-1) of absorbing the soul of a matching mob you kill.
+	absorbChance = 0.1
+	#Souls this tier can hold. A new soul replaces the oldest unlocked one.
+	capacity = 4
+	#Share (0-1) of the soul's base attributes added on top of your own while transformed.
+	statShare = 0.8
+	#Magicules to take a form, before the soul's strength multiplier.
+	activationCost = 4000.0
+	#Magicules drained every second while transformed, before the soul's strength multiplier.
+	drainPerSecond = 150.0
+
+[Satan]
+	#Extra magic damage dealt while in a Satan Soul form, as a fraction.
+	magicDamageBonus = 0.25
+	#Damage of Evil Explosion, before the soul's strength multiplier.
+	evilExplosionDamage = 60.0
+	#Radius of Evil Explosion in blocks.
+	evilExplosionRadius = 6.0
+	#Magicule cost of Evil Explosion.
+	evilExplosionCost = 2000.0
+	#Knockback of Evil Explosion. Entities tagged no_forced_move are never moved.
+	evilExplosionKnockback = 1.2
+
+[Specials]
+	#Damage of an explosive form's self-centred blast, before the soul's strength multiplier. No blocks are ever damaged.
+	explosionDamage = 24.0
+	#Radius of an explosive form's blast in blocks.
+	explosionRadius = 4.5
+	#Magicule cost of a ranged breath special.
+	breathCost = 300.0
+	#Farthest a blink special teleports, in blocks.
+	blinkRange = 16.0
+	#Magicule cost of a blink special.
+	blinkCost = 250.0
+	#Ticks of Poison applied by venom touch.
+	venomTicks = 100
+	#Amplifier of venom touch's Poison.
+	venomAmplifier = 1

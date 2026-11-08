@@ -1,0 +1,20 @@
+#Magicules spent to obtain the Commandment of Pacifism.
+epAcquirement = 1000000.0
+#Only a Ten Commandment can obtain the Commandment of Pacifism naturally.
+tenCommandmentOnly = true
+#Domain of Pacifism: length and width of the square area around the user, in blocks.
+domainSize = 32.0
+#Domain of Pacifism: height of the area around the user, in blocks.
+domainHeight = 32.0
+#Domain of Pacifism: ticks each stack of Stolen Time lasts.
+stackTicks = 1200
+#Domain of Pacifism: stacks of Stolen Time at which the killer dies.
+maxStacks = 10
+#Domain of Pacifism: whether the user's own kills inside their Domain count too.
+affectsUser = true
+#Domain of Pacifism: whether creative-mode players are spared.
+sparesCreative = true
+#Pursuit of Peace: share of a fallen subordinate's max HP the user heals (1.0 = all of it).
+pursuitHealth = 1.0
+#Pursuit of Peace: share of a fallen subordinate's max MP and AP the user recovers (1.0 = all of it).
+pursuitEnergy = 1.0

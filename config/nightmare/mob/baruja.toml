@@ -1,0 +1,34 @@
+#Max health of Baruja.
+health = 8000.0
+#Max spiritual health of Baruja.
+spiritualHealth = 10000.0
+#Size of Baruja (1 = 4 blocks tall). Its reach and beam width grow with it, damage never does.
+scale = 3.0
+#Whether Baruja shows a boss bar.
+bossBar = true
+#Whether Baruja crushes leaves and logs it walks into (also needs the mobGriefing gamerule).
+crushesTrees = true
+#Summoning: how many Demon Hearts must lie on the ground together.
+heartsRequired = 6
+#Summoning: hearts within this many blocks of each other count toward the ritual.
+ritualRadius = 8.0
+#Energy beam: spatial damage to everything the beam touches, once per beam.
+beamDamage = 400.0
+#Energy beam: reach in blocks.
+beamRange = 64.0
+#Energy beam: power of the blasts where it lands (TNT is 4). 0 turns them off. Needs the mobGriefing gamerule to break blocks.
+beamExplosion = 2.0
+#Energy beam: cooldown in ticks after it ends.
+beamCooldown = 220
+#Tail smash: physical damage where the spiked tail lands.
+tailDamage = 250.0
+#Tail smash: radius in blocks of the impact at normal size.
+tailRadius = 3.5
+#Tail smash: cooldown in ticks.
+tailCooldown = 70
+#Stomp: physical damage to everything around Baruja when its forelegs crash down.
+stompDamage = 150.0
+#Stomp: radius in blocks at normal size.
+stompRadius = 4.5
+#Stomp: cooldown in ticks.
+stompCooldown = 120

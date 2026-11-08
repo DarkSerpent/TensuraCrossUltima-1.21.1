@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "strength": 1.0,
+  "torches": true,
+  "lanterns": true,
+  "candles": true,
+  "fires": true,
+  "furnaces": true,
+  "entities": true
+}

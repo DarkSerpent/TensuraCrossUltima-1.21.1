@@ -1,0 +1,182 @@
+#Max health added per floor, as a share of the mob's base health (0.15 = +15% per floor).
+healthPerFloor = 0.15
+#Attack damage added per floor, as a share of the mob's base damage.
+damagePerFloor = 0.1
+#Flat armor added per floor.
+armorPerFloor = 1.5
+#Knockback resistance added per floor (total is capped at 1).
+knockbackResistancePerFloor = 0.05
+#Movement speed added per floor, as a share of base speed.
+speedPerFloor = 0.015
+#Cap on the movement speed bonus.
+speedCap = 0.3
+#Guardians scale as if they were this many times deeper.
+guardianScale = 2.0
+#Extra max health multiplier for guardians, applied after the floor scaling.
+guardianHealthMultiplier = 1.0
+#Extra attack damage multiplier for guardians, applied after the floor scaling.
+guardianDamageMultiplier = 1.0
+#Whether deep floors give mobs Resistance, Strengthen, Regeneration and Fire Resistance.
+depthEffects = true
+#Chance a hall gets hidden trap tiles, before the per-tier bonus.
+trapChance = 0.5
+#Trap chance added per tier.
+trapChancePerTier = 0.05
+#Trap damage before the per-floor bonus.
+trapDamage = 15.0
+#Trap damage added per floor.
+trapDamagePerFloor = 20.0
+#Trap tiles placed in a trapped hall, before the random bonus (newly generated labyrinths only).
+trapsPerHall = 2
+#Up to this many extra trap tiles may be added to a trapped hall.
+trapsPerHallBonus = 2
+#Ticks a player is immune to further traps after one springs on them. Keep this longer than trapControlTicks so control effects can't chain.
+trapCooldownTicks = 160
+#Longest a trap may paralyse, petrify or web a player, in ticks.
+trapControlTicks = 50
+#Ticks between stepping on an Arrow Volley tile and the arrows firing.
+arrowVolleyDelayTicks = 8
+#Arrow Volley arrow damage before the per-floor bonus.
+arrowVolleyDamage = 3.0
+#Arrow Volley arrow damage added per floor.
+arrowVolleyDamagePerFloor = 0.6
+#Chance each floor gets a parkour gauntlet hall (newly generated labyrinths only).
+parkourChance = 0.5
+#Ticks a crumbling platform holds after being stepped on before it falls.
+crumbleDelayTicks = 12
+#Ticks before a fallen crumbling platform reforms.
+crumbleRestoreTicks = 80
+#Chance each of floors 1-8 gets a drop-floor hall over a sealed arena (newly generated labyrinths only).
+dropArenaChance = 0.35
+#Fewest waves a drop arena spawns.
+arenaMinWaves = 1
+#Most waves a drop arena spawns.
+arenaMaxWaves = 3
+#Mobs in each arena wave, before the per-tier bonus.
+arenaMobsPerWave = 2
+#Extra mobs per wave for every tier (two floors).
+arenaMobsPerTier = 0.5
+#Ticks between an arena wave dying and the next one arriving.
+arenaWaveDelayTicks = 60
+#Seconds after a drop before the arena's exit unseals even if the waves still live, so nobody is trapped for good.
+arenaEscapeSeconds = 150
+#Seconds an active arena with nobody inside waits before resetting.
+arenaEmptyResetSeconds = 30
+#Whether players get a Labyrinth Sigil on entering a labyrinth without one.
+sigilAutoGive = true
+#Whether players get the Labyrinth Journal (needs Patchouli) the first time they enter a labyrinth.
+journalAutoGive = true
+#How close (in blocks) a player must be to a labyrinth to use its Sigil.
+sigilRange = 512
+#Seconds the Sigil channels before teleporting. Taking damage cancels it.
+sigilChannelSeconds = 3
+#Seconds before the Sigil can be used again after a teleport.
+sigilCooldownSeconds = 180
+#Chance a labyrinth mob drops a Labyrinth Key, before the per-floor bonus. Guardians always drop one.
+keyDropChance = 0.04
+#Key drop chance added per floor.
+keyDropChancePerFloor = 0.01
+#Chance a one-door vault is hidden behind a Labyrinth Wall (newly generated labyrinths only).
+secretVaultChance = 0.35
+#Chance a one-door vault is sealed and needs a Labyrinth Key (newly generated labyrinths only).
+sealedVaultChance = 0.3
+#Whether the floor-10 guardian chest and Forge vaults can hold character outfits.
+outfitLoot = true
+#Whether labyrinth floors roll dungeon modifiers. Each floor's modifiers are rolled once per labyrinth from the world seed and kept.
+modifiersEnabled = true
+#Fewest modifiers each floor rolls, floors 1 to 10 in order.
+modifierMinCount = [0, 0, 1, 1, 1, 1, 2, 2, 2, 2]
+#Most modifiers each floor rolls, floors 1 to 10 in order.
+modifierMaxCount = [1, 1, 2, 2, 2, 2, 3, 3, 3, 3]
+#Roll weight of Magicule Drought (0 disables it).
+magiculeDroughtWeight = 10
+#Shallowest floor Magicule Drought can appear on.
+magiculeDroughtMinFloor = 1
+#Roll weight of Battlewill Lock (0 disables it). A floor never rolls more than one of the three locks.
+battlewillLockWeight = 6
+#Shallowest floor Battlewill Lock can appear on.
+battlewillLockMinFloor = 3
+#Roll weight of Magic Lock (0 disables it).
+magicLockWeight = 6
+#Shallowest floor Magic Lock can appear on.
+magicLockMinFloor = 3
+#Roll weight of Skill Lock (0 disables it).
+skillLockWeight = 6
+#Shallowest floor Skill Lock can appear on.
+skillLockMinFloor = 3
+#Roll weight of Engrave Lock (0 disables it).
+engraveLockWeight = 6
+#Shallowest floor Engrave Lock can appear on.
+engraveLockMinFloor = 4
+#Roll weight of Sealed Skills (0 disables it).
+sealedSkillsWeight = 8
+#Shallowest floor Sealed Skills can appear on.
+sealedSkillsMinFloor = 2
+#Roll weight of Hunted (0 disables it).
+huntedWeight = 7
+#Shallowest floor Hunted can appear on.
+huntedMinFloor = 3
+#Roll weight of Time Limit (0 disables it).
+timeLimitWeight = 7
+#Shallowest floor Time Limit can appear on.
+timeLimitMinFloor = 2
+#Magicule regeneration multiplier under Magicule Drought (0.5 = half regeneration).
+droughtRegenMultiplier = 0.5
+#Skills Sealed Skills may seal. Use skill ids (tensura:spatial_motion) or skill tags (#namespace:tag).
+sealedSkillPool = ["tensura:spatial_motion", "tensura:shadow_motion", "tensura:spatial_domination", "tensura:spatial_manipulation", "tensura:gravity_flight", "tensura:hydraulic_propulsion", "tensura:multilayer_barrier", "tensura:ranged_barrier", "tensura:self_regeneration", "tensura:ultraspeed_regeneration", "tensura:infinite_regeneration", "tensura:body_double", "tensura:thought_acceleration", "tensura:ultra_instinct", "tensura:universal_perception", "tensura:all_seeing_eye", "tensura:magic_sense", "tensura:danger_sense", "tensura:reflector", "tensura:traveler", "tensura:unyielding"]
+#Fewest owned skills Sealed Skills seals.
+sealedSkillMin = 1
+#Most owned skills Sealed Skills seals.
+sealedSkillMax = 3
+#Seconds on a Hunted floor before the first hunter arrives.
+hunterFirstSeconds = 45
+#Seconds between hunters arriving, and before a slain hunter returns.
+hunterIntervalSeconds = 150
+#Every this many seconds spent on a Hunted floor allows one more hunter at once.
+hunterEscalateSeconds = 240
+#Most hunters chasing one player at once.
+hunterMax = 3
+#Extra max health multiplier for hunters, on top of guardian scaling.
+hunterHealthMultiplier = 2.0
+#Extra attack damage multiplier for hunters, on top of guardian scaling.
+hunterDamageMultiplier = 1.5
+#Seconds a player may spend on a Time Limit floor, before the per-floor bonus. The clock only runs while on that floor and clears on reaching a deeper floor.
+timeLimitSeconds = 480
+#Seconds added to the time limit per floor.
+timeLimitPerFloorSeconds = 30
+#Bonus vault rolls per point of modifier severity when a player first descends past a floor (0 disables the bonus). Locks, Engrave Lock and Hunted count 2, the rest 1.
+rewardRollsPerSeverity = 0.5
+#Most bonus vault rolls one floor can give.
+rewardMaxRolls = 3
+#Whether guardians that respawn after a Time Limit reset drop a Labyrinth Key again.
+respawnedGuardiansDropKeys = false
+#The rules below apply inside an unconquered labyrinth, entrance shaft included. Creative and spectator players are exempt, and every rule lifts once all five guardians of that labyrinth have fallen. Whether players are blocked from teleporting into, within or out of a labyrinth (ender pearls, chorus fruit, skills, spells, non-op commands). The Labyrinth Sigil and Spatial Warp traps still work.
+blockTeleportation = true
+#Teleports shorter than this many blocks are allowed, so movement corrections and tiny nudges still work.
+teleportMinDistance = 1.0
+#Whether players are blocked from placing blocks and fluids, including blocks placed by their skills.
+blockPlacement = true
+#Whether players are blocked from creating entities: spawn eggs, boats, minecarts, armor stands, item frames, summons, clones and other skill-made creatures. Projectiles, dropped items and experience still work.
+blockEntityCreation = true
+#Entity ids (minecraft:boat) or entity tags (#namespace:tag) players may still create.
+allowedPlayerEntities = []
+#Whether players riding anything (or mounting anything) inside a labyrinth are sent back to its surface entrance, mount included.
+ejectMounted = true
+#Whether barrier skills are disabled and active barriers are stripped on entry.
+blockBarriers = true
+#A skill whose id contains any of these words counts as a barrier skill.
+barrierSkillKeywords = ["barrier"]
+#Extra barrier skills, as skill ids (namespace:skill) or skill tags (#namespace:tag).
+extraBarrierSkills = []
+#Whether nullification skills grant nothing inside.
+disableNullifications = true
+#Whether resistance skills grant nothing inside. Only applies while the nightmareCombatRebalance gamerule is off.
+disableResistances = true
+#Whether all flight is disabled for non-creative players: creative-style flight, elytra gliding, wings and flight forms.
+blockFlight = true
+#Flight skills disabled inside, as skill ids (namespace:skill) or skill tags (#namespace:tag).
+flightSkills = ["tensura:gravity_flight"]
+#Whether healing is restricted to natural food regeneration and Tensura's Self-Regeneration.
+restrictHealing = true
+#Ticks between repeats of the same blocked-action message.
+ruleMessageCooldownTicks = 40

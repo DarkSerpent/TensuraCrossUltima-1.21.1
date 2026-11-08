@@ -1,0 +1,377 @@
+#Controls for trevolved:arch_priest. Detailed balance is in this same file.
+#Allow learning this ability. Existing ownership is kept.
+allowAcquisition = true
+#Allow active subskills. Inherent passives are not removed.
+allowActiveUse = true
+#Allow enabling its native passive toggle. Switching it off remains allowed.
+allowPassiveToggle = true
+#Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+allowTerrainDamage = true
+
+[evolution]
+    #Current native subordinates required to evolve Arch Priest into Water Goddess.
+    # Default: 50
+    # Range: > 0
+    archPriestRequiredSubordinates = 50
+
+    [evolution.archPriest]
+        #Required effective maximum EP.
+        # Default: 500000
+        # Range: 0 ~ 9223372036854775807
+        maximumEp = 500000
+        #Primary progression requirement.
+        # Default: 60
+        # Range: > 0
+        requirementA = 60
+        #Secondary progression requirement.
+        # Default: 10
+        # Range: > 0
+        requirementB = 10
+        #Tertiary progression requirement.
+        # Default: 100
+        # Range: > 0
+        requirementC = 100
+        #Optional fourth progression requirement.
+        # Default: 10
+        # Range: > 0
+        requirementD = 10
+        #Require the Unique skill to be mastered.
+        requireMastery = true
+
+[archPriest]
+    #Water Goddess holy Magic damage multiplier.
+    # Default: 6.0
+    # Range: 0.0 ~ 1000.0
+    goddessHolyDamageMultiplier = 6.0
+    #Water Goddess Purification damage multiplier.
+    # Default: 5.0
+    # Range: 0.0 ~ 1000.0
+    goddessPurificationDamageMultiplier = 5.0
+    #Mastered Water Goddess Purification damage multiplier.
+    # Default: 8.0
+    # Range: 0.0 ~ 1000.0
+    goddessPurificationDamageMultiplierMastered = 8.0
+    #Water Goddess water damage multiplier.
+    # Default: 20.0
+    # Range: 0.0 ~ 1000.0
+    goddessWaterDamageMultiplier = 20.0
+    #Holy damage dealt to ordinary targets.
+    # Default: 300.0
+    # Range: 0.0 ~ 1.0E9
+    purificationDamage = 300.0
+    #Minimum holy damage dealt to undead.
+    # Default: 1000.0
+    # Range: 0.0 ~ 1.0E9
+    purificationMinimumUndeadDamage = 1000.0
+    #Base Sacred Exorcism holy damage.
+    # Default: 12000.0
+    # Range: 0.0 ~ 1.0E9
+    sacredExorcismDamage = 12000.0
+    #Mastered Water Goddess Purification cooldown.
+    # Default: 15
+    # Range: 0 ~ 86400
+    goddessPurificationCooldownMasteredSeconds = 15
+    #Seconds removed from Water Goddess Purification's inherited cooldown.
+    # Default: 2
+    # Range: 0 ~ 86400
+    goddessPurificationCooldownReductionSeconds = 2
+    #Water Goddess Purification cooldown.
+    # Default: 18
+    # Range: 0 ~ 86400
+    goddessPurificationCooldownSeconds = 18
+    #Mastered Water Goddess Resurrection cooldown.
+    # Default: 60
+    # Range: 0 ~ 86400
+    goddessResurrectionCooldownMasteredSeconds = 60
+    #Water Goddess Resurrection cooldown.
+    # Default: 90
+    # Range: 0 ~ 86400
+    goddessResurrectionCooldownSeconds = 90
+    #Water Goddess resurrection cost.
+    # Default: 0.25
+    # Range: 0.0 ~ 10.0
+    goddessResurrectionFormerEpCostFraction = 0.25
+    #Mastered Purification cooldown.
+    # Default: 18
+    # Range: 0 ~ 86400
+    purificationCooldownMasteredSeconds = 18
+    #Purification cooldown.
+    # Default: 20
+    # Range: 0 ~ 86400
+    purificationCooldownSeconds = 20
+    #Faith spent by a valid Purification.
+    # Default: 20.0
+    # Range: 0.0 ~ 1000000.0
+    purificationFaithCost = 20.0
+    #Mastered Arch Priest Resurrection cooldown.
+    # Default: 90
+    # Range: 0 ~ 86400
+    resurrectionCooldownMasteredSeconds = 90
+    #Arch Priest Resurrection cooldown.
+    # Default: 120
+    # Range: 0 ~ 86400
+    resurrectionCooldownSeconds = 120
+    #Arch Priest resurrection cost.
+    # Default: 0.5
+    # Range: 0.0 ~ 10.0
+    resurrectionFormerEpCostFraction = 0.5
+    #Mastered Sacred Exorcism cooldown.
+    # Default: 15
+    # Range: 0 ~ 86400
+    sacredExorcismCooldownMasteredSeconds = 15
+    #Sacred Exorcism cooldown.
+    # Default: 18
+    # Range: 0 ~ 86400
+    sacredExorcismCooldownSeconds = 18
+    #Faith spent by a valid Sacred Exorcism.
+    # Default: 35.0
+    # Range: 0.0 ~ 1000000.0
+    sacredExorcismFaithCost = 35.0
+    #Mastered Water Goddess soul window.
+    # Default: 90
+    # Range: 1 ~ 3600
+    goddessResurrectionWindowMasteredSeconds = 90
+    #Water Goddess soul window.
+    # Default: 60
+    # Range: 1 ~ 3600
+    goddessResurrectionWindowSeconds = 60
+    #Purification target range.
+    # Default: 20
+    # Range: 1 ~ 128
+    purificationRange = 20
+    #Mastered Arch Priest soul window.
+    # Default: 30
+    # Range: 1 ~ 3600
+    resurrectionWindowMasteredSeconds = 30
+    #Arch Priest soul window.
+    # Default: 15
+    # Range: 1 ~ 3600
+    resurrectionWindowSeconds = 15
+    #Sacred Exorcism target range.
+    # Default: 40
+    # Range: 1 ~ 256
+    sacredExorcismRange = 40
+    #Arch Priest Faith capacity.
+    # Default: 100.0
+    # Range: 1.0 ~ 1000000.0
+    archPriestFaithMaximum = 100.0
+    #Faith per second for each effective Arch Priest subordinate.
+    # Default: 0.25
+    # Range: 0.0 ~ 1000000.0
+    archPriestFaithPerSubordinateSecond = 0.25
+    #Mastered Arch Priest Faith per second for each effective subordinate.
+    # Default: 0.35
+    # Range: 0.0 ~ 1000000.0
+    archPriestFaithPerSubordinateSecondMastered = 0.35
+    #Healing multiplier while Arch Priest is possessed.
+    # Default: 2.0
+    # Range: 0.0 ~ 1000.0
+    archPriestHealingMultiplier = 2.0
+    #Subordinates contributing at full regeneration strength.
+    # Default: 10
+    # Range: 0 ~ 100000
+    faithFullContributionSubordinates = 10
+    #Regeneration contribution of subordinates after the full-strength group.
+    # Default: 0.25
+    # Range: 0.0 ~ 1.0
+    faithReducedContributionMultiplier = 0.25
+    #Additional subordinates contributing at reduced strength.
+    # Default: 30
+    # Range: 0 ~ 100000
+    faithReducedContributionSubordinates = 30
+    #Water Goddess Purification's 1.25-second chant in ticks.
+    # Default: 25
+    # Range: 1 ~ 1200
+    goddessPurificationCastTicks = 25
+    #Mastered Water Goddess's 0.75-second chant in ticks.
+    # Default: 15
+    # Range: 1 ~ 1200
+    goddessPurificationCastTicksMastered = 15
+    #Native barrier and resistance bypass for Water Goddess Water and Holy Magic.
+    # Default: 1.0
+    # Range: 0.0 ~ 1.0
+    goddessWaterAndHolyBarrierResistanceBypass = 1.0
+    #Purification's 2.5-second minimum holy chant in ticks.
+    # Default: 50
+    # Range: 1 ~ 1200
+    purificationCastTicks = 50
+    #Mastered Purification's 2-second chant in ticks.
+    # Default: 40
+    # Range: 1 ~ 1200
+    purificationCastTicksMastered = 40
+    #Purification bypass against undead, daemons, and other holy-vulnerable targets.
+    # Default: 1.0
+    # Range: 0.0 ~ 1.0
+    purificationHolyTargetBarrierResistanceBypass = 1.0
+    #Purification barrier and resistance bypass against ordinary targets.
+    # Default: 0.5
+    # Range: 0.0 ~ 1.0
+    purificationOrdinaryBarrierResistanceBypass = 0.5
+    #Mastered Sacred Exorcism damage multiplier.
+    # Default: 1.75
+    # Range: 0.0 ~ 1000.0
+    sacredExorcismMasteryMultiplier = 1.75
+    #Undead and daemon damage multiplier.
+    # Default: 4.0
+    # Range: 1.0 ~ 1000.0
+    sacredExorcismUndeadMultiplier = 4.0
+    #Maximum simultaneous resurrection snapshots retained by the server. Zero disables soul recording.
+    # Default: 2048
+    # Range: 0 ~ 65536
+    soulRecordLimit = 2048
+    #Maximum serialized NBT bytes retained for one non-player soul snapshot.
+    # Default: 262144
+    # Range: 1024 ~ 16777216
+    soulSnapshotByteLimit = 262144
+    #Water Goddess Faith capacity.
+    # Default: 200.0
+    # Range: 1.0 ~ 1000000.0
+    waterGoddessFaithMaximum = 200.0
+    #Faith per second for each effective Water Goddess subordinate.
+    # Default: 0.5
+    # Range: 0.0 ~ 1000000.0
+    waterGoddessFaithPerSubordinateSecond = 0.5
+    #Mastered Water Goddess Faith per second for each effective subordinate.
+    # Default: 0.7
+    # Range: 0.0 ~ 1000000.0
+    waterGoddessFaithPerSubordinateSecondMastered = 0.7
+    #Healing multiplier while Water Goddess is possessed.
+    # Default: 6.0
+    # Range: 0.0 ~ 1000.0
+    waterGoddessHealingMultiplier = 6.0
+
+[abilities]
+
+    [abilities.water_god_aqua]
+        #Controls for trevolved:water_god_aqua. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.water_god_aqua.subskills]
+
+            #Native mode 0: arch_priest.purification. IDs/indices are not renumbered when disabled.
+            [abilities.water_god_aqua.subskills.arch_priest_purification]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 1: arch_priest.resurrection. IDs/indices are not renumbered when disabled.
+            [abilities.water_god_aqua.subskills.arch_priest_resurrection]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 2: water_goddess.sacred_exorcism. IDs/indices are not renumbered when disabled.
+            [abilities.water_god_aqua.subskills.water_goddess_sacred_exorcism]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+[subskills]
+
+    #Native mode 0: arch_priest.purification. IDs/indices are not renumbered when disabled.
+    [subskills.arch_priest_purification]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+    #Native mode 1: arch_priest.resurrection. IDs/indices are not renumbered when disabled.
+    [subskills.arch_priest_resurrection]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

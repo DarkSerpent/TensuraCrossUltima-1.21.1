@@ -1,0 +1,8 @@
+#Max health Lesser Next Generation has on top of a Human. Every other stat matches the Human config.
+lesserHealthBonus = 50.0
+#Max health Greater Next Generation has on top of an Enlightened Human. Every other stat matches the Enlightened Human config.
+greaterHealthBonus = 100.0
+#Max health a Demonoid has on top of a Human Saint. Every other stat matches the Human Saint config.
+demonoidHealthBonus = 150.0
+#Max health a Divine Demonoid has on top of a Divine Human. Every other stat matches the Divine Human config.
+divineDemonoidHealthBonus = 200.0

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "note": "Controls apothic boss skill autocast integration via Nightmare Utils.",
+  "enabled": true,
+  "includeApothMiniBosses": true,
+  "chancePerBoss": 0.45,
+  "defaultCooldownTicks": 60,
+  "maxRangeBlocks": 20.0,
+  "strictEntityAllowlist": false,
+  "allowedEntityTypes": [
+    "tensura:otherworlder",
+    "tensura:charybdis",
+    "tensura_neb:*"
+  ],
+  "grantRandomGreaterSpiritSkills": true,
+  "minRandomGreaterSpiritSkills": 2,
+  "maxRandomGreaterSpiritSkills": 4,
+  "greaterSpiritSkillIds": [
+    "tensura:water_blade",
+    "tensura:water_current_control",
+    "tensura:water_cutter",
+    "tensura:wind_blade",
+    "tensura:wind_cutter",
+    "tensura:fire_ball",
+    "tensura:fire_bolt",
+    "tensura:stone_shot",
+    "tensura:earth_spikes",
+    "tensura:electro_blast",
+    "tensura:wind_manipulation",
+    "tensura:water_manipulation",
+    "tensura:spatial_motion",
+    "tensura:spatial_manipulation",
+    "tensura:gravity_manipulation",
+    "tensura:degenerate",
+    "tensura:five_petals_thrust",
+    "tensura:eight_petals_flash"
+  ],
+  "deniedSkillTypes": [
+    "debug"
+  ],
+  "deniedSkillIds": [
+    "tensura:researcher",
+    "tensura:analytical_appraisal"
+  ]
+}

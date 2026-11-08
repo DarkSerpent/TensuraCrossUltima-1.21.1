@@ -1,0 +1,64 @@
+#Magicules needed to acquire Forest Guardian.
+magiculeAcquirement = 45000.0
+#Photosynther: blocks of flora are counted within this many blocks of you.
+floraRadius = 6
+#Photosynther: how many flora blocks (block tag trnightmare:forest_guardian_flora) must be around you.
+floraThreshold = 12
+#Photosynther: ticks between flora scans.
+floraScanTicks = 40
+#Photosynther: Magicule, Aura and Spiritual Health regeneration multiplier near flora (4.0 = x4).
+regenMultiplier = 4.0
+#Photosynther: extra natural health regeneration near flora, as a multiple of vanilla natural regeneration (3.0 on top of vanilla = x4).
+healthRegenBonus = 3.0
+#Photosynther: ticks between extra health regeneration pulses.
+healthRegenTicks = 10
+#Shockwave Slam: radius in blocks around the struck target.
+slamRadius = 2.5
+#Shockwave Slam: share of the punch's damage dealt to everyone else in the radius (0.5 = 50%).
+slamDamageShare = 0.5
+#Shockwave Slam: knockback strength of the shockwave.
+slamKnockback = 0.4
+#Big Thorn Shockwave Slam: extra radius in blocks.
+bigThornRadiusBonus = 3.0
+#Big Thorn Shockwave Slam: extra Earth damage dealt by the shockwave.
+bigThornEarthDamage = 50.0
+#Photosynthesis Cannon: seconds of charging before the beam is ready.
+cannonChargeSeconds = 4.0
+#Photosynthesis Cannon: Light damage of each beam.
+cannonDamage = 100.0
+#Photosynthesis Cannon: reach in blocks.
+cannonRange = 48.0
+#Photosynthesis Cannon: Magicules spent per shot.
+cannonMagiculeCost = 1500.0
+#Photosynthesis Cannon: cooldown in seconds after firing.
+cannonCooldownSeconds = 8
+#Photosynthesis Cannon: movement speed lost while charging (0.6 = -60%). Lightfooted removes it.
+cannonSlow = 0.6
+#Super-Charged Vaporizer: bonus damage for every full second held past the charge time.
+vaporizerDamagePerSecond = 50.0
+#Super-Charged Vaporizer: most extra seconds that add damage; the beam fires by itself at this cap.
+vaporizerMaxSeconds = 4
+#Treefolk Tripleshot: number of beams fired.
+tripleshotBeams = 3
+#Treefolk Tripleshot: extra beams seek other enemies within this many blocks of the aim point.
+tripleshotSeekRadius = 5.0
+#Sun Skewer: resistance bypass level of the beam (1 = resistances, 2 = nullifications too).
+sunSkewerBypassLevel = 2.0
+#Sequoia Stampede: radius in blocks.
+stampedeRadius = 6.0
+#Sequoia Stampede: Earth damage dealt to every enemy in the radius.
+stampedeDamage = 75.0
+#Sequoia Stampede: upward launch strength.
+stampedeKnockUp = 0.7
+#Sequoia Stampede: outward push strength.
+stampedePush = 0.5
+#Sequoia Stampede: Magicules spent per slam.
+stampedeMagiculeCost = 1000.0
+#Sequoia Stampede: cooldown in seconds.
+stampedeCooldownSeconds = 10
+#Super Stampede: base critical chance in percent, added to your critical attack chance attribute.
+stampedeCritChance = 25.0
+#Super Stampede: critical damage multiplier used when your critical damage attribute is lower.
+stampedeCritMultiplier = 1.5
+#Ultimate Stampede: share of your max health added as bonus damage (0.5 = half).
+ultimateStampedeHealthShare = 0.5

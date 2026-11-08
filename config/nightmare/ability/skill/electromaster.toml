@@ -1,0 +1,106 @@
+#Magicules needed to acquire Electromaster.
+magiculeAcquirement = 60000.0
+#Electro Body: share of Lightning damage you still take before mastery (0.5 = 50% less).
+electroBodyDamageTaken = 0.5
+#Level 5: share of a blocked Lightning hit that heals you instead (1.0 = all of it).
+electroBodyHealShare = 1.0
+#Electric Field: radius in blocks in which moving creatures are felt.
+fieldRadius = 24.0
+#Electric Field: a creature closer than this behind you triggers the ping.
+fieldBehindRadius = 8.0
+#Electric Field: half-angle in degrees of your front view; anything outside it counts as behind you.
+fieldFrontAngle = 110.0
+#Electric Field: seconds before the same creature can ping again.
+fieldPingCooldownSeconds = 3.0
+#Electric Field: most markers drawn at once.
+fieldMaxMarkers = 24
+#Magnetic Levitation: blocks within this many blocks of you hold you up.
+levitationRadius = 2.5
+#Magnetic Levitation: climbing speed up magnetic walls, in blocks per tick.
+levitationClimbSpeed = 0.2
+#Magnetic Levitation: hover sink speed in blocks per tick. Keep it above 0.032 on servers with allow-flight off.
+levitationHoverSink = 0.04
+#Magnetic Levitation: sink speed while sneaking, in blocks per tick.
+levitationSneakSink = 0.18
+#Magnetic Levitation: radius in blocks of the Shift yank.
+yankRadius = 12.0
+#Magnetic Levitation: pull strength of the Shift yank per pulse.
+yankStrength = 0.35
+#Magnetic Levitation: ticks between Shift yank pulses.
+yankIntervalTicks = 5
+#Railgun: reach in blocks.
+railgunRange = 64.0
+#Railgun: most targets the beam pierces.
+railgunPierce = 5
+#Railgun: Magicules spent per shot, on top of the coin.
+railgunMagiculeCost = 1000.0
+#Railgun: cooldown in seconds.
+railgunCooldownSeconds = 5
+#Coin Toss: Railgun cooldown in seconds.
+coinTossCooldownSeconds = 3
+#Railgun: Lightning damage with a Bronze Coin.
+railgunBronzeDamage = 60.0
+#Railgun: Lightning damage with a Silver Coin.
+railgunSilverDamage = 120.0
+#Railgun: Lightning damage with a Gold Coin.
+railgunGoldDamage = 200.0
+#Railgun: Lightning damage with a Stellar Gold Coin.
+railgunStellarDamage = 400.0
+#Railgun: break glass, panes and leaves along the beam (still respects mobGriefing and claims).
+railgunBreaksBlocks = true
+#Rapid Fire: seconds between automatic shots while held.
+rapidFireIntervalSeconds = 1.5
+#Rapid Fire: most coins fired per hold.
+rapidFireMaxShots = 5
+#Level 5: resistance bypass level of the Railgun (1 = resistances, 2 = nullifications too).
+levelFiveBypassLevel = 2.0
+#Iron Sand Sword: blade reach in blocks.
+sandSwordReach = 6.0
+#Grand Saw: blade reach in blocks.
+grandSawReach = 9.0
+#Iron Sand Sword: Lightning damage per swing.
+sandSwordDamage = 35.0
+#Iron Sand Sword: ticks between automatic swings while held.
+sandSwordSwingTicks = 10
+#Iron Sand Sword: Magicules drained every second.
+sandSwordMagiculePerSecond = 400.0
+#Iron Sand Sword: radius in blocks searched for sand lying next to an iron block.
+sandSearchRadius = 6
+#Iron Sand Sword: blade thickness in blocks used for hits along the blade.
+sandSwordWidth = 0.6
+#Grand Saw: Paralysis seconds on hit.
+grandSawParalysisSeconds = 1.0
+#Lightning Spear: reach in blocks.
+spearRange = 32.0
+#Lightning Spear: Lightning damage to the first target.
+spearDamage = 75.0
+#Lightning Spear: Lightning damage of each arc.
+spearArcDamage = 40.0
+#Lightning Spear: number of arcs.
+spearArcs = 2
+#Ten Billion Volts: number of arcs.
+tenBillionArcs = 4
+#Ten Billion Volts: damage multiplier in rain or thunder.
+tenBillionMultiplier = 2.0
+#Lightning Spear: arc jump radius in blocks.
+spearArcRadius = 6.0
+#Lightning Spear: Magicules spent per throw.
+spearMagiculeCost = 1500.0
+#Lightning Spear: cooldown in seconds.
+spearCooldownSeconds = 6
+#Electromagnetic Burst: charge time in seconds.
+burstChargeSeconds = 2.0
+#Electromagnetic Burst: pulse radius in blocks.
+burstRadius = 12.0
+#Electromagnetic Burst: Lightning damage to every enemy in the pulse.
+burstDamage = 200.0
+#Electromagnetic Burst: seconds of Magic Interference, golem stalls and disabled defenses.
+burstDisruptSeconds = 5.0
+#Electromagnetic Burst: Magic Interference amplifier.
+burstInterferenceAmplifier = 0
+#Electromagnetic Burst: Magicules spent per pulse.
+burstMagiculeCost = 8000.0
+#Electromagnetic Burst: cooldown in seconds.
+burstCooldownSeconds = 60
+#Blackout: Anti-Skill seconds on enemies.
+blackoutSeconds = 2.0

@@ -1,0 +1,4957 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "683C492B98C2B1F8"
+	group: "13F20E01BC3FA737"
+	icon: {
+		id: "cookingforblockheads:recipe_book"
+	}
+	id: "683C492B98C2B1F8"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "dungeonsdelight:arcane_chili"
+			}
+			id: "2AC4C9C484F9F28E"
+			rewards: [{
+				id: "40C0CAC405FA48FC"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "034A863D9A33AEC6"
+				item: { count: 1, id: "dungeonsdelight:arcane_chili" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 0.424d
+			y: -4.831d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:au_rotten_potatoes"
+			}
+			id: "346A98CF74B3DDCC"
+			rewards: [{
+				id: "0A4AF14C256CD900"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D9F3F194DC22A3B"
+				item: { count: 1, id: "dungeonsdelight:au_rotten_potatoes" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 3.407d
+			y: 4.444d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:aurora_ice_cream"
+			}
+			id: "1E9525E2FC9F773B"
+			rewards: [{
+				count: 5
+				id: "4B2D65BF654F0894"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0F61248E49892AF7"
+				item: { count: 1, id: "dungeonsdelight:aurora_ice_cream" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -6.165d
+			y: -1.091d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:blazing_blood_sausage"
+			}
+			icon_scale: 1.25d
+			id: "0C7E6662CD32D710"
+			rewards: [{
+				count: 5
+				id: "507592F17BC6A9A0"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0087190F6248F2A0"
+				item: { count: 1, id: "dungeonsdelight:blazing_blood_sausage" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 5.787d
+			y: -3.681d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:bloated_baked_potato"
+			}
+			id: "6838600DD526893E"
+			rewards: [{
+				id: "18D38DF0E58A6AC4"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2E9B204907EACF10"
+				item: { count: 1, id: "dungeonsdelight:bloated_baked_potato" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -1.923d
+			y: 7.154d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:bloody_mary"
+			}
+			id: "09AD7C18C6E12091"
+			rewards: [{
+				id: "2BFF4FC03E845568"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0A8901387200886C"
+				item: { count: 1, id: "dungeonsdelight:bloody_mary" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -3.65d
+			y: -7.028d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:brains_in_a_brick"
+			}
+			id: "2A968FD24246ECA4"
+			rewards: [{
+				id: "5BC2009400B29897"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2429B66B09DC0FD4"
+				item: { count: 1, id: "dungeonsdelight:brains_in_a_brick" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 7.89d
+			y: 2.882d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:breeze_cream_cone"
+			}
+			id: "2E901FF8E257B18A"
+			rewards: [{
+				count: 2
+				id: "293481904D473749"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "51092A17E38B2B2C"
+				item: { count: 1, id: "dungeonsdelight:breeze_cream_cone" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -8.185d
+			y: 3.378d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:bubblegunk"
+			}
+			id: "24F26F202AFDE78A"
+			rewards: [{
+				count: 5
+				id: "768BA28FCB0CEDEB"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A51EA874EA1D946"
+				item: { count: 1, id: "dungeonsdelight:bubblegunk" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 3.936d
+			y: -8.411d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:chicken_jockey_sandwich"
+			}
+			id: "7A51702A0F00522E"
+			rewards: [{
+				id: "11A6D546941A3996"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "45FDDB455BFA1094"
+				item: { count: 1, id: "dungeonsdelight:chicken_jockey_sandwich" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 2.903d
+			y: 9.255d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:chloropasta"
+			}
+			icon_scale: 1.25d
+			id: "734369372F4CEB21"
+			rewards: [{
+				count: 5
+				id: "5DF63FBDB3A7AFEC"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7AE6A8E5FF7DB74C"
+				item: { count: 1, id: "dungeonsdelight:chloropasta" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -8.735d
+			y: -5.062d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:cleaved_ancient_egg"
+			}
+			id: "1521D92CB87B0654"
+			rewards: [{
+				id: "10A4837824B87B5E"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "671D8E7B0EE6D622"
+				item: { count: 1, id: "dungeonsdelight:cleaved_ancient_egg" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 10.232d
+			y: -2.25d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:cob_n_candy"
+			}
+			id: "1BC46234E9DAD141"
+			rewards: [{
+				count: 5
+				id: "50C3263A418BC49B"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4C5C4B65064ED2F7"
+				item: { count: 1, id: "dungeonsdelight:cob_n_candy" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -6.237d
+			y: 8.871d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:cooked_sniffer_shank"
+			}
+			id: "50926F45A3AC744F"
+			rewards: [{
+				id: "5377403D6C2EAE09"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "551D40791EDF707D"
+				item: { count: 1, id: "dungeonsdelight:cooked_sniffer_shank" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -1.439d
+			y: -11.107d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:cooked_snifferwurst"
+			}
+			id: "413D3AECDE983AEF"
+			rewards: [{
+				count: 2
+				id: "0F168C794707D9CF"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "732373ECDE153BE3"
+				item: { count: 1, id: "dungeonsdelight:cooked_snifferwurst" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 8.828d
+			y: 7.44d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:croak_monster"
+			}
+			id: "0CCA7E205A8E324E"
+			rewards: [{
+				id: "3D9050FB2BD067A0"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "39780C77D0F46155"
+				item: { count: 1, id: "dungeonsdelight:croak_monster" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -11.869d
+			y: 0.491d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:devilish_eggs"
+			}
+			id: "2F254C7BF35B40B9"
+			rewards: [{
+				id: "7AF3A0320F07ED96"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "53541478796162B1"
+				item: { count: 1, id: "dungeonsdelight:devilish_eggs" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 8.651d
+			y: -8.609d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:echo_rock_candy"
+			}
+			id: "536F3AA60B988597"
+			rewards: [{
+				count: 5
+				id: "4D00DECD50DC5428"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "32DBE8C10DF0FA7B"
+				item: { count: 1, id: "dungeonsdelight:echo_rock_candy" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -0.578d
+			y: 12.509d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:fluffy_floss"
+			}
+			id: "6192A1B4E3D71C27"
+			rewards: [{
+				id: "2867076A9F079FBD"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0896BAD700A75877"
+				item: { count: 1, id: "dungeonsdelight:fluffy_floss" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -8.221d
+			y: -9.852d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:gelled_salad"
+			}
+			id: "398A8349245D65C4"
+			rewards: [{
+				id: "74BDE0CCC8C667B2"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0DC434BC661E56B4"
+				item: { count: 1, id: "dungeonsdelight:gelled_salad" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 13.016d
+			y: 1.751d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:ghast_roll"
+			}
+			icon_scale: 1.25d
+			id: "1E93BAC7C83AAAFB"
+			rewards: [{
+				count: 5
+				id: "52C6E2D3E81FCD2F"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1694FCAC4189241A"
+				item: { count: 1, id: "dungeonsdelight:ghast_roll" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -11.023d
+			y: 7.669d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:ghoulash"
+			}
+			id: "4517D14E5ADB98D8"
+			rewards: [{
+				count: 5
+				id: "7EFABABEDAA77A9A"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4BE2F3A5C9308A15"
+				item: { count: 1, id: "dungeonsdelight:ghoulash" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 3.011d
+			y: -13.383d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:gyudon"
+			}
+			id: "3A4CB4E5FFE6CA65"
+			rewards: [{
+				id: "0E54429BA1558A8A"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F24C76BE9180333"
+				item: { count: 1, id: "dungeonsdelight:gyudon" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 6.961d
+			y: 12.147d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:haggis"
+			}
+			id: "4622055E0BFB2D1F"
+			rewards: [{
+				count: 5
+				id: "709B660D6B9A8C79"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7E88ABBB96A91CF9"
+				item: { count: 1, id: "dungeonsdelight:haggis" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -13.602d
+			y: -4.339d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:hydra_fricassee"
+			}
+			id: "4F4806DA62268355"
+			rewards: [{
+				id: "5E6547EAA1E62508"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2BEFE65978F3FF6B"
+				item: { count: 1, id: "dungeonsdelight:hydra_fricassee" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 13.208d
+			y: -6.102d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:jelly_beans"
+			}
+			id: "5AF0B6A70D2F7FE0"
+			rewards: [{
+				count: 5
+				id: "49A9196E39D8ACC1"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "060911F3AD8E3BAE"
+				item: { count: 1, id: "dungeonsdelight:jelly_beans" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -5.72d
+			y: 13.668d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:lutefisk"
+			}
+			id: "5054451946489426"
+			rewards: [{
+				id: "1EF44DF955928C37"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "57388D0C75216FA7"
+				item: { count: 1, id: "dungeonsdelight:lutefisk" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -5.103d
+			y: -14.189d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:malicious_sandwich"
+			}
+			id: "433B669D40B0D241"
+			rewards: [{
+				id: "52DAE734662B37C8"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "33008F415A16DC06"
+				item: { count: 1, id: "dungeonsdelight:malicious_sandwich" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 13.575d
+			y: 7.135d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:marshbellow"
+			}
+			id: "01F3F7B38B6129A5"
+			rewards: [{
+				count: 2
+				id: "6935C4977EBF4A4B"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "26035CE3FCBD538E"
+				item: { count: 1, id: "dungeonsdelight:marshbellow" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -15.075d
+			y: 3.974d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:maze_smore"
+			}
+			id: "6FFEE47366330B47"
+			rewards: [{
+				count: 2
+				id: "49E15794DC13CB26"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E31BA53F790307E"
+				item: { count: 1, id: "dungeonsdelight:maze_smore" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 8.566d
+			y: -13.323d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:monster_burger"
+			}
+			id: "3F91078C3A37F487"
+			rewards: [{
+				id: "0D1B2E789F5DB835"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1CD6B4DDD2C966C3"
+				item: { count: 1, id: "dungeonsdelight:monster_burger" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 2.724d
+			y: 15.852d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:monster_cake_slice"
+			}
+			id: "258C75C935B9039A"
+			rewards: [{
+				id: "0764639C0F20C7E9"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "43B2782643691387"
+				item: { count: 1, id: "dungeonsdelight:monster_cake_slice" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -12.908d
+			y: -9.997d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:monster_muffin"
+			}
+			id: "330A773979CC2104"
+			rewards: [{
+				count: 5
+				id: "11E78272F62723B9"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "738057B5F9D968FE"
+				item: { count: 1, id: "dungeonsdelight:monster_muffin" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 16.508d
+			y: -1.368d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:necronog"
+			}
+			id: "6A1F9D29F5A02DAE"
+			rewards: [{
+				id: "4450BF073584A2CB"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5764A9FA7BB39332"
+				item: { count: 1, id: "dungeonsdelight:necronog" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -11.409d
+			y: 12.332d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:poi"
+			}
+			id: "67CC9310B76D292D"
+			rewards: [{
+				count: 2
+				id: "54BFC288CE028687"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0250510B1D298E4F"
+				item: { count: 1, id: "dungeonsdelight:poi" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 0.083d
+			y: -17.032d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:poi_cup"
+			}
+			id: "59B96B0086EEC353"
+			rewards: [{
+				count: 5
+				id: "0B800B67071F07A5"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "17633BEA488358D3"
+				item: { count: 1, id: "dungeonsdelight:poi_cup" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 11.597d
+			y: 12.784d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:poisonous_poutine"
+			}
+			id: "053117AB3A19E9E3"
+			rewards: [{
+				id: "14D095FE389F291B"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "78F01FB9EFF302AF"
+				item: { count: 1, id: "dungeonsdelight:poisonous_poutine" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -17.411d
+			y: -1.614d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:putrid_spice_latte"
+			}
+			id: "639019F2DDAC5383"
+			rewards: [{
+				id: "3B169B6890D8E0C9"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "00170C3CD3785E94"
+				item: { count: 1, id: "dungeonsdelight:putrid_spice_latte" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 14.106d
+			y: -10.706d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:rot_roast"
+			}
+			id: "710853F12FB13B0E"
+			rewards: [{
+				id: "6CD4CF7295524B6B"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "12691FA310C1F449"
+				item: { count: 1, id: "dungeonsdelight:rot_roast" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -3.209d
+			y: 17.639d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:rotgourd_slice"
+			}
+			id: "45EB9B20F3DA1829"
+			rewards: [{
+				id: "547E2B1080C793FC"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4ABAB9D19D8A0714"
+				item: { count: 1, id: "dungeonsdelight:rotgourd_slice" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -9.665d
+			y: -15.358d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:rotpop"
+			}
+			id: "4A305236B9EEBF54"
+			rewards: [{
+				count: 5
+				id: "1885B2FDB882B981"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "07103B41D43649F5"
+				item: { count: 1, id: "dungeonsdelight:rotpop" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 17.708d
+			y: 4.853d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:rubaboo"
+			}
+			id: "6AECF73A463F797F"
+			rewards: [{
+				count: 5
+				id: "3DE84C463D2342F5"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "105489EC9E4E4F67"
+				item: { count: 1, id: "dungeonsdelight:rubaboo" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -16.524d
+			y: 8.48d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:rubaboo_cup"
+			}
+			id: "77AC927CDCDAF642"
+			rewards: [{
+				count: 5
+				id: "517D8B2E7941B33E"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "72530DB367BEE2B0"
+				item: { count: 1, id: "dungeonsdelight:rubaboo_cup" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 6.529d
+			y: -17.612d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:salt_soaked_stew"
+			}
+			id: "2C64EBC9BD734F6C"
+			rewards: [{
+				id: "3EC41594E295E00C"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7E92962391C7BC0F"
+				item: { count: 1, id: "dungeonsdelight:salt_soaked_stew" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 7.16d
+			y: 17.589d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:salt_soaked_stew_cup"
+			}
+			id: "01E6C35B9D14F13A"
+			rewards: [{
+				id: "4EB95DE14324BB95"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D58E9217DA3AC86"
+				item: { count: 1, id: "dungeonsdelight:salt_soaked_stew_cup" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -17.346d
+			y: -8.221d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:scaly_fiddlehead_risotto"
+			}
+			id: "6DBA1558206A03C5"
+			rewards: [{
+				count: 5
+				id: "4728DE633645DC3F"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "15B070E40293E02D"
+				item: { count: 1, id: "dungeonsdelight:scaly_fiddlehead_risotto" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 18.538d
+			y: -5.715d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:sculk_apple"
+			}
+			id: "338C386DD712406B"
+			rewards: [{
+				count: 5
+				id: "578E625BF25029F4"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "17BEC3E08DF5DE26"
+				item: { count: 1, id: "dungeonsdelight:sculk_apple" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -9.91d
+			y: 16.91d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:sculk_mayo"
+			}
+			id: "0C96C27A7AA7FF13"
+			rewards: [{
+				count: 5
+				id: "6C7951D838000204"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2087A62E7C5620A0"
+				item: { count: 1, id: "dungeonsdelight:sculk_mayo" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 16.302d
+			y: 11.58d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:sculk_tart_slice"
+			}
+			id: "29BA350ABCC8B70E"
+			rewards: [{
+				id: "04B7A2FED346ED4B"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1761507B0F18FE42"
+				item: { count: 1, id: "dungeonsdelight:sculk_tart_slice" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -20.036d
+			y: 2.497d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:shiokara"
+			}
+			icon_scale: 1.25d
+			id: "0BCFC6EC4EA3ECD4"
+			rewards: [{
+				count: 5
+				id: "71B2367FF99033F5"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "292E251475D6F732"
+				item: { count: 1, id: "dungeonsdelight:shiokara" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 13.212d
+			y: -15.523d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:silverfish_fried_rice"
+			}
+			id: "78FEB8B099E20DAD"
+			rewards: [{
+				count: 5
+				id: "2E011530962C983D"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "240DC85519042B10"
+				item: { count: 1, id: "dungeonsdelight:silverfish_fried_rice" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 0.75d
+			y: 20.562d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:sinigang"
+			}
+			id: "7B68B4B4AF7B8DA8"
+			rewards: [{
+				id: "4B7EC91E154C2538"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3EAA64423C5D646A"
+				item: { count: 1, id: "dungeonsdelight:sinigang" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -14.575d
+			y: -14.79d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:skyberry_brew"
+			}
+			id: "73C708E2C9E70F09"
+			rewards: [{
+				id: "0D66575109624394"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C5DA4930CCBD2FD"
+				item: { count: 1, id: "dungeonsdelight:skyberry_brew" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 20.926d
+			y: 1.07d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:snifferwurst"
+			}
+			id: "3A1F90D27FF29E0C"
+			rewards: [{
+				count: 2
+				id: "2D634E4258F9E41E"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2B7633330DB30DB4"
+				item: { count: 1, id: "dungeonsdelight:snifferwurst" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -16.296d
+			y: 13.465d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:snuffledog"
+			}
+			icon_scale: 1.25d
+			id: "6B3DB6C59744C7DD"
+			rewards: [{
+				count: 5
+				id: "7AB6E85884C4D46C"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4975933A21887A62"
+				item: { count: 1, id: "dungeonsdelight:snuffledog" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 2.947d
+			y: -21.12d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:soaked_skewer"
+			}
+			id: "06DCF0AAB3C013A1"
+			rewards: [{
+				id: "44D35ADE8DF0ACD0"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D89328E60E5434A"
+				item: { count: 1, id: "dungeonsdelight:soaked_skewer" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 12.197d
+			y: 17.714d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:soft_serve_sniffer_egg"
+			}
+			id: "2F68A3306C215CDD"
+			rewards: [{
+				id: "0FCF5AC5D9049751"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7878B022761C7C79"
+				item: { count: 1, id: "dungeonsdelight:soft_serve_sniffer_egg" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -21.136d
+			y: -4.863d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:spider_bisque"
+			}
+			id: "18F99ED28A090AAF"
+			rewards: [{
+				count: 5
+				id: "3BA049FCABAD97E2"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4337CDD7CC2A53CA"
+				item: { count: 1, id: "dungeonsdelight:spider_bisque" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 19.027d
+			y: -10.78d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:spider_bubble_tea"
+			}
+			id: "051D8F9BE109F7E4"
+			rewards: [{
+				count: 5
+				id: "00E5D3BBEF90B581"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4B5881EF7C89E9C9"
+				item: { count: 1, id: "dungeonsdelight:spider_bubble_tea" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -6.803d
+			y: 20.971d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:spider_salmagundi"
+			}
+			id: "72C76461BEB45CFE"
+			rewards: [{
+				count: 5
+				id: "4FA9CA50A7A3E597"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "25854CC28300E345"
+				item: { count: 1, id: "dungeonsdelight:spider_salmagundi" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -9.223d
+			y: -20.22d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:spider_salmagundi_cup"
+			}
+			id: "489E608DC2D4A704"
+			rewards: [{
+				count: 5
+				id: "1CBC50D1314A8F2F"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "25127F9E140FC360"
+				item: { count: 1, id: "dungeonsdelight:spider_salmagundi_cup" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 20.621d
+			y: 8.748d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:spider_tanghulu"
+			}
+			id: "12AC27D1104A4805"
+			rewards: [{
+				id: "36D7288BB4C30628"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "290728DF867A0B74"
+				item: { count: 1, id: "dungeonsdelight:spider_tanghulu" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -21.279d
+			y: 7.537d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:sweetbread"
+			}
+			id: "41DFB924C70CC395"
+			rewards: [{
+				count: 5
+				id: "275DA3E50A748590"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C49A1BAAD084742"
+				item: { count: 1, id: "dungeonsdelight:sweetbread" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 10.681d
+			y: -20.084d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:takoyaki"
+			}
+			id: "0055AE3F3CDC3AB7"
+			rewards: [{
+				id: "4E2A47B19752B22B"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "442EFDBF1550EAF1"
+				item: { count: 1, id: "dungeonsdelight:takoyaki" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 5.734d
+			y: 22.19d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:taro_milk_tea"
+			}
+			id: "6C956D0659C292F8"
+			rewards: [{
+				id: "1D137B7E2A4C58B0"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "378B9F6F7972C3F0"
+				item: { count: 1, id: "dungeonsdelight:taro_milk_tea" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -19.36d
+			y: -12.582d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:terrine_loaf"
+			}
+			id: "734B76CB88E8D2AF"
+			rewards: [{
+				id: "11A9AB5C08284CA5"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "730C7C492F009BEE"
+				item: { count: 1, id: "dungeonsdelight:terrine_loaf" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 22.941d
+			y: -3.828d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:tower_boreito"
+			}
+			icon_scale: 1.25d
+			id: "710E8B6C183928B4"
+			rewards: [{
+				count: 5
+				id: "33999C39D62953F7"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "23CA10B9899A8084"
+				item: { count: 1, id: "dungeonsdelight:tower_boreito" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -14.434d
+			y: 18.451d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:trial_freakshake"
+			}
+			icon_scale: 1.25d
+			id: "3568CFD26A402E3E"
+			rewards: [{
+				count: 5
+				id: "1AD5587CC35D8382"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "13912693934E1B4B"
+				item: { count: 1, id: "dungeonsdelight:trial_freakshake" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -1.833d
+			y: -23.522d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:venomous_onigiri"
+			}
+			id: "795BDBCA3802C004"
+			rewards: [{
+				id: "1B0AA77903424C34"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "090E5F68D3BE6D0A"
+				item: { count: 1, id: "dungeonsdelight:venomous_onigiri" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 17.362d
+			y: 16.219d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:wardenzola"
+			}
+			id: "3F2CD9EDBCBFF597"
+			rewards: [{
+				count: 5
+				id: "0A92EE5C07A756E1"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3F3844C0F5679325"
+				item: { count: 1, id: "dungeonsdelight:wardenzola" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -23.922d
+			y: -0.233d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:wardenzola_crumbles"
+			}
+			id: "3085624B5442A9D3"
+			rewards: [{
+				id: "04A5CC9EAEFB5BB3"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4965945A05903FC5"
+				item: { count: 1, id: "dungeonsdelight:wardenzola_crumbles" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 17.919d
+			y: -16.096d
+		}
+		{
+			icon: {
+				id: "dungeonsdelight:wispy_rice_ball"
+			}
+			id: "61F362552518E85F"
+			rewards: [{
+				count: 2
+				id: "3E3283E2B825C686"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "222F7D120B7C2D86"
+				item: { count: 1, id: "dungeonsdelight:wispy_rice_ball" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -2.356d
+			y: 24.134d
+		}
+		{
+			icon: {
+				id: "eternal_starlight:crinoa"
+			}
+			id: "794A468B1D427EA4"
+			rewards: [{
+				id: "5A81299E1956266F"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7811BA567681B5EF"
+				item: { count: 1, id: "eternal_starlight:crinoa" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -14.662d
+			y: -19.516d
+		}
+		{
+			icon: {
+				id: "eternal_starlight:pungency_stew"
+			}
+			id: "5BCFC6A5FC8B098B"
+			rewards: [{
+				count: 5
+				id: "55D32C162C81BD9F"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "75ED8E8FF1164B7C"
+				item: { count: 1, id: "eternal_starlight:pungency_stew" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 24.151d
+			y: 4.515d
+		}
+		{
+			icon: {
+				id: "farmersdelight:cabbage"
+			}
+			id: "4F56766ADFAA6B80"
+			rewards: [{
+				id: "1ED243CAA9E68E96"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1C3C83204BE39E3B"
+				item: { count: 1, id: "farmersdelight:cabbage" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -20.994d
+			y: 13.069d
+		}
+		{
+			icon: {
+				id: "farmersdelight:cod_slice"
+			}
+			id: "6FEC40832C92107A"
+			rewards: [{
+				id: "5F4C11A3968ED4A3"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "274E9D357882242D"
+				item: { count: 1, id: "farmersdelight:cod_slice" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 6.695d
+			y: -23.97d
+		}
+		{
+			icon: {
+				id: "farmersdelight:grilled_salmon"
+			}
+			id: "1CC54A8CED83647C"
+			rewards: [{
+				count: 5
+				id: "17DE4AEF47A60F10"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3C140941A3D4F750"
+				item: { count: 1, id: "farmersdelight:grilled_salmon" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 11.326d
+			y: 22.337d
+		}
+		{
+			icon: {
+				id: "farmersdelight:pasta_with_mutton_chop"
+			}
+			id: "23B3901F702555EB"
+			rewards: [{
+				id: "400E3BFDC6FE76E6"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1EC0D33EF781536A"
+				item: { count: 1, id: "farmersdelight:pasta_with_mutton_chop" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -23.585d
+			y: -8.875d
+		}
+		{
+			icon: {
+				id: "farmersdelight:rice"
+			}
+			id: "188FFA5DA16BAA36"
+			rewards: [{
+				id: "0DAACFD371E66F15"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "247F89701F3A6555"
+				item: { count: 1, id: "farmersdelight:rice" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 23.53d
+			y: -9.445d
+		}
+		{
+			icon: {
+				id: "farmersdelight:salmon_slice"
+			}
+			id: "507B9FB09D5B62FF"
+			rewards: [{
+				id: "4597C18A5DD08F33"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5923E4D67399554B"
+				item: { count: 1, id: "farmersdelight:salmon_slice" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -11.037d
+			y: 22.998d
+		}
+		{
+			icon: {
+				id: "farmersdelight:tomato"
+			}
+			id: "2E81DEDB9EDF036A"
+			rewards: [{
+				id: "0254D0520E09B580"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2042BF7CF1FEC194"
+				item: { count: 1, id: "farmersdelight:tomato" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -7.441d
+			y: -24.56d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:bamboo_tube_rice"
+			}
+			id: "2BFD651FDC6813DB"
+			rewards: [{
+				id: "1770FA6820B30A6B"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3AEB12FAD5D4F073"
+				item: { count: 1, id: "kaleidoscope_cookery:bamboo_tube_rice" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 22.208d
+			y: 13.161d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:baozi"
+			}
+			id: "43746F9C3D74259B"
+			rewards: [{
+				count: 2
+				id: "1492547B860A615F"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4ED4826F1943E16A"
+				item: { count: 1, id: "kaleidoscope_cookery:baozi" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -25.414d
+			y: 5.328d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:beef_meatball_soup"
+			}
+			id: "3CC3A23ABC773273"
+			rewards: [{
+				id: "58520299829BAB04"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D6A4BDB1496973F"
+				item: { count: 1, id: "kaleidoscope_cookery:beef_meatball_soup" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 15.228d
+			y: -21.217d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:beef_noodle"
+			}
+			id: "58A9C033FA8CB6BB"
+			rewards: [{
+				count: 2
+				id: "06B007116D68F634"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "320AC5D883AE3CD2"
+				item: { count: 1, id: "kaleidoscope_cookery:beef_noodle" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 3.121d
+			y: 26.08d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:blaze_lamb_chop"
+			}
+			id: "04CD18FFEB5C1820"
+			rewards: [{
+				count: 5
+				id: "031502CD4B648516"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D6D303E17E5560D"
+				item: { count: 1, id: "kaleidoscope_cookery:blaze_lamb_chop" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -20.031d
+			y: -17.219d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:borscht"
+			}
+			id: "46BB1F3919CDFA32"
+			rewards: [{
+				id: "7252A93878ABA7C8"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1056D8236DF59671"
+				item: { count: 1, id: "kaleidoscope_cookery:borscht" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 26.55d
+			y: -0.839d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:braised_beef"
+			}
+			id: "0728C25DAD603978"
+			rewards: [{
+				id: "6F0E0F63349BF0BA"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "582922584BF62B5A"
+				item: { count: 1, id: "kaleidoscope_cookery:braised_beef" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -19.116d
+			y: 18.655d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:braised_beef_rice_bowl"
+			}
+			id: "4A6754E855E95EDA"
+			rewards: [{
+				count: 5
+				id: "3957009CC0CB086C"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "42B6A7B53316F4A8"
+				item: { count: 1, id: "kaleidoscope_cookery:braised_beef_rice_bowl" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 1.502d
+			y: -26.815d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:braised_beef_with_potatoes"
+			}
+			id: "766F41DFD1A8CA03"
+			rewards: [{
+				count: 5
+				id: "0884F8041D0AE8F8"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "622C37EB16384A99"
+				item: { count: 1, id: "kaleidoscope_cookery:braised_beef_with_potatoes" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 17.097d
+			y: 20.9d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:braised_pork_ribs"
+			}
+			id: "7925D6BE79C8FD12"
+			rewards: [{
+				count: 5
+				id: "08C007C4172692B2"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7F782843929A017D"
+				item: { count: 1, id: "kaleidoscope_cookery:braised_pork_ribs" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -26.868d
+			y: -3.882d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:brown_mushroom_pot_soup"
+			}
+			id: "060D0F3B0E4C5487"
+			rewards: [{
+				count: 5
+				id: "09FB7739C50B17BB"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2BC5EF9ECC7A67A7"
+				item: { count: 1, id: "kaleidoscope_cookery:brown_mushroom_pot_soup" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 22.553d
+			y: -15.367d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:buddha_jumps_over_the_wall"
+			}
+			id: "49D7D9A6E1E3D06D"
+			rewards: [{
+				id: "63710E2BAFFAF3ED"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E96E8E1C17E9FBF"
+				item: { count: 1, id: "kaleidoscope_cookery:buddha_jumps_over_the_wall" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -6.282d
+			y: 26.705d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:candied_potato"
+			}
+			id: "393CDA23EE2BA33B"
+			rewards: [{
+				count: 5
+				id: "2C7F1BB51CD46F5F"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "78EA7AF5DCF5C1BC"
+				item: { count: 1, id: "kaleidoscope_cookery:candied_potato" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -13.477d
+			y: -24.06d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:chicken_and_mushroom_stew"
+			}
+			id: "6EFED9852414D10D"
+			rewards: [{
+				id: "53DCAAE3FC0AC9DD"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "565FD4E04AA618B2"
+				item: { count: 1, id: "kaleidoscope_cookery:chicken_and_mushroom_stew" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 26.324d
+			y: 8.682d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:chorus_fried_egg"
+			}
+			id: "749823EF30010861"
+			rewards: [{
+				id: "31616E01D7317069"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "32E608821DA5FAD6"
+				item: { count: 1, id: "kaleidoscope_cookery:chorus_fried_egg" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -25.404d
+			y: 11.438d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:cold_roasted_meat"
+			}
+			id: "100B138878B70743"
+			rewards: [{
+				count: 5
+				id: "353EEFF1A611CAB1"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "62FD8CC863E9FDF0"
+				item: { count: 1, id: "kaleidoscope_cookery:cold_roasted_meat" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 11.061d
+			y: -25.723d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:cold_style_sashimi"
+			}
+			id: "2EB992566D5B1204"
+			rewards: [{
+				count: 2
+				id: "2BAE79AA0217ECB2"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "31B766090A27D26D"
+				item: { count: 1, id: "kaleidoscope_cookery:cold_style_sashimi" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 9.265d
+			y: 26.571d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:cooked_cow_offal"
+			}
+			id: "0E730265DCC768E6"
+			rewards: [{
+				count: 5
+				id: "13FF4CD4D135341E"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6FEC3CB3DFA9FCA7"
+				item: { count: 1, id: "kaleidoscope_cookery:cooked_cow_offal" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -24.902d
+			y: -13.4d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:cooked_cut_small_meats"
+			}
+			id: "0589FC948079EAB4"
+			rewards: [{
+				count: 5
+				id: "1A13B3A7B57FED0F"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5ECBF5EADACC8597"
+				item: { count: 1, id: "kaleidoscope_cookery:cooked_cut_small_meats" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 27.548d
+			y: -6.975d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:cooked_lamb_chops"
+			}
+			id: "7502A002111B3754"
+			rewards: [{
+				count: 5
+				id: "5A69641A2322D36D"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B132A3C41F3BB53"
+				item: { count: 1, id: "kaleidoscope_cookery:cooked_lamb_chops" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -15.677d
+			y: 23.866d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:cooked_meatball"
+			}
+			id: "61F59741E91D7921"
+			rewards: [{
+				id: "277C2DBE4D02A0B5"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "483DD5FE39856567"
+				item: { count: 1, id: "kaleidoscope_cookery:cooked_meatball" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -4.584d
+			y: -28.323d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:cooked_pork_belly"
+			}
+			id: "45EC5FF06F793E31"
+			rewards: [{
+				id: "0AB4AC5FF2D068FF"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2DD257683E5F1A48"
+				item: { count: 1, id: "kaleidoscope_cookery:cooked_pork_belly" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 22.619d
+			y: 17.873d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:cooked_rice"
+			}
+			id: "31C0A79015BCD0A3"
+			rewards: [{
+				id: "7D91AF3D53645760"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "05F90D1289460E2A"
+				item: { count: 1, id: "kaleidoscope_cookery:cooked_rice" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -28.886d
+			y: 2.11d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:crimson_fungus_pot_soup"
+			}
+			id: "6436B5754C3C5C2F"
+			rewards: [{
+				id: "179BA24527B3D300"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "45E000475A76CF05"
+				item: { count: 1, id: "kaleidoscope_cookery:crimson_fungus_pot_soup" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 19.968d
+			y: -21.166d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:crystal_lamb_chop"
+			}
+			id: "6BA53AD4C4665774"
+			rewards: [{
+				count: 5
+				id: "361C998018163444"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "204486CB8246E960"
+				item: { count: 1, id: "kaleidoscope_cookery:crystal_lamb_chop" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -0.428d
+			y: 29.23d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:desert_style_sashimi"
+			}
+			id: "74645FF0010285AA"
+			rewards: [{
+				count: 2
+				id: "0F9462E5C378D821"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5BF45EB7C7C59898"
+				item: { count: 1, id: "kaleidoscope_cookery:desert_style_sashimi" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -19.518d
+			y: -21.942d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:dongpo_pork"
+			}
+			id: "08683BF74DED8B85"
+			rewards: [{
+				count: 5
+				id: "126B6476BEB0AE97"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1F8C0D729DC4B54B"
+				item: { count: 1, id: "kaleidoscope_cookery:dongpo_pork" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 29.346d
+			y: 3.009d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:donkey_burger"
+			}
+			id: "4F4EA5B8FB182D8E"
+			rewards: [{
+				id: "60B9FC017922C94D"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0419DEE714D1B485"
+				item: { count: 1, id: "kaleidoscope_cookery:donkey_burger" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -23.778d
+			y: 17.683d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:dough_drop_soup"
+			}
+			id: "3F882E756D81F85A"
+			rewards: [{
+				count: 5
+				id: "041F66FB5F73CD94"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4C8D2949BE5EC995"
+				item: { count: 1, id: "kaleidoscope_cookery:dough_drop_soup" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 5.613d
+			y: -29.23d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:dumpling"
+			}
+			id: "3EDF5BDA8A033513"
+			rewards: [{
+				count: 2
+				id: "70AD60EA16ACBFC5"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D3ADF3BA4247857"
+				item: { count: 1, id: "kaleidoscope_cookery:dumpling" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 15.675d
+			y: 25.457d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:egg_fried_rice"
+			}
+			id: "2904FBE33AAB0CC3"
+			rewards: [{
+				id: "47A721CF592297B2"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "62841E88D869D069"
+				item: { count: 1, id: "kaleidoscope_cookery:egg_fried_rice" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -28.88d
+			y: -8.219d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:end_style_sashimi"
+			}
+			id: "33722877653074AA"
+			rewards: [{
+				count: 2
+				id: "0BE76927F2073A3D"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7595E91ECA43947D"
+				item: { count: 1, id: "kaleidoscope_cookery:end_style_sashimi" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 26.963d
+			y: -13.506d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:fearsome_thick_soup"
+			}
+			id: "6DF820F6D538CC4D"
+			rewards: [{
+				id: "502426DEFA24A476"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "13FEF6D504974C6D"
+				item: { count: 1, id: "kaleidoscope_cookery:fearsome_thick_soup" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -10.805d
+			y: 28.294d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:fish_flavored_shredded_pork"
+			}
+			id: "282F60BDC93B332B"
+			rewards: [{
+				id: "3C1122DC04105A16"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2E236C8720FAE80D"
+				item: { count: 1, id: "kaleidoscope_cookery:fish_flavored_shredded_pork" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -11.193d
+			y: -28.282d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:fish_flavored_shredded_pork_rice_bowl"
+			}
+			id: "25DE15C90EF13D95"
+			rewards: [{
+				count: 5
+				id: "53C51CFC6D18907E"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "020F0491C5CFFC14"
+				item: { count: 1, id: "kaleidoscope_cookery:fish_flavored_shredded_pork_rice_bowl" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 27.473d
+			y: 13.35d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:fondant_pie"
+			}
+			id: "5FB83D6D804FC84B"
+			rewards: [{
+				count: 5
+				id: "67AB39FFB53C2FA0"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1E8088A4BF12A748"
+				item: { count: 1, id: "kaleidoscope_cookery:fondant_pie" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -29.398d
+			y: 8.75d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:fondant_spider_eye"
+			}
+			id: "7530A5EBCD63B92F"
+			rewards: [{
+				count: 5
+				id: "3C2A0DD159505487"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4DA5CC14C7D3063F"
+				item: { count: 1, id: "kaleidoscope_cookery:fondant_spider_eye" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 15.832d
+			y: -26.42d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:four_joy_meatball_soup"
+			}
+			id: "6C16BCD9120ED366"
+			rewards: [{
+				id: "1662AC68E5339611"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "560863C41FAB2D68"
+				item: { count: 1, id: "kaleidoscope_cookery:four_joy_meatball_soup" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 6.198d
+			y: 30.3d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:fried_caterpillar"
+			}
+			id: "5D51ED9969251780"
+			rewards: [{
+				id: "5FD7BA061E4C701E"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3639E262E35806A3"
+				item: { count: 1, id: "kaleidoscope_cookery:fried_caterpillar" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -25.14d
+			y: -18.23d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:fried_egg"
+			}
+			id: "4E8857BE0D33AFAC"
+			rewards: [{
+				id: "083F7D83E278EEA5"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0980785DDBE2EB2F"
+				item: { count: 1, id: "kaleidoscope_cookery:fried_egg" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 30.976d
+			y: -3.554d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:fried_spring_roll"
+			}
+			id: "05ED4B1DA274F8BD"
+			rewards: [{
+				id: "3A33CE1B3B2648ED"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1E825FDA00BCA2A4"
+				item: { count: 1, id: "kaleidoscope_cookery:fried_spring_roll" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -20.523d
+			y: 23.639d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:frost_lamb_chop"
+			}
+			id: "7FEC8EA05C83C266"
+			rewards: [{
+				count: 5
+				id: "57027989C1AA0F9D"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5441B6E11538719F"
+				item: { count: 1, id: "kaleidoscope_cookery:frost_lamb_chop" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -0.839d
+			y: -31.419d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:golden_salad"
+			}
+			id: "5D9A9F774D019D44"
+			rewards: [{
+				count: 5
+				id: "15C76C45037F06C3"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "713592DC55C5CD2C"
+				item: { count: 1, id: "kaleidoscope_cookery:golden_salad" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 21.928d
+			y: 22.69d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:hot_dry_noodles"
+			}
+			id: "1CB9ABD69E49CD85"
+			rewards: [{
+				count: 2
+				id: "1F94272A6E686EB3"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "208F0AFC6BAD039A"
+				item: { count: 1, id: "kaleidoscope_cookery:hot_dry_noodles" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -31.62d
+			y: -1.926d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:hui_noodle"
+			}
+			id: "501099625BCA2658"
+			rewards: [{
+				count: 2
+				id: "187D801FF3E52DE3"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "22F4C313200F71BE"
+				item: { count: 1, id: "kaleidoscope_cookery:hui_noodle" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 24.713d
+			y: -20.016d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:laba_congee"
+			}
+			id: "2FC554618569E8C8"
+			rewards: [{
+				count: 5
+				id: "5CD56CB8D9E307A6"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7445B500887F44F1"
+				item: { count: 1, id: "kaleidoscope_cookery:laba_congee" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -4.72d
+			y: 31.574d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:lamb_and_radish_soup"
+			}
+			id: "3F4BD63F845CD390"
+			rewards: [{
+				count: 5
+				id: "6E2B534D6F13C36C"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "450350742E26DC77"
+				item: { count: 1, id: "kaleidoscope_cookery:lamb_and_radish_soup" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -17.916d
+			y: -26.571d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:mantou"
+			}
+			id: "18E0C29D20AC8977"
+			rewards: [{
+				id: "6318917C289C85FC"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1C48E211AAF246A6"
+				item: { count: 1, id: "kaleidoscope_cookery:mantou" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 31.278d
+			y: 7.519d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:meat_pie"
+			}
+			id: "6D680B811CEE6B7C"
+			rewards: [{
+				count: 2
+				id: "533CC694A49D2283"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "187E46D7753E7E37"
+				item: { count: 1, id: "kaleidoscope_cookery:meat_pie" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -28.249d
+			y: 15.643d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:nether_style_sashimi"
+			}
+			id: "5C4DCA0A99EB2DBE"
+			rewards: [{
+				count: 2
+				id: "533215351743BEF4"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C4494ED179F0893"
+				item: { count: 1, id: "kaleidoscope_cookery:nether_style_sashimi" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 10.302d
+			y: -30.732d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:numbing_spicy_chicken"
+			}
+			id: "34715BD264350DDC"
+			rewards: [{
+				id: "53002B0036220639"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2286DB24B6EB9F55"
+				item: { count: 1, id: "kaleidoscope_cookery:numbing_spicy_chicken" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 13.211d
+			y: 29.73d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:oil_splashed_fish"
+			}
+			id: "16AD4EB617DE27AE"
+			rewards: [{
+				id: "45A4215DCE84E375"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6F52B8EF59750696"
+				item: { count: 1, id: "kaleidoscope_cookery:oil_splashed_fish" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -29.934d
+			y: -13.046d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:pan_seared_knight_steak"
+			}
+			id: "739CEDD10DBE8C47"
+			rewards: [{
+				count: 2
+				id: "0F0BFBEA25C1B117"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "649F86137F450F8D"
+				item: { count: 1, id: "kaleidoscope_cookery:pan_seared_knight_steak" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 30.998d
+			y: -10.64d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:pork_bone_soup"
+			}
+			id: "487C3EECD8F152F5"
+			rewards: [{
+				count: 5
+				id: "51DF67CA84F6B41D"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6809BBBEE9202F1D"
+				item: { count: 1, id: "kaleidoscope_cookery:pork_bone_soup" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -15.727d
+			y: 28.889d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:pufferfish_soup"
+			}
+			id: "3E46E4EAE2B99FCD"
+			rewards: [{
+				id: "4E9D4F936DFA0AFE"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "392E86996E6B095A"
+				item: { count: 1, id: "kaleidoscope_cookery:pufferfish_soup" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -7.946d
+			y: -32.041d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:qingtuan"
+			}
+			id: "20A55D75DBA16FFB"
+			rewards: [{
+				count: 5
+				id: "46BC9201EACAE8BB"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4449078414D833B8"
+				item: { count: 1, id: "kaleidoscope_cookery:qingtuan" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 27.601d
+			y: 18.324d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:raw_cow_offal"
+			}
+			id: "5891C33AD1E18ADD"
+			rewards: [{
+				id: "265D5DDBD1C4167E"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2DE63EBC8EAD8D3F"
+				item: { count: 1, id: "kaleidoscope_cookery:raw_cow_offal" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -32.847d
+			y: 5.151d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:raw_cut_small_meats"
+			}
+			id: "421F30004DD4F4DF"
+			rewards: [{
+				id: "56EC13C8ACD6B8EA"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "327FBBA4C7B6E0BC"
+				item: { count: 1, id: "kaleidoscope_cookery:raw_cut_small_meats" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 20.814d
+			y: -26.078d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:raw_lamb_chops"
+			}
+			id: "0B7AF2C4B603A41F"
+			rewards: [{
+				id: "615A5F2AFFD0C803"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6FC271D5F16FA5F5"
+				item: { count: 1, id: "kaleidoscope_cookery:raw_lamb_chops" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 2.276d
+			y: 33.406d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:raw_meatball"
+			}
+			id: "7D636F06A2C0E40E"
+			rewards: [{
+				count: 5
+				id: "64C7ED39B6E51DBB"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1CD78D9E73C2A4F6"
+				item: { count: 1, id: "kaleidoscope_cookery:raw_meatball" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -24.328d
+			y: -23.176d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:raw_pork_belly"
+			}
+			id: "091E0FDDD9534E37"
+			rewards: [{
+				count: 5
+				id: "3F85CE3A70964528"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "152BC94EF316B07F"
+				item: { count: 1, id: "kaleidoscope_cookery:raw_pork_belly" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 33.71d
+			y: 0.658d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:red_mushroom_pot_soup"
+			}
+			id: "412E9C827B7BB94E"
+			rewards: [{
+				count: 5
+				id: "3532F660EAD6AB9B"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C4F6F3F1B2B839D"
+				item: { count: 1, id: "kaleidoscope_cookery:red_mushroom_pot_soup" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -25.388d
+			y: 22.362d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:samsa"
+			}
+			id: "7E347916A9582A0D"
+			rewards: [{
+				count: 2
+				id: "4CA56DB412C6329F"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "706EF24FEC910D9E"
+				item: { count: 1, id: "kaleidoscope_cookery:samsa" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 3.627d
+			y: -33.754d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:sashimi"
+			}
+			id: "1852DD7EEF1CDBBB"
+			rewards: [{
+				id: "2205478AC89C4601"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "366DBA2979B9E789"
+				item: { count: 1, id: "kaleidoscope_cookery:sashimi" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 20.194d
+			y: 27.432d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:scramble_egg_with_tomatoes"
+			}
+			id: "2B84F260EDCE5F1D"
+			rewards: [{
+				id: "732F849D695CA72D"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "331696C27A524EF1"
+				item: { count: 1, id: "kaleidoscope_cookery:scramble_egg_with_tomatoes" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -33.533d
+			y: -6.609d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:scramble_egg_with_tomatoes_rice_bowl"
+			}
+			id: "749C272CF259E07B"
+			rewards: [{
+				count: 5
+				id: "462051B786AD1F4F"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3841FCD009405678"
+				item: { count: 1, id: "kaleidoscope_cookery:scramble_egg_with_tomatoes_rice_bowl" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 29.288d
+			y: -17.838d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:seafood_miso_soup"
+			}
+			id: "5F26123428301004"
+			rewards: [{
+				id: "32442654B2B36729"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2DA0F5E210F60D26"
+				item: { count: 1, id: "kaleidoscope_cookery:seafood_miso_soup" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -9.579d
+			y: 33.047d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:shengjian_mantou"
+			}
+			id: "522F32B2700BDF31"
+			rewards: [{
+				count: 2
+				id: "1F9F71BED7AAF0CF"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7687D1098FF15320"
+				item: { count: 1, id: "kaleidoscope_cookery:shengjian_mantou" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -15.31d
+			y: -30.94d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:slime_ball_meal"
+			}
+			id: "06DF342632FC5871"
+			rewards: [{
+				count: 5
+				id: "68A71BD92183EA9F"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6A7CFDE65772A62C"
+				item: { count: 1, id: "kaleidoscope_cookery:slime_ball_meal" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 32.295d
+			y: 12.513d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:spicy_blood_stew"
+			}
+			id: "4C13F1B618B4CBEF"
+			rewards: [{
+				count: 5
+				id: "0F11D089F046609B"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "31FCE7ABC7CD64D2"
+				item: { count: 1, id: "kaleidoscope_cookery:spicy_blood_stew" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -32.371d
+			y: 12.629d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:spicy_chicken"
+			}
+			id: "4B0E8E840E731F27"
+			rewards: [{
+				id: "76DAE4D760C595D2"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2928DFF5FB8ECBB6"
+				item: { count: 1, id: "kaleidoscope_cookery:spicy_chicken" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 15.388d
+			y: -31.279d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:spicy_rabbit_head"
+			}
+			id: "7080DA69C6C1372B"
+			rewards: [{
+				id: "2C6D42944998DC0F"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "23257720A746AD9E"
+				item: { count: 1, id: "kaleidoscope_cookery:spicy_rabbit_head" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 9.813d
+			y: 33.567d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:stargazy_pie"
+			}
+			id: "4853FB1FB2B32EB0"
+			rewards: [{
+				count: 5
+				id: "3DAE60A77892A5FF"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0760E73B7B9FA88A"
+				item: { count: 1, id: "kaleidoscope_cookery:stargazy_pie" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -30.006d
+			y: -18.18d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:sticky_candy"
+			}
+			id: "1064C42904A3BF6C"
+			rewards: [{
+				count: 5
+				id: "7B5130169299BD09"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4541E4C5F1523C7A"
+				item: { count: 1, id: "kaleidoscope_cookery:sticky_candy" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 34.515d
+			y: -6.885d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:sticky_rice_cake"
+			}
+			id: "2FDEA15D9611D528"
+			rewards: [{
+				count: 5
+				id: "1C1863CDC8A016FE"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "26F8578C17E0C80F"
+				item: { count: 1, id: "kaleidoscope_cookery:sticky_rice_cake" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -20.866d
+			y: 28.481d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:stir_fried_pork_with_peppers"
+			}
+			id: "18D02B9CA2B7471F"
+			rewards: [{
+				id: "27C4107CB6169D41"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "51EFB9B64EA52AB6"
+				item: { count: 1, id: "kaleidoscope_cookery:stir_fried_pork_with_peppers" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -3.865d
+			y: -35.206d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:stir_fried_pork_with_peppers_rice_bowl"
+			}
+			id: "52323CA34469B419"
+			rewards: [{
+				count: 5
+				id: "4FB87D870695AF93"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1BD8AEF9EB968259"
+				item: { count: 1, id: "kaleidoscope_cookery:stir_fried_pork_with_peppers_rice_bowl" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 26.715d
+			y: 23.422d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:stuffed_tiger_skin_pepper"
+			}
+			id: "7E1B9557E7DCD667"
+			rewards: [{
+				count: 5
+				id: "7919D2A360ABE06F"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "57E98FCAE9AE1505"
+				item: { count: 1, id: "kaleidoscope_cookery:stuffed_tiger_skin_pepper" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -35.63d
+			y: 0.777d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:sweet_and_sour_ender_pearls"
+			}
+			id: "5596BF6D6FA66FCD"
+			rewards: [{
+				id: "51284C61C38B74F0"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5EFCF940E4C7E652"
+				item: { count: 1, id: "kaleidoscope_cookery:sweet_and_sour_ender_pearls" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 25.826d
+			y: -24.717d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:sweet_and_sour_pork"
+			}
+			id: "6FADE50D16AE827B"
+			rewards: [{
+				count: 5
+				id: "12491164A7B587C1"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "19A0ED2BCDCF6884"
+				item: { count: 1, id: "kaleidoscope_cookery:sweet_and_sour_pork" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -2.355d
+			y: 35.78d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:sweet_and_sour_pork_rice_bowl"
+			}
+			id: "03221E4D4711CF7D"
+			rewards: [{
+				id: "26D27CE68CA9F283"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B9FAE62D73288E9"
+				item: { count: 1, id: "kaleidoscope_cookery:sweet_and_sour_pork_rice_bowl" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -22.501d
+			y: -28.059d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:tundra_style_sashimi"
+			}
+			id: "280B0E16BA69E9EA"
+			rewards: [{
+				count: 2
+				id: "700A72834A643208"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "79F7BC662B157040"
+				item: { count: 1, id: "kaleidoscope_cookery:tundra_style_sashimi" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 35.653d
+			y: 5.507d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:udon_noodle"
+			}
+			id: "1AC815D3CDFC6F62"
+			rewards: [{
+				count: 2
+				id: "4BF667DD482CE7EF"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "78CDFD715BC45E0B"
+				item: { count: 1, id: "kaleidoscope_cookery:udon_noodle" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -30.099d
+			y: 20.082d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:warped_fungus_pot_soup"
+			}
+			id: "5F4E588345BB0887"
+			rewards: [{
+				id: "09F14311B045AD4D"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "60FE8C239BE62E4D"
+				item: { count: 1, id: "kaleidoscope_cookery:warped_fungus_pot_soup" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 8.655d
+			y: -35.245d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:wild_mushroom_rabbit_soup"
+			}
+			id: "515AC509CEF2D7C6"
+			rewards: [{
+				id: "11C261481BFC9D91"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0B94E16966BBBD35"
+				item: { count: 1, id: "kaleidoscope_cookery:wild_mushroom_rabbit_soup" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 17.478d
+			y: 31.929d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_cookery:zongzi"
+			}
+			id: "23F8CA3424664DCB"
+			rewards: [{
+				count: 2
+				id: "07DF22904A2DA3FD"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "23D2AF005F15EF5C"
+				item: { count: 1, id: "kaleidoscope_cookery:zongzi" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -34.557d
+			y: -11.772d
+		}
+		{
+			icon: {
+				id: "minecraft:apple"
+			}
+			id: "195092488B2C9636"
+			rewards: [{
+				id: "51F32B8802C40BDC"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "248406E22629E2BB"
+				item: { count: 1, id: "minecraft:apple" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 33.532d
+			y: -14.706d
+		}
+		{
+			icon: {
+				id: "minecraft:beetroot"
+			}
+			id: "779A0455DC39F18D"
+			rewards: [{
+				id: "7C699FEB444E4D8D"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C44ADBAB51BC9C8"
+				item: { count: 1, id: "minecraft:beetroot" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -14.835d
+			y: 33.592d
+		}
+		{
+			icon: {
+				id: "minecraft:bread"
+			}
+			id: "70E8D85041F6BA58"
+			rewards: [{
+				id: "3CC141D22EE51641"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "550FC54E892F992A"
+				item: { count: 1, id: "minecraft:bread" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -11.786d
+			y: -34.891d
+		}
+		{
+			icon: {
+				id: "minecraft:brown_mushroom"
+			}
+			id: "3FE439111D2AF189"
+			rewards: [{
+				id: "6E16FD1368270D56"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "70B9BFC038C7A1B3"
+				item: { count: 1, id: "minecraft:brown_mushroom" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 32.353d
+			y: 17.818d
+		}
+		{
+			icon: {
+				id: "minecraft:cake"
+			}
+			id: "36B943AC67817D08"
+			rewards: [{
+				id: "6705E003515A38B0"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "499AE3932284E16A"
+				item: { count: 1, id: "minecraft:cake" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -35.994d
+			y: 8.741d
+		}
+		{
+			icon: {
+				id: "minecraft:carrot"
+			}
+			id: "1A1E16EDB23AD4F7"
+			rewards: [{
+				id: "0D2738A6368A607D"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0BB176FAC2EE3E6B"
+				item: { count: 1, id: "minecraft:carrot" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 20.696d
+			y: -30.847d
+		}
+		{
+			icon: {
+				id: "minecraft:cooked_porkchop"
+			}
+			id: "76F6510052CBBC5D"
+			rewards: [{
+				id: "71151907DB24BBEA"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7682F52B29881834"
+				item: { count: 1, id: "minecraft:cooked_porkchop" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 5.592d
+			y: 36.829d
+		}
+		{
+			icon: {
+				id: "minecraft:enchanted_golden_apple"
+			}
+			id: "3286EEB38D29B8AA"
+			rewards: [{
+				id: "0303018D1540EDF6"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "18A341C11221E59E"
+				item: { count: 1, id: "minecraft:enchanted_golden_apple" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -29.083d
+			y: -23.446d
+		}
+		{
+			icon: {
+				id: "minecraft:fermented_spider_eye"
+			}
+			id: "16768703F653F67D"
+			rewards: [{
+				id: "6CE433E79593443D"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "328E784C102EA9BC"
+				item: { count: 1, id: "minecraft:fermented_spider_eye" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 37.387d
+			y: -2.364d
+		}
+		{
+			icon: {
+				id: "minecraft:glow_berries"
+			}
+			id: "53505017C9F7C7AA"
+			rewards: [{
+				id: "5CA265183295EA5A"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3CC97BF6FC485CDD"
+				item: { count: 1, id: "minecraft:glow_berries" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -26.043d
+			y: 27.073d
+		}
+		{
+			icon: {
+				id: "minecraft:golden_carrot"
+			}
+			id: "1BDCD39F37B26598"
+			rewards: [{
+				id: "23CD8092106E60FE"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "48E3C89373CD6082"
+				item: { count: 1, id: "minecraft:golden_carrot" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 0.919d
+			y: -37.659d
+		}
+		{
+			icon: {
+				id: "minecraft:poisonous_potato"
+			}
+			id: "2FDDA2B6E44757E8"
+			rewards: [{
+				id: "090D9D9F4AECDB4C"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1657C0503A667C6A"
+				item: { count: 1, id: "minecraft:poisonous_potato" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 24.829d
+			y: 28.467d
+		}
+		{
+			icon: {
+				id: "minecraft:potato"
+			}
+			id: "7E6325DCB6715D35"
+			rewards: [{
+				id: "6FEB1C3C786C2CA8"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3891C7FB0DBF31F7"
+				item: { count: 1, id: "minecraft:potato" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -37.641d
+			y: -4.231d
+		}
+		{
+			icon: {
+				id: "minecraft:pufferfish"
+			}
+			id: "442B8A97202BAA28"
+			rewards: [{
+				id: "2B6B7F3D8EEBE93F"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D4D1932DB45558D"
+				item: { count: 1, id: "minecraft:pufferfish" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 30.696d
+			y: -22.367d
+		}
+		{
+			icon: {
+				id: "minecraft:red_mushroom"
+			}
+			id: "3EB8B9D18E59F0D6"
+			rewards: [{
+				id: "5517B43266758E11"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C2B57499E21AE81"
+				item: { count: 1, id: "minecraft:red_mushroom" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -7.546d
+			y: 37.329d
+		}
+		{
+			icon: {
+				id: "minecraft:tropical_fish"
+			}
+			id: "65DBD6C5CC40C349"
+			rewards: [{
+				id: "7FF7B4717CB51665"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B6BA9A49B93911D"
+				item: { count: 1, id: "minecraft:tropical_fish" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -19.704d
+			y: -32.711d
+		}
+		{
+			icon: {
+				id: "netherexp:cooked_hogham"
+			}
+			id: "39EB2FAB1C17EFED"
+			rewards: [{
+				id: "004ABAF140852E7C"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "566A5A5561C8A368"
+				item: { count: 1, id: "netherexp:cooked_hogham" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 36.723d
+			y: 10.839d
+		}
+		{
+			icon: {
+				id: "netherexp:roasted_bone"
+			}
+			id: "3550C890B3367EA4"
+			rewards: [{
+				id: "73BC0932E608F851"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "29FDC8804C84B2EA"
+				item: { count: 1, id: "netherexp:roasted_bone" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -34.492d
+			y: 16.859d
+		}
+		{
+			icon: {
+				id: "tensura:cattledeer_steak"
+			}
+			id: "3746CA2ADED125A1"
+			rewards: [{
+				id: "035A374BA8F05688"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1F3C23A4A84089BD"
+				item: { count: 1, id: "tensura:cattledeer_steak" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 14.083d
+			y: -35.825d
+		}
+		{
+			icon: {
+				id: "tensura:chilled_slime"
+			}
+			id: "07AFB7E0A4068917"
+			rewards: [{
+				id: "45D576D7C20B210C"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "06205280D47232D6"
+				item: { count: 1, id: "tensura:chilled_slime" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 13.852d
+			y: 36.024d
+		}
+		{
+			icon: {
+				id: "tensura:cooked_charybdis_meat"
+			}
+			id: "1CCEC8864C668C2D"
+			rewards: [{
+				id: "519335DC421088C0"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3F56AB47216FF375"
+				item: { count: 1, id: "tensura:cooked_charybdis_meat" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -34.639d
+			y: -17.251d
+		}
+		{
+			icon: {
+				id: "tensura:cooked_megalodon_meat"
+			}
+			id: "69CB51C055859DD1"
+			rewards: [{
+				id: "46E57D4D5B684698"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "745F4326B31B58CC"
+				item: { count: 1, id: "tensura:cooked_megalodon_meat" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 37.292d
+			y: -10.705d
+		}
+		{
+			icon: {
+				id: "tensura:cooked_sissie_fin"
+			}
+			id: "0809979A30FA5C6E"
+			rewards: [{
+				id: "38980267B781D691"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "13F4536B5D704611"
+				item: { count: 1, id: "tensura:cooked_sissie_fin" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -20.319d
+			y: 33.17d
+		}
+		{
+			icon: {
+				id: "tensura:cooked_sissie_meat"
+			}
+			id: "6745F81250929E35"
+			rewards: [{
+				id: "32FF467CE7917CE6"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "09AA17C50EB92F25"
+				item: { count: 1, id: "tensura:cooked_sissie_meat" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -7.442d
+			y: -38.283d
+		}
+		{
+			icon: {
+				id: "tensura:cooked_spear_toro_fin"
+			}
+			id: "1A3D3F6F1ADAAE46"
+			rewards: [{
+				id: "0F18CFCBFB9868B3"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1B24D5284EF9F399"
+				item: { count: 1, id: "tensura:cooked_spear_toro_fin" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 31.428d
+			y: 23.261d
+		}
+		{
+			icon: {
+				id: "tensura:cooked_spear_toro_meat"
+			}
+			id: "2BCD69386094AAA9"
+			rewards: [{
+				id: "593AF9F94BA0AC87"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "23DE4C171379D0E8"
+				item: { count: 1, id: "tensura:cooked_spear_toro_meat" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -38.986d
+			y: 4.088d
+		}
+		{
+			icon: {
+				id: "tensura:hipokute_flower"
+			}
+			id: "32C1B30C5CE46F13"
+			rewards: [{
+				id: "5F6A9B26D965E285"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4FE61DBD9FA40627"
+				item: { count: 1, id: "tensura:hipokute_flower" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 26.052d
+			y: -29.424d
+		}
+		{
+			icon: {
+				id: "twilightforest:beef_jerky"
+			}
+			id: "2C82ADBF2E95C55D"
+			rewards: [{
+				id: "28118BEF893FDE4F"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "073B3B2499901357"
+				item: { count: 1, id: "twilightforest:beef_jerky" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 0.667d
+			y: 39.394d
+		}
+		{
+			icon: {
+				id: "twilightforest:berry_medley"
+			}
+			id: "2BDB21D672BA3E22"
+			rewards: [{
+				count: 5
+				id: "42E74FD26CF3BDD5"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4C78A7BB78395515"
+				item: { count: 1, id: "twilightforest:berry_medley" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -27.171d
+			y: -28.669d
+		}
+		{
+			icon: {
+				id: "twilightforest:chicken_jerky"
+			}
+			id: "587F711D88B73FB3"
+			rewards: [{
+				id: "0032BB66BC9AD936"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "524BD8F07E2CA1A9"
+				item: { count: 1, id: "twilightforest:chicken_jerky" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 39.499d
+			y: 2.793d
+		}
+		{
+			icon: {
+				id: "twilightforest:cod_jerky"
+			}
+			id: "5A824156ED9361C1"
+			rewards: [{
+				id: "7E35A49A5696AC93"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1BD1FF139C50558B"
+				item: { count: 1, id: "twilightforest:cod_jerky" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -31.09d
+			y: 24.683d
+		}
+		{
+			icon: {
+				id: "twilightforest:cooked_meef"
+			}
+			id: "485D7772865D4074"
+			rewards: [{
+				id: "0AD85E3950AF67D3"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5396D63B521BDE35"
+				item: { count: 1, id: "twilightforest:cooked_meef" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 6.267d
+			y: -39.299d
+		}
+		{
+			icon: {
+				id: "twilightforest:cooked_venison"
+			}
+			id: "531E605E0F2E91EB"
+			rewards: [{
+				id: "1918D834C85B0E14"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "26B426ECC755D311"
+				item: { count: 1, id: "twilightforest:cooked_venison" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 21.979d
+			y: 33.293d
+		}
+		{
+			icon: {
+				id: "twilightforest:fugu_jerky"
+			}
+			id: "765C5C8CFD41514E"
+			rewards: [{
+				id: "3E6D8C12A4BB6E44"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "054731D5BD85DF62"
+				item: { count: 1, id: "twilightforest:fugu_jerky" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -38.791d
+			y: -9.726d
+		}
+		{
+			icon: {
+				id: "twilightforest:meef_jerky"
+			}
+			id: "66DB4C03090E5BAF"
+			rewards: [{
+				id: "2BFEE29A33C2C625"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2105E2931CBA268E"
+				item: { count: 1, id: "twilightforest:meef_jerky" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 35.26d
+			y: -19.078d
+		}
+		{
+			icon: {
+				id: "twilightforest:monster_jerky"
+			}
+			id: "52781D024C2E7009"
+			rewards: [{
+				id: "5F5F8338181FE059"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "72DA26F0145F1362"
+				item: { count: 1, id: "twilightforest:monster_jerky" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -13.145d
+			y: 37.977d
+		}
+		{
+			icon: {
+				id: "twilightforest:mutton_jerky"
+			}
+			id: "032499FB2FD30B89"
+			rewards: [{
+				id: "6D36062B6D0ED3DC"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0EBE876FB4988BD8"
+				item: { count: 1, id: "twilightforest:mutton_jerky" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -15.999d
+			y: -36.972d
+		}
+		{
+			icon: {
+				id: "twilightforest:pork_jerky"
+			}
+			id: "1E6B0E1E6B5998C7"
+			rewards: [{
+				count: 5
+				id: "64D01A249B337961"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4B32EBC067A43E6D"
+				item: { count: 1, id: "twilightforest:pork_jerky" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 36.86d
+			y: 16.494d
+		}
+		{
+			icon: {
+				id: "twilightforest:rabbit_jerky"
+			}
+			id: "4C29C370F504DCA5"
+			rewards: [{
+				id: "45059F62D980FC72"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "09DA23E39BDC7753"
+				item: { count: 1, id: "twilightforest:rabbit_jerky" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -38.413d
+			y: 12.767d
+		}
+		{
+			icon: {
+				id: "twilightforest:salmon_jerky"
+			}
+			id: "4A99D52BBB695D44"
+			rewards: [{
+				id: "75CF200786BA314D"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "01437A8902BFAB38"
+				item: { count: 1, id: "twilightforest:salmon_jerky" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 19.748d
+			y: -35.446d
+		}
+		{
+			icon: {
+				id: "twilightforest:tropical_fish_jerky"
+			}
+			id: "31148C0753B498F2"
+			rewards: [{
+				id: "4AAD85A59274DDF8"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "20E3CC57964C8E40"
+				item: { count: 1, id: "twilightforest:tropical_fish_jerky" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: 9.405d
+			y: 39.57d
+		}
+		{
+			icon: {
+				id: "twilightforest:venison_jerky"
+			}
+			id: "59AC661E5AEED0B1"
+			rewards: [{
+				id: "39D062C9C6863736"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "11FCA5716391E53C"
+				item: { count: 1, id: "twilightforest:venison_jerky" }
+				only_from_crafting: true
+				type: "item"
+			}]
+			x: -33.744d
+			y: -22.879d
+		}
+		{
+			dependencies: [
+				"2AC4C9C484F9F28E"
+				"346A98CF74B3DDCC"
+				"1E9525E2FC9F773B"
+				"0C7E6662CD32D710"
+				"6838600DD526893E"
+				"09AD7C18C6E12091"
+				"2A968FD24246ECA4"
+				"2E901FF8E257B18A"
+				"24F26F202AFDE78A"
+				"7A51702A0F00522E"
+				"734369372F4CEB21"
+				"1521D92CB87B0654"
+				"1BC46234E9DAD141"
+				"50926F45A3AC744F"
+				"413D3AECDE983AEF"
+				"0CCA7E205A8E324E"
+				"2F254C7BF35B40B9"
+				"536F3AA60B988597"
+				"6192A1B4E3D71C27"
+				"398A8349245D65C4"
+				"1E93BAC7C83AAAFB"
+				"4517D14E5ADB98D8"
+				"3A4CB4E5FFE6CA65"
+				"4622055E0BFB2D1F"
+				"4F4806DA62268355"
+				"5AF0B6A70D2F7FE0"
+				"5054451946489426"
+				"433B669D40B0D241"
+				"01F3F7B38B6129A5"
+				"6FFEE47366330B47"
+				"3F91078C3A37F487"
+				"258C75C935B9039A"
+				"330A773979CC2104"
+				"6A1F9D29F5A02DAE"
+				"67CC9310B76D292D"
+				"59B96B0086EEC353"
+				"053117AB3A19E9E3"
+				"639019F2DDAC5383"
+				"710853F12FB13B0E"
+				"45EB9B20F3DA1829"
+				"4A305236B9EEBF54"
+				"6AECF73A463F797F"
+				"77AC927CDCDAF642"
+				"2C64EBC9BD734F6C"
+				"01E6C35B9D14F13A"
+				"6DBA1558206A03C5"
+				"338C386DD712406B"
+				"0C96C27A7AA7FF13"
+				"29BA350ABCC8B70E"
+				"0BCFC6EC4EA3ECD4"
+				"78FEB8B099E20DAD"
+				"7B68B4B4AF7B8DA8"
+				"73C708E2C9E70F09"
+				"3A1F90D27FF29E0C"
+				"6B3DB6C59744C7DD"
+				"06DCF0AAB3C013A1"
+				"2F68A3306C215CDD"
+				"18F99ED28A090AAF"
+				"051D8F9BE109F7E4"
+				"72C76461BEB45CFE"
+				"489E608DC2D4A704"
+				"12AC27D1104A4805"
+				"41DFB924C70CC395"
+				"0055AE3F3CDC3AB7"
+				"6C956D0659C292F8"
+				"734B76CB88E8D2AF"
+				"710E8B6C183928B4"
+				"3568CFD26A402E3E"
+				"795BDBCA3802C004"
+				"3F2CD9EDBCBFF597"
+				"3085624B5442A9D3"
+				"61F362552518E85F"
+				"794A468B1D427EA4"
+				"5BCFC6A5FC8B098B"
+				"4F56766ADFAA6B80"
+				"6FEC40832C92107A"
+				"1CC54A8CED83647C"
+				"23B3901F702555EB"
+				"188FFA5DA16BAA36"
+				"507B9FB09D5B62FF"
+				"2E81DEDB9EDF036A"
+				"2BFD651FDC6813DB"
+				"43746F9C3D74259B"
+				"3CC3A23ABC773273"
+				"58A9C033FA8CB6BB"
+				"04CD18FFEB5C1820"
+				"46BB1F3919CDFA32"
+				"0728C25DAD603978"
+				"4A6754E855E95EDA"
+				"766F41DFD1A8CA03"
+				"7925D6BE79C8FD12"
+				"060D0F3B0E4C5487"
+				"49D7D9A6E1E3D06D"
+				"393CDA23EE2BA33B"
+				"6EFED9852414D10D"
+				"749823EF30010861"
+				"100B138878B70743"
+				"2EB992566D5B1204"
+				"0E730265DCC768E6"
+				"0589FC948079EAB4"
+				"7502A002111B3754"
+				"61F59741E91D7921"
+				"45EC5FF06F793E31"
+				"31C0A79015BCD0A3"
+				"6436B5754C3C5C2F"
+				"6BA53AD4C4665774"
+				"74645FF0010285AA"
+				"08683BF74DED8B85"
+				"4F4EA5B8FB182D8E"
+				"3F882E756D81F85A"
+				"3EDF5BDA8A033513"
+				"2904FBE33AAB0CC3"
+				"33722877653074AA"
+				"6DF820F6D538CC4D"
+				"282F60BDC93B332B"
+				"25DE15C90EF13D95"
+				"5FB83D6D804FC84B"
+				"7530A5EBCD63B92F"
+				"6C16BCD9120ED366"
+				"5D51ED9969251780"
+				"4E8857BE0D33AFAC"
+				"05ED4B1DA274F8BD"
+				"7FEC8EA05C83C266"
+				"5D9A9F774D019D44"
+				"1CB9ABD69E49CD85"
+				"501099625BCA2658"
+				"2FC554618569E8C8"
+				"3F4BD63F845CD390"
+				"18E0C29D20AC8977"
+				"6D680B811CEE6B7C"
+				"5C4DCA0A99EB2DBE"
+				"34715BD264350DDC"
+				"16AD4EB617DE27AE"
+				"739CEDD10DBE8C47"
+				"487C3EECD8F152F5"
+				"3E46E4EAE2B99FCD"
+				"20A55D75DBA16FFB"
+				"5891C33AD1E18ADD"
+				"421F30004DD4F4DF"
+				"0B7AF2C4B603A41F"
+				"7D636F06A2C0E40E"
+				"091E0FDDD9534E37"
+				"412E9C827B7BB94E"
+				"7E347916A9582A0D"
+				"1852DD7EEF1CDBBB"
+				"2B84F260EDCE5F1D"
+				"749C272CF259E07B"
+				"5F26123428301004"
+				"522F32B2700BDF31"
+				"06DF342632FC5871"
+				"4C13F1B618B4CBEF"
+				"4B0E8E840E731F27"
+				"7080DA69C6C1372B"
+				"4853FB1FB2B32EB0"
+				"1064C42904A3BF6C"
+				"2FDEA15D9611D528"
+				"18D02B9CA2B7471F"
+				"52323CA34469B419"
+				"7E1B9557E7DCD667"
+				"5596BF6D6FA66FCD"
+				"6FADE50D16AE827B"
+				"03221E4D4711CF7D"
+				"280B0E16BA69E9EA"
+				"1AC815D3CDFC6F62"
+				"5F4E588345BB0887"
+				"515AC509CEF2D7C6"
+				"23F8CA3424664DCB"
+				"195092488B2C9636"
+				"779A0455DC39F18D"
+				"70E8D85041F6BA58"
+				"3FE439111D2AF189"
+				"36B943AC67817D08"
+				"1A1E16EDB23AD4F7"
+				"76F6510052CBBC5D"
+				"3286EEB38D29B8AA"
+				"16768703F653F67D"
+				"53505017C9F7C7AA"
+				"1BDCD39F37B26598"
+				"2FDDA2B6E44757E8"
+				"7E6325DCB6715D35"
+				"442B8A97202BAA28"
+				"3EB8B9D18E59F0D6"
+				"65DBD6C5CC40C349"
+				"39EB2FAB1C17EFED"
+				"3550C890B3367EA4"
+				"3746CA2ADED125A1"
+				"07AFB7E0A4068917"
+				"1CCEC8864C668C2D"
+				"69CB51C055859DD1"
+				"0809979A30FA5C6E"
+				"6745F81250929E35"
+				"1A3D3F6F1ADAAE46"
+				"2BCD69386094AAA9"
+				"32C1B30C5CE46F13"
+				"2C82ADBF2E95C55D"
+				"2BDB21D672BA3E22"
+				"587F711D88B73FB3"
+				"5A824156ED9361C1"
+				"485D7772865D4074"
+				"531E605E0F2E91EB"
+				"765C5C8CFD41514E"
+				"66DB4C03090E5BAF"
+				"52781D024C2E7009"
+				"032499FB2FD30B89"
+				"1E6B0E1E6B5998C7"
+				"4C29C370F504DCA5"
+				"4A99D52BBB695D44"
+				"31148C0753B498F2"
+				"59AC661E5AEED0B1"
+			]
+			icon: {
+				id: "cookingforblockheads:recipe_book"
+			}
+			icon_scale: 1.5d
+			id: "443889DBF90B8B8F"
+			rewards: [
+				{
+					command: "/rtitle grant {p} \"&e[Gourmand Gorumand]\" desc Completed every recipe in An Appetite Which Surpasses Ultima."
+					exclude_from_claim_all: true
+					id: "6BDB7FF201A29F2B"
+					permission_level: 4
+					type: "command"
+				}
+				{
+					command: "/rtitle grant {p} \"&e[Ultima's Personal Chef]\" desc Completed every recipe in An Appetite Which Surpasses Ultima."
+					exclude_from_claim_all: true
+					id: "2FDB566CE866C3A9"
+					permission_level: 4
+					type: "command"
+				}
+				{
+					command: "/rtitle grant {p} \"&e[The God of Cooking]\" desc Completed every recipe in An Appetite Which Surpasses Ultima."
+					exclude_from_claim_all: true
+					id: "37349F076CB3047B"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "4976E2A2A991F226"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+}

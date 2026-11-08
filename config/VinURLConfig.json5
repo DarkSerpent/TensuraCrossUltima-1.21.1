@@ -1,0 +1,8 @@
+{
+	"downloadEnabled": true,
+	"updatesOnStartup": true,
+	"showDescription": true,
+	"urlWhitelist": [],
+	"audioBitrate": "MEDIUM",
+	"parameters": ""
+}

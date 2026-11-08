@@ -1,0 +1,36 @@
+#Magic spells a player must master to awaken the Spellcraft skill.
+spellsToUnlock = 25
+#Spell Points a player starts with.
+startingPoints = 3
+#Mastery any spell must gain to earn one Spell Point.
+masteryPerPoint = 200.0
+#Spell Points earned when a custom spell is mastered.
+masteredSpellPoints = 3
+#Casts a custom spell needs to be mastered.
+castsToMaster = 40
+#Spell slots before the Spell Tree adds more.
+baseSpellSlots = 3
+#Modifier slots per spell before the Spell Tree adds more.
+baseModifierSlots = 2
+#Highest power level before the Spell Tree raises it.
+basePowerLevel = 2
+#Spell Points earned for each new discovery.
+discoveryPoints = 1
+#Affinity gained per landed cast, before the spell's level and Path scale it.
+affinityPerCast = 1.0
+#Kills a mastered spell needs to awaken. Felling a boss awakens it at once.
+awakenKills = 25
+#Spell Tree nodes a player must learn before choosing a Path.
+pathNodes = 12
+#Share of spent Spell Points returned by Unbinding.
+unbindRefund = 0.75
+#Max magicules that make a caster worthy of Grand (level 4) spells without being a Demon Lord Seed or Hero Egg.
+grandMagicules = 250000.0
+#Max magicules that make a caster worthy of Calamity (level 5) spells without being a True Demon Lord or True Hero.
+calamityMagicules = 1200000.0
+#Whether spells may be written one power level above the Spell Tree's limit.
+allowOvercast = true
+#Magicule cost multiplier for overcast spells.
+overcastCost = 3.0
+#Chance an overcast spell backfires, before mastery lowers it.
+overcastBackfire = 0.2

@@ -1,0 +1,511 @@
+#Controls for trevolved:crusader. Detailed balance is in this same file.
+#Allow learning this ability. Existing ownership is kept.
+allowAcquisition = true
+#Allow active subskills. Inherent passives are not removed.
+allowActiveUse = true
+#Allow enabling its native passive toggle. Switching it off remains allowed.
+allowPassiveToggle = true
+#Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+allowTerrainDamage = true
+
+[evolution]
+
+    [evolution.crusader]
+        #Required effective maximum EP.
+        # Default: 600000
+        # Range: 0 ~ 9223372036854775807
+        maximumEp = 600000
+        #Primary progression requirement.
+        # Default: 1500
+        # Range: > 0
+        requirementA = 1500
+        #Secondary progression requirement.
+        # Default: 75
+        # Range: > 0
+        requirementB = 75
+        #Tertiary progression requirement.
+        # Default: 2
+        # Range: > 0
+        requirementC = 2
+        #Optional fourth progression requirement.
+        # Default: 0
+        # Range: > 0
+        requirementD = 0
+        #Require the Unique skill to be mastered.
+        requireMastery = true
+
+[crusader]
+    #Additive armor.
+    # Default: 50.0
+    # Range: 0.0 ~ 1.0E9
+    armorBonus = 50.0
+    #Additional maximum health multiplier granted by Fortress Goddess.
+    # Default: 2.5
+    # Range: 0.0 ~ 1000.0
+    fortressGoddessMaximumHealthMultiplier = 2.5
+    #Mastered additional maximum health multiplier.
+    # Default: 3.5
+    # Range: 0.0 ~ 1000.0
+    fortressGoddessMaximumHealthMultiplierMastered = 3.5
+    #Additional maximum soul-health multiplier granted by Fortress Goddess.
+    # Default: 2.5
+    # Range: 0.0 ~ 1000.0
+    fortressGoddessMaximumSoulHealthMultiplier = 2.5
+    #Mastered additional maximum soul-health multiplier.
+    # Default: 3.5
+    # Range: 0.0 ~ 1000.0
+    fortressGoddessMaximumSoulHealthMultiplierMastered = 3.5
+    #Additional maximum health and soul health.
+    # Default: 1.0
+    # Range: 0.0 ~ 1000.0
+    maximumHealthMultiplier = 1.0
+    #Mastered additional health.
+    # Default: 1.0
+    # Range: 0.0 ~ 1000.0
+    maximumHealthMultiplierMastered = 1.0
+    #Incoming damage negation.
+    # Default: 0.3
+    # Range: 0.0 ~ 1.0
+    damageNegation = 0.3
+    #Mastered negation.
+    # Default: 0.5
+    # Range: 0.0 ~ 1.0
+    damageNegationMastered = 0.5
+    #Always-active incoming damage mitigation granted by Fortress Goddess.
+    # Default: 0.55
+    # Range: 0.0 ~ 1.0
+    fortressGoddessDamageMitigation = 0.55
+    #Mastered always-active damage mitigation.
+    # Default: 0.6
+    # Range: 0.0 ~ 1.0
+    fortressGoddessDamageMitigationMastered = 0.6
+    #Damage absorbed before Magic Shield shatters.
+    # Default: 10000.0
+    # Range: 0.0 ~ 1.0E12
+    magicShieldDamageCapacity = 10000.0
+    #Punishing Guard counter damage.
+    # Default: 150.0
+    # Range: 0.0 ~ 1.0E9
+    punishingGuardCounterDamage = 150.0
+    #Mastered counter damage.
+    # Default: 250.0
+    # Range: 0.0 ~ 1.0E9
+    punishingGuardCounterDamageMastered = 250.0
+    #Damage fraction negated by Punishing Guard.
+    # Default: 0.9
+    # Range: 0.0 ~ 1.0
+    punishingGuardDamageReduction = 0.9
+    #Mastered guard damage negation.
+    # Default: 1.0
+    # Range: 0.0 ~ 1.0
+    punishingGuardDamageReductionMastered = 1.0
+    #Additional incoming damage mitigation while Self Defense is active.
+    # Default: 0.5
+    # Range: 0.0 ~ 1.0
+    selfDefenseAdditionalDamageMitigation = 0.5
+    #Mastered Decoy cooldown.
+    # Default: 20
+    # Range: 0 ~ 86400
+    decoyCooldownMasteredSeconds = 20
+    #Decoy cooldown.
+    # Default: 30
+    # Range: 0 ~ 86400
+    decoyCooldownSeconds = 30
+    #Mastered Fortress cooldown.
+    # Default: 240
+    # Range: 0 ~ 86400
+    fortressOfDevotionCooldownMasteredSeconds = 240
+    #Fortress cooldown after ending.
+    # Default: 300
+    # Range: 0 ~ 86400
+    fortressOfDevotionCooldownSeconds = 300
+    #Mastered Magic Shield cooldown.
+    # Default: 30
+    # Range: 0 ~ 86400
+    magicShieldCooldownMasteredSeconds = 30
+    #Magic Shield cooldown after disable or shatter.
+    # Default: 40
+    # Range: 0 ~ 86400
+    magicShieldCooldownSeconds = 40
+    #Party Defense cooldown.
+    # Default: 60
+    # Range: 0 ~ 86400
+    partyDefenseCooldownSeconds = 60
+    #Mastered counter cooldown.
+    # Default: 18
+    # Range: 0 ~ 86400
+    punishingGuardCooldownMasteredSeconds = 18
+    #Punishing Guard cooldown.
+    # Default: 25
+    # Range: 0 ~ 86400
+    punishingGuardCooldownSeconds = 25
+    #Self Defense cooldown.
+    # Default: 45
+    # Range: 0 ~ 86400
+    selfDefenseCooldownSeconds = 45
+    #Mastered Decoy duration.
+    # Default: 20
+    # Range: 1 ~ 3600
+    decoyDurationMasteredSeconds = 20
+    #Decoy duration.
+    # Default: 15
+    # Range: 1 ~ 3600
+    decoyDurationSeconds = 15
+    #Decoy aggro radius.
+    # Default: 24
+    # Range: 1 ~ 256
+    decoyRadius = 24
+    #Mastered or Ultimate Decoy aggro radius.
+    # Default: 32
+    # Range: 1 ~ 256
+    decoyRadiusMastered = 32
+    #Mastered Fortress duration.
+    # Default: 22
+    # Range: 1 ~ 3600
+    fortressOfDevotionDurationMasteredSeconds = 22
+    #Fortress duration.
+    # Default: 15
+    # Range: 1 ~ 3600
+    fortressOfDevotionDurationSeconds = 15
+    #Fortress of Devotion radius.
+    # Default: 20
+    # Range: 1 ~ 256
+    fortressOfDevotionRadius = 20
+    #Mastered Fortress radius.
+    # Default: 28
+    # Range: 1 ~ 256
+    fortressOfDevotionRadiusMastered = 28
+    #Maximum Magic Shield duration.
+    # Default: 60
+    # Range: 1 ~ 3600
+    magicShieldDurationSeconds = 60
+    #Party Defense duration.
+    # Default: 10
+    # Range: 1 ~ 3600
+    partyDefenseDurationSeconds = 10
+    #Radius protected by Party Defense.
+    # Default: 18.0
+    # Range: 1.0 ~ 512.0
+    partyDefenseRadius = 18.0
+    #Mastered Party Defense radius.
+    # Default: 18.0
+    # Range: 1.0 ~ 512.0
+    partyDefenseRadiusMastered = 18.0
+    #Self Defense duration.
+    # Default: 10
+    # Range: 1 ~ 3600
+    selfDefenseDurationSeconds = 10
+    #Mastered additive armor.
+    # Default: 100.0
+    # Range: 0.0 ~ 1.0E9
+    armorBonusMastered = 100.0
+    #Additional damage negation while Defensive Stance is toggled.
+    # Default: 0.2
+    # Range: 0.0 ~ 1.0
+    defensiveStanceAdditionalNegation = 0.2
+    #Mastered stance negation.
+    # Default: 0.3
+    # Range: 0.0 ~ 1.0
+    defensiveStanceAdditionalNegationMastered = 0.3
+    #Attack-speed multiplier applied by Defensive Stance.
+    # Default: -0.2
+    # Range: -1.0 ~ 0.0
+    defensiveStanceAttackSpeedPenalty = -0.2
+    #Movement-speed multiplier applied by Defensive Stance.
+    # Default: -0.25
+    # Range: -1.0 ~ 0.0
+    defensiveStanceMovementPenalty = -0.25
+    #Maximum additive EP-scaled armor granted by Fortress Goddess.
+    # Default: 400.0
+    # Range: 0.0 ~ 1.0E9
+    fortressGoddessEpArmorCap = 400.0
+    #Mastered additive EP-scaled armor cap.
+    # Default: 600.0
+    # Range: 0.0 ~ 1.0E9
+    fortressGoddessEpArmorCapMastered = 600.0
+    #Effective maximum EP required for each additive armor point.
+    # Default: 3000.0
+    # Range: 1.0 ~ 1.0E12
+    fortressGoddessMaximumEpPerArmorPoint = 3000.0
+    #Maximum Magicule fraction drained per active second.
+    # Default: 0.05
+    # Range: 0.0 ~ 1.0
+    fortressOfDevotionMaximumMagiculeDrainPerSecond = 0.05
+    #Mastered maximum Magicule drain per active second.
+    # Default: 0.035
+    # Range: 0.0 ~ 1.0
+    fortressOfDevotionMaximumMagiculeDrainPerSecondMastered = 0.035
+    #Ordinary melee miss chance.
+    # Default: 0.4
+    # Range: 0.0 ~ 1.0
+    ordinaryMeleeMissChance = 0.4
+    #Mastered ordinary melee miss chance.
+    # Default: 0.25
+    # Range: 0.0 ~ 1.0
+    ordinaryMeleeMissChanceMastered = 0.25
+    #Native Protection effect amplifier.
+    # Default: 3
+    # Range: 0 ~ 254
+    partyDefenseProtectionAmplifier = 3
+    #Mastered Protection amplifier.
+    # Default: 4
+    # Range: 0 ~ 254
+    partyDefenseProtectionAmplifierMastered = 4
+    #Duration of each refreshed native Protection effect.
+    # Default: 30
+    # Range: 1 ~ 12000
+    partyDefenseProtectionRefreshTicks = 30
+    #Punishing Guard counter knockback.
+    # Default: 1.0
+    # Range: 0.0 ~ 100.0
+    punishingGuardKnockback = 1.0
+    #Mastered counter knockback.
+    # Default: 1.4
+    # Range: 0.0 ~ 100.0
+    punishingGuardKnockbackMastered = 1.4
+    #Punishing Guard Slowness amplifier.
+    # Default: 10
+    # Range: 0 ~ 254
+    punishingGuardSlownessAmplifier = 10
+    #Mastered Slowness duration in ticks.
+    # Default: 70
+    # Range: 0 ~ 12000
+    punishingGuardSlownessMasteredTicks = 70
+    #Punishing Guard Slowness duration in ticks.
+    # Default: 50
+    # Range: 0 ~ 12000
+    punishingGuardSlownessTicks = 50
+    #Punishing Guard vertical counter knockback.
+    # Default: 0.35
+    # Range: 0.0 ~ 100.0
+    punishingGuardVerticalKnockback = 0.35
+    #Punishing Guard Weakness amplifier.
+    # Default: 1
+    # Range: 0 ~ 254
+    punishingGuardWeaknessAmplifier = 1
+    #Mastered Weakness amplifier.
+    # Default: 2
+    # Range: 0 ~ 254
+    punishingGuardWeaknessAmplifierMastered = 2
+    #Mastered Weakness duration in ticks.
+    # Default: 100
+    # Range: 0 ~ 12000
+    punishingGuardWeaknessMasteredTicks = 100
+    #Punishing Guard Weakness duration in ticks.
+    # Default: 70
+    # Range: 0 ~ 12000
+    punishingGuardWeaknessTicks = 70
+    #Mastered counter window.
+    # Default: 120
+    # Range: 1 ~ 1200
+    punishingGuardWindowMasteredTicks = 120
+    #Punishing Guard counter window in ticks.
+    # Default: 80
+    # Range: 1 ~ 1200
+    punishingGuardWindowTicks = 80
+    #Additive native Multilayer Barrier during Self Defense.
+    # Default: 1500.0
+    # Range: 0.0 ~ 1.0E9
+    selfDefenseBarrier = 1500.0
+
+[abilities]
+
+    [abilities.fortress_god_darkness]
+        #Controls for trevolved:fortress_god_darkness. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.fortress_god_darkness.subskills]
+
+            #Native mode 0: crusader.decoy. IDs/indices are not renumbered when disabled.
+            [abilities.fortress_god_darkness.subskills.crusader_decoy]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 1: crusader.punishing_guard. IDs/indices are not renumbered when disabled.
+            [abilities.fortress_god_darkness.subskills.crusader_punishing_guard]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 5: fortress_goddess.fortress_of_devotion. IDs/indices are not renumbered when disabled.
+            [abilities.fortress_god_darkness.subskills.fortress_goddess_fortress_of_devotion]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 4: fortress_goddess.magic_shield. IDs/indices are not renumbered when disabled.
+            [abilities.fortress_god_darkness.subskills.fortress_goddess_magic_shield]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 3: fortress_goddess.party_defense. IDs/indices are not renumbered when disabled.
+            [abilities.fortress_god_darkness.subskills.fortress_goddess_party_defense]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 2: fortress_goddess.self_defense. IDs/indices are not renumbered when disabled.
+            [abilities.fortress_god_darkness.subskills.fortress_goddess_self_defense]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+[subskills]
+
+    #Native mode 0: crusader.decoy. IDs/indices are not renumbered when disabled.
+    [subskills.crusader_decoy]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+    #Native mode 1: crusader.punishing_guard. IDs/indices are not renumbered when disabled.
+    [subskills.crusader_punishing_guard]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

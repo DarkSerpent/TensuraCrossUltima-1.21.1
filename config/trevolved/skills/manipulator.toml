@@ -1,0 +1,415 @@
+#Controls for trevolved:manipulator. Detailed balance is in this same file.
+#Allow learning this ability. Existing ownership is kept.
+allowAcquisition = true
+#Allow active subskills. Inherent passives are not removed.
+allowActiveUse = true
+#Allow enabling its native passive toggle. Switching it off remains allowed.
+allowPassiveToggle = true
+#Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+allowTerrainDamage = true
+
+[evolutionRequirements]
+
+    [evolutionRequirements.manipulator]
+        #Required Existence Points.
+        # Default: 1250000
+        # Range: 0 ~ 9223372036854775807
+        ep = 1250000
+        #Primary tracked requirement; see publication CONFIGURATION.md for its meaning.
+        # Default: 250
+        # Range: > 0
+        requirementA = 250
+        #Secondary tracked requirement; zero disables this numeric gate where unused.
+        # Default: 10
+        # Range: > 0
+        requirementB = 10
+        #Tertiary tracked requirement; zero disables this numeric gate where unused.
+        # Default: 0
+        # Range: > 0
+        requirementC = 0
+        #Require every prerequisite skill in this route to be mastered.
+        requireMastery = true
+
+[manipulationPath]
+    #Minimum Void damage.
+    # Default: 900.0
+    # Range: 0.0 ~ 1.0E9
+    voidCollapseDamage = 900.0
+    #Mastered minimum Void damage.
+    # Default: 1400.0
+    # Range: 0.0 ~ 1.0E9
+    voidCollapseDamageMastered = 1400.0
+    #Mastered area Subjugation cooldown.
+    # Default: 20
+    # Range: 0 ~ 86400
+    absoluteSubjugationCooldownMasteredSeconds = 20
+    #Standing area Subjugation cooldown.
+    # Default: 30
+    # Range: 0 ~ 86400
+    absoluteSubjugationCooldownSeconds = 30
+    #Mastered Charm cooldown.
+    # Default: 5
+    # Range: 0 ~ 86400
+    charmCooldownMasteredSeconds = 5
+    #Crouching single-target Charm cooldown.
+    # Default: 8
+    # Range: 0 ~ 86400
+    charmCooldownSeconds = 8
+    #Cooldown after granting one selected skill.
+    # Default: 300
+    # Range: 0 ~ 604800
+    foodChainGrantCooldownSeconds = 300
+    #Cooldown after receiving one selected skill.
+    # Default: 120
+    # Range: 0 ~ 604800
+    foodChainReceiveCooldownSeconds = 120
+    #Mastered successful cooldown.
+    # Default: 120
+    # Range: 0 ~ 604800
+    voidCallCooldownMasteredSeconds = 120
+    #Successful Void Call cooldown.
+    # Default: 180
+    # Range: 0 ~ 604800
+    voidCallCooldownSeconds = 180
+    #Cooldown after a resisted call.
+    # Default: 15
+    # Range: 0 ~ 604800
+    voidCallFailureCooldownSeconds = 15
+    #Mastered cooldown.
+    # Default: 30
+    # Range: 0 ~ 604800
+    voidCollapseCooldownMasteredSeconds = 30
+    #Void Collapse cooldown.
+    # Default: 45
+    # Range: 0 ~ 604800
+    voidCollapseCooldownSeconds = 45
+    #Self Void travel cooldown.
+    # Default: 5
+    # Range: 0 ~ 86400
+    voidSelfCooldownSeconds = 5
+    #Other-entity Void travel cooldown.
+    # Default: 60
+    # Range: 0 ~ 604800
+    voidTargetCooldownSeconds = 60
+    #Absolute Subjugation radius.
+    # Default: 20.0
+    # Range: 0.0 ~ 256.0
+    absoluteSubjugationRadius = 20.0
+    #Range for selecting a permanent subordinate.
+    # Default: 20.0
+    # Range: 1.0 ~ 256.0
+    foodChainRange = 20.0
+    #Maximum distance from the selected player used by crouching Void Call.
+    # Default: 50
+    # Range: 4 ~ 256
+    voidCallApproachRadius = 50
+    #Mastered duration.
+    # Default: 60
+    # Range: 1 ~ 86400
+    voidCallDurationMasteredSeconds = 60
+    #How long a called player remains in the Void.
+    # Default: 45
+    # Range: 1 ~ 86400
+    voidCallDurationSeconds = 45
+    #Base implosion radius; mastery adds 50 percent.
+    # Default: 8.0
+    # Range: 1.0 ~ 64.0
+    voidCollapseRadius = 8.0
+    #Maximum targeting range for Void Collapse.
+    # Default: 40.0
+    # Range: 1.0 ~ 256.0
+    voidCollapseRange = 40.0
+    #Maximum range for sending another entity through the Void.
+    # Default: 20.0
+    # Range: 1.0 ~ 256.0
+    voidTargetRange = 20.0
+    #Targets must have less than this fraction of the user's EP.
+    # Default: 0.8
+    # Range: 0.0 ~ 1000.0
+    absoluteSubjugationEpRatio = 0.8
+    #Magic-damage scaling for Void Collapse.
+    # Default: 6.0
+    # Range: 0.0 ~ 1000.0
+    voidCollapseMagicScale = 6.0
+    #Mastered magic-damage scaling.
+    # Default: 9.0
+    # Range: 0.0 ~ 1000.0
+    voidCollapseMagicScaleMastered = 9.0
+    #Maximum independently stored count per Void Storage slot.
+    # Default: 256
+    # Range: 1 ~ 1000000
+    voidStorageMaxStack = 256
+    #Number of 54-slot pages in Man God's Void Storage.
+    # Default: 6
+    # Range: 1 ~ 100
+    voidStoragePages = 6
+
+[familyMultipliers]
+
+    [familyMultipliers.manGod]
+        #Family outgoing-damage multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        damageMultiplier = 1.0
+        #Family native-cooldown multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Family Aura-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        auraCostMultiplier = 1.0
+        #Family Magicule-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        magiculeCostMultiplier = 1.0
+        #Family targeting/radius multiplier.
+        # Default: 1.0
+        # Range: 0.1 ~ 20.0
+        rangeMultiplier = 1.0
+
+    [familyMultipliers.manipulator]
+        #Family outgoing-damage multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        damageMultiplier = 1.0
+        #Family native-cooldown multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Family Aura-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        auraCostMultiplier = 1.0
+        #Family Magicule-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        magiculeCostMultiplier = 1.0
+        #Family targeting/radius multiplier.
+        # Default: 1.0
+        # Range: 0.1 ~ 20.0
+        rangeMultiplier = 1.0
+
+[abilities]
+
+    [abilities.man_god_hitogami]
+        #Controls for trevolved:man_god_hitogami. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.man_god_hitogami.subskills]
+
+            #Native mode 0: man_god.absolute_subjugation. IDs/indices are not renumbered when disabled.
+            [abilities.man_god_hitogami.subskills.man_god_absolute_subjugation]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 4: man_god.food_chain_grant. IDs/indices are not renumbered when disabled.
+            [abilities.man_god_hitogami.subskills.man_god_food_chain_grant]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 3: man_god.food_chain_receive. IDs/indices are not renumbered when disabled.
+            [abilities.man_god_hitogami.subskills.man_god_food_chain_receive]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 1: man_god.spatial_camouflage. IDs/indices are not renumbered when disabled.
+            [abilities.man_god_hitogami.subskills.man_god_spatial_camouflage]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 2: man_god.the_void. IDs/indices are not renumbered when disabled.
+            [abilities.man_god_hitogami.subskills.man_god_the_void]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 6: man_god.void_call. IDs/indices are not renumbered when disabled.
+            [abilities.man_god_hitogami.subskills.man_god_void_call]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 5: man_god.void_collapse. IDs/indices are not renumbered when disabled.
+            [abilities.man_god_hitogami.subskills.man_god_void_collapse]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+[subskills]
+
+    #Native mode 0: manipulator.charm. IDs/indices are not renumbered when disabled.
+    [subskills.manipulator_charm]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+    #Native mode 1: manipulator.spatial_camouflage. IDs/indices are not renumbered when disabled.
+    [subskills.manipulator_spatial_camouflage]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

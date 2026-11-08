@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "note": "Spawner-related EP gate controls for Apothic Nightmares.",
+  "blockHighEpSpawnerSpawns": true,
+  "highEpThreshold": 10000.0,
+  "highEpLootPinataThreshold": 5000.0,
+  "applyToAnySpawnerType": true,
+  "blockHighEpLootPinata": true
+}

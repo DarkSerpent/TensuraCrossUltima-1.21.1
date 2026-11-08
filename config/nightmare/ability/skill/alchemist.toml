@@ -1,0 +1,280 @@
+#Magicules needed to acquire Alchemist.
+magiculeAcquirement = 50000.0
+#Ticks the skill key must be held before the radial menu opens. A shorter press casts the armed transmutation.
+radialHoldTicks = 5
+#Ticks of chanting over the transmutation circle before a cast fires (before the Gate of Truth).
+chantTicks = 16
+#Ticks between the clap and the cast once the Gate of Truth is open.
+gateCastTicks = 4
+#Cooldown multiplier once the Gate of Truth is open (0.7 = 30% shorter).
+gateCooldownMultiplier = 0.7
+#Magicule cost multiplier once Alchemist is mastered.
+masteredCostMultiplier = 0.8
+#Allow real terrain reshaping. When false, constructs form from nothing at a higher Magicule cost.
+terrainEnabled = true
+#Magicule multiplier for constructs formed from nothing (terrain disabled or no usable ground).
+fromNothingCostMultiplier = 2.5
+#Block used for constructs formed from nothing.
+fromNothingBlock = "minecraft:stone"
+#Allow transmutation to move fluid source blocks.
+touchFluidSources = false
+#Allow transmutation to move blocks that hold block entities (chests, furnaces...). Strongly discouraged.
+touchBlockEntities = false
+#Require the mobGriefing game rule for terrain transmutation.
+respectMobGriefing = false
+#Extra blocks of depth pulled under a lifted column, so the hollow stays underground.
+liftDepthPadding = 2
+#Seconds a recently exploded or transmuted block stays in the change log for Rebuild Terrain.
+changeLogSeconds = 600
+#Magicules paid per missing material unit (an ingot, a block...), before the fallback rate.
+missingMaterialMagicules = 150.0
+#Rate applied to Magicules paid instead of missing materials (1.5 = 50% worse).
+missingMaterialRate = 1.5
+#Construct damage multiplier per point of block hardness of the source material.
+hardnessDamagePerPoint = 0.25
+#Lowest construct damage multiplier from material (soft blocks like dirt).
+hardnessDamageMin = 0.6
+#Highest construct damage multiplier from material (obsidian and harder).
+hardnessDamageMax = 3.0
+#Spike Line: reach in blocks.
+spikeRange = 14.0
+#Spike Line: Earth damage per spike before material scaling.
+spikeDamage = 40.0
+#Spike Line: tallest spike in blocks.
+spikeHeight = 3
+#Spike Line: upward knock on hit.
+spikeKnockUp = 0.9
+#Spike Line: Magicules per cast.
+spikeMagicules = 600.0
+#Spike Line: cooldown in seconds.
+spikeCooldownSeconds = 4.0
+#Spike Line: seconds before the spikes crumble back.
+spikeDurationSeconds = 8
+#Pillar Launch: reach in blocks.
+pillarRange = 24.0
+#Pillar Launch: column lift in blocks.
+pillarHeight = 5
+#Pillar Launch: upward launch speed.
+pillarLaunch = 1.6
+#Pillar Launch: Earth damage to a launched target.
+pillarDamage = 20.0
+#Pillar Launch: Magicules per cast.
+pillarMagicules = 800.0
+#Pillar Launch: cooldown in seconds.
+pillarCooldownSeconds = 6.0
+#Pillar Launch: seconds before the pillar sinks back.
+pillarDurationSeconds = 10
+#Wall: width in blocks.
+wallWidth = 5
+#Wall: height in blocks.
+wallHeight = 4
+#Wall: distance in front of you in blocks.
+wallDistance = 3.0
+#Wall: hits needed to break one wall block.
+wallBlockHits = 2
+#Wall: Magicules per cast.
+wallMagicules = 700.0
+#Wall: cooldown in seconds.
+wallCooldownSeconds = 8.0
+#Wall: seconds before the wall crumbles back.
+wallDurationSeconds = 15
+#Cage: reach in blocks.
+cageRange = 16.0
+#Cage: hits needed to break one cage block.
+cageBlockHits = 2
+#Cage: hits a player needs to break one cage block at no mastery. Never lower than cageBlockHits.
+cageEscapeHits = 5
+#Cage: extra hits a player needs per cage block once Alchemist is fully mastered (scales with mastery).
+cageEscapeHitsMastery = 5
+#Cage: creatures with at least this much max health count as strong and shatter the cage early. Bosses always do. 0 = only bosses.
+cageStrongHealth = 300.0
+#Cage: seconds a boss or strong creature stays held before it shatters the cage.
+cageShatterSeconds = 2.0
+#Cage: Magicules per cast.
+cageMagicules = 1200.0
+#Cage: cooldown in seconds.
+cageCooldownSeconds = 14.0
+#Cage: seconds before the cage crumbles back.
+cageDurationSeconds = 6
+#Pit: reach in blocks.
+pitRange = 16.0
+#Pit: depth in blocks.
+pitDepth = 4
+#Pit: radius in blocks (1 = 3x3).
+pitRadius = 1
+#Pit: Magicules per cast.
+pitMagicules = 900.0
+#Pit: cooldown in seconds.
+pitCooldownSeconds = 10.0
+#Pit: seconds before the pit closes.
+pitDurationSeconds = 6
+#Bridge/Stairs: most blocks per walkway.
+bridgeLength = 16
+#Bridge/Stairs: walkways stay forever. When false they crumble after bridgeDurationSeconds.
+bridgePermanent = true
+#Bridge/Stairs: seconds before a temporary walkway crumbles.
+bridgeDurationSeconds = 60
+#Bridge/Stairs: walkways may cover fluid source blocks.
+bridgeOverFluids = true
+#Bridge/Stairs: full block used for the walkway.
+bridgeBlock = "minecraft:stone_bricks"
+#Bridge/Stairs: slab used for half steps.
+bridgeSlab = "minecraft:stone_brick_slab"
+#Bridge/Stairs: Magicules per cast, on top of one stone-like block per walkway block.
+bridgeMagicules = 200.0
+#Bridge/Stairs: cooldown in seconds.
+bridgeCooldownSeconds = 3.0
+#Arm Blade: bonus attack damage while the blade is out and the main hand is empty.
+armBladeDamage = 12.0
+#Arm Blade: bonus reach in blocks.
+armBladeReach = 1.5
+#Arm Blade: iron ingots used to form the blade.
+armBladeIron = 2
+#Arm Blade: cooldown in seconds after toggling.
+armBladeCooldownSeconds = 2.0
+#Automail Spear: thrust reach in blocks.
+spearRange = 6.0
+#Automail Spear: damage to everything in the thrust.
+spearDamage = 45.0
+#Automail Spear: iron ingots used per thrust.
+spearIron = 1
+#Automail Spear: Magicules per thrust.
+spearMagicules = 500.0
+#Automail Spear: cooldown in seconds.
+spearCooldownSeconds = 5.0
+#Iron Fist: bonus damage of the next empty-hand punch.
+ironFistDamage = 60.0
+#Iron Fist: knockback strength of the punch.
+ironFistKnockback = 2.5
+#Iron Fist: seconds the fist stays ready.
+ironFistWindowSeconds = 6.0
+#Iron Fist: iron ingots used per fist.
+ironFistIron = 1
+#Iron Fist: Magicules per fist.
+ironFistMagicules = 400.0
+#Iron Fist: cooldown in seconds.
+ironFistCooldownSeconds = 8.0
+#Shatter Gear: reach in blocks.
+shatterRange = 8.0
+#Shatter Gear: share of each item's max durability removed.
+shatterFraction = 0.25
+#Shatter Gear: least durability removed per item.
+shatterMinDamage = 30
+#Shatter Gear: Magicules per cast.
+shatterMagicules = 1000.0
+#Shatter Gear: cooldown in seconds.
+shatterCooldownSeconds = 12.0
+#Unmake Construct: reach in blocks.
+unmakeRange = 12.0
+#Unmake Construct: damage to golems, dolls, summons and constructs.
+unmakeDamage = 250.0
+#Unmake Construct: share of a construct's max health dealt when that is higher.
+unmakeMaxHealthFraction = 0.35
+#Unmake Construct: damage to anything that isn't a construct.
+unmakeOtherDamage = 20.0
+#Unmake Construct: Magicules per cast.
+unmakeMagicules = 1500.0
+#Unmake Construct: cooldown in seconds.
+unmakeCooldownSeconds = 15.0
+#Disarm: reach in blocks.
+disarmRange = 8.0
+#Disarm: a disarmed player's item goes into their own inventory instead of the ground.
+disarmPlayersToInventory = true
+#Disarm: mobs drop their held item.
+disarmMobsDropItem = true
+#Disarm: Magicules per cast.
+disarmMagicules = 800.0
+#Disarm: cooldown in seconds.
+disarmCooldownSeconds = 18.0
+#Repair Held Item: share of max durability restored per repair material.
+repairPerMaterial = 0.25
+#Repair Held Item: cooldown in seconds.
+repairCooldownSeconds = 2.0
+#Rebuild Terrain: radius in blocks around the point you look at.
+rebuildRadius = 6.0
+#Rebuild Terrain: most blocks restored per cast.
+rebuildMaxBlocks = 400
+#Rebuild Terrain: Magicules per restored block when you don't carry the block.
+rebuildMagiculesPerBlock = 15.0
+#Rebuild Terrain: cooldown in seconds.
+rebuildCooldownSeconds = 10.0
+#Fortify Wall: radius in blocks around the point you look at.
+fortifyRadius = 10.0
+#Fortify Wall: seconds added to your constructs.
+fortifyExtraSeconds = 10
+#Fortify Wall: hits needed to break a fortified block. Fortified blocks also shrug off explosions.
+fortifyBlockHits = 4
+#Fortify Wall: Magicules per cast.
+fortifyMagicules = 500.0
+#Fortify Wall: cooldown in seconds.
+fortifyCooldownSeconds = 10.0
+#Refine: Magicules per refined item.
+refineMagiculesPerItem = 40.0
+#Refine: most items refined from the held stack per cast.
+refineMaxItems = 64
+#Refine: reach in blocks for refining an ore block.
+refineRange = 6.0
+#Refine: cooldown in seconds.
+refineCooldownSeconds = 1.0
+#Analyze: most ticks a single analysis channel may last.
+analyzeMaxTicks = 600
+#Transmutation Cannon: seconds the cannon keeps firing.
+cannonSeconds = 6.0
+#Transmutation Cannon: ticks between shells.
+cannonShotTicks = 15
+#Transmutation Cannon: Earth damage at the centre of a shell blast.
+cannonDamage = 60.0
+#Transmutation Cannon: blast radius in blocks.
+cannonBlastRadius = 2.5
+#Transmutation Cannon: shell speed in blocks per tick.
+cannonShellSpeed = 2.2
+#Transmutation Cannon: Magicules per cast.
+cannonMagicules = 6000.0
+#Transmutation Cannon: cooldown in seconds.
+cannonCooldownSeconds = 45.0
+#Mass Transmutation: radius in blocks.
+massRadius = 7.0
+#Mass Transmutation: spikes raised.
+massSpikes = 18
+#Mass Transmutation: most enemies caged.
+massCages = 3
+#Mass Transmutation: Magicules per cast.
+massMagicules = 8000.0
+#Mass Transmutation: cooldown in seconds.
+massCooldownSeconds = 50.0
+#Combos: seconds after a transmutation in which a second one on the same area becomes a combo.
+comboWindowSeconds = 2.0
+#Combos: how close in blocks the second transmutation must land to the first.
+comboRadius = 8.0
+#Combos: length in blocks of spikes bursting out of a wall face.
+comboSpikeLength = 2
+#Combos: duration multiplier of a sealed pit prison (Pit then Cage) over a normal cage.
+comboSealDurationMultiplier = 2.5
+#Combos: spike damage multiplier when a launched target lands on a spike bed (Pillar Launch then Spike Line).
+comboSpikeBedMultiplier = 2.0
+#Circle Inscription: radius of a permanent circle in blocks (1 = 3x3).
+inscriptionRadius = 1
+#Circle Inscription: most circles one alchemist may keep. The oldest is erased when a new one is drawn.
+inscriptionMax = 3
+#Circle Inscription: how far from the circle's edge in blocks you still draw on it.
+inscriptionReach = 2.0
+#Circle Inscription: Magicule discount while casting on a circle (0.3 = 30% cheaper).
+inscriptionMpDiscount = 0.3
+#Circle Inscription: range bonus while casting on a circle (0.5 = 50% further).
+inscriptionRangeBonus = 0.5
+#Circle Inscription: chant time multiplier while casting on a circle before the Gate of Truth (0.5 = half the chant).
+inscriptionChantMultiplier = 0.5
+#Circle Inscription: Magicules per circle.
+inscriptionMagicules = 1500.0
+#Circle Inscription: cooldown in seconds.
+inscriptionCooldownSeconds = 10.0
+#Build: reach in blocks for aiming a build.
+buildRange = 24.0
+#Build: Magicules per placed block, on top of the block itself.
+buildMagiculesPerBlock = 10.0
+#Build: most blocks placed by one build.
+buildMaxBlocks = 512
+#Build: builds may fill water and lava. When false they only fill air and replaceable plants.
+buildReplaceFluids = true
+#Build: cooldown in seconds.
+buildCooldownSeconds = 1.0

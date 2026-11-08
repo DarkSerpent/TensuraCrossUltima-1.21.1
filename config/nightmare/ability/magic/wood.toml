@@ -1,0 +1,171 @@
+[RootLance]
+	#Chant time in ticks.
+	castTicks = 10
+	#Magicule cost to cast.
+	magiculeCost = 800.0
+	#Cooldown in seconds.
+	cooldown = 3
+	#The range a target can be aimed at in blocks.
+	aimRange = 24.0
+	#The length of the line of roots in blocks.
+	length = 12.0
+	#Ticks between two roots bursting from the ground.
+	rootInterval = 1
+	#The earth damage of each root.
+	damage = 75.94
+	#The reach of each root around its base in blocks.
+	hitRadius = 1.1
+	#The upward push of each root.
+	knockUp = 0.45
+	#The most roots of one line that can hit the same enemy.
+	maxHitsPerTarget = 2
+
+[WoodBind]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost to cast.
+	magiculeCost = 1200.0
+	#Cooldown in seconds.
+	cooldown = 8
+	#The range a target can be aimed at in blocks.
+	aimRange = 24.0
+	#Ticks the target is rooted in place.
+	bindTicks = 60
+	#Ticks the target is rooted in place while standing on grass or dirt.
+	groundBindTicks = 80
+	#The longest any Wood Magic bind holds a boss, in ticks.
+	bossBindTicks = 20
+	#Whether fire damage burns the roots away early.
+	breakOnFire = true
+
+[WoodClone]
+	#Chant time in ticks.
+	castTicks = 30
+	#Magicule cost to cast.
+	magiculeCost = 16000.0
+	#Cooldown in seconds.
+	cooldown = 25
+	#Ticks the clone lasts.
+	lifetimeTicks = 400
+	#Share of the caster's melee damage the clone deals.
+	damageShare = 0.5
+	#Share of the caster's max health the clone gets.
+	healthShare = 0.5
+	#The least max health the clone gets.
+	minHealth = 20.0
+	#The radius in blocks in which the collapsing clone roots enemies.
+	collapseRadius = 4.0
+	#Ticks enemies are rooted by the collapsing clone.
+	collapseBindTicks = 30
+
+[WoodDragon]
+	#Chant time in ticks.
+	castTicks = 40
+	#Magicule cost to cast.
+	magiculeCost = 20000.0
+	#Cooldown in seconds.
+	cooldown = 25
+	#The range a target can be aimed at in blocks.
+	aimRange = 32.0
+	#Ticks the dragon takes to erupt and strike.
+	eruptTicks = 10
+	#The earth damage of the impact.
+	impactDamage = 217.5
+	#The earth damage of each crushing squeeze, once a second.
+	crushDamagePerSecond = 108.75
+	#Seconds the dragon crushes and holds its target.
+	crushSeconds = 4
+	#Share of the target's current magicules drained to the caster each second.
+	drainFraction = 0.05
+	#Whether the coils hold the target in place.
+	holdTarget = true
+
+[DeepForest]
+	#Chant time in ticks.
+	castTicks = 60
+	#Magicule cost to cast.
+	magiculeCost = 63000.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#The range to the aimed point in blocks.
+	aimRange = 40.0
+	#The radius of the forest in blocks.
+	radius = 14.0
+	#Ticks the forest stands.
+	durationTicks = 240
+	#The earth damage of the lashing roots each second.
+	damagePerSecond = 30.0
+	#The Slowness level applied inside the forest, starting at 0.
+	slowAmplifier = 2
+
+[WorldTree]
+	#Chant time in ticks.
+	castTicks = 80
+	#Magicule cost to cast.
+	magiculeCost = 80000.0
+	#Cooldown in seconds.
+	cooldown = 120
+	#The range to the aimed point in blocks.
+	aimRange = 40.0
+	#The reach of the branches and canopy in blocks.
+	radius = 16.0
+	#Ticks the tree stands.
+	durationTicks = 400
+	#Share of each enemy's current magicules drained every second.
+	drainFraction = 0.03
+	#Health restored to each ally in range every second.
+	allyHealPerSecond = 4.0
+	#Extra spell cost for enemies inside the canopy, as a share. 0.25 is +25%.
+	spellCostIncrease = 0.25
+	#Share of max health restored to allies by the closing burst.
+	burstHealFraction = 0.3
+
+[WoodenTitan]
+	#Chant time in ticks.
+	castTicks = 60
+	#Magicule cost to summon.
+	magiculeCost = 52500.0
+	#Cooldown in seconds, started when the titan is summoned.
+	cooldown = 90
+	#Ticks the titan lasts.
+	lifetimeTicks = 1200
+	#Magicules drained from the rider every second.
+	magiculeDrainPerSecond = 150.0
+	#The titan's max health.
+	maxHealth = 600.0
+	#The titan's armor.
+	armor = 12.0
+	#The titan's walking speed.
+	speed = 0.1
+	#The most degrees the titan turns each tick.
+	turnDegrees = 6.0
+	#The upward speed of the jump-stomp.
+	jumpStrength = 0.75
+	#The earth damage of the landing stomp.
+	stompDamage = 120.0
+	#The radius of the landing stomp in blocks.
+	stompRadius = 5.0
+	#The knockback of the landing stomp.
+	stompKnockback = 1.2
+	#Ticks between two jump-stomps.
+	stompCooldownTicks = 40
+	#The earth damage of the fist punch.
+	punchDamage = 180.0
+	#The radius of the fist punch impact in blocks.
+	punchRadius = 3.5
+	#How far in front of the titan the fist lands in blocks.
+	punchReach = 3.5
+	#The knockback of the fist punch.
+	punchKnockback = 2.2
+	#Ticks between two punches.
+	punchCooldownTicks = 16
+	#Magicule cost of the root-spike barrage, used with the skill key while riding.
+	barrageMagiculeCost = 1500.0
+	#Ticks between two root-spike barrages.
+	barrageCooldownTicks = 100
+	#The earth damage of each barrage root.
+	barrageDamage = 90.0
+	#Lines of roots in each barrage.
+	barrageLines = 5
+	#The length of each barrage line in blocks.
+	barrageLength = 14.0

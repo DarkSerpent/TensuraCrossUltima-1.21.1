@@ -1,0 +1,33 @@
+
+#Shared Pickpocket ban lists for Adventurer and Fortune God, Kazuma.
+#Additive to the existing trevolved:theft_blacklist item tag and bound-armour protection.
+#Save edits, then run /trevolved reload. Shared bans below apply to both target types.
+[pickpocket]
+    #Item tag IDs whose members cannot be pickpocketed, e.g. minecraft:swords.
+    #An optional leading # is accepted, e.g. #minecraft:swords. Includes tags from mods and datapacks.
+    #Unknown/empty tags match nothing. Tag membership follows the server's loaded datapacks.
+    bannedItemTags = []
+    #Item registry IDs that cannot be pickpocketed, e.g. minecraft:diamond or anothermod:protected_item.
+    #Matches the whole item type, regardless of stack size, enchantments or other components.
+    #Unknown valid IDs are harmless, allowing optional mods to be listed.
+    bannedItems = []
+
+#Additional Pickpocket rules when stealing items from mobs. Shared bans still apply.
+[mobs]
+    #Allow item Pickpocket against this target type; skill theft/copy is unaffected.
+    enabled = true
+    #Additional item tags blocked for this target type only, e.g. minecraft:swords; optional # accepted.
+    bannedItemTags = []
+    #Additional exact item IDs blocked for this target type only, e.g. minecraft:diamond.
+    bannedItems = []
+    #Block item Pickpocket from tamed/owned creatures or any custom-named mob. Skill stealing/copying has a separate switch in skills/adventurer.toml.
+    protectTamedOrNamedPetsFromItemTheft = false
+
+#Additional Pickpocket rules when stealing items from players. Shared bans still apply.
+[players]
+    #Allow item Pickpocket against this target type; skill theft/copy is unaffected.
+    enabled = true
+    #Additional item tags blocked for this target type only, e.g. minecraft:swords; optional # accepted.
+    bannedItemTags = []
+    #Additional exact item IDs blocked for this target type only, e.g. minecraft:diamond.
+    bannedItems = []

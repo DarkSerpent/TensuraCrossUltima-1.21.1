@@ -1,0 +1,211 @@
+[Toxins]
+	#Seconds of Poison added by each stacking application.
+	poisonSeconds = 6
+	#The highest Poison level stacking can reach, starting at 0.
+	maxPoisonAmplifier = 3
+	#Seconds of Corrosion applied by corroding spells.
+	corrosionSeconds = 5
+	#Corrosion level applied by corroding spells, starting at 0.
+	corrosionAmplifier = 0
+
+[PoisonDragonRoar]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost to cast.
+	magiculeCost = 12000.0
+	#Cooldown in seconds.
+	cooldown = 15
+	#The length of the breath cone in blocks.
+	length = 10.0
+	#The half-angle of the breath cone in degrees.
+	coneAngle = 20.0
+	#Damage pulses the breath deals.
+	pulses = 4
+	#Ticks between two damage pulses.
+	pulseTicks = 8
+	#The damage of each pulse.
+	pulseDamage = 36.25
+	#The damage of each pulse when mastered.
+	masteredPulseDamage = 50.75
+	#Extra durability damage dealt to every worn armour piece of each target per pulse.
+	armorShred = 3
+	#The push of each pulse.
+	knockback = 0.15
+
+[PoisonDragonTwinFang]
+	#Chant time in ticks.
+	castTicks = 10
+	#Magicule cost to cast.
+	magiculeCost = 1000.0
+	#Cooldown in seconds.
+	cooldown = 5
+	#The reach of each swipe in blocks.
+	reach = 4.0
+	#The width of each swipe in degrees.
+	arcDegrees = 110.0
+	#Ticks between the first and the second swipe.
+	swipeGapTicks = 5
+	#The damage of each swipe.
+	damage = 50.63
+	#The damage of each swipe when mastered.
+	masteredDamage = 67.5
+	#Seconds Scale Venom lasts.
+	venomSeconds = 15
+	#Scale Venom damage per second.
+	venomDamagePerSecond = 6.75
+	#The radius in blocks Scale Venom jumps to when its carrier dies.
+	jumpRadius = 5.0
+	#The push of each swipe.
+	knockback = 0.3
+
+[PoisonDragonScale]
+	#Chant time in ticks.
+	castTicks = 30
+	#Magicule cost to cast.
+	magiculeCost = 16000.0
+	#Cooldown in seconds.
+	cooldown = 25
+	#The range to the aimed point in blocks.
+	aimRange = 32.0
+	#The radius of the mist in blocks.
+	radius = 7.0
+	#Seconds the mist lasts.
+	durationSeconds = 10
+	#Damage per second to enemies inside the mist.
+	damagePerSecond = 10.88
+	#Weakness level applied to enemies inside the mist, starting at 0. Below 0 disables it.
+	weaknessAmplifier = 1
+	#Slowness level applied to enemies inside the mist, starting at 0. Below 0 disables it.
+	slownessAmplifier = 0
+
+[PoisonDragonWing]
+	#Chant time in ticks.
+	castTicks = 10
+	#Magicule cost to cast.
+	magiculeCost = 1500.0
+	#Cooldown in seconds.
+	cooldown = 8
+	#The radius of the spinning arcs in blocks.
+	radius = 4.0
+	#Full turns the arcs make.
+	rotations = 3
+	#Ticks the spin lasts.
+	durationTicks = 20
+	#The damage of each hit.
+	damage = 42.19
+	#The damage of each hit when mastered.
+	masteredDamage = 54.0
+	#The most hits one enemy can take per cast.
+	maxHitsPerTarget = 2
+	#How far above and below the caster the arcs reach in blocks.
+	height = 2.0
+	#The push of each hit.
+	knockback = 0.4
+
+[HearingMagic]
+	#Magicule drained per second while listening.
+	magiculePerSecond = 20.0
+	#The radius in blocks hostile intent is heard from.
+	radius = 24.0
+	#Distance in blocks within which an aggressive mob counts as winding up an attack.
+	windupRange = 4.0
+	#Chance from 0 to 1 to fully dodge a melee hit from a heard enemy.
+	dodgeChance = 0.1
+	#Seconds of listening between two mastery points.
+	masteryIntervalSeconds = 30
+
+[Appetite]
+	#Whether a caster who learned Dragon Slayer's Appetite can eat poison to restore magicules.
+	enabled = true
+	#Magicules restored by eating a poisonous potato, spider eye or pufferfish, or drinking a Poison potion.
+	magiculePerMeal = 2000.0
+	#Whether the meal also clears the eater's Poison.
+	curePoison = true
+
+[VenomDart]
+	#Chant time in ticks.
+	castTicks = 10
+	#Magicule cost to cast.
+	magiculeCost = 600.0
+	#Cooldown in seconds.
+	cooldown = 2
+	#The damage of the dart.
+	damage = 42.19
+	#The damage of the dart when mastered.
+	masteredDamage = 54.0
+	#The range of the dart in blocks.
+	range = 40.0
+	#The flight speed of the dart in blocks per tick.
+	speed = 3.0
+
+[MiasmaCloud]
+	#Chant time in ticks.
+	castTicks = 30
+	#Magicule cost to cast.
+	magiculeCost = 12000.0
+	#Cooldown in seconds.
+	cooldown = 20
+	#The range to the aimed point in blocks.
+	aimRange = 32.0
+	#The radius of the cloud in blocks.
+	radius = 6.0
+	#Seconds the cloud lasts.
+	durationSeconds = 10
+	#Damage per second to enemies inside the cloud.
+	damagePerSecond = 18.13
+	#Weakness level applied to enemies inside the cloud, starting at 0. Below 0 disables it.
+	weaknessAmplifier = 0
+
+[AcidRain]
+	#Chant time in ticks.
+	castTicks = 60
+	#Magicule cost to cast.
+	magiculeCost = 52500.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#The range to the aimed point in blocks.
+	aimRange = 40.0
+	#The radius of the downpour in blocks.
+	radius = 12.0
+	#Seconds the downpour lasts.
+	durationSeconds = 8
+	#Damage per second to enemies under the downpour.
+	damagePerSecond = 40.0
+	#Durability damage dealt to every worn armour piece of each enemy per second.
+	armorShredPerSecond = 6
+
+[PoisonDragonForce]
+	#Magicules spent to awaken Dragon Force.
+	activationCost = 30000.0
+	#Magicules drained per second while Dragon Force is awake.
+	magiculePerSecond = 250.0
+	#Damage multiplier for Poison Dragon Slayer spells while Dragon Force is awake.
+	damageMultiplier = 1.4
+	#Whether every Poison Dragon Slayer hit also applies Scale Venom while Dragon Force is awake.
+	scaleVenomOnHit = true
+	#Whether the caster is immune to Poison while Dragon Force is awake.
+	poisonImmunity = true
+	#Seconds awake between two mastery points.
+	masteryIntervalSeconds = 30
+
+[FangStorm]
+	#Chant time in ticks.
+	castTicks = 40
+	#Magicule cost to cast.
+	magiculeCost = 75000.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#The radius the typhoon spirals out to in blocks.
+	radius = 9.0
+	#Ticks the typhoon lasts.
+	durationTicks = 40
+	#Ticks between two damage pulses.
+	pulseTicks = 5
+	#Total damage one enemy can take from the whole cast.
+	totalDamage = 700.0
+	#Damage multiplier when the spell is mastered.
+	masteredDamageMultiplier = 1.5
+	#How far above and below the caster the typhoon reaches in blocks.
+	height = 3.0
+	#The swirling push of each pulse. Bosses take a third.
+	knockback = 0.25

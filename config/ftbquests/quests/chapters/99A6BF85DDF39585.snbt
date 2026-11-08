@@ -1,0 +1,1916 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "99A6BF85DDF39585"
+	group: "13F20E01BC3FA737"
+	icon: {
+		id: "botania:cosmetic_botanist_emblem"
+	}
+	id: "525656712386F63B"
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "botania:magenta_mystical_flower"
+			}
+			id: "40FE119F7B808098"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "1D0032C6E3EC4FB0"
+					type: "tensura_ftb:existence_value"
+					value: 1000
+				}
+				{
+					command: "/rtitle grant {p} \"&a[Botanist]\" desc Began cultivating the art of Botania"
+					exclude_from_claim_all: true
+					id: "2C82D6F8E08AA373"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			tasks: [{
+				advancement: "botania:main/flower_pickup"
+				criterion: ""
+				id: "2BA6F93B56B9F618"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "6C0F1290BEFE9F6F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "06EBE0648D19434A"
+					type: "tensura_ftb:existence_value"
+					value: 1000
+				}
+				{
+					command: "/rtitle grant {p} \"&7[Flower Forager]\" desc Gathered Botania's first flowers"
+					exclude_from_claim_all: true
+					id: "3AD0089E145C6214"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "7C450AB0CA6323A4"
+				item: { count: 1, id: "botania:fertilizer" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			id: "50898525CC0F915C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "0E4E8D35768448DD"
+					type: "tensura_ftb:existence_value"
+					value: 1000
+				}
+				{
+					command: "/rtitle grant {p} \"&7[Botanical Scholar]\" desc Learned Botania's natural philosophy"
+					exclude_from_claim_all: true
+					id: "58E0D9973ECB9F25"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "5FE6374748F6040E"
+				item: { count: 1, id: "botania:lexicon" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			icon: {
+				id: "botania:orange_double_flower"
+			}
+			id: "1A9A3CD4F01D709A"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7211A26751E4B20F"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [
+				{
+					id: "1E473EDB7DD3275C"
+					item: { count: 1, id: "minecraft:bone_meal" }
+					type: "item"
+				}
+				{
+					id: "09C241FA99220A49"
+					item: { count: 1, id: "botania:white_double_flower" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			icon: {
+				id: "botania:apothecary_default"
+			}
+			id: "7CD8CFC2880EF3AF"
+			tasks: [{
+				id: "0AAC90F8A3A481A1"
+				item: { count: 1, id: "botania:apothecary_default" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CD8CFC2880EF3AF"]
+			id: "43DB92376FFB680D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "05E09053BF7642D3"
+					type: "tensura_ftb:existence_value"
+					value: 1000
+				}
+				{
+					command: "/rtitle grant {p} \"&a[Pure Daisy Artisan]\" desc Mastered the art of purifying the natural world"
+					exclude_from_claim_all: true
+					id: "1D39A0D1B2614FC5"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "483C362A63307D95"
+				item: { count: 1, id: "botania:pure_daisy" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["43DB92376FFB680D"]
+			id: "6B0D9E00AE409F14"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "140C1D34D76B8E31"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "2B599F08ECE18E9C"
+				item: { count: 1, id: "botania:livingwood_log" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6B0D9E00AE409F14"]
+			icon: {
+				id: "naturescompass:naturescompass"
+			}
+			id: "1AEA264A1802A7FE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "09B8487D41944631"
+					type: "tensura_ftb:existence_value"
+					value: 1000
+				}
+				{
+					command: "/rtitle grant {p} \"&a[I Can Find the Biomes]\" desc Crafted a compass attuned to botanical knowledge"
+					exclude_from_claim_all: true
+					id: "452220F23D04AA44"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "5F97CE81407D1A62"
+				item: { count: 1, id: "naturescompass:naturescompass" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["43DB92376FFB680D"]
+			id: "04FB6EB43064CE78"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "6BCE2C6BA3FFA48D"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "56CE8F4BF8AACC0F"
+				item: { count: 1, id: "botania:livingrock" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			id: "2C9CB9C6B6350DF8"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "533E676E655D4F3A"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "6E3C4A90B27F5E1E"
+				item: { count: 1, id: "botania:mana_spreader" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			id: "1D261057E7B4E07A"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "5D2ECFFE72CB4BB4"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "6E143BDCD1EDBBA4"
+				item: { count: 1, id: "botania:twig_wand" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["04FB6EB43064CE78"]
+			id: "25F4F057E8CBE658"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "20B35860411B98E4"
+				type: "tensura_ftb:existence_value"
+				value: 150
+			}]
+			tasks: [{
+				id: "4EA78ED4EEF97DC2"
+				item: { count: 1, id: "botania:mana_pool" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7CD8CFC2880EF3AF"]
+			icon: {
+				id: "botania:endoflame"
+			}
+			id: "54C6FF330A583A5E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "68AFC06BA92D407B"
+					type: "tensura_ftb:existence_value"
+					value: 1000
+				}
+				{
+					command: "/rtitle grant {p} \"&a[Mana Artisan]\" desc Learned to harness mana through flowers"
+					exclude_from_claim_all: true
+					id: "647DC34F3B71FCA3"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "58671338AEE0762E"
+				item: { count: 1, id: "botania:endoflame" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"54C6FF330A583A5E"
+				"25F4F057E8CBE658"
+				"2C9CB9C6B6350DF8"
+			]
+			icon: {
+				id: "botania:manasteel_ingot"
+			}
+			id: "5850DF3CC9679540"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "1E63B1F6B70442A5"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [
+				{
+					id: "3A9B35F1A1F226A7"
+					item: { count: 1, id: "botania:manasteel_ingot" }
+					type: "item"
+				}
+				{
+					id: "6778F0EE2BC3E5BB"
+					item: { count: 1, id: "botania:mana_diamond" }
+					type: "item"
+				}
+				{
+					id: "1360C4C2092009DA"
+					item: { count: 1, id: "botania:mana_pearl" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			id: "675F4A513CBCE570"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4C20652EE941D3F0"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "6CDFA73D118E4F9C"
+				item: { count: 1, id: "botania:open_crate" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			id: "5779E3F494C2076E"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5988318A52624C82"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "33FAAFD637CE246C"
+				item: { count: 1, id: "botania:grass_seeds" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			icon: {
+				id: "botania:golden_seeds"
+			}
+			id: "0B21F09A559B332C"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "51631150F67FCDDD"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0ABD79105DB74332"
+				item: { count: 1, id: "botania:golden_seeds" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "botania:floating_endoflame"
+			}
+			id: "101A949B0726CD74"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "197C73C41B0D4944"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0CE7AF2E7A30F6CB"
+				item: { count: 1, id: "botania:floating_endoflame" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			id: "2D020F4C90F8A506"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4DA78DFDD96F41C2"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "7FCD96C1D4C009BA"
+				item: { count: 1, id: "botania:mana_string" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			id: "5FC19073972441E6"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "76680E24FFCF4FCD"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "5363E597F5362C8D"
+				item: { count: 1, id: "botania:hourglass" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			id: "67123B33B888BEB0"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "60B2AAD36DD77297"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "053F7AED4563A9AD"
+				item: { count: 1, id: "botania:tiny_potato" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			id: "7F1335909C325DF5"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "18ED65C318E24DB3"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "193192F2424E939E"
+				item: { count: 1, id: "botania:teru_teru_bozu" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			id: "35FDAB9FED24F4C5"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "55B4F59AAAB948AC"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "304D3E4FED5217DA"
+				item: { count: 1, id: "botania:mana_distributor" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			id: "3E11E4D98FDCB817"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6C9B0F3C450F79BB"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "3BAC63803803E233"
+				item: { count: 1, id: "botania:piston_relay" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			id: "1D68B74BF2CBB0DC"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "52279B0C3A7A3671"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "7FB66E3A8DD67303"
+				item: { count: 1, id: "botania:mana_tablet" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1D68B74BF2CBB0DC"]
+			id: "72107222A8C057B5"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5E1080DAE5884B49"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "69745D77B94A7604"
+				item: { count: 1, id: "botania:mana_ring" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			id: "1FC0D1E50C61E0BA"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "028DE46C8E854822"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "102F989CDC1639F6"
+				item: { count: 1, id: "botania:runic_altar" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			icon: {
+				id: "botania:rune_mana"
+			}
+			id: "38885CD90AF0F1E8"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "2E8A4C97D1635B0F"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [
+				{
+					id: "74B26781ADABB16A"
+					item: { count: 1, id: "botania:rune_water" }
+					type: "item"
+				}
+				{
+					id: "2C2B0DCCF2F5583A"
+					item: { count: 1, id: "botania:rune_earth" }
+					type: "item"
+				}
+				{
+					id: "4A606FFFB37BC6AC"
+					item: { count: 1, id: "botania:rune_fire" }
+					type: "item"
+				}
+				{
+					id: "18AD2D37E8CEEA04"
+					item: { count: 1, id: "botania:rune_air" }
+					type: "item"
+				}
+				{
+					id: "3D671065A0DA396E"
+					item: { count: 1, id: "botania:rune_mana" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			id: "37090F5115C27AAD"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "13F2AD98BA47454D"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "52C3CB3D7BBB07DC"
+				item: { count: 1, id: "botania:spark" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["38885CD90AF0F1E8"]
+			id: "582DE0CF782DAF36"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "79B2162E94EA6E82"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1BB3B9B28E2B7F87"
+				item: { count: 1, id: "botania:lens_normal" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["582DE0CF782DAF36"]
+			id: "2EEF9E7ADB649245"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0EAB83CD43793A76"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "068F2D28E36EF013"
+				item: { count: 1, id: "botania:magnet_ring" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["38885CD90AF0F1E8"]
+			icon: {
+				id: "botania:brewery"
+			}
+			id: "587D685AB16755A8"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5F62B17919BA4DDB"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "37004EE3612B7959"
+					item: { count: 1, id: "botania:brewery" }
+					type: "item"
+				}
+				{
+					id: "6AD9A5A815DD9551"
+					item: { count: 1, id: "botania:incense_stick" }
+					type: "item"
+				}
+				{
+					id: "6A5448A94D56F32F"
+					item: { count: 1, id: "botania:blood_pendant" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			id: "79C1317BF48B6FA6"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1F59E6157EEA4680"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4442701AF27BEF2C"
+				item: { count: 1, id: "botania:invisibility_cloak" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			id: "2B209E525A3F5160"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "25D812D29BF2AB76"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "6D4F51784B15F207"
+				item: { count: 1, id: "botania:alchemy_catalyst" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["38885CD90AF0F1E8"]
+			id: "065A6F21F78ADFAD"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6482A1B4B26D4641"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "3C0E9344D789E170"
+				item: { count: 1, id: "botania:travel_belt" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["38885CD90AF0F1E8"]
+			id: "2E7E37FF046BFF0B"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3B76E2D7B0B94892"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "248B1383AC2F406A"
+				item: { count: 1, id: "botania:cloud_pendant" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["38885CD90AF0F1E8"]
+			id: "04DE950291551F74"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "59F3C25D2BAD2DA8"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "45B7147BF444214C"
+				item: { count: 1, id: "botania:aura_ring" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			id: "56E52E9C1E97FB7E"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "55F340DCD6DF4CAC"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1F1EAE30507DDFAC"
+				item: { count: 1, id: "botania:azulejo_0" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			id: "0D5283F0B13D6034"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3D5676ACBCD3E6F4"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "63AAB60FACAD782F"
+				item: { count: 1, id: "botania:divining_rod" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["38885CD90AF0F1E8"]
+			id: "585B97EEAD947A23"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "485698CBDE4B78C0"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "10A05575E9B14D03"
+				item: { count: 1, id: "botania:exchange_rod" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["38885CD90AF0F1E8"]
+			id: "5B2AE70D704C5F70"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "2310D4F00CF7B1D3"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "65B57AE01E54B07B"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5B2AE70D704C5F70"]
+			id: "06F56CDC551BB06C"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5D0980928CD042FF"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4753667C0E67F16F"
+				item: { count: 1, id: "botania:bellethorn" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5B2AE70D704C5F70"]
+			id: "6951357AE395D30E"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "67727EB32B6580EA"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "3508AE0F0C0EBDEA"
+				item: { count: 1, id: "botania:agricarnation" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5B2AE70D704C5F70"]
+			id: "7CB64CBAFF5C5F07"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6F3C30F14A26435C"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "152AE19CF35EEDE7"
+				item: { count: 1, id: "botania:marimorphosis" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5B2AE70D704C5F70"]
+			id: "3242CBD006ABEFF3"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "76982ABC7F844547"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "478F6E61E75EABDA"
+				item: { count: 1, id: "botania:solegnolia" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5B2AE70D704C5F70"]
+			id: "5B358061A68C5B2A"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5D0E35384BDF4D72"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2A44E721E37C7E9C"
+				item: { count: 1, id: "botania:hopperhock" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5B2AE70D704C5F70"]
+			id: "694EA92C87D930B8"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2705541C16C44098"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "76F715234070C863"
+				item: { count: 1, id: "botania:rannuncarpus" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			id: "17EF7E10E3637513"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "79D81B813B6054B7"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "0FBC018F18FEE02E"
+				item: { count: 1, id: "botania:mana_pylon" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"37090F5115C27AAD"
+				"38885CD90AF0F1E8"
+			]
+			icon: {
+				id: "botania:terrasteel_ingot"
+			}
+			id: "6468E7E4C56E572C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "2DDF373A91CC7EAE"
+					type: "tensura_ftb:existence_value"
+					value: 1000
+				}
+				{
+					command: "/rtitle grant {p} \"&6[Terrasteel Smith]\" desc Forged the alloy of the earth"
+					exclude_from_claim_all: true
+					id: "4196DB16180E1D0B"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "0BA1283B1AA39BE6"
+					item: { count: 1, id: "botania:terra_plate" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0BF0094834880FA8"
+					item: { count: 1, id: "botania:livingrock" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3C360EED68A749BA"
+					item: { count: 1, id: "minecraft:lapis_block" }
+					type: "item"
+				}
+				{
+					id: "52D0F45F9E7C5D69"
+					item: { count: 1, id: "botania:terrasteel_ingot" }
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6468E7E4C56E572C"]
+			id: "469B9E91A55C830F"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4332E1D46A4444F7"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0027F7C473DDF8D1"
+				item: { count: 1, id: "botania:terra_pick" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6468E7E4C56E572C"]
+			id: "0DD9115CFFC15A74"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4F345961A0CA4E5C"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "024B22BB61292AD1"
+				item: { count: 1, id: "botania:mana_mirror" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"6468E7E4C56E572C"
+				"17EF7E10E3637513"
+			]
+			icon: {
+				id: "botania:natura_pylon"
+			}
+			id: "18C9E163F746C545"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "7C3A90E5B21D684F"
+					type: "tensura_ftb:existence_value"
+					value: 3000
+				}
+				{
+					command: "/rtitle grant {p} \"&9[Elven Envoy]\" desc Opened a trade with the elves"
+					exclude_from_claim_all: true
+					id: "04DA38C961631A15"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "68CCFAE9E8088C47"
+					item: { count: 1, id: "botania:alfheim_portal" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "2142C773A69B3ECF"
+					item: { count: 1, id: "botania:glimmering_livingwood_log" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "43EB098148A93ACC"
+					item: { count: 1, id: "botania:livingwood_log" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3B588538F15DD0B0"
+					item: { count: 1, id: "botania:mana_pool" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "01CC6FD183611AB4"
+					item: { count: 1, id: "botania:natura_pylon" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18C9E163F746C545"]
+			icon: {
+				id: "botania:dragonstone"
+			}
+			id: "615D259AF6A14656"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7D0F1CF0EB5A4743"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [
+				{
+					id: "4E6B87925747741E"
+					item: { count: 1, id: "botania:elementium_ingot" }
+					type: "item"
+				}
+				{
+					id: "07F967987DFAF9D1"
+					item: { count: 1, id: "botania:pixie_dust" }
+					type: "item"
+				}
+				{
+					id: "2705ADD900DB9743"
+					item: { count: 1, id: "botania:dragonstone" }
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "botania:corporea_index"
+			}
+			id: "66933CABF911F575"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "18F64AF6979B4A9A"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "27B0F8A9F45DE250"
+					item: { count: 1, id: "botania:corporea_spark_master" }
+					type: "item"
+				}
+				{
+					id: "0E38856B0957975D"
+					item: { count: 1, id: "botania:corporea_spark" }
+					type: "item"
+				}
+				{
+					id: "0B33BC6DA9590412"
+					item: { count: 1, id: "botania:corporea_index" }
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: -1.5d
+		}
+		{
+			id: "414FA15DBA09296F"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "21199F76795D4289"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "6EB5D1200827A041"
+				item: { count: 1, id: "botania:red_string" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["414FA15DBA09296F"]
+			id: "498D8E47E667D630"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7BF63038C4CCBDA8"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "20D62FA43CC7313F"
+				item: { count: 1, id: "botania:light_relay" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			id: "6CEC61C07833509F"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2804E3F098CF4EC8"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "167E04F07A7207F2"
+				item: { count: 1, id: "botania:drum_gathering" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			id: "17AF79682E7BE5D3"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "30A5EA0913EB4BE2"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "00284A85DC903125"
+				item: { count: 1, id: "botania:prism" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			id: "3D21F4D9FD963A1C"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3D1DD4F01031457F"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "300B02FAAFA10F5F"
+				item: { count: 1, id: "botania:reach_ring" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -1.5d
+		}
+		{
+			id: "4D5655F5FB99B831"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1766BB7AB90724F7"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "7BBC3B73C8B46026"
+				item: { count: 1, id: "botania:slime_bottle" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			icon: {
+				id: "botania:orechid"
+			}
+			id: "6917BBCA0E3FDF48"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A9A675D56A747B8"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "5AF62D08A093B548"
+					item: { count: 1, id: "botania:orechid" }
+					type: "item"
+				}
+				{
+					id: "45A17B8D97604903"
+					item: { count: 1, id: "botania:orechid_ignem" }
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: -1.5d
+		}
+		{
+			id: "305F4F270713277F"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7E168B27685CEF03"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1FA9A833CA34C2FC"
+				item: { count: 1, id: "botania:elven_spreader" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			id: "04BB306C8A17149A"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "08765329BED1E32A"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2D176E68AA7EFBE3"
+				item: { count: 1, id: "botania:skydirt_rod" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -2.0d
+		}
+		{
+			id: "3F850F759BC2874D"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "025394979E282327"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "68A0F26B85383FD5"
+				item: { count: 1, id: "botania:spawner_claw" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -2.5d
+		}
+		{
+			id: "442080C26038D950"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0DFCED5A335C15E6"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "35065A1F4147D5CC"
+				item: { count: 1, id: "botania:conjuration_catalyst" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			id: "3B18EF0F9807CADB"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4B403D4726903CB8"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "721A9508BF3A7D98"
+				item: { count: 1, id: "botania:gravity_rod" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			icon: {
+				id: "botania:virus_nullodermal"
+			}
+			id: "0085136101DB1F9A"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A10081F55564B21"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "65E8950D4820E4C4"
+					item: { count: 1, id: "botania:virus_necrodermal" }
+					type: "item"
+				}
+				{
+					id: "565EAA28E5624BD1"
+					item: { count: 1, id: "botania:virus_nullodermal" }
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: -2.5d
+		}
+		{
+			id: "681DE496ABCFB4D6"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "10F855944F1569B7"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "54A2A3A946593031"
+				item: { count: 1, id: "botania:rainbow_rod" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			icon: {
+				id: "botania:life_essence"
+			}
+			id: "135EA2FF73DEFEC8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "4A7D2B90E1C63F58"
+					type: "tensura_ftb:existence_value"
+					value: 3000
+				}
+				{
+					command: "/rtitle grant {p} \"&9[Gaia Challenger]\" desc Prepared to challenge the Gaia Guardian"
+					exclude_from_claim_all: true
+					id: "6B5FED350BBCFF0E"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "05BF0CC7FF3F9CC7"
+					item: { count: 1, id: "botania:gaia_pylon" }
+					type: "item"
+				}
+				{
+					id: "7D10A9F0768BC2F6"
+					item: { count: 1, id: "minecraft:beacon" }
+					type: "item"
+				}
+				{
+					id: "52C4D274DD1FA773"
+					item: { count: 1, id: "botania:terrasteel_ingot" }
+					type: "item"
+				}
+				{
+					id: "476092EEFFE05B67"
+					item: { count: 1, id: "botania:life_essence" }
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["135EA2FF73DEFEC8"]
+			icon: {
+				id: "botania:gaia_head"
+			}
+			id: "789E303E30210CCA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "2316DA73814DFCF9"
+					type: "tensura_ftb:existence_value"
+					value: 5000
+				}
+				{
+					command: "/rtitle grant {p} \"&9[Gaia's Nemesis]\" desc Defeated the first-tier Gaia Guardian"
+					exclude_from_claim_all: true
+					id: "21BE7AD4A3423448"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "botania:main/gaia_guardian_kill"
+				criterion: ""
+				id: "1CAB501E259D1ADE"
+				type: "advancement"
+			}]
+			x: 14.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["789E303E30210CCA"]
+			icon: {
+				id: "botania:life_essence"
+			}
+			id: "28A5C8D0E3DBF050"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "5E6033252CCFFEB1"
+					type: "tensura_ftb:existence_value"
+					value: 7000
+				}
+				{
+					command: "/rtitle grant {p} \"&e[Really Doesn't Like Gaia]\" desc Defeated the second-tier Gaia Guardian"
+					exclude_from_claim_all: true
+					id: "54562D6FE3E85474"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "botania:challenge/gaia_guardian_hardmode"
+				criterion: ""
+				id: "40A91F0FD11438F1"
+				type: "advancement"
+			}]
+			x: 16.0d
+			y: -1.5d
+		}
+		{
+			id: "570D9901060BC5FA"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "66B06D80D00A7782"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2F0FE51F8B7FD180"
+				item: { count: 1, id: "botania:spawner_mover" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 2.0d
+		}
+		{
+			id: "0F617A990DB2CD19"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0C1134218C464683"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1B89C59B1B10F723"
+				item: { count: 1, id: "botania:laputa_shard" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 1.0d
+		}
+		{
+			id: "73E1394A15979CEC"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0F00C0FEF2254224"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "23A39FFC7DB127E7"
+				item: { count: 1, id: "botania:super_lava_pendant" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 1.0d
+		}
+		{
+			id: "3452B7872FD9A598"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "11014FCEF96E8AAF"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "19576800183F12DC"
+				item: { count: 1, id: "botania:astrolabe" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			id: "79B7B0488B32BC1A"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "15788332FD185BCF"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1F7BB8B3B496E2CF"
+				item: { count: 1, id: "botania:flight_tiara" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 1.5d
+		}
+		{
+			id: "6407C6807712F58E"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1E444F203ADB6909"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "32542FD2439F5AC3"
+				item: { count: 1, id: "botania:black_hole_talisman" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["305F4F270713277F"]
+			id: "7B2FA029F6718D6F"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3714FF5B2859475C"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "534F7275DF2B3C2E"
+				item: { count: 1, id: "botania:gaia_spreader" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 2.5d
+		}
+		{
+			id: "4B2BDD590A250F99"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2DE754CC30BCE87F"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1EF6B7CE1366E676"
+				item: { count: 1, id: "botania:diva_charm" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.0d
+		}
+		{
+			id: "2FD3B9F39ED2B8F4"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "35370D3946B1D497"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				id: "234C1D483CB7C48D"
+				item: { count: 1, id: "botania:gaia_ingot" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			id: "2163D4B45D32FDE9"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "2F67660F962F47BF"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				id: "2C49F63AB56A0D45"
+				item: { count: 1, id: "botania:dice" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			id: "071A8A3EEA16433F"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "69A38EE51110C187"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1ED4BF6E0C490623"
+				item: { count: 1, id: "botania:odin_ring" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: 0.5d
+		}
+		{
+			id: "6E7382AAA466B804"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "590EA49BE2F4723D"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "00AF013DF7BE218E"
+				item: { count: 1, id: "botania:thor_ring" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: -0.5d
+		}
+		{
+			id: "19C04F9C32B84448"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3C2D826A319641F3"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "5B9BF2906992FCC2"
+				item: { count: 1, id: "botania:loki_ring" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			id: "683D92CC4488166B"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "64FD6DDB58A142D6"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "126F851804E98562"
+				item: { count: 1, id: "botania:flugel_eye" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: -0.5d
+		}
+		{
+			id: "17DE36653F7D75B7"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "30D6FFE38EE7F1BA"
+				table_id: 313187697425120324L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4CFF0E87EE34ABA8"
+				item: { count: 1, id: "botania:infinite_fruit" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: 0.5d
+		}
+		{
+			id: "0DAE7D37108791B1"
+			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "753006E46212D152"
+					type: "tensura_ftb:existence_value"
+					value: 5000
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A3004CAD0F3C509"
+					table_id: 313187697425120324L
+					type: "random"
+				}
+				{
+					command: "/rtitle grant {p} \"&6[King of Kings]\" desc Claimed the Key of King's Law"
+					exclude_from_claim_all: true
+					id: "26C428225F1595C5"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "63E21E21516AF9F9"
+				item: { count: 1, id: "botania:king_key" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 0.0d
+		}
+	]
+}

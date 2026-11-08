@@ -1,0 +1,50 @@
+#Max health of a Red Demon.
+health = 400.0
+#Attack damage attribute of a Red Demon.
+attackDamage = 25.0
+#Whether Red Demons spawn naturally in the Nether.
+naturalSpawn = true
+#Chance (0..1) a natural spawn attempt that picked a Red Demon goes through. Lower is rarer.
+spawnChance = 0.35
+#Natural spawns fail if another Red Demon is within this many blocks. 0 turns the check off.
+spawnSpacing = 64
+#Whether Red Demons also spawn naturally in Tensura's Hell.
+hellSpawn = true
+#Chance (0..1) a natural spawn attempt in Hell that picked a Red Demon goes through.
+hellSpawnChance = 0.5
+#Natural spawns in Hell fail if another Red Demon is within this many blocks. 0 turns the check off.
+hellSpawnSpacing = 48
+#Smallest size a Red Demon spawns at (1 = normal, about 4.4 blocks tall).
+minScale = 1.0
+#Largest size a Red Demon spawns at. Each spawn rolls a random size between the two, shrinking it if the space around it is too tight.
+maxScale = 8.0
+#Whether claw reach, fire breath reach and body slam radius grow with the demon's size. Damage never scales.
+reachScalesWithSize = true
+#Claw swipe: damage.
+clawSwipeDamage = 25.0
+#Claw swipe: cooldown in ticks.
+clawCooldown = 26
+#Fire breath: Tensura flame breath damage per pulse.
+breathPulseDamage = 35.0
+#Fire breath: ticks between damage pulses.
+breathPulseInterval = 10
+#Fire breath: reach in blocks at normal size.
+breathRange = 14.0
+#Fire breath: half-angle of the cone in degrees.
+breathAngle = 18.0
+#Fire breath: seconds targets are set alight.
+breathBurnSeconds = 6
+#Fire breath: cooldown in ticks after it ends.
+breathCooldown = 180
+#Fire breath: whether it sets blocks alight (also needs the mobGriefing gamerule).
+breathIgnitesBlocks = false
+#Body slam: damage to everything inside the radius.
+bodySlamDamage = 80.0
+#Body slam: radius in blocks at normal size.
+slamRadius = 5.5
+#Body slam: cooldown in ticks.
+slamCooldown = 140
+#Demon Heart: chance (0..1) a Red Demon drops one on death.
+heartDropChance = 0.15
+#Demon Heart: a Red Demon only drops one if its max EP is above this.
+heartDropMinEp = 80000.0

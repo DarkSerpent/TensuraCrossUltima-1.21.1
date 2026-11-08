@@ -1,0 +1,355 @@
+#Controls for trevolved:dragon_king. Detailed balance is in this same file.
+#Allow learning this ability. Existing ownership is kept.
+allowAcquisition = true
+#Allow active subskills. Inherent passives are not removed.
+allowActiveUse = true
+#Allow enabling its native passive toggle. Switching it off remains allowed.
+allowPassiveToggle = true
+#Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+allowTerrainDamage = true
+
+[evolutionRequirements]
+
+    [evolutionRequirements.dragonKing]
+        #Required Existence Points.
+        # Default: 1500000
+        # Range: 0 ~ 9223372036854775807
+        ep = 1500000
+        #Primary tracked requirement; see publication CONFIGURATION.md for its meaning.
+        # Default: 2500
+        # Range: > 0
+        requirementA = 2500
+        #Secondary tracked requirement; zero disables this numeric gate where unused.
+        # Default: 10
+        # Range: > 0
+        requirementB = 10
+        #Tertiary tracked requirement; zero disables this numeric gate where unused.
+        # Default: 0
+        # Range: > 0
+        requirementC = 0
+        #Require every prerequisite skill in this route to be mastered.
+        requireMastery = true
+
+[dragonPath]
+    #Maximum-health gain per valid kill.
+    # Default: 0.5
+    # Range: 0.0 ~ 100000.0
+    soulHarvestHealthPerKill = 0.5
+    #Soul-health gain per valid kill.
+    # Default: 0.5
+    # Range: 0.0 ~ 100000.0
+    soulHarvestSoulHealthPerKill = 0.5
+    #Dragon God Speed Blitz physical damage.
+    # Default: 1500.0
+    # Range: 0.0 ~ 1.0E9
+    dragonGodBlitzDamage = 1500.0
+    #Dragon God Speed Blitz spiritual damage.
+    # Default: 1000.0
+    # Range: 0.0 ~ 1.0E9
+    dragonGodBlitzSoulDamage = 1000.0
+    #Unmastered Dragon King Speed Blitz damage.
+    # Default: 200.0
+    # Range: 0.0 ~ 1.0E9
+    dragonKingBlitzDamage = 200.0
+    #Mastered Dragon King Speed Blitz damage.
+    # Default: 400.0
+    # Range: 0.0 ~ 1.0E9
+    dragonKingBlitzDamageMastered = 400.0
+    #Dragon God Speed Blitz native cooldown.
+    # Default: 2
+    # Range: 0 ~ 86400
+    dragonGodBlitzCooldownSeconds = 2
+    #Mastered native cooldown.
+    # Default: 3
+    # Range: 0 ~ 86400
+    dragonKingBlitzCooldownMasteredSeconds = 3
+    #Unmastered native cooldown.
+    # Default: 5
+    # Range: 0 ~ 86400
+    dragonKingBlitzCooldownSeconds = 5
+    #Curse of Reincarnation cooldown.
+    # Default: 120
+    # Range: 0 ~ 604800
+    dragonKingRebirthCooldownSeconds = 120
+    #Dragon God curse radius in blocks.
+    # Default: 40
+    # Range: 0 ~ 256
+    dragonGodFearRadius = 40
+    #Seconds before all Sovereign Rebirth charges return.
+    # Default: 600
+    # Range: 1 ~ 604800
+    dragonGodRebirthCycleSeconds = 600
+    #Dragon King curse radius in blocks.
+    # Default: 20
+    # Range: 0 ~ 256
+    dragonKingFearRadius = 20
+    #Larger values slow the early exponential adaptation curve.
+    # Default: 40.0
+    # Range: 0.1 ~ 1.0E9
+    adaptationCurveHits = 40.0
+    #Repeated hits required to reach the configured maximum exactly.
+    # Default: 200
+    # Range: > 1
+    adaptationImmunityHits = 200
+    #Maximum damage reduction, where 1.0 is immunity.
+    # Default: 1.0
+    # Range: 0.0 ~ 1.0
+    adaptationMaximumReduction = 1.0
+    #Displayed Fear level for Dragon God.
+    # Default: 10
+    # Range: 1 ~ 255
+    dragonGodFearLevel = 10
+    #Sovereign Rebirth charges per cycle.
+    # Default: 10
+    # Range: 0 ~ 1000
+    dragonGodRebirthCharges = 10
+    #Maximum-Magicule fraction consumed per Dragon God rebirth.
+    # Default: 0.2
+    # Range: 0.0 ~ 1.0
+    dragonGodRebirthMagiculeFraction = 0.2
+    #Total EP gain multiplier, including Tensura's normal gain.
+    # Default: 2.0
+    # Range: 1.0 ~ 1000.0
+    dragonGodTotalEpGainMultiplier = 2.0
+    #Displayed Fear level for Dragon King.
+    # Default: 6
+    # Range: 1 ~ 255
+    dragonKingFearLevel = 6
+    #Maximum-Magicule fraction consumed by Dragon King rebirth.
+    # Default: 0.5
+    # Range: 0.0 ~ 1.0
+    dragonKingRebirthMagiculeFraction = 0.5
+    #Targets above this multiple of the owner's maximum EP ignore the curse.
+    # Default: 1.5
+    # Range: 0.0 ~ 1000.0
+    fearImmuneEpRatio = 1.5
+    #Independent cap for each Soul Harvest health pool.
+    # Default: 5000.0
+    # Range: 0.0 ~ 1.0E9
+    soulHarvestCapEach = 5000.0
+
+[familyMultipliers]
+
+    [familyMultipliers.dragonGod]
+        #Family outgoing-damage multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        damageMultiplier = 1.0
+        #Family native-cooldown multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Family Aura-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        auraCostMultiplier = 1.0
+        #Family Magicule-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        magiculeCostMultiplier = 1.0
+        #Family targeting/radius multiplier.
+        # Default: 1.0
+        # Range: 0.1 ~ 20.0
+        rangeMultiplier = 1.0
+
+    [familyMultipliers.dragonKing]
+        #Family outgoing-damage multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        damageMultiplier = 1.0
+        #Family native-cooldown multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Family Aura-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        auraCostMultiplier = 1.0
+        #Family Magicule-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        magiculeCostMultiplier = 1.0
+        #Family targeting/radius multiplier.
+        # Default: 1.0
+        # Range: 0.1 ~ 20.0
+        rangeMultiplier = 1.0
+
+[abilities]
+
+    [abilities.dragon_god_orsted]
+        #Controls for trevolved:dragon_god_orsted. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.dragon_god_orsted.subskills]
+
+            #Native mode 3: dragon_god.adaptation_registry. IDs/indices are not renumbered when disabled.
+            [abilities.dragon_god_orsted.subskills.dragon_god_adaptation_registry]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 0: dragon_god.haki. IDs/indices are not renumbered when disabled.
+            [abilities.dragon_god_orsted.subskills.dragon_god_haki]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 2: dragon_god.sovereign_analysis. IDs/indices are not renumbered when disabled.
+            [abilities.dragon_god_orsted.subskills.dragon_god_sovereign_analysis]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 1: dragon_god.speed_blitz. IDs/indices are not renumbered when disabled.
+            [abilities.dragon_god_orsted.subskills.dragon_god_speed_blitz]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+[subskills]
+
+    #Native mode 0: dragon_king.demon_lord_haki. IDs/indices are not renumbered when disabled.
+    [subskills.dragon_king_demon_lord_haki]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+    #Native mode 2: dragon_king.draconic_appraisal. IDs/indices are not renumbered when disabled.
+    [subskills.dragon_king_draconic_appraisal]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+    #Native mode 1: dragon_king.speed_blitz. IDs/indices are not renumbered when disabled.
+    [subskills.dragon_king_speed_blitz]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

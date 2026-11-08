@@ -1,0 +1,413 @@
+#Controls for trevolved:quagmire. Detailed balance is in this same file.
+#Allow learning this ability. Existing ownership is kept.
+allowAcquisition = true
+#Allow active subskills. Inherent passives are not removed.
+allowActiveUse = true
+#Allow enabling its native passive toggle. Switching it off remains allowed.
+allowPassiveToggle = true
+#Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+allowTerrainDamage = true
+
+[evolutionRequirements]
+
+    [evolutionRequirements.quagmire]
+        #Required Existence Points.
+        # Default: 1200000
+        # Range: 0 ~ 9223372036854775807
+        ep = 1200000
+        #Primary tracked requirement; see publication CONFIGURATION.md for its meaning.
+        # Default: 80
+        # Range: > 0
+        requirementA = 80
+        #Secondary tracked requirement; zero disables this numeric gate where unused.
+        # Default: 0
+        # Range: > 0
+        requirementB = 0
+        #Tertiary tracked requirement; zero disables this numeric gate where unused.
+        # Default: 0
+        # Range: > 0
+        requirementC = 0
+        #Require every prerequisite skill in this route to be mastered.
+        requireMastery = true
+
+[educationGodModes]
+    #Caster magic-damage bonus fraction.
+    # Default: 0.25
+    # Range: 0.0 ~ 1000.0
+    leylineCasterMagicDamageBonus = 0.25
+    #Mastered caster magic-damage bonus.
+    # Default: 0.4
+    # Range: 0.0 ~ 1000.0
+    leylineCasterMagicDamageBonusMastered = 0.4
+    #Melee attack-damage bonus fraction.
+    # Default: 1.5
+    # Range: -1.0 ~ 1000.0
+    magicArmorMeleeDamageBonus = 1.5
+    #Allied spell-cost reduction fraction.
+    # Default: 0.25
+    # Range: 0.0 ~ 1.0
+    leylineAllySpellCostReduction = 0.25
+    #Mastered allied cost reduction.
+    # Default: 0.35
+    # Range: 0.0 ~ 1.0
+    leylineAllySpellCostReductionMastered = 0.35
+    #Mastered cooldown.
+    # Default: 45
+    # Range: 0 ~ 86400
+    leylineCooldownMasteredSeconds = 45
+    #Leyline Dominion cooldown.
+    # Default: 60
+    # Range: 0 ~ 86400
+    leylineCooldownSeconds = 60
+    #Enemy spell-cost increase fraction.
+    # Default: 0.25
+    # Range: 0.0 ~ 1000.0
+    leylineEnemySpellCostIncrease = 0.25
+    #Mastered enemy spell-cost increase.
+    # Default: 0.5
+    # Range: 0.0 ~ 1000.0
+    leylineEnemySpellCostIncreaseMastered = 0.5
+    #Mastered cooldown started when disabled.
+    # Default: 30
+    # Range: 0 ~ 86400
+    magicArmorCooldownMasteredSeconds = 30
+    #Cooldown started when Magic Armor is disabled.
+    # Default: 45
+    # Range: 0 ~ 86400
+    magicArmorCooldownSeconds = 45
+    #Additional spell-cost coefficient applied to each newly gained damage multiplier step.
+    # Default: 0.25
+    # Range: 0.0 ~ 1000.0
+    overchargeExtraCostFraction = 0.25
+    #Mastered cooldown.
+    # Default: 10
+    # Range: 0 ~ 86400
+    perfectCounterspellCooldownMasteredSeconds = 10
+    #Perfect Counterspell cooldown.
+    # Default: 15
+    # Range: 0 ~ 86400
+    perfectCounterspellCooldownSeconds = 15
+    #Fragility duration after Absolute Refresh.
+    # Default: 10
+    # Range: 0 ~ 86400
+    absoluteRefreshFragilitySeconds = 10
+    #Mastered duration.
+    # Default: 25
+    # Range: 1 ~ 86400
+    leylineDurationMasteredSeconds = 25
+    #Leyline Dominion duration.
+    # Default: 20
+    # Range: 1 ~ 86400
+    leylineDurationSeconds = 20
+    #Leyline Dominion radius.
+    # Default: 20.0
+    # Range: 0.0 ~ 256.0
+    leylineRadius = 20.0
+    #Mastered radius.
+    # Default: 25.0
+    # Range: 0.0 ~ 256.0
+    leylineRadiusMastered = 25.0
+    #Displayed Fragility level after Absolute Refresh.
+    # Default: 3
+    # Range: 1 ~ 256
+    absoluteRefreshFragilityLevel = 3
+    #Additive Magicule-regeneration multiplier from Boundless Mana Font.
+    # Default: 5.0
+    # Range: 0.0 ~ 1000.0
+    boundlessManaFontBonus = 5.0
+    #Mastered native dodge chance.
+    # Default: 50.0
+    # Range: 0.0 ~ 100.0
+    dodgeChanceMasteredPercent = 50.0
+    #Native melee/projectile dodge chance.
+    # Default: 40.0
+    # Range: 0.0 ~ 100.0
+    dodgeChancePercent = 40.0
+    #Added total multiplier; 19 produces a final 20x rate from a normal 1x baseline.
+    # Default: 19.0
+    # Range: 0.0 ~ 1000.0
+    geniusLearningAndMasteryBonus = 19.0
+    #Allied chant-time reduction fraction.
+    # Default: 0.3
+    # Range: 0.0 ~ 0.99
+    leylineAllyChantReduction = 0.3
+    #Mastered allied chant reduction.
+    # Default: 0.4
+    # Range: 0.0 ~ 0.99
+    leylineAllyChantReductionMastered = 0.4
+    #Allied Magicule-regeneration bonus fraction.
+    # Default: 1.0
+    # Range: 0.0 ~ 1000.0
+    leylineAllyRegenerationBonus = 1.0
+    #Mastered allied regeneration bonus.
+    # Default: 1.5
+    # Range: 0.0 ~ 1000.0
+    leylineAllyRegenerationBonusMastered = 1.5
+    #Enemy regeneration reduction fraction.
+    # Default: 0.5
+    # Range: 0.0 ~ 1.0
+    leylineEnemyRegenerationReduction = 0.5
+    #Mastered enemy regeneration reduction.
+    # Default: 0.75
+    # Range: 0.0 ~ 1.0
+    leylineEnemyRegenerationReductionMastered = 0.75
+    #Attack-speed bonus fraction.
+    # Default: 1.0
+    # Range: -1.0 ~ 1000.0
+    magicArmorAttackSpeedBonus = 1.0
+    #Armor disables at or below this fraction of maximum Magicules.
+    # Default: 0.05
+    # Range: 0.0 ~ 1.0
+    magicArmorAutoDisableFraction = 0.05
+    #Mastered maximum-Magicule drain fraction each second.
+    # Default: 0.0175
+    # Range: 0.0 ~ 1.0
+    magicArmorDrainFractionMastered = 0.0175
+    #Maximum-Magicule fraction drained each second.
+    # Default: 0.025
+    # Range: 0.0 ~ 1.0
+    magicArmorDrainFractionPerSecond = 0.025
+    #Knockback resistance added by the armor.
+    # Default: 0.75
+    # Range: 0.0 ~ 1.0
+    magicArmorKnockbackResistance = 0.75
+    #Movement-speed bonus fraction.
+    # Default: 1.0
+    # Range: -1.0 ~ 1000.0
+    magicArmorMovementBonus = 1.0
+    #Physical damage fraction prevented.
+    # Default: 0.6
+    # Range: 0.0 ~ 1.0
+    magicArmorPhysicalMitigation = 0.6
+    #Armor supplied by Magic Armor Mk 0.
+    # Default: 150.0
+    # Range: 0.0 ~ 1.0E9
+    magicArmorPoints = 150.0
+    #Additional regeneration multiplier while Overcharge is toggled, raising the default total bonus from +500% to +750%.
+    # Default: 2.5
+    # Range: 0.0 ~ 1000.0
+    overchargeRegenerationBonus = 2.5
+    #Returned projectile speed and damage multiplier.
+    # Default: 1.5
+    # Range: 0.0 ~ 1000.0
+    perfectCounterspellReturnMultiplier = 1.5
+    #Mastered return multiplier.
+    # Default: 2.0
+    # Range: 0.0 ~ 1000.0
+    perfectCounterspellReturnMultiplierMastered = 2.0
+    #Ward window in ticks; 50 ticks is 2.5 seconds.
+    # Default: 50
+    # Range: 1 ~ 72000
+    perfectCounterspellWardTicks = 50
+
+[overcharge]
+    #Native cooldown for Absolute Refresh.
+    # Default: 10
+    # Range: 0 ~ 86400
+    absoluteRefreshCooldownSeconds = 10
+    #Fraction of maximum Magicules consumed by Absolute Refresh.
+    # Default: 0.1
+    # Range: 0.0 ~ 1.0
+    absoluteRefreshMagiculeFraction = 0.1
+    #Base ticks between early Education God exponential charge steps.
+    # Default: 20
+    # Range: 1 ~ 72000
+    educationGodBaseIntervalTicks = 20
+    #Maximum Education God spell multiplier.
+    # Default: 1000.0
+    # Range: 1.0 ~ 1000000.0
+    educationGodCap = 1000.0
+    #How strongly Education God charge steps slow as the multiplier rises.
+    # Default: 0.42
+    # Range: 0.0 ~ 4.0
+    educationGodSlowdownExponent = 0.42
+    #Maximum Quagmire spell multiplier.
+    # Default: 10.0
+    # Range: 1.0 ~ 10000.0
+    quagmireCap = 10.0
+    #Ticks between Quagmire's linear +1x charge steps after the original chant completes.
+    # Default: 40
+    # Range: 1 ~ 72000
+    quagmireIntervalTicks = 40
+
+[familyMultipliers]
+
+    [familyMultipliers.educationGod]
+        #Family outgoing-damage multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        damageMultiplier = 1.0
+        #Family native-cooldown multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Family Aura-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        auraCostMultiplier = 1.0
+        #Family Magicule-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        magiculeCostMultiplier = 1.0
+        #Family targeting/radius multiplier.
+        # Default: 1.0
+        # Range: 0.1 ~ 20.0
+        rangeMultiplier = 1.0
+
+    [familyMultipliers.quagmire]
+        #Family outgoing-damage multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        damageMultiplier = 1.0
+        #Family native-cooldown multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Family Aura-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        auraCostMultiplier = 1.0
+        #Family Magicule-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        magiculeCostMultiplier = 1.0
+        #Family targeting/radius multiplier.
+        # Default: 1.0
+        # Range: 0.1 ~ 20.0
+        rangeMultiplier = 1.0
+
+[abilities]
+
+    [abilities.education_god_quagmire]
+        #Controls for trevolved:education_god_quagmire. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.education_god_quagmire.subskills]
+
+            #Native mode 0: education_god.absolute_refresh. IDs/indices are not renumbered when disabled.
+            [abilities.education_god_quagmire.subskills.education_god_absolute_refresh]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 2: education_god.leyline_dominion. IDs/indices are not renumbered when disabled.
+            [abilities.education_god_quagmire.subskills.education_god_leyline_dominion]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 1: education_god.magic_armor_mk_zero. IDs/indices are not renumbered when disabled.
+            [abilities.education_god_quagmire.subskills.education_god_magic_armor_mk_zero]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 3: education_god.perfect_counterspell. IDs/indices are not renumbered when disabled.
+            [abilities.education_god_quagmire.subskills.education_god_perfect_counterspell]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+[subskills]
+
+    #Native mode 0: quagmire.arcane_appraisal. IDs/indices are not renumbered when disabled.
+    [subskills.quagmire_arcane_appraisal]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

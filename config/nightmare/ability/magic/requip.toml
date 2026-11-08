@@ -1,0 +1,61 @@
+[General]
+	#Damage multiplier for every Requip Magic spell once that spell is mastered.
+	masteredDamageMultiplier = 1.5
+
+[Requip]
+	#Magicule cost of each swap. Storing gear into a loadout while sneaking is free.
+	magiculeCost = 200.0
+	#Cooldown in seconds after a swap, applied to all three loadouts.
+	cooldown = 1
+	#If true, a creative-mode player may swap cursed-of-binding armour out of its slot, matching vanilla.
+	creativeIgnoresBinding = true
+
+[HeavensWheel]
+	#Cast time in ticks.
+	castTicks = 20
+	#Magicule cost.
+	magiculeCost = 16000.0
+	#Cooldown in seconds, counted from the cast.
+	cooldown = 20
+	#Number of spectral swords in the wheel.
+	swords = 10
+	#How long the wheel lasts in seconds before any unfired swords fade.
+	durationSeconds = 10
+	#Ticks between automatic sword launches.
+	fireIntervalTicks = 10
+	#Range in blocks for the look target and the nearest-enemy fallback.
+	range = 20.0
+	#Damage of each sword.
+	damage = 54.38
+	#Flight speed of a launched sword in blocks per tick.
+	swordSpeed = 1.5
+	#Radius of the wheel behind the caster in blocks. Visual and launch origin only.
+	wheelRadius = 1.6
+
+[Blumenblatt]
+	#Chant time in ticks.
+	castTicks = 50
+	#Magicule cost.
+	magiculeCost = 52500.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#How far away the storm can be aimed, in blocks.
+	aimRange = 40.0
+	#Radius of the storm in blocks.
+	radius = 10.0
+	#Number of spectral blades in the storm.
+	blades = 40
+	#Ticks over which the blades are launched.
+	durationTicks = 80
+	#Ticks each blade takes to spiral down.
+	fallTicks = 12
+	#Height in blocks the blades fall from.
+	dropHeight = 14.0
+	#Damage of each blade.
+	damage = 40.0
+	#Horizontal radius in blocks around a blade's landing point that it strikes.
+	bladeHitRadius = 1.75
+	#The most blades that can strike a single target in one storm.
+	maxHitsPerTarget = 8
+	#Chance from 0 to 1 that a blade aims at an enemy inside the storm instead of a random point.
+	seekChance = 0.6

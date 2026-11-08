@@ -1,0 +1,97 @@
+[General]
+	#Damage multiplier for every Dual Dragon spell once that spell is mastered.
+	masteredDamageMultiplier = 1.5
+	#Ticks a player who just shared a hit with another player counts as hostile to them, which blocks eating their spells and Unison Raids.
+	hostileMemoryTicks = 200
+
+[LightningFlame]
+	#Magicule cost to enter Lightning Flame Dragon Mode.
+	magiculeCost = 40000.0
+	#Seconds the mode lasts when cast.
+	durationSeconds = 30
+	#Seconds the mode lasts when entered by eating lightning.
+	eatenDurationSeconds = 20
+	#Cooldown in seconds. It starts when the mode ends.
+	cooldown = 120
+	#Damage multiplier for Fire and Lightning Dragon Slayer spells while the mode is active.
+	damageMultiplier = 1.15
+	#Share of each Fire Dragon hit that arcs on as lightning damage while the mode is active.
+	arcShare = 0.35
+	#How far the lightning arc can jump, in blocks.
+	arcRange = 6.0
+	#When no other enemy is in range, the arc strikes the same target again.
+	arcFallbackToTarget = true
+	#Seconds every target struck by a Lightning Dragon spell burns while the mode is active.
+	igniteSeconds = 4.0
+	#Lightning Flame Dragon's Roar: the reach of the beam in blocks.
+	roarRange = 30.0
+	#Lightning Flame Dragon's Roar: the radius of the beam in blocks.
+	roarRadius = 2.0
+	#Lightning Flame Dragon's Roar: total damage per enemy, dealt as a fire hit and then a lightning hit of equal size.
+	roarDamage = 1100.0
+	#Lightning Flame Dragon's Roar: ticks between the fire hit and the lightning hit.
+	roarSecondHitDelay = 4
+	#Lightning Flame Dragon's Roar: seconds every enemy struck burns.
+	roarBurnSeconds = 6.0
+	#Lightning Flame Dragon's Roar: the push along the beam. Entities tagged no_forced_move are never moved, bosses are pushed less.
+	roarKnockback = 1.2
+
+[IronShadow]
+	#Magicule cost to enter Iron Shadow Dragon Mode.
+	magiculeCost = 40000.0
+	#Seconds the mode lasts when cast.
+	durationSeconds = 30
+	#Seconds the mode lasts when entered by eating a shadow.
+	eatenDurationSeconds = 20
+	#Cooldown in seconds. It starts when the mode ends.
+	cooldown = 120
+	#Share of incoming damage removed while the mode is active.
+	damageReduction = 0.25
+	#Extra reach in blocks for Iron Dragon's Club, Iron Dragon's Sword and Iron God Sword while the mode is active.
+	extraReach = 3.0
+	#Chance for a melee hit to raise a shadow iron spike under the target.
+	spikeChance = 0.25
+	#Total damage of a shadow iron spike.
+	spikeDamage = 60.0
+	#Ticks between the melee hit and the spike breaking out of the ground.
+	spikeDelayTicks = 4
+	#Distance of the sneak and jump shadow dash in blocks.
+	dashDistance = 6.0
+	#Cooldown of the shadow dash in ticks.
+	dashCooldownTicks = 60
+	#Iron Shadow Dragon's Roar: the length of the cone in blocks.
+	roarLength = 16.0
+	#Iron Shadow Dragon's Roar: the half angle of the cone in degrees.
+	roarConeAngle = 22.0
+	#Iron Shadow Dragon's Roar: ticks the cone lasts. Each enemy is struck once.
+	roarDurationTicks = 20
+	#Iron Shadow Dragon's Roar: total damage per enemy, dealt as an iron hit and a shadow hit of equal size.
+	roarDamage = 1000.0
+	#Iron Shadow Dragon's Roar: the push along the cone. Entities tagged no_forced_move are never moved, bosses are pushed less.
+	roarKnockback = 0.8
+
+[FlashFang]
+	#Seconds within which a White Dragon's Roar and a Shadow Dragon's Roar must strike the same target to start a Unison Raid.
+	unisonWindowSeconds = 2.0
+	#Cooldown in seconds shared by a pair of players after their Unison Raid.
+	unisonCooldown = 90
+	#Ticks the converging beams take before the target is struck.
+	beamTicks = 12
+	#Total damage of the beams on the target, half holy light and half darkness.
+	beamDamage = 1500.0
+	#Radius of the blast at the target in blocks.
+	blastRadius = 6.0
+	#Total damage of the blast, half holy light and half darkness.
+	blastDamage = 400.0
+	#The push of the blast. Entities tagged no_forced_move are never moved, bosses are pushed less.
+	blastKnockback = 1.0
+	#Solo cast: magicule cost.
+	magiculeCost = 60000.0
+	#Solo cast: chant time in ticks.
+	castTicks = 40
+	#Solo cast: cooldown in seconds.
+	cooldown = 120
+	#Solo cast: reach of the beam in blocks.
+	soloRange = 28.0
+	#Solo cast: share of the two player damage.
+	soloDamageShare = 0.7

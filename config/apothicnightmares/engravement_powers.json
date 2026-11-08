@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "note": "Configurable runtime behavior hooks for newly-added apothicnightmares engravements.",
+  "enabled": true,
+  "kanaboImprisonmentId": "apothicnightmares:kanabo_imprisonment",
+  "kanaboCooldownTicks": 100,
+  "kanaboDurationTicks": 20,
+  "spatialBowId": "apothicnightmares:spatial_bow",
+  "spatialBonusDamage": 50.0,
+  "severanceBonusDamage": 50.0,
+  "kunaiMultishotId": "apothicnightmares:kunai_multishot",
+  "kunaiExtraProjectiles": 2,
+  "kunaiCooldownTicks": 12,
+  "kunaiProjectileDamageMultiplier": 0.35,
+  "epFlowRepairId": "apothicnightmares:ep_flow_repair",
+  "epFlowMpPerDurability": 20,
+  "epFlowMaxDurabilityPerTick": 4,
+  "sickleHipokteReapingId": "apothicnightmares:sickle_hipokte_reaping",
+  "hipokuteGrassItemId": "tensura:hipokute_grass",
+  "hipokuteSeedsItemId": "tensura:hipokute_seeds"
+}

@@ -1,0 +1,28 @@
+#Whether players caught in any time stop are held at the spot where they froze.
+pinFrozenPlayers = true
+#Whether frozen players' movement, jump, sneak, attack, use and hotbar keys are blocked on their client.
+lockFrozenPlayerInput = true
+#Whether users of time skills or Time Magic can keep moving inside someone else's time stop.
+timeSkillUsersMove = true
+#Skill ids whose owners count as time-skill users. Use <namespace:path> IDs.
+timeSkillIds = ["trnightmare:cadence", "trnightmare:stasis", "trnightmare:spacetime_domination"]
+#Whether a mastered Spacetime Manipulation counts as a time skill.
+masteredSpacetimeManipulationMoves = true
+#Whether knowing any Time Magic spell counts as a time skill.
+timeMagicUsersMove = true
+#Most ticks a boss stays frozen by time stops before it breaks free.
+bossMaxFreezeTicks = 20
+#Ticks a boss must spend outside every time stop before it can be frozen again.
+bossFreezeCooldownTicks = 100
+#Whether the caster's allies keep moving in time stops that don't choose for themselves.
+alliesExemptByDefault = false
+#Whether time stops centred on their caster move with the caster.
+casterCentredStopsFollowCaster = true
+#Stored damage released on resume is capped at the larger of this flat amount and the max-health fraction below. Both 0 removes the cap.
+storedDamageFlatCap = 400.0
+#Fraction of the target's max health used for the stored damage cap.
+storedDamageMaxHealthFraction = 0.6
+#Ticks a mob frozen by an enemy's time stop must wait after resuming before it can pick a target again.
+retargetDelayTicks = 10
+#Whether clients are told which entities are frozen, for the clock marks and resume ripples.
+syncFrozenEntityVisuals = true

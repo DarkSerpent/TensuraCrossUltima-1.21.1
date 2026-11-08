@@ -1,0 +1,77 @@
+[DrillBreak]
+	#Cast time in seconds.
+	castTime = 1
+	#Magicule cost to cast.
+	magiculeCost = 50000.0
+	#The piercing damage of the drill.
+	damage = 450.0
+	#The barrier bypass level of the drill.
+	barrierBypass = 3.0
+	#The range of the drill in blocks.
+	range = 48.0
+	#The speed of the drill (blocks per tick).
+	speed = 1.5
+	#The radius of the drill in blocks.
+	radius = 1.6
+	#Ticks the drill grinds at the end of its path.
+	grindTicks = 20
+	#Cooldown in seconds.
+	cooldown = 6
+	#The blast resistance that stops the drill (1200 = obsidian).
+	maxBlastResistance = 1200.0
+	#The max blocks per tick that show the break effect.
+	breakEffectsPerTick = 8
+
+[Excavation]
+	#The range to mark a block in blocks.
+	markRange = 32.0
+	#The max size of the marked area in blocks.
+	maxSpan = 24
+	#The range of Harvest in blocks.
+	harvestRange = 64.0
+	#Cast time in seconds.
+	castTime = 1
+	#Ores harvested per second.
+	oresPerSecond = 8.0
+	#Ores harvested per second when mastered.
+	oresPerSecondMastered = 16.0
+	#Magicule cost per ore.
+	magiculePerOre = 250.0
+	#Cooldown in seconds.
+	cooldown = 3
+	#Whether Excavation ignores the skill grief gamerule.
+	ignoreGriefGamerule = false
+
+[MeteorSwarm]
+	#Chant time in seconds.
+	castTime = 8
+	#Magicule cost to cast.
+	magiculeCost = 1500000.0
+	#The amount of meteors.
+	meteors = 8
+	#The amount of meteors when mastered.
+	meteorsMastered = 12
+	#The gravity damage of each meteor.
+	gravityDamage = 250.0
+	#The heat damage of each meteor.
+	heatDamage = 100.0
+	#The earth damage of each meteor.
+	earthDamage = 400.0
+	#Spell Radius
+	spellRadius = 32.0
+	#The impact radius of each meteor in blocks.
+	impactRadius = 5.0
+	#Cooldown in seconds.
+	cooldown = 20
+
+[FarmingField]
+	#Chant time in seconds.
+	castTime = 4
+	#Magicule cost to cast.
+	magiculeCost = 10000.0
+	#Spell Radius
+	spellRadius = 24.0
+	#Cooldown in seconds.
+	cooldown = 5
+	#Whether Farming Field ignores the skill grief gamerule.
+	ignoreGriefGamerule = false

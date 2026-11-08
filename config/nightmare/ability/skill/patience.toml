@@ -1,0 +1,20 @@
+#Magicules spent to obtain the Commandment of Patience.
+epAcquirement = 1000000.0
+#Only a Ten Commandment can obtain the Commandment of Patience naturally.
+tenCommandmentOnly = true
+#Domain of Patience: length and width of the square area around the user, in blocks.
+domainSize = 32.0
+#Domain of Patience: height of the area around the user, in blocks.
+domainHeight = 32.0
+#Domain of Patience: heals larger than this fraction of the healer's max HP are nullified and punished.
+healThreshold = 0.02
+#Domain of Patience: share of the nullified heal dealt back as damage (1.0 = all of it).
+painMultiplier = 1.0
+#Domain of Patience: whether the user's own heals inside their Domain are punished too.
+affectsUser = true
+#Domain of Patience: whether creative-mode players are spared.
+sparesCreative = true
+#Show of Fortitude: share of incoming damage blocked while held (0.4 = 40%).
+fortitudeReduction = 0.4
+#Show of Fortitude: share of max Aura regenerated each second while held (0.01 = 1%).
+fortitudeAuraPerSecond = 0.01

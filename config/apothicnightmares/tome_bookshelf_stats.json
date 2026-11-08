@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "note": "Server-wide per-spell randomized bookshelf bonuses for bound magic tomes and battlewill manuals.",
+  "enabled": true,
+  "eternaMin": 2.0,
+  "eternaMax": 5.0,
+  "quantaMin": 4.0,
+  "quantaMax": 10.0,
+  "arcanaMin": 1.0,
+  "arcanaMax": 3.5
+}

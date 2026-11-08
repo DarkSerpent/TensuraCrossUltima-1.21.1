@@ -1,0 +1,850 @@
+#  Main header!
+#  Line 2
+
+[songs]
+	[songs.Fun]
+		location = "Fun.ogg"
+		triggers = [ "loading" ]
+		[songs.Fun.interrupt_handler]
+			priority = 25000
+	[songs.AutumnVoyage]
+		location = "AutumnVoyage.ogg"
+		triggers = [ "biome-autumn_forest" ]
+		[songs.AutumnVoyage.interrupt_handler]
+			priority = 7000
+	[songs."Medieval II"]
+		location = "Medieval II.ogg"
+		triggers = [ "generic" ]
+		[songs."Medieval II".interrupt_handler]
+			priority = 0
+	[songs."Dagannoth Dawn"]
+		location = "Dagannoth Dawn.ogg"
+		triggers = [ "biome-miasmic_plains" ]
+		[songs."Dagannoth Dawn".interrupt_handler]
+			priority = 7000
+	[songs."Elven Snapegrass"]
+		location = "Elven Snapegrass.ogg"
+		triggers = [ "biome-plains_grasslands" ]
+		[songs."Elven Snapegrass".interrupt_handler]
+			priority = 7000
+	[songs."Newbie Melody"]
+		location = "Newbie Melody.ogg"
+		triggers = [ "structure-villages" ]
+		[songs."Newbie Melody".interrupt_handler]
+			priority = 7001
+	[songs.Morytania]
+		location = "Morytania.ogg"
+		triggers = [ "structure-abandoned_villages" ]
+		[songs.Morytania.interrupt_handler]
+			priority = 7001
+	[songs.Awe]
+		location = "Awe.ogg"
+		triggers = [ "dimension-nether" ]
+		[songs.Awe.interrupt_handler]
+			priority = 7999
+	[songs."Yama"]
+		location = "Yama.ogg"
+		triggers = [ "dimension-the_end" ]
+		[songs."Yama".interrupt_handler]
+			priority = 8000
+	[songs."Wilderness III"]
+		location = "Wilderness III.ogg"
+		triggers = [ "structure-pillager_outposts" ]
+		[songs."Wilderness III".interrupt_handler]
+			priority = 7001
+	[songs."Lullaby for an Elder God"]
+		location = "Lullaby for an Elder God.ogg"
+		triggers = [ "structure-woodland_mansions" ]
+		[songs."Lullaby for an Elder God".interrupt_handler]
+			priority = 7002
+	[songs."Daemonheim Entrance"]
+		location = "Daemonheim Entrance.ogg"
+		triggers = [ "structure-yungs_strongholds" ]
+		[songs."Daemonheim Entrance".interrupt_handler]
+			priority = 7002
+	[songs."Battle TCollab 6"]
+		location = "Battle TCollab 6.ogg"
+		triggers = [ "mob-combat", "lowhp" ]
+		[songs."Battle TCollab 6".interrupt_handler]
+			priority = 9500
+	[songs."The Cursed Warrior"]
+		location = "The Cursed Warrior.ogg"
+		triggers = [ "raid-village_raid" ]
+		[songs."The Cursed Warrior".interrupt_handler]
+			priority = 10000
+	[songs."Battle High Level 2"]
+		location = "Battle High Level 2.ogg"
+		triggers = [ "mob-dragon" ]
+		[songs."Battle High Level 2".interrupt_handler]
+			priority = 9500
+	[songs."Dragonkin of Old"]
+		location = "Dragonkin of Old.ogg"
+		triggers = [ "structure-ice_fire_dragon_nests" ]
+		[songs."Dragonkin of Old".interrupt_handler]
+			priority = 7000
+	[songs.Conspiracy]
+		location = "Conspiracy.ogg"
+		triggers = [ "biome-deep_dark" ]
+		[songs.Conspiracy.interrupt_handler]
+			priority = 7000
+	[songs."Gnome Village I"]
+		location = "Gnome Village I.ogg"
+		triggers = [ "biome-twilight_forests" ]
+		[songs."Gnome Village I".interrupt_handler]
+			priority = 7500
+	[songs."Gnome Village II"]
+		location = "Gnome Village II.ogg"
+		triggers = [ "biome-twilight_highlands" ]
+		[songs."Gnome Village II".interrupt_handler]
+			priority = 7500
+	[songs."Waterfall"]
+		location = "Waterfall.ogg"
+		triggers = [ "biome-twilight_lakes" ]
+		[songs."Waterfall".interrupt_handler]
+			priority = 7500
+	[songs."Icy Trouble Ahead"]
+		location = "Icy Trouble Ahead.ogg"
+		triggers = [ "biome-twilight_icy" ]
+		[songs."Icy Trouble Ahead".interrupt_handler]
+			priority = 7500
+	[songs."Spooky II"]
+		location = "Spooky II.ogg"
+		triggers = [ "biome-twilight_spooky" ]
+		[songs."Spooky II".interrupt_handler]
+			priority = 7500
+	[songs."Waterfall II"]
+		location = "Waterfall II.ogg"
+		triggers = [ "biome-overworld_rivers_lakes" ]
+		[songs."Waterfall II".interrupt_handler]
+			priority = 7500
+	[songs."Spooky I"]
+		location = "Spooky I.ogg"
+		triggers = [ "biome-overworld_spooky" ]
+		[songs."Spooky I".interrupt_handler]
+			priority = 7500
+	[songs."Goblin Game"]
+		location = "Goblin Game.ogg"
+		triggers = [ "structure-ribbit_village" ]
+		[songs."Goblin Game".interrupt_handler]
+			priority = 7001
+	[songs."Goblin Village"]
+		location = "Goblin Village.ogg"
+		triggers = [ "structure-tensura_goblin_village" ]
+		[songs."Goblin Village".interrupt_handler]
+			priority = 7001
+	[songs."Gnome King"]
+		location = "Gnome King.ogg"
+		triggers = [ "structure-tensura_dwarf_village" ]
+		[songs."Gnome King".interrupt_handler]
+			priority = 7001
+	[songs."Dragontooth Island"]
+		location = "Dragontooth Island.ogg"
+		triggers = [ "structure-tensura_lizardman_village" ]
+		[songs."Dragontooth Island".interrupt_handler]
+			priority = 7001
+	[songs."The Desert"]
+		location = "The Desert.ogg"
+		triggers = [ "biome-desert" ]
+		[songs."The Desert".interrupt_handler]
+			priority = 7000
+	[songs."Al Kharid"]
+		location = "Al Kharid.ogg"
+		triggers = [ "biome-savannah" ]
+		[songs."Al Kharid".interrupt_handler]
+			priority = 7000
+	[songs.Lighthouse]
+		location = "Lighthouse.ogg"
+		triggers = [ "biome-peaks" ]
+		[songs.Lighthouse.interrupt_handler]
+			priority = 7000
+	[songs.Garden]
+		location = "Garden.ogg"
+		triggers = [ "biome-garden" ]
+		[songs.Garden.interrupt_handler]
+			priority = 7000
+	[songs."Karamja Jam"]
+		location = "Karamja Jam.ogg"
+		triggers = [ "biome-jungle" ]
+		[songs."Karamja Jam".interrupt_handler]
+			priority = 7000
+	[songs."WildernessI"]
+		location = "WildernessI.ogg"
+		triggers = [ "structure-nether_bastion" ]
+		[songs."WildernessI".interrupt_handler]
+			priority = 8000
+	[songs."City of the Dead"]
+		location = "City of the Dead.ogg"
+		triggers = [ "structure-nether_fortress" ]
+		[songs."City of the Dead".interrupt_handler]
+			priority = 8000
+	[songs.Cruelty]
+		location = "Cruelty.ogg"
+		triggers = [ "dimension-demonlands" ]
+		[songs.Cruelty.interrupt_handler]
+			priority = 8000
+	[songs.Enigma]
+		location = "Enigma.ogg"
+		triggers = [ "dimension-spirit_realms" ]
+		[songs.Enigma.interrupt_handler]
+			priority = 8000
+	[songs.Madness]
+		location = "Madness.ogg"
+		triggers = [ "mob-warden" ]
+		[songs.Madness.interrupt_handler]
+			priority = 10000
+	[songs."Great Sage Reincarnation"]
+		location = "Quest Result.ogg"
+		triggers = [ "gui-greatsage" ]
+		[songs."Great Sage Reincarnation".interrupt_handler]
+			priority = 12000
+	[songs."Main Menu"]
+		location = "Monogram.ogg"
+		triggers = [ "menu" ]
+		chance = 50
+		[songs."Main Menu".interrupt_handler]
+			priority = 0
+		[songs."Tensura Main Menu"]
+		location = "Tensura.ogg"
+		triggers = [ "menu" ]
+		chance = 50
+		[songs."Tensura Main Menu".interrupt_handler]
+			priority = 0
+	[songs."YMKTN Menu"]
+		location = "Master Space.ogg"
+		triggers = [ "gui-ymktn_welcome" ]
+		[songs."YMKTN Menu".interrupt_handler]
+				priority = 30000
+	[songs."One Act of the Demon World"]
+		location = "One Act of the Demon World.ogg"
+		triggers = [ "dimension-afterdark" ]
+		[songs."One Act of the Demon World".interrupt_handler]
+			priority = 8000
+	[songs."One Step Forward One Step Back"]
+		location = "One Step Forward One Step Back.ogg"
+		triggers = [ "mob-combat" ]
+		[songs."One Step Forward One Step Back".interrupt_handler]
+			priority = 9000
+		[songs."Battle Friend"]
+			location = "Battle Friend.ogg"
+			triggers = [ "mob-neutral_combat" ]
+			[songs."Battle Friend".interrupt_handler]
+				priority = 9001
+		[songs."Battle TCollab 2"]
+			location = "Battle TCollab 2.ogg"
+			triggers = [ "mob-elemental_realm_neutral_combat" ]
+			[songs."Battle TCollab 2".interrupt_handler]
+				priority = 9001
+		[songs."Battle Mid Boss"]
+			location = "Battle Mid Boss.ogg"
+			triggers = [ "mob-apothic_combat" ]
+		[songs."Battle Mid Boss".interrupt_handler]
+			priority = 9500
+	[songs.Parade]
+		location = "Parade.ogg"
+		triggers = [ "biome-flower_forest" ]
+		[songs.Parade.interrupt_handler]
+			priority = 7000
+	[songs.Peak]
+		location = "Peak.ogg"
+		triggers = [ "mob-boss" ]
+		[songs.Peak.interrupt_handler]
+			priority = 10000
+	[songs.Rainy]
+		location = "Rainy.ogg"
+		triggers = [ "raining" ]
+		[songs.Rainy.interrupt_handler]
+			priority = 0
+	[songs.Salvation]
+		location = "Salvation.ogg"
+		triggers = [ "time-night" ]
+		[songs.Salvation.interrupt_handler]
+			priority = 0
+	[songs.ScapeCave]
+		location = "ScapeCave.ogg"
+		triggers = [ "height-underground" ]
+		[songs.ScapeCave.interrupt_handler]
+			priority = 7001
+	[songs.SeaShantyI]
+		location = "SeaShantyI.ogg"
+		triggers = [ "biome-ocean", "fishing" ]
+		[songs.SeaShantyI.interrupt_handler]
+			priority = 7000
+	[songs."SeaShantyI Ships"]
+		location = "SeaShantyII.ogg"
+		triggers = [ "structure-dungeons_arise_ships" ]
+		[songs."SeaShantyI Ships".interrupt_handler]
+			priority = 0
+	[songs.Starlight]
+		location = "Starlight.ogg"
+		triggers = [ "biome-snowy" ]
+		[songs.Starlight.interrupt_handler]
+			priority = 7000
+	[songs.Start]
+		location = "Start.ogg"
+		triggers = [ "biome-dark_forest" ]
+		[songs.Start.interrupt_handler]
+			priority = 7000
+	[songs."Theme Pause Menu"]
+		location = "Lover.ogg"
+		triggers = [ "gui-pause_menu" ]
+		volume = 1.8
+		volume_when_paused = 1.8
+		[songs."Theme Pause Menu".interrupt_handler]
+			priority = 8999
+	[songs."Boss Victory Fanfare"]
+		location = "Fanfare Victory.ogg"
+		triggers = [ "victory-boss_defeat" ]
+		[songs."Boss Victory Fanfare".interrupt_handler]
+			priority = 10000
+	[songs.Wander]
+		location = "Wander.ogg"
+		triggers = [ "height-high_up" ]
+		[songs.Wander.interrupt_handler]
+			priority = 7001
+	[songs."You Feel a Great Temptation"]
+		location = "You Feel a Great Temptation.ogg"
+		triggers = [ "awakening_flame" ]
+		[songs."You Feel a Great Temptation".interrupt_handler]
+			priority = 8998
+	[songs."Tower Floor"]
+		location = "Tower Floor.ogg"
+		triggers = [ "structure-dungeons_arise" ]
+		[songs."Tower Floor".interrupt_handler]
+			priority = 0
+	[songs."Tower Enemy"]
+		location = "Tower Enemy.ogg"
+		triggers = [ "mob-gateway" ]
+		[songs."Tower Enemy".interrupt_handler]
+			priority = 0
+
+[triggers]
+	[[triggers.awakening_flame]]
+		identifier = "awakening_flame"
+		priority = 9001
+		persistence = 5
+		fade_in = "50"
+	[[triggers.biome]]
+		identifier = "flower_forest"
+		priority = 7000
+		resource_matcher = "exact"
+		resource_name = [
+			"minecraft:flower_forest",
+			"minecraft:sunflower_plains",
+			"minecraft:meadow",
+			"regions_unexplored:flower_fields",
+			"regions_unexplored:clover_plains",
+			"regions_unexplored:glistering_meadow",
+			"regions_unexplored:poppy_fields",
+			"regions_unexplored:temperate_grove"
+		]
+	[[triggers.biome]]
+		identifier = "garden"
+		priority = 7000
+		resource_matcher = "exact"
+		resource_name = [
+			"minecraft:cherry_grove",
+			"regions_unexplored:alpha_grove",
+			"regions_unexplored:magnolia_woodland",
+			"regions_unexplored:orchard",
+			"regions_unexplored:wisteria_grove"
+		]
+	[[triggers.biome]]
+		identifier = "dark_forest"
+		priority = 7000
+		resource_matcher = "exact"
+		resource_name = [
+			"minecraft:old_growth_pine_taiga",
+			"minecraft:old_growth_spruce_taiga"
+		]
+	[[triggers.biome]]
+		identifier = "desert"
+		priority = 7000
+		resource_matcher = "exact"
+		resource_name = [
+			"minecraft:desert",
+			"minecraft:badlands",
+			"minecraft:eroded_badlands",
+			"minecraft:wooded_badlands",
+			"tensura:barren_land",
+			"tensura:desert_of_death",
+			"regions_unexplored:arid_mountains",
+			"regions_unexplored:dry_bushland",
+			"regions_unexplored:joshua_desert",
+			"regions_unexplored:saguaro_desert",
+			"regions_unexplored:steppe"
+		]
+	[[triggers.biome]]
+		identifier = "savannah"
+		priority = 7000
+		resource_matcher = "exact"
+		resource_name = [
+			"minecraft:savanna",
+			"minecraft:savanna_plateau",
+			"minecraft:windswept_savanna",
+			"regions_unexplored:shrubland",
+			"regions_unexplored:baobab_savanna",
+			"regions_unexplored:outback"
+		]
+	[[triggers.biome]]
+		identifier = "jungle"
+		priority = 7000
+		resource_matcher = "exact"
+		resource_name = [
+			"minecraft:jungle",
+			"minecraft:sparse_jungle",
+			"minecraft:bamboo_jungle",
+			"regions_unexplored:rainforest",
+			"regions_unexplored:sparse_rainforest",
+			"regions_unexplored:tropics"
+		]
+	[[triggers.biome]]
+		identifier = "peaks"
+		priority = 7000
+		resource_matcher = "exact"
+		resource_name = [
+			"minecraft:jagged_peaks",
+			"minecraft:stony_peaks",
+			"minecraft:frozen_peaks",
+			"minecraft:snowy_slopes",
+			"regions_unexplored:chalk_cliffs",
+			"regions_unexplored:highland_fields",
+			"regions_unexplored:icy_heights",
+			"regions_unexplored:mauve_hills",
+			"regions_unexplored:mountains",
+			"regions_unexplored:pine_slopes",
+			"regions_unexplored:rocky_meadow",
+			"regions_unexplored:spires",
+			"regions_unexplored:towering_cliffs"
+		]
+	[[triggers.biome]]
+		identifier = "snowy"
+		priority = 7000
+		resource_matcher = "exact"
+		resource_name = [
+			"minecraft:snowy_plains",
+			"minecraft:ice_spikes",
+			"minecraft:snowy_taiga",
+			"minecraft:snowy_beach",
+			"minecraft:frozen_ocean",
+			"minecraft:deep_frozen_ocean",
+			"minecraft:grove",
+			"regions_unexplored:cold_deciduous_forest",
+			"regions_unexplored:cold_boreal_taiga",
+			"regions_unexplored:frozen_pine_taiga",
+			"regions_unexplored:frozen_tundra"
+		]
+	[[triggers.biome]]
+		biome_tag = [ "minecraft:is_ocean" ]
+		biome_tag_matcher = "exact"
+		identifier = "ocean"
+		priority = 7000
+	[[triggers.biome]]
+		identifier = "deep_dark"
+		priority = 7000
+		resource_matcher = "exact"
+		resource_name = [ "minecraft:deep_dark" ]
+	[[triggers.biome]]
+		identifier = "miasmic_plains"
+		priority = 7000
+		resource_matcher = "exact"
+		resource_name = [ "tensura:miasmic_plains" ]
+	[[triggers.biome]]
+		identifier = "autumn_forest"
+		priority = 7000
+		resource_matcher = "exact"
+		resource_name = [
+			"minecraft:forest",
+			"minecraft:birch_forest",
+			"minecraft:old_growth_birch_forest",
+			"minecraft:taiga",
+			"minecraft:windswept_forest",
+			"eldergrove:eldergrove",
+			"eldergrove:tainted_grove",
+			"eternal_starlight:scarlet_forest",
+			"eternal_starlight:starlight_dense_forest",
+			"eternal_starlight:starlight_forest",
+			"eternal_starlight:starlight_permafrost_forest",
+			"eternal_starlight:starlight_taiga",
+			"eternal_starlight:torreya_forest",
+			"mortal_cultivation:sky_spirit_forest",
+			"mortal_cultivation:spirit_forest",
+			"regions_unexplored:autumnal_maple_forest",
+			"regions_unexplored:bamboo_forest",
+			"regions_unexplored:boreal_taiga",
+			"regions_unexplored:deciduous_forest",
+			"regions_unexplored:eucalyptus_forest",
+			"regions_unexplored:golden_boreal_taiga",
+			"regions_unexplored:maple_forest",
+			"regions_unexplored:old_growth_boreal_taiga",
+			"regions_unexplored:old_growth_forest",
+			"regions_unexplored:old_growth_golden_boreal_taiga",
+			"regions_unexplored:pine_taiga",
+			"regions_unexplored:redwoods",
+			"regions_unexplored:silver_birch_forest",
+			"regions_unexplored:sparse_redwoods",
+			"regions_unexplored:willow_forest",
+			"regions_unexplored:windswept_maple_forest",
+			"tensura:ancient_forest"
+		]
+	[[triggers.biome]]
+		identifier = "plains_grasslands"
+		priority = 7000
+		resource_matcher = "exact"
+		resource_name = [
+			"minecraft:plains",
+			"chronodawn:chronodawn_faded_plains",
+			"chronodawn:chronodawn_plains",
+			"chronodawn:chronodawn_prairies",
+			"eternal_starlight:umbral_plains",
+			"regions_unexplored:barley_fields",
+			"regions_unexplored:grassland",
+			"regions_unexplored:prairie",
+			"regions_unexplored:pumpkin_fields",
+			"tensuramoreskills:avalon_plains",
+			"tensuramoreskills:paths_plains"
+		]
+	[[triggers.biome]]
+		identifier = "twilight_forests"
+		priority = 7500
+		resource_matcher = "exact"
+		resource_name = [
+			"twilightforest:forest",
+			"twilightforest:dark_forest",
+			"twilightforest:dark_forest_center",
+			"twilightforest:dense_forest",
+			"twilightforest:enchanted_forest",
+			"twilightforest:firefly_forest",
+			"twilightforest:mushroom_forest"
+		]
+	[[triggers.biome]]
+		identifier = "twilight_highlands"
+		priority = 7500
+		resource_matcher = "exact"
+		resource_name = [
+			"twilightforest:final_plateau",
+			"twilightforest:highlands",
+			"twilightforest:highlands_underground"
+		]
+	[[triggers.biome]]
+		identifier = "twilight_lakes"
+		priority = 7500
+		resource_matcher = "exact"
+		resource_name = [ "twilightforest:lake" ]
+	[[triggers.biome]]
+		identifier = "twilight_icy"
+		priority = 7500
+		resource_matcher = "exact"
+		resource_name = [
+			"twilightforest:glacier",
+			"twilightforest:snowy_forest"
+		]
+	[[triggers.biome]]
+		identifier = "twilight_spooky"
+		priority = 7500
+		resource_matcher = "exact"
+		resource_name = [
+			"twilightforest:spooky_forest",
+			"twilightforest:thornlands",
+			"twilightforest:swamp"
+		]
+	[[triggers.biome]]
+		identifier = "overworld_rivers_lakes"
+		priority = 7500
+		resource_matcher = "exact"
+		resource_name = [
+			"minecraft:river",
+			"minecraft:frozen_river",
+			"regions_unexplored:ancient_delta",
+			"regions_unexplored:cold_river",
+			"regions_unexplored:muddy_river",
+			"regions_unexplored:tropical_river"
+		]
+	[[triggers.biome]]
+		identifier = "overworld_spooky"
+		priority = 7500
+		resource_matcher = "exact"
+		resource_name = [
+			"minecraft:dark_forest",
+			"minecraft:swamp",
+			"minecraft:pale_garden",
+			"regions_unexplored:ashen_woodland",
+			"regions_unexplored:blackwood_taiga",
+			"regions_unexplored:bioshroom_caves",
+			"regions_unexplored:mycotoxic_undergrowth",
+			"regions_unexplored:redstone_abyss",
+			"regions_unexplored:redstone_caves"
+		]
+	[[triggers.structure]]
+		identifier = "villages"
+		priority = 7001
+		resource_matcher = "regex"
+		resource_name = [ "^(?!.*(?:abandoned|ribbit_village|tensura:villages/(?:goblin_village/|dwarf_village|lizardmen_village/))).*village.*" ]
+	[[triggers.structure]]
+		identifier = "abandoned_villages"
+		priority = 7001
+		resource_matcher = "exact"
+		resource_name = [ "cataclysm:abandoned_village" ]
+	[[triggers.dimension]]
+		identifier = "nether"
+		priority = 7999
+		resource_matcher = "exact"
+		resource_name = [ "minecraft:the_nether" ]
+	[[triggers.dimension]]
+		identifier = "the_end"
+		priority = 8000
+		resource_matcher = "exact"
+		resource_name = [ "minecraft:the_end" ]
+	[[triggers.dimension]]
+		identifier = "demonlands"
+		priority = 8000
+		resource_matcher = "exact"
+		resource_name = [ "tensura:hell" ]
+	[[triggers.dimension]]
+		identifier = "spirit_realms"
+		priority = 8000
+		resource_matcher = "exact"
+		resource_name = [ "tensura:labyrinth", "tensuramoreskills:avalon", "mysticism:elemental_realm" ]
+	[[triggers.dimension]]
+		identifier = "afterdark"
+		priority = 8000
+		resource_matcher = "exact"
+		resource_name = [ "the_afterdark:afterdark" ]
+	[[triggers.gui]]
+		identifier = "greatsage"
+		priority = 12000
+		persistence = 200
+		resource_matcher = "exact"
+		resource_name = [ "dev.dedek.greatsage.client.ReincarnationScene", "io.github.manasmods.tensura.client.screen.ReincarnationScreen", "com.tensuracrossultima.adjustments.client.GreatSageRaceSelectionOverlay" ]
+	[[triggers.gui]]
+		identifier = "pause_menu"
+		priority = 22000
+		persistence = 0
+		resource_matcher = "exact"
+		resource_name = [ "net.minecraft.client.gui.screens.PauseScreen" ]
+	[[triggers.gui]]
+		identifier = "ymktn_welcome"
+		priority = 30000
+		persistence = 0
+		resource_matcher = "exact"
+		resource_name = [ "com.ablazeaqzl.ymktn.warning.WarningScreen" ]
+	[[triggers.structure]]
+		identifier = "dungeons_arise"
+		priority = 8500
+		resource_matcher = "exact"
+		resource_name = [
+			"dungeons_arise:abandoned_temple",
+			"dungeons_arise:bandit_towers",
+			"dungeons_arise:coliseum",
+			"dungeons_arise:foundry",
+			"dungeons_arise:heavenly_challenger",
+			"dungeons_arise:heavenly_conqueror",
+			"dungeons_arise:heavenly_rider",
+			"dungeons_arise:illager_fort",
+			"dungeons_arise:illager_windmill",
+			"dungeons_arise:infested_temple",
+			"dungeons_arise:keep_kayra",
+			"dungeons_arise:kisegi_sanctuary",
+			"dungeons_arise:mining_system",
+			"dungeons_arise:mushroom_mines",
+			"dungeons_arise:plague_asylum",
+			"dungeons_arise:scorched_mines",
+			"dungeons_arise:shiraz_palace",
+			"dungeons_arise:thornborn_towers",
+			"dungeons_arise:typhon"
+		]
+	[[triggers.structure]]
+		identifier = "dungeons_arise_ships"
+		priority = 8500
+		resource_matcher = "exact"
+		resource_name = [
+			"dungeons_arise:ceryneian_hind",
+			"dungeons_arise:illager_corsair",
+			"dungeons_arise:illager_galley",
+			"dungeons_arise:small_blimp",
+			"dungeons_arise:undead_pirate_ship"
+		]
+	[[triggers.structure]]
+		identifier = "nether_bastion"
+		priority = 8000
+		resource_matcher = "exact"
+		resource_name = [ "minecraft:bastion_remnant" ]
+	[[triggers.structure]]
+		identifier = "nether_fortress"
+		priority = 8000
+		resource_matcher = "exact"
+		resource_name = [ "minecraft:fortress" ]
+	[[triggers.structure]]
+		identifier = "pillager_outposts"
+		priority = 7001
+		resource_matcher = "exact"
+		resource_name = [ "minecraft:pillager_outpost" ]
+	[[triggers.structure]]
+		identifier = "woodland_mansions"
+		priority = 7002
+		resource_matcher = "exact"
+		resource_name = [ "minecraft:mansion" ]
+	[[triggers.structure]]
+		identifier = "yungs_strongholds"
+		priority = 7002
+		resource_matcher = "exact"
+		resource_name = [ "betterstrongholds:stronghold" ]
+	[[triggers.structure]]
+		identifier = "ice_fire_dragon_nests"
+		priority = 7000
+		resource_matcher = "exact"
+		resource_name = [
+			"iceandfire:fire_dragon_cave",
+			"iceandfire:ice_dragon_cave",
+			"iceandfire:lightning_dragon_cave",
+			"iceandfire:fire_dragon_roost",
+			"iceandfire:ice_dragon_roost",
+			"iceandfire:lightning_dragon_roost"
+		]
+	[[triggers.structure]]
+		identifier = "ribbit_village"
+		priority = 7001
+		resource_matcher = "exact"
+		resource_name = [ "ribbits:ribbit_village" ]
+	[[triggers.structure]]
+		identifier = "tensura_goblin_village"
+		priority = 7001
+		resource_matcher = "exact"
+		resource_name = [
+			"tensura:villages/goblin_village/acacia",
+			"tensura:villages/goblin_village/birch",
+			"tensura:villages/goblin_village/jungle",
+			"tensura:villages/goblin_village/oak",
+			"tensura:villages/goblin_village/palm",
+			"tensura:villages/goblin_village/spruce"
+		]
+	[[triggers.structure]]
+		identifier = "tensura_dwarf_village"
+		priority = 7001
+		resource_matcher = "exact"
+		resource_name = [ "tensura:villages/dwarf_village" ]
+	[[triggers.structure]]
+		identifier = "tensura_lizardman_village"
+		priority = 7001
+		resource_matcher = "exact"
+		resource_name = [
+			"tensura:villages/lizardmen_village/tower_short",
+			"tensura:villages/lizardmen_village/tower_tall",
+			"tensura:villages/lizardmen_village/underground",
+			"tensura:villages/lizardmen_village/water"
+		]
+	[[triggers.height]]
+		check_above_level = false
+		check_for_sky = true
+		identifier = "underground"
+		level = 50
+		priority = 7001
+	[[triggers.height]]
+		check_above_level = true
+		check_for_sky = false
+		identifier = "high_up"
+		level = 180
+		priority = 7001
+	[triggers.lowhp]
+		max_health_percentage = 15.0
+		min_health_percentage = 0.0
+		priority = 9500
+		persistence = 5
+	[triggers.menu]
+		priority = 20000
+	[triggers.loading]
+		priority = 25000
+	[[triggers.mob]]
+		identifier = "boss"
+		mob_targeting = false
+		priority = 10000
+		persistence = 600
+		resource_matcher = "exact"
+		resource_name = [ "minecraft:ender_dragon", "minecraft:wither", "tensura:charybdis", "tensura:charybdis_core", "tensura:ifrit", "tensura:orc_lord", "tensura_neb:veldora" ]
+		target_any_player = true
+	[[triggers.mob]]
+		identifier = "gateway"
+		mob_targeting = false
+		priority = 10050
+		resource_matcher = "exact"
+		resource_name = [ "gateways:normal_gateway", "gateways:endless_gateway" ]
+		target_any_player = true
+		persistence = 5
+	[[triggers.mob]]
+		identifier = "dragon"
+		mob_targeting = true
+		priority = 9500
+		resource_matcher = "exact"
+		resource_name = [
+			"iceandfire:fire_dragon",
+			"iceandfire:ice_dragon",
+			"iceandfire:lightning_dragon",
+			"iceandfire:black_frost_dragon"
+		]
+		target_any_player = true
+	[[triggers.mob]]
+		identifier = "warden"
+		mob_targeting = true
+		persistence = 600
+		priority = 10000
+		resource_matcher = "exact"
+		resource_name = [ "minecraft:warden" ]
+		target_any_player = true
+	[[triggers.mob]]
+		identifier = "combat"
+		mob_targeting = true
+		priority = 9000
+		resource_matcher = "regex"
+		resource_name = [ "^(?!minecraft:(ender_dragon|wither|warden)|tensura:(charybdis|charybdis_core|ifrit|orc_lord)|tensura_neb:veldora).*" ]
+		target_any_player = true
+		persistence = 5
+	[[triggers.mob]]
+		identifier = "neutral_combat"
+		mob_targeting = true
+		priority = 9001
+		resource_matcher = "exact"
+		resource_name = [ "guardvillagers:guard", "minecraft:villager", "minecraft:iron_golem" ]
+		target_any_player = true
+		persistence = 5
+	[[triggers.mob]]
+		identifier = "elemental_realm_neutral_combat"
+		mob_targeting = true
+		priority = 9001
+		resource_matcher = "exact"
+		resource_name = [
+			"tensura:beast_gnome",
+			"tensura:salamander",
+			"tensura:winged_cat",
+			"tensura:aqua_frog",
+			"tensura:feathered_serpent"
+		]
+		target_any_player = true
+		persistence = 5
+	[[triggers.mob]]
+		identifier = "apothic_combat"
+		mob_targeting = true
+		priority = 9500
+		resource_matcher = "regex"
+		resource_name = [ ".*" ]
+		target_any_player = true
+		persistence = 5
+	[[triggers.raid]]
+		identifier = "village_raid"
+		priority = 10000
+		raid_status = [ "any" ]
+	[[triggers.victory]]
+		identifier = "boss_defeat"
+		max_tracks = 1
+		persistence = 200
+		priority = 10000
+		victory_timeout = 200
+	[triggers.time]
+		identifier = "night"
+		time_bundle = "night"
+	[triggers.universal]
+		active_cooldown = "0"
+		fade_in = "0"
+		fade_out = "50"
+		persistence = "0"
+		ticks_before_active = "0"
+		ticks_before_audio = "0"
+		ticks_between_audio = "0"

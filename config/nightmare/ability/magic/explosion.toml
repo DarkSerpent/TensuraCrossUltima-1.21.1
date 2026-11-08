@@ -1,0 +1,141 @@
+[Terrain]
+	#Whether Explosion Magic breaks blocks. Still needs mobGriefing and the Tensura skill grief rule, and respects nation and FTB claims.
+	enabled = false
+	#Whether blocks broken by Explosion Magic drop as items.
+	dropBlocks = true
+	#Blocks with a higher blast resistance than this are never broken.
+	maxBlastResistance = 9.0
+	#The most blocks a single explosion can break.
+	maxBlocks = 256
+	#Siege force dealt per point of spell damage against enemy nation land during a war.
+	siegeForcePerDamage = 0.5
+
+[StickyCharge]
+	#Chant time in ticks.
+	castTicks = 10
+	#Magicule cost to throw a charge.
+	magiculeCost = 600.0
+	#Cooldown in seconds.
+	cooldown = 4
+	#The fire damage of each charge.
+	damage = 40.0
+	#The fire damage of each charge when mastered.
+	masteredDamage = 60.0
+	#The blast radius of each charge in blocks.
+	radius = 2.5
+	#The radius of blocks broken by each charge when terrain damage is on.
+	terrainRadius = 1.5
+	#The most charges a caster can have out at once. Throwing another detonates the oldest.
+	maxCharges = 3
+	#Ticks the key must be held to detonate every active charge.
+	detonateHoldTicks = 20
+	#Seconds a charge lasts before it fizzles out.
+	lifetime = 60
+	#The throw speed in blocks per tick.
+	throwSpeed = 1.15
+	#The gravity on a thrown charge in blocks per tick squared.
+	gravity = 0.04
+
+[BlastStep]
+	#Magicule cost of each blast.
+	magiculeCost = 300.0
+	#Cooldown in ticks once the chain ends.
+	cooldownTicks = 30
+	#Launch speed in blocks per tick. About 0.8 carries you 8 blocks.
+	launchSpeed = 0.8
+	#Extra upward speed added when launching off the ground.
+	groundLift = 0.25
+	#The fire damage of the blast behind you.
+	damage = 25.0
+	#The fire damage of the blast behind you when mastered.
+	masteredDamage = 75.0
+	#The length of the cone behind you in blocks.
+	coneLength = 4.0
+	#The half-angle of the cone behind you in degrees.
+	coneAngle = 35.0
+	#Blasts in one chain.
+	chainLength = 3
+	#Ticks from the first blast in which the chain can continue.
+	chainWindowTicks = 40
+	#Minimum ticks between two blasts of a chain.
+	chainGapTicks = 4
+	#The fire damage of Howitzer Spin.
+	spinDamage = 50.0
+	#The fire damage of Howitzer Spin when mastered.
+	masteredSpinDamage = 200.0
+	#The radius of Howitzer Spin in blocks.
+	spinRadius = 3.0
+	#Ticks of fall damage immunity after each blast.
+	fallImmunityTicks = 40
+
+[ChainReaction]
+	#Chant time in ticks.
+	castTicks = 30
+	#Magicule cost to cast.
+	magiculeCost = 2500.0
+	#Cooldown in seconds.
+	cooldown = 12
+	#The flight speed of the bomb in blocks per tick.
+	bombSpeed = 1.6
+	#The furthest the bomb flies in blocks.
+	bombRange = 48.0
+	#The fire damage of the bomb.
+	bombDamage = 60.0
+	#The blast radius of the bomb in blocks.
+	bombRadius = 3.0
+	#The radius of blocks broken by the bomb when terrain damage is on.
+	terrainRadius = 2.0
+	#Sparks left behind by the bomb.
+	sparks = 4
+	#The range a spark can hop in blocks.
+	hopRange = 8.0
+	#Hops of each spark.
+	hops = 2
+	#Hops of each spark when mastered.
+	masteredHops = 6
+	#Ticks each hop takes.
+	hopTicks = 6
+	#The fire damage of each spark.
+	sparkDamage = 25.0
+	#The blast radius of each spark in blocks.
+	sparkRadius = 1.5
+	#The most blasts that can hit one enemy per cast.
+	maxHitsPerTarget = 3
+	#The fire damage of an enemy killed by the chain exploding when mastered.
+	corpseDamage = 20.0
+	#The blast radius of an exploding corpse in blocks.
+	corpseRadius = 2.5
+
+[AnnihilationBloom]
+	#Chant time in ticks.
+	castTicks = 80
+	#Magicule cost to cast.
+	magiculeCost = 20000.0
+	#Cooldown in seconds.
+	cooldown = 90
+	#The range to the aimed point in blocks.
+	aimRange = 48.0
+	#The radius of the cloud in blocks. 8 covers a 16-block area.
+	radius = 8.0
+	#How far above and below the cloud's centre it reaches in blocks.
+	height = 6.0
+	#The fire damage of the detonation. Ignores armour.
+	damage = 300.0
+	#Share of the damage dealt to allies inside the cloud.
+	allyMultiplier = 0.5
+	#Share of the damage dealt to the caster when inside the cloud.
+	selfMultiplier = 1.0
+	#The reach of the shockwave as a multiple of the cloud radius.
+	shockwaveReach = 1.75
+	#The knockback of the shockwave.
+	shockwaveKnockback = 2.5
+	#The radius of blocks broken by the detonation when terrain damage is on.
+	terrainRadius = 4.0
+	#The longest the cloud lingers before it detonates on its own, in ticks.
+	maxLingerTicks = 200
+	#Ticks the cloud follows a locked enemy when mastered.
+	followTicks = 60
+	#Ticks the ground burns after the detonation when mastered.
+	burnTicks = 100
+	#The fire damage per second of the burning ground.
+	burnDamagePerSecond = 15.0

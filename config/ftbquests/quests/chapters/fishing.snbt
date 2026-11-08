@@ -1,0 +1,3545 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "fishing"
+	group: "13F20E01BC3FA737"
+	icon: {
+		components: {
+			"tide:fish_length": 50.0d
+		}
+		id: "tide:alpha_fish"
+	}
+	id: "07227A033A94E793"
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "hybrid_aquatic:african_butterflyfish"
+			}
+			id: "5EB8172402161DDB"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7EC451AB085A9D71"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/african_butterflyfish"
+				criterion: "caught_fish"
+				id: "5223F0CA4C73B437"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "tide:amber_rockfish"
+			}
+			id: "3825F5AFDB9DEDE0"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "5DF90A77F36FB374"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/amber_rockfish"
+				criterion: "caught_fish"
+				id: "7CA0F045704C5F87"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "tide:anchovy"
+			}
+			id: "7B0890B7DB6ECDF0"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "1BD9D4CBF9C24E8C"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/anchovy"
+				criterion: "caught_fish"
+				id: "2A3D8044B1B972BC"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:anglerfish"
+			}
+			id: "59518982CA8476D8"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "5A26316089445019"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/anglerfish"
+				criterion: "caught_fish"
+				id: "0593A20321303873"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "tide:ash_perch"
+			}
+			id: "75877CF176820250"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "4CABD6D2D35B085D"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/ash_perch"
+				criterion: "caught_fish"
+				id: "304A712EAEB1F0D0"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "tide:bedrock_bug"
+			}
+			id: "57A2B3883D080248"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7CF12544C447D14C"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/bedrock_bug"
+				criterion: "caught_fish"
+				id: "6CB54FEE2E4E66A1"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "tide:black_crappie"
+			}
+			id: "22593B86C88C8485"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "271B4EF22D6508AC"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/black_crappie"
+				criterion: "caught_fish"
+				id: "1FD9B1CD122BC910"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				id: "tide:bluegill"
+			}
+			id: "4E5950686F54BD5B"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "4419E095B1457207"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/bluegill"
+				criterion: "caught_fish"
+				id: "7CCD064FFFCD7851"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			icon: {
+				id: "netherdepthsupgrade:bonefish"
+			}
+			id: "534AB79A95227022"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "4D7F0D5200F1DEE4"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/netherdepths/bonefish"
+				criterion: "caught_fish"
+				id: "5310AC6EF60E657C"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				id: "tide:brook_trout"
+			}
+			id: "5BB1F2ABF1C3AD7F"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "1F628665FE8575B3"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/brook_trout"
+				criterion: "caught_fish"
+				id: "7435EE85D29ACD21"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			icon: {
+				id: "tide:carp"
+			}
+			id: "51B58562E3FC3249"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "2928A33B3D63405D"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/carp"
+				criterion: "caught_fish"
+				id: "6EC61A5494F52567"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:carp"
+			}
+			id: "6BC522812D6AD6F2"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "595CDB4B035B5F63"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/carp"
+				criterion: "caught_fish"
+				id: "0FCA9BF9F54F3F8F"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			icon: {
+				id: "tide:cave_crawler"
+			}
+			id: "1B757ABD61B27F77"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "23F2E3D831C0D14F"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/cave_crawler"
+				criterion: "caught_fish"
+				id: "2EA37C3425CF37A9"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "tide:cave_eel"
+			}
+			id: "35C88AA9E47B8D94"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "577F9073C7DD9B36"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/cave_eel"
+				criterion: "caught_fish"
+				id: "440202BC4D87428A"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "minecraft:cod"
+			}
+			id: "55F22AB5B4C881EF"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "5314BCE583F93DEF"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/vanilla/cod"
+				criterion: "caught_fish"
+				id: "177A75614AAC8143"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:coelacanth"
+			}
+			id: "485778F5B81F2B91"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "5682CE59707AFB10"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/coelacanth"
+				criterion: "caught_fish"
+				id: "492DB490CE2BD41D"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			icon: {
+				id: "tide:deep_grouper"
+			}
+			id: "44E1F7981634753F"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "3508A9AE4A1A4EDE"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/deep_grouper"
+				criterion: "caught_fish"
+				id: "0C8CF9D7C54368DA"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			icon: {
+				id: "tide:ember_koi"
+			}
+			id: "01345CF6D999ACFB"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "44A402732B58F7FE"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/ember_koi"
+				criterion: "caught_fish"
+				id: "2CF28DA727F2270F"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			icon: {
+				id: "tide:enderfin"
+			}
+			id: "0A143FB7BCDB6597"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "39C103D4CC6EA3C8"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/enderfin"
+				criterion: "caught_fish"
+				id: "6641D5F5F2B5F6F1"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			icon: {
+				id: "tide:flounder"
+			}
+			id: "29781F66E3493947"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "1483B358C4A16520"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/flounder"
+				criterion: "caught_fish"
+				id: "5F61EDAEF11D9D87"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:flying_fish"
+			}
+			id: "5BCA307E7DB44EBC"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "22D8E1F28BE905F5"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/flying_fish"
+				criterion: "caught_fish"
+				id: "5F1919249A9238A0"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:herring"
+			}
+			id: "792ED9FE45BAC2DD"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "067FCF3011DE50F6"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/herring"
+				criterion: "caught_fish"
+				id: "1E18247ABB575B79"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			icon: {
+				id: "tide:incandescent_larva"
+			}
+			id: "518FE6C3D62BB4D2"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "71635A96FB6CA9B4"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/incandescent_larva"
+				criterion: "caught_fish"
+				id: "7E72C75A79244867"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 10.5d
+		}
+		{
+			icon: {
+				id: "tide:largemouth_bass"
+			}
+			id: "32A6BCB3E64510B2"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "5A1DC97335F3F2F5"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/largemouth_bass"
+				criterion: "caught_fish"
+				id: "2EFEC95EA3B18D70"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			icon: {
+				id: "netherdepthsupgrade:lava_pufferfish"
+			}
+			id: "2B264AB1FC2AE767"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "3BE7A00BA9845DF6"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/netherdepths/lava_pufferfish"
+				criterion: "caught_fish"
+				id: "6E2A486AA8FFCC36"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			icon: {
+				id: "tide:mackerel"
+			}
+			id: "32E8DB6F974C8EBE"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "6D66B39EBFC0DDDB"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/mackerel"
+				criterion: "caught_fish"
+				id: "30D1145FAD8BEE3B"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 12.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:mackerel"
+			}
+			id: "7A648159ED66E439"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "2F1283B660C9B856"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/mackerel"
+				criterion: "caught_fish"
+				id: "548866A959896F77"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 12.0d
+		}
+		{
+			icon: {
+				id: "tide:magma_mackerel"
+			}
+			id: "63190472FA5A125D"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "0CDA66E549A27270"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/magma_mackerel"
+				criterion: "caught_fish"
+				id: "01A8F1BFCB189147"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:mahi"
+			}
+			id: "00AED409C72A46E6"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "2856C100C795C3A8"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/mahi"
+				criterion: "caught_fish"
+				id: "60CEFDD6E5980C41"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 13.5d
+		}
+		{
+			icon: {
+				id: "tide:ocean_perch"
+			}
+			id: "769B674E3EA57931"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "348823855301F11C"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/ocean_perch"
+				criterion: "caught_fish"
+				id: "46E2D3FDA4063417"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 13.5d
+		}
+		{
+			icon: {
+				id: "tide:pale_clubfish"
+			}
+			id: "11809AF7BD7ED87F"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "4D766F154553F8A3"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/pale_clubfish"
+				criterion: "caught_fish"
+				id: "14759ACD7A752B1D"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:parrotfish"
+			}
+			id: "6E7537DF83738D31"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "3F2D194F36E5FE01"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/parrotfish"
+				criterion: "caught_fish"
+				id: "40CFC09D5CFB88A8"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 15.0d
+		}
+		{
+			icon: {
+				id: "tide:pike"
+			}
+			id: "70251D1E0D33F89A"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "3998E8F5B33B0C6D"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/pike"
+				criterion: "caught_fish"
+				id: "3002AC6EB4F0647D"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 15.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:piranha"
+			}
+			id: "41B84F355C18530C"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "3B4DE965D4E3069D"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/piranha"
+				criterion: "caught_fish"
+				id: "019B37C87CC82B3F"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 16.5d
+		}
+		{
+			icon: {
+				id: "minecraft:pufferfish"
+			}
+			id: "743C1CACC899B147"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "1E4E993720E9AAFD"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/vanilla/pufferfish"
+				criterion: "caught_fish"
+				id: "58F6A8F2051EEF48"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "tide:rainbow_trout"
+			}
+			id: "3BC263EBB68E757C"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "71355ADF0C95175A"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/rainbow_trout"
+				criterion: "caught_fish"
+				id: "357CDF69AC4154EC"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 16.5d
+		}
+		{
+			icon: {
+				id: "tide:red_snapper"
+			}
+			id: "5FD52D480DDDE02A"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "00DB3EFAF1CC93BB"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/red_snapper"
+				criterion: "caught_fish"
+				id: "4D6A650A87B5BD13"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 16.5d
+		}
+		{
+			icon: {
+				id: "minecraft:salmon"
+			}
+			id: "0BEB6A697B32E311"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "51B64C7FA18120A2"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/vanilla/salmon"
+				criterion: "caught_fish"
+				id: "18A2A195293F15C5"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:sea_bass"
+			}
+			id: "21331E0DC9C377FA"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "0585C82E946F898B"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/sea_bass"
+				criterion: "caught_fish"
+				id: "358822421EDA24A6"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "netherdepthsupgrade:searing_cod"
+			}
+			id: "13F75BBA354326C2"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "256519DADD78767E"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/netherdepths/searing_cod"
+				criterion: "caught_fish"
+				id: "5FAE96E03C7C3119"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "tide:shadow_snapper"
+			}
+			id: "46809AD09B3AFDF8"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "2B589511DFD3C5A9"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/shadow_snapper"
+				criterion: "caught_fish"
+				id: "251D602265B2903A"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 19.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:sheepshead_wrasse"
+			}
+			id: "4A466B43B6235FC4"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "3CE5AD625EC93E4D"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/wrasse"
+				criterion: "caught_fish"
+				id: "6108E34DE7B0B7FE"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 19.5d
+		}
+		{
+			icon: {
+				id: "tide:sleepy_carp"
+			}
+			id: "73064F7E35D4E527"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "135281BFE311EFD9"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/sleepy_carp"
+				criterion: "caught_fish"
+				id: "5C5130E8B1E226BE"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 19.5d
+		}
+		{
+			icon: {
+				id: "tide:smallmouth_bass"
+			}
+			id: "3A4F904DB7F22F91"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "4AD99995A171A1C8"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/smallmouth_bass"
+				criterion: "caught_fish"
+				id: "2541C9D5D1C14DAB"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "tide:snook"
+			}
+			id: "4677FE37F5989150"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "708BF855B7628EB7"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/snook"
+				criterion: "caught_fish"
+				id: "52891A5A2A0A3691"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:sunfish"
+			}
+			id: "466E23B2A815A09D"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "084D7A0843ACC7F9"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/sunfish"
+				criterion: "caught_fish"
+				id: "34001244040CA369"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "minecraft:tropical_fish"
+			}
+			id: "0EB4612068F91D37"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "4F390A967E0E4E97"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/vanilla/tropical_fish"
+				criterion: "caught_fish"
+				id: "7BB42E58E44FD487"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 22.5d
+		}
+		{
+			icon: {
+				id: "tide:tuna"
+			}
+			id: "3E40ABDC59D2AD19"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "413615EAC58778B0"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/tuna"
+				criterion: "caught_fish"
+				id: "02502220E8858929"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 22.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:tuna"
+			}
+			id: "3F03A4F9F769C8A4"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7AC010FF87E75E33"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/tuna"
+				criterion: "caught_fish"
+				id: "7156FB66985CF073"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 22.5d
+		}
+		{
+			icon: {
+				id: "tide:white_crappie"
+			}
+			id: "2B52905277B5C172"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "4903EF977FBDAAEA"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/white_crappie"
+				criterion: "caught_fish"
+				id: "610185FD19C5638A"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 24.0d
+		}
+		{
+			icon: {
+				id: "tide:yellow_perch"
+			}
+			id: "4D5245AC10581040"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "1135A889427CA071"
+				type: "tensura_ftb:existence_value"
+				value: 500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/yellow_perch"
+				criterion: "caught_fish"
+				id: "65F95B9A06013B4D"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 24.0d
+		}
+		{
+			icon: {
+				id: "tide:abyss_angler"
+			}
+			id: "59714FDB0D6A43A2"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "24A8E615979945C8"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/abyss_angler"
+				criterion: "caught_fish"
+				id: "197493ABF54AAA5C"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "tide:angelfish"
+			}
+			id: "71701330120F3E17"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "13CEB841702F5F02"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/angelfish"
+				criterion: "caught_fish"
+				id: "573A9F1605729E8D"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "tide:anglerfish"
+			}
+			id: "49106F73F4FAF4DB"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "373BF732F1D02187"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/anglerfish"
+				criterion: "caught_fish"
+				id: "3613002E3C0CE7DE"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:betta"
+			}
+			id: "24C3A99A5166033E"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "6727D3F88AC4F827"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/betta"
+				criterion: "caught_fish"
+				id: "1500EE147B828E4B"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:blowfish"
+			}
+			id: "36BA327364892B26"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "1E52B5710BD11A19"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/blowfish"
+				criterion: "caught_fish"
+				id: "1902C9C92A72403D"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "tide:blue_neonfish"
+			}
+			id: "1D546242FFFD9DB3"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "2EDCDC68E982E258"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/blue_neonfish"
+				criterion: "caught_fish"
+				id: "3F3D152B46E2667C"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:boxfish"
+			}
+			id: "70667601EB2E48E3"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "129CD2D637A16A5C"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/boxfish"
+				criterion: "caught_fish"
+				id: "098B39BF48CDF3CD"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			icon: {
+				id: "tide:catfish"
+			}
+			id: "14FDC94F92D33210"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "703982072180BC39"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/catfish"
+				criterion: "caught_fish"
+				id: "4FE30421019733B7"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				id: "tide:chorus_cod"
+			}
+			id: "28F656B55B9F9788"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "28D92955F654779B"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/chorus_cod"
+				criterion: "caught_fish"
+				id: "11A8B3ECB50BD1F3"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:cichlid"
+			}
+			id: "5C5AC90BB169443B"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "424054D43B0348D9"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/cichlid"
+				criterion: "caught_fish"
+				id: "4BDFC4798B7616FC"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:clownfish"
+			}
+			id: "31CDB645E80DD600"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "45D17114E73BEA75"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/clownfish"
+				criterion: "caught_fish"
+				id: "31E57C99BF6B5F20"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			icon: {
+				id: "tide:crystal_shrimp"
+			}
+			id: "6D1C647F57227119"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "45FEB288125F4E44"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/crystal_shrimp"
+				criterion: "caught_fish"
+				id: "318053E86FB4B91D"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:damselfish"
+			}
+			id: "3A7452E93A7488B6"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7A18BA82C586366C"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/damselfish"
+				criterion: "caught_fish"
+				id: "7F1CC036077E794A"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:danio"
+			}
+			id: "6AEB225D771CEA24"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "69AE53B1C810A553"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/danio"
+				criterion: "caught_fish"
+				id: "40D0982D12E3024A"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "tide:deep_blue"
+			}
+			id: "238A55BA457D0BBE"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "591DA45B5947E460"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/deep_blue"
+				criterion: "caught_fish"
+				id: "13748148667E7FFE"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:discus"
+			}
+			id: "245F5B23F80A2EDA"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "4AFA44A8B5BCD960"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/discus"
+				criterion: "caught_fish"
+				id: "536E5BE505A3D16D"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			icon: {
+				id: "tide:dripstone_darter"
+			}
+			id: "66301D9B45CF2A6A"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "72042A49772F514B"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/dripstone_darter"
+				criterion: "caught_fish"
+				id: "1A26E06CCBD5D56F"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 7.5d
+		}
+		{
+			icon: {
+				id: "tide:ender_glider"
+			}
+			id: "5480A2B6C1541353"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "4013C6F6B385C0BD"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/ender_glider"
+				criterion: "caught_fish"
+				id: "7283E40B6D807E26"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			icon: {
+				id: "tide:endergazer"
+			}
+			id: "5C209FD2F233F045"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "5693982C327193D6"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/endergazer"
+				criterion: "caught_fish"
+				id: "1E94D1976C4A2766"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 9.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:flashlight_fish"
+			}
+			id: "527F21520592A024"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "6148F0528B70EC08"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/flashlight_fish"
+				criterion: "caught_fish"
+				id: "6D015545BF2372BE"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 9.0d
+		}
+		{
+			icon: {
+				id: "netherdepthsupgrade:glowdine"
+			}
+			id: "26BFC02CCE39E300"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "08FDEA9E2ED6E4E1"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/netherdepths/glowdine"
+				criterion: "caught_fish"
+				id: "6EB6907A3FFA8E7C"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 10.5d
+		}
+		{
+			icon: {
+				id: "tide:glowfish"
+			}
+			id: "59CC03F53E20F651"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "2969B51369C051F0"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/glowfish"
+				criterion: "caught_fish"
+				id: "1FF47F9A295C9D03"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 10.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:goldfish"
+			}
+			id: "2A7E05AAACDF7C0F"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "6B363CA751BE2003"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/goldfish"
+				criterion: "caught_fish"
+				id: "38AA4A680AEF4188"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 10.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:gourami"
+			}
+			id: "2455B16774C3C81E"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7A7242CC82051662"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/gourami"
+				criterion: "caught_fish"
+				id: "2C56078254A8CD7D"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			icon: {
+				id: "tide:guppy"
+			}
+			id: "17087AB25D9B0F39"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "100F8A071DDC222A"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/guppy"
+				criterion: "caught_fish"
+				id: "1AE0A10AB02843F8"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 12.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:hagfish"
+			}
+			id: "244893A7411A30F4"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "10D4F96EF098DCEA"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/hagfish"
+				criterion: "caught_fish"
+				id: "5DA91413AB5B12D9"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 12.0d
+		}
+		{
+			icon: {
+				id: "tide:iron_tetra"
+			}
+			id: "4FBE58B786774B0B"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "53D05D43E2F2835B"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/iron_tetra"
+				criterion: "caught_fish"
+				id: "5BD54FD519413C75"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 13.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:john_dory"
+			}
+			id: "6B5D54B179AC9E03"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7F7821BB9D68B887"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/john_dory"
+				criterion: "caught_fish"
+				id: "25EEEB367335681F"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 13.5d
+		}
+		{
+			icon: {
+				id: "tide:judgment_fish"
+			}
+			id: "44EAB4E7B89294C3"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7829BA1FE56BE820"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/judgment_fish"
+				criterion: "caught_fish"
+				id: "5731054E133F19D5"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 13.5d
+		}
+		{
+			icon: {
+				id: "tide:lapis_lanternfish"
+			}
+			id: "50C82E0E2E8B2E3D"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "3D5B2EF85B1D91E4"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/lapis_lanternfish"
+				criterion: "caught_fish"
+				id: "7885F75842EBD084"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 15.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:lionfish"
+			}
+			id: "084F8258F23943F4"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "2E1A4BCC5977C4B2"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/lionfish"
+				criterion: "caught_fish"
+				id: "3B2A8DE7EADEFD72"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 15.0d
+		}
+		{
+			icon: {
+				id: "netherdepthsupgrade:magmacubefish"
+			}
+			id: "262CD65BCD9606D1"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "2963D181BDE431B3"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/netherdepths/magmacubefish"
+				criterion: "caught_fish"
+				id: "660A2F5F0F3A5932"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 15.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:needlefish"
+			}
+			id: "0878131F7CCA19C2"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "62229DC57539622F"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/needlefish"
+				criterion: "caught_fish"
+				id: "276997F6421A613F"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 16.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:tetra"
+			}
+			id: "41EB213EC6716AFD"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "2F5F5CBAD3754F0A"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/tetra"
+				criterion: "caught_fish"
+				id: "6BE9BA091F4AC598"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 16.5d
+		}
+		{
+			icon: {
+				id: "tide:obsidian_pike"
+			}
+			id: "79F07F89CDF86808"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "584D60D9456AA8A9"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/obsidian_pike"
+				criterion: "caught_fish"
+				id: "0B9F806E1B924355"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 16.5d
+		}
+		{
+			icon: {
+				id: "netherdepthsupgrade:obsidianfish"
+			}
+			id: "15111134B4245381"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "45760A8A79AF2BB7"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/netherdepths/obsidianfish"
+				criterion: "caught_fish"
+				id: "52C742B96A57F566"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:opah"
+			}
+			id: "3EB3943CC473BA9B"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "781797D2ED347210"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/opah"
+				criterion: "caught_fish"
+				id: "204A57279E4D622B"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:ratfish"
+			}
+			id: "238928B13E3D6380"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7CB5F42265801DBD"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/ratfish"
+				criterion: "caught_fish"
+				id: "0E7D81380137CFA1"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 18.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:rockfish"
+			}
+			id: "0542CF5563C09F09"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7903BB18AD9ADF4A"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/rockfish"
+				criterion: "caught_fish"
+				id: "142295F3876B1E1F"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 19.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:seahorse"
+			}
+			id: "13D6FAE1EAD797FD"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "221731AC73167888"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/seahorse"
+				criterion: "caught_fish"
+				id: "7B3310FF07A8EC5D"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 19.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:squirrelfish"
+			}
+			id: "6604E1BCB9067AA8"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "122F64A45EC52038"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/squirrelfish"
+				criterion: "caught_fish"
+				id: "52C3698FF4D0D22F"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 19.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:stonefish"
+			}
+			id: "2CBFF74183933480"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "6A505125CB2FF6BF"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/stonefish"
+				criterion: "caught_fish"
+				id: "1C3BC6908A45C6E0"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:surgeonfish"
+			}
+			id: "71C6FFAFD3475E79"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "428B5942451B223E"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/surgeonfish"
+				criterion: "caught_fish"
+				id: "5B01E6DEF3023128"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:tiger_barb"
+			}
+			id: "7100143CB464B04E"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "4DE272C2555FBAA6"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/tiger_barb"
+				criterion: "caught_fish"
+				id: "6EFBB948EDE33DED"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:triggerfish"
+			}
+			id: "7221969CEE8AE393"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "735F1E87A63224F6"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/triggerfish"
+				criterion: "caught_fish"
+				id: "3DE109FCD9938BFF"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 22.5d
+		}
+		{
+			icon: {
+				id: "tide:violet_carp"
+			}
+			id: "3C16024C43F532BC"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "4A0729E2CC2368A3"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/violet_carp"
+				criterion: "caught_fish"
+				id: "0D82EADE7A3AC796"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 22.5d
+		}
+		{
+			icon: {
+				id: "tide:volcano_tuna"
+			}
+			id: "3067C771F41E695C"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "5EEB90C2AE906CC4"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/volcano_tuna"
+				criterion: "caught_fish"
+				id: "187A560F4D0E7105"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: 22.5d
+		}
+		{
+			icon: {
+				id: "tide:walleye"
+			}
+			id: "2916BB36CE041B84"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "63499E1799F010F8"
+				type: "tensura_ftb:existence_value"
+				value: 1000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/walleye"
+				criterion: "caught_fish"
+				id: "5C56C85E056C81BC"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 24.0d
+		}
+		{
+			icon: {
+				id: "tide:arapaima"
+			}
+			id: "39FF95DD9FF46F27"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "0467F8AD2DDFAA87"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/arapaima"
+				criterion: "caught_fish"
+				id: "737D7D07FD91F2E9"
+				type: "advancement"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:barreleye"
+			}
+			id: "2E97553083AA8D5F"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7089817B3892692F"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/barreleye"
+				criterion: "caught_fish"
+				id: "4C6EE17C9C5361BB"
+				type: "advancement"
+			}]
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "tide:bedrock_tetra"
+			}
+			id: "5ABDE303F57E5978"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "00E0FCDE3D9E0969"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/bedrock_tetra"
+				criterion: "caught_fish"
+				id: "61936DF2799C0592"
+				type: "advancement"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:blobfish"
+			}
+			id: "6CB845FFF0D3646C"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "5D4CB40545507465"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/blobfish"
+				criterion: "caught_fish"
+				id: "0282BE7CD98CFB49"
+				type: "advancement"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "tide:blossom_bass"
+			}
+			id: "218D55A1E23FB66A"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "1CF91C9D09D3B391"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/blossom_bass"
+				criterion: "caught_fish"
+				id: "3CC3D271BA1D0273"
+				type: "advancement"
+			}]
+			x: 13.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "tide:crimson_fangjaw"
+			}
+			id: "133E8D3F710F800E"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "642557FB7E843201"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/crimson_fangjaw"
+				criterion: "caught_fish"
+				id: "7862213EA38EAC1F"
+				type: "advancement"
+			}]
+			x: 15.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "tide:crystalline_carp"
+			}
+			id: "7E7B0B22FFE42D45"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "0EC2DAE4E2F039DA"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/crystalline_carp"
+				criterion: "caught_fish"
+				id: "435FE3ECE8A9AB6D"
+				type: "advancement"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:dragonfish"
+			}
+			id: "11A83C8745383917"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "248EE123AAC4BCCD"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/dragonfish"
+				criterion: "caught_fish"
+				id: "0D5A34578DE7D07D"
+				type: "advancement"
+			}]
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			icon: {
+				id: "tide:elytrout"
+			}
+			id: "66475D599B771C0C"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "641CD2BFAA1990B8"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/elytrout"
+				criterion: "caught_fish"
+				id: "23ADD2AD5E159A2B"
+				type: "advancement"
+			}]
+			x: 15.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				id: "tide:dutchman_sock"
+			}
+			id: "2F6F01DE5EB40FB0"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "09DD78E16FA0A580"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/dutchman_sock"
+				criterion: "caught_fish"
+				id: "062AE87F6F4B6EF3"
+				type: "advancement"
+			}]
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			icon: {
+				id: "tide:frostbite_flounder"
+			}
+			id: "12F18B429DF60C4B"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "54E40E9CA6247771"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/frostbite_flounder"
+				criterion: "caught_fish"
+				id: "6D18CF517A77CE03"
+				type: "advancement"
+			}]
+			x: 13.5d
+			y: 4.5d
+		}
+		{
+			icon: {
+				id: "tide:gilded_minnow"
+			}
+			id: "21CB5CD7B58ECCC4"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "6CC090880B9CF009"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/gilded_minnow"
+				criterion: "caught_fish"
+				id: "78ACB0D5E0A90470"
+				type: "advancement"
+			}]
+			x: 15.0d
+			y: 4.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:golden_dorado"
+			}
+			id: "2932292747818405"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "629BBFA025DB6265"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/golden_dorado"
+				criterion: "caught_fish"
+				id: "11D2121F2187D6D1"
+				type: "advancement"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "tide:inferno_guppy"
+			}
+			id: "14E10D2803F6A63B"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "53EDE5F909B189DD"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/inferno_guppy"
+				criterion: "caught_fish"
+				id: "05E4C4B58A829468"
+				type: "advancement"
+			}]
+			x: 13.5d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "tide:luminescent_jellyfish"
+			}
+			id: "264A5D4199B59E36"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "0C10F88ADEE4961B"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/luminescent_jellyfish"
+				criterion: "caught_fish"
+				id: "2F6254CA1A61BD9C"
+				type: "advancement"
+			}]
+			x: 15.0d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "tide:mahi_mahi"
+			}
+			id: "767391FBC6D21DFD"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "3D227481209B7B2C"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/mahi_mahi"
+				criterion: "caught_fish"
+				id: "042B3780C2C5A51B"
+				type: "advancement"
+			}]
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			icon: {
+				id: "tide:manta_ray"
+			}
+			id: "161D177E37AABCFF"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "0F88B128B2CFD007"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/manta_ray"
+				criterion: "caught_fish"
+				id: "6AB240FC7339C2D3"
+				type: "advancement"
+			}]
+			x: 13.5d
+			y: 7.5d
+		}
+		{
+			icon: {
+				id: "tide:mirage_catfish"
+			}
+			id: "6798F7186713B0D9"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "57A714CD0B70F1BB"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/mirage_catfish"
+				criterion: "caught_fish"
+				id: "0A1F445E656AF0B9"
+				type: "advancement"
+			}]
+			x: 15.0d
+			y: 7.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:moray_eel"
+			}
+			id: "4BC77D5B1235BE8B"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "5CC29DC0D33E7198"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/moray_eel"
+				criterion: "caught_fish"
+				id: "4951582A6408A170"
+				type: "advancement"
+			}]
+			x: 12.0d
+			y: 9.0d
+		}
+		{
+			icon: {
+				id: "tide:nephrosilu"
+			}
+			id: "09F332C3F3CA7E81"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7F16344EE898D0EE"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/nephrosilu"
+				criterion: "caught_fish"
+				id: "36EC2635E6ECAE5D"
+				type: "advancement"
+			}]
+			x: 13.5d
+			y: 9.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:ocean_sunfish"
+			}
+			id: "0AA56794F03613EC"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "51897D5BA0A1F02E"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/ocean_sunfish"
+				criterion: "caught_fish"
+				id: "1CB0D6C94264A2D3"
+				type: "advancement"
+			}]
+			x: 15.0d
+			y: 9.0d
+		}
+		{
+			icon: {
+				id: "tide:pentapus"
+			}
+			id: "5EE0BF7479AEE942"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "60EDD1EEF4EE1CEC"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/pentapus"
+				criterion: "caught_fish"
+				id: "312F4D9EBC6228E2"
+				type: "advancement"
+			}]
+			x: 12.0d
+			y: 10.5d
+		}
+		{
+			icon: {
+				id: "tide:red_40"
+			}
+			id: "450B76DAD9BD8ED6"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "3ED6D9535EFD4EB0"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/red_40"
+				criterion: "caught_fish"
+				id: "2AC347104CFEAFA2"
+				type: "advancement"
+			}]
+			x: 13.5d
+			y: 10.5d
+		}
+		{
+			icon: {
+				id: "tide:sailfish"
+			}
+			id: "315545A761802C2A"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "4161B14FCC74FC2F"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/sailfish"
+				criterion: "caught_fish"
+				id: "5D53C114116C3687"
+				type: "advancement"
+			}]
+			x: 15.0d
+			y: 10.5d
+		}
+		{
+			icon: {
+				id: "tide:sand_tiger_shark"
+			}
+			id: "3C2B258CA10CAC4C"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "662EF8013C048E13"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/sand_tiger_shark"
+				criterion: "caught_fish"
+				id: "282452DA9207C226"
+				type: "advancement"
+			}]
+			x: 12.0d
+			y: 12.0d
+		}
+		{
+			icon: {
+				id: "tide:slimy_salmon"
+			}
+			id: "0D1A7E07BDD77118"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "0D14DB0108C8CC4E"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/slimy_salmon"
+				criterion: "caught_fish"
+				id: "359B62A0C50C59C4"
+				type: "advancement"
+			}]
+			x: 13.5d
+			y: 12.0d
+		}
+		{
+			icon: {
+				id: "netherdepthsupgrade:soulsucker"
+			}
+			id: "51EAE90F9E8B7CB4"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "37C15A748CF5E8D5"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/netherdepths/soulsucker"
+				criterion: "caught_fish"
+				id: "7001571E39CE1B89"
+				type: "advancement"
+			}]
+			x: 15.0d
+			y: 12.0d
+		}
+		{
+			icon: {
+				id: "tide:soulscale"
+			}
+			id: "14CEB60D86221D7D"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "474FE1B8FEA94F4E"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/soulscale"
+				criterion: "caught_fish"
+				id: "2065E0FCFFE6EEE4"
+				type: "advancement"
+			}]
+			x: 12.0d
+			y: 13.5d
+		}
+		{
+			icon: {
+				id: "tide:spore_stalker"
+			}
+			id: "73681FBEF7ED4A62"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "3C1B4650AFEA75EB"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/spore_stalker"
+				criterion: "caught_fish"
+				id: "4375926D23CF9AE6"
+				type: "advancement"
+			}]
+			x: 13.5d
+			y: 13.5d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:stingray"
+			}
+			id: "1707E74B87895BF9"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "46163D7B84BD00CF"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/stingray"
+				criterion: "caught_fish"
+				id: "71248DBA95CE5BFC"
+				type: "advancement"
+			}]
+			x: 15.0d
+			y: 13.5d
+		}
+		{
+			icon: {
+				id: "tide:sturgeon"
+			}
+			id: "79BC03FD1E398C01"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7753BC0BF17DE391"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/sturgeon"
+				criterion: "caught_fish"
+				id: "4D86D687FFE35F6B"
+				type: "advancement"
+			}]
+			x: 12.0d
+			y: 15.0d
+		}
+		{
+			icon: {
+				id: "tide:swordfish"
+			}
+			id: "761923C73612D3D1"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "3635CBA55B3AE24D"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/swordfish"
+				criterion: "caught_fish"
+				id: "4232D097319407F6"
+				type: "advancement"
+			}]
+			x: 13.5d
+			y: 15.0d
+		}
+		{
+			icon: {
+				id: "tide:vengeance"
+			}
+			id: "4F309098D00A0C89"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "6EEF71A5C92126DC"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/vengeance"
+				criterion: "caught_fish"
+				id: "46F93C97F560A558"
+				type: "advancement"
+			}]
+			x: 15.0d
+			y: 15.0d
+		}
+		{
+			icon: {
+				id: "tide:warped_guppy"
+			}
+			id: "01C04939A42DF0ED"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "579BEE03C74366C8"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/warped_guppy"
+				criterion: "caught_fish"
+				id: "3FC5E34CDC3687B2"
+				type: "advancement"
+			}]
+			x: 12.0d
+			y: 16.5d
+		}
+		{
+			icon: {
+				id: "netherdepthsupgrade:wither_bonefish"
+			}
+			id: "4CF548D1B5CEE42A"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "26C61598CA3EAA7B"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/netherdepths/wither_bonefish"
+				criterion: "caught_fish"
+				id: "68379B89BE9F39E3"
+				type: "advancement"
+			}]
+			x: 13.5d
+			y: 16.5d
+		}
+		{
+			icon: {
+				id: "tide:witherfin"
+			}
+			id: "789F501522083EDE"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "775771B1B7E14A4D"
+				type: "tensura_ftb:existence_value"
+				value: 2500
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/witherfin"
+				criterion: "caught_fish"
+				id: "22919D7E0738809E"
+				type: "advancement"
+			}]
+			x: 15.0d
+			y: 16.5d
+		}
+		{
+			icon: {
+				id: "tide:aquathorn"
+			}
+			id: "373CBF2E3F0D7C29"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7412A0385CC779BF"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/aquathorn"
+				criterion: "caught_fish"
+				id: "60A7D8AB4FA31C8C"
+				type: "advancement"
+			}]
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "netherdepthsupgrade:blazefish"
+			}
+			id: "3E3F3E34C07A9BD2"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7D5F061043AC41B7"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/netherdepths/blazefish"
+				criterion: "caught_fish"
+				id: "41C3449DDD9558F9"
+				type: "advancement"
+			}]
+			x: 19.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "tide:blazing_swordfish"
+			}
+			id: "6D1AC27F2862FB69"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "0C7C81F00675184B"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/blazing_swordfish"
+				criterion: "caught_fish"
+				id: "3497D648DCB6F8F6"
+				type: "advancement"
+			}]
+			x: 21.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "tide:bull_shark"
+			}
+			id: "23F0FEF291764111"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "116BEEB7F2F358B1"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/bull_shark"
+				criterion: "caught_fish"
+				id: "50981AAD5B413058"
+				type: "advancement"
+			}]
+			x: 18.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "tide:chasm_eel"
+			}
+			id: "5DB4D8610330DE52"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "787FB9A7511CD3B2"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/chasm_eel"
+				criterion: "caught_fish"
+				id: "4B5B4BABE90945D9"
+				type: "advancement"
+			}]
+			x: 19.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "tide:darkness_eater"
+			}
+			id: "24D7F1BB5FD53633"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "7C21FFB800A0A767"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/darkness_eater"
+				criterion: "caught_fish"
+				id: "44E5B7BCB1824B4F"
+				type: "advancement"
+			}]
+			x: 21.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "tide:echo_snapper"
+			}
+			id: "744C425466EBD045"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "68965DA38D194678"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/echo_snapper"
+				criterion: "caught_fish"
+				id: "187318BFF6AAE5DA"
+				type: "advancement"
+			}]
+			x: 18.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				id: "netherdepthsupgrade:eyeball_fish"
+			}
+			id: "482FC73BF5AE6E61"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "171E16B63FD21E39"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/netherdepths/eyeball_fish"
+				criterion: "caught_fish"
+				id: "2CF41385EBDF8C7D"
+				type: "advancement"
+			}]
+			x: 19.5d
+			y: 3.0d
+		}
+		{
+			icon: {
+				id: "netherdepthsupgrade:fortress_grouper"
+			}
+			id: "094D698480B7CE9D"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "26323E3AA2C1324C"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/netherdepths/fortress_grouper"
+				criterion: "caught_fish"
+				id: "1ED4F890953AFD8F"
+				type: "advancement"
+			}]
+			x: 21.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				id: "tide:great_white_shark"
+			}
+			id: "42340176DDE016BA"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "631B9291315AF384"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/great_white_shark"
+				criterion: "caught_fish"
+				id: "6AE124CE9AA705C7"
+				type: "advancement"
+			}]
+			x: 18.0d
+			y: 4.5d
+		}
+		{
+			icon: {
+				id: "tide:mantyvern"
+			}
+			id: "7930D82089A827CA"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "160AFD429476721A"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/mantyvern"
+				criterion: "caught_fish"
+				id: "037C067240796A03"
+				type: "advancement"
+			}]
+			x: 19.5d
+			y: 4.5d
+		}
+		{
+			icon: {
+				id: "tide:marstilus"
+			}
+			id: "31F3C50FFA640427"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "70E9E97A15F13ED2"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/marstilus"
+				criterion: "caught_fish"
+				id: "048A7F174C9FAFD0"
+				type: "advancement"
+			}]
+			x: 21.0d
+			y: 4.5d
+		}
+		{
+			icon: {
+				id: "tide:mooneye"
+			}
+			id: "435EF786CC5047E6"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "18C374E649D1B90A"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/mooneye"
+				criterion: "caught_fish"
+				id: "305301FDFBD32847"
+				type: "advancement"
+			}]
+			x: 18.0d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "tide:neptune_koi"
+			}
+			id: "7FAD63774E1073A4"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "2D2F1249DB0263A7"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/neptune_koi"
+				criterion: "caught_fish"
+				id: "75FFC1C4C036F147"
+				type: "advancement"
+			}]
+			x: 19.5d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:oarfish"
+			}
+			id: "709FC2942792C248"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "51F0F658E9E0A62A"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/oarfish"
+				criterion: "caught_fish"
+				id: "324DFB636F6C08DC"
+				type: "advancement"
+			}]
+			x: 21.0d
+			y: 6.0d
+		}
+		{
+			icon: {
+				id: "hybrid_aquatic:pearlfish"
+			}
+			id: "00895F30BF864B35"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "3CA7728D06241B10"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/hybrid_aquatic/pearlfish"
+				criterion: "caught_fish"
+				id: "3F83A8A7234B3A3E"
+				type: "advancement"
+			}]
+			x: 18.0d
+			y: 7.5d
+		}
+		{
+			icon: {
+				id: "tide:pluto_snail"
+			}
+			id: "0118A7FF17F3482B"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "034E396C64541E78"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/pluto_snail"
+				criterion: "caught_fish"
+				id: "59BC643D02159A44"
+				type: "advancement"
+			}]
+			x: 19.5d
+			y: 7.5d
+		}
+		{
+			icon: {
+				id: "tide:saturn_cuttlefish"
+			}
+			id: "72C88A8214FEE0B2"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "4E12CEE138B62BCF"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/saturn_cuttlefish"
+				criterion: "caught_fish"
+				id: "100D42A84A38BD32"
+				type: "advancement"
+			}]
+			x: 21.0d
+			y: 7.5d
+		}
+		{
+			icon: {
+				id: "tide:shadow_shark"
+			}
+			id: "4D577611EAA454B8"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "5517537530EB9B98"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/shadow_shark"
+				criterion: "caught_fish"
+				id: "33C2E740545F35EA"
+				type: "advancement"
+			}]
+			x: 18.0d
+			y: 9.0d
+		}
+		{
+			icon: {
+				id: "tide:snatcher_squid"
+			}
+			id: "75CE3E8BDEE4237D"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "656F8710D443A587"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/snatcher_squid"
+				criterion: "caught_fish"
+				id: "765A87B1ABC38609"
+				type: "advancement"
+			}]
+			x: 19.5d
+			y: 9.0d
+		}
+		{
+			icon: {
+				id: "tide:sun_emblem"
+			}
+			id: "6B50FD9609C48388"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "4071E3A147C95DF1"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/sun_emblem"
+				criterion: "caught_fish"
+				id: "2DB74901C2BA5010"
+				type: "advancement"
+			}]
+			x: 21.0d
+			y: 9.0d
+		}
+		{
+			icon: {
+				id: "tide:uranias_pisces"
+			}
+			id: "636E54CB66D155C6"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "20DEC0CEC2E3C678"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/uranias_pisces"
+				criterion: "caught_fish"
+				id: "04D76565C4400108"
+				type: "advancement"
+			}]
+			x: 18.0d
+			y: 10.5d
+		}
+		{
+			icon: {
+				id: "tide:windbass"
+			}
+			id: "3CC0627851B75A07"
+			rewards: [{
+				exclude_from_claim_all: true
+				existence: "MAX_EP"
+				id: "3FACE377B102F89E"
+				type: "tensura_ftb:existence_value"
+				value: 5000
+			}]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/windbass"
+				criterion: "caught_fish"
+				id: "7C2986428236F606"
+				type: "advancement"
+			}]
+			x: 19.5d
+			y: 10.5d
+		}
+		{
+			icon: {
+				id: "tide:alpha_fish"
+			}
+			id: "0EBE27426C61AA36"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "475448431533685E"
+					type: "tensura_ftb:existence_value"
+					value: 20000
+				}
+				{
+					command: "/rtitle grant {p} \"&6[I Caught the Alpha Fish!]\" desc Caught the Legendary rarity fish Alpha Fish."
+					exclude_from_claim_all: true
+					id: "637DC1ABF42DE270"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/alpha_fish"
+				criterion: "caught_fish"
+				id: "40C1CE081881C7F6"
+				type: "advancement"
+			}]
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "tide:coelacanth"
+			}
+			id: "500626078C0D98CD"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "00B2B0FAD7E736DC"
+					type: "tensura_ftb:existence_value"
+					value: 20000
+				}
+				{
+					command: "/rtitle grant {p} \"&6[I Caught the Coelacanth!]\" desc Caught the Legendary rarity fish Coelacanth."
+					exclude_from_claim_all: true
+					id: "4A1119D551450383"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/coelacanth"
+				criterion: "caught_fish"
+				id: "425251D716ACB5F3"
+				type: "advancement"
+			}]
+			x: 25.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "tide:devils_hole_pupfish"
+			}
+			id: "07060BE409685CB8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "71E3AB16CC13FB4A"
+					type: "tensura_ftb:existence_value"
+					value: 20000
+				}
+				{
+					command: "/rtitle grant {p} \"&6[I Caught the Devils Hole Pupfish!]\" desc Caught the Legendary rarity fish Devils Hole Pupfish."
+					exclude_from_claim_all: true
+					id: "75660621CD1A2455"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/devils_hole_pupfish"
+				criterion: "caught_fish"
+				id: "58F8C0BFB39B45E1"
+				type: "advancement"
+			}]
+			x: 27.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "tide:dragon_fish"
+			}
+			id: "48A0DF30719433F6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "45CEBC76110C32FC"
+					type: "tensura_ftb:existence_value"
+					value: 20000
+				}
+				{
+					command: "/rtitle grant {p} \"&6[I Caught the Dragon Fish!]\" desc Caught the Legendary rarity fish Dragon Fish."
+					exclude_from_claim_all: true
+					id: "370F5CD4EEA533DB"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/dragon_fish"
+				criterion: "caught_fish"
+				id: "3CDE8F853B58D2F1"
+				type: "advancement"
+			}]
+			x: 24.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "tide:midas_fish"
+			}
+			id: "7508BBEAE8BEB14C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "1CFD0F1CEFE54E9D"
+					type: "tensura_ftb:existence_value"
+					value: 20000
+				}
+				{
+					command: "/rtitle grant {p} \"&6[I Caught the Midas Fish!]\" desc Caught the Legendary rarity fish Midas Fish."
+					exclude_from_claim_all: true
+					id: "452FB787ABE9074C"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/midas_fish"
+				criterion: "caught_fish"
+				id: "3EEA5D13FAE8342F"
+				type: "advancement"
+			}]
+			x: 25.5d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "tide:shooting_starfish"
+			}
+			id: "25BCAF9BCAE1DCAC"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "384A29C2D305A82F"
+					type: "tensura_ftb:existence_value"
+					value: 20000
+				}
+				{
+					command: "/rtitle grant {p} \"&6[I Caught the Shooting Starfish!]\" desc Caught the Legendary rarity fish Shooting Starfish."
+					exclude_from_claim_all: true
+					id: "2B9176C33D20903E"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/shooting_starfish"
+				criterion: "caught_fish"
+				id: "3E4336AE536ABCFE"
+				type: "advancement"
+			}]
+			x: 27.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "tide:voidseeker"
+			}
+			id: "06C57B645AD79AD1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					existence: "MAX_EP"
+					id: "6BBD3235E450CC39"
+					type: "tensura_ftb:existence_value"
+					value: 20000
+				}
+				{
+					command: "/rtitle grant {p} \"&6[I Caught the Voidseeker!]\" desc Caught the Legendary rarity fish Voidseeker."
+					exclude_from_claim_all: true
+					id: "0031CEC8EC5A9FD3"
+					permission_level: 4
+					type: "command"
+				}
+			]
+			tasks: [{
+				advancement: "tcu_adjustments:fishing/tide/voidseeker"
+				criterion: "caught_fish"
+				id: "3284D9E4E1D4901E"
+				type: "advancement"
+			}]
+			x: 24.0d
+			y: 3.0d
+		}
+	]
+}

@@ -1,0 +1,475 @@
+#Controls for trevolved:fencer. Detailed balance is in this same file.
+#Allow learning this ability. Existing ownership is kept.
+allowAcquisition = true
+#Allow active subskills. Inherent passives are not removed.
+allowActiveUse = true
+#Allow enabling its native passive toggle. Switching it off remains allowed.
+allowPassiveToggle = true
+#Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+allowTerrainDamage = true
+
+[evolutionRequirements]
+
+    [evolutionRequirements.fencer]
+        #Required Existence Points.
+        # Default: 1000000
+        # Range: 0 ~ 9223372036854775807
+        ep = 1000000
+        #Primary tracked requirement; see publication CONFIGURATION.md for its meaning.
+        # Default: 1000
+        # Range: > 0
+        requirementA = 1000
+        #Secondary tracked requirement; zero disables this numeric gate where unused.
+        # Default: 10
+        # Range: > 0
+        requirementB = 10
+        #Tertiary tracked requirement; zero disables this numeric gate where unused.
+        # Default: 0
+        # Range: > 0
+        requirementC = 0
+        #Require every prerequisite skill in this route to be mastered.
+        requireMastery = true
+
+[swordGodPath]
+    #Minimum bleed damage per second.
+    # Default: 4.0
+    # Range: 0.0 ~ 1.0E9
+    drawingStanceBleedMinimumDamage = 4.0
+    #Drawing Stance strike multiplier.
+    # Default: 4.0
+    # Range: 0.0 ~ 1000.0
+    drawingStanceDamageMultiplier = 4.0
+    #Ordinary tagged-sword damage while Fencer is owned; family modes are excluded.
+    # Default: 1.25
+    # Range: 0.0 ~ 1000.0
+    fencerSwordDamageMultiplier = 1.25
+    #Mastered Fencer ordinary sword multiplier.
+    # Default: 1.5
+    # Range: 0.0 ~ 1000.0
+    fencerSwordDamageMultiplierMastered = 1.5
+    #Unmastered minimum damage.
+    # Default: 100.0
+    # Range: 0.0 ~ 1.0E9
+    flashStepMinimumDamage = 100.0
+    #Mastered minimum damage.
+    # Default: 175.0
+    # Range: 0.0 ~ 1.0E9
+    flashStepMinimumDamageMastered = 175.0
+    #Unmastered physical damage multiplier.
+    # Default: 1.5
+    # Range: 0.0 ~ 1000.0
+    godSlayingEdgeDamageMultiplier = 1.5
+    #Mastered damage multiplier.
+    # Default: 1.75
+    # Range: 0.0 ~ 1000.0
+    godSlayingEdgeDamageMultiplierMastered = 1.75
+    #Damage multiplier against frozen targets.
+    # Default: 1.25
+    # Range: 0.0 ~ 1000.0
+    longswordFrozenTargetDamageMultiplier = 1.25
+    #Mastered frozen-target multiplier.
+    # Default: 1.4
+    # Range: 0.0 ~ 1000.0
+    longswordFrozenTargetDamageMultiplierMastered = 1.4
+    #Unmastered minimum damage.
+    # Default: 600.0
+    # Range: 0.0 ~ 1.0E9
+    spatialCleaveMinimumDamage = 600.0
+    #Mastered minimum damage.
+    # Default: 850.0
+    # Range: 0.0 ~ 1.0E9
+    spatialCleaveMinimumDamageMastered = 850.0
+    #Ordinary tagged-sword damage while Sword God is owned; family modes are excluded.
+    # Default: 1.5
+    # Range: 0.0 ~ 1000.0
+    swordGodSwordDamageMultiplier = 1.5
+    #Mastered Sword God ordinary sword multiplier.
+    # Default: 2.0
+    # Range: 0.0 ~ 1000.0
+    swordGodSwordDamageMultiplierMastered = 2.0
+    #Blade Tempest Aura cost.
+    # Default: 750.0
+    # Range: 0.0 ~ 1.0E12
+    bladeTempestAuraCost = 750.0
+    #Mastered cooldown.
+    # Default: 12
+    # Range: 0 ~ 86400
+    bladeTempestCooldownMasteredSeconds = 12
+    #Blade Tempest cooldown.
+    # Default: 15
+    # Range: 0 ~ 86400
+    bladeTempestCooldownSeconds = 15
+    #Flash Step Aura cost.
+    # Default: 300.0
+    # Range: 0.0 ~ 1.0E12
+    flashStepAuraCost = 300.0
+    #Mastered cooldown.
+    # Default: 5
+    # Range: 0 ~ 86400
+    flashStepCooldownMasteredSeconds = 5
+    #Flash Step cooldown.
+    # Default: 7
+    # Range: 0 ~ 86400
+    flashStepCooldownSeconds = 7
+    #God-Slaying Edge Aura cost.
+    # Default: 2500.0
+    # Range: 0.0 ~ 1.0E12
+    godSlayingEdgeAuraCost = 2500.0
+    #Mastered cooldown.
+    # Default: 45
+    # Range: 0 ~ 86400
+    godSlayingEdgeCooldownMasteredSeconds = 45
+    #God-Slaying Edge cooldown.
+    # Default: 60
+    # Range: 0 ~ 86400
+    godSlayingEdgeCooldownSeconds = 60
+    #Longsword of Light Aura cost.
+    # Default: 4000.0
+    # Range: 0.0 ~ 1.0E12
+    longswordOfLightAuraCost = 4000.0
+    #Mastered cooldown.
+    # Default: 90
+    # Range: 0 ~ 86400
+    longswordOfLightCooldownMasteredSeconds = 90
+    #Longsword of Light cooldown.
+    # Default: 120
+    # Range: 0 ~ 86400
+    longswordOfLightCooldownSeconds = 120
+    #Spatial Cleave Aura cost.
+    # Default: 3000.0
+    # Range: 0.0 ~ 1.0E12
+    spatialCleaveAuraCost = 3000.0
+    #Mastered cooldown.
+    # Default: 35
+    # Range: 0 ~ 86400
+    spatialCleaveCooldownMasteredSeconds = 35
+    #Spatial Cleave cooldown.
+    # Default: 45
+    # Range: 0 ~ 86400
+    spatialCleaveCooldownSeconds = 45
+    #Unmastered target range.
+    # Default: 6.0
+    # Range: 0.0 ~ 256.0
+    bladeTempestRange = 6.0
+    #Mastered target range.
+    # Default: 8.0
+    # Range: 0.0 ~ 256.0
+    bladeTempestRangeMastered = 8.0
+    #Drawing Stance bleed duration.
+    # Default: 3
+    # Range: 0 ~ 86400
+    drawingStanceBleedSeconds = 3
+    #Mastered arming delay.
+    # Default: 4
+    # Range: 0 ~ 86400
+    drawingStanceDelayMasteredSeconds = 4
+    #Seconds without attacking before Drawing Stance arms.
+    # Default: 8
+    # Range: 0 ~ 86400
+    drawingStanceDelaySeconds = 8
+    #God-Slaying Edge weapon-buff duration.
+    # Default: 15
+    # Range: 1 ~ 86400
+    godSlayingEdgeDurationSeconds = 15
+    #Anti-Skill, Anti-Magic, Anti-Regeneration and nullification-suppression duration.
+    # Default: 10
+    # Range: 0 ~ 86400
+    godSlayingEdgeSealSeconds = 10
+    #Mastered freeze duration.
+    # Default: 6
+    # Range: 1 ~ 86400
+    longswordOfLightDurationMasteredSeconds = 6
+    #Unmastered freeze duration.
+    # Default: 4
+    # Range: 1 ~ 86400
+    longswordOfLightDurationSeconds = 4
+    #Time-freeze radius.
+    # Default: 20.0
+    # Range: 0.0 ~ 256.0
+    longswordOfLightRadius = 20.0
+    #Spatial/teleportation disable duration.
+    # Default: 10
+    # Range: 0 ~ 86400
+    spatialCleaveBlockadeSeconds = 10
+    #Spatial Cleave maximum range.
+    # Default: 30.0
+    # Range: 0.0 ~ 256.0
+    spatialCleaveRange = 30.0
+    #Fencer strike count.
+    # Default: 5
+    # Range: 1 ~ 1000
+    bladeTempestStrikes = 5
+    #Sword God strike count.
+    # Default: 6
+    # Range: 1 ~ 1000
+    bladeTempestUltimateStrikes = 6
+    #Attack-value fraction dealt by each bleed pulse.
+    # Default: 0.2
+    # Range: 0.0 ~ 1000.0
+    drawingStanceBleedWeaponMultiplier = 0.2
+    #Fencer Battlewill damage multiplier.
+    # Default: 2.0
+    # Range: 0.0 ~ 1000.0
+    fencerBattlewillMultiplier = 2.0
+    #Mastered Fencer Battlewill multiplier.
+    # Default: 2.5
+    # Range: 0.0 ~ 1000.0
+    fencerBattlewillMultiplierMastered = 2.5
+    #Flash Step distance.
+    # Default: 8.0
+    # Range: 0.0 ~ 256.0
+    flashStepDistance = 8.0
+    #Unmastered weapon multiplier.
+    # Default: 1.25
+    # Range: 0.0 ~ 1000.0
+    flashStepWeaponMultiplier = 1.25
+    #Mastered weapon multiplier.
+    # Default: 1.75
+    # Range: 0.0 ~ 1000.0
+    flashStepWeaponMultiplierMastered = 1.75
+    #Server-side projectile advancement per tick.
+    # Default: 3.0
+    # Range: 0.05 ~ 256.0
+    spatialCleaveBlocksPerTick = 3.0
+    #Unmastered weapon multiplier.
+    # Default: 4.0
+    # Range: 0.0 ~ 1000.0
+    spatialCleaveWeaponMultiplier = 4.0
+    #Mastered weapon multiplier.
+    # Default: 5.0
+    # Range: 0.0 ~ 1000.0
+    spatialCleaveWeaponMultiplierMastered = 5.0
+    #Sword God Battlewill multiplier.
+    # Default: 3.0
+    # Range: 0.0 ~ 1000.0
+    swordGodBattlewillMultiplier = 3.0
+    #Mastered Sword God Battlewill multiplier.
+    # Default: 4.0
+    # Range: 0.0 ~ 1000.0
+    swordGodBattlewillMultiplierMastered = 4.0
+
+[familyMultipliers]
+
+    [familyMultipliers.fencer]
+        #Family outgoing-damage multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        damageMultiplier = 1.0
+        #Family native-cooldown multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Family Aura-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        auraCostMultiplier = 1.0
+        #Family Magicule-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        magiculeCostMultiplier = 1.0
+        #Family targeting/radius multiplier.
+        # Default: 1.0
+        # Range: 0.1 ~ 20.0
+        rangeMultiplier = 1.0
+
+    [familyMultipliers.swordGod]
+        #Family outgoing-damage multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        damageMultiplier = 1.0
+        #Family native-cooldown multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Family Aura-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        auraCostMultiplier = 1.0
+        #Family Magicule-cost multiplier.
+        # Default: 1.0
+        # Range: 0.0 ~ 1000.0
+        magiculeCostMultiplier = 1.0
+        #Family targeting/radius multiplier.
+        # Default: 1.0
+        # Range: 0.1 ~ 20.0
+        rangeMultiplier = 1.0
+
+[abilities]
+
+    [abilities.sword_god_gal_farion]
+        #Controls for trevolved:sword_god_gal_farion. Detailed balance is in this same file.
+        #Allow learning this ability. Existing ownership is kept.
+        allowAcquisition = true
+        #Allow active subskills. Inherent passives are not removed.
+        allowActiveUse = true
+        #Allow enabling its native passive toggle. Switching it off remains allowed.
+        allowPassiveToggle = true
+        #Allow this ability to change/restore blocks. Claim and spawn protection still apply.
+        allowTerrainDamage = true
+
+        [abilities.sword_god_gal_farion.subskills]
+
+            #Native mode 1: fencer.blade_tempest. IDs/indices are not renumbered when disabled.
+            [abilities.sword_god_gal_farion.subskills.fencer_blade_tempest]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 0: fencer.flash_step. IDs/indices are not renumbered when disabled.
+            [abilities.sword_god_gal_farion.subskills.fencer_flash_step]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 3: sword_god_gal_farion.god_slaying_edge. IDs/indices are not renumbered when disabled.
+            [abilities.sword_god_gal_farion.subskills.sword_god_gal_farion_god_slaying_edge]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 2: sword_god_gal_farion.longsword_of_light. IDs/indices are not renumbered when disabled.
+            [abilities.sword_god_gal_farion.subskills.sword_god_gal_farion_longsword_of_light]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+            #Native mode 4: sword_god_gal_farion.spatial_cleave. IDs/indices are not renumbered when disabled.
+            [abilities.sword_god_gal_farion.subskills.sword_god_gal_farion_spatial_cleave]
+                #Enable this mode's press/hold/release input; it remains visible when disabled.
+                #Also controls Endless Current. End active effects before changing settings.
+                enabled = true
+                #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                damageMultiplier = 1.0
+                #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                cooldownMultiplier = 1.0
+                #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeAuraCostMultiplier = 1.0
+                #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+                # Default: 1.0
+                # Range: 0.0 ~ 100.0
+                nativeMagiculeCostMultiplier = 1.0
+
+[subskills]
+
+    #Native mode 1: fencer.blade_tempest. IDs/indices are not renumbered when disabled.
+    [subskills.fencer_blade_tempest]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+    #Native mode 0: fencer.flash_step. IDs/indices are not renumbered when disabled.
+    [subskills.fencer_flash_step]
+        #Enable this mode's press/hold/release input; it remains visible when disabled.
+        #Also controls Endless Current. End active effects before changing settings.
+        enabled = true
+        #Mode damage multiplier. Does not change ordinary melee, healing or utility.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        damageMultiplier = 1.0
+        #Cooldown multiplier, after family/global scaling. 0 = no cooldown.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        cooldownMultiplier = 1.0
+        #Native mode Aura cost multiplier. Custom drains use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeAuraCostMultiplier = 1.0
+        #Native mode Magicule cost multiplier. Upkeep, percentage drains and terrain costs use detailed balance settings.
+        # Default: 1.0
+        # Range: 0.0 ~ 100.0
+        nativeMagiculeCostMultiplier = 1.0
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

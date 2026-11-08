@@ -1,0 +1,60 @@
+#Magicules spent to obtain Chaos once Cath Palug has been slain.
+epAcquirement = 250000.0
+#Only those who have slain Cath Palug may acquire Chaos.
+requiresCathPalug = true
+#Power multiplier on every Chaos art once Chaos is mastered.
+masteredPower = 1.5
+#Chaos Star: magicule cost.
+starCost = 1500.0
+#Chaos Star: cooldown in seconds.
+starCooldown = 2
+#Chaos Star: blast damage.
+starDamage = 120.0
+#Chaos Star: blast radius in blocks.
+starRadius = 3.0
+#Chaos Star: flight speed in blocks per tick.
+starSpeed = 1.6
+#Chaos Starfall (sneak): magicule cost.
+starfallCost = 8000.0
+#Chaos Starfall (sneak): stars rained down around the target.
+starfallStars = 7
+#Chaos Starfall (sneak): cooldown in seconds.
+starfallCooldown = 25
+#Reality Rewrite: magicule cost.
+rewriteCost = 6000.0
+#Reality Rewrite: cooldown in seconds.
+rewriteCooldown = 15
+#Reality Rewrite: reach in blocks.
+rewriteRange = 32.0
+#Reality Rewrite: radius of the rewritten sphere in blocks.
+rewriteRadius = 4.0
+#Reality Rewrite: damage dealt to everything inside.
+rewriteDamage = 260.0
+#Reality Rewrite: seconds its victims' magic and skills are disrupted.
+rewriteDisruptSeconds = 6
+#Rewrite Self (sneak): magicule cost.
+selfRewriteCost = 10000.0
+#Rewrite Self (sneak): share of max health restored (0..1).
+selfRewriteHeal = 0.35
+#Rewrite Self (sneak): cooldown in seconds.
+selfRewriteCooldown = 90
+#Cath: magicule cost to call your Cath familiar.
+cathCost = 20000.0
+#Cath: cooldown in seconds after it falls or is dismissed.
+cathCooldown = 60
+#Kingdom of Chaos: magicule cost.
+kingdomCost = 40000.0
+#Kingdom of Chaos: cooldown in seconds.
+kingdomCooldown = 180
+#Kingdom of Chaos: how long the kingdom stands, in seconds.
+kingdomDuration = 30
+#Kingdom of Chaos: radius in blocks.
+kingdomRadius = 16.0
+#Kingdom of Chaos: damage dealt to enemies inside every second.
+kingdomDamage = 40.0
+#Undying Chaos: whether a toggled Chaos rewrites your death.
+undyingEnabled = true
+#Undying Chaos: share of max health you come back with (0..1).
+undyingHealth = 0.4
+#Undying Chaos: cooldown in seconds between rewritten deaths.
+undyingCooldown = 600

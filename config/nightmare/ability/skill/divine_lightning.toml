@@ -1,0 +1,58 @@
+#Magicules needed to acquire Divine Lightning.
+magiculeAcquirement = 100000.0
+#Mastery points needed to master Divine Lightning.
+maxMastery = 1000
+#Bararaq Harba: Lightning damage of the thrown spear.
+harbaDamage = 120.0
+#Bararaq Harba: how many targets the spear pierces before it sticks.
+harbaPierce = 3
+#Bararaq Harba: reach of the throw in blocks.
+harbaRange = 48.0
+#Bararaq Harba: spear speed in blocks per tick.
+harbaSpeed = 2.5
+#Bararaq Harba: extra hit radius around the spear in blocks.
+harbaHitRadius = 0.6
+#Bararaq Harba: seconds the spear stays stuck as a lightning rod.
+harbaRodSeconds = 4.0
+#Bararaq Harba: the lightning rod zaps enemies within this many blocks.
+harbaRodRadius = 4.0
+#Bararaq Harba: Lightning damage the rod deals to each enemy every second.
+harbaRodDamage = 20.0
+#Bararaq Harba: Magicules spent per throw.
+harbaMagiculeCost = 2000.0
+#Bararaq Harba: cooldown in seconds.
+harbaCooldownSeconds = 8
+#Bararaq Saiga: length of the blast in blocks.
+saigaRange = 40.0
+#Bararaq Saiga: half-width of the blast in blocks.
+saigaWidth = 2.5
+#Bararaq Saiga: Lightning damage dealt to everything in the blast.
+saigaDamage = 250.0
+#Bararaq Saiga: enemies within this many blocks of the blast are blinded.
+saigaBlindRadius = 12.0
+#Bararaq Saiga: seconds of blindness.
+saigaBlindSeconds = 2.0
+#Bararaq Saiga: Magicules spent per blast.
+saigaMagiculeCost = 15000.0
+#Bararaq Saiga: cooldown in seconds.
+saigaCooldownSeconds = 60
+#Baal's Sword: extra Lightning damage dealt by each hit.
+swordBonusDamage = 30.0
+#Baal's Sword: lightning arcs from each hit strike enemies within this many blocks of the target.
+swordArcRadius = 3.0
+#Bararaq Barasikh: share of incoming damage absorbed by the scales (0.15 = 15%).
+barasikhAbsorb = 0.15
+#Bararaq Barasikh: the absorbed damage chains back to an attacker within this many blocks.
+barasikhChainRange = 8.0
+#Bararaq Barasikh: Magicules drained every second while active.
+barasikhMagiculePerSecond = 300.0
+#Partial Djinn Equip: bonus armor.
+equipArmor = 35.0
+#Partial Djinn Equip: bonus armor toughness.
+equipToughness = 12.0
+#Partial Djinn Equip: bonus to your Lightning damage (0.2 = +20%).
+equipLightningBonus = 0.2
+#Partial Djinn Equip: Bararaq Harba and Bararaq Saiga cost this much less (0.25 = -25%).
+equipCostReduction = 0.25
+#Partial Djinn Equip: Magicules drained every second while active.
+equipMagiculePerSecond = 500.0

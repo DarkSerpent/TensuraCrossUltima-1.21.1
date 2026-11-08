@@ -1,0 +1,25 @@
+
+[general]
+    #Grant the exact trnightmare:material_creation intrinsic to Magic God, Laplace when that optional mod and registry entry are present.
+    grantTrNightmaresMaterialCreation = true
+    #Total EP-gain multiplier for Laplace Factor. Native EP awards have equal Aura and Magicule halves; both halves are redirected into Magicules.
+    # Default: 1.4
+    # Range: 0.0 ~ 1000.0
+    laplaceFactorEpMultiplier = 1.4
+    #Multiplicative learning-point bonus for the Originator, Demonic Soul and completed Laplace lineages. 9.0 is +900%.
+    # Default: 9.0
+    # Range: 0.0 ~ 1000.0
+    laplaceFactorLearningBonus = 9.0
+    #Multiplicative mastery-point bonus for the Originator, Demonic Soul and completed Laplace lineages. 9.0 is +900%.
+    # Default: 9.0
+    # Range: 0.0 ~ 1000.0
+    laplaceFactorMasteryBonus = 9.0
+
+#INTERNAL: one-time import from old configs. Explicit canonical values win, including defaults.
+#Set importLegacy=false before first launch to keep new/default values instead of importing old defaults.
+[migration]
+    importLegacy = true
+    #Internal migration marker. Do not reset unless deliberately re-importing legacy values.
+    # Default: 0
+    # Range: 0 ~ 1
+    version = 1

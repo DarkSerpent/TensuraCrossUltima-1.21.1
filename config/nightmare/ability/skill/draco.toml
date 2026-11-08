@@ -1,0 +1,98 @@
+#Magicules needed to acquire Draco.
+magiculeAcquirement = 100000.0
+#Mastery points needed to master Draco. Mastering it unlocks Babalon Domus Aurea.
+maxMastery = 1000
+#Authority of the Beast: Saints deal this much less damage to you (0.35 = -35%).
+saintDamageReduction = 0.35
+#Authority of the Beast: Saints take this much more damage from you (0.35 = +35%).
+saintDamageBonus = 0.35
+#Authority of the Beast: count Holy-aligned targets as Saints.
+holyAlignmentIsSaint = true
+#Authority of the Beast: skill ids whose holders count as Saints.
+saintSkillIds = ["trnightmare:saint", "trnightmare:sword_saint", "trnightmare:metatron", "trnightmare:michael", "trnightmare:true_hero", "trnightmare:saint_chi"]
+#Authority of the Beast: race ids that count as Saints.
+saintRaceIds = ["tensura:human_saint", "tensura:elf_saint", "tensura:dwarf_saint", "tensura:hobgoblin_saint", "tensura:merfolk_saint", "trnightmare:saint_dragon", "trnightmare:archangel", "trnightmare:lesser_goddess", "trnightmare:medium_class_goddess", "trnightmare:higher_class_goddess"]
+#Seven Crowns: seconds between crowns while toggled on.
+crownIntervalSeconds = 60
+#Seven Crowns: seconds between crowns inside your own Molten Golden Theatre.
+crownIntervalTheatreSeconds = 20
+#Seven Crowns: Magicules drained every second for each crown held.
+crownMagiculePerSecond = 150.0
+#Seven Crowns: a single Holy hit above this share of your max HP knocks off your newest crown (0.1 = 10%).
+crownLossHolyRatio = 0.1
+#Seven Crowns: Pride damage bonus (0.1 = +10%).
+prideDamage = 0.1
+#Seven Crowns: Wrath attack speed bonus (0.15 = +15%).
+wrathAttackSpeed = 0.15
+#Seven Crowns: Envy lifesteal on damage dealt (0.05 = 5%).
+envyLifesteal = 0.05
+#Seven Crowns: Greed magicule regeneration bonus (0.3 = +30%).
+greedRegen = 0.3
+#Seven Crowns: Lust aura radius in blocks.
+lustRadius = 8.0
+#Seven Crowns: Lust makes enemies below this share of your EP hesitate (0.3 = 30%).
+lustEpRatio = 0.3
+#Seven Crowns: ticks of Slowness and Weakness from Lust.
+lustTicks = 40
+#Seven Crowns: Gluttony heals this share of your max HP on each kill (0.1 = 10%).
+gluttonyHeal = 0.1
+#Seven Crowns: Sloth damage reduction (0.15 = -15%).
+slothReduction = 0.15
+#Seven Crowns: Crowned Beast multiplies every crown value by this at seven crowns.
+crownedBeastMultiplier = 2.0
+#Aurea Poculum: share of max HP cut while active (0.5 = -50%).
+poculumHealthCut = 0.5
+#Aurea Poculum: most Sin the Corrupted Grail can hold.
+sinMax = 1000.0
+#Aurea Poculum: Sin gained per point of damage dealt.
+sinPerDamage = 0.5
+#Aurea Poculum: Sin gained per kill.
+sinPerKill = 50.0
+#Aurea Poculum: Sin spent by drinking from the Grail.
+grailSinCost = 250.0
+#Aurea Poculum: Magicules restored by drinking from the Grail.
+grailMagiculeBurst = 20000.0
+#Aurea Poculum: seconds the Grail's extra crown lasts.
+grailCrownSeconds = 30
+#Aurea Poculum: seconds before the Grail can be drunk from again.
+grailCooldownSeconds = 30
+#Aurea Poculum: the Grail's extra crown may go above seven.
+grailCrownAboveMax = true
+#Draco: reach in blocks.
+dracoRange = 32.0
+#Draco: damage of each head.
+dracoHeadDamage = 40.0
+#Draco: ticks between head strikes.
+dracoStrikeIntervalTicks = 4
+#Draco: Magicules spent per cast.
+dracoMagiculeCost = 3000.0
+#Draco: cooldown in seconds.
+dracoCooldownSeconds = 10
+#Draco: head damage multiplier inside Domus Aurea.
+dracoTheatreMultiplier = 1.5
+#Molten Gold: seconds the debuff lasts.
+moltenGoldSeconds = 5
+#Molten Gold: Slowness amplifier.
+moltenGoldSlowness = 1
+#Molten Gold: healing received is multiplied by this (0.5 = halved).
+moltenGoldHealMultiplier = 0.5
+#Babalon Domus Aurea: seconds to hold before release.
+domusChargeSeconds = 3.0
+#Babalon Domus Aurea: enemies within this many blocks are pulled in.
+domusRadius = 12.0
+#Babalon Domus Aurea: crowns needed to cast.
+domusMinCrowns = 5
+#Babalon Domus Aurea: Magicules spent per cast.
+domusMagiculeCost = 50000.0
+#Babalon Domus Aurea: seconds before the finale.
+domusDurationSeconds = 20
+#Babalon Domus Aurea: cooldown in seconds.
+domusCooldownSeconds = 300
+#Babalon Domus Aurea: your damage bonus inside the theatre (0.2 = +20%).
+domusDamageBonus = 0.2
+#Babalon Domus Aurea: finale damage per point of stored Sin.
+domusFinaleSinMultiplier = 1.0
+#Babalon Domus Aurea: healing Saints receive inside is multiplied by this (0.5 = halved).
+domusSaintHealMultiplier = 0.5
+#Babalon Domus Aurea: Saints lose this share of their armor and armor toughness inside (0.3 = -30%).
+domusSaintResistanceCut = 0.3

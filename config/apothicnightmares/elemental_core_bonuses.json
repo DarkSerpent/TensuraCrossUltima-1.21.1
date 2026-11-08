@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "note": "Bonuses applied while holding an item with embedded Tensura elemental cores in bundle_contents.",
+  "enabled": true,
+  "maxCoresCounted": 8,
+  "windDodgeChancePerCore": 5.0,
+  "fireCritDamageMultiplierPerCore": 0.15,
+  "earthArmorPerCore": 2.0,
+  "spatialEntityReachPerCore": 0.5,
+  "waterHealthPerCore": 4.0
+}

@@ -1,0 +1,119 @@
+[General]
+	#If false, a blood rite fails instead of letting its health cost kill the caster.
+	selfDamageCanKill = false
+	#Damage multiplier for every blood rite once that rite is mastered.
+	masteredDamageMultiplier = 1.25
+
+[CrimsonThorns]
+	#Cast time in ticks.
+	castTicks = 10
+	#Magicule cost.
+	magiculeCost = 8000.0
+	#Health the caster spills to cast.
+	healthCost = 4.0
+	#Cooldown in seconds.
+	cooldown = 10
+	#Range in blocks to the looked-at target.
+	range = 24.0
+	#Base damage of the thorns.
+	damage = 72.5
+	#Extra damage fraction per Bleeding level (Bleeding I = 1 level) on the target.
+	bonusPerBleedLevel = 0.25
+	#Minimum flat extra damage if the target is Bleeding at all; the larger of this and the per-level bonus is used.
+	bleedingFlatBonus = 29.0
+	#If true, the thorns consume the target's Bleeding.
+	consumeBleeding = true
+
+[BloodPuppet]
+	#Chant time in ticks.
+	castTicks = 30
+	#Magicule cost.
+	magiculeCost = 40000.0
+	#Health the caster spills to cast.
+	healthCost = 8.0
+	#Cooldown in seconds.
+	cooldown = 45
+	#Range in blocks to the looked-at target.
+	range = 16.0
+	#Target must be Bleeding or below this fraction (0..1) of its max health.
+	healthThreshold = 0.4
+	#How long the puppet is controlled, in ticks.
+	durationTicks = 100
+	#Range in blocks the caster can point a puppeted mob at a new victim.
+	commandRange = 24.0
+	#Radius in blocks a puppeted mob looks for the caster's enemies when the caster is not looking at one.
+	fallbackRadius = 16.0
+	#Navigation speed of a puppeted mob walking to the caster's look point.
+	mobWalkSpeed = 1.2
+	#Blocks per tick a puppeted player is dragged in the caster's look direction.
+	playerDragSpeed = 0.11
+	#The puppet breaks if the caster and the puppet are farther apart than this many blocks.
+	breakDistance = 40.0
+
+[SanguinePact]
+	#Chant time in ticks.
+	castTicks = 40
+	#Magicule cost.
+	magiculeCost = 40000.0
+	#Health the caster spills to cast.
+	healthCost = 10.0
+	#Cooldown in seconds.
+	cooldown = 90
+	#Range in blocks to the looked-at ally or nearest subordinate.
+	range = 16.0
+	#How long the pact lasts, in ticks.
+	durationTicks = 600
+	#Fraction (0..1) of incoming damage moved to the linked partner.
+	damageShare = 0.5
+	#Fraction (0..1) of healing one partner receives that also heals the other.
+	healShare = 0.5
+	#The pact breaks if the partners are farther apart than this many blocks.
+	breakDistance = 32.0
+
+[HaemalCrown]
+	#Chant time in ticks.
+	castTicks = 60
+	#Magicule cost to put on the crown.
+	magiculeCost = 52500.0
+	#Cooldown in seconds.
+	cooldown = 180
+	#How long the crown lasts, in ticks.
+	durationTicks = 400
+	#Magicules of spell cost converted into 1 health while crowned.
+	magiculePerHealth = 1000.0
+	#Minimum health a crowned spell costs.
+	minimumHealthCost = 1.0
+	#Damage multiplier for spells paid in health and for every blood-school spell while crowned.
+	damageMultiplier = 1.5
+
+[BloodTithe]
+	#Radius in blocks around the caster in which Bleeding enemies that die drop a blood orb.
+	radius = 16.0
+	#Ticks a blood orb hovers before homing in on the caster.
+	hoverTicks = 10
+	#Fraction (0..1) of the caster's max health each orb restores.
+	healFraction = 0.04
+	#Magicules each orb restores.
+	magicule = 500.0
+	#Most orbs a caster can draw in each window.
+	maxOrbs = 6
+	#Length of the orb window in ticks.
+	windowTicks = 200
+	#Ticks before an orb that never reaches its caster evaporates.
+	orbLifeTicks = 200
+
+[BloodMark]
+	#Cast time in ticks.
+	castTicks = 10
+	#Magicule cost.
+	magiculeCost = 400.0
+	#Health the caster spills to cast.
+	healthCost = 1.0
+	#Cooldown in seconds.
+	cooldown = 5
+	#Range in blocks to the looked-at entity.
+	range = 32.0
+	#How long a mark lasts, in ticks.
+	durationTicks = 1200
+	#Most marks a caster can hold at once; the oldest is replaced.
+	maxMarks = 3

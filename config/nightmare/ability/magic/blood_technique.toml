@@ -1,0 +1,139 @@
+[General]
+	#If true, the health a blood technique costs may kill its caster. If false, the technique fails without paying when the caster has too little health.
+	healthCostCanKill = false
+
+[Convergence]
+	#Chant time in ticks.
+	castTicks = 10
+	#Magicule cost.
+	magiculeCost = 500.0
+	#Health cost, paid as blood.
+	healthCost = 2.0
+	#Cooldown in seconds.
+	cooldown = 1
+	#Most charges that can be stored at once.
+	maxCharges = 3
+	#Seconds the stored charges last after the last one was added.
+	chargeSeconds = 60
+	#Piercing Blood damage bonus per charge it consumes (0.4 = +40%).
+	piercingDamagePerCharge = 0.4
+	#Piercing Blood range bonus per charge it consumes (0.25 = +25%).
+	piercingRangePerCharge = 0.25
+	#Blood Armory melee damage bonus per charge the next hit consumes (0.3 = +30%).
+	meleeDamagePerCharge = 0.3
+	#Radius in blocks of the blood burst a charged melee hit releases.
+	meleeBurstRadius = 2.5
+	#Fraction (0..1) of the charged melee hit dealt to every other enemy inside the burst.
+	meleeBurstShare = 0.35
+
+[FlowingRedScale]
+	#Health paid as blood every second while active.
+	healthPerSecond = 1.0
+	#Fraction (0..1) of the paid health regenerated over the following second.
+	regenShare = 0.5
+	#The technique switches itself off once health drops below this.
+	minHealth = 4.0
+	#Movement speed bonus (0.2 = +20%).
+	movementSpeed = 0.2
+	#Attack damage bonus (0.25 = +25%).
+	attackDamage = 0.25
+	#Flat attack speed bonus.
+	attackSpeed = 2.0
+	#Seconds active per mastery point.
+	masteryIntervalSeconds = 30
+
+[SlicingExorcism]
+	#Chant time in ticks.
+	castTicks = 10
+	#Magicule cost.
+	magiculeCost = 800.0
+	#Health cost, paid as blood.
+	healthCost = 3.0
+	#Cooldown in seconds.
+	cooldown = 4
+	#How far out the discs fly before curving back, in blocks.
+	distance = 14.0
+	#How wide each disc swings out to its side, in blocks.
+	width = 3.5
+	#Ticks a disc takes to fly out and return.
+	flightTicks = 26
+	#Damage per disc hit.
+	damage = 37.13
+	#Most times a single disc can hit the same target.
+	maxHitsPerTarget = 2
+	#Ticks before the same disc can hit the same target again.
+	rehitTicks = 8
+	#Hit radius of a disc in blocks.
+	hitRadius = 1.2
+	#Seconds of Bleeding every disc hit inflicts.
+	bleedSeconds = 4
+
+[Supernova]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost.
+	magiculeCost = 10000.0
+	#Health cost, paid as blood.
+	healthCost = 6.0
+	#Cooldown in seconds.
+	cooldown = 15
+	#Number of blood droplets scattered round the caster.
+	droplets = 12
+	#Radius in blocks of the sphere the droplets scatter over.
+	radius = 4.0
+	#Ticks before the droplets burst on their own. Pressing the spell again bursts them early.
+	fuseTicks = 20
+	#How far each droplet looks for the nearest enemy, in blocks.
+	seekRange = 10.0
+	#Damage per jet.
+	damage = 54.38
+	#Seconds of Bleeding every jet inflicts.
+	bleedSeconds = 4
+
+[BloodMeteorite]
+	#Chant time in ticks.
+	castTicks = 50
+	#Magicule cost.
+	magiculeCost = 42000.0
+	#Health cost, paid as blood.
+	healthCost = 15.0
+	#Cooldown in seconds.
+	cooldown = 60
+	#How far away the meteor can be aimed, in blocks.
+	range = 40.0
+	#Ticks the meteor takes to fall.
+	fallTicks = 24
+	#Impact damage.
+	damage = 500.0
+	#Impact radius in blocks.
+	radius = 6.0
+	#Impact knockback strength.
+	knockback = 1.2
+	#Radius of the blood pool left behind, in blocks.
+	poolRadius = 6.0
+	#Seconds the blood pool lasts.
+	poolSeconds = 8
+	#Slowness amplifier the pool applies (1 = Slowness II). Negative disables it.
+	poolSlownessAmplifier = 1
+	#Seconds of Bleeding the pool keeps refreshing on enemies standing in it.
+	poolBleedSeconds = 3
+
+[Coagulate]
+	#Magicule cost.
+	magiculeCost = 12000.0
+	#Health cost, paid as blood.
+	healthCost = 4.0
+	#Cooldown in seconds.
+	cooldown = 25
+	#Seconds the shell lasts. Pressing the spell again releases it early.
+	durationSeconds = 8
+	#Only a hit dealing more than this is absorbed.
+	absorbThreshold = 10.0
+	#Multiplier on the stored damage when the shell releases.
+	releaseMultiplier = 1.5
+	#Most damage the release shockwave can deal.
+	releaseCap = 543.75
+	#Release shockwave radius in blocks.
+	releaseRadius = 6.0
+	#Release shockwave knockback strength.
+	knockback = 1.6

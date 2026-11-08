@@ -1,0 +1,66 @@
+#Memory reduction modules.
+[modules]
+	#Deduplicate NBT StringTag values.
+	stringTagDedup = true
+	#Deduplicate ResourceLocation namespace/path strings.
+	resourceLocationDedup = true
+	#Compact the internal HashMap of CompoundTag.
+	compoundTagCompact = true
+	#EXPERIMENTAL: deduplicate CompoundTag key strings read from NBT (disk/network). Target method not 100% confirmed for this MC version -- check /furiamemory report; if 'CompoundTag Key' shows 'not observed yet' after heavy play, this module isn't actually applying, safe to leave on either way (no-op if inactive).
+	compoundTagKeyDedup = true
+	#trimToSize() the internal ArrayList of ListTag.
+	listTagTrim = true
+	#Client: deduplicate BakedQuad vertex data during model baking.
+	#Turned off automatically when FerriteCore already does it (see [compat]).
+	bakedQuadVertexDedup = true
+	#EXPERIMENTAL: defer DataFixerUpper optimization.
+	#Applied at startup: changing it needs a restart.
+	lazyDataFixer = false
+
+#Compatibility with other optimization mods.
+[compat]
+	#When another installed mod already does what a module does
+	#(FerriteCore, ModernFix, Lean Object, DataStructium, LazyDFU), switch that module off
+	#so the two never duplicate work or fight over the same method.
+	#Decided at startup: changing it needs a restart. See '/furiamemory report'.
+	autoYield = true
+
+#Gives unused heap memory back to the operating system while the game is idle.
+#Uses the JVM's own G1 periodic collection (JEP 346) -- the same thing as
+#-XX:G1PeriodicGCInterval=<ms>, applied at runtime. It never overrides JVM flags you set,
+#does nothing with ZGC/Shenandoah or when -Xms equals -Xmx, and does not reduce live objects.
+[heapReturn]
+	#Enable idle heap return. OFF by default: Furia Memory does not clean anything on its own.
+	#The same effect is available, at your choice, with the JVM arguments
+	#-XX:G1PeriodicGCInterval=60000 -XX:MaxHeapFreeRatio=50
+	heapReturnEnabled = false
+	#If no garbage collection happened for this many seconds, G1 runs a concurrent cycle
+	#and can shrink the heap. During normal play GCs are frequent, so this never triggers.
+	# Default: 60
+	# Range: 5 ~ 3600
+	heapReturnIntervalSeconds = 60
+	#MaxHeapFreeRatio: how much free space (percent) G1 may keep after a shrink.
+	#The JVM default is 70, which rarely lets the heap shrink. 0 = leave the JVM default.
+	#Values below the JVM's MinHeapFreeRatio (40) are raised to it.
+	# Default: 50
+	# Range: 0 ~ 90
+	heapReturnMaxFreeRatio = 50
+
+#Fine tuning.
+[tuning]
+	#Minimum hit rate required to keep a pool active.
+	# Default: 25
+	# Range: 0 ~ 99
+	minHitRatePercent = 25
+	#Maximum number of entries in the vertex cache.
+	# Default: 200000
+	# Range: 1000 ~ 5000000
+	vertexCacheCap = 200000
+	#Strings longer than this are not added to the pool.
+	# Default: 256
+	# Range: 16 ~ 8192
+	maxInternedStringLength = 256
+	#Cooldown, in seconds, for the clean command.
+	# Default: 30
+	# Range: 0 ~ 3600
+	cleanCooldownSeconds = 30

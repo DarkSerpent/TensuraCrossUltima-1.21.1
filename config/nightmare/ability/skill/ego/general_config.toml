@@ -1,0 +1,55 @@
+[General]
+	#Whether it uses a blacklist or whitelist, true means whitelist, false means blacklist
+	enableWhitelist = true
+	#Maximum number of egos a person may have
+	maxEgos = 3
+	#Multiplier for mp cost to named (twice the skill's obtainment cost by default)
+	nameCostMultiplier = 2
+	#Percentage of mastery to have a chance at Ego (Default: 30%). The chance itself is each personality's egoChance in personality_config.
+	masteryPercentage = 0.3
+	#Most Social an ego can gain from its desires per in-game day (Converse and spars are counted separately).
+	dailyDesireSocialCap = 45
+	#Multiplier for the Social every desire grants.
+	desireSocialMultiplier = 1.0
+	#Whether a message shows in the action bar when an ego's desire is satisfied.
+	announceDesires = true
+	#Animosity lost every 30 seconds while Admiration is higher than Animosity (plus 1 per 100 points of difference).
+	animosityDecay = 1
+	#Animosity soothed per point of Admiration gained (0.5 = half of the Admiration gained, at least 1).
+	admirationSoothing = 0.5
+	#Attunement (normal evolution): base success chance.
+	attunementBaseChance = 0.7
+	#Attunement: success chance per point of Admiration above Animosity (negative when below).
+	attunementMoodChance = 0.001
+	#Attunement: success chance added for every failed attempt at the same stage.
+	attunementPityChance = 0.1
+	#Attunement: lowest and highest possible success chance.
+	attunementMinChance = 0.35
+	attunementMaxChance = 0.95
+	#Attunement: share of Social lost on a failed attempt.
+	attunementFailSocialLoss = 0.1
+	#Attunement: cooldown after a failed attempt, in ticks.
+	attunementFailCooldownTicks = 12000
+	#Trial of Ego (combat evolution): cooldown after losing, in ticks. Losing costs no Social.
+	trialFailCooldownTicks = 6000
+	#Cooldown after any successful evolution before the next one, in ticks.
+	evolutionCooldownTicks = 6000
+	#Converse sessions each ego allows per in-game day.
+	conversesPerDay = 3
+	#Converse: most Social (gold) and Admiration (silver) from one session.
+	converseMaxGold = 5
+	converseMaxSilver = 5
+	#Converse: most Animosity one session can remove.
+	converseMaxReduction = 150
+	#Converse: reward multiplier for each later session the same day (1st x1, 2nd x0.5, 3rd x0.25).
+	converseDiminishing = 0.5
+	#Inner-world spars that give rewards per ego per in-game day.
+	sparRewardsPerDay = 2
+	#Spar rewards.
+	sparSocial = 10
+	sparAdmiration = 10
+	sparAnimosityReduction = 30
+	#Skills blacklisted from developing egos if in blacklist mode
+	egoBlacklist = []
+	#Skills allowed to develop ego if in whitelist mode
+	egoWhitelist = ["tensura:pride", "tensura:gluttony", "tensura:sloth", "tensura:envy", "tensura:greed", "tensura:lust", "tensura:wrath", "tensura:infinity_prison", "tensura:unyielding", "trnightmare:cadence", "trnightmare:saint", "trnightmare:endorse", "trnightmare:dominator", "trnightmare:astral_light"]

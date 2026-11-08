@@ -1,0 +1,248 @@
+#Golem slots: how many golems and dolls one player may have at once before any skill bonus.
+baseGolemSlots = 2
+#Golem Creation: chant time in seconds.
+creationCastSeconds = 5
+#Golem Creation: Magicules spent per core tier (Low Magisteel = tier 1, Hihiirokane = tier 7).
+creationCostPerTier = 2000.0
+#Golem Creation: cooldown in seconds after a golem is made.
+creationCooldownSeconds = 10
+#Golem Creation: how far away in blocks the golem body may be.
+creationRange = 6.0
+#Command Golem: Magicules spent per command.
+commandCost = 20.0
+#Command Golem: your golems within this many blocks hear a command.
+commandRadius = 32.0
+#Command Golem: reach in blocks when picking a golem, target or guard point by looking.
+commandRange = 32.0
+#Core EP of a tier 1 golem. Each tier above multiplies it by coreEpGrowth.
+coreBaseEp = 2000.0
+#EP multiplier per core tier.
+coreEpGrowth = 2.2
+#Health, damage and armor grow by this fraction per core tier above the first.
+statScalePerTier = 0.6
+#Core Charge capacity per core tier.
+chargePerTier = 3000.0
+#Core Charge drained per second while a golem stands still.
+drainIdlePerSecond = 0.25
+#Core Charge drained per second while a golem walks.
+drainActivePerSecond = 1.0
+#Core Charge drained per second while a golem fights.
+drainCombatPerSecond = 3.0
+#Core Charge restored by a Low Quality Magic Crystal.
+lowCrystalCharge = 300.0
+#Core Charge restored by a Medium Quality Magic Crystal.
+mediumCrystalCharge = 1200.0
+#Core Charge restored by a High Quality Magic Crystal.
+highCrystalCharge = 4800.0
+#Follow: golems walk back to you when farther than this many blocks.
+followDistance = 6.0
+#Follow: golems teleport to you when farther than this many blocks.
+teleportDistance = 32.0
+#Guard: golems engage hostile mobs within this many blocks of their guard point.
+guardRadius = 16.0
+#Awakening: health and damage multiplier for an awakened (named Hihiirokane) golem.
+awakenedStatMultiplier = 1.5
+#Awakening: Core Charge drain multiplier for an awakened golem.
+awakenedDrainMultiplier = 0.5
+#Stone Golem: base max health.
+stoneHealth = 120.0
+#Stone Golem: base attack damage.
+stoneDamage = 14.0
+#Stone Golem: base armor.
+stoneArmor = 8.0
+#Stone Golem: Core Charge drain multiplier.
+stoneDrainMultiplier = 0.75
+#Magisteel Golem: base max health.
+magisteelHealth = 220.0
+#Magisteel Golem: base attack damage before its weapon.
+magisteelDamage = 16.0
+#Magisteel Golem: base armor.
+magisteelArmor = 18.0
+#Magisteel Golem: Core Charge drain multiplier.
+magisteelDrainMultiplier = 1.0
+#Crystal Golem: base max health.
+crystalHealth = 90.0
+#Crystal Golem: base attack damage.
+crystalDamage = 8.0
+#Crystal Golem: base armor.
+crystalArmor = 6.0
+#Crystal Golem: Core Charge drain multiplier (feeding is paid separately).
+crystalDrainMultiplier = 1.0
+#Crystal Golem: allies within this many blocks are fed Magicules.
+crystalFeedRadius = 8.0
+#Crystal Golem: Magicules given to each ally per pulse (every 2 seconds), times the core tier.
+crystalFeedMagicule = 40.0
+#Crystal Golem: Core Charge spent per Magicule given.
+crystalFeedChargeCost = 0.5
+#Crystal Golem: Ward Pylons of the owner's nation within this many blocks are fed.
+crystalPylonRadius = 16.0
+#Crystal Golem: pylon charge given to each pylon every 10 seconds.
+crystalPylonCharge = 0.25
+#Crystal Golem: Core Charge spent per pylon feed.
+crystalPylonChargeCost = 150.0
+#Crystal Golem: magic crystals dropped when it shatters, plus one per core tier.
+crystalShatterCrystals = 2
+#Doll Creation: chant time in seconds.
+dollCreationCastSeconds = 6
+#Doll Creation: Magicules spent per core tier (Low Magisteel = tier 1, Hihiirokane = tier 7).
+dollCreationCostPerTier = 3000.0
+#Doll Creation: cooldown in seconds after a doll is made.
+dollCreationCooldownSeconds = 10
+#Doll Creation: how far away in blocks the Doll Frame may be.
+dollCreationRange = 6.0
+#Arch Doll: base max health.
+archHealth = 110.0
+#Arch Doll: base attack damage.
+archDamage = 11.0
+#Arch Doll: base armor.
+archArmor = 10.0
+#Arch Doll: Core Charge drain multiplier.
+archDrainMultiplier = 0.9
+#Arch Doll: owned spirit or demon subordinates within this many blocks can be led into it.
+archPossessRadius = 8.0
+#Arch Doll: share of the possessing spirit's EP added to the doll's core EP.
+archSpiritEpShare = 1.0
+#Arch Doll: max health multiplier while possessed.
+archPossessedHealthMultiplier = 1.5
+#Arch Doll: extra armor while possessed.
+archPossessedArmorBonus = 6.0
+#Arch Doll: seconds between uses of the possessing spirit's skills in combat.
+archSkillCooldownSeconds = 8
+#Battle Doll: base max health.
+battleHealth = 90.0
+#Battle Doll: base attack damage before its weapon.
+battleDamage = 12.0
+#Battle Doll: base armor.
+battleArmor = 8.0
+#Battle Doll: movement speed.
+battleSpeed = 0.34
+#Battle Doll: Core Charge drain multiplier.
+battleDrainMultiplier = 1.1
+#Battle Doll: seconds between dash strikes.
+battleDashCooldownSeconds = 4
+#Battle Doll: a dash strike starts when the target is between 3 blocks and this many blocks away.
+battleDashRange = 10.0
+#Battle Doll: damage multiplier of a dash strike.
+battleDashDamageMultiplier = 1.5
+#Battle Doll: Core Charge spent per dash strike.
+battleDashChargeCost = 6.0
+#Battle Doll: seconds between uses of its learned battlewill art.
+battleArtCooldownSeconds = 10
+#Battle Doll: Core Charge spent each time it uses its battlewill art.
+battleArtChargeCost = 20.0
+#Caster Doll: base max health.
+casterHealth = 70.0
+#Caster Doll: base melee damage.
+casterDamage = 4.0
+#Caster Doll: base armor.
+casterArmor = 4.0
+#Caster Doll: Core Charge drain multiplier.
+casterDrainMultiplier = 1.0
+#Caster Doll: ticks between spell bolts.
+casterCooldownTicks = 40
+#Caster Doll: range in blocks of its spell bolts.
+casterRange = 18.0
+#Caster Doll: bolt damage per core tier while it holds a tome.
+casterBoltDamage = 6.0
+#Caster Doll: bolt damage multiplier without a tome.
+casterNoTomeMultiplier = 0.5
+#Caster Doll: burst radius of a bolt in blocks.
+casterBoltRadius = 1.5
+#Caster Doll: Core Charge spent per bolt.
+casterBoltChargeCost = 8.0
+#Servant Doll: base max health.
+servantHealth = 60.0
+#Servant Doll: base armor.
+servantArmor = 2.0
+#Servant Doll: Core Charge drain multiplier.
+servantDrainMultiplier = 0.5
+#Servant Doll: its pantry is the chest or barrel closest to its guard point within this many blocks.
+servantPantryRadius = 4.0
+#Servant Doll: picks up items and tends furnaces within this many blocks of its guard point.
+servantWorkRadius = 12.0
+#Servant Doll: items it can carry before walking back to the pantry.
+servantCarrySlots = 9
+#Servant Doll: seconds between furnace rounds.
+servantFurnaceSeconds = 10
+#Servant Doll: nation workers of its owner within this many blocks work faster.
+servantMoraleRadius = 10.0
+#Servant Doll: work speed bonus for those workers (0.1 = +10%).
+servantMoraleBonus = 0.1
+#Siege Golem: base max health.
+siegeHealth = 420.0
+#Siege Golem: base attack damage.
+siegeDamage = 20.0
+#Siege Golem: base armor.
+siegeArmor = 20.0
+#Siege Golem: movement speed.
+siegeSpeed = 0.17
+#Siege Golem: Core Charge drain multiplier.
+siegeDrainMultiplier = 1.4
+#Siege Golem: siege force of one punch against an enemy nation's blocks, times its core stat scale.
+siegeForce = 4.0
+#Siege Golem: ticks between wall punches.
+siegePunchTicks = 30
+#Sentinel Golem: base max health.
+sentinelHealth = 180.0
+#Sentinel Golem: base attack damage.
+sentinelDamage = 15.0
+#Sentinel Golem: base armor.
+sentinelArmor = 14.0
+#Sentinel Golem: Core Charge drain multiplier.
+sentinelDrainMultiplier = 0.6
+#Sentinel Golem: in Guard mode it engages outsiders, raiders and war enemies within this many blocks of its post.
+sentinelGuardRadius = 12.0
+#Sentinel Golem: raid chance reduction each sentinel adds while it guards a post in its owner's claims (0.01 = 1%).
+sentinelRaidReduction = 0.01
+#Animate Earth: chant time in seconds.
+animateEarthCastSeconds = 1
+#Animate Earth: Magicules spent per cast.
+animateEarthCost = 600.0
+#Animate Earth: cooldown in seconds.
+animateEarthCooldownSeconds = 4
+#Animate Earth: reach in blocks when picking the ground.
+animateEarthRange = 24.0
+#Animate Earth: seconds an earth golem lasts before it crumbles.
+animateEarthLifeSeconds = 60
+#Animate Earth: earth golems one caster may have at once. Casting past this crumbles the oldest.
+animateEarthMax = 2
+#Earth Golem: max health.
+earthHealth = 40.0
+#Earth Golem: attack damage.
+earthDamage = 7.0
+#Earth Golem: armor.
+earthArmor = 4.0
+#Core Overcharge: Magicules spent per cast.
+overchargeCost = 500.0
+#Core Overcharge: cooldown in seconds.
+overchargeCooldownSeconds = 30
+#Core Overcharge: seconds the boost lasts.
+overchargeSeconds = 15
+#Core Overcharge: seconds the golem stalls once the boost ends.
+overchargeStallSeconds = 10.0
+#Core Overcharge: movement speed bonus (0.5 = +50%).
+overchargeSpeedBonus = 0.5
+#Core Overcharge: attack damage bonus (0.75 = +75%).
+overchargeDamageBonus = 0.75
+#Rebuild: chant time in seconds.
+rebuildCastSeconds = 2
+#Rebuild: Magicules spent per cast.
+rebuildCost = 300.0
+#Rebuild: cooldown in seconds.
+rebuildCooldownSeconds = 3
+#Rebuild: share of max health one matching block restores.
+rebuildBlockHeal = 0.1
+#Rebuild: share of max health one matching ingot, crystal or small material restores.
+rebuildItemHeal = 0.03
+#Rebuild: share of max health a matching Doll Frame restores.
+rebuildFrameHeal = 0.5
+#Golem Swarm: Magicules spent per cast.
+swarmCost = 1200.0
+#Golem Swarm: cooldown in seconds.
+swarmCooldownSeconds = 40
+#Golem Swarm: seconds the shards swarm before they reform.
+swarmSeconds = 10
+#Golem Swarm: each shard's attack damage as a share of the golem's.
+swarmShardDamageShare = 0.35
+#Golem Swarm: share of max health the golem keeps if every shard is destroyed.
+swarmDeathHealth = 0.25

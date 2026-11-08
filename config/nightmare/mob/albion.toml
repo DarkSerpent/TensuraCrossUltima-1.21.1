@@ -1,0 +1,72 @@
+#Smallest size a spawned Albion can roll (1 is the base size).
+minScale = 3.0
+#Largest size a spawned Albion can roll.
+maxScale = 4.0
+#Fat Albion: max health.
+fatHealth = 3200.0
+#Fat Albion: whether it spawns naturally in plains, meadows and savannas.
+fatNaturalSpawn = true
+#Fat Albion: chance (0..1) a natural spawn attempt that picked it goes through. Lower is rarer.
+fatSpawnChance = 0.03
+#Fat Albion: whether it also spawns in Tensura's Hell.
+fatHellSpawn = true
+#Fat Albion: chance (0..1) a natural spawn attempt in Hell goes through.
+fatHellSpawnChance = 0.1
+#Fat Albion: natural spawns fail if another Albion is within this many blocks. 0 turns the check off.
+fatSpawnSpacing = 256
+#Fat Albion: punch damage.
+punchDamage = 220.0
+#Fat Albion: punch cooldown in ticks.
+punchCooldown = 34
+#Fat Albion: fire damage of a fireball's blast.
+fireballDamage = 300.0
+#Fat Albion: blast radius of a fireball in blocks.
+fireballRadius = 4.5
+#Fat Albion: explosion power of a fireball against terrain (TNT is 4, 0 turns it off). Also needs the mobGriefing gamerule.
+fireballExplosion = 3.0
+#Fat Albion: fireball cooldown in ticks.
+fireballCooldown = 140
+#Fat Albion: share of its max health it must lose to one foe before it adapts to them and sprouts its cannons.
+adaptThreshold = 0.25
+#Fat Albion: share of damage it ignores once it has adapted.
+adaptResistance = 0.35
+#Fat Albion: damage of each cannon shell's blast.
+cannonDamage = 150.0
+#Fat Albion: blast radius of a cannon shell in blocks.
+cannonRadius = 3.0
+#Fat Albion: explosion power of a cannon shell against terrain (0 turns it off). Also needs the mobGriefing gamerule.
+cannonExplosion = 2.0
+#Fat Albion: cannon volley cooldown in ticks.
+cannonCooldown = 110
+#Slim Albion: max health.
+slimHealth = 2600.0
+#Slim Albion: whether it spawns naturally in forests and taigas.
+slimNaturalSpawn = true
+#Slim Albion: chance (0..1) a natural spawn attempt that picked it goes through. Lower is rarer.
+slimSpawnChance = 0.03
+#Slim Albion: whether it also spawns in Tensura's Hell.
+slimHellSpawn = true
+#Slim Albion: chance (0..1) a natural spawn attempt in Hell goes through.
+slimHellSpawnChance = 0.1
+#Slim Albion: natural spawns fail if another Albion is within this many blocks. 0 turns the check off.
+slimSpawnSpacing = 256
+#Slim Albion: claw slash damage.
+slashDamage = 180.0
+#Slim Albion: claw slash cooldown in ticks.
+slashCooldown = 30
+#Slim Albion: damage of a limb whip.
+whipDamage = 260.0
+#Slim Albion: reach of a limb whip in blocks.
+whipRange = 18.0
+#Slim Albion: whether a limb whip cuts through the terrain it sweeps (also needs the mobGriefing gamerule).
+whipCutsBlocks = true
+#Slim Albion: hardest block (by hardness) a limb whip can cut. Stone is 1.5, obsidian 50.
+whipMaxHardness = 5.0
+#Slim Albion: limb whip cooldown in ticks.
+whipCooldown = 90
+#Slim Albion: damage of its mouth beam.
+beamDamage = 280.0
+#Slim Albion: reach of its mouth beam in blocks.
+beamRange = 56.0
+#Slim Albion: mouth beam cooldown in ticks.
+beamCooldown = 150

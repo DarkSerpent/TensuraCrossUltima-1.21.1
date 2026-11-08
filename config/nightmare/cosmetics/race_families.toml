@@ -1,0 +1,40 @@
+#Races counted as Daemons for cosmetics. Each entry is a race id (tensura:arch_daemon) or a race tag (#tensura:daemon).
+daemonRaces = ["#tensura:daemon"]
+#Races counted as Harpies for cosmetics. Each entry is a race id or a race tag (#namespace:tag).
+harpyRaces = ["tensura:harpy", "tensura:harpy_queen", "tensura:spirit_bird", "tensura:divine_bird"]
+#Races counted as Merfolk for cosmetics. Each entry is a race id or a race tag (#namespace:tag).
+merfolkRaces = ["tensura:merfolk", "tensura:enlightened_merfolk", "tensura:merfolk_saint", "tensura:divine_fish"]
+#Races counted as Oni for cosmetics, the Ogre to Oni line included. Each entry is a race id or a race tag (#namespace:tag).
+oniRaces = ["tensura:ogre", "tensura:enlightened_ogre", "tensura:kijin", "tensura:spirit_oni", "tensura:mystic_oni", "tensura:wicked_oni", "tensura:death_oni", "tensura:divine_oni", "tensura:divine_fighter", "trnightmare:true_oni", "trnightmare:apewolf_oni", "trnightmare:dark_apewolf_oni"]
+#Races counted as Slimes for cosmetics. Each entry is a race id or a race tag (#namespace:tag).
+slimeRaces = ["#tensura:slime", "trnightmare:imitation_slime"]
+#Races counted as Beastfolk for cosmetics. Each entry is a race id or a race tag (#namespace:tag).
+beastfolkRaces = ["#tensura:beastfolk"]
+#Races counted as Mystic Foxes for cosmetics. Each entry is a race id or a race tag (#namespace:tag).
+mysticFoxRaces = ["trnightmare:lesser_mystic_fox", "trnightmare:greater_mystic_fox", "trnightmare:ninehead", "trnightmare:ninetail", "trnightmare:soul_beast", "trnightmare:divine_fox"]
+#Races counted as Goblins for cosmetics. Each entry is a race id or a race tag (#namespace:tag).
+goblinRaces = ["tensura:goblin", "tensura:hobgoblin", "tensura:enlightened_hobgoblin", "tensura:hobgoblin_saint"]
+#Races counted as Elves for cosmetics. Each entry is a race id or a race tag (#namespace:tag).
+elfRaces = ["tensura:elf", "tensura:enlightened_elf", "tensura:elf_saint", "tensura:divine_elf", "trnightmare:true_elf", "trnightmare:chaos_elf", "trnightmare:vivid_elf", "trnightmare:enlightened_vivid_elf", "trnightmare:saint_vivid_elf", "trnightmare:divine_vivid_elf", "trnightmare:pitch_elf", "trnightmare:ignorant_pitch", "trnightmare:devil_pitch_elf", "trnightmare:vile_pitch_elf"]
+#Races counted as Lizardmen for cosmetics, the Dragonewt line included. Each entry is a race id or a race tag (#namespace:tag).
+lizardmanRaces = ["tensura:lizardman", "tensura:dragonewt", "tensura:true_dragonewt", "tensura:divine_dragon"]
+#Races counted as the Wight line for the skeletal cosmetics. Each entry is a race id or a race tag (#namespace:tag).
+wightRaces = ["tensura:wight", "tensura:wight_king", "tensura:spirit_skeleton", "tensura:divine_skeleton"]
+#Races counted as Orcs for the boar-headed cosmetics, the Orc to Divine Boar line included. Each entry is a race id or a race tag (#namespace:tag).
+orcRaces = ["tensura:orc", "tensura:high_orc", "tensura:spirit_boar", "tensura:orc_lord", "tensura:orc_disaster", "tensura:divine_boar"]
+#Races counted as the demon-blooded Next Generation line for the Red and Grey Demon hybrid cosmetics. Each entry is a race id or a race tag (#namespace:tag).
+nextGenerationRaces = ["trnightmare:lesser_next_generation", "trnightmare:greater_next_generation", "trnightmare:demonoid", "trnightmare:divine_demonoid"]
+#Races counted as Dragons for the Dragon Form cosmetic. Each entry is a race id or a race tag (#namespace:tag).
+dragonRaces = ["trnightmare:lesser_dragon", "trnightmare:medium_dragon", "trnightmare:arch_dragon", "trnightmare:element_dragon", "trnightmare:dragon_lord", "trnightmare:divine_dragon_lord", "trnightmare:lesser_daemonic_dragon", "trnightmare:medium_daemonic_dragon", "trnightmare:arch_daemonic_dragon", "trnightmare:daemonic_dragon_lord", "trnightmare:devil_dragon_lord", "trnightmare:lesser_holy_dragon", "trnightmare:medium_holy_dragon", "trnightmare:saint_dragon", "trnightmare:heavenly_dragon", "trnightmare:divine_heavenly_dragon", "trnightmare:lesser_nether_dragon", "trnightmare:medium_nether_dragon", "trnightmare:scrap_dragon", "trnightmare:netherite_dragon", "trnightmare:divine_netherite_dragon", "trnightmare:lesser_ender_dragon", "trnightmare:medium_ender_dragon", "trnightmare:ender_dragon_prince", "trnightmare:void_dragon", "trnightmare:divine_void_dragon", "trnightmare:lesser_zombie_dragon", "trnightmare:medium_zombie_dragon", "trnightmare:death_dragon", "trnightmare:gehenna_dragon", "trnightmare:divine_gehenna_dragon", "trnightmare:lesser_thrall_dragon", "trnightmare:greater_thrall_dragon", "trnightmare:vampiric_dragon", "trnightmare:vampiric_dragon_lord", "trnightmare:divine_vampiric_dragon_lord"]
+#Races counted as Axolotls for the gill, finned tail and fin cosmetics, the Knight and Wizard lines included. Each entry is a race id or a race tag (#namespace:tag).
+axolotlRaces = ["trnightmare:axolotl", "trnightmare:axolotl_knight", "trnightmare:axolotl_steel_spirit", "trnightmare:axolotl_steel_dragon", "trnightmare:axolotl_wizard", "trnightmare:axolotl_water_spirit", "trnightmare:axolotl_water_dragon"]
+#Races that can use every race cosmetic, and pick any clan's wings and marks as their Clan Look in the Cosmetics menu. Each entry is a race id or a race tag (#namespace:tag).
+allCosmeticRaces = ["trnightmare:lesser_chimera", "trnightmare:greater_chimera", "trnightmare:golden_chimera", "trnightmare:chimera_lord", "trnightmare:divine_chimera"]
+#Extra races counted as Goddess Clan for its wings, on top of this mod's Goddess Clan races.
+goddessClanRaces = []
+#Extra races counted as Fairy Clan for its wings, on top of this mod's Fairy Clan races.
+fairyClanRaces = []
+#Extra races counted as Demon Clan for its marks, wings and forms, on top of this mod's Demon Clan races.
+demonClanRaces = []
+#Extra cosmetic families for datapack cosmetics, one per entry as family=race,race,... (race ids or #race tags). A family named here can also add races to a built-in family, e.g. harpy=somemod:sky_folk.
+customFamilies = []

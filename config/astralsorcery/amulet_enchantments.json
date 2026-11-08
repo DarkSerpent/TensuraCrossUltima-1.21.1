@@ -1,0 +1,698 @@
+[
+  {
+    "enchantment": "create_sa:above_the_clouds",
+    "weight": 1
+  },
+  {
+    "enchantment": "eternal_starlight:abyssal_touch",
+    "weight": 6
+  },
+  {
+    "enchantment": "agility_enchantment:agility",
+    "weight": 2
+  },
+  {
+    "enchantment": "air_jump_enchantment:air_jump",
+    "weight": 2
+  },
+  {
+    "enchantment": "anti_knockback_enchantment:anti_knockback",
+    "weight": 5
+  },
+  {
+    "enchantment": "minecraft:aqua_affinity",
+    "weight": 2
+  },
+  {
+    "enchantment": "attack_speed_enchantment:attack_speed",
+    "weight": 5
+  },
+  {
+    "enchantment": "automatic_enchantment:automatic",
+    "weight": 1
+  },
+  {
+    "enchantment": "farmersdelight:backstabbing",
+    "weight": 5
+  },
+  {
+    "enchantment": "minecraft:bane_of_arthropods",
+    "weight": 5
+  },
+  {
+    "enchantment": "tensura:barrier_piercing",
+    "weight": 1
+  },
+  {
+    "enchantment": "minecraft:blast_protection",
+    "weight": 2
+  },
+  {
+    "enchantment": "apothic_enchanting:boon_of_the_earth",
+    "weight": 1
+  },
+  {
+    "enchantment": "mysticism:boreal_frost",
+    "weight": 1
+  },
+  {
+    "enchantment": "minecraft:breach",
+    "weight": 2
+  },
+  {
+    "enchantment": "tensura:breathing_support",
+    "weight": 1
+  },
+  {
+    "enchantment": "burnless_enchantment:burnless",
+    "weight": 2
+  },
+  {
+    "enchantment": "create:capacity",
+    "weight": 10
+  },
+  {
+    "enchantment": "apothic_spawners:capturing",
+    "weight": 2
+  },
+  {
+    "enchantment": "apothic_enchanting:chainsaw",
+    "weight": 1
+  },
+  {
+    "enchantment": "minecraft:channeling",
+    "weight": 1
+  },
+  {
+    "enchantment": "twilightforest:chill_aura",
+    "weight": 1
+  },
+  {
+    "enchantment": "apothic_enchanting:chromatic",
+    "weight": 5
+  },
+  {
+    "enchantment": "create_sa:chunk_eater",
+    "weight": 5
+  },
+  {
+    "enchantment": "cobweb_enchantment:cobweb",
+    "weight": 1
+  },
+  {
+    "enchantment": "netherexp:counterforce",
+    "weight": 5
+  },
+  {
+    "enchantment": "apothic_enchanting:crescendo_of_bolts",
+    "weight": 1
+  },
+  {
+    "enchantment": "tensura:crushing",
+    "weight": 1
+  },
+  {
+    "enchantment": "tensura:dead_end_rainbow",
+    "weight": 1
+  },
+  {
+    "enchantment": "minecraft:density",
+    "weight": 5
+  },
+  {
+    "enchantment": "minecraft:depth_strider",
+    "weight": 2
+  },
+  {
+    "enchantment": "twilightforest:destruction",
+    "weight": 1
+  },
+  {
+    "enchantment": "create_sa:digging",
+    "weight": 5
+  },
+  {
+    "enchantment": "dungeons_arise:discharge",
+    "weight": 1
+  },
+  {
+    "enchantment": "double_hit_enchantment:double_hit",
+    "weight": 1
+  },
+  {
+    "enchantment": "downfall_enchantment:downfall",
+    "weight": 2
+  },
+  {
+    "enchantment": "minecraft:efficiency",
+    "weight": 10
+  },
+  {
+    "enchantment": "tensura:elemental_boost",
+    "weight": 1
+  },
+  {
+    "enchantment": "tensura:elemental_resistance",
+    "weight": 1
+  },
+  {
+    "enchantment": "apothic_enchanting:endless_quiver",
+    "weight": 1
+  },
+  {
+    "enchantment": "tensura:energy_protection",
+    "weight": 1
+  },
+  {
+    "enchantment": "tensura:energy_steal",
+    "weight": 1
+  },
+  {
+    "enchantment": "dungeons_arise:ensnaring",
+    "weight": 1
+  },
+  {
+    "enchantment": "apothicnightmares:ep_flow_repair",
+    "weight": 1
+  },
+  {
+    "enchantment": "eternal_enchantment:eternal",
+    "weight": 2
+  },
+  {
+    "enchantment": "fangs_enchantment:fangs",
+    "weight": 4
+  },
+  {
+    "enchantment": "eternal_starlight:fearless",
+    "weight": 10
+  },
+  {
+    "enchantment": "minecraft:feather_falling",
+    "weight": 5
+  },
+  {
+    "enchantment": "eternal_starlight:fertile",
+    "weight": 2
+  },
+  {
+    "enchantment": "minecraft:fire_aspect",
+    "weight": 2
+  },
+  {
+    "enchantment": "minecraft:fire_protection",
+    "weight": 5
+  },
+  {
+    "enchantment": "twilightforest:fire_react",
+    "weight": 1
+  },
+  {
+    "enchantment": "minecraft:flame",
+    "weight": 2
+  },
+  {
+    "enchantment": "minecraft:fortune",
+    "weight": 2
+  },
+  {
+    "enchantment": "freezing_enchantment:freezing",
+    "weight": 2
+  },
+  {
+    "enchantment": "minecraft:frost_walker",
+    "weight": 2
+  },
+  {
+    "enchantment": "eternal_starlight:gathering",
+    "weight": 3
+  },
+  {
+    "enchantment": "eternal_starlight:glacial_sowing",
+    "weight": 5
+  },
+  {
+    "enchantment": "gravity_enchantment:gravity",
+    "weight": 2
+  },
+  {
+    "enchantment": "create_sa:gravity_gun",
+    "weight": 10
+  },
+  {
+    "enchantment": "curio_enchantment:grow",
+    "weight": 6
+  },
+  {
+    "enchantment": "tensura:growth",
+    "weight": 1
+  },
+  {
+    "enchantment": "apothic_enchanting:growth_serum",
+    "weight": 1
+  },
+  {
+    "enchantment": "health_enchantment:health",
+    "weight": 5
+  },
+  {
+    "enchantment": "create_sa:hellfire",
+    "weight": 10
+  },
+  {
+    "enchantment": "tensura:holy_coat",
+    "weight": 1
+  },
+  {
+    "enchantment": "mysticism:holy_flames",
+    "weight": 1
+  },
+  {
+    "enchantment": "tensura:holy_weapon",
+    "weight": 1
+  },
+  {
+    "enchantment": "eternal_starlight:homing",
+    "weight": 4
+  },
+  {
+    "enchantment": "apothic_enchanting:icy_thorns",
+    "weight": 2
+  },
+  {
+    "enchantment": "create_sa:impact",
+    "weight": 10
+  },
+  {
+    "enchantment": "minecraft:impaling",
+    "weight": 2
+  },
+  {
+    "enchantment": "minecraft:infinity",
+    "weight": 1
+  },
+  {
+    "enchantment": "apothic_enchanting:infusion",
+    "weight": 1
+  },
+  {
+    "enchantment": "tensura:intangibility",
+    "weight": 1
+  },
+  {
+    "enchantment": "apothicnightmares:kanabo_imprisonment",
+    "weight": 1
+  },
+  {
+    "enchantment": "minecraft:knockback",
+    "weight": 5
+  },
+  {
+    "enchantment": "apothic_enchanting:knowledge_of_the_ages",
+    "weight": 2
+  },
+  {
+    "enchantment": "apothicnightmares:kunai_multishot",
+    "weight": 1
+  },
+  {
+    "enchantment": "leaping_enchantment:leaping",
+    "weight": 5
+  },
+  {
+    "enchantment": "life_steal_enchantment:life_steal",
+    "weight": 1
+  },
+  {
+    "enchantment": "curio_enchantment:light",
+    "weight": 10
+  },
+  {
+    "enchantment": "dungeons_arise:lolths_curse",
+    "weight": 1
+  },
+  {
+    "enchantment": "longevity_enchantment:longevity",
+    "weight": 1
+  },
+  {
+    "enchantment": "netherexp:longshot",
+    "weight": 5
+  },
+  {
+    "enchantment": "minecraft:looting",
+    "weight": 2
+  },
+  {
+    "enchantment": "minecraft:loyalty",
+    "weight": 5
+  },
+  {
+    "enchantment": "minecraft:luck_of_the_sea",
+    "weight": 2
+  },
+  {
+    "enchantment": "minecraft:lunge",
+    "weight": 5
+  },
+  {
+    "enchantment": "minecraft:lure",
+    "weight": 2
+  },
+  {
+    "enchantment": "tensura:magic_capacity",
+    "weight": 1
+  },
+  {
+    "enchantment": "tensura:magic_interference",
+    "weight": 1
+  },
+  {
+    "enchantment": "tensura:magic_protection",
+    "weight": 1
+  },
+  {
+    "enchantment": "tensura:magic_weapon",
+    "weight": 1
+  },
+  {
+    "enchantment": "tensura:magicule_absorption",
+    "weight": 1
+  },
+  {
+    "enchantment": "magnetic_enchantment:magnetic",
+    "weight": 2
+  },
+  {
+    "enchantment": "minecraft:mending",
+    "weight": 2
+  },
+  {
+    "enchantment": "apothic_enchanting:miners_fervor",
+    "weight": 2
+  },
+  {
+    "enchantment": "minecraft:multishot",
+    "weight": 2
+  },
+  {
+    "enchantment": "apothic_enchanting:natures_blessing",
+    "weight": 2
+  },
+  {
+    "enchantment": "eternal_starlight:overheat",
+    "weight": 5
+  },
+  {
+    "enchantment": "path_speed_enchantment:path_speed",
+    "weight": 2
+  },
+  {
+    "enchantment": "minecraft:piercing",
+    "weight": 10
+  },
+  {
+    "enchantment": "eternal_starlight:poisoning",
+    "weight": 10
+  },
+  {
+    "enchantment": "poisoning_enchantment:poisoning",
+    "weight": 2
+  },
+  {
+    "enchantment": "create:potato_recovery",
+    "weight": 10
+  },
+  {
+    "enchantment": "minecraft:power",
+    "weight": 10
+  },
+  {
+    "enchantment": "eternal_starlight:precision",
+    "weight": 10
+  },
+  {
+    "enchantment": "projectile_deflection_enchantment:projectile_deflection",
+    "weight": 2
+  },
+  {
+    "enchantment": "minecraft:projectile_protection",
+    "weight": 5
+  },
+  {
+    "enchantment": "minecraft:protection",
+    "weight": 10
+  },
+  {
+    "enchantment": "minecraft:punch",
+    "weight": 2
+  },
+  {
+    "enchantment": "dungeons_arise:purification",
+    "weight": 1
+  },
+  {
+    "enchantment": "minecraft:quick_charge",
+    "weight": 5
+  },
+  {
+    "enchantment": "curio_enchantment:quick_claw",
+    "weight": 10
+  },
+  {
+    "enchantment": "minecolonies:raider_damage_enchant",
+    "weight": 1
+  },
+  {
+    "enchantment": "reach_enchantment:reach",
+    "weight": 4
+  },
+  {
+    "enchantment": "apothic_enchanting:rebounding",
+    "weight": 2
+  },
+  {
+    "enchantment": "netherexp:recoil",
+    "weight": 7
+  },
+  {
+    "enchantment": "apothic_enchanting:reflective_defenses",
+    "weight": 2
+  },
+  {
+    "enchantment": "twilightforest:renewal",
+    "weight": 1
+  },
+  {
+    "enchantment": "minecraft:respiration",
+    "weight": 2
+  },
+  {
+    "enchantment": "tensura:restoration",
+    "weight": 1
+  },
+  {
+    "enchantment": "dungeonsdelight:ricochet",
+    "weight": 3
+  },
+  {
+    "enchantment": "minecraft:riptide",
+    "weight": 2
+  },
+  {
+    "enchantment": "apothic_enchanting:scavenger",
+    "weight": 1
+  },
+  {
+    "enchantment": "astralsorcery:scorching_heat",
+    "weight": 1
+  },
+  {
+    "enchantment": "dungeonsdelight:serrated_strike",
+    "weight": 5
+  },
+  {
+    "enchantment": "tensura:severance",
+    "weight": 1
+  },
+  {
+    "enchantment": "tensura:severance_protection",
+    "weight": 1
+  },
+  {
+    "enchantment": "minecraft:sharpness",
+    "weight": 10
+  },
+  {
+    "enchantment": "apothic_enchanting:shield_bash",
+    "weight": 2
+  },
+  {
+    "enchantment": "apothicnightmares:sickle_hipokte_reaping",
+    "weight": 1
+  },
+  {
+    "enchantment": "minecraft:silk_touch",
+    "weight": 1
+  },
+  {
+    "enchantment": "tensura:slotting",
+    "weight": 1
+  },
+  {
+    "enchantment": "smelting_enchantment:smelting",
+    "weight": 2
+  },
+  {
+    "enchantment": "minecraft:smite",
+    "weight": 5
+  },
+  {
+    "enchantment": "curio_enchantment:solid",
+    "weight": 10
+  },
+  {
+    "enchantment": "tensura:soul_eater",
+    "weight": 1
+  },
+  {
+    "enchantment": "eternal_starlight:soul_snatcher",
+    "weight": 10
+  },
+  {
+    "enchantment": "minecraft:soul_speed",
+    "weight": 1
+  },
+  {
+    "enchantment": "soulbound_enchantment:soulbound",
+    "weight": 2
+  },
+  {
+    "enchantment": "yigd:soulbound",
+    "weight": 5
+  },
+  {
+    "enchantment": "apothicnightmares:spatial_bow",
+    "weight": 1
+  },
+  {
+    "enchantment": "spectral_enchantment:spectral",
+    "weight": 2
+  },
+  {
+    "enchantment": "spiky_enchantment:spiky",
+    "weight": 5
+  },
+  {
+    "enchantment": "tensura:spiritual_protection",
+    "weight": 1
+  },
+  {
+    "enchantment": "apothic_enchanting:stable_footing",
+    "weight": 2
+  },
+  {
+    "enchantment": "tensura:sturdy",
+    "weight": 1
+  },
+  {
+    "enchantment": "minecraft:sweeping_edge",
+    "weight": 2
+  },
+  {
+    "enchantment": "tensura:swift",
+    "weight": 1
+  },
+  {
+    "enchantment": "eternal_starlight:swift_lash",
+    "weight": 10
+  },
+  {
+    "enchantment": "minecraft:swift_sneak",
+    "weight": 1
+  },
+  {
+    "enchantment": "swiftness_enchantment:swiftness",
+    "weight": 5
+  },
+  {
+    "enchantment": "eternal_starlight:tearing",
+    "weight": 10
+  },
+  {
+    "enchantment": "apothic_enchanting:tempting",
+    "weight": 5
+  },
+  {
+    "enchantment": "minecraft:thorns",
+    "weight": 1
+  },
+  {
+    "enchantment": "thunder_strike_enchantment:thunder_strike",
+    "weight": 2
+  },
+  {
+    "enchantment": "timber_enchantment:timber",
+    "weight": 2
+  },
+  {
+    "enchantment": "toughness_enchantment:toughness",
+    "weight": 5
+  },
+  {
+    "enchantment": "eternal_starlight:tracing",
+    "weight": 5
+  },
+  {
+    "enchantment": "tensura:transcendence",
+    "weight": 1
+  },
+  {
+    "enchantment": "true_shot_enchantment:true_shot",
+    "weight": 2
+  },
+  {
+    "enchantment": "minecraft:unbreaking",
+    "weight": 5
+  },
+  {
+    "enchantment": "veinminer_enchantment:veinminer",
+    "weight": 2
+  },
+  {
+    "enchantment": "tensura:vigor",
+    "weight": 1
+  },
+  {
+    "enchantment": "vision_enchantment:vision",
+    "weight": 2
+  },
+  {
+    "enchantment": "tensura:vitality",
+    "weight": 1
+  },
+  {
+    "enchantment": "netherexp:volley",
+    "weight": 5
+  },
+  {
+    "enchantment": "dungeons_arise:voltaic_shot",
+    "weight": 1
+  },
+  {
+    "enchantment": "minecraft:wind_burst",
+    "weight": 2
+  },
+  {
+    "enchantment": "withering_enchantment:withering",
+    "weight": 1
+  },
+  {
+    "enchantment": "apothic_enchanting:worker_exploitation",
+    "weight": 2
+  },
+  {
+    "enchantment": "xp_boost_enchantment:xp_boost",
+    "weight": 3
+  }
+]

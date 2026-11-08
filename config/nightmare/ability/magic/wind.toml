@@ -1,0 +1,21 @@
+[WindReapingEdge]
+	#Chant time in seconds.
+	castTime = 4
+	#Magicule cost to cast.
+	magiculeCost = 1000000.0
+	#Spell Radius
+	spellRadius = 48.0
+	#The wind damage of each cut inside the dome.
+	cutDamage = 120.0
+	#Ticks between each cut inside the dome.
+	cutInterval = 4
+	#How long the dome of wind blades lasts in seconds.
+	domeSeconds = 2
+	#The radius of the dome in blocks.
+	domeRadius = 6.0
+	#The radius of the dome in blocks once mastered.
+	masteredDomeRadius = 9.0
+	#How hard the dome pulls targets into its center.
+	pull = 0.35
+	#Cooldown in seconds.
+	cooldown = 20

@@ -1,0 +1,115 @@
+[General]
+	#Damage multiplier for every Shadow Magic spell once that spell is mastered.
+	masteredDamageMultiplier = 1.5
+
+[ShadowStep]
+	#Cast time in ticks. 0 casts instantly.
+	castTicks = 0
+	#Magicule cost.
+	magiculeCost = 1000.0
+	#Cooldown in seconds.
+	cooldown = 6
+	#How far away the target can be, in blocks.
+	range = 24.0
+	#Gap left between the target's back and the caster, in blocks.
+	gap = 0.4
+	#Damage multiplier of the caster's next melee hit after stepping.
+	ambushMultiplier = 1.4
+	#How long the empowered melee hit stays ready, in ticks.
+	ambushTicks = 40
+
+[ShadowSpikes]
+	#Cast time in ticks.
+	castTicks = 10
+	#Magicule cost.
+	magiculeCost = 1200.0
+	#Cooldown in seconds.
+	cooldown = 6
+	#Radius around the caster in which every enemy is struck, in blocks.
+	radius = 10.0
+	#Total damage of the spikes to each enemy.
+	damage = 40.5
+	#Slowness duration in ticks.
+	slownessTicks = 40
+	#Slowness amplifier. 0 means Slowness I.
+	slownessAmplifier = 0
+
+[ShadowBind]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost.
+	magiculeCost = 12000.0
+	#Cooldown in seconds.
+	cooldown = 18
+	#How far away the target can be, in blocks.
+	range = 24.0
+	#How long the shadow stays pinned, in ticks.
+	durationTicks = 60
+	#How long a boss's shadow stays pinned, in ticks.
+	bossDurationTicks = 20
+	#Movement speed taken from entities tagged no_forced_move instead of pinning them. 1.0 roots them.
+	immovableSlow = 0.6
+	#Whether light or holy damage to the target breaks the bind early.
+	breakOnLight = true
+
+[ShadowClone]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost.
+	magiculeCost = 16000.0
+	#Cooldown in seconds.
+	cooldown = 30
+	#Number of clones raised.
+	count = 2
+	#How long the clones last, in ticks.
+	lifetimeTicks = 300
+	#Health of each clone as a fraction of the caster's max health.
+	healthShare = 0.3
+	#Lowest health of a clone.
+	minHealth = 10.0
+	#Attack damage of each clone as a fraction of the caster's attack damage.
+	damageShare = 0.4
+	#Lowest attack damage of a clone.
+	minDamage = 1.0
+
+[ShadowMeld]
+	#Magicules drained per second while melded.
+	magiculePerSecond = 80.0
+	#Movement speed bonus while melded. 0.5 means +50%.
+	speedBonus = 0.5
+	#Fraction of incoming magic damage removed while melded. Non-magic damage is ignored entirely.
+	magicDamageReduction = 0.6
+	#Damage multiplier of the first hit after resurfacing by choice.
+	ambushMultiplier = 1.6
+	#How long the empowered resurfacing hit stays ready, in ticks.
+	ambushTicks = 40
+	#Whether light or holy damage forces the caster out of the shadow.
+	endOnLight = true
+	#Seconds spent melded per mastery point. 0 disables mastery from melding.
+	masteryIntervalSeconds = 10
+
+[UmbralTide]
+	#Chant time in ticks.
+	castTicks = 60
+	#Magicule cost.
+	magiculeCost = 63000.0
+	#Cooldown in seconds.
+	cooldown = 90
+	#How far away the sea can be centred, in blocks.
+	aimRange = 32.0
+	#Radius of the shadow sea in blocks.
+	radius = 12.0
+	#How long the sea lasts, in ticks.
+	durationTicks = 200
+	#Total damage per second to every enemy inside.
+	damagePerSecond = 32.0
+	#Slowness amplifier for enemies inside. 2 means Slowness III.
+	slownessAmplifier = 2
+	#Blindness duration in ticks, refreshed while inside.
+	blindnessTicks = 40
+	#Ticks between tendril lashes.
+	lashIntervalTicks = 20
+	#Total damage of each tendril lash.
+	lashDamage = 48.0
+	#Downward pull on airborne enemies inside, in blocks per tick. Entities tagged no_forced_move and bosses are never pulled.
+	sinkPull = 0.12

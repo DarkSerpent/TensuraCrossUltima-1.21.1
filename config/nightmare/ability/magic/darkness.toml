@@ -1,0 +1,89 @@
+[DarkCloakedBlade]
+	#Chant time in ticks.
+	castTicks = 20
+	#Magicule cost to cast.
+	magiculeCost = 12000.0
+	#Cooldown in seconds, started when the darkness leaves the blade.
+	cooldown = 30
+	#Seconds the held weapon stays cloaked.
+	durationSeconds = 20
+	#Extra dark damage dealt on every melee hit, as a fraction of the hit. 0.3 is +30%.
+	bonusDamageFraction = 0.3
+	#Barrier bypass level of cloaked melee hits. 1.0 ignores Tensura barriers completely.
+	barrierBypass = 1.0
+	#Whether a cloaked blade cuts apart a magic shield it strikes in one blow.
+	cutsShields = true
+
+[BlackHole]
+	#Chant time in ticks.
+	castTicks = 10
+	#Magicule cost to cast.
+	magiculeCost = 16000.0
+	#Cooldown in seconds, started when the vortex closes.
+	cooldown = 20
+	#Ticks the vortex stays open before it releases on its own.
+	durationTicks = 80
+	#Distance of the vortex in front of the caster's eyes, in blocks.
+	distance = 2.5
+	#Radius of the vortex in blocks.
+	radius = 1.8
+	#The most projectiles one vortex can hold. Anything past this is still swallowed but only feeds the dark bolts.
+	maxStored = 32
+	#Whether swallowed projectiles are rebuilt and flung back with their own power. When false every swallow becomes a dark bolt.
+	returnProjectiles = true
+	#The slowest speed a returned projectile is flung at, in blocks per tick.
+	minReturnSpeed = 1.6
+	#The fastest speed a returned projectile is flung at, in blocks per tick.
+	maxReturnSpeed = 4.0
+	#Spread of returned projectiles. Higher is wider.
+	returnSpread = 4.0
+	#The most dark bolts fired on release.
+	maxBolts = 12
+	#The dark damage of each dark bolt.
+	boltDamage = 54.38
+	#The speed of dark bolts in blocks per tick.
+	boltSpeed = 2.2
+	#The range of dark bolts in blocks.
+	boltRange = 48.0
+
+[DimensionSlash]
+	#Chant time in ticks.
+	castTicks = 40
+	#Magicule cost to cast.
+	magiculeCost = 42000.0
+	#Cooldown in seconds.
+	cooldown = 45
+	#Length of the cut in blocks. It passes through walls.
+	length = 40.0
+	#How far from the line of the cut a target can stand and still be hit, in blocks.
+	hitRadius = 1.75
+	#The dark damage dealt to every enemy on the line.
+	damage = 400.0
+	#Barrier bypass level of the cut. 1.0 ignores Tensura barriers completely.
+	barrierBypass = 1.0
+	#Whether enemy magic shields on the line are cut apart.
+	cutsShields = true
+	#Visual width of the crescent in blocks.
+	crescentWidth = 7.0
+
+[SlashingRealm]
+	#Chant time in ticks.
+	castTicks = 60
+	#Magicule cost to cast.
+	magiculeCost = 70000.0
+	#Cooldown in seconds, started when the realm collapses.
+	cooldown = 90
+	#Ticks the realm stays open.
+	durationTicks = 200
+	#Radius of the realm in blocks.
+	radius = 8.0
+	#How far above and below the caster the realm reaches, in blocks.
+	height = 4.0
+	#The dark damage of each cut.
+	damage = 50.0
+	#The fewest ticks between two cuts on the same target.
+	cutIntervalTicks = 10
+	#Barrier bypass level of each cut. 1.0 ignores Tensura barriers completely.
+	barrierBypass = 1.0
+	#Whether enemy spell projectiles inside the realm are cut and destroyed.
+	cutsSpells = true
