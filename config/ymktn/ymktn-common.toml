@@ -22,7 +22,7 @@
 	#Modpack name
 	name = "Tensura Cross Ultima"
 	#Modpack version
-	version = "1.0.0"
+	version = "1.0.1"
 	#Support URL for help
 	supportUrl = ""
 	#First run flag (automatically set to false after first launch)

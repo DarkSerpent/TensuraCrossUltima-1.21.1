@@ -302,6 +302,8 @@
 		enableBubbleShotIcon = true
 		#Replace the Burning Bullet icon from Tensura Nightmares (trnightmare:burning_bullet).
 		enableBurningBulletIcon = true
+		#Replace the Convergence icon from Tensura Nightmares (trnightmare:convergence).
+		enableConvergenceIcon = true
 		#Replace the Creative Expanse icon from Tensura Nightmares (trnightmare:creative_expanse).
 		enableCreativeExpanseIcon = true
 		#Replace the Crystal Pillar icon from Tensura Nightmares (trnightmare:crystal_pillar).
@@ -316,6 +318,8 @@
 		enableExcavationIcon = true
 		#Replace the Farming Field icon from Tensura Nightmares (trnightmare:farming_field).
 		enableFarmingFieldIcon = true
+		#Replace the Falling Heaven icon from Tensura Nightmares (trnightmare:falling_heaven).
+		enableFallingHeavenIcon = true
 		#Replace the Fire God Slayer Magic icon from Tensura Nightmares (trnightmare:fire_god_slayer).
 		enableFireGodSlayerMagicIcon = true
 		#Replace the Fire God's Appetite icon from Tensura Nightmares (trnightmare:fire_god_appetite).
@@ -352,6 +356,8 @@
 		enablePaperButterfliesIcon = true
 		#Replace the Paper Shuriken icon from Tensura Nightmares (trnightmare:paper_shuriken).
 		enablePaperShurikenIcon = true
+		#Replace the Pazuzu icon from Tensura Nightmares (trnightmare:pazuzu).
+		enablePazuzuIcon = true
 		#Replace the Pop Barrage icon from Tensura Nightmares (trnightmare:pop_barrage).
 		enablePopBarrageIcon = true
 		#Replace the Prayer icon from Tensura Nightmares (trnightmare:prayer).
