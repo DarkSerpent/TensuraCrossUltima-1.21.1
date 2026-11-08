@@ -1,8 +1,8 @@
 [modules]
 	#Disable baked-potato furnace and smoker recipes and allow taking finished Wok food by shift-right-clicking empty-handed.
 	bakedPotatoFix = true
-	#Allow players to use limited Markdown and legacy ampersand formatting codes in chat.
-	limitedChatFormatting = true
+	#Allow multiple players to obtain the same Ultimate Skill by bypassing supported mods' global Ultimate ownership limits.
+	allowSharedUltimateSkills = true
 	#Log button labels, classes, bounds, and source JARs when screens open.
 	debugLogScreenButtons = false
 	#Remove ManasCore's inventory tab switcher and tab background from the Survival inventory.
@@ -35,6 +35,16 @@
 	suppressMusicTriggersDuringBossMusic = true
 	#Show Lootr's dangerous-break warning once per player every 10 minutes across all Lootr blocks and entities.
 	lootrWarningCooldown = true
+
+	[modules.tcuChatEnhancements]
+		#Add chat channel tabs that filter the local chat display without changing server chat delivery.
+		channelsEnabled = true
+		#Add a TCU tab containing messages from The Voice of the World.
+		voiceOfWorldChannelEnabled = true
+		#Prefix player chat, whispers, and stickers with the receiving client's local 12-hour time.
+		playerMessageTimestamps = true
+		#Allow players to use limited Markdown and legacy ampersand formatting codes in chat.
+		limitedChatFormatting = true
 
 	[modules.ChunkyAutomation]
 		#Automatically continue saved Chunky generation on dedicated servers, pause it while players are online, and start a square task when no saved task exists.
@@ -774,3 +784,9 @@
 [jade]
 	#Force connected clients to hide Tensura mob skill names in Jade, regardless of their client setting.
 	forceMobSkillPrivacy = true
+
+[integrations.ymktn]
+	#Keep YMKTN's firstRun flag enabled so its welcome notice is shown on every launch.
+	preserveFirstRun = true
+	#Play the dedicated Music Triggers event while YMKTN's welcome screen is open.
+	enableYmkWelcomeMusicTrigger = true
